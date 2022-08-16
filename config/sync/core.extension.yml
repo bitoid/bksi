@@ -43,10 +43,9 @@ module:
   user: 0
   views_ui: 0
   views: 10
-  standard: 1000
 theme:
   olivero: 0
   claro: 0
   stable: 0
   bksi: 0
-profile: standard
+profile: minimal

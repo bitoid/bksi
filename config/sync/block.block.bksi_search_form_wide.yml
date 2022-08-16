@@ -1,0 +1,23 @@
+uuid: c8762d8c-3337-40e2-b888-8714afddff18
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - bksi
+_core:
+  default_config_hash: imMyHD6LYci0gtXq56qr9ZKGHzbEG9uFydrN5EhKtSU
+id: bksi_search_form_wide
+theme: bksi
+region: secondary_menu
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (wide)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

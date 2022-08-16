@@ -1,0 +1,22 @@
+uuid: 298e6c92-7bc1-4688-88a2-9f6b123cdca8
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bksi
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: bksi_breadcrumbs
+theme: bksi
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

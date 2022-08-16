@@ -1,0 +1,23 @@
+uuid: 0d44e8a3-c6a8-4a11-97af-ec134bc49370
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - bksi
+_core:
+  default_config_hash: yEBET0cqDbk8dkWzaJw-8CKft0961VBflsISoSR6Lj8
+id: bksi_search_form_narrow
+theme: bksi
+region: primary_menu
+weight: -4
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (narrow)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

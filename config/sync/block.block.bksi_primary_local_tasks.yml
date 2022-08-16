@@ -1,0 +1,22 @@
+uuid: 4575184f-160a-471d-84a7-a9665ae62e4f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bksi
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: bksi_primary_local_tasks
+theme: bksi
+region: highlighted
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: 7a7b6185-42ed-40a7-bcee-a4134e21cd3b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bksi
+_core:
+  default_config_hash: n_nlgjggHVfQt2H__zvLOKB2YtjPDbQ5tHijF9LE1aM
+id: bksi_site_branding
+theme: bksi
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

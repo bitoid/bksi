@@ -1,0 +1,20 @@
+uuid: 9ad7c65a-e524-4390-9f21-ed9cf72193e2
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bksi
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: bksi_primary_admin_actions
+theme: bksi
+region: highlighted
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

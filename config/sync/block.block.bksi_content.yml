@@ -1,0 +1,22 @@
+uuid: 614a9529-9e36-4f02-8f18-4e309214a7a6
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bksi
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: bksi_content
+theme: bksi
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

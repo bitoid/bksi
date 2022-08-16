@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "npx tailwindcss --input src/tailwind.pcss --output dist/tailwind.css --watch",
+    "build": "npx tailwindcss --input src/tailwind.pcss --output dist/tailwind.css --minify"
+  },
+  "dependencies": {
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.12"
+  }
+}

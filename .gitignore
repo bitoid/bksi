@@ -20,10 +20,6 @@
 /.idea/
 /.vscode/
 
-# Ignore .env files as they are personal
-/.env
-
-
 
 /web/themes/custom/bksi/*.log
 #/mix-manifest.json

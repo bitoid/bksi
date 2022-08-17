@@ -1,0 +1,22 @@
+<!-- In this section the 'active' class is added from js/laze-loading.js -->
+<!-- If you need to make changes without connecting js/lazy-loading.js -->
+<!-- Just add 'active' class to this section. Otherwise, the block will not be displayed. -->
+<!-- Remove 'active' class in prod.-->
+<!-- <section class="text-fade active"> -->
+    
+<section class="text-fade">
+        <div class="text-content-fade flex flex-col justify-center px-4 py-[75px] md:w-[60%] md:mx-auto">
+            <h2 class="text-[26px] tracking-[1.3px] leading-none flex flex-col gap-5 md:text-[35px] md:leading-10 md:tracking-[1.75px]">
+                <span class="text-[13px]">{{ content.field_slogan[0] }}</span>
+                {{ content.field_title[0] }}
+            </h2>
+            <p class="text-[15px] leading-[22px] tracking-wide mt-14 mb-36">
+                {{ content.field_paragraph[0] }}
+            </p>
+            <a class="max-w-fit group relative h-10 flex gap-4 z-10 pr-6 items-center rounded-[40px] overflow-hidden" href="{{ content.field_linkcta[0]['#url']}}">
+                <span class="absolute left-0 top-0 -z-10 h-full w-0 rounded-[40px] bg-mainRed group-hover:w-full"></span>
+                <span class="h-full aspect-square rounded-full bg-mainRed flex items-center justify-center"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                {{ content.field_linkcta[0]['#title'] }}
+            </a>
+        </div>
+</section>

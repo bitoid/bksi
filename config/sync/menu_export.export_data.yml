@@ -1,0 +1,264 @@
+1:
+  id:
+    value: '1'
+  uuid:
+    value: 30094398-3b6b-4af2-8731-a4ceab3e23a5
+  revision_id:
+    value: '1'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created:
+    value: '1660756507'
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: Leistungen
+  description: false
+  menu_name:
+    value: main-menu
+  link:
+    uri: 'internal:#'
+    title: ''
+    options:
+      attributes: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '0'
+  expanded:
+    value: '0'
+  parent: false
+  changed:
+    value: '1660756507'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+2:
+  id:
+    value: '2'
+  uuid:
+    value: 38a6d8e7-a998-4fce-bec8-af71bffd12cf
+  revision_id:
+    value: '2'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created:
+    value: '1660756523'
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: Projekte
+  description: false
+  menu_name:
+    value: main-menu
+  link:
+    uri: 'internal:#'
+    title: ''
+    options:
+      attributes: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '0'
+  expanded:
+    value: '0'
+  parent: false
+  changed:
+    value: '1660756523'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+3:
+  id:
+    value: '3'
+  uuid:
+    value: 46a7348d-1884-4f15-92ef-c881595c31fb
+  revision_id:
+    value: '3'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created:
+    value: '1660756536'
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: Unternehmen
+  description: false
+  menu_name:
+    value: main-menu
+  link:
+    uri: 'internal:#'
+    title: ''
+    options:
+      attributes: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '0'
+  expanded:
+    value: '0'
+  parent: false
+  changed:
+    value: '1660756536'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+4:
+  id:
+    value: '4'
+  uuid:
+    value: a6096493-7e0b-4fa6-9c21-a4685344db6c
+  revision_id:
+    value: '4'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created:
+    value: '1660756549'
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: Karriere
+  description: false
+  menu_name:
+    value: main-menu
+  link:
+    uri: 'internal:#'
+    title: ''
+    options:
+      attributes: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '0'
+  expanded:
+    value: '0'
+  parent: false
+  changed:
+    value: '1660756549'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+5:
+  id:
+    value: '5'
+  uuid:
+    value: 3914f507-70b5-4a19-9ac7-0feb4d01bda7
+  revision_id:
+    value: '5'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created:
+    value: '1660756562'
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: Aktuelles
+  description: false
+  menu_name:
+    value: main-menu
+  link:
+    uri: 'internal:#'
+    title: ''
+    options:
+      attributes: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '0'
+  expanded:
+    value: '0'
+  parent: false
+  changed:
+    value: '1660756562'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+6:
+  id:
+    value: '6'
+  uuid:
+    value: aa49c600-1bba-46c3-af10-cd72d5c88a55
+  revision_id:
+    value: '6'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created:
+    value: '1660756572'
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: Kontakt
+  description: false
+  menu_name:
+    value: main-menu
+  link:
+    uri: 'internal:#'
+    title: ''
+    options:
+      attributes: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '0'
+  expanded:
+    value: '0'
+  parent: false
+  changed:
+    value: '1660756572'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'

@@ -1,0 +1,25 @@
+uuid: 34d8f177-246e-433c-98d1-e2fe62e29ed2
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main-menu
+  module:
+    - system
+  theme:
+    - bksi
+id: mainmenu
+theme: bksi
+region: header
+weight: 0
+provider: null
+plugin: 'system_menu_block:main-menu'
+settings:
+  id: 'system_menu_block:main-menu'
+  label: 'main menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

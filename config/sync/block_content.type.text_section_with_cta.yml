@@ -1,0 +1,8 @@
+uuid: 012b9c6e-e270-4ad7-b59d-0eb587b4cd8a
+langcode: en
+status: true
+dependencies: {  }
+id: text_section_with_cta
+label: 'Text Section with CTA'
+revision: 0
+description: ''

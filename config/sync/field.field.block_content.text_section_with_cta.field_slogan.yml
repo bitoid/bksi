@@ -1,0 +1,19 @@
+uuid: 497663fe-0a8e-45f6-9b88-47b9391dbd63
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.text_section_with_cta
+    - field.storage.block_content.field_slogan
+id: block_content.text_section_with_cta.field_slogan
+field_name: field_slogan
+entity_type: block_content
+bundle: text_section_with_cta
+label: Slogan
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

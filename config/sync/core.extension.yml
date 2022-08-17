@@ -43,6 +43,7 @@ module:
   user: 0
   views_ui: 0
   views: 10
+  minimal: 1000
 theme:
   olivero: 0
   claro: 0

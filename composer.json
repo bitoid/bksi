@@ -21,6 +21,7 @@
         "cweagans/composer-patches": "^1.7",
         "drupal/core-composer-scaffold": "^9.4",
         "drupal/core-recommended": "^9.4",
+        "drupal/default_content": "^2.0@alpha",
         "drupal/menu_export": "^1.3",
         "drush/drush": "^11.0",
         "vlucas/phpdotenv": "^5.1",

@@ -1,0 +1,19 @@
+uuid: 3cf65309-01e9-4757-9d02-6f2623d455ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contacts
+    - field.storage.block_content.field_phone_number
+id: block_content.contacts.field_phone_number
+field_name: field_phone_number
+entity_type: block_content
+bundle: contacts
+label: 'Phone number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

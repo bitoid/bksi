@@ -1,0 +1,56 @@
+uuid: 1398d36b-d48c-4f1f-885e-9a9b892cdcd9
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contacts
+    - field.field.block_content.contacts.field_email
+    - field.field.block_content.contacts.field_phone_number
+    - field.field.block_content.contacts.field_slogan
+    - field.field.block_content.contacts.field_title
+id: block_content.contacts.default
+targetEntityType: block_content
+bundle: contacts
+mode: default
+content:
+  field_email:
+    type: email_default
+    weight: 29
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+  field_phone_number:
+    type: string_textfield
+    weight: 28
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_slogan:
+    type: string_textfield
+    weight: 26
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 27
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

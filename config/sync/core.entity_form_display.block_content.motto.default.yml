@@ -4,12 +4,21 @@ status: true
 dependencies:
   config:
     - block_content.type.motto
+    - field.field.block_content.motto.field_author
     - field.field.block_content.motto.field_motto
 id: block_content.motto.default
 targetEntityType: block_content
 bundle: motto
 mode: default
 content:
+  field_author:
+    type: string_textfield
+    weight: 27
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_motto:
     type: string_textarea
     weight: 26

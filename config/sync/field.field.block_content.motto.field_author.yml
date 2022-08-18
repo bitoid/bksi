@@ -1,0 +1,19 @@
+uuid: e5bf8c04-2e3f-4fe6-a2b0-cc4059096d4c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.motto
+    - field.storage.block_content.field_author
+id: block_content.motto.field_author
+field_name: field_author
+entity_type: block_content
+bundle: motto
+label: author
+description: 'author name and position in BKSI'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

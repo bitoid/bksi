@@ -1,0 +1,21 @@
+uuid: 97693686-6a6b-4111-9da3-75df66e2c0d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.text_section_with_cta
+    - field.storage.block_content.field_title
+  module:
+    - text
+id: block_content.text_section_with_cta.field_title
+field_name: field_title
+entity_type: block_content
+bundle: text_section_with_cta
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

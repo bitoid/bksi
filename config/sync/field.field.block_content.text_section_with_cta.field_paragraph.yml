@@ -1,0 +1,19 @@
+uuid: 58963a69-aaa3-470b-87d8-3aa227c4db86
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.text_section_with_cta
+    - field.storage.block_content.field_paragraph
+id: block_content.text_section_with_cta.field_paragraph
+field_name: field_paragraph
+entity_type: block_content
+bundle: text_section_with_cta
+label: Paragraph
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

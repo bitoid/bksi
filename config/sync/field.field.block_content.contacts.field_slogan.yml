@@ -1,0 +1,21 @@
+uuid: ae1bcadf-4d1c-4f8a-9a67-25926483d297
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contacts
+    - field.storage.block_content.field_slogan
+  module:
+    - text
+id: block_content.contacts.field_slogan
+field_name: field_slogan
+entity_type: block_content
+bundle: contacts
+label: Slogan
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

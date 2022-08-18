@@ -13,7 +13,7 @@ settings:
   datetime_type: date
 module: datetime
 locked: false
-cardinality: 1
+cardinality: 2
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

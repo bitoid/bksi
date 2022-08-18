@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 5b88b192-e24f-4b64-b62c-39156d3fec29
+  bundle: hero_block_type
+  default_langcode: en
+  depends:
+    f2427df9-02dc-49a6-84f4-17bfc2820a8d: file
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Home Page Hero Block'
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  field_image:
+    -
+      entity: f2427df9-02dc-49a6-84f4-17bfc2820a8d
+      alt: 'home page banner'
+      title: ''
+      width: 1080
+      height: 1080
+  field_slogan:
+    -
+      value: 'Willkommen bei BKSI'
+      format: basic_html
+  field_title:
+    -
+      value: "<p>Ingenieurg­esellschaft für Beratung &amp; Planung im Bauwesen</p>\r\n"
+      format: basic_html

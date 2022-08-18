@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9817402d2cdab6da52c2fea1b26f2d7a",
+    "content-hash": "d2ec9994bbe8b8ad623a9749d9387e84",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1558,30 +1558,26 @@
         },
         {
             "name": "drupal/default_content",
-            "version": "2.0.0-alpha2",
+            "version": "1.0.0-alpha9",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/default_content.git",
-                "reference": "2.0.0-alpha2"
+                "reference": "8.x-1.0-alpha9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/default_content-2.0.0-alpha2.zip",
-                "reference": "2.0.0-alpha2",
-                "shasum": "5c365ea21b0be63dc00ec2db50179291d6fb3d89"
+                "url": "https://ftp.drupal.org/files/projects/default_content-8.x-1.0-alpha9.zip",
+                "reference": "8.x-1.0-alpha9",
+                "shasum": "e8d5cc6ae96b14e882852512fbf5887e752146a0"
             },
             "require": {
-                "drupal/core": "^9.1 || ^10"
-            },
-            "require-dev": {
-                "drupal/hal": " ^9 || ^1 || ^2",
-                "drupal/paragraphs": "^1"
+                "drupal/core": "^8.7.7 || ^9"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.0-alpha2",
-                    "datestamp": "1659466706",
+                    "version": "8.x-1.0-alpha9",
+                    "datestamp": "1588280141",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -1589,7 +1585,7 @@
                 },
                 "drush": {
                     "services": {
-                        "drush.services.yml": "^9 || ^10 || ^11"
+                        "drush.services.yml": "^9"
                     }
                 }
             },

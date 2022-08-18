@@ -1,0 +1,22 @@
+uuid: 55a62455-dfd9-4173-9eae-9b28362a8aa1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.motto
+    - field.field.block_content.motto.body
+  module:
+    - text
+id: block_content.motto.default
+targetEntityType: block_content
+bundle: motto
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

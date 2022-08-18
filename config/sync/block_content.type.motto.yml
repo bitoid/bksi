@@ -1,0 +1,8 @@
+uuid: 15ad365f-31b0-42a3-a5bf-74e7c940c67f
+langcode: en
+status: true
+dependencies: {  }
+id: motto
+label: Motto
+revision: 0
+description: 'Contact page''s block contains motto text field and author text field'

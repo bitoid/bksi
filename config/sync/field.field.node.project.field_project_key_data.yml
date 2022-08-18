@@ -1,0 +1,19 @@
+uuid: 6f2179bd-70d0-4205-90aa-05b31835594e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_project_key_data
+    - node.type.project
+id: node.project.field_project_key_data
+field_name: field_project_key_data
+entity_type: node
+bundle: project
+label: 'project key data'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

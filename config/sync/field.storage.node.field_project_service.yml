@@ -1,0 +1,39 @@
+uuid: 8f8b9a28-dc82-4abc-b902-15a8a21f8ab6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_project_service
+field_name: field_project_service
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Structural engineering'
+      label: 'Structural engineering'
+    -
+      value: General
+      label: General
+    -
+      value: 'Digital planning / BIM'
+      label: 'Digital planning / BIM'
+    -
+      value: Building
+      label: Building
+    -
+      value: Opinion
+      label: Opinion
+    -
+      value: 'Structural inspection'
+      label: 'Structural inspection'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

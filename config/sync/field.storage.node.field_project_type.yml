@@ -1,0 +1,51 @@
+uuid: 899f5557-e7d6-4c0d-a8f2-6a6367951742
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_project_type
+field_name: field_project_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Industrial building'
+      label: 'Industrial building'
+    -
+      value: 'Office & administration building'
+      label: 'Office & administration building'
+    -
+      value: 'Trade & Commerce'
+      label: 'Trade & Commerce'
+    -
+      value: 'Residential construction'
+      label: 'Residential construction'
+    -
+      value: 'Hospitals & nursing homes'
+      label: 'Hospitals & nursing homes'
+    -
+      value: 'Research & Teaching'
+      label: 'Research & Teaching'
+    -
+      value: 'Schools & day care centers'
+      label: 'Schools & day care centers'
+    -
+      value: 'Special constructions'
+      label: 'Special constructions'
+    -
+      value: 'Civil Engineering & Structural Engineering'
+      label: 'Civil Engineering & Structural Engineering'
+    -
+      value: 'Building in stock & renovations'
+      label: 'Building in stock & renovations'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,5 @@
+name: Projects
+type: module
+description: This is endpoint of projects Json
+package: Custom
+core_version_requirement: ^9 || ^10

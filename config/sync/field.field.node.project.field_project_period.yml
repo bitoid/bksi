@@ -1,0 +1,21 @@
+uuid: 986e07f9-c3e8-4ebc-800b-2e63dc041937
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_project_period
+    - node.type.project
+  module:
+    - datetime
+id: node.project.field_project_period
+field_name: field_project_period
+entity_type: node
+bundle: project
+label: Period
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

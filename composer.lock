@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d2ec9994bbe8b8ad623a9749d9387e84",
+    "content-hash": "87d3823ea39ab09da661ff29bbe3ad62",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1558,26 +1558,30 @@
         },
         {
             "name": "drupal/default_content",
-            "version": "1.0.0-alpha9",
+            "version": "2.0.0-alpha2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/default_content.git",
-                "reference": "8.x-1.0-alpha9"
+                "reference": "2.0.0-alpha2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/default_content-8.x-1.0-alpha9.zip",
-                "reference": "8.x-1.0-alpha9",
-                "shasum": "e8d5cc6ae96b14e882852512fbf5887e752146a0"
+                "url": "https://ftp.drupal.org/files/projects/default_content-2.0.0-alpha2.zip",
+                "reference": "2.0.0-alpha2",
+                "shasum": "5c365ea21b0be63dc00ec2db50179291d6fb3d89"
             },
             "require": {
-                "drupal/core": "^8.7.7 || ^9"
+                "drupal/core": "^9.1 || ^10"
+            },
+            "require-dev": {
+                "drupal/hal": " ^9 || ^1 || ^2",
+                "drupal/paragraphs": "^1"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.0-alpha9",
-                    "datestamp": "1588280141",
+                    "version": "2.0.0-alpha2",
+                    "datestamp": "1659466706",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -1585,7 +1589,7 @@
                 },
                 "drush": {
                     "services": {
-                        "drush.services.yml": "^9"
+                        "drush.services.yml": "^9 || ^10 || ^11"
                     }
                 }
             },
@@ -9901,16 +9905,16 @@
         },
         {
             "name": "sirbrillig/phpcs-variable-analysis",
-            "version": "v2.11.6",
+            "version": "v2.11.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sirbrillig/phpcs-variable-analysis.git",
-                "reference": "e0c3d7b7572e351914e1c82abc902e129fe4e587"
+                "reference": "ad2b0b57803a48bb3495777bee2a9a13c8e9da53"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sirbrillig/phpcs-variable-analysis/zipball/e0c3d7b7572e351914e1c82abc902e129fe4e587",
-                "reference": "e0c3d7b7572e351914e1c82abc902e129fe4e587",
+                "url": "https://api.github.com/repos/sirbrillig/phpcs-variable-analysis/zipball/ad2b0b57803a48bb3495777bee2a9a13c8e9da53",
+                "reference": "ad2b0b57803a48bb3495777bee2a9a13c8e9da53",
                 "shasum": ""
             },
             "require": {
@@ -9951,7 +9955,7 @@
                 "source": "https://github.com/sirbrillig/phpcs-variable-analysis",
                 "wiki": "https://github.com/sirbrillig/phpcs-variable-analysis/wiki"
             },
-            "time": "2022-08-15T15:38:22+00:00"
+            "time": "2022-08-16T22:19:00+00:00"
         },
         {
             "name": "slevomat/coding-standard",

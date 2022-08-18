@@ -1,0 +1,19 @@
+uuid: 5b1687ac-6f9b-4a3b-b9d4-40505f5329e0
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.field_motto
+field_name: field_motto
+entity_type: block_content
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

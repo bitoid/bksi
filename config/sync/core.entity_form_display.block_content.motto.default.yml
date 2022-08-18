@@ -4,23 +4,19 @@ status: true
 dependencies:
   config:
     - block_content.type.motto
-    - field.field.block_content.motto.body
-  module:
-    - text
+    - field.field.block_content.motto.field_motto
 id: block_content.motto.default
 targetEntityType: block_content
 bundle: motto
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
+  field_motto:
+    type: string_textarea
     weight: 26
     region: content
     settings:
-      rows: 9
-      summary_rows: 3
+      rows: 5
       placeholder: ''
-      show_summary: false
     third_party_settings: {  }
   info:
     type: string_textfield

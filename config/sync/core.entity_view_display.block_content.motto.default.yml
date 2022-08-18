@@ -4,17 +4,15 @@ status: true
 dependencies:
   config:
     - block_content.type.motto
-    - field.field.block_content.motto.body
-  module:
-    - text
+    - field.field.block_content.motto.field_motto
 id: block_content.motto.default
 targetEntityType: block_content
 bundle: motto
 mode: default
 content:
-  body:
-    type: text_default
-    label: hidden
+  field_motto:
+    type: basic_string
+    label: above
     settings: {  }
     third_party_settings: {  }
     weight: 0

@@ -5,6 +5,6 @@ features:
   favicon: 1
 logo:
   use_default: 0
-  path: 'public://bski-logo.png'
+  path: themes/custom/bksi/images/bski-logo.svg
 favicon:
   use_default: 1

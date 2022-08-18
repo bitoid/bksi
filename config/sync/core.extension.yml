@@ -28,7 +28,6 @@ module:
   layout_builder: 0
   layout_discovery: 0
   link: 0
-  menu_export: 0
   menu_link_content: 0
   menu_ui: 0
   mysql: 0

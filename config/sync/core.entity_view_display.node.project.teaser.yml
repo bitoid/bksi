@@ -1,0 +1,40 @@
+uuid: 4215915b-fc45-4bd5-ab1d-ef4f0f50b5cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.project.field_project_challenges
+    - field.field.node.project.field_project_client
+    - field.field.node.project.field_project_description
+    - field.field.node.project.field_project_image
+    - field.field.node.project.field_project_key_data
+    - field.field.node.project.field_project_period
+    - field.field.node.project.field_project_sector
+    - field.field.node.project.field_project_service
+    - field.field.node.project.field_project_title
+    - field.field.node.project.field_project_type
+    - node.type.project
+  module:
+    - user
+id: node.project.teaser
+targetEntityType: node
+bundle: project
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_project_challenges: true
+  field_project_client: true
+  field_project_description: true
+  field_project_image: true
+  field_project_key_data: true
+  field_project_period: true
+  field_project_sector: true
+  field_project_service: true
+  field_project_title: true
+  field_project_type: true

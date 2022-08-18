@@ -1,0 +1,21 @@
+uuid: f5a575c0-c4a8-42da-8855-ddae66855bbc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_project_sector
+    - node.type.project
+  module:
+    - options
+id: node.project.field_project_sector
+field_name: field_project_sector
+entity_type: node
+bundle: project
+label: Sector
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

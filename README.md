@@ -33,7 +33,7 @@ Uncommenting the following lines in the `settings.php` file. Make sure this code
 if (file_exists(__DIR__ . '/settings.local.php')) {
   include __DIR__ . '/settings.local.php';
 }
-```plugins
+```
 and then copying the file `example.settings.local.php` from `web/sites` folder to `web/sites/default` folder and rename it to `settings.local.php`
 ```
 cp web/sites/example.settings.local.php web/sites/default/settings.local.php

@@ -262,3 +262,47 @@
     value: '1'
   revision_translation_affected:
     value: '1'
+7:
+  id:
+    value: '7'
+  uuid:
+    value: 8441321f-cda0-4506-87bb-81c1d58b7352
+  revision_id:
+    value: '7'
+  langcode:
+    value: en
+  bundle:
+    value: menu_link_content
+  revision_created:
+    value: '1660761903'
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: 'test link'
+  description: false
+  menu_name:
+    value: main-menu
+  link:
+    uri: 'internal:#'
+    title: ''
+    options:
+      attributes: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '0'
+  expanded:
+    value: '0'
+  parent: false
+  changed:
+    value: '1660761903'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'

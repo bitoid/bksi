@@ -6,9 +6,11 @@ dependencies:
     - block_content.type.offer
     - field.field.block_content.offer.field_description
     - field.field.block_content.offer.field_image
+    - field.field.block_content.offer.field_offer_paragraph
     - field.field.block_content.offer.field_slogan
     - field.field.block_content.offer.field_title
   module:
+    - entity_reference_revisions
     - image
     - text
 id: block_content.offer.default
@@ -33,6 +35,15 @@ content:
         attribute: lazy
     third_party_settings: {  }
     weight: 3
+    region: content
+  field_offer_paragraph:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 4
     region: content
   field_slogan:
     type: text_default

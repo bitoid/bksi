@@ -1,0 +1,17 @@
+<?php
+/**
+ * Implements hook_theme().
+ */
+
+function bksi_news_theme() {
+  return [
+    'bksi_news' => [
+      'variables' => [
+        'newses'=> [],
+        'quantity' => 0 ,
+        'slogan' => '',
+        'title' => '',
+      ],
+    ],
+  ];
+}

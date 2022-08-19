@@ -1,0 +1,43 @@
+uuid: 8c0400ad-0a47-493e-8700-813cd346a90a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.application
+    - field.field.block_content.application.field_image
+    - field.field.block_content.application.field_slogan
+    - field.field.block_content.application.field_title
+  module:
+    - image
+    - text
+id: block_content.application.default
+targetEntityType: block_content
+bundle: application
+mode: default
+content:
+  field_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_slogan:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

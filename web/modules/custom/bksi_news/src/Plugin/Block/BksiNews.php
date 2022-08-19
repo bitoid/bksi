@@ -29,10 +29,11 @@ class BksiNews extends BlockBase
     public function build(): array {
 
       $config = $this->getConfiguration();
+      // Get data from custom block fields
       $quantity = $config['news_quantity'];
       $slogan = $config['slogan'];
       $title = $config['title'];
-
+      // Get data from Article content type
       $query = \Drupal::entityQuery('node');
       $nids = $query->condition('type', 'article')
         ->sort('created', 'DESC')
@@ -55,6 +56,7 @@ class BksiNews extends BlockBase
           'news_image' => $url,
         ];
       }
+      // Return variables for block template
       return [
         '#theme' => 'bksi_news',
         '#newses' => $newses,
@@ -78,7 +80,7 @@ class BksiNews extends BlockBase
   {
     $config = $this->getConfiguration();
     $form= parent::blockForm($form, $form_state);
-
+// Create custom fields in block
     $form['news_quantity'] = [
       '#type' => 'number',
       '#title' => $this->t('News Quantity'),
@@ -108,6 +110,7 @@ class BksiNews extends BlockBase
    * {@inheritdoc}
    */
   public function blockSubmit($form, FormStateInterface $form_state) {
+//    Get custom fields data
     $this->configuration['news_quantity'] = $form_state->getValue('news_quantity');
     $this->configuration['slogan'] = $form_state->getValue('slogan');
     $this->configuration['title'] = $form_state->getValue('title');

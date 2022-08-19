@@ -1,0 +1,20 @@
+uuid: b3c2223b-d417-45bd-9814-bb44700d9b6d
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - text
+id: block_content.field_service_title
+field_name: field_service_title
+entity_type: block_content
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

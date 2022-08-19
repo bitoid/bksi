@@ -1,0 +1,41 @@
+uuid: ec32245d-68ae-4322-bf00-dd1e56473df1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.services
+    - field.field.block_content.services.field_paragraph_services
+    - field.field.block_content.services.field_service_slogan
+    - field.field.block_content.services.field_service_title
+  module:
+    - paragraphs
+    - text
+id: block_content.services.default
+targetEntityType: block_content
+bundle: services
+mode: default
+content:
+  field_paragraph_services:
+    type: paragraph_summary
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_service_slogan:
+    type: text_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_service_title:
+    type: text_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

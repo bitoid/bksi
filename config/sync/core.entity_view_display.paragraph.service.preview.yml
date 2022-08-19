@@ -1,8 +1,9 @@
-uuid: 63b6cb80-ecee-4c91-ba77-0bf0a2f80852
+uuid: c65318ae-8f56-46b7-a2e8-fd7aeb08639b
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.paragraph.preview
     - field.field.paragraph.service.field_description
     - field.field.paragraph.service.field_image
     - field.field.paragraph.service.field_link_cta
@@ -10,12 +11,17 @@ dependencies:
     - paragraphs.paragraphs_type.service
   module:
     - image
+    - layout_builder
     - link
     - text
-id: paragraph.service.default
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.service.preview
 targetEntityType: paragraph
 bundle: service
-mode: default
+mode: preview
 content:
   field_description:
     type: text_trimmed
@@ -26,18 +32,15 @@ content:
     weight: 2
     region: content
   field_image:
-    type: image
+    type: image_url
     label: above
     settings:
-      image_link: ''
       image_style: ''
-      image_loading:
-        attribute: lazy
     third_party_settings: {  }
     weight: 4
     region: content
   field_link_cta:
-    type: link_separate
+    type: link
     label: hidden
     settings:
       trim_length: 80

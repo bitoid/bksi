@@ -8,7 +8,7 @@ dependencies:
     - field.field.block_content.services.field_service_slogan
     - field.field.block_content.services.field_service_title
   module:
-    - paragraphs
+    - entity_reference_revisions
     - text
 id: block_content.services.default
 targetEntityType: block_content
@@ -16,25 +16,25 @@ bundle: services
 mode: default
 content:
   field_paragraph_services:
-    type: paragraph_summary
+    type: entity_reference_revisions_entity_view
     label: hidden
-    settings: {  }
+    settings:
+      view_mode: default
+      link: ''
     third_party_settings: {  }
     weight: 2
     region: content
   field_service_slogan:
-    type: text_trimmed
+    type: text_default
     label: hidden
-    settings:
-      trim_length: 600
+    settings: {  }
     third_party_settings: {  }
     weight: 0
     region: content
   field_service_title:
-    type: text_trimmed
+    type: text_default
     label: hidden
-    settings:
-      trim_length: 600
+    settings: {  }
     third_party_settings: {  }
     weight: 1
     region: content

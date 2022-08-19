@@ -4,8 +4,8 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.service.field_description
+    - field.field.paragraph.service.field_image
     - field.field.paragraph.service.field_link_cta
-    - field.field.paragraph.service.field_service_icon
     - field.field.paragraph.service.field_title
     - image.style.thumbnail
     - paragraphs.paragraphs_type.service
@@ -26,6 +26,14 @@ content:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
+  field_image:
+    type: image_image
+    weight: 4
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
   field_link_cta:
     type: link_default
     weight: 3
@@ -33,14 +41,6 @@ content:
     settings:
       placeholder_url: ''
       placeholder_title: ''
-    third_party_settings: {  }
-  field_service_icon:
-    type: image_image
-    weight: 0
-    region: content
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
     third_party_settings: {  }
   field_title:
     type: text_textfield

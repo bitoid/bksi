@@ -1,0 +1,25 @@
+uuid: ce2628de-8949-4a97-856d-de0d69ba6911
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:services:a581136c-d499-406a-ade3-88447733faac'
+  module:
+    - block_content
+  theme:
+    - bksi
+id: blokiiiiiii
+theme: bksi
+region: help
+weight: 0
+provider: null
+plugin: 'block_content:a581136c-d499-406a-ade3-88447733faac'
+settings:
+  id: 'block_content:a581136c-d499-406a-ade3-88447733faac'
+  label: blokiiiiiii
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

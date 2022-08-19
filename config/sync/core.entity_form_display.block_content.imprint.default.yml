@@ -1,0 +1,119 @@
+uuid: bb039e60-6bc4-4db8-a646-ab11ef8d72d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.imprint
+    - field.field.block_content.imprint.field_contact_email
+    - field.field.block_content.imprint.field_contact_phone
+    - field.field.block_content.imprint.field_copyright
+    - field.field.block_content.imprint.field_description
+    - field.field.block_content.imprint.field_imprint_title
+    - field.field.block_content.imprint.field_liability_content
+    - field.field.block_content.imprint.field_ltd_bksi
+    - field.field.block_content.imprint.field_source
+    - field.field.block_content.imprint.field_tax_id
+    - field.field.block_content.imprint.field_website_design
+    - field.field.block_content.imprint.field_website_programming
+id: block_content.imprint.default
+targetEntityType: block_content
+bundle: imprint
+mode: default
+content:
+  field_contact_email:
+    type: email_default
+    weight: 30
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+  field_contact_phone:
+    type: string_textfield
+    weight: 29
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_copyright:
+    type: string_textarea
+    weight: 33
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_description:
+    type: string_textarea
+    weight: 27
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_imprint_title:
+    type: string_textfield
+    weight: 26
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_liability_content:
+    type: string_textarea
+    weight: 32
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_ltd_bksi:
+    type: string_textfield
+    weight: 28
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_source:
+    type: string_textfield
+    weight: 34
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_tax_id:
+    type: string_textarea
+    weight: 31
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_website_design:
+    type: string_textfield
+    weight: 35
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_website_programming:
+    type: string_textfield
+    weight: 36
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

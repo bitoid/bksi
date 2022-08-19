@@ -1,0 +1,19 @@
+uuid: b9b424f3-c244-42e5-a1c7-9eb376bacca5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.imprint
+    - field.storage.block_content.field_contact_email
+id: block_content.imprint.field_contact_email
+field_name: field_contact_email
+entity_type: block_content
+bundle: imprint
+label: 'Contact E-Mail'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

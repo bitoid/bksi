@@ -1,0 +1,19 @@
+uuid: 8ddff90a-3446-4eaf-923f-7c3193efb014
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.imprint
+    - field.storage.block_content.field_ltd_bksi
+id: block_content.imprint.field_ltd_bksi
+field_name: field_ltd_bksi
+entity_type: block_content
+bundle: imprint
+label: 'LTD BKSI'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

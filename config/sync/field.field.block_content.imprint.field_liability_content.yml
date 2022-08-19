@@ -1,0 +1,19 @@
+uuid: 7d5cef4e-f8d6-4245-a1f4-7a11ba58f32e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.imprint
+    - field.storage.block_content.field_liability_content
+id: block_content.imprint.field_liability_content
+field_name: field_liability_content
+entity_type: block_content
+bundle: imprint
+label: 'Liability for content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

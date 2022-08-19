@@ -1,0 +1,106 @@
+uuid: 68bff15f-8fec-4031-ac1a-02900e429b08
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.imprint
+    - field.field.block_content.imprint.field_contact_email
+    - field.field.block_content.imprint.field_contact_phone
+    - field.field.block_content.imprint.field_copyright
+    - field.field.block_content.imprint.field_description
+    - field.field.block_content.imprint.field_imprint_title
+    - field.field.block_content.imprint.field_liability_content
+    - field.field.block_content.imprint.field_ltd_bksi
+    - field.field.block_content.imprint.field_source
+    - field.field.block_content.imprint.field_tax_id
+    - field.field.block_content.imprint.field_website_design
+    - field.field.block_content.imprint.field_website_programming
+id: block_content.imprint.default
+targetEntityType: block_content
+bundle: imprint
+mode: default
+content:
+  field_contact_email:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_contact_phone:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_copyright:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_description:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_imprint_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_liability_content:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_ltd_bksi:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_source:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_tax_id:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_website_design:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_website_programming:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 10
+    region: content
+hidden: {  }

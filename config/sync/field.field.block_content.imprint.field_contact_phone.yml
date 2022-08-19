@@ -1,0 +1,19 @@
+uuid: e9c55d26-94f3-4ba7-ac35-c471ecbf170b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.imprint
+    - field.storage.block_content.field_contact_phone
+id: block_content.imprint.field_contact_phone
+field_name: field_contact_phone
+entity_type: block_content
+bundle: imprint
+label: 'Contact Phone'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

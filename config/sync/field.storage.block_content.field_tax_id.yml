@@ -1,0 +1,19 @@
+uuid: 08112d80-489a-4ee9-87e3-3d2cd45332b0
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.field_tax_id
+field_name: field_tax_id
+entity_type: block_content
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

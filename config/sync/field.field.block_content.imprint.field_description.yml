@@ -1,0 +1,19 @@
+uuid: 2ee28929-dff5-41d7-b439-b24505bce2a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.imprint
+    - field.storage.block_content.field_description
+id: block_content.imprint.field_description
+field_name: field_description
+entity_type: block_content
+bundle: imprint
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

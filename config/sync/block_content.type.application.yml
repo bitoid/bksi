@@ -1,0 +1,8 @@
+uuid: dd6cfd5e-21f8-4091-8001-3213b5cb7413
+langcode: en
+status: true
+dependencies: {  }
+id: application
+label: Application
+revision: 0
+description: 'BKSI (block)'

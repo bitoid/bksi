@@ -5,13 +5,10 @@ dependencies:
   config:
     - block_content.type.offer
     - field.field.block_content.offer.field_description
-    - field.field.block_content.offer.field_image
     - field.field.block_content.offer.field_offer_paragraph
     - field.field.block_content.offer.field_slogan
     - field.field.block_content.offer.field_title
-    - image.style.thumbnail
   module:
-    - image
     - paragraphs
     - text
 id: block_content.offer.default
@@ -26,14 +23,6 @@ content:
     settings:
       rows: 5
       placeholder: ''
-    third_party_settings: {  }
-  field_image:
-    type: image_image
-    weight: 29
-    region: content
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
     third_party_settings: {  }
   field_offer_paragraph:
     type: paragraphs

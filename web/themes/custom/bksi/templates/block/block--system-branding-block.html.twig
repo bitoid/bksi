@@ -14,11 +14,11 @@
  */
 #}
 {% block content %}
-
+  <div class="flex">
     {% if site_logo %}
       <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home" class="mr-2 site-logo">
         <img class="max-w-[140px]" src="{{ site_logo }}" alt="{{ 'Home'|t }}" />
       </a>
     {% endif %}
-
+  </div>
 {% endblock %}

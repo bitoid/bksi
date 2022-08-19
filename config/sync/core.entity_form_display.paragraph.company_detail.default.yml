@@ -1,0 +1,70 @@
+uuid: 5c228a49-5214-4dd7-97da-839baeba8de0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.company_detail.field_description
+    - field.field.paragraph.company_detail.field_image
+    - field.field.paragraph.company_detail.field_image_align
+    - field.field.paragraph.company_detail.field_link_cta
+    - field.field.paragraph.company_detail.field_slogan
+    - field.field.paragraph.company_detail.field_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.company_detail
+  module:
+    - image
+    - link
+id: paragraph.company_detail.default
+targetEntityType: paragraph
+bundle: company_detail
+mode: default
+content:
+  field_description:
+    type: string_textarea
+    weight: 4
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_image:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_image_align:
+    type: options_select
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_link_cta:
+    type: link_default
+    weight: 5
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_slogan:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

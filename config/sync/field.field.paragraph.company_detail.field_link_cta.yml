@@ -1,0 +1,23 @@
+uuid: 51a18de1-6bd6-48ee-abd1-0132ecf373d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link_cta
+    - paragraphs.paragraphs_type.company_detail
+  module:
+    - link
+id: paragraph.company_detail.field_link_cta
+field_name: field_link_cta
+entity_type: paragraph
+bundle: company_detail
+label: 'Link CTA'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

@@ -1,0 +1,24 @@
+uuid: b1f7c69c-239f-426a-b566-285b037423e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.company_details
+    - field.field.block_content.company_details.field_company_detail
+  module:
+    - entity_reference_revisions
+id: block_content.company_details.default
+targetEntityType: block_content
+bundle: company_details
+mode: default
+content:
+  field_company_detail:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

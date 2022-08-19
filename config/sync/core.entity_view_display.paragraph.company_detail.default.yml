@@ -1,0 +1,83 @@
+uuid: db1cc89f-c2df-4d3d-a283-4a83d961c763
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.company_detail.field_description
+    - field.field.paragraph.company_detail.field_image
+    - field.field.paragraph.company_detail.field_image_align
+    - field.field.paragraph.company_detail.field_link_cta
+    - field.field.paragraph.company_detail.field_slogan
+    - field.field.paragraph.company_detail.field_title
+    - field.field.paragraph.company_detail.layout_builder__layout
+    - paragraphs.paragraphs_type.company_detail
+  module:
+    - image
+    - layout_builder
+    - layout_discovery
+    - link
+    - options
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.company_detail.default
+targetEntityType: paragraph
+bundle: company_detail
+mode: default
+content:
+  field_description:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_image_align:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_link_cta:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_slogan:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  layout_builder__layout: true

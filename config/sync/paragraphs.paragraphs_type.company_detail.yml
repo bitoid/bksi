@@ -1,0 +1,10 @@
+uuid: 69276ebf-a1a9-49a9-8853-d2703ad32566
+langcode: en
+status: true
+dependencies: {  }
+id: company_detail
+label: 'Company Detail'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

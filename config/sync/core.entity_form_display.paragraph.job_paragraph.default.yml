@@ -1,0 +1,32 @@
+uuid: f21d491b-7465-4f29-aea7-cae2b3421c74
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.job_paragraph.field_paragraph_description
+    - field.field.paragraph.job_paragraph.field_paragraph_title
+    - paragraphs.paragraphs_type.job_paragraph
+id: paragraph.job_paragraph.default
+targetEntityType: paragraph
+bundle: job_paragraph
+mode: default
+content:
+  field_paragraph_description:
+    type: string_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_paragraph_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

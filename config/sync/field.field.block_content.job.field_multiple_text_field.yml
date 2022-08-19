@@ -1,0 +1,31 @@
+uuid: 42e0670a-eb63-41b7-ba0a-5a834d7495f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.job
+    - field.storage.block_content.field_multiple_text_field
+    - paragraphs.paragraphs_type.job_paragraph
+  module:
+    - entity_reference_revisions
+id: block_content.job.field_multiple_text_field
+field_name: field_multiple_text_field
+entity_type: block_content
+bundle: job
+label: 'multiple text field'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      job_paragraph: job_paragraph
+    negate: 0
+    target_bundles_drag_drop:
+      job_paragraph:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

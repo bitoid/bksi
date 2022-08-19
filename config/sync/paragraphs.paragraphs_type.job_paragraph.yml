@@ -1,0 +1,10 @@
+uuid: b41056b3-64e0-41ff-aa25-82f228097f81
+langcode: en
+status: true
+dependencies: {  }
+id: job_paragraph
+label: 'Job paragraph'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

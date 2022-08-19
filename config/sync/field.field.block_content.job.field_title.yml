@@ -1,0 +1,21 @@
+uuid: 2b2081f5-4f7a-4038-8590-1ff69ee98831
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.job
+    - field.storage.block_content.field_title
+  module:
+    - text
+id: block_content.job.field_title
+field_name: field_title
+entity_type: block_content
+bundle: job
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

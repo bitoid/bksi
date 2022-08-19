@@ -1,0 +1,41 @@
+uuid: a80fa0c3-b1f2-455b-9e21-962ba87dc80b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.job
+    - field.field.block_content.job.field_multiple_text_field
+    - field.field.block_content.job.field_slogan
+    - field.field.block_content.job.field_title
+  module:
+    - entity_reference_revisions
+    - text
+id: block_content.job.default
+targetEntityType: block_content
+bundle: job
+mode: default
+content:
+  field_multiple_text_field:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_slogan:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_title:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

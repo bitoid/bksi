@@ -1,0 +1,29 @@
+uuid: 9ff4168c-4b80-4e4f-a08e-d6be07b942f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.application
+    - field.storage.block_content.field_accordion_title
+  module:
+    - entity_reference_revisions
+id: block_content.application.field_accordion_title
+field_name: field_accordion_title
+entity_type: block_content
+bundle: application
+label: Accordion
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: null
+    negate: 0
+    target_bundles_drag_drop:
+      paragraph:
+        weight: 2
+        enabled: false
+field_type: entity_reference_revisions

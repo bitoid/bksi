@@ -4,10 +4,12 @@ status: true
 dependencies:
   config:
     - block_content.type.application
+    - field.field.block_content.application.field_accordion_title
     - field.field.block_content.application.field_image
     - field.field.block_content.application.field_slogan
     - field.field.block_content.application.field_title
   module:
+    - entity_reference_revisions
     - image
     - text
 id: block_content.application.default
@@ -15,9 +17,18 @@ targetEntityType: block_content
 bundle: application
 mode: default
 content:
+  field_accordion_title:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
   field_image:
     type: image
-    label: above
+    label: hidden
     settings:
       image_link: ''
       image_style: ''
@@ -28,14 +39,14 @@ content:
     region: content
   field_slogan:
     type: text_default
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 2
     region: content
   field_title:
     type: text_default
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 1

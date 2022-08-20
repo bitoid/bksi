@@ -63,6 +63,9 @@ class BksiNews extends BlockBase
         '#quantity' => $quantity,
         '#slogan' => $slogan,
         '#title' => $title,
+        '#cache' => [
+          'max-age' => 0,
+        ],
       ];
     }
 

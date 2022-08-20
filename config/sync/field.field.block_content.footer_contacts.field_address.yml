@@ -1,0 +1,21 @@
+uuid: 6421aedf-1022-45a2-85c9-7036f2b5e5fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_contacts
+    - field.storage.block_content.field_address
+  module:
+    - text
+id: block_content.footer_contacts.field_address
+field_name: field_address
+entity_type: block_content
+bundle: footer_contacts
+label: Address
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

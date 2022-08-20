@@ -1,0 +1,19 @@
+uuid: 46e49581-be70-4e6f-a6df-6d51f956bae8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.job
+    - field.storage.block_content.field_footer_title
+id: block_content.job.field_footer_title
+field_name: field_footer_title
+entity_type: block_content
+bundle: job
+label: 'Footer Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

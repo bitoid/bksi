@@ -4,14 +4,43 @@ status: true
 dependencies:
   config:
     - block_content.type.job
+    - field.field.block_content.job.field_description
+    - field.field.block_content.job.field_footer_description
+    - field.field.block_content.job.field_footer_title
     - field.field.block_content.job.field_image
+    - field.field.block_content.job.field_title
   module:
     - image
+    - text
 id: block_content.job.default
 targetEntityType: block_content
 bundle: job
 mode: default
 content:
+  field_description:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_footer_description:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_footer_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
   field_image:
     type: image
     label: above
@@ -22,5 +51,12 @@ content:
         attribute: lazy
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_title:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
     region: content
 hidden: {  }

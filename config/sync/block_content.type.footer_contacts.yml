@@ -1,0 +1,8 @@
+uuid: 61350abd-cf03-4826-95e5-baa9ee44222b
+langcode: en
+status: true
+dependencies: {  }
+id: footer_contacts
+label: 'Footer Contacts'
+revision: 0
+description: ''

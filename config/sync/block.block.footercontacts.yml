@@ -1,0 +1,25 @@
+uuid: c82c364d-c7c9-43fc-9f6c-3e2b04c7b70c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:footer_contacts:9f322148-1450-464c-98e6-2512beefcd94'
+  module:
+    - block_content
+  theme:
+    - bksi
+id: footercontacts
+theme: bksi
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:9f322148-1450-464c-98e6-2512beefcd94'
+settings:
+  id: 'block_content:9f322148-1450-464c-98e6-2512beefcd94'
+  label: 'Footer Contacts'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: job_paragraph
-label: 'Job paragraph'
+label: Job
 icon_uuid: null
 icon_default: null
 description: ''

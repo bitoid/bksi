@@ -9,7 +9,7 @@ id: paragraph.job_paragraph.field_paragraph_description
 field_name: field_paragraph_description
 entity_type: paragraph
 bundle: job_paragraph
-label: paragraph_description
+label: description
 description: ''
 required: true
 translatable: false

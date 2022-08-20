@@ -4,11 +4,23 @@ status: true
 dependencies:
   config:
     - block_content.type.job
+    - field.field.block_content.job.field_image
+    - image.style.thumbnail
+  module:
+    - image
 id: block_content.job.default
 targetEntityType: block_content
 bundle: job
 mode: default
 content:
+  field_image:
+    type: image_image
+    weight: 26
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
   info:
     type: string_textfield
     weight: -5

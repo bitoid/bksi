@@ -1,0 +1,12 @@
+uuid: 5fba78c4-55ff-41d2-9625-a378e659051a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'file:file:c66666e7-c3ab-4303-aa6b-a6847cd79ccf'
+id: paragraph
+label: Accordion
+icon_uuid: c66666e7-c3ab-4303-aa6b-a6847cd79ccf
+icon_default: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMC4yMzgiIGhlaWdodD0iMTcuNTIxIiB2aWV3Qm94PSIwIDAgMjAuMjM4IDE3LjUyMSI+CiAgPGcgaWQ9IkdydXBwZV8xMjU5IiBkYXRhLW5hbWU9IkdydXBwZSAxMjU5IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMC4yMzggOC43NjYpIHJvdGF0ZSgxMjApIj4KICAgIDxwYXRoIGlkPSJQZmFkXzI5MjMzIiBkYXRhLW5hbWU9IlBmYWQgMjkyMzMiIGQ9Ik0wLDBWMy4wNTNsNy40NjYsNC4zMXY4LjY0M2wyLjY0NCwxLjUyNlY1LjgzN1oiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMCkiIGZpbGw9IiNlNjMyMjkiLz4KICA8L2c+Cjwvc3ZnPgo='
+description: ''
+behavior_plugins: {  }

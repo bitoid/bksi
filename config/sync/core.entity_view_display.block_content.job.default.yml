@@ -8,8 +8,10 @@ dependencies:
     - field.field.block_content.job.field_footer_description
     - field.field.block_content.job.field_footer_title
     - field.field.block_content.job.field_image
+    - field.field.block_content.job.field_job_paragraph
     - field.field.block_content.job.field_title
   module:
+    - entity_reference_revisions
     - image
     - text
 id: block_content.job.default
@@ -51,6 +53,15 @@ content:
         attribute: lazy
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_job_paragraph:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 5
     region: content
   field_title:
     type: text_default

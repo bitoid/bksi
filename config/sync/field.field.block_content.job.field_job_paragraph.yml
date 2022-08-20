@@ -1,0 +1,31 @@
+uuid: c2199e8d-54d2-4992-9e76-afca6e443674
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.job
+    - field.storage.block_content.field_job_paragraph
+    - paragraphs.paragraphs_type.job_paragraph
+  module:
+    - entity_reference_revisions
+id: block_content.job.field_job_paragraph
+field_name: field_job_paragraph
+entity_type: block_content
+bundle: job
+label: 'Job paragraph'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      job_paragraph: job_paragraph
+    negate: 0
+    target_bundles_drag_drop:
+      job_paragraph:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

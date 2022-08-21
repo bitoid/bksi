@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: c5903dc4-0efd-4d82-8843-f9a280a1324d
+  bundle: page
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: Career
+  created:
+    -
+      value: 1661068221
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en

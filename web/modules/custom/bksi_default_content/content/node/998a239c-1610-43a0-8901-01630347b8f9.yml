@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 998a239c-1610-43a0-8901-01630347b8f9
+  bundle: page
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: Customers
+  created:
+    -
+      value: 1661073615
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en

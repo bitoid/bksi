@@ -2,25 +2,222 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  input {
-    @apply border border-gray-500
-  }
+@font-face {
+    font-family: 'buch';
+    src:  url('../assets/Webfont/soehne-breit-buch.woff2') format('woff2')
 }
 
-@layer components {
-  .block,
-  .node {
-    @apply mb-4
-  }
+@font-face {
+    font-family: 'halbfett';
+    src:  url('../assets/Webfont/soehne-breit-halbfett.woff2') format('woff2')
+}
 
-  .node__content p,
-  .node__content ul,
-  .node__content ol {
-    @apply mb-4 leading-normal
-  }
+@layer base {
+    html {
+        font-family: 'buch';
+    }
 
-  [id$="-local-tasks"] ul {
-    @apply list-disc list-inside
-  }
+    h1,h2,h3,h4,h5,h6,a{
+        font-family: 'halbfett';
+    }
+
+    a[href^="tel:"],
+    a[href^="mailto:"] {
+        font-family: 'buch';
+        white-space: nowrap;
+    }
+
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+* {
+    transition: all .3s ease-out;
+}
+
+ul.dashed > li {
+    text-indent: -5px;
+}
+ul.dashed > li:before {
+    content: "-";
+    margin-right: 5px;
+}
+
+
+ul.arrow > li {
+    text-indent: -5px;
+}
+ul.arrow > li:before {
+    content: url(../assets/Bilder/Arrows&Navigation/arrow-textlinks.svg);
+    margin-right: 5px;
+}
+
+.search-container{
+    width: 50px;
+    position: absolute;
+    right: 0;
+}
+
+.search-container.active #search {
+    width: 100%;
+    padding: 0 26px;
+}
+
+.search-container.active {
+    width: 100%;
+    padding-right: 10px;
+}
+
+.search-container.active #closeSearch {
+    width: 25px;
+}
+
+.hamburger {
+    min-width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #E63229;
+}
+
+.hamburger-line {
+    display: block;
+    width: 20px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all .3s ease-out;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.hamburger.active .hamburger-line:nth-child(2){
+    opacity: 0;
+}
+
+.hamburger.active .hamburger-line:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .hamburger-line:nth-child(3){
+    transform:translateY(-8px) rotate(-45deg);
+}
+
+.burger-menu {
+    display: none;
+    z-index: 1000;
+}
+
+.burger-menu.active {
+    display: block;
+}
+
+.header-top {
+    transition: top .3s ease-out;
+}
+
+.header-top.active {
+    background-color: #191428;
+}
+
+.header-top.active-scroll {
+    background-color: #191428;
+    z-index: 1000;
+}
+
+.dropdown-content {
+    display: none;
+}
+
+.dropdown.active .dropdown-content {
+    display: flex;
+}
+
+.dropdown.active .dropdown-button {
+    transform: rotate(-180deg);
+}
+
+.dropdown-content-karriere {
+    display: none;
+}
+
+.dropdown-karriere-container.active .dropdown-content-karriere {
+    display: block;
+}
+
+.dropdown-karriere-container.active .dropdown-image{
+    transform: rotate(-180deg);
+}
+
+.fade-in-image-container{
+    position: relative;
+}
+
+.fade-in-image {
+    position: absolute;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 1.2s cubic-bezier(.645,.045,.355,1);
+}
+
+.fade-in-image-container.active .fade-in-image {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.text-fade {
+    overflow: hidden;
+}
+
+.text-content-fade {
+    transform: translateY(100%);
+    opacity: 0;
+    transition: all 1.5s cubic-bezier(.215,.61,.355,1);
+}
+
+.text-fade.active .text-content-fade{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.project-dropdown.active {
+    border-radius: 24px 24px 0 0;
+}
+
+.project-dropdown.active > ul {
+    display: block;
+}
+
+.fa-check {
+    opacity: 0;
+}
+
+#checkbox.checked  .fa-check {
+    opacity: 1;
+}
+
+@keyframes displayTransition {
+    0% { opacity: 0; display: none }
+    1% { opacity: 0; display: flex }
+    100% { opacity: 1; display: flex }
+}
+
+.nav-dropdown:hover .animate {
+    display: flex;
+    animation: displayTransition .6s ease-in-out forwards;
+}
+
+@media screen and (min-width: 768px) {
+    .header-top.active {
+        background-color: transparent;
+    }
+    .burger-menu.active {
+        display: none;
+    }
 }

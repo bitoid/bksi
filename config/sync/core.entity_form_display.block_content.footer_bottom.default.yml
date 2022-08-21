@@ -1,0 +1,89 @@
+uuid: 20950a52-2086-4876-8238-4ffc0a3b523f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_bottom
+    - field.field.block_content.footer_bottom.field_copyright
+    - field.field.block_content.footer_bottom.field_footer_bottom_nav
+    - field.field.block_content.footer_bottom.field_footer_image
+    - field.field.block_content.footer_bottom.field_footer_image_link
+    - field.field.block_content.footer_bottom.field_social_menu
+  module:
+    - file
+    - link
+    - paragraphs
+    - text
+id: block_content.footer_bottom.default
+targetEntityType: block_content
+bundle: footer_bottom
+mode: default
+content:
+  field_copyright:
+    type: text_textfield
+    weight: 28
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_footer_bottom_nav:
+    type: paragraphs
+    weight: 27
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_footer_image:
+    type: file_generic
+    weight: 30
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_footer_image_link:
+    type: link_default
+    weight: 29
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_social_menu:
+    type: paragraphs
+    weight: 26
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

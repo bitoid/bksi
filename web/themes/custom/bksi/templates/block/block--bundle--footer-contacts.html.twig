@@ -1,0 +1,17 @@
+<div class="md:max-w-[790px]">
+    <h2 class="flex flex-col gap-5 text-[26px] tracking-[0.3px] mb-[60px] md:mb-[120px] md:text-[35px] md:tracking-[1.75px] md:leading-[39px]">
+        <span class="text-[13px] tracking-[0.65px] md:text-base">Kontakt</span>
+        Sie planen ein Bauprojekt oder benötigen eine Beratung? <br> Dann sollten wir uns kennenlernen.
+    </h2>
+    <article class="flex flex-col text-xl leading-6 mb-7">
+        {{content.field_company_info[0]}}
+    </article>
+                
+    <div class="flex  flex-col mb-[105px] gap-8 md:gap-28 md:mb-52 md:flex-row md:items-center">
+        {{content.field_address[0]}}
+        <div class="flex flex-col text-xl leading-6 gap-2">
+            <a class="group font-normal" href="mailto:info@bksi.de">E-Mail: <span class="group-hover:text-mainRed">{{content.field_e_mail[0]}}</span></a>
+            <a class="group font-normal" href="tel:+: 0711 / 36 53 38 - 30">Telefon: <span class="group-hover:text-mainRed">{{content.field_phone[0]}}</span></a>
+        </div>
+    </div>
+</div>

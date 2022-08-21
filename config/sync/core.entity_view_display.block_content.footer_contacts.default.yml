@@ -5,6 +5,7 @@ dependencies:
   config:
     - block_content.type.footer_contacts
     - field.field.block_content.footer_contacts.field_address
+    - field.field.block_content.footer_contacts.field_company_info
     - field.field.block_content.footer_contacts.field_e_mail
     - field.field.block_content.footer_contacts.field_phone
     - field.field.block_content.footer_contacts.field_slogan
@@ -22,6 +23,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 4
+    region: content
+  field_company_info:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
     region: content
   field_e_mail:
     type: basic_string

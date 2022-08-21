@@ -45,10 +45,10 @@
       </h3>
     </div>
     <div class="flex flex-col gap-8 text-[15px] leading-[22px] tracking-[.75px]">
-      {% for paragraph in content.field_description %}
-        {% if paragraph['#paragraph'] %}
+      {% for paragraph in content.field_description[0]['#paragraph'].field_longtext_body %}
+        {% if content.field_description[0]['#paragraph'] %}
         <div class="text-fade">
-          <p class="text-content-fade">{{ paragraph['#paragraph'].field_longtext_body.value }}</p>
+          <p class="text-content-fade">{{ paragraph.value }}</p>
         </div>
         {% endif %}
       {% endfor %}
@@ -142,3 +142,4 @@
     </div>
   </div>
 </section>
+

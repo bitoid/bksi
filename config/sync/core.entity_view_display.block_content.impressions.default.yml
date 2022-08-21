@@ -1,0 +1,33 @@
+uuid: 60d98898-1657-48f8-b22b-5ecccddd59d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.impressions
+    - field.field.block_content.impressions.field_impressions_paragraph
+    - field.field.block_content.impressions.field_title
+  module:
+    - entity_reference_revisions
+    - text
+id: block_content.impressions.default
+targetEntityType: block_content
+bundle: impressions
+mode: default
+content:
+  field_impressions_paragraph:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,0 +1,21 @@
+uuid: 75abe4c8-7d86-4d40-b057-f7f21e077e63
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_contacts
+    - field.storage.block_content.field_company_info
+  module:
+    - text
+id: block_content.footer_contacts.field_company_info
+field_name: field_company_info
+entity_type: block_content
+bundle: footer_contacts
+label: 'Company Info'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

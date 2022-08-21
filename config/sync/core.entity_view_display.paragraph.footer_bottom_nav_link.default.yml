@@ -1,0 +1,27 @@
+uuid: a28c3fbd-1900-4f1d-bcc9-3c9aef3a9e3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.footer_bottom_nav_link.field_footer_bottom_nav_link
+    - paragraphs.paragraphs_type.footer_bottom_nav_link
+  module:
+    - link
+id: paragraph.footer_bottom_nav_link.default
+targetEntityType: paragraph
+bundle: footer_bottom_nav_link
+mode: default
+content:
+  field_footer_bottom_nav_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

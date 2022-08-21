@@ -1,0 +1,34 @@
+uuid: 0716379c-3f59-486b-88b1-e79fca1a159b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_bottom
+    - field.storage.block_content.field_footer_bottom_nav
+    - paragraphs.paragraphs_type.footer_bottom_nav_link
+  module:
+    - entity_reference_revisions
+id: block_content.footer_bottom.field_footer_bottom_nav
+field_name: field_footer_bottom_nav
+entity_type: block_content
+bundle: footer_bottom
+label: 'Footer Bottom Nav'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      footer_bottom_nav_link: footer_bottom_nav_link
+    negate: 0
+    target_bundles_drag_drop:
+      footer_bottom_nav_link:
+        weight: 3
+        enabled: true
+      footer_social_menu_item:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

@@ -25,43 +25,43 @@
  * @see template_preprocess_block()
  */
 #}
- <section class="bg-lightGray">
-        <div class="relative fade-in-image-container h-[30vh] md:h-screen">
-            <img class="w-full fade-in-image h-full object-cover" src="{{ file_url(content.field_image.0['#item'].entity.uri.value) }}" alt="">
+<section class="bg-lightGray">
+    <div class="relative fade-in-image-container h-[30vh] md:h-screen">
+        <img class="w-full fade-in-image h-full object-cover" src="{{ file_url(content.field_image.0['#item'].entity.uri.value) }}" alt="">
+    </div>
+    <div class="flex flex-col items-start px-4 py-20 gap-16 md:px-10 md:py-40 md:flex-row md:gap-56">
+        <div class="text-fade">
+            <h3 class="text-content-fade text-[26px] tracking-[1.3px] leading-none flex flex-col gap-[50px] md:text-[35px] md:leading-10 md:tracking-[1.75px]">
+                {{ content.field_title }}
+                <span class="text-[15px] tracking-[0.75px] leading-[22px]">{{content.field_description}}</span>
+            </h3>
         </div>
-        <div class="flex flex-col items-start px-4 py-20 gap-16 md:px-10 md:py-40 md:flex-row md:gap-56">
-            <div class="text-fade">
-                <h3 class="text-content-fade text-[26px] tracking-[1.3px] leading-none flex flex-col gap-[50px] md:text-[35px] md:leading-10 md:tracking-[1.75px]">
-                    {{ content.field_title }}
-                    <span class="text-[15px] tracking-[0.75px] leading-[22px]">{{content.field_description}}</span>
-                </h3>
+        <div class="flex flex-col w-full ">
+            <div class="flex flex-col gap-5 w-full mb-[75px] md-[100px]">					 		
+                {% for paragraph in content.field_job_paragraph %} 
+                    {% if paragraph['#paragraph'] %}						
+                        <div class="text-fade">
+                            <a href="#" class="text-content-fade flex items-center justify-between bg-white min-w-full gap-5 px-5 py-8 md:px-8">
+                                <div class="flex flex-col gap-5">
+                                    <h5 class="text-xl">{{ paragraph['#paragraph'].field_paragraph_title.value }}</h5>
+                                    <p class="text-[15px] leading-[22px] tracking-[.75px]">{{ paragraph['#paragraph'].field_paragraph_description.value }}</p>
+                                </div>
+                                <img class="w-5 h-5" src="{{ base_path ~ directory }}/images/Arrows_Navigation/arrow-textlinks.svg" alt="">
+                            </a>
+                        </div>
+                    {% endif %}
+                {% endfor %}
             </div>
-            <div class="flex flex-col w-full ">
-                <div class="flex flex-col gap-5 w-full mb-[75px] md-[100px]">					 		
-					 		{% for paragraph in content.field_job_paragraph %} 
-								{% if paragraph['#paragraph'] %}						
-									<div class="text-fade">
-											<a href="#" class="text-content-fade flex items-center justify-between bg-white min-w-full gap-5 px-5 py-8 md:px-8">
-												<div class="flex flex-col gap-5">
-													<h5 class="text-xl">{{ paragraph['#paragraph'].field_paragraph_title.value }}</h5>
-													<p class="text-[15px] leading-[22px] tracking-[.75px]">{{ paragraph['#paragraph'].field_paragraph_description.value }}</p>
-												</div>
-												<img class="w-5 h-5" src="{{ base_path ~ directory }}/images/Arrows_Navigation/arrow-textlinks.svg" alt="">
-											</a>
-									</div>
-								{% endif %}
-							{% endfor %}
+            <div class="flex flex-col gap-9">
+                <div class="text-fade">
+                    <h3 class="text-content-fade text-[26px] tracking-[1.3px] leading-none flex flex-col gap-5 md:gap-7 md:text-[35px] md:leading-10 md:tracking-[1.75px]">
+                        {{content.field_footer_title}}
+                    </h3>
                 </div>
-                <div class="flex flex-col gap-9">
-                    <div class="text-fade">
-                        <h3 class="text-content-fade text-[26px] tracking-[1.3px] leading-none flex flex-col gap-5 md:gap-7 md:text-[35px] md:leading-10 md:tracking-[1.75px]">
-                            {{content.field_footer_title}}
-                        </h3>
-                    </div>
-                    <div class="text-fade">
-                        <p class="text-content-fade text-[15px] tracking-[.75px] leading-[22px]">{{content.field_footer_description}}</p>
-                    </div>
+                <div class="text-fade">
+                    <p class="text-content-fade text-[15px] tracking-[.75px] leading-[22px]">{{content.field_footer_description}}</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>

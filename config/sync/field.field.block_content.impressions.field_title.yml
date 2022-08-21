@@ -1,0 +1,21 @@
+uuid: 655e16e7-634b-4019-927c-6b8771ab796a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.impressions
+    - field.storage.block_content.field_title
+  module:
+    - text
+id: block_content.impressions.field_title
+field_name: field_title
+entity_type: block_content
+bundle: impressions
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

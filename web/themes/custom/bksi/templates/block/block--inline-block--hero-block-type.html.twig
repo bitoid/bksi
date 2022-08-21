@@ -1,6 +1,6 @@
 <div class="h-screen items-center overflow-x-hidden">
-        <div class="absolute w-screen h-screen left-0 top-0 -z-10 overflow-hidden">
-            <div>{{ content.field_image }}</div>
+        <div class="absolute w-screen h-screen left-0 top-0 -z-10">
+            <img src="{{ file_url(content.field_image.0['#item'].entity.uri.value) }}" alt="" class="object-cover w-full h-full">
             <div class="absolute bg-black w-full h-full z-10 top-0 left-0 bg-opacity-70"></div>
         </div>
         {# <div class="header-top relative left-0 top-0 flex items-center justify-between w-full gap-5 p-5 md:fixed lg:px-11 lg:py-6">

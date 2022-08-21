@@ -3,7 +3,7 @@
         <div class="text-fade">
             <h3 class="text-[26px] text-content-fade tracking-[1.3px] leading-none flex flex-col gap-5 md:gap-7 md:text-[35px] md:leading-10 md:tracking-[1.75px]">
                 <span class="text-base">{{ content.field_slogan.0 }}</span>
-                    {{ content.field_title.0 }}
+                    {{ content.field_title[0]['#text'] | striptags }}
            </h3>
         </div>
         <div class="text-[15px] leading-[22px] tracking-[0.75px] mt-[60px] md:mt-9 md:w-1/2">

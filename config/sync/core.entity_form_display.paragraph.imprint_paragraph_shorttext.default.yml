@@ -1,0 +1,32 @@
+uuid: acceb119-d01b-40d1-95e5-628f4fd55e97
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.imprint_paragraph_shorttext.field_shorttext_body
+    - field.field.paragraph.imprint_paragraph_shorttext.field_shorttext_title
+    - paragraphs.paragraphs_type.imprint_paragraph_shorttext
+id: paragraph.imprint_paragraph_shorttext.default
+targetEntityType: paragraph
+bundle: imprint_paragraph_shorttext
+mode: default
+content:
+  field_shorttext_body:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_shorttext_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

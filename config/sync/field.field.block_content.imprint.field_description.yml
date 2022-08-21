@@ -1,10 +1,13 @@
-uuid: 2ee28929-dff5-41d7-b439-b24505bce2a7
+uuid: 98742633-c5fd-4928-b0dc-4cb12a9a0edc
 langcode: en
 status: true
 dependencies:
   config:
     - block_content.type.imprint
     - field.storage.block_content.field_description
+    - paragraphs.paragraphs_type.imprint_paragraph_longtext
+  module:
+    - entity_reference_revisions
 id: block_content.imprint.field_description
 field_name: field_description
 entity_type: block_content
@@ -15,5 +18,17 @@ required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
-field_type: string_long
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      imprint_paragraph_longtext: imprint_paragraph_longtext
+    negate: 0
+    target_bundles_drag_drop:
+      imprint_paragraph_longtext:
+        weight: 3
+        enabled: true
+      imprint_paragraph_shorttext:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,10 +1,13 @@
-uuid: 8ddff90a-3446-4eaf-923f-7c3193efb014
+uuid: 2a8542dc-cfe9-4cc9-9e84-3b81662d79fe
 langcode: en
 status: true
 dependencies:
   config:
     - block_content.type.imprint
     - field.storage.block_content.field_ltd_bksi
+    - paragraphs.paragraphs_type.imprint_paragraph_shorttext
+  module:
+    - entity_reference_revisions
 id: block_content.imprint.field_ltd_bksi
 field_name: field_ltd_bksi
 entity_type: block_content
@@ -15,5 +18,17 @@ required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
-field_type: string
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      imprint_paragraph_shorttext: imprint_paragraph_shorttext
+    negate: 0
+    target_bundles_drag_drop:
+      imprint_paragraph_longtext:
+        weight: 3
+        enabled: false
+      imprint_paragraph_shorttext:
+        weight: 4
+        enabled: true
+field_type: entity_reference_revisions

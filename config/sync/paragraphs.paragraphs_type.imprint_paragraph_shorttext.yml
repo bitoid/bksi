@@ -1,0 +1,10 @@
+uuid: 758ea7e0-38cd-41ab-828e-11f44485cc8d
+langcode: en
+status: true
+dependencies: {  }
+id: imprint_paragraph_shorttext
+label: 'imprint paragraph shorttext'
+icon_uuid: null
+icon_default: null
+description: 'paragraph type for short text fields'
+behavior_plugins: {  }

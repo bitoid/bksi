@@ -1,18 +1,20 @@
-uuid: 0abbe175-4c9e-44c4-b057-dafde21dd8f4
+uuid: 628324d2-26ec-47ea-881c-2d19ecc8a02c
 langcode: en
 status: true
 dependencies:
   module:
     - block_content
+    - entity_reference_revisions
+    - paragraphs
 id: block_content.field_copyright
 field_name: field_copyright
 entity_type: block_content
-type: string_long
+type: entity_reference_revisions
 settings:
-  case_sensitive: false
-module: core
+  target_type: paragraph
+module: entity_reference_revisions
 locked: false
-cardinality: -1
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

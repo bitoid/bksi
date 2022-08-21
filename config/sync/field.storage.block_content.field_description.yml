@@ -1,16 +1,18 @@
-uuid: 1da22733-7229-4b1d-94e4-c8fa78c78f30
+uuid: 8b905d63-400c-4cec-8835-fbf1b9b871dc
 langcode: en
 status: true
 dependencies:
   module:
     - block_content
+    - entity_reference_revisions
+    - paragraphs
 id: block_content.field_description
 field_name: field_description
 entity_type: block_content
-type: string_long
+type: entity_reference_revisions
 settings:
-  case_sensitive: false
-module: core
+  target_type: paragraph
+module: entity_reference_revisions
 locked: false
 cardinality: 1
 translatable: true

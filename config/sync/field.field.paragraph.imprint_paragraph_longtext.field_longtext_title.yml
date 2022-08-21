@@ -1,0 +1,19 @@
+uuid: 811dbb60-fb0f-4433-b8be-61a92252a853
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_longtext_title
+    - paragraphs.paragraphs_type.imprint_paragraph_longtext
+id: paragraph.imprint_paragraph_longtext.field_longtext_title
+field_name: field_longtext_title
+entity_type: paragraph
+bundle: imprint_paragraph_longtext
+label: longtext_title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

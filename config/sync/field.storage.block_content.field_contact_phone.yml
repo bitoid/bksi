@@ -1,20 +1,20 @@
-uuid: a308622b-1169-4c3b-b1b9-1a2266f20375
+uuid: 48bbccfe-4da8-4b61-b8b6-d8addda0fdca
 langcode: en
 status: true
 dependencies:
   module:
     - block_content
+    - entity_reference_revisions
+    - paragraphs
 id: block_content.field_contact_phone
 field_name: field_contact_phone
 entity_type: block_content
-type: string
+type: entity_reference_revisions
 settings:
-  max_length: 255
-  case_sensitive: false
-  is_ascii: false
-module: core
+  target_type: paragraph
+module: entity_reference_revisions
 locked: false
-cardinality: -1
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

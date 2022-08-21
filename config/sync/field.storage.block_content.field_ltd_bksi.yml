@@ -1,20 +1,20 @@
-uuid: e21c345f-52e6-4e66-be75-dddb5f667a11
+uuid: f1465ede-ae06-41c2-aced-269bd38d41a4
 langcode: en
 status: true
 dependencies:
   module:
     - block_content
+    - entity_reference_revisions
+    - paragraphs
 id: block_content.field_ltd_bksi
 field_name: field_ltd_bksi
 entity_type: block_content
-type: string
+type: entity_reference_revisions
 settings:
-  max_length: 255
-  case_sensitive: false
-  is_ascii: false
-module: core
+  target_type: paragraph
+module: entity_reference_revisions
 locked: false
-cardinality: -1
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

@@ -1,0 +1,10 @@
+uuid: 9f6c4677-f8ca-4c35-9385-b7167980b61c
+langcode: en
+status: true
+dependencies: {  }
+id: imprint_paragraph_longtext
+label: 'imprint paragraph longtext'
+icon_uuid: null
+icon_default: null
+description: 'paragraph type for longtext fields'
+behavior_plugins: {  }

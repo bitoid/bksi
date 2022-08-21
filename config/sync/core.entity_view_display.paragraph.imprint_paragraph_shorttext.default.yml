@@ -1,0 +1,30 @@
+uuid: 0f376198-ad27-4187-82dc-228e84ec9ffe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.imprint_paragraph_shorttext.field_shorttext_body
+    - field.field.paragraph.imprint_paragraph_shorttext.field_shorttext_title
+    - paragraphs.paragraphs_type.imprint_paragraph_shorttext
+id: paragraph.imprint_paragraph_shorttext.default
+targetEntityType: paragraph
+bundle: imprint_paragraph_shorttext
+mode: default
+content:
+  field_shorttext_body:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_shorttext_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

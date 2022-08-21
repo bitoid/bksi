@@ -1,10 +1,13 @@
-uuid: e9c55d26-94f3-4ba7-ac35-c471ecbf170b
+uuid: 7ea07190-421b-4142-b0bb-34d15b5590a7
 langcode: en
 status: true
 dependencies:
   config:
     - block_content.type.imprint
     - field.storage.block_content.field_contact_phone
+    - paragraphs.paragraphs_type.imprint_paragraph_shorttext
+  module:
+    - entity_reference_revisions
 id: block_content.imprint.field_contact_phone
 field_name: field_contact_phone
 entity_type: block_content
@@ -15,5 +18,17 @@ required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
-field_type: string
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      imprint_paragraph_shorttext: imprint_paragraph_shorttext
+    negate: 0
+    target_bundles_drag_drop:
+      imprint_paragraph_longtext:
+        weight: 3
+        enabled: false
+      imprint_paragraph_shorttext:
+        weight: 4
+        enabled: true
+field_type: entity_reference_revisions

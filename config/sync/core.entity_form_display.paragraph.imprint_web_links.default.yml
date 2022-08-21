@@ -1,0 +1,41 @@
+uuid: d5ab0a0c-159b-4284-879d-2f730dd6b0cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.imprint_web_links.field_web_link_body
+    - field.field.paragraph.imprint_web_links.field_web_link_title
+    - field.field.paragraph.imprint_web_links.field_web_link_url
+    - paragraphs.paragraphs_type.imprint_web_links
+id: paragraph.imprint_web_links.default
+targetEntityType: paragraph
+bundle: imprint_web_links
+mode: default
+content:
+  field_web_link_body:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_web_link_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_web_link_url:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,19 +1,37 @@
-uuid: cf1d165a-1c0b-4a09-8f33-aeebd5aa7cd0
+uuid: 3e1d92da-795e-4924-8277-712f46f4a207
 langcode: en
 status: true
 dependencies:
   config:
     - block_content.type.imprint
     - field.storage.block_content.field_website_programming
+    - paragraphs.paragraphs_type.imprint_web_links
+  module:
+    - entity_reference_revisions
 id: block_content.imprint.field_website_programming
 field_name: field_website_programming
 entity_type: block_content
 bundle: imprint
 label: 'Website Programming'
-description: "first value is description of programing\r\nsecond value link"
+description: 'add title only on one paragraph per field'
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
-field_type: string
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      imprint_web_links: imprint_web_links
+    negate: 0
+    target_bundles_drag_drop:
+      imprint_paragraph_longtext:
+        weight: 5
+        enabled: false
+      imprint_paragraph_shorttext:
+        weight: 6
+        enabled: false
+      imprint_web_links:
+        weight: 4
+        enabled: true
+field_type: entity_reference_revisions

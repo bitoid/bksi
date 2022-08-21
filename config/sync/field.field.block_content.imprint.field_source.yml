@@ -1,10 +1,12 @@
-uuid: 1ef08212-b260-4ca5-8f64-005c0d1ff83e
+uuid: 92e606a4-8615-48f4-a085-578afd685e72
 langcode: en
 status: true
 dependencies:
   config:
     - block_content.type.imprint
     - field.storage.block_content.field_source
+  module:
+    - link
 id: block_content.imprint.field_source
 field_name: field_source
 entity_type: block_content
@@ -15,5 +17,7 @@ required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
-field_type: string
+settings:
+  title: 1
+  link_type: 17
+field_type: link

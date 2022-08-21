@@ -1,0 +1,10 @@
+uuid: 9882b02b-1b7c-4ab6-826c-d40432e065ed
+langcode: en
+status: true
+dependencies: {  }
+id: imprint_web_links
+label: 'imprint web links'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

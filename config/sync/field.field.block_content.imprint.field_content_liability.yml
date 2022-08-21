@@ -1,18 +1,18 @@
-uuid: 40f11e51-a384-4f91-bc9f-2aac1819734b
+uuid: ca43e8f5-43ca-436f-ac46-65432dc2319f
 langcode: en
 status: true
 dependencies:
   config:
     - block_content.type.imprint
-    - field.storage.block_content.field_copyright
+    - field.storage.block_content.field_content_liability
     - paragraphs.paragraphs_type.imprint_paragraph_longtext
   module:
     - entity_reference_revisions
-id: block_content.imprint.field_copyright
-field_name: field_copyright
+id: block_content.imprint.field_content_liability
+field_name: field_content_liability
 entity_type: block_content
 bundle: imprint
-label: Copyright
+label: 'Liability for content'
 description: ''
 required: false
 translatable: false

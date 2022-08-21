@@ -1,20 +1,20 @@
-uuid: 17635eb8-ac5b-4ecd-9c42-13c7a36f3913
+uuid: 97ea6abc-9ec4-49c2-8ad4-f5b77d9dc4c5
 langcode: en
 status: true
 dependencies:
   module:
     - block_content
+    - entity_reference_revisions
+    - paragraphs
 id: block_content.field_website_design
 field_name: field_website_design
 entity_type: block_content
-type: string
+type: entity_reference_revisions
 settings:
-  max_length: 255
-  case_sensitive: false
-  is_ascii: false
-module: core
+  target_type: paragraph
+module: entity_reference_revisions
 locked: false
-cardinality: 2
+cardinality: -1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

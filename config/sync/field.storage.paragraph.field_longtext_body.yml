@@ -1,12 +1,12 @@
-uuid: 7ea9651a-666f-417d-8817-25cb28741b64
+uuid: 0e1dab75-ee2d-4268-9038-a6ae011cac90
 langcode: en
 status: true
 dependencies:
   module:
-    - block_content
-id: block_content.field_liability_content
-field_name: field_liability_content
-entity_type: block_content
+    - paragraphs
+id: paragraph.field_longtext_body
+field_name: field_longtext_body
+entity_type: paragraph
 type: string_long
 settings:
   case_sensitive: false

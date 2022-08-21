@@ -1,0 +1,19 @@
+uuid: ceafd9ac-77c3-470b-99be-e3cad21b2d72
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_shorttext_title
+    - paragraphs.paragraphs_type.imprint_paragraph_shorttext
+id: paragraph.imprint_paragraph_shorttext.field_shorttext_title
+field_name: field_shorttext_title
+entity_type: paragraph
+bundle: imprint_paragraph_shorttext
+label: shorttext_title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

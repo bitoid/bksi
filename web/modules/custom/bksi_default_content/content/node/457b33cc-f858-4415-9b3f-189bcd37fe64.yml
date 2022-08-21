@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 457b33cc-f858-4415-9b3f-189bcd37fe64
+  bundle: page
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Ask Detail page'
+  created:
+    -
+      value: 1661091115
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en

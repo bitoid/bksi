@@ -1,0 +1,49 @@
+{#
+/**
+ *
+ * Available variables:
+ * - content.field_title: Block title
+ * - content.field_impressions_paragraph: Contains images
+ */
+#}
+
+<section>
+    <div class="flex flex-col gap-10 mt-[150px] mb-[100px] md:my-[150px]">
+        <h3 class="text-[26px] tracking-[1.3px] leading-none px-4 md:px-7 md:text-[35px] md:leading-10 md:tracking-[1.75px]">
+            {{ content.field_title.0 }}
+        </h3>
+        <div id="image-carousel" class="splide " aria-label="Beautiful Images">
+            <div class="splide__arrows">
+                <button class="splide__arrow splide__arrow--prev absolute opacity-100 top-0 left-full -translate-x-[300%] translate-y-1/2  w-[50px] h-[50px] bg-white rounded-full flex justify-center items-center hover:opacity-100 hover:scale-125 md:translate-x-[150%] md:left-1/2"
+                type="button"
+                aria-label="Previous slide"
+                aria-controls="splide01-track">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="9.371" height="10.824" viewBox="0 0 9.371 10.824">
+                        <path id="Pfad_29233" data-name="Pfad 29233" d="M0,0V1.633L3.993,3.938V8.561l1.414.816V3.122Z" transform="translate(4.688) rotate(30)" fill="#e63229"/>
+                    </svg>
+                </button>
+                <button class="splide__arrow splide__arrow--next absolute opacity-100 top-0 left-full -translate-x-[150%] translate-y-1/2 w-[50px] h-[50px] bg-white rounded-full flex justify-center items-center hover:opacity-100 hover:scale-125 md:translate-x-[300%] md:left-1/2"
+                type="button"
+                aria-label="Next slide"
+                aria-controls="splide01-track">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="9.371" height="10.824" viewBox="0 0 9.371 10.824">
+                        <path id="Pfad_29233" data-name="Pfad 29233" d="M0,0V1.633L3.993,3.938V8.561l1.414.816V3.122Z" transform="translate(4.688) rotate(30)" fill="#e63229"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="splide__track">
+                <ul class="splide__list">
+                    {%for paragraph in content.field_impressions_paragraph %}
+                        {% if paragraph['#paragraph'] %}
+                            {% for image in paragraph['#paragraph'].field_image %}
+                            <li class="splide__slide">
+                                <img class="h-full w-full object-cover" src="{{ file_url(image.entity.fileuri) }}" alt="{{ image.value.alt }} ">
+                            </li>
+                            {% endfor %}
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

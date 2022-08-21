@@ -1,17 +1,17 @@
 let dropdownEl = document.getElementById('dropdowns');
 let outputEl = document.querySelector(".output");
-let drop = document.querySelector('.project-dropdown')
+//fetching data from endpoint
 async function fetchProjectsData() {
     const response = await fetch('/bksi/projects/data');
     let fetched = await response.json();
     projects = fetched.data;
 }
 
-
 async function renderData() {
     await fetchProjectsData();
     let projectsArr = [];
     let templateHtml = "";
+    //creating html template for projects twig file which will be rendered according to some logic
     for (let item in projects) {
         templateHtml = `
         <div class="group md:relative md:overflow-hidden">
@@ -40,8 +40,9 @@ async function renderData() {
         </div>
     `;
         projectsArr.push(templateHtml);
-        console.log(projectsArr)
     }
+    //renders all of projects if there are less then 8 of them
+    //else renders last 8 of them
     if (projectsArr.length < 8) {
         for (let i = 0; i < projectsArr.length; i++) {
             outputEl.innerHTML += projectsArr[i];

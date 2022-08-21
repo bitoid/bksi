@@ -1,7 +1,8 @@
 <?php
-namespace Drupal\projects\Plugin\Block;
-use Drupal\Core\Block\BlockBase;
 
+namespace Drupal\projects\Plugin\Block;
+
+use Drupal\Core\Block\BlockBase;
 
 /**
  * Provides a 'Ged Currency Chart Block' Block.
@@ -13,17 +14,17 @@ use Drupal\Core\Block\BlockBase;
  * )
  */
 
-class ProjectsBlock extends BlockBase {
-  public function build() {
-
-    return [
-        // '#markup' => $this->t('Hello, World!'),
-        '#theme' => 'projects',
-        '#attached' => [
-            'library' => [
-              'projects/projects_block_lib',
+class ProjectsBlock extends BlockBase
+{
+    public function build()
+    {
+        return [
+            '#theme' => 'projects',
+            '#attached' => [
+                'library' => [
+                    'projects/projects_block_lib',
+                ],
             ],
-        ],
-    ];
-  }
+        ];
+    }
 }

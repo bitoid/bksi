@@ -1,0 +1,22 @@
+{#
+/**
+ *
+ * Available variables:
+ * - content.field_title: Block title
+ * - content.field_customers_p: Contains one paragraph
+ * - content.field_customers_p.0['#paragraph'].field_image: Contains paragraph images
+ */
+#}
+
+<section>
+    <div class="px-4 py-[75px] bg-lightGray md:px-10 md:py-[150px]">
+        <h3 class="flex flex-col gap-5 text-[26px] tracking-[0.3px] mb-[60px] md:text-[35px] md:tracking-[1.75px] md:leading-[41px]">
+            {{ content.field_title[0]['#text'] | striptags }}
+        </h3>
+        <div class="grid grid-cols-2 gap-2 md:grid-cols-6 md:gap-10">
+            {% for image in content.field_customers_p.0['#paragraph'].field_image %}
+            <img class="w-full h-full"src="{{ file_url(image.entity.fileuri) }}" alt="{{ image.value.alt }}">
+            {% endfor %}
+        </div>
+    </div>
+</section>

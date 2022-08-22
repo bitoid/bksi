@@ -1,81 +1,11 @@
 <div class="h-screen items-center overflow-x-hidden">
-        <div class="absolute w-screen h-screen left-0 top-0 -z-10">
-            <img src="{{ file_url(content.field_image.0['#item'].entity.uri.value) }}" alt="" class="object-cover w-full h-full">
-            <div class="absolute bg-black w-full h-full z-10 top-0 left-0 bg-opacity-70"></div>
-        </div>
-        {# <div class="header-top relative left-0 top-0 flex items-center justify-between w-full gap-5 p-5 md:fixed lg:px-11 lg:py-6">
-            <a href="./index.html"><img class="max-w-[140px]" src="./assets/Bilder/Arrows&Navigation/bski-logo.svg" alt="bski-logo"></a>
-            <div class=" relative flex items-center w-[80%]">
-                <nav class="hidden w-fit md:block mr-10">
-                    <ul class="flex items-center justify-between gap-5 lg:gap-[50px]">
-                        <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="./src/leistungen.html">Leistungen</a></li>
-                        <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="./src/projekte.html">Projekte</a></li>
-                        <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="./src/unternehmen.html">Unternehmen</a></li>
-                        <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="./src/karriere.html">Karriere</a></li>
-                        <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="./src/aktuelles.html">Aktuelles</a></li>
-                        <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="./src/kontakt.html">Kontakt</a></li>
-                
-                    </ul>
-                </nav>
-                <div class="hidden search-container justify-self-end bg-white rounded-[50px] h-[50px] items-center justify-end md:flex">
-                    <input class="w-0 h-full focus:outline-none bg-transparent duration-300" type="search" name="search" id="search" placeholder="Suchbegriff eingeben">
-                    <button onclick="searchWidth()" class="h-full aspect-square flex justify-center items-center rounded-full"><img src="./assets/Bilder/Arrows&Navigation/search-icon.svg" alt="search icon"></button>
-                    <button id="closeSearch" onclick="closeSearch()" class="text-2xl h-full w-0 overflow-hidden text-midGray"><i class="fa fa-times w-4" aria-hidden="true"></i></button>
-                </div>
-            </div>
-            <button onclick="burgerMenu()" class="hamburger md:hidden">
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-            </button>
-            <nav class="burger-menu absolute px-7 pb-16 left-0 top-full w-full min-h-[calc(100vh-82px)] max-h-[calc(100vh-82px)] overflow-auto bg-darkBlue md:hidden">
-                <ul class="flex flex-col p-4 mt-20 gap-10 text-[22px]">
-                    <li class="dropdown">
-                        <div class="flex items-center gap-11">
-                            <a class="text-white duration-300 ease-out hover:text-mainRed" href="./src/projekte.html">leistungen</a>
-                            <button class="dropdown-button">
-                                <img src="./assets/Bilder/Arrows&Navigation/arrow-open-close-content.svg" alt="dropdown">
-                            </button>
-                        </div>
-                        <nav class="dropdown-content flex-col text-base gap-7 mt-10 ml-8">
-                            <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="./src/tragwerksplanung.html">Tragwerksplaung</a></li>
-                            <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="#">Generalplanung</a></li>
-                            <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="#">Digitale Planung / BIM</a></li>
-                            <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="#">Bauwerksprüfung</a></li>
-                            <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="#">Gutachten</a></li>
-                            <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="./src/bautechnische-prufung.html">Bautechnische Prüfung</a></li>
-                        </nav>
-                    </li>
-                    <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="./src/projekte.html">Projekte</a></li>
-                    <li class="dropdown">
-                        <div class="flex items-center gap-11">
-                            <a class="text-white duration-300 ease-out hover:text-mainRed" href="./src/unternehmen.html">Unternehmen</a>
-                            <button class="dropdown-button">
-                                <img src="./assets/Bilder/Arrows&Navigation/arrow-open-close-content.svg" alt="dropdown">
-                            </button>
-                        </div>
-                        <nav class="dropdown-content flex-col text-base gap-7 mt-10 ml-8">
-                            <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="./src/tragwerksplanung.html">Tragwerksplaung</a></li>
-                            <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="#">Generalplanung</a></li>
-                            <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="#">Digitale Planung / BIM</a></li>
-                            <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="#">Bauwerksprüfung</a></li>
-                            <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="#">Gutachten</a></li>
-                            <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="./src/bautechnische-prufung.html">Bautechnische Prüfung</a></li>
-                        </nav>
-                    </li>
-                    <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="./src/karriere.html">Karriere</a></li>
-                    <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="./src/aktuelles.html">Aktuelles</a></li>
-                    <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="./src/kontakt.html">Kontakt</a></li>
-                    <li class="bg-white flex items-center overflow-hidden rounded-[25px] h-[50px]">
-                        <input class="px-4 w-full h-full focus:outline-none" type="search" name="search" placeholder="Suchbegriff eingeben">
-                        <button class="h-full aspect-square flex justify-center items-center rounded-full"><img src="./assets/Bilder/Arrows&Navigation/search-icon.svg" alt="search icon"></button>
-                    </li>
-                </ul>
-            </nav>
-        </div> #}
-        <h1 class="w-2/3 absolute top-1/2 left-4 -translate-y-1/2 flex flex-col gap-7 text-white text-[35px] tracking-[1.5px] leading-normal hyphens-manual md:gap-9 md:text-[70px] md:left-11 md:leading-tight md:tracking-[3px]">
-            <span class="text-xs md:text-base">{{ content.field_slogan }}</span>
-            {{ content.field_title }}
-        </h1>
-        <img class="absolute bottom-9 left-1/2 -translate-x-1/2" src="{{ base_path ~ directory }}/images/arrow-header.svg" alt="arrow down">
+    <div class="absolute w-screen h-screen left-0 top-0 -z-10">
+        <img src="{{ file_url(content.field_image.0['#item'].entity.uri.value) }}" alt="" class="object-cover w-full h-full">
+        <div class="absolute bg-black w-full h-full z-10 top-0 left-0 bg-opacity-70"></div>
     </div>
+    <h1 class="w-2/3 absolute top-1/2 left-4 -translate-y-1/2 flex flex-col gap-7 text-white text-[35px] tracking-[1.5px] leading-normal hyphens-manual md:gap-9 md:text-[70px] md:left-11 md:leading-tight md:tracking-[3px]">
+        <span class="text-xs md:text-base">{{ content.field_slogan.0["#text"]|striptags }}</span>
+        {{ content.field_title.0["#text"]|striptags }}
+    </h1>
+    <img class="absolute bottom-9 left-1/2 -translate-x-1/2" src="{{ base_path ~ directory }}/images/arrow-header.svg" alt="arrow down">
+</div>

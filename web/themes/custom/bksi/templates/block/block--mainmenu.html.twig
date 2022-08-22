@@ -32,23 +32,21 @@
  */
 #}
 {% set heading_id = attributes.id ~ '-menu'|clean_id %}
-<div class=" relative flex items-center w-[80%]">
-<nav class="hidden w-fit md:block mr-10" role="navigation" aria-labelledby="{{ heading_id }}"{{ attributes|without('role', 'aria-labelledby') }}>
+<div class="burger-menu absolute px-7 pb-16 pt-20 left-0 top-full w-full min-h-[calc(100vh-82px)] max-h-[calc(100vh-82px)] overflow-auto bg-darkBlue md:top-0 md:p-0 md:min-h-fit md:overflow-visible md:bg-transparent md:relative flex items-center md:w-[80%] h-full">
+<nav class="md:block md:mr-10 md:h-full md:w-fit" role="navigation" aria-labelledby="{{ heading_id }}"{{ attributes|without('role', 'aria-labelledby') }}>
   {# Label. If not displayed, we still provide it for screen readers. #}
   {% if not configuration.label_display %}
     {% set title_attributes = title_attributes.addClass('visually-hidden') %}
   {% endif %}
-
-
   {# Menu. #}
   {% block content %}
     {{ content }}
   {% endblock %}
 </nav>
- <div class="hidden search-container justify-self-end bg-white rounded-[50px] h-[50px] items-center justify-end md:flex">
-    <input class="w-0 h-full focus:outline-none bg-transparent duration-300" type="search" name="search" id="search" placeholder="Suchbegriff eingeben">
+ <div class="w-full mt-5 md:absolute md:right-0  search-container justify-self-end bg-white rounded-[50px] h-[50px] flex items-center md:mt-0 md:justify-end md:w-[50px]">
+    <input class="w-full h-full focus:outline-none bg-transparent duration-300 px-3 md:w-0" type="search" name="search" id="search" placeholder="Suchbegriff eingeben">
     <button onclick="searchWidth()" class="h-full aspect-square flex justify-center items-center rounded-full"><img src="{{ base_path ~ directory }}/images/search-icon.svg" alt="search icon"></button>
-    <button id="closeSearch" onclick="closeSearch()" class="text-2xl h-full w-0 overflow-hidden text-midGray"><i class="fa fa-times w-4" aria-hidden="true"></i></button>
+    <button id="closeSearch" onclick="closeSearch()" class="hidden text-2xl h-full w-0 overflow-hidden text-midGray md:block"><i class="fa fa-times w-4" aria-hidden="true"></i></button>
 </div>
 </div>
 <button onclick="burgerMenu()" class="hamburger md:hidden">
@@ -56,18 +54,3 @@
     <span class="hamburger-line"></span>
     <span class="hamburger-line"></span>
 </button>
- {# <nav class="burger-menu absolute px-7 pb-16 left-0 top-full w-full min-h-[calc(100vh-82px)] max-h-[calc(100vh-82px)] overflow-auto bg-darkBlue md:hidden">
-    <ul class="flex flex-col p-4 mt-20 gap-10 text-[22px]">
-    
-        <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="./src/projekte.html">Projekte</a></li>
-    
-        <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="./src/karriere.html">Karriere</a></li>
-        <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="./src/aktuelles.html">Aktuelles</a></li>
-        <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="./src/kontakt.html">Kontakt</a></li>
-        <li class="bg-white flex items-center overflow-hidden rounded-[25px] h-[50px]">
-            <input class="px-4 w-full h-full focus:outline-none" type="search" name="search" placeholder="Suchbegriff eingeben">
-            <button class="h-full aspect-square flex justify-center items-center rounded-full"><img src="./assets/Bilder/Arrows&Navigation/search-icon.svg" alt="search icon"></button>
-        </li>
-    </ul>
-    
-</nav> #}

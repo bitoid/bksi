@@ -10,9 +10,8 @@ global-styling:
     js/lazy-loading.js: {}
     js/main.js: {}
     js/slider.js: {}
-
+    
 splide:
   js:
     js/splide.js: {}
     js/splide-init.js: {}
-

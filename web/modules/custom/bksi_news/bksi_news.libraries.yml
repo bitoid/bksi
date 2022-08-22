@@ -1,0 +1,5 @@
+bksi_news:
+  version: 1.1
+  js:
+    js/lazy-loading.js: {}
+    js/main.js: {}

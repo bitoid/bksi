@@ -66,6 +66,11 @@ class BksiNews extends BlockBase
         '#cache' => [
           'max-age' => 0,
         ],
+        '#attached' => [
+          'library' => [
+            'bksi_news/bksi_news',
+          ],
+        ],
       ];
     }
 

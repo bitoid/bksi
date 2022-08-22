@@ -1,0 +1,19 @@
+uuid: f3431378-9f41-40fb-b913-d228bd11a5a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.directors
+    - field.storage.block_content.field_directors_description
+id: block_content.directors.field_directors_description
+field_name: field_directors_description
+entity_type: block_content
+bundle: directors
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

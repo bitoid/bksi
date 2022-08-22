@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - block_content.type.customers
-    - field.field.block_content.customers.field_customers_p
+    - field.field.block_content.customers.field_customers_paragraph
     - field.field.block_content.customers.field_title
   module:
     - paragraphs
@@ -14,7 +14,7 @@ targetEntityType: block_content
 bundle: customers
 mode: default
 content:
-  field_customers_p:
+  field_customers_paragraph:
     type: paragraphs
     weight: 27
     region: content

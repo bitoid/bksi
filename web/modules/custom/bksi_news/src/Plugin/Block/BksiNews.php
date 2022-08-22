@@ -45,7 +45,7 @@ class BksiNews extends BlockBase
         $node = Node::load($nid);
         $file_id = $node->field_image->target_id;
         $news_image = File::load($file_id)->getFileUri();
-        $url = ImageStyle::load('thumbnail')->buildUrl($news_image);
+        $url = ImageStyle::load('wide')->buildUrl($news_image);
         $date = date("F Y", $node->created->value);
         $body = str_replace("&nbsp;", ' ', $node->body->value);
         $newses[$nid]=[
@@ -65,11 +65,6 @@ class BksiNews extends BlockBase
         '#title' => $title,
         '#cache' => [
           'max-age' => 0,
-        ],
-        '#attached' => [
-          'library' => [
-            'bksi_news/bksi_news',
-          ],
         ],
       ];
     }

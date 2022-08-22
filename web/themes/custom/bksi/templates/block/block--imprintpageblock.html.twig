@@ -124,7 +124,7 @@
               {% for paragraph in content.field_website_design %}
                 {% if paragraph['#paragraph']%}
                   <p>{{ paragraph['#paragraph'].field_web_link_body.value }}</p>
-                  <a class="hover:text-mainRed" target="_blank" href="https:{{ paragraph['#paragraph'].field_web_link_url.value }}"> {{ paragraph['#paragraph'].field_web_link_url.value }}  </a>
+                  <a class="hover:text-mainRed" target="_blank" href="{{ paragraph['#paragraph'].field_web_link_url.0.value.uri }}"> {{ paragraph['#paragraph'].field_web_link_url.0.value.title }}  </a>
               {% endif %}
             {% endfor %}
         </div>
@@ -134,7 +134,8 @@
             <h4 class="font-semibold">{{ content.field_website_programming[0]['#paragraph'].field_web_link_title.value }}</h4>
               {% for paragraph in content.field_website_programming %}
                 {% if paragraph['#paragraph']%}
-                <p>{{ paragraph['#paragraph'].field_web_link_body.value }}</p><a class="hover:text-mainRed" target="_blank" href="https:{{ paragraph['#paragraph'].field_web_link_url.value }} ">{{ paragraph['#paragraph'].field_web_link_url.value }} </a>
+                  <p>{{ paragraph['#paragraph'].field_web_link_body.value }}</p>
+                  <a class="hover:text-mainRed" target="_blank" href="{{ paragraph['#paragraph'].field_web_link_url.0.value.uri }} ">{{ paragraph['#paragraph'].field_web_link_url.0.value.title }} </a>
                 {% endif %}
               {% endfor %}
         </div>

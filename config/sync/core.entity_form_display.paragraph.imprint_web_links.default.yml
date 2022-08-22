@@ -7,6 +7,8 @@ dependencies:
     - field.field.paragraph.imprint_web_links.field_web_link_title
     - field.field.paragraph.imprint_web_links.field_web_link_url
     - paragraphs.paragraphs_type.imprint_web_links
+  module:
+    - link
 id: paragraph.imprint_web_links.default
 targetEntityType: paragraph
 bundle: imprint_web_links
@@ -14,7 +16,7 @@ mode: default
 content:
   field_web_link_body:
     type: string_textfield
-    weight: 1
+    weight: 2
     region: content
     settings:
       size: 60
@@ -29,12 +31,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_web_link_url:
-    type: string_textfield
-    weight: 2
+    type: link_default
+    weight: 1
     region: content
     settings:
-      size: 60
-      placeholder: ''
+      placeholder_url: ''
+      placeholder_title: ''
     third_party_settings: {  }
 hidden:
   created: true

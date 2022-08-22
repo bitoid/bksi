@@ -1,19 +1,23 @@
-uuid: 87ad4ebc-b70d-41ee-94b9-52a6b71c9c59
+uuid: 50949520-f7a5-4d69-9857-24d5490f12c1
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_web_link_url
     - paragraphs.paragraphs_type.imprint_web_links
+  module:
+    - link
 id: paragraph.imprint_web_links.field_web_link_url
 field_name: field_web_link_url
 entity_type: paragraph
 bundle: imprint_web_links
 label: 'web link url'
-description: 'add links without <strong>https<strong>'
+description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
-field_type: string
+settings:
+  title: 1
+  link_type: 17
+field_type: link

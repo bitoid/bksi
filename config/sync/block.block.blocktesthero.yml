@@ -1,0 +1,25 @@
+uuid: 8220a4e4-756d-4694-83bb-60df7c02d221
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:test_hero:c3f09ea2-62f4-4554-b16b-8a11a0ef61b7'
+  module:
+    - block_content
+  theme:
+    - bksi
+id: blocktesthero
+theme: bksi
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:c3f09ea2-62f4-4554-b16b-8a11a0ef61b7'
+settings:
+  id: 'block_content:c3f09ea2-62f4-4554-b16b-8a11a0ef61b7'
+  label: block-testhero
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

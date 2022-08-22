@@ -1,0 +1,12 @@
+<section>
+    <div class=" absolute right-4 top-1/2 left-4 -translate-y-1/2 flex flex-col items-center justify-between gap-10 text-white md:flex-row md:left-11 md:right-11">
+                <div class="order-2 md:order-1 md:w-1/2">
+                    <h1 class="font-bold flex -z-10 flex-col gap-7 text-[35px]  tracking-[1.5px] leading-normal md:gap-9 md:text-[70px] md:leading-tight md:tracking-[3px]">
+                        <span class="text-xs md:text-base">{{content.field_slogan_}}</span>
+                        {{content.field_title_}}
+                    </h1>
+                </div>
+                <img class="w-[430px] order-1 md:order-2 " src="{{file_url(content.field_image_.0['#item'].entity.uri.value)}}"  alt="">
+    </div>
+
+</section>

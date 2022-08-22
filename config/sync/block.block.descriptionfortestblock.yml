@@ -1,0 +1,25 @@
+uuid: 61384494-aef0-40da-9606-98b7e3e243d4
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:test_hero:1b147a3b-1346-40d6-ab53-e41ec19381b5'
+  module:
+    - block_content
+  theme:
+    - bksi
+id: descriptionfortestblock
+theme: bksi
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:1b147a3b-1346-40d6-ab53-e41ec19381b5'
+settings:
+  id: 'block_content:1b147a3b-1346-40d6-ab53-e41ec19381b5'
+  label: ' description for test block'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

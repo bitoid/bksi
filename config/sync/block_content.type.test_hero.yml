@@ -1,0 +1,8 @@
+uuid: d5c6afae-87f7-4b6e-8d5d-c541232aa29b
+langcode: en
+status: true
+dependencies: {  }
+id: test_hero
+label: 'Test Hero'
+revision: 0
+description: ''

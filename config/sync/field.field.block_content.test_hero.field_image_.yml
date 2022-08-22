@@ -1,0 +1,38 @@
+uuid: 2b9fed63-f658-49cf-abf8-15ae539f7738
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.test_hero
+    - field.storage.block_content.field_image_
+  module:
+    - image
+id: block_content.test_hero.field_image_
+field_name: field_image_
+entity_type: block_content
+bundle: test_hero
+label: Image
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'svg png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

@@ -1,0 +1,30 @@
+uuid: 0e998dcf-f0fe-4d97-8af6-6f6231885a0d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:directors:3ae6dca7-9167-4e64-82de-517c6b727366'
+  module:
+    - block_content
+    - system
+  theme:
+    - bksi
+id: directors
+theme: bksi
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:3ae6dca7-9167-4e64-82de-517c6b727366'
+settings:
+  id: 'block_content:3ae6dca7-9167-4e64-82de-517c6b727366'
+  label: Directors
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /team

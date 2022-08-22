@@ -1,0 +1,19 @@
+uuid: beeda99a-8b4f-4b37-bbed-604b7219c5e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.directors
+    - field.storage.block_content.field_directors_director
+id: block_content.directors.field_directors_director
+field_name: field_directors_director
+entity_type: block_content
+bundle: directors
+label: Director
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

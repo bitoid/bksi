@@ -1,0 +1,8 @@
+uuid: b4e07c70-bf12-4f7c-9aa9-65aba3203fa0
+langcode: en
+status: true
+dependencies: {  }
+id: directors
+label: Directors
+revision: 0
+description: 'Directors custom block type for Team page'

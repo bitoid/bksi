@@ -3,8 +3,8 @@
  *
  * Available variables:
  * - content.field_title: Block title
- * - content.field_customers_p: Contains one paragraph
- * - content.field_customers_p.0['#paragraph'].field_image: Contains paragraph images
+ * - content.field_customers_paragraph: Contains one paragraph
+ * - content.field_customers_paragraph.0['#paragraph'].field_image: Contains paragraph images
  */
 #}
 
@@ -14,7 +14,7 @@
             {{ content.field_title[0]['#text'] | striptags }}
         </h3>
         <div class="grid grid-cols-2 gap-2 md:grid-cols-6 md:gap-10">
-            {% for image in content.field_customers_p.0['#paragraph'].field_image %}
+            {% for image in content.field_customers_paragraph.0['#paragraph'].field_image %}
             <img class="w-full h-full"src="{{ file_url(image.entity.fileuri) }}" alt="{{ image.value.alt }}">
             {% endfor %}
         </div>

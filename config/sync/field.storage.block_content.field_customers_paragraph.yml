@@ -1,4 +1,4 @@
-uuid: a3421ad8-01da-40d9-9f09-d318ed817a5e
+uuid: 5078d811-3eaf-434a-9d71-6c0ad7c7468e
 langcode: en
 status: true
 dependencies:
@@ -6,8 +6,8 @@ dependencies:
     - block_content
     - entity_reference_revisions
     - paragraphs
-id: block_content.field_customers_p
-field_name: field_customers_p
+id: block_content.field_customers_paragraph
+field_name: field_customers_paragraph
 entity_type: block_content
 type: entity_reference_revisions
 settings:

@@ -1,15 +1,15 @@
-uuid: 0288f26b-7f4e-46d4-bcb5-b39215a2fc52
+uuid: 09332652-c818-4c8a-b907-918516e69349
 langcode: en
 status: true
 dependencies:
   config:
     - block_content.type.customers
-    - field.storage.block_content.field_customers_p
+    - field.storage.block_content.field_customers_paragraph
     - paragraphs.paragraphs_type.customers
   module:
     - entity_reference_revisions
-id: block_content.customers.field_customers_p
-field_name: field_customers_p
+id: block_content.customers.field_customers_paragraph
+field_name: field_customers_paragraph
 entity_type: block_content
 bundle: customers
 label: 'Customers paragraph'

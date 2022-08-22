@@ -1,0 +1,33 @@
+uuid: af528a79-d73b-49c3-af48-252bafe9bdb2
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.customers
+    - field.field.block_content.customers.field_customers_p
+    - field.field.block_content.customers.field_title
+  module:
+    - entity_reference_revisions
+    - text
+id: block_content.customers.default
+targetEntityType: block_content
+bundle: customers
+mode: default
+content:
+  field_customers_p:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

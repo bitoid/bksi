@@ -9,6 +9,9 @@ docker compose exec php composer install
 docker compose exec php drush site:install --existing-config --account-pass=1234
 ```
 ```
+composer install
+```
+```
 docker compose exec php drush cim
 ```
 Open in Browser

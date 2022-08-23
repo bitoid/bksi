@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: df8751d9-0b06-4c2c-b36d-0bbb36b07344
+  bundle: hero_block_type
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'stellendetailseite hero block'
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  field_badge:
+    -
+      value: 'Jetzt bewerben'
+      format: basic_html
+  field_description:
+    -
+      value: 'mit mindestens fünf Jahren Berufserfahrung'
+      format: basic_html
+  field_slogan:
+    -
+      value: Kunden
+      format: basic_html
+  field_title:
+    -
+      value: "<p>Überschrift zum Thema Kundenbeziehung</p>\r\n"
+      format: basic_html

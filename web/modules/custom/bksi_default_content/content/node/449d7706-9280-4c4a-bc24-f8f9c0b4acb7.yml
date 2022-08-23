@@ -1,11 +1,11 @@
 _meta:
   version: '1.0'
   entity_type: node
-  uuid: e4e063bb-9490-46ff-82ae-06f09a6ebae5
+  uuid: 449d7706-9280-4c4a-bc24-f8f9c0b4acb7
   bundle: page
   default_langcode: en
   depends:
-    5b88b192-e24f-4b64-b62c-39156d3fec29: block_content
+    7a8db142-62d2-40a6-8600-5b1914f8a926: block_content
 default:
   revision_uid:
     -
@@ -18,10 +18,10 @@ default:
       target_id: 1
   title:
     -
-      value: 'Home Page'
+      value: tragwerksplanung
   created:
     -
-      value: 1660812508
+      value: 1661258500
   promote:
     -
       value: false
@@ -30,7 +30,7 @@ default:
       value: false
   path:
     -
-      alias: /home
+      alias: /tragwerksplanung
       langcode: en
   layout_builder__layout:
     -
@@ -40,19 +40,19 @@ default:
           label: content
           context_mapping: {  }
         components:
-          748ef227-8528-4d58-8ed4-aeee4fd192a3:
-            uuid: 748ef227-8528-4d58-8ed4-aeee4fd192a3
+          35f63dfd-e2dc-4af2-8168-55bbd506b3b5:
+            uuid: 35f63dfd-e2dc-4af2-8168-55bbd506b3b5
             region: content
             configuration:
               id: 'inline_block:hero_block_type'
-              label: 'Home Page Hero Block'
+              label: 'tragwerksplanung hero block'
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '1'
+              block_revision_id: '4'
               block_serialized: null
               context_mapping: {  }
-            weight: 2
+            weight: 0
             additional:
-              target_uuid: 5b88b192-e24f-4b64-b62c-39156d3fec29
+              target_uuid: 7a8db142-62d2-40a6-8600-5b1914f8a926
         third_party_settings: {  }

@@ -1,0 +1,21 @@
+uuid: 9b3843af-a1bf-4dc1-bc88-0a90b48d9022
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.field_team_gallery
+field_name: field_team_gallery
+entity_type: block_content
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

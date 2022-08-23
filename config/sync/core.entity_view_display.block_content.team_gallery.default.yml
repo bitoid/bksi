@@ -1,0 +1,33 @@
+uuid: 65414730-8ef9-44e3-aa25-ec7c6561c4b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.team_gallery
+    - field.field.block_content.team_gallery.field_paragraph_team_gallery
+    - field.field.block_content.team_gallery.field_team_gallery
+  module:
+    - entity_reference_revisions
+id: block_content.team_gallery.default
+targetEntityType: block_content
+bundle: team_gallery
+mode: default
+content:
+  field_paragraph_team_gallery:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_team_gallery:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

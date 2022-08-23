@@ -1,0 +1,30 @@
+uuid: 8c732890-ce90-49d4-9948-e074ca61b997
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:team_gallery:3d894026-08c7-4c14-8f56-27bb3a4452b9'
+  module:
+    - block_content
+    - system
+  theme:
+    - bksi
+id: teamgalleryblock
+theme: bksi
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:3d894026-08c7-4c14-8f56-27bb3a4452b9'
+settings:
+  id: 'block_content:3d894026-08c7-4c14-8f56-27bb3a4452b9'
+  label: 'Team Gallery block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "<front>\r\n/team"

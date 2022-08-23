@@ -1,0 +1,19 @@
+uuid: d5c0c31e-85fd-4dc1-aa47-49fdb3ed3c9c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.team_gallery
+    - field.storage.block_content.field_team_gallery
+id: block_content.team_gallery.field_team_gallery
+field_name: field_team_gallery
+entity_type: block_content
+bundle: team_gallery
+label: 'Team Gallery'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

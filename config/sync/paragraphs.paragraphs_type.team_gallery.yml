@@ -1,0 +1,10 @@
+uuid: 67e2282a-4cb7-440a-ac11-4aef113a6ae1
+langcode: en
+status: true
+dependencies: {  }
+id: team_gallery
+label: 'Team Gallery'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

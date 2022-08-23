@@ -1,0 +1,23 @@
+uuid: e035f030-6b92-4503-91f2-0781d3833118
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.engineering_hero
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.engineering_hero.body
+field_name: body
+entity_type: block_content
+bundle: engineering_hero
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

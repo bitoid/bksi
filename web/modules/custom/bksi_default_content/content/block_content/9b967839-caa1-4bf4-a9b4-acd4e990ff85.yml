@@ -1,0 +1,34 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 9b967839-caa1-4bf4-a9b4-acd4e990ff85
+  bundle: engineering_hero
+  default_langcode: en
+  depends:
+    12bda733-9058-4249-a841-52365bd1cffd: file
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Engineering hero block'
+  reusable:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  field_image_:
+    -
+      entity: 12bda733-9058-4249-a841-52365bd1cffd
+      alt: 'Engineering hero block  image'
+      title: ''
+      width: 379
+      height: 371
+  field_slogan_:
+    -
+      value: Tragwerksplanung
+  field_title_:
+    -
+      value: 'Unser Tagwerk: Tragwerk'

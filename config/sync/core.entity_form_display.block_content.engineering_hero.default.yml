@@ -1,0 +1,62 @@
+uuid: 885c29df-6153-4746-ae31-e7826747800e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.engineering_hero
+    - field.field.block_content.engineering_hero.body
+    - field.field.block_content.engineering_hero.field_image_
+    - field.field.block_content.engineering_hero.field_slogan_
+    - field.field.block_content.engineering_hero.field_title_
+    - image.style.thumbnail
+  module:
+    - image
+    - text
+id: block_content.engineering_hero.default
+targetEntityType: block_content
+bundle: engineering_hero
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_image_:
+    type: image_image
+    weight: 29
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_slogan_:
+    type: string_textfield
+    weight: 27
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_title_:
+    type: string_textfield
+    weight: 28
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

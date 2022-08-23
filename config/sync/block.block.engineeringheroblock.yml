@@ -1,0 +1,25 @@
+uuid: 3416eafc-e7ed-4838-8179-611cb9f87f9c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:engineering_hero:9b967839-caa1-4bf4-a9b4-acd4e990ff85'
+  module:
+    - block_content
+  theme:
+    - bksi
+id: engineeringheroblock
+theme: bksi
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:9b967839-caa1-4bf4-a9b4-acd4e990ff85'
+settings:
+  id: 'block_content:9b967839-caa1-4bf4-a9b4-acd4e990ff85'
+  label: 'Engineering hero block'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,19 @@
+uuid: 634ffc44-9604-4176-a2a0-384312ce8637
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.engineering_hero
+    - field.storage.block_content.field_title_
+id: block_content.engineering_hero.field_title_
+field_name: field_title_
+entity_type: block_content
+bundle: engineering_hero
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

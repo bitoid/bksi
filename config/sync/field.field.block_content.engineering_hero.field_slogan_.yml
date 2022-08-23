@@ -1,0 +1,19 @@
+uuid: 04bd448b-7437-4c4f-ba13-142a1990095c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.engineering_hero
+    - field.storage.block_content.field_slogan_
+id: block_content.engineering_hero.field_slogan_
+field_name: field_slogan_
+entity_type: block_content
+bundle: engineering_hero
+label: Slogan
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

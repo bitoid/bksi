@@ -1,0 +1,5 @@
+name: bksi_contact_form
+type: module
+description: Implement custom block with custom form called 'Contact form'
+package: Custom
+core_version_requirement: ^9 || ^10

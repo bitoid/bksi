@@ -1,0 +1,32 @@
+{#
+/**
+ * @file
+ * Theme override for an 'input' #type form element.
+ *
+ * Available variables:
+ * - attributes: A list of HTML attributes for the input element.
+ * - children: Optional additional rendered elements.
+ *
+ * @see template_preprocess_input()
+ */
+#}
+
+{%
+    set classes = [
+        'absolute',
+        'peer', 
+        'w-0',
+        'h-0',
+        'cursor-pointer',
+        'opacity-0'
+    ]
+%}
+
+<input{{ attributes.addClass(classes) }} />{{ children }}
+
+
+
+{# 
+original markup:
+<input class="absolute peer w-0 h-0 cursor-pointer opacity-0" type="checkbox" name="checkbox" id="checkbox"> 
+#}

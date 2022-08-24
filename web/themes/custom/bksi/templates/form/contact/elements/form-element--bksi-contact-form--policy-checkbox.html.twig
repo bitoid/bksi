@@ -44,16 +44,9 @@
  * @see template_preprocess_form_element()
  */
 #}
-<div class="flex gap-4 items-start mt-[60px]">
-    <div id="checkbox" class="relative w-10 h-10 bg-white rounded-full cursor-pointer">
-        {{ children }}
-   <!--      @TODO style -->
-    </div>
-    <span class="label-for-checkbox cursor-pointer" for="checkbox">Ich habe die Datenschutzerklärung gelesen und erkläre mich damit einverstanden.
-    </span>
-    {% if errors %}
-        <div class="form-item--error-message">
-            {{ errors }}
-        </div>
-    {% endif %}
-</div>    
+
+<label class="flex items-start mt-[60px] pl-14 relative cursor-pointer select-none w-fit">
+    Ich habe die Datenschutzerklärung gelesen und erkläre mich damit einverstanden.
+    {{ children }}
+    <span class="absolute w-10 h-10 rounded-full bg-white top-0 left-0 after:absolute after:duration-300 after:transition-opacity after:opacity-0 peer-checked:after:opacity-100 after:left-4 after:top-3 after:w-[10px] after:h-[13px] after:border-mainRed after:border-b-[3px] after:border-r-[3px] after:rotate-45"></span>
+</label>

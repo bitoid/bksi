@@ -2,8 +2,8 @@
 module.exports = {
   content: [
     "./js/**/*.js",
-    "/.twig",
-    "../../../modules/custom/**/twig",
+    "./**/*.twig",
+    "../../../modules/custom/**/*.twig",
   ],
   theme: {
     screens: {

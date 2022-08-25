@@ -1,0 +1,51 @@
+uuid: f8d1273a-69de-4f02-bab0-0befa507d607
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.slide
+    - field.field.block_content.slide.body
+    - field.field.block_content.slide.field_paragraph_field_
+    - field.field.block_content.slide.field_slogan_
+    - field.field.block_content.slide.field_title_
+  module:
+    - entity_reference_revisions
+    - text
+id: block_content.slide.default
+targetEntityType: block_content
+bundle: slide
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_paragraph_field_:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_slogan_:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title_:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

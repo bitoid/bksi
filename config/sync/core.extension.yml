@@ -51,7 +51,6 @@ module:
   views_ui: 0
   views: 10
   paragraphs: 11
-  linked_field: 100
   minimal: 1000
 theme:
   olivero: 0

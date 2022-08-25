@@ -1,0 +1,191 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 6e6e6383-b127-4d50-acd8-120854472825
+  bundle: footer_bottom
+  default_langcode: en
+  depends:
+    663de6f8-60c3-4e41-bcd4-20713ced07fb: file
+    ec14bb8c-6edb-4055-8fa7-cc7437d5797f: file
+    10ebaeef-bf74-4b18-81dc-fa319b9f85ec: file
+    cb5d2775-02b0-4434-80a0-2487dddaef5a: file
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Footer Bottom'
+  reusable:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  field_copyright:
+    -
+      value: '© 2022 BKSI GmbH'
+      format: basic_html
+  field_footer_bottom_nav:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: f868f193-9108-4121-8160-37bb07e6d967
+          bundle: footer_bottom_nav_link
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1661079576
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_footer_bottom_nav_link:
+            -
+              uri: 'internal:/src/impressium.html'
+              title: Impressum
+              options:
+                attributes: {  }
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 6b4c0fd1-f0d6-4015-8738-f798f6769e5f
+          bundle: footer_bottom_nav_link
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1661079610
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_footer_bottom_nav_link:
+            -
+              uri: 'internal:#'
+              title: Datenschutz
+              options:
+                attributes: {  }
+  field_footer_image:
+    -
+      entity: 663de6f8-60c3-4e41-bcd4-20713ced07fb
+      display: true
+      description: ''
+  field_footer_image_link:
+    -
+      uri: 'https://www.dgnb.de/de/index.php'
+      title: ''
+      options:
+        attributes: {  }
+  field_social_menu:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: aadb9cda-39e4-441e-96b4-ab32e36ea14f
+          bundle: footer_social_menu_item
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1661078497
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_social_icon:
+            -
+              entity: ec14bb8c-6edb-4055-8fa7-cc7437d5797f
+              display: true
+              description: ''
+          field_social_link:
+            -
+              uri: 'https://www.linkedin.com/company/bksi-gmbh/?originalSubdomain=de'
+              title: ''
+              options:
+                attributes: {  }
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 76cc855f-7fda-4183-9f02-3826fd259cbb
+          bundle: footer_social_menu_item
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1661078543
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_social_icon:
+            -
+              entity: 10ebaeef-bf74-4b18-81dc-fa319b9f85ec
+              display: true
+              description: ''
+          field_social_link:
+            -
+              uri: 'https://www.facebook.com/bksigmbh'
+              title: ''
+              options:
+                attributes: {  }
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: f1ee8d20-57fe-4995-bc10-21c940f0d03a
+          bundle: footer_social_menu_item
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1661078586
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_social_icon:
+            -
+              entity: cb5d2775-02b0-4434-80a0-2487dddaef5a
+              display: true
+              description: ''
+          field_social_link:
+            -
+              uri: 'https://www.instagram.com/bksi_gmbh/'
+              title: ''
+              options:
+                attributes: {  }

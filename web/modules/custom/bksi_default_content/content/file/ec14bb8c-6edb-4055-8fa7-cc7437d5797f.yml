@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: ec14bb8c-6edb-4055-8fa7-cc7437d5797f
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: social-icon-linkedin.svg
+  uri:
+    -
+      value: 'public://2022-08/social-icon-linkedin.svg'
+  filemime:
+    -
+      value: image/svg+xml
+  filesize:
+    -
+      value: 1518
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1661078497

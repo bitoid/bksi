@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: cb5d2775-02b0-4434-80a0-2487dddaef5a
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: social-icon-instagram.svg
+  uri:
+    -
+      value: 'public://2022-08/social-icon-instagram.svg'
+  filemime:
+    -
+      value: image/svg+xml
+  filesize:
+    -
+      value: 1869
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1661078614

@@ -2,7 +2,7 @@
     <div class="flex gap-8 mb-8 md:m-0">
         {% for paragraph in content.field_social_menu %} 
             {% if paragraph['#paragraph'] %}
-            <a href="{{ paragraph['#paragraph'].field_social_link.0.value.uri }}" class="flex group justify-center items-center w-[50px] aspect-square rounded-full bg-white hover:scale-110">
+            <a href="{{ paragraph['#paragraph'].field_social_link.get(0).getUrl().toString() }}" class="flex group justify-center items-center w-[50px] aspect-square rounded-full bg-white hover:scale-110">
                 <img class="group-hover:scale-90" src="{{file_url(paragraph['#paragraph'].field_social_icon.entity.uri.value)}}" alt="">
             </a>
             {% endif %}
@@ -11,7 +11,7 @@
     <div class="flex gap-[52px] mb-[74px] md:m-0">
         {% for paragraph in content.field_footer_bottom_nav %} 
             {% if paragraph['#paragraph'] %}
-                <a class="text-[15px] leading-[19px] tracking-[0.75px] hover:text-mainRed" href="{{ paragraph['#paragraph'].field_footer_bottom_nav_link.0.value.uri }}" >{{ paragraph['#paragraph'].field_footer_bottom_nav_link.0.value.title }}</a>
+                <a class="text-[15px] leading-[19px] tracking-[0.75px] hover:text-mainRed" href="{{ paragraph['#paragraph'].field_footer_bottom_nav_link.get(0).getUrl().toString() }}" >{{ paragraph['#paragraph'].field_footer_bottom_nav_link.0.value.title }}</a>
             {% endif %}
         {% endfor %}
     </div>

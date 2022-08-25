@@ -1,0 +1,296 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 92c7b4ac-8464-4b27-9ccd-a77b631268c0
+  bundle: slide
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'block for slide'
+  reusable:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  field_paragraph_field_:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 8fe2965c-ba23-47b0-949a-dc723964f1bf
+          bundle: slide
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1661359473
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_text_for_year:
+            -
+              value: 'Die geschäftsführenden Gesellschafter Hartmut Baumgärtner, Matthias Kreidler und Frank Schäfer gründen die BKSi GmbH.'
+          field_year_:
+            -
+              value: '2004'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: ea849634-863f-452d-9532-5df26eac42b7
+          bundle: slide
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1661359473
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_text_for_year:
+            -
+              value: 'Die geschäftsführenden Gesellschafter Hartmut Baumgärtner, Matthias Kreidler und Frank Schäfer gründen die BKSi GmbH.'
+          field_year_:
+            -
+              value: '2005'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 4b7d89be-d198-46ef-9412-1b2a18847c35
+          bundle: slide
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1661359489
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_text_for_year:
+            -
+              value: 'Die geschäftsführenden Gesellschafter Hartmut Baumgärtner, Matthias Kreidler und Frank Schäfer gründen die BKSi GmbH.'
+          field_year_:
+            -
+              value: '2006'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 96dbafca-7a84-4bb5-8b0f-199c6f51611b
+          bundle: slide
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1661367320
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_text_for_year:
+            -
+              value: 'Die geschäftsführenden Gesellschafter Hartmut Baumgärtner, Matthias Kreidler und Frank Schäfer gründen die BKSi GmbH.'
+          field_year_:
+            -
+              value: '2007'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: bd90ba8c-5c76-4cbb-a4be-b5834ca5a4a7
+          bundle: slide
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1661367326
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_text_for_year:
+            -
+              value: 'Die geschäftsführenden Gesellschafter Hartmut Baumgärtner, Matthias Kreidler und Frank Schäfer gründen die BKSi GmbH.'
+          field_year_:
+            -
+              value: '2008'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 50803c3f-8ac3-42d3-8cb3-756f5e2f0c27
+          bundle: slide
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1661367332
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_text_for_year:
+            -
+              value: 'Die geschäftsführenden Gesellschafter Hartmut Baumgärtner, Matthias Kreidler und Frank Schäfer gründen die BKSi GmbH.'
+          field_year_:
+            -
+              value: '2009'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: c6aff64b-ba63-46b8-8f53-a51cada01639
+          bundle: slide
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1661367337
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_text_for_year:
+            -
+              value: 'Die geschäftsführenden Gesellschafter Hartmut Baumgärtner, Matthias Kreidler und Frank Schäfer gründen die BKSi GmbH.'
+          field_year_:
+            -
+              value: '2010'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 32a35b36-c4ef-4299-a863-d5abfdf40d69
+          bundle: slide
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1661367343
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_text_for_year:
+            -
+              value: 'Die geschäftsführenden Gesellschafter Hartmut Baumgärtner, Matthias Kreidler und Frank Schäfer gründen die BKSi GmbH.'
+          field_year_:
+            -
+              value: '2011'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: fc10469b-f19a-46dd-b194-b6cc5c9f0ccc
+          bundle: slide
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1661367349
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_text_for_year:
+            -
+              value: 'Die geschäftsführenden Gesellschafter Hartmut Baumgärtner, Matthias Kreidler und Frank Schäfer gründen die BKSi GmbH.'
+          field_year_:
+            -
+              value: '2012'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 4b30e373-aeb9-46f4-ae4b-b8f827364c18
+          bundle: slide
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1661367355
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_text_for_year:
+            -
+              value: 'Die geschäftsführenden Gesellschafter Hartmut Baumgärtner, Matthias Kreidler und Frank Schäfer gründen die BKSi GmbH.'
+          field_year_:
+            -
+              value: '2013'
+  field_slogan_:
+    -
+      value: Historie
+  field_title_:
+    -
+      value: 'Unsere wichtigsten Meilensteine'

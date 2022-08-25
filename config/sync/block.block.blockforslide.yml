@@ -1,0 +1,25 @@
+uuid: 4b37b3f3-2850-4ccd-a174-24b04ee2a99a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:slide:92c7b4ac-8464-4b27-9ccd-a77b631268c0'
+  module:
+    - block_content
+  theme:
+    - bksi
+id: blockforslide
+theme: bksi
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:92c7b4ac-8464-4b27-9ccd-a77b631268c0'
+settings:
+  id: 'block_content:92c7b4ac-8464-4b27-9ccd-a77b631268c0'
+  label: 'block for slide'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

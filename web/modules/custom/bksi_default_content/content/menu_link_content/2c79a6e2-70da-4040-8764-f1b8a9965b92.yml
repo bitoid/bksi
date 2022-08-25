@@ -18,7 +18,7 @@ default:
       value: main-menu
   link:
     -
-      uri: 'http://bksi.docker.localhost:8000/tragwerksplanung'
+      uri: 'internal:/tragwerksplanung'
       title: ''
       options:
         attributes: {  }
@@ -27,7 +27,7 @@ default:
       value: false
   rediscover:
     -
-      value: false
+      value: true
   weight:
     -
       value: -50

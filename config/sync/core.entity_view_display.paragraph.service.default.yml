@@ -3,9 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.service.field_image
-    - field.field.paragraph.service.field_link_cta
     - field.field.paragraph.service.field_services_description
+    - field.field.paragraph.service.field_services_image
+    - field.field.paragraph.service.field_services_link_cta
     - field.field.paragraph.service.field_services_title
     - paragraphs.paragraphs_type.service
   module:
@@ -16,15 +16,22 @@ targetEntityType: paragraph
 bundle: service
 mode: default
 content:
-  field_image:
+  field_services_description:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_services_image:
     type: image_url
-    label: above
+    label: hidden
     settings:
       image_style: ''
     third_party_settings: {  }
-    weight: 4
+    weight: 8
     region: content
-  field_link_cta:
+  field_services_link_cta:
     type: link_separate
     label: hidden
     settings:
@@ -34,18 +41,11 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 3
-    region: content
-  field_services_description:
-    type: basic_string
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 5
+    weight: 7
     region: content
   field_services_title:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }

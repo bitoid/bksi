@@ -4,15 +4,13 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.paragraph.preview
-    - field.field.paragraph.service.field_image
-    - field.field.paragraph.service.field_link_cta
     - field.field.paragraph.service.field_services_description
+    - field.field.paragraph.service.field_services_image
+    - field.field.paragraph.service.field_services_link_cta
     - field.field.paragraph.service.field_services_title
     - paragraphs.paragraphs_type.service
   module:
-    - image
     - layout_builder
-    - link
 third_party_settings:
   layout_builder:
     enabled: false
@@ -21,27 +19,9 @@ id: paragraph.service.preview
 targetEntityType: paragraph
 bundle: service
 mode: preview
-content:
-  field_image:
-    type: image_url
-    label: above
-    settings:
-      image_style: ''
-    third_party_settings: {  }
-    weight: 4
-    region: content
-  field_link_cta:
-    type: link
-    label: hidden
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    weight: 3
-    region: content
+content: {  }
 hidden:
   field_services_description: true
+  field_services_image: true
+  field_services_link_cta: true
   field_services_title: true

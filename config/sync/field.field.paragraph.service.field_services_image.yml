@@ -1,14 +1,14 @@
-uuid: fc89702f-5c7b-417f-8c9c-1fed392e056f
+uuid: 6b5f58da-ed62-4769-b724-56ac984062b2
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_image
+    - field.storage.paragraph.field_services_image
     - paragraphs.paragraphs_type.service
   module:
     - image
-id: paragraph.service.field_image
-field_name: field_image
+id: paragraph.service.field_services_image
+field_name: field_services_image
 entity_type: paragraph
 bundle: service
 label: image

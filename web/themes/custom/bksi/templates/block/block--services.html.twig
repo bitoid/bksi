@@ -40,15 +40,15 @@
       {% for paragraph in content.field_paragraph_services %}
         {% if paragraph['#paragraph'] %}
           <div class="flex flex-col items-center md:flex-row gap-10">
-            <div class="fade-in-image-container min-w-[250px] w-4/5 h-[33vh] md:min-w-[150px] md:h-full relative"><img class="fade-in-image w-full h-full" src="{{file_url(paragraph['#paragraph'].field_image.entity.uri.value)}}" alt=""></div>
+            <div class="fade-in-image-container min-w-[250px] w-4/5 h-[33vh] md:min-w-[150px] md:h-full relative"><img class="fade-in-image w-full h-full" src="{{file_url(paragraph['#paragraph'].field_services_image.entity.uri.value)}}" alt=""></div>
             <div class="text-fade" style="overflow:visible;">
               <div class="text-content-fade text-[15px] leading-[22px] tracking-[0.75px] md:max-w-[25vw]">
                 <div class="absolute  text-[233px] tracking-[11.65px] leading-[300px] opacity-10 bottom-0 left-1/2 -translate-x-1/2 md:-translate-y-1/2 md:top-0 md:left-0 md:-translate-x-2/3">{{ counter }}</div>
                 <h4 class="text-xl">{{ paragraph['#paragraph'].field_services_title.value }}</h4>
-                <p class="mt-4 mb-20">{{ paragraph['#paragraph'].field_services_description.value|striptags }}</p>
-                <a class="group flex items-center gap-3" href="{{ paragraph['#paragraph'].field_link_cta.0.value.uri }}">
-                  <img src="{{ base_path ~ directory }}/images/arrow-textlinks.svg" alt="">
-                  <span class="group-hover:text-mainRed">{{ paragraph['#paragraph'].field_link_cta.0.value.title }}</span>
+                <p class="mt-4 mb-20">{{ paragraph['#paragraph'].field_services_description.value }}</p>
+                <a class="group flex items-center gap-3" href="{{ paragraph['#paragraph'].field_services_link_cta.0.value.uri }}">
+                  <img src="/{{ base_path ~ directory }}/images/arrow-textlinks.svg" alt="">
+                  <span class="group-hover:text-mainRed">{{ paragraph['#paragraph'].field_services_link_cta.0.value.title }}</span>
                 </a>
               </div>
             </div>

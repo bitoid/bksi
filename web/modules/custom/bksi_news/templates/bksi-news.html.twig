@@ -10,7 +10,7 @@
       {% set i = 0 %}
       {% for news in newses %}
         {% if i < quantity %}
-          <a href="http://bksi.docker.localhost:8000/node/{{ news.nid }}" class="grid grid-cols-1 md:grid-cols-2">
+          <a href="/node/{{ news.nid }}" class="grid grid-cols-1 md:grid-cols-2">
             <div class="relative fade-in-image-container w-full h-[50vh] lg:h-full overflow-hidden">
               <img class="fade-in-image object-cover w-full h-full" src="{{ news.news_image }}" alt="">
             </div>

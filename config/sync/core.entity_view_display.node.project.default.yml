@@ -3,16 +3,20 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.project.field_bgf
+    - field.field.node.project.field_builder_name
+    - field.field.node.project.field_leistung_x
+    - field.field.node.project.field_leistung_y_
     - field.field.node.project.field_project_challenges
     - field.field.node.project.field_project_client
     - field.field.node.project.field_project_description
     - field.field.node.project.field_project_image
-    - field.field.node.project.field_project_key_data
     - field.field.node.project.field_project_period
     - field.field.node.project.field_project_sector
     - field.field.node.project.field_project_service
     - field.field.node.project.field_project_title
     - field.field.node.project.field_project_type
+    - field.field.node.project.field_sustainability_issues
     - node.type.project
   module:
     - datetime
@@ -24,87 +28,119 @@ targetEntityType: node
 bundle: project
 mode: default
 content:
-  field_project_challenges:
-    type: basic_string
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 104
-    region: content
-  field_project_client:
+  field_bgf:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 110
+    weight: 10
+    region: content
+  field_builder_name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_leistung_x:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_leistung_y_:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 13
+    region: content
+  field_project_challenges:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_project_client:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 8
     region: content
   field_project_description:
     type: basic_string
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 103
+    weight: 2
     region: content
   field_project_image:
     type: image
-    label: above
+    label: hidden
     settings:
       image_link: ''
       image_style: ''
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 112
-    region: content
-  field_project_key_data:
-    type: basic_string
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 102
+    weight: 9
     region: content
   field_project_period:
-    type: datetime_default
-    label: above
+    type: datetime_custom
+    label: hidden
     settings:
       timezone_override: ''
-      format_type: medium
+      date_format: 'Y'
     third_party_settings: {  }
-    weight: 111
+    weight: 14
     region: content
   field_project_sector:
     type: list_default
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 109
+    weight: 7
     region: content
   field_project_service:
     type: list_default
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 108
+    weight: 6
     region: content
   field_project_title:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 101
+    weight: 1
     region: content
   field_project_type:
     type: list_default
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 106
+    weight: 5
+    region: content
+  field_sustainability_issues:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden: {  }

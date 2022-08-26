@@ -1,0 +1,25 @@
+uuid: 26a089bb-5490-498f-9c47-fcef13f1c759
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:company_details:01c2d06d-332b-44d9-8a41-31cd08c3bdb2'
+  module:
+    - block_content
+  theme:
+    - bksi
+id: companydetailsblock
+theme: bksi
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:01c2d06d-332b-44d9-8a41-31cd08c3bdb2'
+settings:
+  id: 'block_content:01c2d06d-332b-44d9-8a41-31cd08c3bdb2'
+  label: 'Company Details Block'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

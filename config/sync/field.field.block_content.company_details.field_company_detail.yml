@@ -1,0 +1,31 @@
+uuid: 89e8a50c-acf8-47dc-be17-6bccf984bed7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.company_details
+    - field.storage.block_content.field_company_detail
+    - paragraphs.paragraphs_type.company_detail
+  module:
+    - entity_reference_revisions
+id: block_content.company_details.field_company_detail
+field_name: field_company_detail
+entity_type: block_content
+bundle: company_details
+label: 'Company Detail'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      company_detail: company_detail
+    negate: 0
+    target_bundles_drag_drop:
+      company_detail:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

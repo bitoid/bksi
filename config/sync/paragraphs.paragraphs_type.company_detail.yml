@@ -1,0 +1,10 @@
+uuid: a3394d31-2cac-42a9-9936-aed5189334f6
+langcode: en
+status: true
+dependencies: {  }
+id: company_detail
+label: 'Company Detail'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

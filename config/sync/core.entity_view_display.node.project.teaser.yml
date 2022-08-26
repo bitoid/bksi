@@ -4,16 +4,20 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.project.field_bgf
+    - field.field.node.project.field_builder_name
+    - field.field.node.project.field_leistung_x
+    - field.field.node.project.field_leistung_y_
     - field.field.node.project.field_project_challenges
     - field.field.node.project.field_project_client
     - field.field.node.project.field_project_description
     - field.field.node.project.field_project_image
-    - field.field.node.project.field_project_key_data
     - field.field.node.project.field_project_period
     - field.field.node.project.field_project_sector
     - field.field.node.project.field_project_service
     - field.field.node.project.field_project_title
     - field.field.node.project.field_project_type
+    - field.field.node.project.field_sustainability_issues
     - node.type.project
   module:
     - user
@@ -28,13 +32,17 @@ content:
     weight: 100
     region: content
 hidden:
+  field_bgf: true
+  field_builder_name: true
+  field_leistung_x: true
+  field_leistung_y_: true
   field_project_challenges: true
   field_project_client: true
   field_project_description: true
   field_project_image: true
-  field_project_key_data: true
   field_project_period: true
   field_project_sector: true
   field_project_service: true
   field_project_title: true
   field_project_type: true
+  field_sustainability_issues: true

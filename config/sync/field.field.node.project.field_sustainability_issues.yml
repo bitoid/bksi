@@ -1,0 +1,19 @@
+uuid: bc0dc992-dd54-42a6-8a49-54764d5aae61
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sustainability_issues
+    - node.type.project
+id: node.project.field_sustainability_issues
+field_name: field_sustainability_issues
+entity_type: node
+bundle: project
+label: 'sustainability issues'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

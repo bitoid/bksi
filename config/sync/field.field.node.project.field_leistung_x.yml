@@ -1,19 +1,19 @@
-uuid: 6f2179bd-70d0-4205-90aa-05b31835594e
+uuid: 8501c4e0-8e0c-49e8-b2e7-3fc9480f34fb
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_project_key_data
+    - field.storage.node.field_leistung_x
     - node.type.project
-id: node.project.field_project_key_data
-field_name: field_project_key_data
+id: node.project.field_leistung_x
+field_name: field_leistung_x
 entity_type: node
 bundle: project
-label: 'project key data'
+label: 'Leistung X'
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: string_long
+field_type: string

@@ -1,18 +1,18 @@
-uuid: 1acfbdef-840b-4584-944e-91ef840c408b
+uuid: eea8e5a5-0e5a-4818-b8c5-22da55162af4
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_project_key_data
-field_name: field_project_key_data
+id: node.field_sustainability_issues
+field_name: field_sustainability_issues
 entity_type: node
 type: string_long
 settings:
   case_sensitive: false
 module: core
 locked: false
-cardinality: 1
+cardinality: -1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

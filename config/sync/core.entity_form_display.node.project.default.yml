@@ -3,16 +3,20 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.project.field_bgf
+    - field.field.node.project.field_builder_name
+    - field.field.node.project.field_leistung_x
+    - field.field.node.project.field_leistung_y_
     - field.field.node.project.field_project_challenges
     - field.field.node.project.field_project_client
     - field.field.node.project.field_project_description
     - field.field.node.project.field_project_image
-    - field.field.node.project.field_project_key_data
     - field.field.node.project.field_project_period
     - field.field.node.project.field_project_sector
     - field.field.node.project.field_project_service
     - field.field.node.project.field_project_title
     - field.field.node.project.field_project_type
+    - field.field.node.project.field_sustainability_issues
     - image.style.thumbnail
     - node.type.project
   module:
@@ -26,13 +30,45 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_bgf:
+    type: string_textfield
+    weight: 16
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_builder_name:
+    type: string_textfield
+    weight: 17
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_leistung_x:
+    type: string_textfield
+    weight: 18
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_leistung_y_:
+    type: string_textfield
+    weight: 19
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_project_challenges:
     type: string_textarea
-    weight: 124
+    weight: 9
     region: content
     settings:
       rows: 5
@@ -40,7 +76,7 @@ content:
     third_party_settings: {  }
   field_project_client:
     type: string_textfield
-    weight: 130
+    weight: 14
     region: content
     settings:
       size: 60
@@ -48,7 +84,7 @@ content:
     third_party_settings: {  }
   field_project_description:
     type: string_textarea
-    weight: 123
+    weight: 8
     region: content
     settings:
       rows: 5
@@ -56,41 +92,33 @@ content:
     third_party_settings: {  }
   field_project_image:
     type: image_image
-    weight: 132
+    weight: 15
     region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-  field_project_key_data:
-    type: string_textarea
-    weight: 122
-    region: content
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
   field_project_period:
     type: datetime_default
-    weight: 131
+    weight: 20
     region: content
     settings: {  }
     third_party_settings: {  }
   field_project_sector:
     type: options_select
-    weight: 129
+    weight: 13
     region: content
     settings: {  }
     third_party_settings: {  }
   field_project_service:
     type: options_select
-    weight: 128
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
   field_project_title:
     type: string_textfield
-    weight: 121
+    weight: 7
     region: content
     settings:
       size: 60
@@ -98,40 +126,48 @@ content:
     third_party_settings: {  }
   field_project_type:
     type: options_select
-    weight: 126
+    weight: 11
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_sustainability_issues:
+    type: string_textarea
+    weight: 10
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
   path:
     type: path
-    weight: 30
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 15
+    weight: 3
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 120
+    weight: 6
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 16
+    weight: 4
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: -5
+    weight: 0
     region: content
     settings:
       size: 60
@@ -139,7 +175,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 1
     region: content
     settings:
       match_operator: CONTAINS

@@ -1,0 +1,8 @@
+uuid: ec54f68e-3635-47d2-a4de-c4756e2c11a2
+langcode: en
+status: true
+dependencies: {  }
+id: company_details
+label: 'Company Details'
+revision: 0
+description: ''

@@ -1,0 +1,25 @@
+uuid: e1888cc1-5566-4b40-8bbb-22eb0f8cbe81
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:services:1e3a6e72-dfc6-4f03-ae43-ed611175e9d3'
+  module:
+    - block_content
+  theme:
+    - bksi
+id: services
+theme: bksi
+region: help
+weight: 0
+provider: null
+plugin: 'block_content:1e3a6e72-dfc6-4f03-ae43-ed611175e9d3'
+settings:
+  id: 'block_content:1e3a6e72-dfc6-4f03-ae43-ed611175e9d3'
+  label: Services
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

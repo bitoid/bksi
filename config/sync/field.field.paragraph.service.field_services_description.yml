@@ -1,21 +1,19 @@
-uuid: 446a3be5-7920-4925-9fdd-005a03117fe8
+uuid: 6584ef6a-24a9-41a6-9df3-3195d57c2a33
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_description
+    - field.storage.paragraph.field_services_description
     - paragraphs.paragraphs_type.service
-  module:
-    - text
-id: paragraph.service.field_description
-field_name: field_description
+id: paragraph.service.field_services_description
+field_name: field_services_description
 entity_type: paragraph
 bundle: service
 label: description
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: text_long
+field_type: string_long

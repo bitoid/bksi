@@ -4,26 +4,20 @@ status: true
 dependencies:
   config:
     - block_content.type.faq
-    - field.field.block_content.faq.field_description
-    - field.field.block_content.faq.field_title
+    - field.field.block_content.faq.field_paragraph_faq_content
   module:
-    - text
+    - entity_reference_revisions
 id: block_content.faq.default
 targetEntityType: block_content
 bundle: faq
 mode: default
 content:
-  field_description:
-    type: basic_string
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 1
-    region: content
-  field_title:
-    type: text_default
-    label: hidden
-    settings: {  }
+  field_paragraph_faq_content:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
     third_party_settings: {  }
     weight: 0
     region: content

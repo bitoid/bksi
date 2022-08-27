@@ -9,7 +9,7 @@ dependencies:
     - field.field.paragraph.service.field_services_title
     - paragraphs.paragraphs_type.service
   module:
-    - image
+    - file
     - link
 id: paragraph.service.default
 targetEntityType: paragraph
@@ -24,10 +24,9 @@ content:
     weight: 5
     region: content
   field_services_image:
-    type: image_url
-    label: hidden
-    settings:
-      image_style: ''
+    type: file_url_plain
+    label: above
+    settings: {  }
     third_party_settings: {  }
     weight: 8
     region: content

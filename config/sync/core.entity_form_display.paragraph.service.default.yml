@@ -7,10 +7,9 @@ dependencies:
     - field.field.paragraph.service.field_services_image
     - field.field.paragraph.service.field_services_link_cta
     - field.field.paragraph.service.field_services_title
-    - image.style.thumbnail
     - paragraphs.paragraphs_type.service
   module:
-    - image
+    - file
     - link
 id: paragraph.service.default
 targetEntityType: paragraph
@@ -26,12 +25,11 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_services_image:
-    type: image_image
+    type: file_generic
     weight: 8
     region: content
     settings:
       progress_indicator: throbber
-      preview_image_style: thumbnail
     third_party_settings: {  }
   field_services_link_cta:
     type: link_default

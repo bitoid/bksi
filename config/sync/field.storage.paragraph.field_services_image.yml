@@ -1,27 +1,20 @@
-uuid: 385e2040-6e18-4d2c-b864-37e5ffbdb16a
+uuid: f9bcb632-5ad4-4027-91d6-4a46a62484f3
 langcode: en
 status: true
 dependencies:
   module:
     - file
-    - image
     - paragraphs
 id: paragraph.field_services_image
 field_name: field_services_image
 entity_type: paragraph
-type: image
+type: file
 settings:
   target_type: file
   display_field: false
   display_default: false
   uri_scheme: public
-  default_image:
-    uuid: ''
-    alt: ''
-    title: ''
-    width: null
-    height: null
-module: image
+module: file
 locked: false
 cardinality: 1
 translatable: true

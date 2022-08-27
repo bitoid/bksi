@@ -36,6 +36,7 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  projects: 0
   rdf: 0
   search: 0
   serialization: 0

@@ -1,8 +1,0 @@
-projects.data:
-  path: '/bksi/projects/data'
-  defaults:
-    _controller: 'Drupal\projects\Controller\ProjectsCotnroller::data'
-    _title: 'Projects json'
-  methods:  [GET]
-  requirements:
-    _permission: 'access content'

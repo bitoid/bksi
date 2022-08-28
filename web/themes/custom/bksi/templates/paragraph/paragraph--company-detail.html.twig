@@ -53,7 +53,7 @@
       {% if content.field_image_align['#items'].getString() == "left" %}
         <div class="order-1 relative fade-in-image-container w-full h-[50vh] lg:h-full overflow-hidden">
       {% else %}
-        <div class="order-3 relative fade-in-image-container w-full h-[50vh] lg:h-full overflow-hidden">
+        <div class="order-1 relative fade-in-image-container w-full h-[50vh] lg:h-full overflow-hidden lg:order-3">
       {% endif %}
           {{ content.field_image }}
         </div>

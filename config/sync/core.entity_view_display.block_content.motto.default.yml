@@ -6,6 +6,14 @@ dependencies:
     - block_content.type.motto
     - field.field.block_content.motto.field_author
     - field.field.block_content.motto.field_motto
+    - field.field.block_content.motto.layout_builder__layout
+  module:
+    - layout_builder
+    - layout_discovery
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
 id: block_content.motto.default
 targetEntityType: block_content
 bundle: motto
@@ -13,7 +21,7 @@ mode: default
 content:
   field_author:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -21,9 +29,10 @@ content:
     region: content
   field_motto:
     type: basic_string
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 0
     region: content
-hidden: {  }
+hidden:
+  layout_builder__layout: true

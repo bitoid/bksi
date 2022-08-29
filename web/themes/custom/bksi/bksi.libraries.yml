@@ -2,3 +2,11 @@ global-styling:
   css:
     base:
       dist/tailwind.css: {}
+  js:
+    js/dropdown.js: {}
+    js/impressium.js: {}
+    js/karriere-dropdown.js: {}
+    js/lazy-loading.js: {}
+    js/main.js: {}
+    js/slider.js: {}
+

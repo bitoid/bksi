@@ -1,0 +1,23 @@
+uuid: 72360959-9d73-4c62-9152-03a0a063aec4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_service_link_cta
+    - paragraphs.paragraphs_type.service
+  module:
+    - link
+id: paragraph.service.field_service_link_cta
+field_name: field_service_link_cta
+entity_type: paragraph
+bundle: service
+label: 'Link CTA'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

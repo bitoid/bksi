@@ -1,0 +1,31 @@
+uuid: ec3488ea-9e36-4f9b-9274-5937b03f0349
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.services
+    - field.storage.block_content.field_paragraph_services
+    - paragraphs.paragraphs_type.service
+  module:
+    - entity_reference_revisions
+id: block_content.services.field_paragraph_services
+field_name: field_paragraph_services
+entity_type: block_content
+bundle: services
+label: paragraph-services
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      service: service
+    negate: 0
+    target_bundles_drag_drop:
+      service:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

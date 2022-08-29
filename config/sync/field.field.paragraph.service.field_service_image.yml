@@ -1,0 +1,27 @@
+uuid: a4fc867c-f6ac-4520-9fb1-ad893800b792
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_service_image
+    - paragraphs.paragraphs_type.service
+  module:
+    - file
+id: paragraph.service.field_service_image
+field_name: field_service_image
+entity_type: paragraph
+bundle: service
+label: image
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png jpg jpeg svg'
+  max_filesize: ''
+  description_field: false
+field_type: file

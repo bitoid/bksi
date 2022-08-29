@@ -1,0 +1,21 @@
+uuid: 353d3411-064d-44b6-a06e-9108611e9e6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.services
+    - field.storage.block_content.field_services_title
+  module:
+    - text
+id: block_content.services.field_services_title
+field_name: field_services_title
+entity_type: block_content
+bundle: services
+label: title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

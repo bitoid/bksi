@@ -1,10 +1,45 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["**/*.twig", "../../../modules/custom/**/*twig"],
+  content: [
+    "./js/**/*.js",
+    "./**/*.twig",
+    "../../../modules/custom/**/*.twig",
+  ],
   theme: {
-    extend: {},
-  },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
-};
+    screens: {
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1366px',
+    },
+    extend: {
+      colors: {
+        'mainBlack': '#191428',
+        'mainRed': '#E63229',
+        'lightGray': '#F3F3F4',
+        'midGray': '#E2E2E2',
+        'darkGrey': '#E4E4E4',
+        'darkRed': '#E43229',
+        'mainOrange': '#ED4900',
+        'darkBlue': '#191428',
+      },
+      keyframes: {
+        displayTransition: {
+          '0%': { opacity: '0', display: 'none' },
+          '1%': { opacity: '0', display: 'flex' },
+          '100%': { opacity: '1', display: 'flex' },
+        },
+      },
+      animation: {
+        'navDropown': 'displayTransition .3s ease-out',
+      },
+    },
+    variants:{
+      extend: {
+        animation: ['group-hover'],
+      },
+    },
+    plugins: [
+      require("tailwindcss-hyphens")
+    ],
+  }
+}

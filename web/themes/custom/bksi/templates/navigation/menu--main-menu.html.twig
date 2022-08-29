@@ -1,0 +1,60 @@
+{#
+/**
+ * @file
+ * Theme override to display a menu.
+ *
+ * Available variables:
+ * - menu_name: The machine name of the menu.
+ * - items: A nested list of menu items. Each menu item contains:
+ *   - attributes: HTML attributes for the menu item.
+ *   - below: The menu item child items.
+ *   - title: The menu link title.
+ *   - url: The menu link url, instance of \Drupal\Core\Url
+ *   - localized_options: Menu link localized options.
+ *   - is_expanded: TRUE if the link has visible children within the current
+ *     menu tree.
+ *   - is_collapsed: TRUE if the link has children within the current menu tree
+ *     that are not currently visible.
+ *   - in_active_trail: TRUE if the link is in the active trail.
+ */
+#}
+{% import _self as menus %}
+
+{#
+  We call a macro which calls itself to render the full tree.
+  @see https://twig.symfony.com/doc/1.x/tags/macro.html
+#}
+{{ menus.menu_links(items, attributes, 0) }}
+
+{% macro menu_links(items, attributes, menu_level) %}
+    {% import _self as menus %}
+    {% if items %}
+        <ul class="flex flex-col items-start p-4 gap-10 text-[22px] h-full md:items-center md:justify-between md:text-base md:gap-5 md:p-0 md:flex-row lg:gap-12">
+            {% for item in items %}
+                {% if item.below %}
+                    <li class="relative group nav-dropdown md:h-full flex flex-col items-start justify-center md:flex-row md:items-center" data-dropdown>
+                        <div class="flex items-center gap-11">
+                            {% if item.url %}
+                                <a class="text-white duration-300 ease-out hover:text-mainRed" href="{{ item.url }}">
+                                        {{ item.title }}
+                                </a>                             
+                            {% endif %}
+                            <img class="dropdown-button cursor-pointer md:cursor-default md:absolute md:-right-8 md:opacity-0 md:group-hover:opacity-100" src="/themes/custom/bksi/images/arrow-open-close-content.svg" alt="dropdown arrow">
+                        </div>
+                        <ul class="mt-10 ml-8 hidden md:m-0 md:absolute md:top-full md:-left-8 md:w-[280px] md:bg-darkBlue text-white md:px-7 md:py-9 flex-col text-base gap-7 z-50 md:border-t border-mainRed md:hidden md:opacity-0 animate" data-dropdown-content>
+                            {% for below in item.below %}
+                                <li>
+                                    <a class="text-white duration-300 ease-out hover:text-mainRed" href="{{ below.url }}">{{ below.title }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                {% else %}
+                    <li class="md:h-full flex justify-center items-center">
+                        <a href="{{ item.url }}" class="text-white duration-300 ease-out hover:text-mainRed">{{ item.title }}</a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endmacro %}

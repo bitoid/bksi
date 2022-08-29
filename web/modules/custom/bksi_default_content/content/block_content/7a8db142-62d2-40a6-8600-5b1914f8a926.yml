@@ -1,0 +1,34 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 7a8db142-62d2-40a6-8600-5b1914f8a926
+  bundle: hero_block_type
+  default_langcode: en
+  depends:
+    4161ae27-699e-470a-bf99-700b8c99a412: file
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'tragwerksplanung hero block'
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  field_slogan:
+    -
+      value: Tragwerksplanung
+      format: basic_html
+  field_small_image:
+    -
+      entity: 4161ae27-699e-470a-bf99-700b8c99a412
+      display: true
+      description: ''
+  field_title:
+    -
+      value: "<p>Unser Tagwerk: Tragwerk</p>\r\n"
+      format: basic_html

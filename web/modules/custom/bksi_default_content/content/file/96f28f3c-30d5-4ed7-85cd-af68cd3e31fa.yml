@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 96f28f3c-30d5-4ed7-85cd-af68cd3e31fa
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: building-1_1.jpeg
+  uri:
+    -
+      value: 'public://2022-08/building-1_1.jpeg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 548932
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1661260872

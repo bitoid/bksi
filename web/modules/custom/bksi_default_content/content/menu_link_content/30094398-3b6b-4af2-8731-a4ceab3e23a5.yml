@@ -1,0 +1,37 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 30094398-3b6b-4af2-8731-a4ceab3e23a5
+  bundle: menu_link_content
+  default_langcode: en
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: Leistungen
+  menu_name:
+    -
+      value: main-menu
+  link:
+    -
+      uri: 'internal:#'
+      title: ''
+      options:
+        attributes: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: true
+  weight:
+    -
+      value: 0
+  expanded:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true

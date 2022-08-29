@@ -1,6 +1,6 @@
 uuid: 9f55343c-7552-4169-8fdb-5a7c943b155d
 langcode: en
-status: true
+status: false
 dependencies:
   theme:
     - bksi

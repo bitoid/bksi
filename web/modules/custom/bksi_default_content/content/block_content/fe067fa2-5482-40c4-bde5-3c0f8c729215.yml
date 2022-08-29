@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: fe067fa2-5482-40c4-bde5-3c0f8c729215
+  bundle: hero_block_type
+  default_langcode: en
+  depends:
+    96f28f3c-30d5-4ed7-85cd-af68cd3e31fa: file
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'projektdetailseite hero block'
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  field_image:
+    -
+      entity: 96f28f3c-30d5-4ed7-85cd-af68cd3e31fa
+      alt: 'projektdetailseite page banner'
+      title: ''
+      width: 2880
+      height: 1440
+  field_title:
+    -
+      value: "<p>Erweiterung Produktion Werk 4 Bau 50-53 Stuttgart-Zuffenhausen</p>\r\n"
+      format: basic_html

@@ -1,0 +1,42 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 2c79a6e2-70da-4040-8764-f1b8a9965b92
+  bundle: menu_link_content
+  default_langcode: en
+  depends:
+    30094398-3b6b-4af2-8731-a4ceab3e23a5: menu_link_content
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: Tragwerksplaung
+  menu_name:
+    -
+      value: main-menu
+  link:
+    -
+      uri: 'internal:/tragwerksplanung'
+      title: ''
+      options:
+        attributes: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: true
+  weight:
+    -
+      value: -50
+  expanded:
+    -
+      value: false
+  parent:
+    -
+      value: 'menu_link_content:30094398-3b6b-4af2-8731-a4ceab3e23a5'
+  revision_translation_affected:
+    -
+      value: true

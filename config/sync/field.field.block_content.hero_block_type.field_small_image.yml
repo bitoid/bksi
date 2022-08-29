@@ -1,0 +1,27 @@
+uuid: 3305d852-26a0-49fa-a397-c13f14ede4fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_block_type
+    - field.storage.block_content.field_small_image
+  module:
+    - file
+id: block_content.hero_block_type.field_small_image
+field_name: field_small_image
+entity_type: block_content
+bundle: hero_block_type
+label: 'Small image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt svg jpg png'
+  max_filesize: ''
+  description_field: false
+field_type: file

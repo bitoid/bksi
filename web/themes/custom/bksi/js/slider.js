@@ -5,11 +5,7 @@ const currentSlideHTML = document.querySelector('.current-slide');
 const totalSlides = document.querySelector('.total-slides');
 const sliderContainer = document.querySelector('.slider-container')
 if (sliderContainer) {
-
     const arrayOfSliderContents = sliderContainer.querySelectorAll('.slider-content')
-
-
-
     const sliderContentWidth = document.querySelector('.slider-content').getBoundingClientRect().width
     let currentSlide = 0;
 
@@ -41,5 +37,4 @@ if (sliderContainer) {
             sliderContainer.scrollLeft -= (sliderContentWidth * arrayOfSliderContents.length)
         }
     })
-
 }

@@ -1,15 +1,15 @@
-uuid: 4575184f-160a-471d-84a7-a9665ae62e4f
+uuid: 790655f0-2310-4a51-b124-16b6faf68c3b
 langcode: en
-status: false
+status: true
 dependencies:
   theme:
-    - bksi
+    - gin
 _core:
-  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
-id: bksi_primary_local_tasks
-theme: bksi
-region: highlighted
-weight: -4
+  default_config_hash: Hh01DLj9k7UnNdPpOQXHZHW7GHf2OPNDQyCJF7_R9ac
+id: gin_primary_local_tasks
+theme: gin
+region: header
+weight: 0
 provider: null
 plugin: local_tasks_block
 settings:

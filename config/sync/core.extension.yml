@@ -27,6 +27,7 @@ module:
   history: 0
   image: 0
   layout_builder: 0
+  layout_builder_admin_theme: 0
   layout_discovery: 0
   link: 0
   menu_link_content: 0
@@ -57,4 +58,5 @@ theme:
   claro: 0
   stable: 0
   bksi: 0
+  gin: 0
 profile: minimal

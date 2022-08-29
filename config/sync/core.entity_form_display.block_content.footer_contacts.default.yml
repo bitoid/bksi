@@ -1,0 +1,76 @@
+uuid: ca656db3-76e5-4d7b-8794-2ef64093476f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_contacts
+    - field.field.block_content.footer_contacts.field_address
+    - field.field.block_content.footer_contacts.field_company_info
+    - field.field.block_content.footer_contacts.field_e_mail
+    - field.field.block_content.footer_contacts.field_phone
+    - field.field.block_content.footer_contacts.field_slogan
+    - field.field.block_content.footer_contacts.field_title
+  module:
+    - text
+id: block_content.footer_contacts.default
+targetEntityType: block_content
+bundle: footer_contacts
+mode: default
+content:
+  field_address:
+    type: text_textarea
+    weight: 4
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_company_info:
+    type: text_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_e_mail:
+    type: email_default
+    weight: 5
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+  field_phone:
+    type: text_textfield
+    weight: 6
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_slogan:
+    type: text_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

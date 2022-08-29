@@ -1,0 +1,21 @@
+uuid: 08de0add-2e5f-4b95-86b7-1d813856db37
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_contacts
+    - field.storage.block_content.field_slogan
+  module:
+    - text
+id: block_content.footer_contacts.field_slogan
+field_name: field_slogan
+entity_type: block_content
+bundle: footer_contacts
+label: Slogan
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

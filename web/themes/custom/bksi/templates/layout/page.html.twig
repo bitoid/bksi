@@ -45,47 +45,23 @@
  * @ingroup themeable
  */
 #}
-<div class="container p-4 mx-auto">
 
-  <header role="banner" class="header-top relative left-0 top-0 flex items-center justify-between w-full h-[90px] gap-5 p-5 md:fixed lg:px-11 lg:py-6">
-    {{ page.header }}
-  </header>
+<header role="banner" class="header-top relative left-0 top-0 flex items-center justify-between w-full h-[90px] gap-5 p-5 md:fixed lg:px-11 lg:py-6">
+	{{ page.header }}
+</header>
 
-  {{ page.primary_menu }}
-  {{ page.secondary_menu }}
+{{ page.breadcrumb }}
+{{ page.highlighted }}
+{{ page.help }}
 
-  {{ page.breadcrumb }}
+<main role="main">
+	<a id="main-content" tabindex="-1"></a>
+	{# link is in html.html.twig #}
+	{{ page.content }}
+</main>
 
-  {{ page.highlighted }}
-
-  {{ page.help }}
-
-  <main role="main">
-    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
-
-    <div class="-mx-4 md:flex">
-      <div class="p-4 md:flex-1">
-        {{ page.content }}
-      </div>{# /.layout-content #}
-
-      {% if page.sidebar_first %}
-        <aside class="p-4 md:w-1/4" role="complementary">
-          {{ page.sidebar_first }}
-        </aside>
-      {% endif %}
-
-      {% if page.sidebar_second %}
-        <aside class="md:w-1/4" role="complementary">
-          {{ page.sidebar_second }}
-        </aside>
-      {% endif %}
-    </div>
-  </main>
-
-  {% if page.footer %}
-    <footer role="contentinfo">
-      {{ page.footer }}
-    </footer>
-  {% endif %}
-
-</div>{# /.layout-container #}
+{% if page.footer %}
+	<footer role="contentinfo">
+		{{ page.footer }}
+	</footer>
+{% endif %}

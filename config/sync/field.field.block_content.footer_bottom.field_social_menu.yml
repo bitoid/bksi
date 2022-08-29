@@ -1,0 +1,31 @@
+uuid: d5c1fbe5-7ab4-4dea-920a-92329fe94c1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_bottom
+    - field.storage.block_content.field_social_menu
+    - paragraphs.paragraphs_type.footer_social_menu_item
+  module:
+    - entity_reference_revisions
+id: block_content.footer_bottom.field_social_menu
+field_name: field_social_menu
+entity_type: block_content
+bundle: footer_bottom
+label: 'Social Menu'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      footer_social_menu_item: footer_social_menu_item
+    negate: 0
+    target_bundles_drag_drop:
+      footer_social_menu_item:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

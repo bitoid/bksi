@@ -17,6 +17,7 @@ module:
   default_content: 0
   dynamic_page_cache: 0
   editor: 0
+  entity_reference_revisions: 0
   field: 0
   field_ui: 0
   file: 0
@@ -26,6 +27,7 @@ module:
   history: 0
   image: 0
   layout_builder: 0
+  layout_builder_admin_theme: 0
   layout_discovery: 0
   link: 0
   menu_link_content: 0
@@ -49,10 +51,12 @@ module:
   user: 0
   views_ui: 0
   views: 10
+  paragraphs: 11
   minimal: 1000
 theme:
   olivero: 0
   claro: 0
   stable: 0
   bksi: 0
+  gin: 0
 profile: minimal

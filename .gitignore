@@ -24,7 +24,6 @@
 /web/themes/custom/bksi/*.log
 #/mix-manifest.json
 /web/themes/custom/bksi/node_modules
-/web/themes/custom/bksi/dist
 
 # Ignore compiled assets.
 # /dist/

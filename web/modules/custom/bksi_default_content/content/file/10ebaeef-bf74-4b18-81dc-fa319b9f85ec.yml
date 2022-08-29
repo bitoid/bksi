@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 10ebaeef-bf74-4b18-81dc-fa319b9f85ec
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: social-icon-facebook_1.svg
+  uri:
+    -
+      value: 'public://2022-08/social-icon-facebook_1.svg'
+  filemime:
+    -
+      value: image/svg+xml
+  filesize:
+    -
+      value: 413
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1661078579

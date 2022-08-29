@@ -1,0 +1,27 @@
+uuid: bc668ca3-7ff8-4ff7-9e76-a11b0ecb19a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_social_icon
+    - paragraphs.paragraphs_type.footer_social_menu_item
+  module:
+    - file
+id: paragraph.footer_social_menu_item.field_social_icon
+field_name: field_social_icon
+entity_type: paragraph
+bundle: footer_social_menu_item
+label: 'Social Icon'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt svg png jpg'
+  max_filesize: ''
+  description_field: false
+field_type: file

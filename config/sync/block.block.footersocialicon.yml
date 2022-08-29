@@ -1,0 +1,25 @@
+uuid: e1d8e23f-c882-4205-8594-cfd5583b5e3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer-logos
+  module:
+    - system
+  theme:
+    - bksi
+id: footersocialicon
+theme: bksi
+region: footer_bottom
+weight: -11
+provider: null
+plugin: 'system_menu_block:footer-logos'
+settings:
+  id: 'system_menu_block:footer-logos'
+  label: 'Footer Social Icon'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

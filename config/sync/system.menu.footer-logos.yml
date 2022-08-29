@@ -1,0 +1,8 @@
+uuid: 73444289-3e95-428a-bfe6-da81de31cabc
+langcode: en
+status: true
+dependencies: {  }
+id: footer-logos
+label: 'Footer Social Icon'
+description: ''
+locked: false

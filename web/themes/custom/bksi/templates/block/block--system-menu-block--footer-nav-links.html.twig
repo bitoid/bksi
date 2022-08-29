@@ -1,0 +1,5 @@
+<div class="flex gap-[52px] mb-[74px] md:m-0">
+    {% for item in content["#items"] %} 
+        <a class="text-[15px] leading-[19px] tracking-[0.75px] hover:text-mainRed" href="{{item.url}}">{{item.title}}</a>
+    {% endfor %}
+</div>

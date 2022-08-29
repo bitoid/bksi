@@ -1,26 +1,21 @@
-uuid: 5b11afa6-162b-440d-957e-fc025d651d9f
+uuid: acf9d40f-0c73-489f-97aa-5c3d5047770a
 langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.footer_bottom
+    - block_content.type.footer_bottom_items
     - field.storage.block_content.field_footer_image_link
   module:
     - link
-id: block_content.footer_bottom.field_footer_image_link
+id: block_content.footer_bottom_items.field_footer_image_link
 field_name: field_footer_image_link
 entity_type: block_content
-bundle: footer_bottom
+bundle: footer_bottom_items
 label: 'Footer Image Link'
 description: ''
 required: false
 translatable: false
-default_value:
-  -
-    uri: 'https://www.dgnb.de/de/index.php'
-    title: ''
-    options:
-      attributes: {  }
+default_value: {  }
 default_value_callback: ''
 settings:
   title: 1

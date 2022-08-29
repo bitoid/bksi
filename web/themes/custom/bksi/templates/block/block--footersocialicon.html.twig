@@ -1,0 +1,7 @@
+<div class="flex gap-8 mb-8 md:m-0">
+    {% for item in content["#items"] %}
+        <a href="{{item.url}}" class="flex group justify-center items-center w-[50px] aspect-square rounded-full bg-white hover:scale-110">
+            <img class="group-hover:scale-90 footer-menu-icon-{{ loop.index }}" alt="">
+        </a>
+    {% endfor %}
+</div>

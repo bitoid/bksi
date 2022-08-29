@@ -1,0 +1,8 @@
+uuid: 396ddc49-9131-4dad-89dd-d0b33fa805ac
+langcode: en
+status: true
+dependencies: {  }
+id: footer_bottom_items
+label: 'Footer Bottom Items'
+revision: 0
+description: ''

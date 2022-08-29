@@ -1,0 +1,25 @@
+uuid: 0166938a-0f1d-427e-b0ce-11f9597a1a00
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:footer_bottom_items:7c04b361-c510-46d8-a31a-bb28a729230e'
+  module:
+    - block_content
+  theme:
+    - bksi
+id: footerbottomitems
+theme: bksi
+region: header
+weight: -7
+provider: null
+plugin: 'block_content:7c04b361-c510-46d8-a31a-bb28a729230e'
+settings:
+  id: 'block_content:7c04b361-c510-46d8-a31a-bb28a729230e'
+  label: 'Footer Bottom Items'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

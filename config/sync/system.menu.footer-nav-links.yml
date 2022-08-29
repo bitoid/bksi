@@ -1,0 +1,8 @@
+uuid: ad6de1a5-42a6-4fdf-94af-d453ce90c0c0
+langcode: en
+status: true
+dependencies: {  }
+id: footer-nav-links
+label: 'Footer Nav Links'
+description: ''
+locked: false

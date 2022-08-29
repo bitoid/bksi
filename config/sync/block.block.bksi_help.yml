@@ -1,6 +1,6 @@
 uuid: 313cf411-3771-4857-b6f2-83de78be102b
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - help
@@ -10,7 +10,7 @@ _core:
   default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
 id: bksi_help
 theme: bksi
-region: sidebar_first
+region: header
 weight: 0
 provider: null
 plugin: help_block

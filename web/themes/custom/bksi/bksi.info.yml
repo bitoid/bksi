@@ -16,7 +16,7 @@ regions:
   primary_menu: Primary menu
   secondary_menu: Secondary menu
   footer: Footer
-  footer_logos: Footer Logos
+  footer_bottom: Footer bottom
   highlighted: Highlighted
   help: help
   breadcrumb: Breadcrumb

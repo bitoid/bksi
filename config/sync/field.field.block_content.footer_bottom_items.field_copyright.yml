@@ -1,16 +1,16 @@
-uuid: 1ad5431c-9511-491f-91e1-f38c6d21bc95
+uuid: 0f35ccb4-870e-4df7-b32d-f80c4cd4f585
 langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.footer_bottom
+    - block_content.type.footer_bottom_items
     - field.storage.block_content.field_copyright
   module:
     - text
-id: block_content.footer_bottom.field_copyright
+id: block_content.footer_bottom_items.field_copyright
 field_name: field_copyright
 entity_type: block_content
-bundle: footer_bottom
+bundle: footer_bottom_items
 label: Copyright
 description: ''
 required: false

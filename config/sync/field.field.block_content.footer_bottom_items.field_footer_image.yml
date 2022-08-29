@@ -1,16 +1,16 @@
-uuid: 2f5fe442-8931-4c99-b89f-9500aadd8777
+uuid: 13c714e1-c66f-4257-b738-e82bfa29f843
 langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.footer_bottom
+    - block_content.type.footer_bottom_items
     - field.storage.block_content.field_footer_image
   module:
     - file
-id: block_content.footer_bottom.field_footer_image
+id: block_content.footer_bottom_items.field_footer_image
 field_name: field_footer_image
 entity_type: block_content
-bundle: footer_bottom
+bundle: footer_bottom_items
 label: 'Footer Image'
 description: ''
 required: false
@@ -21,7 +21,7 @@ settings:
   handler: 'default:file'
   handler_settings: {  }
   file_directory: '[date:custom:Y]-[date:custom:m]'
-  file_extensions: 'txt svg png jpg'
+  file_extensions: 'svg png jpg jpeg'
   max_filesize: ''
   description_field: false
 field_type: file

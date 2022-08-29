@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: e7adbb4f-bc74-41b7-b49f-938d32edb630
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: img-4.svg
+  uri:
+    -
+      value: 'public://2022-08/img-4.svg'
+  filemime:
+    -
+      value: image/svg+xml
+  filesize:
+    -
+      value: 1334
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1661781105

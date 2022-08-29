@@ -1,0 +1,57 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 782dcb95-8f1a-41c9-a32a-024a23cb55c0
+  bundle: article
+  default_langcode: en
+  depends:
+    bd2423d8-593b-46bc-8adf-a16e30653ef2: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Neues Projekt'
+  created:
+    -
+      value: 1661790673
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  body:
+    -
+      value: "<p>Neubau Bürogebäude Wörwag Böblingen</p>\r\n"
+      format: basic_html
+      summary: ''
+  comment:
+    -
+      status: 2
+      cid: 0
+      last_comment_timestamp: 1661790794
+      last_comment_name: ''
+      last_comment_uid: 1
+      comment_count: 0
+  field_image:
+    -
+      entity: bd2423d8-593b-46bc-8adf-a16e30653ef2
+      alt: building
+      title: ''
+      width: 2560
+      height: 1706

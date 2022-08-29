@@ -1,0 +1,57 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 2a18bd6d-8acf-4095-aa33-a2605aefd5be
+  bundle: article
+  default_langcode: en
+  depends:
+    4d02f60f-480d-47f2-9934-f6d0e40b6ffb: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Neues Projekt'
+  created:
+    -
+      value: 1661791044
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  body:
+    -
+      value: "<p>mKR Teilneubau und Sanierung BA1 medius KlINIK OSTFILDERN-RUIT</p>\r\n"
+      format: basic_html
+      summary: ''
+  comment:
+    -
+      status: 2
+      cid: 0
+      last_comment_timestamp: 1661791127
+      last_comment_name: ''
+      last_comment_uid: 1
+      comment_count: 0
+  field_image:
+    -
+      entity: 4d02f60f-480d-47f2-9934-f6d0e40b6ffb
+      alt: architechture
+      title: ''
+      width: 960
+      height: 540

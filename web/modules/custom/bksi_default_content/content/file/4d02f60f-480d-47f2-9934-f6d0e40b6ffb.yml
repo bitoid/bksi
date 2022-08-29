@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 4d02f60f-480d-47f2-9934-f6d0e40b6ffb
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: architechture.jpg
+  uri:
+    -
+      value: 'public://2022-08/architechture.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 809859
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1661791117

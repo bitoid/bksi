@@ -39,7 +39,7 @@ class BksiNews extends BlockBase
         ->sort('created', 'DESC')
         ->execute();
 
-      $newses = [];
+      $news_array = [];
 
       foreach ($nids as $nid) {
         $node = Node::load($nid);
@@ -48,7 +48,7 @@ class BksiNews extends BlockBase
         $url = ImageStyle::load('wide')->buildUrl($news_image);
         $date = date("F Y", $node->created->value);
         $body = str_replace("&nbsp;", ' ', $node->body->value);
-        $newses[$nid]=[
+        $news_array[$nid]=[
           'nid' => $nid,
           'date' => $date,
           'title' => $node->title->value,
@@ -59,7 +59,7 @@ class BksiNews extends BlockBase
       // Return variables for block template
       return [
         '#theme' => 'bksi_news',
-        '#newses' => $newses,
+        '#news_array' => $news_array,
         '#quantity' => $quantity,
         '#slogan' => $slogan,
         '#title' => $title,
@@ -88,7 +88,7 @@ class BksiNews extends BlockBase
       '#type' => 'number',
       '#title' => $this->t('News Quantity'),
       '#default_value' => $config['news_quantity'] ?? 0,
-      '#description' => $this->t('quantity of newses on the page'),
+      '#description' => $this->t('quantity of news on the page'),
     ];
 
     $form['slogan'] = [
@@ -96,7 +96,7 @@ class BksiNews extends BlockBase
       '#size' => 'medium',
       '#title' => $this->t('Slogan'),
       '#default_value' => $config['slogan'] ?? '',
-      '#description' => $this->t('Slogan for newses block'),
+      '#description' => $this->t('Slogan for news block'),
     ];
 
     $form['title'] = [
@@ -104,7 +104,7 @@ class BksiNews extends BlockBase
       '#size' => 'medium',
       '#title' => $this->t('Title'),
       '#default_value' => $config['title'] ?? '',
-      '#description' => $this->t('Title for newses block'),
+      '#description' => $this->t('Title for news block'),
     ];
     return $form;
   }

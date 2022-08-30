@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: cd574c14-b8bb-414a-9145-742e7bed0cf4
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: house-2.jpg
+  uri:
+    -
+      value: 'public://2022-08/house-2.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 112561
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1661861413

@@ -7,9 +7,11 @@ dependencies:
     - field.field.node.project.field_builder_name
     - field.field.node.project.field_leistung_x
     - field.field.node.project.field_leistung_y_
+    - field.field.node.project.field_project_challenge_image
     - field.field.node.project.field_project_challenges
     - field.field.node.project.field_project_client
     - field.field.node.project.field_project_description
+    - field.field.node.project.field_project_header_image
     - field.field.node.project.field_project_image
     - field.field.node.project.field_project_period
     - field.field.node.project.field_project_sector
@@ -36,7 +38,7 @@ content:
     third_party_settings: {  }
   field_bgf:
     type: string_textfield
-    weight: 16
+    weight: 13
     region: content
     settings:
       size: 60
@@ -44,7 +46,7 @@ content:
     third_party_settings: {  }
   field_builder_name:
     type: string_textfield
-    weight: 17
+    weight: 11
     region: content
     settings:
       size: 60
@@ -52,7 +54,7 @@ content:
     third_party_settings: {  }
   field_leistung_x:
     type: string_textfield
-    weight: 18
+    weight: 10
     region: content
     settings:
       size: 60
@@ -60,15 +62,23 @@ content:
     third_party_settings: {  }
   field_leistung_y_:
     type: string_textfield
-    weight: 19
+    weight: 9
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_project_challenge_image:
+    type: image_image
+    weight: 16
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
   field_project_challenges:
     type: string_textarea
-    weight: 9
+    weight: 15
     region: content
     settings:
       rows: 5
@@ -76,7 +86,7 @@ content:
     third_party_settings: {  }
   field_project_client:
     type: string_textfield
-    weight: 14
+    weight: 21
     region: content
     settings:
       size: 60
@@ -84,15 +94,23 @@ content:
     third_party_settings: {  }
   field_project_description:
     type: string_textarea
-    weight: 8
+    weight: 14
     region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
+  field_project_header_image:
+    type: image_image
+    weight: 8
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
   field_project_image:
     type: image_image
-    weight: 15
+    weight: 22
     region: content
     settings:
       progress_indicator: throbber
@@ -100,19 +118,19 @@ content:
     third_party_settings: {  }
   field_project_period:
     type: datetime_default
-    weight: 20
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
   field_project_sector:
     type: options_select
-    weight: 13
+    weight: 20
     region: content
     settings: {  }
     third_party_settings: {  }
   field_project_service:
     type: options_select
-    weight: 12
+    weight: 19
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -126,13 +144,13 @@ content:
     third_party_settings: {  }
   field_project_type:
     type: options_select
-    weight: 11
+    weight: 18
     region: content
     settings: {  }
     third_party_settings: {  }
   field_sustainability_issues:
     type: string_textarea
-    weight: 10
+    weight: 17
     region: content
     settings:
       rows: 5

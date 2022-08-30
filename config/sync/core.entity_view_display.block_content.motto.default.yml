@@ -1,0 +1,29 @@
+uuid: 935ad017-f3f5-413e-8fa2-4bc792fa2b08
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.motto
+    - field.field.block_content.motto.field_author
+    - field.field.block_content.motto.field_motto
+id: block_content.motto.default
+targetEntityType: block_content
+bundle: motto
+mode: default
+content:
+  field_author:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_motto:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

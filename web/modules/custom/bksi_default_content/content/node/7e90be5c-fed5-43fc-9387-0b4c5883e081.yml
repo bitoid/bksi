@@ -4,6 +4,8 @@ _meta:
   uuid: 7e90be5c-fed5-43fc-9387-0b4c5883e081
   bundle: page
   default_langcode: en
+  depends:
+    36d48753-aee5-4c34-804e-b3a03e2aa5c1: block_content
 default:
   revision_uid:
     -
@@ -79,4 +81,19 @@ default:
               context_mapping: {  }
             weight: 2
             additional: {  }
+          8d754e81-93d3-41dc-a537-b52497db8db3:
+            uuid: 8d754e81-93d3-41dc-a537-b52497db8db3
+            region: content
+            configuration:
+              id: 'inline_block:motto'
+              label: Motto
+              label_display: visible
+              provider: layout_builder
+              view_mode: full
+              block_revision_id: '10'
+              block_serialized: null
+              context_mapping: {  }
+            weight: 3
+            additional:
+              target_uuid: 36d48753-aee5-4c34-804e-b3a03e2aa5c1
         third_party_settings: {  }

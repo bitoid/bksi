@@ -1,0 +1,8 @@
+uuid: 593afae9-eed6-42d9-9f66-12713492e994
+langcode: en
+status: true
+dependencies: {  }
+id: motto
+label: Motto
+revision: 1
+description: ''

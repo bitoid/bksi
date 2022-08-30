@@ -1,0 +1,30 @@
+uuid: 609d3a1b-106b-4352-9564-9d12fb7b05de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.offer.field_item
+    - field.field.paragraph.offer.field_title
+    - paragraphs.paragraphs_type.offer
+id: paragraph.offer.default
+targetEntityType: paragraph
+bundle: offer
+mode: default
+content:
+  field_item:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,0 +1,122 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 70a57b25-ad02-43ac-a52c-3339625466d3
+  bundle: project
+  default_langcode: en
+  depends:
+    cd574c14-b8bb-414a-9145-742e7bed0cf4: file
+    db3dc303-e055-4648-b1c0-e6382c6572ae: file
+    eec9a9d3-fa6c-4726-832b-477e64585c54: file
+    b47a8d3b-81b5-4d2f-b891-c42b533e1699: file
+    620567f9-8b12-40aa-838f-f3cc5619a3df: file
+    0bb19a9e-cd3a-49a0-b678-7887a30eb2f6: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Erweiterung Produktion'
+  created:
+    -
+      value: 1661861314
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  field_bgf:
+    -
+      value: BGF
+  field_builder_name:
+    -
+      value: 'builder name'
+  field_leistung_x:
+    -
+      value: 'Leistung X'
+  field_leistung_y_:
+    -
+      value: 'Leistung Y'
+  field_project_challenges:
+    -
+      value: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata'
+  field_project_challenge_image:
+    -
+      entity: cd574c14-b8bb-414a-9145-742e7bed0cf4
+      alt: chalanges-img
+      title: ''
+      width: 940
+      height: 625
+  field_project_client:
+    -
+      value: 'SF Bau GmbH & Co.KG'
+  field_project_description:
+    -
+      value: 'Ausgangssituation, tiefere Leistungsbeschreibung (Welche Leistungen hat BKSi erbracht), Kooperationspartner (Architekten o.Ä.) Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata'
+  field_project_header_image:
+    -
+      entity: db3dc303-e055-4648-b1c0-e6382c6572ae
+      alt: header_img
+      title: ''
+      width: 2880
+      height: 1440
+  field_project_image:
+    -
+      entity: eec9a9d3-fa6c-4726-832b-477e64585c54
+      alt: img4
+      title: ''
+      width: 1000
+      height: 667
+    -
+      entity: b47a8d3b-81b5-4d2f-b891-c42b533e1699
+      alt: img1
+      title: ''
+      width: 1000
+      height: 667
+    -
+      entity: 620567f9-8b12-40aa-838f-f3cc5619a3df
+      alt: img2
+      title: ''
+      width: 1200
+      height: 577
+    -
+      entity: 0bb19a9e-cd3a-49a0-b678-7887a30eb2f6
+      alt: img3
+      title: ''
+      width: 1080
+      height: 720
+  field_project_period:
+    -
+      value: '2020-09-16'
+    -
+      value: '2022-08-17'
+  field_project_sector:
+    -
+      value: 'Semiconductor & Information Technology'
+  field_project_service:
+    -
+      value: 'Digital planning / BIM'
+  field_project_title:
+    -
+      value: 'Erweiterung Produktion Werk 4 Bau 50-53 Stuttgart-Zuffenhausen'
+  field_project_type:
+    -
+      value: 'Residential construction'
+  field_sustainability_issues:
+    -
+      value: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata'

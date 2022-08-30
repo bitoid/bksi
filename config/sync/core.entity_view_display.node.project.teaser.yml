@@ -8,9 +8,11 @@ dependencies:
     - field.field.node.project.field_builder_name
     - field.field.node.project.field_leistung_x
     - field.field.node.project.field_leistung_y_
+    - field.field.node.project.field_project_challenge_image
     - field.field.node.project.field_project_challenges
     - field.field.node.project.field_project_client
     - field.field.node.project.field_project_description
+    - field.field.node.project.field_project_header_image
     - field.field.node.project.field_project_image
     - field.field.node.project.field_project_period
     - field.field.node.project.field_project_sector
@@ -36,9 +38,11 @@ hidden:
   field_builder_name: true
   field_leistung_x: true
   field_leistung_y_: true
+  field_project_challenge_image: true
   field_project_challenges: true
   field_project_client: true
   field_project_description: true
+  field_project_header_image: true
   field_project_image: true
   field_project_period: true
   field_project_sector: true

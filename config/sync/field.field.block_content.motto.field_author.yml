@@ -9,7 +9,7 @@ id: block_content.motto.field_author
 field_name: field_author
 entity_type: block_content
 bundle: motto
-label: author
+label: Author
 description: ''
 required: false
 translatable: false

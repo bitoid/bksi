@@ -33,3 +33,50 @@ default:
     -
       alias: ''
       langcode: en
+  layout_builder__layout:
+    -
+      section:
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          9882d3ae-f738-4128-b707-2e592f546ca5:
+            uuid: 9882d3ae-f738-4128-b707-2e592f546ca5
+            region: content
+            configuration:
+              id: 'field_block:node:page:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          60147769-88b6-4794-8413-2815b9e41bf1:
+            uuid: 60147769-88b6-4794-8413-2815b9e41bf1
+            region: content
+            configuration:
+              id: 'extra_field_block:node:page:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 1
+            additional: {  }
+          17628ece-de3c-40ac-907f-054eede1a1b8:
+            uuid: 17628ece-de3c-40ac-907f-054eede1a1b8
+            region: content
+            configuration:
+              id: 'block_content:a70afd5f-2f36-43b5-ab08-d1922db818aa'
+              label: 'Contacts (Services Page)'
+              label_display: 0
+              provider: block_content
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }

@@ -1,0 +1,29 @@
+uuid: b1caa104-281e-475a-a228-703935f02e6e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.job_paragraph.field_job_paragraph_description
+    - field.field.paragraph.job_paragraph.field_job_paragraph_title
+    - paragraphs.paragraphs_type.job_paragraph
+id: paragraph.job_paragraph.default
+targetEntityType: paragraph
+bundle: job_paragraph
+mode: default
+content:
+  field_job_paragraph_description:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_job_paragraph_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

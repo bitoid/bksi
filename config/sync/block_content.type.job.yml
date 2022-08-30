@@ -1,0 +1,8 @@
+uuid: e291c314-38b9-490f-bc79-a44a49c3e261
+langcode: en
+status: true
+dependencies: {  }
+id: job
+label: Job
+revision: 0
+description: 'Block for Career page'

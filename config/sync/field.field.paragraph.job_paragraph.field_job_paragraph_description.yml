@@ -1,0 +1,19 @@
+uuid: a5d190b9-75fd-4118-8646-63d332c7bdd4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_job_paragraph_description
+    - paragraphs.paragraphs_type.job_paragraph
+id: paragraph.job_paragraph.field_job_paragraph_description
+field_name: field_job_paragraph_description
+entity_type: paragraph
+bundle: job_paragraph
+label: 'Job Paragraph Description'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,8 @@
+uuid: 94cbb379-59ee-4dee-8a28-2fa4e620974a
+langcode: en
+status: true
+dependencies: {  }
+id: offer
+label: Offer
+revision: 0
+description: ''

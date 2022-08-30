@@ -1,0 +1,21 @@
+uuid: c9ea12f4-6b0a-4460-91c3-4301440e68fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.offer
+    - field.storage.block_content.field_slogan
+  module:
+    - text
+id: block_content.offer.field_slogan
+field_name: field_slogan
+entity_type: block_content
+bundle: offer
+label: Slogan
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

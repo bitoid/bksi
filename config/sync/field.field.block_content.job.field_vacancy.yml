@@ -1,0 +1,37 @@
+uuid: 787a1503-bc68-4492-8d16-ee71018d31b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.job
+    - field.storage.block_content.field_vacancy
+    - paragraphs.paragraphs_type.job_paragraph
+  module:
+    - entity_reference_revisions
+id: block_content.job.field_vacancy
+field_name: field_vacancy
+entity_type: block_content
+bundle: job
+label: vacancy
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      job_paragraph: job_paragraph
+    negate: 0
+    target_bundles_drag_drop:
+      footer_bottom_nav_link:
+        weight: 4
+        enabled: false
+      footer_social_menu_item:
+        weight: 5
+        enabled: false
+      job_paragraph:
+        weight: 6
+        enabled: true
+field_type: entity_reference_revisions

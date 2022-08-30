@@ -1,0 +1,10 @@
+uuid: cab9e494-e0cb-48a8-81f3-2c3bc4643e09
+langcode: en
+status: true
+dependencies: {  }
+id: job_paragraph
+label: 'Job paragraph'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

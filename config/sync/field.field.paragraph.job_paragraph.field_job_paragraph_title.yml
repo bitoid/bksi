@@ -1,0 +1,19 @@
+uuid: 947dac0f-b4d3-4f11-b9d0-4a9463a9f201
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_job_paragraph_title
+    - paragraphs.paragraphs_type.job_paragraph
+id: paragraph.job_paragraph.field_job_paragraph_title
+field_name: field_job_paragraph_title
+entity_type: paragraph
+bundle: job_paragraph
+label: 'Job Paragraph Title'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,211 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 1369a407-1c13-42c8-9f37-54bab119288e
+  bundle: application
+  default_langcode: en
+  depends:
+    a26aa6e6-e0bb-462c-b367-dcf8bb9af3d1: file
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: Application
+  reusable:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  field_accordion_title:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 026a3a4d-82f9-4031-94cc-f4baabb988c5
+          bundle: paragraph
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1661845021
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_accordion_body:
+            -
+              value: "<p>Sende uns deine Unterlagen einfach per Upload auf das BKSi Bewerbungsportal. Alternativ kannst du uns eine E-Mail senden an karriere@BKSi.de. Wir bestätigen den Eingang.</p>\r\n"
+              format: basic_html
+          field_accordion_title:
+            -
+              value: 'Deine Bewerbung erreicht BKSI'
+              format: basic_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 60489507-8abb-44b1-afd3-0271247ab825
+          bundle: paragraph
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1661845298
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_accordion_body:
+            -
+              value: "<p>Sende uns deine Unterlagen einfach per Upload auf das BKSi Bewerbungsportal. Alternativ kannst du uns eine E-Mail senden an karriere@BKSi.de. Wir bestätigen den Eingang.</p>\r\n"
+              format: basic_html
+          field_accordion_title:
+            -
+              value: 'Einladung zum Kennenlernen'
+              format: basic_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 6af683a1-9fa5-4c85-a561-deef3660b55f
+          bundle: paragraph
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1661845334
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_accordion_body:
+            -
+              value: "<p>Sende uns deine Unterlagen einfach per Upload auf das BKSi Bewerbungsportal. Alternativ kannst du uns eine E-Mail senden an karriere@BKSi.de. Wir bestätigen den Eingang.</p>\r\n"
+              format: basic_html
+          field_accordion_title:
+            -
+              value: 'Das Jobinterview'
+              format: basic_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 0513172f-790e-42e8-8b73-7743ee9a4a5e
+          bundle: paragraph
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1661846046
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_accordion_body:
+            -
+              value: "<p>Sende uns deine Unterlagen einfach per Upload auf das BKSi Bewerbungsportal. Alternativ kannst du uns eine E-Mail senden an karriere@BKSi.de. Wir bestätigen den Eingang.</p>\r\n"
+              format: basic_html
+          field_accordion_title:
+            -
+              value: 'Die Zusage'
+              format: basic_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: ac7bd6d5-f970-4f71-a71a-7b4ce7be90af
+          bundle: paragraph
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1661846052
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_accordion_body:
+            -
+              value: "<p>Sende uns deine Unterlagen einfach per Upload auf das BKSi Bewerbungsportal. Alternativ kannst du uns eine E-Mail senden an karriere@BKSi.de. Wir bestätigen den Eingang.</p>\r\n"
+              format: basic_html
+          field_accordion_title:
+            -
+              value: 'Dein erster Tag bei BKSI'
+              format: basic_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 9c9196b3-ac91-4253-9f67-0c885fd2cb4e
+          bundle: paragraph
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1661846057
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_accordion_body:
+            -
+              value: "<p>Sende uns deine Unterlagen einfach per Upload auf das BKSi Bewerbungsportal. Alternativ kannst du uns eine E-Mail senden an karriere@BKSi.de. Wir bestätigen den Eingang.</p>\r\n"
+              format: basic_html
+          field_accordion_title:
+            -
+              value: 'Dein 100. Tag bei BKSI'
+              format: basic_html
+  field_image:
+    -
+      entity: a26aa6e6-e0bb-462c-b367-dcf8bb9af3d1
+      alt: team-3
+      title: ''
+      width: 2000
+      height: 1333
+  field_slogan:
+    -
+      value: 'Dein Weg zur BKSI'
+      format: basic_html
+  field_title:
+    -
+      value: "<h3>Der Ablauf deiner Bewerbung</h3>\r\n"
+      format: basic_html

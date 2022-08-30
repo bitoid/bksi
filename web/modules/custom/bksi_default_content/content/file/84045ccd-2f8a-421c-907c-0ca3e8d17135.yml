@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 84045ccd-2f8a-421c-907c-0ca3e8d17135
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: bksi-ingenieure-leistungen-bauwerkspruefung_0.svg
+  uri:
+    -
+      value: 'public://2022-08/bksi-ingenieure-leistungen-bauwerkspruefung_0.svg'
+  filemime:
+    -
+      value: image/svg+xml
+  filesize:
+    -
+      value: 1334
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1661863848

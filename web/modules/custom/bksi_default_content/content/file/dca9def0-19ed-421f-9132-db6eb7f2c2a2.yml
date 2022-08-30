@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: dca9def0-19ed-421f-9132-db6eb7f2c2a2
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: bksi-ingenieure-leistungen-gutachten.svg
+  uri:
+    -
+      value: 'public://2022-08/bksi-ingenieure-leistungen-gutachten.svg'
+  filemime:
+    -
+      value: image/svg+xml
+  filesize:
+    -
+      value: 1335
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1661863896

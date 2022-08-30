@@ -56,7 +56,7 @@ default:
               block_revision_id: '6'
               block_serialized: null
               context_mapping: {  }
-            weight: 2
+            weight: '2'
             additional:
               target_uuid: 5b88b192-e24f-4b64-b62c-39156d3fec29
           d6af7f29-e02d-453a-a75b-0e8247f2918e:
@@ -71,7 +71,7 @@ default:
               block_revision_id: '9'
               block_serialized: null
               context_mapping: {  }
-            weight: 3
+            weight: '4'
             additional:
               target_uuid: 709fc9d0-89b1-4d43-bb42-f5729fad078f
           2d3356ad-4728-44ea-bfd7-23ebf4a434ee:
@@ -86,7 +86,21 @@ default:
               info: ''
               view_mode: full
               context_mapping: {  }
-            weight: 3
+            weight: '5'
+            additional: {  }
+          aa506009-b174-420d-bc19-5b073f96f7d5:
+            uuid: aa506009-b174-420d-bc19-5b073f96f7d5
+            region: content
+            configuration:
+              id: 'block_content:0e463375-7ccf-4408-82d8-d686e4889261'
+              label: 'Text Section with CTA (home page)'
+              label_display: 0
+              provider: block_content
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            weight: '3'
             additional: {  }
           d6acf95a-8427-44a7-bd3e-81749b70d752:
             uuid: d6acf95a-8427-44a7-bd3e-81749b70d752

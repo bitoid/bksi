@@ -30,7 +30,6 @@
 }
 
 
-
 html {
     scroll-behavior: smooth;
 }
@@ -60,25 +59,7 @@ ul.arrow > li:before {
     margin-right: 5px;
 }
 
-.search-container{
-    width: 50px;
-    position: absolute;
-    right: 0;
-}
 
-.search-container.active #search {
-    width: 100%;
-    padding: 0 26px;
-}
-
-.search-container.active {
-    width: 100%;
-    padding-right: 10px;
-}
-
-.search-container.active #closeSearch {
-    width: 25px;
-}
 
 .hamburger {
     min-width: 50px;
@@ -208,16 +189,50 @@ ul.arrow > li:before {
     100% { opacity: 1; display: flex }
 }
 
-.nav-dropdown:hover .animate {
+
+
+.nav-dropdown.active > nav {
     display: flex;
-    animation: displayTransition .6s ease-in-out forwards;
 }
 
-@media screen and (min-width: 768px) {
+.nav-dropdown.active .dropdown-button {
+    transform: rotate(-180deg);
+}
+
+@media screen and (min-width: 881px) {
     .header-top.active {
         background-color: transparent;
     }
-    .burger-menu.active {
-        display: none;
+
+    .burger-menu {
+        display: flex;
     }
+
+    .search-container.active #search {
+        width: 100%;
+        padding: 0 26px;
+    }
+
+    .search-container.active {
+        width: 100%;
+        padding-right: 10px;
+    }
+
+    .search-container.active #closeSearch {
+        width: 25px;
+    }
+
+    .burger-menu.active {
+        display: flex;
+    }
+
+    .nav-dropdown.active .dropdown-button {
+        transform: rotate(0deg);
+    }
+
+    .nav-dropdown:hover .animate {
+        display: flex;
+        animation: displayTransition .6s ease-in-out forwards;
+    }
+
 }

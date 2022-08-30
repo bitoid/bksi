@@ -1,0 +1,21 @@
+uuid: a044fad7-4685-4caa-8be3-746db38ab473
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_align
+    - paragraphs.paragraphs_type.company_detail
+  module:
+    - options
+id: paragraph.company_detail.field_image_align
+field_name: field_image_align
+entity_type: paragraph
+bundle: company_detail
+label: 'Image Align'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,79 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ *
+ * Available variables:
+ * - paragraph: Full paragraph entity.
+ *   Only method names starting with "get", "has", or "is" and a few common
+ *   methods such as "id", "label", and "bundle" are available. For example:
+ *   - paragraph.getCreatedTime() will return the paragraph creation timestamp.
+ *   - paragraph.id(): The paragraph ID.
+ *   - paragraph.bundle(): The type of the paragraph, for example, "image" or "text".
+ *   - paragraph.getOwnerId(): The user ID of the paragraph author.
+ *   See Drupal\paragraphs\Entity\Paragraph for a full list of public properties
+ *   and methods for the paragraph object.
+ * - content: All paragraph items. Use {{ content }} to print them all,
+ *   or print a subset such as {{ content.field_example }}. Use
+ *   {{ content|without('field_example') }} to temporarily suppress the printing
+ *   of a given child element.
+ * - attributes: HTML attributes for the containing element.
+ *   The attributes.class element may contain one or more of the following
+ *   classes:
+ *   - paragraphs: The current template type (also known as a "theming hook").
+ *   - paragraphs--type-[type]: The current paragraphs type. For example, if the paragraph is an
+ *     "Image" it would result in "paragraphs--type--image". Note that the machine
+ *     name will often be in a short form of the human readable label.
+ *   - paragraphs--view-mode--[view_mode]: The View Mode of the paragraph; for example, a
+ *     preview would result in: "paragraphs--view-mode--preview", and
+ *     default: "paragraphs--view-mode--default".
+ * - view_mode: View mode; for example, "preview" or "full".
+ * - logged_in: Flag for authenticated user status. Will be true when the
+ *   current user is a logged-in member.
+ * - is_admin: Flag for admin user status. Will be true when the current user
+ *   is an administrator.
+ *
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+  {% block paragraph %}
+    <div class="grid grid-cols-1 lg:grid-cols-2 lg:items-center"{{ attributes.addClass(classes) }}>
+      {% block content %}
+      {% if content.field_image_align['#items'].getString() == "left" %}
+        <div class="order-1 relative fade-in-image-container w-full h-[50vh] lg:h-full overflow-hidden">
+      {% else %}
+        <div class="order-1 relative fade-in-image-container w-full h-[50vh] lg:h-full overflow-hidden lg:order-3">
+      {% endif %}
+          {{ content.field_image }}
+        </div>
+        <div class="order-2 text-fade px-4 py-20 bg-white md:w-1/2 md:mx-auto lg:w-full lg:mx-0 lg:px-28 lg:py-36">
+          <div class="text-content-fade ">
+            <h2 class="flex flex-col gap-5 text-[26px] tracking-[0.3px] mb-28 lg:mb-36">
+              <span class="text-[13px] tracking-[0.65px]">{{ content.field_slogan }}</span>
+                {{ content.field_title }}
+            </h2>
+            <p class="text-[15px] leading-[22px] tracking-[0.75px] mb-14">
+              {{ content.field_description }}
+            </p>
+            <a class="max-w-fit group relative h-10 flex gap-4 z-10 pr-6 items-center rounded-[40px] overflow-hidden" href="{{ content.field_link_cta[0]['#url']}}">
+                <span class="absolute left-0 top-0 -z-10 h-full w-0 rounded-[40px] bg-mainRed group-hover:w-full"></span>
+                <span class="h-full aspect-square rounded-full bg-mainRed flex items-center justify-center"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                {{ content.field_link_cta[0]['#title'] }} 
+            </a>
+          </div>
+        </div>
+      {% endblock %}
+    </div>
+  {% endblock paragraph %}
+

@@ -10,3 +10,7 @@ function bksi_theme_suggestions_block_alter(array &$suggestions, array $variable
   }
 }
 
+function bksi_theme_suggestions_image_alter(array &$suggestions, array $variables)
+{
+  $suggestions[] = 'image'.'__company_detail';
+}

@@ -74,4 +74,18 @@ default:
             weight: 3
             additional:
               target_uuid: 709fc9d0-89b1-4d43-bb42-f5729fad078f
+          2d3356ad-4728-44ea-bfd7-23ebf4a434ee:
+            uuid: 2d3356ad-4728-44ea-bfd7-23ebf4a434ee
+            region: content
+            configuration:
+              id: 'block_content:96ab4878-7984-4f81-b49b-cf9bcf961685'
+              label: 'Company Details Block'
+              label_display: 0
+              provider: block_content
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            weight: 3
+            additional: {  }
         third_party_settings: {  }

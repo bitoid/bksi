@@ -1,0 +1,51 @@
+uuid: 12627aeb-0762-47c0-87f4-029eae550a6e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.offer
+    - field.field.block_content.offer.field_description
+    - field.field.block_content.offer.field_image
+    - field.field.block_content.offer.field_slogan
+    - field.field.block_content.offer.field_title
+  module:
+    - image
+    - text
+id: block_content.offer.default
+targetEntityType: block_content
+bundle: offer
+mode: default
+content:
+  field_description:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_slogan:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_title:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

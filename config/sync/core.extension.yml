@@ -22,6 +22,7 @@ module:
   field_ui: 0
   file: 0
   filter: 0
+  fontawesome: 0
   gin_login: 0
   gin_toolbar: 0
   hal: 0

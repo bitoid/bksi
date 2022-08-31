@@ -55,6 +55,20 @@ default:
               context_mapping: {  }
             weight: 0
             additional: {  }
+          e6062c2b-f56e-470b-bde2-826692d51e28:
+            uuid: e6062c2b-f56e-470b-bde2-826692d51e28
+            region: content
+            configuration:
+              id: 'block_content:3ca6e6c2-28e9-4946-b766-243c449651c2'
+              label: 'Team Page Company Details'
+              label_display: 0
+              provider: block_content
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            weight: 1
+            additional: {  }
         third_party_settings: {  }
     -
       section:

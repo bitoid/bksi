@@ -1,0 +1,68 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 3ca6e6c2-28e9-4946-b766-243c449651c2
+  bundle: company_details
+  default_langcode: en
+  depends:
+    e4307c90-9bad-4d0d-87d7-9a20e996600d: file
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Team Page Company Details'
+  reusable:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  field_company_detail:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 9b378e46-3bde-46e8-9556-00d8ef722c23
+          bundle: company_detail
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1661953434
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_description:
+            -
+              value: 'Herausforderungen gemeinsam annehmen, um so Vertrauen und Sicherheit zu schaffen: durch intelligente, innovative, ästhetische und funktionale Bauwerke – das bedeutet Arbeiten bei BKSI. Dazu suchen wir Menschen, die diverse Teams schätzen und Wert auf partnerschaftliches Miteinander legen. Offene Kommunikation gehört einfach dazu, wenn aus anspruchsvollen Projekten nachhaltige Baukultur werden soll.'
+          field_image:
+            -
+              entity: e4307c90-9bad-4d0d-87d7-9a20e996600d
+              alt: 'People group hand together, showing teamwork.'
+              title: ''
+              width: 1440
+              height: 600
+          field_image_align:
+            -
+              value: right
+          field_link_cta:
+            -
+              uri: 'internal:/'
+              title: 'Zur Karriereseite'
+              options:
+                attributes: {  }
+          field_slogan:
+            -
+              value: Karriere
+          field_title:
+            -
+              value: 'Werde Teil des Teams'

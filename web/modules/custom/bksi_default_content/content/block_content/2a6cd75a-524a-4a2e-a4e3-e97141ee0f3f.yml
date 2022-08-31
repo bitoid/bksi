@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 2a6cd75a-524a-4a2e-a4e3-e97141ee0f3f
+  bundle: hero_block_type
+  default_langcode: en
+  depends:
+    b69a2b61-8321-44b5-a0c9-c5d022888aa4: file
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'team hero block banner'
+  reusable:
+    -
+      value: false
+  field_image:
+    -
+      entity: b69a2b61-8321-44b5-a0c9-c5d022888aa4
+      alt: team_hero_img
+      title: ''
+      width: 1440
+      height: 600
+  field_slogan:
+    -
+      value: Team
+      format: basic_html
+  field_title:
+    -
+      value: "<p>Überschrift Lorem ipsum dolor sit amet</p>\r\n"
+      format: basic_html

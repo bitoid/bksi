@@ -1,0 +1,49 @@
+uuid: 27cbccb1-1318-4f3c-bcd9-901cfedb8af5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.text_block_type
+    - field.field.block_content.text_block_type.field_slogan
+    - field.field.block_content.text_block_type.field_text_block_description
+    - field.field.block_content.text_block_type.field_title
+  module:
+    - text
+id: block_content.text_block_type.default
+targetEntityType: block_content
+bundle: text_block_type
+mode: default
+content:
+  field_slogan:
+    type: text_textfield
+    weight: 26
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_text_block_description:
+    type: text_textarea
+    weight: 28
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
+    type: text_textarea
+    weight: 27
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

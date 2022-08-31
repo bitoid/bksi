@@ -4,6 +4,10 @@ _meta:
   uuid: 062999f0-d93e-4975-91a0-62c4a0874c33
   bundle: page
   default_langcode: en
+  depends:
+    e72edf2a-e650-49c2-9b67-5bc9dd5fa779: block_content
+    0e57b7ff-ee62-4cac-853c-a0ca4185b15b: block_content
+    2a6cd75a-524a-4a2e-a4e3-e97141ee0f3f: block_content
 default:
   revision_uid:
     -
@@ -53,38 +57,51 @@ default:
               info: ''
               view_mode: full
               context_mapping: {  }
-            weight: 0
+            weight: '3'
             additional: {  }
-        third_party_settings: {  }
-    -
-      section:
-        layout_id: layout_onecol
-        layout_settings:
-          label: ''
-        components:
-          9882d3ae-f738-4128-b707-2e592f546ca5:
-            uuid: 9882d3ae-f738-4128-b707-2e592f546ca5
+          30746f68-d6f3-4872-b917-761e132b0026:
+            uuid: 30746f68-d6f3-4872-b917-761e132b0026
             region: content
             configuration:
-              id: 'field_block:node:page:body'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: text_default
-                label: hidden
-                settings: {  }
-                third_party_settings: {  }
-            weight: 0
-            additional: {  }
-          60147769-88b6-4794-8413-2815b9e41bf1:
-            uuid: 60147769-88b6-4794-8413-2815b9e41bf1
+              id: 'inline_block:company_details'
+              label: 'team page detail'
+              label_display: 0
+              provider: layout_builder
+              view_mode: full
+              block_revision_id: '17'
+              block_serialized: null
+              context_mapping: {  }
+            weight: '4'
+            additional:
+              target_uuid: e72edf2a-e650-49c2-9b67-5bc9dd5fa779
+          b261039e-cdd4-48fe-b43a-029b2da23528:
+            uuid: b261039e-cdd4-48fe-b43a-029b2da23528
             region: content
             configuration:
-              id: 'extra_field_block:node:page:links'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-            weight: 1
-            additional: {  }
+              id: 'inline_block:text_block_type'
+              label: 'team page text '
+              label_display: 0
+              provider: layout_builder
+              view_mode: full
+              block_revision_id: '29'
+              block_serialized: null
+              context_mapping: {  }
+            weight: '1'
+            additional:
+              target_uuid: 0e57b7ff-ee62-4cac-853c-a0ca4185b15b
+          4c057edb-cf83-4b64-ad18-d148b3d684d9:
+            uuid: 4c057edb-cf83-4b64-ad18-d148b3d684d9
+            region: content
+            configuration:
+              id: 'inline_block:hero_block_type'
+              label: 'team hero block banner'
+              label_display: 0
+              provider: layout_builder
+              view_mode: full
+              block_revision_id: '20'
+              block_serialized: null
+              context_mapping: {  }
+            weight: '0'
+            additional:
+              target_uuid: 2a6cd75a-524a-4a2e-a4e3-e97141ee0f3f
         third_party_settings: {  }

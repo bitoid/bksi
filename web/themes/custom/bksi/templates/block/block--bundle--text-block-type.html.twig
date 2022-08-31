@@ -1,0 +1,44 @@
+{#
+/**
+ * @file
+ * Theme override to display a block.
+ *
+ * Available variables:
+ * - plugin_id: The ID of the block implementation.
+ * - label: The configured label of the block if visible.
+ * - configuration: A list of the block's configuration values.
+ *   - label: The configured label for the block.
+ *   - label_display: The display settings for the label.
+ *   - provider: The module or other provider that provided this block plugin.
+ *   - Block plugin specific settings will also be stored here.
+ * - content: The content of this block.
+ * - attributes: array of HTML attributes populated by modules, intended to
+ *   be added to the main container tag of this template.
+ *   - id: A valid HTML ID and guaranteed unique.
+ * - title_attributes: Same as attributes, except applied to the main title
+ *   tag that appears in the template.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ *
+ * @see template_preprocess_block()
+ */
+#}
+
+
+<section class="bg-white text-fade">
+  <div class="text-content-fade flex flex-col justify-center px-4 py-[75px] md:max-w-[842px] md:mx-auto md:py-[150px]">
+    <h2 class="text-[26px] tracking-[1.3px] leading-none flex flex-col gap-5 md:text-[35px] md:leading-10 md:tracking-[1.75px]">
+      <span class="text-[13px]">{{ content.field_slogan }}</span>
+      {{ content.field_title }}
+    </h2>
+    <article class="text-[15px] leading-[22px] tracking-wide mt-14 flex flex-col gap-5">
+      {% for description in content.field_text_block_description %}
+       {% if description['#text'] %}
+          <p>{{ description }}</p>
+        {% endif %}
+      {% endfor %}
+    </article>
+  </div>
+</section>

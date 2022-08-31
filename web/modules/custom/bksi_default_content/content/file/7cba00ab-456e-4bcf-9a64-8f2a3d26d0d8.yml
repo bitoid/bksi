@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 7cba00ab-456e-4bcf-9a64-8f2a3d26d0d8
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: architechture-1-aktuelles.jpg
+  uri:
+    -
+      value: 'public://2022-08/architechture-1-aktuelles.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 225642
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1661969825

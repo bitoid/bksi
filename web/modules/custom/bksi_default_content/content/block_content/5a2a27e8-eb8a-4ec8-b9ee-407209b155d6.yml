@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 5a2a27e8-eb8a-4ec8-b9ee-407209b155d6
+  bundle: hero_block_type
+  default_langcode: en
+  depends:
+    7cba00ab-456e-4bcf-9a64-8f2a3d26d0d8: file
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Current hero block banner'
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  field_image:
+    -
+      entity: 7cba00ab-456e-4bcf-9a64-8f2a3d26d0d8
+      alt: architechture-1-aktuelles
+      title: ''
+      width: 1300
+      height: 867
+  field_slogan:
+    -
+      value: Aktuelles
+      format: basic_html
+  field_title:
+    -
+      value: "<p>Überschrift Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>\r\n"
+      format: basic_html

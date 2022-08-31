@@ -3,14 +3,16 @@
 /**
   * Implements hook_theme_suggestions_HOOK_alter().
   */
-
 function bksi_theme_suggestions_block_alter(array &$suggestions, array $variables) {
   if (isset($variables['elements']['content']['#block_content'])) {
     array_splice($suggestions, 1, 0, 'block__bundle__' . $variables['elements']['content']['#block_content']->bundle());
   }
 }
 
-function bksi_theme_suggestions_image_alter(array &$suggestions, array $variables)
-{
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function bksi_theme_suggestions_image_alter(array &$suggestions, array $variables) {
   $suggestions[] = 'image'.'__company_detail';
+  $suggestions[] = 'image'.'__team-gallery';
 }

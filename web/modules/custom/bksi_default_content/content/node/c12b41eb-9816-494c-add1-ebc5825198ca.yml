@@ -1,0 +1,57 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: c12b41eb-9816-494c-add1-ebc5825198ca
+  bundle: article
+  default_langcode: en
+  depends:
+    39d53aa7-0fc3-418a-bcc9-41031100db20: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Neues Projekt'
+  created:
+    -
+      value: 1661941759
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  body:
+    -
+      value: "<p>Neubau Bürogebäude Wörwag Böblingen</p>\r\n"
+      format: basic_html
+      summary: ''
+  comment:
+    -
+      status: 2
+      cid: 0
+      last_comment_timestamp: 1661941848
+      last_comment_name: ''
+      last_comment_uid: 1
+      comment_count: 0
+  field_image:
+    -
+      entity: 39d53aa7-0fc3-418a-bcc9-41031100db20
+      alt: bksi-ingenieure-aktuelles-2020-08
+      title: ''
+      width: 600
+      height: 375

@@ -1,0 +1,24 @@
+uuid: 6ecaf87c-b8f6-450f-bc6b-e7cfbe14a654
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.faq
+    - field.field.block_content.faq.field_faq_content
+  module:
+    - entity_reference_revisions
+id: block_content.faq.default
+targetEntityType: block_content
+bundle: faq
+mode: default
+content:
+  field_faq_content:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

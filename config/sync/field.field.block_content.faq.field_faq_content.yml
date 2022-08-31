@@ -1,0 +1,43 @@
+uuid: 74dfd7aa-0219-41d9-831f-1e1dc394eb30
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.faq
+    - field.storage.block_content.field_faq_content
+    - paragraphs.paragraphs_type.paragraph_faq
+  module:
+    - entity_reference_revisions
+id: block_content.faq.field_faq_content
+field_name: field_faq_content
+entity_type: block_content
+bundle: faq
+label: 'FAQ Content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      paragraph_faq: paragraph_faq
+    negate: 0
+    target_bundles_drag_drop:
+      company_detail:
+        weight: 6
+        enabled: false
+      footer_bottom_nav_link:
+        weight: 7
+        enabled: false
+      footer_social_menu_item:
+        weight: 8
+        enabled: false
+      paragraph_faq:
+        weight: 9
+        enabled: true
+      service:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

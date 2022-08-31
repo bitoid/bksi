@@ -4,6 +4,8 @@ _meta:
   uuid: 062999f0-d93e-4975-91a0-62c4a0874c33
   bundle: page
   default_langcode: en
+  depends:
+    7d86807a-95ed-4227-9d22-0bd1be44d7c3: block_content
 default:
   revision_uid:
     -
@@ -33,3 +35,27 @@ default:
     -
       alias: /team
       langcode: en
+  layout_builder__layout:
+    -
+      section:
+        layout_id: layout_onecol
+        layout_settings:
+          label: content
+          context_mapping: {  }
+        components:
+          170ec030-42ec-4723-9e27-ac5176b21a75:
+            uuid: 170ec030-42ec-4723-9e27-ac5176b21a75
+            region: content
+            configuration:
+              id: 'inline_block:hero_block_type'
+              label: 'team page hero banner'
+              label_display: 0
+              provider: layout_builder
+              view_mode: full
+              block_revision_id: '10'
+              block_serialized: null
+              context_mapping: {  }
+            weight: 0
+            additional:
+              target_uuid: 7d86807a-95ed-4227-9d22-0bd1be44d7c3
+        third_party_settings: {  }

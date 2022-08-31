@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 7d86807a-95ed-4227-9d22-0bd1be44d7c3
+  bundle: hero_block_type
+  default_langcode: en
+  depends:
+    e7d7b252-3a35-4612-8ca2-4001d51a99ce: file
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'team page hero banner'
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  field_image:
+    -
+      entity: e7d7b252-3a35-4612-8ca2-4001d51a99ce
+      alt: team_hero_banner
+      title: ''
+      width: 1440
+      height: 600
+  field_slogan:
+    -
+      value: Team
+      format: basic_html
+  field_title:
+    -
+      value: 'Überschrift Lorem ipsum dolor sit amet'
+      format: basic_html

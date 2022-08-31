@@ -86,9 +86,11 @@ class ProjectsCotnroller extends ControllerBase {
   }
 
   protected function getImgUrl ($fid) {
+
     $file = File::load($fid);
     $image_uri = $file->getFileUri();
     $style = ImageStyle::load('thumbnail');
+    
     return $style->buildUrl($image_uri);
   }
 

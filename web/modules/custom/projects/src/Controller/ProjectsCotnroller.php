@@ -56,7 +56,7 @@ class ProjectsCotnroller extends ControllerBase {
 
     foreach ($results as $result) {
 
-      $imgUrl = $this->getImgUrl($result->field_project_image->getValue()[0]['target_id']);
+      $imgUrl = $this->getImgUrl($result->field_project_header_image->getValue()[0]['target_id']);
 
       $period = $this->timePeriod([$result->field_project_period[0]->value, $result->field_project_period[1]->value]);
 

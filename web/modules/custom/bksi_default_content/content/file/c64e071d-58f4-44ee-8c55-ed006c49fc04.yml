@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: c64e071d-58f4-44ee-8c55-ed006c49fc04
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: house-5.jpeg
+  uri:
+    -
+      value: 'public://2022-08/house-5.jpeg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 183165
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1661937829

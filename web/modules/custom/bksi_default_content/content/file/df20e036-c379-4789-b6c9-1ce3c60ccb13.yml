@@ -1,7 +1,7 @@
 _meta:
   version: '1.0'
   entity_type: file
-  uuid: f2427df9-02dc-49a6-84f4-17bfc2820a8d
+  uuid: df20e036-c379-4789-b6c9-1ce3c60ccb13
   default_langcode: en
 default:
   uid:
@@ -9,19 +9,19 @@ default:
       target_id: 1
   filename:
     -
-      value: bksi-ingenieure-teaser-projekte_3.jpg
+      value: building-aktuelles.jpg
   uri:
     -
-      value: 'public://2022-08/bksi-ingenieure-teaser-projekte_3_0_0_0.jpg'
+      value: 'public://2022-08/building-aktuelles.jpg'
   filemime:
     -
       value: image/jpeg
   filesize:
     -
-      value: 101318
+      value: 670654
   status:
     -
       value: true
   created:
     -
-      value: 1660825465
+      value: 1661941970

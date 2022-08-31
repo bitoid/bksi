@@ -1,0 +1,35 @@
+<section>
+  <div class="px-4 pt-14 pb-20 bg-lightGray flex flex-col md:flex-row md:justify-between md:px-10 md:py-36 md:items-start">
+    <div class="text-fade">
+      <h2 class="text-content-fade flex flex-col gap-2 text-[26px] tracking-[0.3px] mb-14 md:text-[35px] md:tracking-[1.75px] md:mb-0 md:self-start">
+        <span class="text-[13px] tracking-[0.65px] md:text-base md:tracking-[0.8px]">{{ slogan }}</span>
+        {{ title }}
+      </h2>
+    </div>
+    <div class="flex flex-col gap-8 md:gap-5 md:w-2/3">
+      {% set i = 0 %}
+      {% for news in news_array %}
+        {% if i < quantity %}
+          <a href="/node/{{ news.nid }}" class="grid grid-cols-1 md:grid-cols-2">
+            <div class="relative fade-in-image-container w-full h-[50vh] lg:h-full overflow-hidden">
+              <img class="fade-in-image object-cover w-full h-full" src="{{ news.news_image }}" alt="">
+            </div>
+            <div class="text-fade  p-10 bg-white">
+              <div class="text-content-fade flex flex-col gap-5">
+                <h3 class="flex flex-col gap-3 text-xl">
+                  <span class="text-[13px] tracking-[0.65px]">{{ news.date }}</span>
+                  {{ news.title }}
+                </h3>
+                <p class="text-[15px] leading-[22px] tracking-[0.75px]">
+                  {{ news.body|striptags }}
+                </p>
+              </div>
+            </div>
+          </a>
+        {% endif %}
+        {% set i = i+1 %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+

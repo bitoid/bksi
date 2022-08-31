@@ -1,0 +1,8 @@
+name: BKSI News
+description: Custom block for newses
+package: BKSI
+type: module
+core_version_requirement: ^9.4.0 || ^9 || ^10
+dependencies:
+  - block
+

@@ -6,6 +6,11 @@ _meta:
   default_langcode: en
   depends:
     36d48753-aee5-4c34-804e-b3a03e2aa5c1: block_content
+    e795c38b-d04f-40fa-9353-98758e0653f3: block_content
+    3c349a1d-acb4-46f2-83dc-07367ac0af52: block_content
+    084e09ca-3589-45e0-b139-d9697572d523: block_content
+    7e79fff6-b48d-4481-b514-5c0672b99f0f: block_content
+    c4db11fc-e04d-4bd5-a059-a58963f8b49b: block_content
 default:
   revision_uid:
     -
@@ -39,31 +44,6 @@ default:
         layout_settings:
           label: ''
         components:
-          9882d3ae-f738-4128-b707-2e592f546ca5:
-            uuid: 9882d3ae-f738-4128-b707-2e592f546ca5
-            region: content
-            configuration:
-              id: 'field_block:node:page:body'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: text_default
-                label: hidden
-                settings: {  }
-                third_party_settings: {  }
-            weight: 0
-            additional: {  }
-          60147769-88b6-4794-8413-2815b9e41bf1:
-            uuid: 60147769-88b6-4794-8413-2815b9e41bf1
-            region: content
-            configuration:
-              id: 'extra_field_block:node:page:links'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-            weight: 1
-            additional: {  }
           17628ece-de3c-40ac-907f-054eede1a1b8:
             uuid: 17628ece-de3c-40ac-907f-054eede1a1b8
             region: content
@@ -76,7 +56,7 @@ default:
               info: ''
               view_mode: full
               context_mapping: {  }
-            weight: 2
+            weight: '3'
             additional: {  }
           8d754e81-93d3-41dc-a537-b52497db8db3:
             uuid: 8d754e81-93d3-41dc-a537-b52497db8db3
@@ -87,10 +67,85 @@ default:
               label_display: visible
               provider: layout_builder
               view_mode: full
-              block_revision_id: '3'
+              block_revision_id: '1'
               block_serialized: null
               context_mapping: {  }
-            weight: 3
+            weight: '4'
             additional:
               target_uuid: 36d48753-aee5-4c34-804e-b3a03e2aa5c1
+          24cb64cb-14fb-4947-9bdd-ad782aabb5c9:
+            uuid: 24cb64cb-14fb-4947-9bdd-ad782aabb5c9
+            region: content
+            configuration:
+              id: 'inline_block:text_block_type'
+              label: 'service working method block'
+              label_display: 0
+              provider: layout_builder
+              view_mode: full
+              block_revision_id: '22'
+              block_serialized: null
+              context_mapping: {  }
+            weight: '1'
+            additional:
+              target_uuid: e795c38b-d04f-40fa-9353-98758e0653f3
+          9b47d54c-03bb-4671-a668-c3863badfe3f:
+            uuid: 9b47d54c-03bb-4671-a668-c3863badfe3f
+            region: content
+            configuration:
+              id: 'inline_block:text_block_type'
+              label: 'service page planing block'
+              label_display: visible
+              provider: layout_builder
+              view_mode: full
+              block_revision_id: '23'
+              block_serialized: null
+              context_mapping: {  }
+            weight: '5'
+            additional:
+              target_uuid: 3c349a1d-acb4-46f2-83dc-07367ac0af52
+          922df27e-82fe-4472-b927-510cdee96cea:
+            uuid: 922df27e-82fe-4472-b927-510cdee96cea
+            region: content
+            configuration:
+              id: 'inline_block:company_details'
+              label: 'service page project block'
+              label_display: 0
+              provider: layout_builder
+              view_mode: full
+              block_revision_id: '25'
+              block_serialized: null
+              context_mapping: {  }
+            weight: '6'
+            additional:
+              target_uuid: 084e09ca-3589-45e0-b139-d9697572d523
+          baae5b7c-b4f4-4989-99e1-4d61e4d9506d:
+            uuid: baae5b7c-b4f4-4989-99e1-4d61e4d9506d
+            region: content
+            configuration:
+              id: 'inline_block:services'
+              label: 'services page block'
+              label_display: visible
+              provider: layout_builder
+              view_mode: full
+              block_revision_id: '27'
+              block_serialized: null
+              context_mapping: {  }
+            weight: '2'
+            additional:
+              target_uuid: 7e79fff6-b48d-4481-b514-5c0672b99f0f
+          08d577d1-956f-4b5d-8140-096485112dfc:
+            uuid: 08d577d1-956f-4b5d-8140-096485112dfc
+            region: content
+            configuration:
+              id: 'inline_block:hero_block_type'
+              label: 'Services hero block '
+              label_display: 0
+              provider: layout_builder
+              view_mode: full
+              block_revision_id: '17'
+              block_serialized: null
+              context_mapping: {  }
+            weight: '0'
+            additional:
+              target_uuid: c4db11fc-e04d-4bd5-a059-a58963f8b49b
         third_party_settings: {  }

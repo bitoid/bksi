@@ -1,0 +1,65 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: e72edf2a-e650-49c2-9b67-5bc9dd5fa779
+  bundle: company_details
+  default_langcode: en
+  depends:
+    41cccbeb-e66f-488c-b3bd-3bf1af469b0f: file
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'team page detail'
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  field_company_detail:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: e471f857-5d45-4827-a058-b2e5ad3d2982
+          bundle: company_detail
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1661965282
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_description:
+            -
+              value: 'Herausforderungen gemeinsam annehmen, um so Vertrauen und Sicherheit zu schaffen: durch intelligente, innovative, ästhetische und funktionale Bauwerke – das bedeutet Arbeiten bei BKSI. Dazu suchen wir Menschen, die diverse Teams schätzen und Wert auf partnerschaftliches Miteinander legen. Offene Kommunikation gehört einfach dazu, wenn aus anspruchsvollen Projekten nachhaltige Baukultur werden soll.'
+          field_image:
+            -
+              entity: 41cccbeb-e66f-488c-b3bd-3bf1af469b0f
+              alt: team_img
+              title: ''
+              width: 1440
+              height: 600
+          field_link_cta:
+            -
+              uri: 'internal:/'
+              title: 'Zur Karriereseite'
+              options:
+                attributes: {  }
+          field_slogan:
+            -
+              value: Karriere
+          field_title:
+            -
+              value: 'Werde Teil des Teams '

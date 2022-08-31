@@ -1,0 +1,21 @@
+uuid: 7ebe13c3-3563-4537-aced-e13b3567e39d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.text_block_type
+    - field.storage.block_content.field_slogan
+  module:
+    - text
+id: block_content.text_block_type.field_slogan
+field_name: field_slogan
+entity_type: block_content
+bundle: text_block_type
+label: Slogan
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

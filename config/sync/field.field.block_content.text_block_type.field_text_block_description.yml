@@ -1,0 +1,21 @@
+uuid: d462600e-c849-48eb-9629-c2ff6812b535
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.text_block_type
+    - field.storage.block_content.field_text_block_description
+  module:
+    - text
+id: block_content.text_block_type.field_text_block_description
+field_name: field_text_block_description
+entity_type: block_content
+bundle: text_block_type
+label: 'text block description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

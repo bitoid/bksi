@@ -1,0 +1,21 @@
+uuid: bfa7da43-a919-45ca-96ab-74f8d290d284
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.text_block_type
+    - field.storage.block_content.field_title
+  module:
+    - text
+id: block_content.text_block_type.field_title
+field_name: field_title
+entity_type: block_content
+bundle: text_block_type
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

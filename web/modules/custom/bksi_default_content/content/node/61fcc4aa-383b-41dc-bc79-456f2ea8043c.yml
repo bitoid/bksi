@@ -4,6 +4,8 @@ _meta:
   uuid: 61fcc4aa-383b-41dc-bc79-456f2ea8043c
   bundle: page
   default_langcode: en
+  depends:
+    feb4c137-d27a-48da-a9a3-5e7590c1387a: block_content
 default:
   revision_uid:
     -
@@ -26,9 +28,6 @@ default:
   sticky:
     -
       value: false
-  revision_translation_affected:
-    -
-      value: true
   path:
     -
       alias: ''
@@ -89,4 +88,19 @@ default:
               context_mapping: {  }
             weight: 2
             additional: {  }
+          e3d17088-a7aa-4d8d-9259-f43bb09ab59e:
+            uuid: e3d17088-a7aa-4d8d-9259-f43bb09ab59e
+            region: content
+            configuration:
+              id: 'inline_block:application'
+              label: Application
+              label_display: 0
+              provider: layout_builder
+              view_mode: full
+              block_revision_id: '11'
+              block_serialized: null
+              context_mapping: {  }
+            weight: 3
+            additional:
+              target_uuid: feb4c137-d27a-48da-a9a3-5e7590c1387a
         third_party_settings: {  }

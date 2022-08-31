@@ -1,0 +1,19 @@
+uuid: 32c1a647-4f24-43a2-b7d4-f5acc2420aab
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.team_gallery
+    - field.storage.block_content.field_team_gallery_title
+id: block_content.team_gallery.field_team_gallery_title
+field_name: field_team_gallery_title
+entity_type: block_content
+bundle: team_gallery
+label: 'Team Gallery Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

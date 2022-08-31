@@ -1,0 +1,31 @@
+uuid: 0ff021f9-c8a4-4ff7-bd2f-96586288a8af
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.team_gallery
+    - field.storage.block_content.field_paragraph_team_gallery
+    - paragraphs.paragraphs_type.team_gallery
+  module:
+    - entity_reference_revisions
+id: block_content.team_gallery.field_paragraph_team_gallery
+field_name: field_paragraph_team_gallery
+entity_type: block_content
+bundle: team_gallery
+label: 'Paragraph Team gallery'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      team_gallery: team_gallery
+    negate: 0
+    target_bundles_drag_drop:
+      team_gallery:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

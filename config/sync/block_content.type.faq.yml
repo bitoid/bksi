@@ -1,0 +1,8 @@
+uuid: fe0c2963-9b89-49c1-95ed-5c393c50ea8d
+langcode: en
+status: true
+dependencies: {  }
+id: faq
+label: FAQ
+revision: 0
+description: 'FAQ block for Ask Detail Page'

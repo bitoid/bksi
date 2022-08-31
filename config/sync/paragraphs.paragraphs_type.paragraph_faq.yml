@@ -1,0 +1,10 @@
+uuid: 3beca239-483e-4da3-b85f-c90cb0f05b0e
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph_faq
+label: 'Paragraph FAQ'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

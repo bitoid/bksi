@@ -1,0 +1,272 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 7e79fff6-b48d-4481-b514-5c0672b99f0f
+  bundle: services
+  default_langcode: en
+  depends:
+    564753c9-1b09-4c6a-8aee-c39987f95def: file
+    cb4bc4b7-1dfe-4f86-9680-2d94a2075bd3: file
+    65765e37-0797-41fd-9075-af9062f28ae0: file
+    b303489d-3213-4374-aad1-75eba27ef86b: file
+    d86c49c1-3b08-4eed-8afa-b36da99b51a1: file
+    f336b3f5-66c9-4b7a-8c13-5ff442fec41a: file
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'services page block'
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  field_paragraph_services:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 467bf692-b329-4009-b550-793883795d83
+          bundle: service
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1661977644
+          behavior_settings:
+            -
+              value: {  }
+          field_service_description:
+            -
+              value: "<p>Kurzer zusätzlicher Text, der mit wichtigen Schlagworten für die Suchmaschinen versehen ist. eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren eos et accusam et justo</p>\r\n"
+              format: basic_html
+          field_service_image:
+            -
+              entity: 564753c9-1b09-4c6a-8aee-c39987f95def
+              display: true
+              description: ''
+          field_service_link_cta:
+            -
+              uri: 'internal:/'
+              title: 'Mehr zu Tragwerksplanung'
+              options:
+                attributes: {  }
+          field_service_title:
+            -
+              value: Tragwerksplanung
+              format: basic_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: ae594b2c-4d6b-40fe-a437-770bcf5a3623
+          bundle: service
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1661977967
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_service_description:
+            -
+              value: "<p>Kurzer zusätzlicher Text, der mit wichtigen Schlagworten für die Suchmaschinen versehen ist. eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren eos et accusam et justo</p>\r\n"
+              format: basic_html
+          field_service_image:
+            -
+              entity: cb4bc4b7-1dfe-4f86-9680-2d94a2075bd3
+              display: true
+              description: ''
+          field_service_link_cta:
+            -
+              uri: 'internal:/'
+              title: 'Mehr zu Generalplanung'
+              options:
+                attributes: {  }
+          field_service_title:
+            -
+              value: Generalplanung
+              format: basic_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: f4d9afc0-c462-404a-9111-4191f1a99515
+          bundle: service
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1661978016
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_service_description:
+            -
+              value: "<p>Kurzer zusätzlicher Text, der mit wichtigen Schlagworten für die Suchmaschinen versehen ist. eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren eos et accusam et justo</p>\r\n"
+              format: basic_html
+          field_service_image:
+            -
+              entity: 65765e37-0797-41fd-9075-af9062f28ae0
+              display: true
+              description: ''
+          field_service_link_cta:
+            -
+              uri: 'internal:/'
+              title: 'Mehr zu Digitale Planung / BIM'
+              options:
+                attributes: {  }
+          field_service_title:
+            -
+              value: 'Digitale Planung / BIM'
+              format: basic_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 0543eb16-5aa4-4381-ab9f-1f2e057f53ef
+          bundle: service
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1661978137
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_service_description:
+            -
+              value: "<p>Kurzer zusätzlicher Text, der mit wichtigen Schlagworten für die Suchmaschinen versehen ist. eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren eos et accusam et justo</p>\r\n"
+              format: basic_html
+          field_service_image:
+            -
+              entity: b303489d-3213-4374-aad1-75eba27ef86b
+              display: true
+              description: ''
+          field_service_link_cta:
+            -
+              uri: 'internal:/'
+              title: 'Mehr zu Bauwerksprüfung'
+              options:
+                attributes: {  }
+          field_service_title:
+            -
+              value: Bauwerksprüfung
+              format: basic_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: e07e9ae2-152a-4377-a20f-b65ea2a4d9f2
+          bundle: service
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1661978191
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_service_description:
+            -
+              value: "<p>Kurzer zusätzlicher Text, der mit wichtigen Schlagworten für die Suchmaschinen versehen ist. eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren eos et accusam et justo</p>\r\n"
+              format: basic_html
+          field_service_image:
+            -
+              entity: d86c49c1-3b08-4eed-8afa-b36da99b51a1
+              display: true
+              description: ''
+          field_service_link_cta:
+            -
+              uri: 'internal:/'
+              title: 'Mehr zu Gutachten'
+              options:
+                attributes: {  }
+          field_service_title:
+            -
+              value: Gutachten
+              format: basic_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: a8216dd1-d753-4b41-9924-5ea98b29baf6
+          bundle: service
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1661978244
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_service_description:
+            -
+              value: "<p>Kurzer zusätzlicher Text, der mit wichtigen Schlagworten für die Suchmaschinen versehen ist. eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren eos et accusam et justo</p>\r\n"
+              format: basic_html
+          field_service_image:
+            -
+              entity: f336b3f5-66c9-4b7a-8c13-5ff442fec41a
+              display: true
+              description: ''
+          field_service_link_cta:
+            -
+              uri: 'internal:/'
+              title: 'Mehr zu Bautechnische Prüfung'
+              options:
+                attributes: {  }
+          field_service_title:
+            -
+              value: 'Bautechnische Prüfung'
+              format: basic_html
+  field_services_slogan:
+    -
+      value: 'Unsere Geschäftsfelder im Überblick'
+      format: basic_html
+  field_services_title:
+    -
+      value: Leistungen
+      format: basic_html

@@ -1,0 +1,65 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 084e09ca-3589-45e0-b139-d9697572d523
+  bundle: company_details
+  default_langcode: en
+  depends:
+    7c879390-f089-4615-8f71-6bd42e4e356f: file
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'service page project block'
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  field_company_detail:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 5df22ba9-c013-405b-a1fa-9e96b83407f6
+          bundle: company_detail
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1661976638
+          behavior_settings:
+            -
+              value: {  }
+          field_description:
+            -
+              value: 'Nachweis hoher Expertise und Leistungsfähigkeit unserer Mitarbeitenden '
+          field_image:
+            -
+              entity: 7c879390-f089-4615-8f71-6bd42e4e356f
+              alt: 'service project block image'
+              title: ''
+              width: 1080
+              height: 1080
+          field_image_align:
+            -
+              value: left
+          field_link_cta:
+            -
+              uri: 'internal:/'
+              title: 'Zur Projektübersicht'
+              options:
+                attributes: {  }
+          field_slogan:
+            -
+              value: Projekte
+          field_title:
+            -
+              value: 'Nachweis hoher Expertise und Leistungsfähigkeit unserer Mitarbeitenden '

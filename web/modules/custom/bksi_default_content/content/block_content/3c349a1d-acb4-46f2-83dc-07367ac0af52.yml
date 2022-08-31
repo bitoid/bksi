@@ -1,0 +1,31 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 3c349a1d-acb4-46f2-83dc-07367ac0af52
+  bundle: text_block_type
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'service page planing block'
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  field_slogan:
+    -
+      value: 'Planen der Zukunft'
+      format: basic_html
+  field_text_block_description:
+    -
+      value: "<ul>\r\n\t<li>Trend zur Generalplanung - Gesamtplanung, alle Leistungen aus einer Hand</li>\r\n\t<li>Konzentration von wenigen Gesamtplanern, die auch große Projekte stemmen und verantworten</li>\r\n\t<li>Nachhaltige Planung – nachhaltige Baustoffe, Recycling-Beton, Holz</li>\r\n\t<li>Digitalisierung, BIM, CAD, digitale Statik etc.</li>\r\n</ul>\r\n\r\n<p>eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem</p>\r\n"
+      format: basic_html
+  field_title:
+    -
+      value: "<h2>Hier steht eine Überschrift zum Thema Nachhaltigkeit &amp; neue Technologien.</h2>\r\n"
+      format: basic_html

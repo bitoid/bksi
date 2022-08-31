@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 564753c9-1b09-4c6a-8aee-c39987f95def
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: bksi-ingenieure-leistungen-tragwerksplanung.svg
+  uri:
+    -
+      value: 'public://2022-09/bksi-ingenieure-leistungen-tragwerksplanung.svg'
+  filemime:
+    -
+      value: image/svg+xml
+  filesize:
+    -
+      value: 1290
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1661977644

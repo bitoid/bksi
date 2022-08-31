@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 65765e37-0797-41fd-9075-af9062f28ae0
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: bksi-ingenieure-leistungen-bim.svg
+  uri:
+    -
+      value: 'public://2022-09/bksi-ingenieure-leistungen-bim.svg'
+  filemime:
+    -
+      value: image/svg+xml
+  filesize:
+    -
+      value: 988
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1661978047

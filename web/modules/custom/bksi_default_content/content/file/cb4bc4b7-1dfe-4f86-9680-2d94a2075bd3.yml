@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: cb4bc4b7-1dfe-4f86-9680-2d94a2075bd3
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: bksi-ingenieure-leistungen-generalplanung.svg
+  uri:
+    -
+      value: 'public://2022-09/bksi-ingenieure-leistungen-generalplanung.svg'
+  filemime:
+    -
+      value: image/svg+xml
+  filesize:
+    -
+      value: 1220
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1661977967

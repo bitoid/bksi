@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: c4db11fc-e04d-4bd5-a059-a58963f8b49b
+  bundle: hero_block_type
+  default_langcode: en
+  depends:
+    1f047d5e-0e89-412a-924f-8c8f3178db24: file
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Services hero block '
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  field_image:
+    -
+      entity: 1f047d5e-0e89-412a-924f-8c8f3178db24
+      alt: 'service page hero image'
+      title: ''
+      width: 1080
+      height: 1080
+  field_slogan:
+    -
+      value: Leistungen
+      format: basic_html
+  field_title:
+    -
+      value: "<p>Überschrift Lorem ipsum dolor sit amet,</p>\r\n\r\n<p>consetetur sadipscing elitr</p>\r\n"
+      format: basic_html

@@ -1,0 +1,31 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: e795c38b-d04f-40fa-9353-98758e0653f3
+  bundle: text_block_type
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'service working method block'
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  field_slogan:
+    -
+      value: Arbeitsweise
+      format: basic_html
+  field_text_block_description:
+    -
+      value: "<p>Text zur Arbeitsweise / Philosophie, Stichworte aus der Strategie von Jörg Abele: Die Stärken von BKSi sind schnelle Lösungsfindung und Problemlösungen, Flexibilität, Erfahrungsschatz auf verschiedenen Fachgebieten, fachliche Kompetenz und lösungsorientierte Vorschläge, Kurze Planungszeiten - Ergebnisse schneller als beim Wettbewerb wenn nötig</p>\r\n\r\n<p>Die wichtigsten Eigenschaften eines Ingenieurbüros sind auf der einen Seite faktische Themen wie die technische Kompetenz, die Erfahrung, Zuverlässigkeit, BIM-Fähigkeiten, Kundenkenntnis und ein gutes Projektmanagement. Aber auf der anderen Seite auch Soft-Skills wie die menschliche Komponente, ein guter Draht und Ingenieure mit Herzblut und einer guten Qualifikation</p>\r\n\r\n<ul>\r\n\t<li>Kreativität, Sensibilität für die Entwurfsidee des Architekten</li>\r\n\t<li>Technisches Know-how (Vielzahl der Referenzen, Erfahrung mit außergewöhnlichen Projekten</li>\r\n</ul>\r\n"
+      format: basic_html
+  field_title:
+    -
+      value: "<h2>Hier steht eine Überschrift zum Thema Arbeitsweise.</h2>\r\n"
+      format: basic_html

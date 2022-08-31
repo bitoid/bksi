@@ -1,0 +1,49 @@
+uuid: 6bc296eb-ebf8-4280-9896-847b655d3392
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.imprint_custom_block
+    - field.storage.block_content.field_content_liability
+    - paragraphs.paragraphs_type.imprint_longtext
+  module:
+    - entity_reference_revisions
+id: block_content.imprint_custom_block.field_content_liability
+field_name: field_content_liability
+entity_type: block_content
+bundle: imprint_custom_block
+label: 'Liability for content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      imprint_longtext: imprint_longtext
+    negate: 0
+    target_bundles_drag_drop:
+      company_detail:
+        weight: 8
+        enabled: false
+      footer_bottom_nav_link:
+        weight: 9
+        enabled: false
+      footer_social_menu_item:
+        weight: 10
+        enabled: false
+      imprint_longtext:
+        weight: 11
+        enabled: true
+      imprint_shorttext:
+        weight: 12
+        enabled: false
+      imprint_web_links:
+        weight: 13
+        enabled: false
+      service:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions

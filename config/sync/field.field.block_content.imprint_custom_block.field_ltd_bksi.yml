@@ -1,0 +1,49 @@
+uuid: bf4299eb-04f8-40f0-9f0c-59225ca4ad5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.imprint_custom_block
+    - field.storage.block_content.field_ltd_bksi
+    - paragraphs.paragraphs_type.imprint_shorttext
+  module:
+    - entity_reference_revisions
+id: block_content.imprint_custom_block.field_ltd_bksi
+field_name: field_ltd_bksi
+entity_type: block_content
+bundle: imprint_custom_block
+label: 'LTD BKSI'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      imprint_shorttext: imprint_shorttext
+    negate: 0
+    target_bundles_drag_drop:
+      company_detail:
+        weight: 8
+        enabled: false
+      footer_bottom_nav_link:
+        weight: 9
+        enabled: false
+      footer_social_menu_item:
+        weight: 10
+        enabled: false
+      imprint_longtext:
+        weight: 11
+        enabled: false
+      imprint_shorttext:
+        weight: 12
+        enabled: true
+      imprint_web_links:
+        weight: 13
+        enabled: false
+      service:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions

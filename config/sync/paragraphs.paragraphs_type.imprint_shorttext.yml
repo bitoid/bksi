@@ -1,0 +1,10 @@
+uuid: 7849574a-c2c4-47bf-8680-48e9ba2cbdc8
+langcode: en
+status: true
+dependencies: {  }
+id: imprint_shorttext
+label: 'imprint  shorttext'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

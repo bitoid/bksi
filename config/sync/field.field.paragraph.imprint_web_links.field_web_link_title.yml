@@ -1,0 +1,19 @@
+uuid: 58ce467f-6169-4179-86e2-ba25425eecfc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_web_link_title
+    - paragraphs.paragraphs_type.imprint_web_links
+id: paragraph.imprint_web_links.field_web_link_title
+field_name: field_web_link_title
+entity_type: paragraph
+bundle: imprint_web_links
+label: 'web link title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

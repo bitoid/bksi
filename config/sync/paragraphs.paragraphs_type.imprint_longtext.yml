@@ -1,0 +1,10 @@
+uuid: ebc82b17-cd2a-4fea-9141-47ece6232f5f
+langcode: en
+status: true
+dependencies: {  }
+id: imprint_longtext
+label: 'imprint longtext'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

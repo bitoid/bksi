@@ -1,0 +1,257 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 7ea61b4d-71a5-40c3-a1d9-4d759b2c77e0
+  bundle: imprint_custom_block
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Impressum '
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  field_contact_e_mail:
+    -
+      value: info@bksi.de
+  field_content_liability:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 41716262-71a6-4f09-868b-27396cc612ed
+          bundle: imprint_longtext
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1661931417
+          behavior_settings:
+            -
+              value: {  }
+          field_longtext_body:
+            -
+              value: 'Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.'
+            -
+              value: 'Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.'
+          field_longtext_title:
+            -
+              value: 'Haftung für Inhalte'
+  field_imprint_contact_phone:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: d5b0a11a-f254-4de3-9b02-59d7f3d90e67
+          bundle: imprint_shorttext
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1661931417
+          behavior_settings:
+            -
+              value: {  }
+          field_shorttext_body:
+            -
+              value: '0711 / 36 53 38 - 30'
+            -
+              value: '0711 / 36 53 38 - 31'
+          field_shorttext_title:
+            -
+              value: Kontakt
+  field_imprint_copyright:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 6309cd97-c272-4f54-90ad-4eb08777ff2e
+          bundle: imprint_longtext
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1661931417
+          behavior_settings:
+            -
+              value: {  }
+          field_longtext_body:
+            -
+              value: 'Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. '
+            -
+              value: "Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.\r\n\r\n"
+          field_longtext_title:
+            -
+              value: Urheberrecht
+  field_imprint_description:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: b96dffcf-559e-40f8-899e-00f2248b89d9
+          bundle: imprint_longtext
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1661931417
+          behavior_settings:
+            -
+              value: {  }
+          field_longtext_body:
+            -
+              value: 'Angaben gemäß § 5 TMG'
+          field_longtext_title:
+            -
+              value: description
+  field_imprint_title:
+    -
+      value: 'Impressum '
+  field_ltd_bksi:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: baf15b1a-8e31-4e9f-84bb-b4eacacd41f7
+          bundle: imprint_shorttext
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1661931417
+          behavior_settings:
+            -
+              value: {  }
+          field_shorttext_body:
+            -
+              value: 'Schwieberdinger Straße 5 '
+            -
+              value: '70435 Stuttgart '
+            -
+              value: 'Handelsregister: HRB 24847'
+            -
+              value: 'Registergericht: Handelsregister Stuttgart '
+          field_shorttext_title:
+            -
+              value: 'BKSI GmbH'
+  field_source:
+    -
+      uri: 'https://www.e-recht24.de/impressum-generator.html'
+      title: ''
+      options:
+        attributes: {  }
+  field_tax_id:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 9e20f091-eaa4-4618-8d9f-084c2935f067
+          bundle: imprint_longtext
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1661931417
+          behavior_settings:
+            -
+              value: {  }
+          field_longtext_body:
+            -
+              value: 'Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz: DE814086423'
+            -
+              value: 'Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen. '
+          field_longtext_title:
+            -
+              value: Umsatzsteuer-ID
+  field_website_design:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 7759b32d-b93a-4ddb-bdfc-721e32c00165
+          bundle: imprint_web_links
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1661931417
+          behavior_settings:
+            -
+              value: {  }
+          field_web_link_body:
+            -
+              value: 'LOUP GmbH, Stuttgart'
+          field_web_link_title:
+            -
+              value: 'Website Design'
+          field_web_link_url:
+            -
+              uri: 'https://www.loup.de/'
+              title: www.loup.de
+              options:
+                attributes: {  }
+  field_website_programming:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: c4c5a53a-e4f8-4eec-a934-c5f08ad7d6c9
+          bundle: imprint_web_links
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1661932939
+          behavior_settings:
+            -
+              value: {  }
+          field_web_link_body:
+            -
+              value: 'adventure7 GmbH '
+          field_web_link_title:
+            -
+              value: 'Website Programmierung'
+          field_web_link_url:
+            -
+              uri: 'https://www.adventure7.de/'
+              title: www.adventure7.de
+              options:
+                attributes: {  }

@@ -1,0 +1,75 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: cc451855-a329-4845-964f-546aab937a98
+  bundle: page
+  default_langcode: en
+  depends:
+    5a2a27e8-eb8a-4ec8-b9ee-407209b155d6: block_content
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: Current
+  created:
+    -
+      value: 1661969610
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /current
+      langcode: en
+  layout_builder__layout:
+    -
+      section:
+        layout_id: layout_onecol
+        layout_settings:
+          label: Content
+          context_mapping: {  }
+        components:
+          f74540f8-598b-41dd-bfc7-12de7394a619:
+            uuid: f74540f8-598b-41dd-bfc7-12de7394a619
+            region: content
+            configuration:
+              id: 'inline_block:hero_block_type'
+              label: 'Current hero block banner'
+              label_display: 0
+              provider: layout_builder
+              view_mode: full
+              block_revision_id: '17'
+              block_serialized: null
+              context_mapping: {  }
+            weight: 0
+            additional:
+              target_uuid: 5a2a27e8-eb8a-4ec8-b9ee-407209b155d6
+          7df638a5-263a-4854-bff8-01d718690147:
+            uuid: 7df638a5-263a-4854-bff8-01d718690147
+            region: content
+            configuration:
+              id: bksi_news
+              label: 'BKSI News'
+              label_display: 0
+              provider: bksi_news
+              news_quantity: '4'
+              slogan: 'Aus dem Unternehmen'
+              title: Aktuelles
+              context_mapping: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }

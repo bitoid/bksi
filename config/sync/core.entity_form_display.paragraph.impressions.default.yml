@@ -1,0 +1,26 @@
+uuid: 7bdc60f0-9545-4455-8111-d4b461ea1a67
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.impressions.field_image
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.impressions
+  module:
+    - image
+id: paragraph.impressions.default
+targetEntityType: paragraph
+bundle: impressions
+mode: default
+content:
+  field_image:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

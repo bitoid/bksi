@@ -1,0 +1,116 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: b0bc684e-d4b7-4633-af6e-eb115c46ecb7
+  bundle: team_gallery
+  default_langcode: en
+  depends:
+    4b4594e1-e40a-4376-b371-6e14cebe0f5d: file
+    7372689f-7d67-4ad7-913a-3789f73adcf0: file
+    ad2627d6-7c37-46d7-831f-c7421a6be0be: file
+    d19dd691-dfba-414b-a067-9ad0ca6dcdd9: file
+    a11fdd68-3c02-4118-b561-8c2dffa619a7: file
+    1e6dd89f-a6a2-49c3-8244-3de82792bbfb: file
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Team Gallery Block'
+  reusable:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  field_paragraph_team_gallery:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 1fa2078c-97d4-4816-ba0d-1c5ebfbc34ba
+          bundle: team_gallery
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1661943102
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_team_gallery_image:
+            -
+              entity: 4b4594e1-e40a-4376-b371-6e14cebe0f5d
+              alt: 'Picture of people sitting and working together'
+              title: ''
+              width: 1024
+              height: 533
+            -
+              entity: 7372689f-7d67-4ad7-913a-3789f73adcf0
+              alt: 'Picture of people''s hand grouped together, showing teamwork.'
+              title: ''
+              width: 2000
+              height: 1333
+            -
+              entity: ad2627d6-7c37-46d7-831f-c7421a6be0be
+              alt: 'Picture of people demonstrating teamwork with group there hands together.'
+              title: ''
+              width: 1440
+              height: 600
+          field_team_gallery_image_align:
+            -
+              value: left
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 01426788-14ea-466f-ae15-932cf92530a8
+          bundle: team_gallery
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1661943194
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_team_gallery_image:
+            -
+              entity: d19dd691-dfba-414b-a067-9ad0ca6dcdd9
+              alt: 'Picture of people''s hand grouped together, showing teamwork.'
+              title: ''
+              width: 2000
+              height: 1333
+            -
+              entity: a11fdd68-3c02-4118-b561-8c2dffa619a7
+              alt: 'Picture of people''s hand grouped together, showing teamwork.'
+              title: ''
+              width: 2000
+              height: 1333
+            -
+              entity: 1e6dd89f-a6a2-49c3-8244-3de82792bbfb
+              alt: 'Picture of people''s hand grouped together, showing teamwork.'
+              title: ''
+              width: 1440
+              height: 600
+          field_team_gallery_image_align:
+            -
+              value: right
+  field_team_gallery_title:
+    -
+      value: 'team gallery'

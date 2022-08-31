@@ -33,3 +33,58 @@ default:
     -
       alias: /team
       langcode: en
+  layout_builder__layout:
+    -
+      section:
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'Team Gallery Section'
+          context_mapping: {  }
+        components:
+          7e789544-fcd5-43ac-b1b1-bbd9ec2b2a3c:
+            uuid: 7e789544-fcd5-43ac-b1b1-bbd9ec2b2a3c
+            region: content
+            configuration:
+              id: 'block_content:b0bc684e-d4b7-4633-af6e-eb115c46ecb7'
+              label: 'Team Gallery Block'
+              label_display: 0
+              provider: block_content
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+    -
+      section:
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          9882d3ae-f738-4128-b707-2e592f546ca5:
+            uuid: 9882d3ae-f738-4128-b707-2e592f546ca5
+            region: content
+            configuration:
+              id: 'field_block:node:page:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          60147769-88b6-4794-8413-2815b9e41bf1:
+            uuid: 60147769-88b6-4794-8413-2815b9e41bf1
+            region: content
+            configuration:
+              id: 'extra_field_block:node:page:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }

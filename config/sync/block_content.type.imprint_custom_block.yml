@@ -1,0 +1,8 @@
+uuid: f62c3ef9-6b12-4d82-8bfa-18db5bbc3638
+langcode: en
+status: true
+dependencies: {  }
+id: imprint_custom_block
+label: 'imprint custom block'
+revision: 0
+description: ''

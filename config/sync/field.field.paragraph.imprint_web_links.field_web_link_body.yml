@@ -1,0 +1,19 @@
+uuid: cf6db115-547d-482a-838e-d7ec2f96a954
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_web_link_body
+    - paragraphs.paragraphs_type.imprint_web_links
+id: paragraph.imprint_web_links.field_web_link_body
+field_name: field_web_link_body
+entity_type: paragraph
+bundle: imprint_web_links
+label: 'web link body'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

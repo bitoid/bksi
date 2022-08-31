@@ -4,6 +4,8 @@ _meta:
   uuid: ec799602-b586-443a-82b3-7fbb9ea17e53
   bundle: page
   default_langcode: en
+  depends:
+    7ea61b4d-71a5-40c3-a1d9-4d759b2c77e0: block_content
 default:
   revision_uid:
     -
@@ -33,3 +35,26 @@ default:
     -
       alias: /imprint
       langcode: en
+  layout_builder__layout:
+    -
+      section:
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          1c68532b-85cf-48ab-863f-af95eefe1f4b:
+            uuid: 1c68532b-85cf-48ab-863f-af95eefe1f4b
+            region: content
+            configuration:
+              id: 'inline_block:imprint_custom_block'
+              label: 'Impressum '
+              label_display: visible
+              provider: layout_builder
+              view_mode: full
+              block_revision_id: '13'
+              block_serialized: null
+              context_mapping: {  }
+            weight: 0
+            additional:
+              target_uuid: 7ea61b4d-71a5-40c3-a1d9-4d759b2c77e0
+        third_party_settings: {  }

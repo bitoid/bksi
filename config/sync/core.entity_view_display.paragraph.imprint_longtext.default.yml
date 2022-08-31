@@ -1,0 +1,29 @@
+uuid: 0aa6f5f2-7637-469d-a5f0-ba9e2b740fd0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.imprint_longtext.field_longtext_body
+    - field.field.paragraph.imprint_longtext.field_longtext_title
+    - paragraphs.paragraphs_type.imprint_longtext
+id: paragraph.imprint_longtext.default
+targetEntityType: paragraph
+bundle: imprint_longtext
+mode: default
+content:
+  field_longtext_body:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_longtext_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

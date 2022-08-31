@@ -1,0 +1,125 @@
+uuid: 4083d511-7418-4b29-801d-2d181bf76664
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.imprint_custom_block
+    - field.field.block_content.imprint_custom_block.field_contact_e_mail
+    - field.field.block_content.imprint_custom_block.field_content_liability
+    - field.field.block_content.imprint_custom_block.field_imprint_contact_phone
+    - field.field.block_content.imprint_custom_block.field_imprint_copyright
+    - field.field.block_content.imprint_custom_block.field_imprint_description
+    - field.field.block_content.imprint_custom_block.field_imprint_title
+    - field.field.block_content.imprint_custom_block.field_ltd_bksi
+    - field.field.block_content.imprint_custom_block.field_source
+    - field.field.block_content.imprint_custom_block.field_tax_id
+    - field.field.block_content.imprint_custom_block.field_website_design
+    - field.field.block_content.imprint_custom_block.field_website_programming
+  module:
+    - entity_reference_revisions
+    - link
+id: block_content.imprint_custom_block.default
+targetEntityType: block_content
+bundle: imprint_custom_block
+mode: default
+content:
+  field_contact_e_mail:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_content_liability:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_imprint_contact_phone:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_imprint_copyright:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_imprint_description:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_imprint_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_ltd_bksi:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_source:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_tax_id:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_website_design:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_website_programming:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 10
+    region: content
+hidden: {  }

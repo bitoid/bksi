@@ -1,0 +1,19 @@
+uuid: b2385fc3-2cb8-4be2-b12e-b0db820702a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.imprint_custom_block
+    - field.storage.block_content.field_imprint_title
+id: block_content.imprint_custom_block.field_imprint_title
+field_name: field_imprint_title
+entity_type: block_content
+bundle: imprint_custom_block
+label: 'imprint title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

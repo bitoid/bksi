@@ -6,6 +6,7 @@ _meta:
   default_langcode: en
   depends:
     df8751d9-0b06-4c2c-b36d-0bbb36b07344: block_content
+    6241fb1c-2d3d-4cb1-a0e4-851e9965a2c5: block_content
 default:
   revision_uid:
     -
@@ -52,10 +53,25 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '6'
+              block_revision_id: '2'
               block_serialized: null
               context_mapping: {  }
             weight: 0
             additional:
               target_uuid: df8751d9-0b06-4c2c-b36d-0bbb36b07344
+          7ba8d1bb-08ff-4e4c-a76e-117ba42712dd:
+            uuid: 7ba8d1bb-08ff-4e4c-a76e-117ba42712dd
+            region: content
+            configuration:
+              id: 'inline_block:faq'
+              label: 'FAQ Content'
+              label_display: 0
+              provider: layout_builder
+              view_mode: full
+              block_revision_id: '11'
+              block_serialized: null
+              context_mapping: {  }
+            weight: 1
+            additional:
+              target_uuid: 6241fb1c-2d3d-4cb1-a0e4-851e9965a2c5
         third_party_settings: {  }

@@ -1,11 +1,11 @@
 _meta:
   version: '1.0'
   entity_type: node
-  uuid: 2a18bd6d-8acf-4095-aa33-a2605aefd5be
+  uuid: 9d0499b8-d646-4ba0-87d9-4ce6a66ab99f
   bundle: article
   default_langcode: en
   depends:
-    4d02f60f-480d-47f2-9934-f6d0e40b6ffb: file
+    1ff5b460-0cf6-4cbd-a380-b9dd95bbd4ef: file
 default:
   revision_uid:
     -
@@ -21,7 +21,7 @@ default:
       value: 'Neues Projekt'
   created:
     -
-      value: 1661791044
+      value: 1661936240
   promote:
     -
       value: true
@@ -37,21 +37,21 @@ default:
       langcode: en
   body:
     -
-      value: "<p>mKR Teilneubau und Sanierung BA1 medius KlINIK OSTFILDERN-RUIT</p>\r\n"
+      value: "<p>Neubau Bürogebäude Wörwag Böblingen</p>\r\n"
       format: basic_html
       summary: ''
   comment:
     -
       status: 2
       cid: 0
-      last_comment_timestamp: 1661791127
+      last_comment_timestamp: 1661936295
       last_comment_name: ''
       last_comment_uid: 1
       comment_count: 0
   field_image:
     -
-      entity: 4d02f60f-480d-47f2-9934-f6d0e40b6ffb
-      alt: architechture
+      entity: 1ff5b460-0cf6-4cbd-a380-b9dd95bbd4ef
+      alt: building-aktuelles
       title: ''
-      width: 960
-      height: 540
+      width: 2560
+      height: 1706

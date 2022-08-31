@@ -1,7 +1,7 @@
 _meta:
   version: '1.0'
   entity_type: file
-  uuid: 4d02f60f-480d-47f2-9934-f6d0e40b6ffb
+  uuid: 50cc2121-5b99-402a-a9e1-8b67fbc0d8b5
   default_langcode: en
 default:
   uid:
@@ -9,10 +9,10 @@ default:
       target_id: 1
   filename:
     -
-      value: architechture.jpg
+      value: architechture-aktuelles.jpg
   uri:
     -
-      value: 'public://2022-08/architechture.jpg'
+      value: 'public://2022-08/architechture-aktuelles.jpg'
   filemime:
     -
       value: image/jpeg
@@ -24,4 +24,4 @@ default:
       value: true
   created:
     -
-      value: 1661791117
+      value: 1661936338

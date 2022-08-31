@@ -6,7 +6,6 @@ _meta:
   default_langcode: en
   depends:
     5b88b192-e24f-4b64-b62c-39156d3fec29: block_content
-    709fc9d0-89b1-4d43-bb42-f5729fad078f: block_content
 default:
   revision_uid:
     -
@@ -59,8 +58,8 @@ default:
             weight: 2
             additional:
               target_uuid: 5b88b192-e24f-4b64-b62c-39156d3fec29
-          f8b25fa5-cf71-4d57-8c30-6992eef1718d:
-            uuid: f8b25fa5-cf71-4d57-8c30-6992eef1718d
+          430f0720-17ff-459b-9a47-1cbc832ac2a8:
+            uuid: 430f0720-17ff-459b-9a47-1cbc832ac2a8
             region: content
             configuration:
               id: bksi_news

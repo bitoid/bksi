@@ -1,0 +1,131 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 6241fb1c-2d3d-4cb1-a0e4-851e9965a2c5
+  bundle: faq
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'FAQ Content'
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  field_faq_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 135c5076-5f7d-4b52-8c20-6dd656c52786
+          bundle: paragraph_faq
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1661941021
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_faq_description:
+            -
+              value: 'Du leitest und bearbeitest anspruchsvolle Projekte in allen Bauphasen der HOAI als Ansprechpartner:in für unsere Partner:innen'
+            -
+              value: 'Du steuerst die die Projektkoordination zusammen mit Fachplaner:innen, Architekt:innen, Bauherren und Baufrauen sowie ausführenden Firmen'
+            -
+              value: 'Du bist verantwortlich für Akquisition und Kalkulation von Planungsleistungen'
+            -
+              value: 'Als Projektleiter:in übernimmst du die statisch-konstruktive Beratung von Bauherren und Baufrauen sowie Objektplaner:innen Du hast Lust auf die fachliche Teamleitung sowie auf das Führen von Mitarbeiter:innen'
+            -
+              value: ' Ein Arbeitsplatz mit Zukunft bei einem Arbeitgeber, der an einer langfristigen Zusammenarbeit mit dir interessiert ist'
+            -
+              value: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi corrupti dolorum voluptas eveniet soluta laboriosam aliquid animi, ab deleniti rerum? Quaerat a ratione repellendus eaque totam fugit quibusdam qui, ut consequuntur expedita illo aut itaque cumque.'
+          field_faq_title:
+            -
+              value: 'Das erwartet dich bei BKSi'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 45767ba4-5dda-4545-b88e-cf4f7a3ef8a5
+          bundle: paragraph_faq
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1661941096
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_faq_description:
+            -
+              value: 'Du leitest und bearbeitest anspruchsvolle Projekte in allen Bauphasen der HOAI als Ansprechpartner:in für unsere Partner:innen'
+            -
+              value: ' Du steuerst die die Projektkoordination zusammen mit Fachplaner:innen, Architekt:innen, Bauherren und Baufrauen sowie ausführenden Firmen'
+            -
+              value: ' Du bist verantwortlich für Akquisition und Kalkulation von Planungsleistungen'
+            -
+              value: 'Als Projektleiter:in übernimmst du die statisch-konstruktive Beratung von Bauherren und Baufrauen sowie Objektplaner:innen Du hast Lust auf die fachliche Teamleitung sowie auf das Führen von Mitarbeiter:innen'
+            -
+              value: ' Ein Arbeitsplatz mit Zukunft bei einem Arbeitgeber, der an einer langfristigen Zusammenarbeit mit dir interessiert ist'
+            -
+              value: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi corrupti dolorum voluptas eveniet soluta laboriosam aliquid animi, ab deleniti rerum? Quaerat a ratione repellendus eaque totam fugit quibusdam qui, ut consequuntur expedita illo aut itaque cumque.'
+          field_faq_title:
+            -
+              value: 'Das erwarten wir von dir'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 3e633cec-3cba-4817-b9b0-771e7b1c83ac
+          bundle: paragraph_faq
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1661941196
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_faq_description:
+            -
+              value: 'Du leitest und bearbeitest anspruchsvolle Projekte in allen Bauphasen der HOAI als Ansprechpartner:in für unsere Partner:innen'
+            -
+              value: ' Du steuerst die die Projektkoordination zusammen mit Fachplaner:innen, Architekt:innen, Bauherren und Baufrauen sowie ausführenden Firmen'
+            -
+              value: ' Du bist verantwortlich für Akquisition und Kalkulation von Planungsleistungen'
+            -
+              value: 'Als Projektleiter:in übernimmst du die statisch-konstruktive Beratung von Bauherren und Baufrauen sowie Objektplaner:innen Du hast Lust auf die fachliche Teamleitung sowie auf das Führen von Mitarbeiter:innen'
+            -
+              value: ' Ein Arbeitsplatz mit Zukunft bei einem Arbeitgeber, der an einer langfristigen Zusammenarbeit mit dir interessiert ist'
+            -
+              value: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi corrupti dolorum voluptas eveniet soluta laboriosam aliquid animi, ab deleniti rerum? Quaerat a ratione repellendus eaque totam fugit quibusdam qui, ut consequuntur expedita illo aut itaque cumque.'
+          field_faq_title:
+            -
+              value: 'Das hat dir BKSi zu bieten'

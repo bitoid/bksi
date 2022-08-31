@@ -1,0 +1,26 @@
+uuid: 4ff30d4a-7bed-4789-bde4-52d348ccb6e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.impressions.field_image
+    - paragraphs.paragraphs_type.impressions
+  module:
+    - image
+id: paragraph.impressions.default
+targetEntityType: paragraph
+bundle: impressions
+mode: default
+content:
+  field_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

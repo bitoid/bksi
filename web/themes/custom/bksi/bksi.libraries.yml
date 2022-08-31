@@ -1,7 +1,8 @@
 global-styling:
   css:
     base:
-      dist/tailwind.css: {}
+      dist/tailwind.css: {weight: 10}
+      css/splide.min.css: {weight: 1}
   js:
     js/dropdown.js: {}
     js/impressium.js: {}
@@ -9,4 +10,9 @@ global-styling:
     js/lazy-loading.js: {}
     js/main.js: {}
     js/slider.js: {}
+
+splide:
+  js:
+    js/splide.js: {}
+    js/splide-init.js: {}
 

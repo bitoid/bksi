@@ -6,3 +6,4 @@ type: theme
 base theme: stable
 libraries:
   - bksi/global-styling
+  - bksi/splide

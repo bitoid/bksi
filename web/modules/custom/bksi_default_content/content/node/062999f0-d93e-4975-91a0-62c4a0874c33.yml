@@ -42,6 +42,28 @@ default:
       section:
         layout_id: layout_onecol
         layout_settings:
+          label: Directors
+          context_mapping: {  }
+        components:
+          b1e2ff9b-0834-4fb3-8579-fa0ac3b13719:
+            uuid: b1e2ff9b-0834-4fb3-8579-fa0ac3b13719
+            region: content
+            configuration:
+              id: 'block_content:3886b1c2-d8c9-49db-ab88-7e034a1a764b'
+              label: Directors
+              label_display: 0
+              provider: block_content
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+    -
+      section:
+        layout_id: layout_onecol
+        layout_settings:
           label: 'Team Gallery Section'
           context_mapping: {  }
         components:

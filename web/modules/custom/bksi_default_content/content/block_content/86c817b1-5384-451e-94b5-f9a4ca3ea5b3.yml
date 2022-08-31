@@ -1,0 +1,34 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 86c817b1-5384-451e-94b5-f9a4ca3ea5b3
+  bundle: hero_block_type
+  default_langcode: en
+  depends:
+    6dc110c8-f3f9-45f1-adb4-ffbbbe628ba4: file
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'test hero block banner'
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  field_slogan:
+    -
+      value: 'Bautechnische Prüfung'
+      format: basic_html
+  field_small_image:
+    -
+      entity: 6dc110c8-f3f9-45f1-adb4-ffbbbe628ba4
+      display: true
+      description: ''
+  field_title:
+    -
+      value: "<p>Überschrift zum Thema Bautechnische Prüfung</p>\r\n"
+      format: basic_html

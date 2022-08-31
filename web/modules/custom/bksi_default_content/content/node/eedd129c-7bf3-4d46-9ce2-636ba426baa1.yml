@@ -4,6 +4,8 @@ _meta:
   uuid: eedd129c-7bf3-4d46-9ce2-636ba426baa1
   bundle: page
   default_langcode: en
+  depends:
+    86c817b1-5384-451e-94b5-f9a4ca3ea5b3: block_content
 default:
   revision_uid:
     -
@@ -26,7 +28,34 @@ default:
   sticky:
     -
       value: false
+  revision_translation_affected:
+    -
+      value: true
   path:
     -
       alias: ''
       langcode: en
+  layout_builder__layout:
+    -
+      section:
+        layout_id: layout_onecol
+        layout_settings:
+          label: content
+          context_mapping: {  }
+        components:
+          5fe2191f-c79d-4ca3-a1be-2f065068500f:
+            uuid: 5fe2191f-c79d-4ca3-a1be-2f065068500f
+            region: content
+            configuration:
+              id: 'inline_block:hero_block_type'
+              label: 'test hero block banner'
+              label_display: 0
+              provider: layout_builder
+              view_mode: full
+              block_revision_id: '10'
+              block_serialized: null
+              context_mapping: {  }
+            weight: 0
+            additional:
+              target_uuid: 86c817b1-5384-451e-94b5-f9a4ca3ea5b3
+        third_party_settings: {  }

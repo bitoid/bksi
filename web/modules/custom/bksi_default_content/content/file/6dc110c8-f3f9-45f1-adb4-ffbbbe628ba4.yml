@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 6dc110c8-f3f9-45f1-adb4-ffbbbe628ba4
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: img-test-hero.svg
+  uri:
+    -
+      value: 'public://2022-08/img-test-hero.svg'
+  filemime:
+    -
+      value: image/svg+xml
+  filesize:
+    -
+      value: 1648
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1661933533

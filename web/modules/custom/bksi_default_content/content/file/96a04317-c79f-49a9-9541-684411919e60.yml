@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 96a04317-c79f-49a9-9541-684411919e60
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: bksi-ingenieure-kunden-bam.jpg
+  uri:
+    -
+      value: 'public://2022-09/bksi-ingenieure-kunden-bam.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 8603
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1662034331

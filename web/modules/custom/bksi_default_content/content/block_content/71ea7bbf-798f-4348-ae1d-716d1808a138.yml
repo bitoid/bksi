@@ -1,0 +1,236 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 71ea7bbf-798f-4348-ae1d-716d1808a138
+  bundle: customers
+  default_langcode: en
+  depends:
+    964f53c4-b54e-4b4f-a21c-033f9f953eb5: file
+    96a04317-c79f-49a9-9541-684411919e60: file
+    55a08ccd-96d4-419a-86c6-9074fba5a2fe: file
+    39952aea-cdf7-460a-af2b-7bb5dbb9ac3e: file
+    268b9adc-cf4c-4bbf-acfe-8cc462ac0ff5: file
+    d477c87d-c869-472f-bf2f-406a1dc20fc5: file
+    07c6c093-8530-47e4-8508-f72d1c68a99f: file
+    d9579a27-5df4-4ea3-8d15-65cdf11839a2: file
+    a53c3695-d21b-495b-a0f3-da4b4a8b027c: file
+    78375704-c176-424c-9e4a-d13021855d17: file
+    387485e8-694c-49fa-8f17-5b1c3669e221: file
+    42717c1d-a45a-43b7-8b25-1562db8bdb46: file
+    7302d90e-f935-4bf2-bf96-be9979eab3c4: file
+    f28d63c1-1c86-4391-93d6-e74305fb77c3: file
+    bf38c25d-28cd-453e-a022-9a4e4f9f2ce9: file
+    7a7625ba-8547-4f45-a845-a63b09e96042: file
+    a1a54f8e-faf5-4362-96af-93ac66f98e55: file
+    5433544b-5d4b-41c8-8270-d57f08666185: file
+    df067721-9018-45c7-9bbb-28818e5ea440: file
+    f00ff647-1fdd-457d-9ed4-498e60a53644: file
+    9067f2c0-498f-4afa-9b04-9e4b631ea73e: file
+    b9debc66-901c-419b-a241-cae286cb054f: file
+    a27f9723-4753-47ab-af38-98330cdc00f2: file
+    a4b38248-470a-4705-a0ae-9d28c72a3072: file
+    09016ab4-7598-4dc5-bf57-a25d35418096: file
+    de3baee8-19c8-490b-9ce8-c43dffddd663: file
+    981d4020-8d37-496d-b557-ea4e21aa3714: file
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Customers (Customers Page)'
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  field_customers_paragraph:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: e0022a37-45d1-4c9b-a1fe-37c47414a321
+          bundle: customers
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1662034294
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_image:
+            -
+              entity: 964f53c4-b54e-4b4f-a21c-033f9f953eb5
+              alt: stuttgart-airport-logo
+              title: ''
+              width: 270
+              height: 212
+            -
+              entity: 96a04317-c79f-49a9-9541-684411919e60
+              alt: bam-logo
+              title: ''
+              width: 270
+              height: 212
+            -
+              entity: 55a08ccd-96d4-419a-86c6-9074fba5a2fe
+              alt: bw-logo
+              title: ''
+              width: 270
+              height: 212
+            -
+              entity: 39952aea-cdf7-460a-af2b-7bb5dbb9ac3e
+              alt: bilfinger-logo
+              title: ''
+              width: 270
+              height: 212
+            -
+              entity: 268b9adc-cf4c-4bbf-acfe-8cc462ac0ff5
+              alt: bosch-logo
+              title: ''
+              width: 270
+              height: 212
+            -
+              entity: d477c87d-c869-472f-bf2f-406a1dc20fc5
+              alt: baden-logo
+              title: ''
+              width: 270
+              height: 212
+            -
+              entity: 07c6c093-8530-47e4-8508-f72d1c68a99f
+              alt: mb-group-logo
+              title: ''
+              width: 270
+              height: 212
+            -
+              entity: d9579a27-5df4-4ea3-8d15-65cdf11839a2
+              alt: db-logo
+              title: ''
+              width: 270
+              height: 212
+            -
+              entity: a53c3695-d21b-495b-a0f3-da4b4a8b027c
+              alt: dr-logo
+              title: ''
+              width: 270
+              height: 212
+            -
+              entity: 78375704-c176-424c-9e4a-d13021855d17
+              alt: swsg-logo
+              title: ''
+              width: 270
+              height: 212
+            -
+              entity: 387485e8-694c-49fa-8f17-5b1c3669e221
+              alt: 'd&s-logo'
+              title: ''
+              width: 270
+              height: 212
+            -
+              entity: 42717c1d-a45a-43b7-8b25-1562db8bdb46
+              alt: evobus-logo
+              title: ''
+              width: 270
+              height: 212
+            -
+              entity: 7302d90e-f935-4bf2-bf96-be9979eab3c4
+              alt: fahrion-logo
+              title: ''
+              width: 270
+              height: 212
+            -
+              entity: f28d63c1-1c86-4391-93d6-e74305fb77c3
+              alt: fraunhofer-logo
+              title: ''
+              width: 270
+              height: 212
+            -
+              entity: bf38c25d-28cd-453e-a022-9a4e4f9f2ce9
+              alt: klinikum-logo
+              title: ''
+              width: 270
+              height: 212
+            -
+              entity: 7a7625ba-8547-4f45-a845-a63b09e96042
+              alt: exyte-logo
+              title: ''
+              width: 270
+              height: 212
+            -
+              entity: a1a54f8e-faf5-4362-96af-93ac66f98e55
+              alt: porsche-logo
+              title: ''
+              width: 270
+              height: 212
+            -
+              entity: 5433544b-5d4b-41c8-8270-d57f08666185
+              alt: dlr-logo
+              title: ''
+              width: 270
+              height: 212
+            -
+              entity: df067721-9018-45c7-9bbb-28818e5ea440
+              alt: siltronic-logo
+              title: ''
+              width: 270
+              height: 212
+            -
+              entity: f00ff647-1fdd-457d-9ed4-498e60a53644
+              alt: ssb-logo
+              title: ''
+              width: 270
+              height: 212
+            -
+              entity: 9067f2c0-498f-4afa-9b04-9e4b631ea73e
+              alt: stuttgart-logo
+              title: ''
+              width: 270
+              height: 212
+            -
+              entity: b9debc66-901c-419b-a241-cae286cb054f
+              alt: zeiss-logo
+              title: ''
+              width: 270
+              height: 212
+            -
+              entity: a27f9723-4753-47ab-af38-98330cdc00f2
+              alt: gottlob-rommel-logo
+              title: ''
+              width: 270
+              height: 212
+            -
+              entity: a4b38248-470a-4705-a0ae-9d28c72a3072
+              alt: planen-bauen-logo
+              title: ''
+              width: 270
+              height: 212
+            -
+              entity: 09016ab4-7598-4dc5-bf57-a25d35418096
+              alt: scd-logo
+              title: ''
+              width: 270
+              height: 212
+            -
+              entity: de3baee8-19c8-490b-9ce8-c43dffddd663
+              alt: planquadrat-logo
+              title: ''
+              width: 270
+              height: 212
+            -
+              entity: 981d4020-8d37-496d-b557-ea4e21aa3714
+              alt: zueblin-logo
+              title: ''
+              width: 270
+              height: 212
+  field_title:
+    -
+      value: "<p>Auszug aus unserer Kundenliste</p>\r\n"
+      format: basic_html

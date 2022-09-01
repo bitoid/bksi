@@ -1,0 +1,133 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: f9ae77dd-65a0-4e25-9162-55bead2df1c3
+  bundle: offer
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Offer (Career Page)'
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  field_description:
+    -
+      value: 'Wir arbeiten gerne im Team. Viele von uns sind schon lange dabei. Alle freuen sich auf deinen Input. Was wir dir über das vereinbarte, leistungsgerechte Gehalt hinaus bieten? Hier einige der BKSI-Highlights:'
+      format: ''
+  field_offer_paragraph:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 2329e29f-1f8c-4173-993c-65dab244e490
+          bundle: offer
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1662024747
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_item:
+            -
+              value: 'Eine wertschätzende Feedback- und Führungskultur'
+            -
+              value: 'hoher Digitalisierungsgrad und BIM-Arbeitsmethode'
+            -
+              value: Erfolgsbeteiligung
+            -
+              value: 'Flexible Arbeitszeiten'
+            -
+              value: 'Arbeitszeitmodelle mit Gleittagen'
+          field_title:
+            -
+              value: 'Moderne Strukturen'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 7a85c2d8-7ad4-430f-8995-92772ffdde2d
+          bundle: offer
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1662024839
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_item:
+            -
+              value: 'Hervorragende Verkehrsanbindung'
+            -
+              value: 'Mobiles Arbeiten'
+            -
+              value: 'Freie Getränke'
+            -
+              value: Kantine
+          field_title:
+            -
+              value: 'Gut organisierte Arbeitstage'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 78fc4c5b-741a-4baa-b815-bc49779a3037
+          bundle: offer
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1662024871
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_item:
+            -
+              value: 'Persönlicher Weiterbildungsplan'
+            -
+              value: Karriereförderung
+            -
+              value: Teilzeitmodelle
+            -
+              value: Trainee-Programm
+          field_title:
+            -
+              value: 'Individuelle Förderung'
+  field_slogan:
+    -
+      value: 'Gute Gründe'
+      format: basic_html
+  field_title:
+    -
+      value: "<p>Warum BKSI?<br />\r\nWas wir dir bieten.</p>\r\n"
+      format: basic_html

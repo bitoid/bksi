@@ -8,6 +8,7 @@ _meta:
     e72edf2a-e650-49c2-9b67-5bc9dd5fa779: block_content
     0e57b7ff-ee62-4cac-853c-a0ca4185b15b: block_content
     2a6cd75a-524a-4a2e-a4e3-e97141ee0f3f: block_content
+    f96a7a30-eabf-4e30-a88a-a13eb32d9853: block_content
 default:
   revision_uid:
     -
@@ -45,20 +46,21 @@ default:
           label: Directors
           context_mapping: {  }
         components:
-          b1e2ff9b-0834-4fb3-8579-fa0ac3b13719:
-            uuid: b1e2ff9b-0834-4fb3-8579-fa0ac3b13719
+          a9c6f2a5-dc1a-4a12-b435-00014c33dc8d:
+            uuid: a9c6f2a5-dc1a-4a12-b435-00014c33dc8d
             region: content
             configuration:
-              id: 'block_content:3886b1c2-d8c9-49db-ab88-7e034a1a764b'
+              id: 'inline_block:directors'
               label: Directors
               label_display: 0
-              provider: block_content
-              status: true
-              info: ''
+              provider: layout_builder
               view_mode: full
+              block_revision_id: '18'
+              block_serialized: null
               context_mapping: {  }
             weight: 0
-            additional: {  }
+            additional:
+              target_uuid: f96a7a30-eabf-4e30-a88a-a13eb32d9853
         third_party_settings: {  }
     -
       section:

@@ -1,5 +1,5 @@
 name: Projects
 type: module
-description: This is endpoint of projects Json
+description: Projects search block module
 package: Custom
 core_version_requirement: ^9 || ^10

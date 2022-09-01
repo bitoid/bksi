@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ *
+ * Register a module or theme's theme implementations.
+ * The implementations declared by this hook specify how a
+ * particular render array is to be rendered as HTML.
+ *
+ * See: https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Render%21theme.api.php/function/hook_theme/8.2.x
+ *
+ * If you change this method, clear theme registry and routing
+ * table 'drush cc theme-registry' and 'drush cc router'.
+ */
+function projects_theme($existing, $type, $theme, $path)
+{
+
+    return [
+        // Name of the theme hook. This is used in the controller to trigger the hook.
+        'projects' => [
+            'variables' => [],
+        ],
+    ];
+}

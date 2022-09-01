@@ -89,7 +89,7 @@ class ProjectsController extends ControllerBase {
 
     $file = File::load($fid);
     $image_uri = $file->getFileUri();
-    $style = ImageStyle::load('thumbnail');
+    $style = ImageStyle::load("original");
 
     return $style->buildUrl($image_uri);
   }

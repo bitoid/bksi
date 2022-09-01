@@ -1,37 +1,38 @@
 _meta:
   version: '1.0'
   entity_type: menu_link_content
-  uuid: 46a7348d-1884-4f15-92ef-c881595c31fb
+  uuid: 524b1e30-0c29-4bea-956d-7a8c200e5069
   bundle: menu_link_content
   default_langcode: en
+  depends:
+    3354eeed-457d-42a3-aa57-2da4ec427534: node
 default:
   enabled:
     -
       value: true
   title:
     -
-      value: Unternehmen
+      value: Contact
   menu_name:
     -
       value: main-menu
   link:
     -
-      uri: 'internal:#'
+      target_uuid: 3354eeed-457d-42a3-aa57-2da4ec427534
       title: ''
-      options:
-        attributes: {  }
+      options: {  }
   external:
     -
       value: false
   rediscover:
     -
-      value: true
+      value: false
   weight:
     -
-      value: 0
+      value: -48
   expanded:
     -
-      value: true
+      value: false
   revision_translation_affected:
     -
       value: true

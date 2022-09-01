@@ -18,7 +18,7 @@ default:
       target_id: 1
   title:
     -
-      value: tragwerksplanung
+      value: 'Structural Engineering'
   created:
     -
       value: 1661258500
@@ -30,7 +30,7 @@ default:
       value: false
   path:
     -
-      alias: /tragwerksplanung
+      alias: /structural_engineering
       langcode: en
   layout_builder__layout:
     -
@@ -49,7 +49,7 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '4'
+              block_revision_id: '10'
               block_serialized: null
               context_mapping: {  }
             weight: 0

@@ -28,9 +28,6 @@ default:
   sticky:
     -
       value: false
-  revision_translation_affected:
-    -
-      value: true
   path:
     -
       alias: ''
@@ -90,7 +87,7 @@ default:
               label_display: visible
               provider: layout_builder
               view_mode: full
-              block_revision_id: '10'
+              block_revision_id: '3'
               block_serialized: null
               context_mapping: {  }
             weight: 3

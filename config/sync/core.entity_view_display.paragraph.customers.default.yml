@@ -1,0 +1,26 @@
+uuid: f6a19ab5-7dd0-4065-b8cf-9b087d434e23
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.customers.field_image
+    - paragraphs.paragraphs_type.customers
+  module:
+    - image
+id: paragraph.customers.default
+targetEntityType: paragraph
+bundle: customers
+mode: default
+content:
+  field_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

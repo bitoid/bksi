@@ -20,7 +20,8 @@ default:
     -
       target_uuid: 7e90be5c-fed5-43fc-9387-0b4c5883e081
       title: ''
-      options: {  }
+      options:
+        attributes: {  }
   external:
     -
       value: false
@@ -32,7 +33,7 @@ default:
       value: -50
   expanded:
     -
-      value: false
+      value: true
   revision_translation_affected:
     -
       value: true

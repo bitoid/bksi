@@ -4,26 +4,32 @@ status: true
 dependencies:
   config:
     - block_content.type.motto
-    - field.field.block_content.motto.field_author
     - field.field.block_content.motto.field_motto
+    - field.field.block_content.motto.field_motto_link
+  module:
+    - link
 id: block_content.motto.default
 targetEntityType: block_content
 bundle: motto
 mode: default
 content:
-  field_author:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 1
-    region: content
   field_motto:
     type: basic_string
     label: above
     settings: {  }
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_motto_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
     region: content
 hidden: {  }

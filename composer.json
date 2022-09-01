@@ -31,6 +31,7 @@
         "drupal/paragraphs": "^1.15",
         "drupal/simple_menu_icons": "^2.3",
         "drupal/svg_image_field": "^2.1",
+        "drupal/formdazzle": "^2.1",
         "drush/drush": "^11.0",
         "vlucas/phpdotenv": "^5.1",
         "webflo/drupal-finder": "^1.2"

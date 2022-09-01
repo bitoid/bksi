@@ -6,6 +6,7 @@ _meta:
   default_langcode: en
   depends:
     feb4c137-d27a-48da-a9a3-5e7590c1387a: block_content
+    f9ae77dd-65a0-4e25-9162-55bead2df1c3: block_content
 default:
   revision_uid:
     -
@@ -54,7 +55,7 @@ default:
               info: ''
               view_mode: full
               context_mapping: {  }
-            weight: 2
+            weight: '2'
             additional: {  }
           e3d17088-a7aa-4d8d-9259-f43bb09ab59e:
             uuid: e3d17088-a7aa-4d8d-9259-f43bb09ab59e
@@ -65,10 +66,25 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '9'
+              block_revision_id: '10'
               block_serialized: null
               context_mapping: {  }
-            weight: 3
+            weight: '3'
             additional:
               target_uuid: feb4c137-d27a-48da-a9a3-5e7590c1387a
+          e0f49235-3a61-4d23-86cb-6253e1dfbe26:
+            uuid: e0f49235-3a61-4d23-86cb-6253e1dfbe26
+            region: content
+            configuration:
+              id: 'inline_block:offer'
+              label: 'Offer (Career Page)'
+              label_display: visible
+              provider: layout_builder
+              view_mode: full
+              block_revision_id: '17'
+              block_serialized: null
+              context_mapping: {  }
+            weight: '1'
+            additional:
+              target_uuid: f9ae77dd-65a0-4e25-9162-55bead2df1c3
         third_party_settings: {  }

@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 964f53c4-b54e-4b4f-a21c-033f9f953eb5
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: bksi-ingenieure-kunden-stuttgart-ariport.jpg
+  uri:
+    -
+      value: 'public://2022-09/bksi-ingenieure-kunden-stuttgart-ariport.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 16144
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1662034294

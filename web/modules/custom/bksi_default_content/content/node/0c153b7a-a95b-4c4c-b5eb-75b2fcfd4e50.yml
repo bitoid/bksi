@@ -4,6 +4,8 @@ _meta:
   uuid: 0c153b7a-a95b-4c4c-b5eb-75b2fcfd4e50
   bundle: page
   default_langcode: en
+  depends:
+    71ea7bbf-798f-4348-ae1d-716d1808a138: block_content
 default:
   revision_uid:
     -
@@ -33,3 +35,51 @@ default:
     -
       alias: ''
       langcode: en
+  layout_builder__layout:
+    -
+      section:
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          9882d3ae-f738-4128-b707-2e592f546ca5:
+            uuid: 9882d3ae-f738-4128-b707-2e592f546ca5
+            region: content
+            configuration:
+              id: 'field_block:node:page:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          60147769-88b6-4794-8413-2815b9e41bf1:
+            uuid: 60147769-88b6-4794-8413-2815b9e41bf1
+            region: content
+            configuration:
+              id: 'extra_field_block:node:page:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 1
+            additional: {  }
+          698816dc-e594-4e53-b79c-a87cd12dd4de:
+            uuid: 698816dc-e594-4e53-b79c-a87cd12dd4de
+            region: content
+            configuration:
+              id: 'inline_block:customers'
+              label: 'Customers (Customers Page)'
+              label_display: 0
+              provider: layout_builder
+              view_mode: full
+              block_revision_id: '19'
+              block_serialized: null
+              context_mapping: {  }
+            weight: 2
+            additional:
+              target_uuid: 71ea7bbf-798f-4348-ae1d-716d1808a138
+        third_party_settings: {  }

@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 5433544b-5d4b-41c8-8270-d57f08666185
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: bksi-ingenieure-kunden-dlr.jpg
+  uri:
+    -
+      value: 'public://2022-09/bksi-ingenieure-kunden-dlr.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 9483
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1662035000

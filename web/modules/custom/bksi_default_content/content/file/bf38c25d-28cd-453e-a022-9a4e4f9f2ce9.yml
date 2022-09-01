@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: bf38c25d-28cd-453e-a022-9a4e4f9f2ce9
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: bksi-ingenieure-kunden-klinikum-ludwigsburg.jpg
+  uri:
+    -
+      value: 'public://2022-09/bksi-ingenieure-kunden-klinikum-ludwigsburg.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 10568
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1662034934

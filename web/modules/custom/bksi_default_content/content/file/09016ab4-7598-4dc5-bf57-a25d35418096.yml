@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 09016ab4-7598-4dc5-bf57-a25d35418096
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: bksi-ingenieure-kunden-scd.jpg
+  uri:
+    -
+      value: 'public://2022-09/bksi-ingenieure-kunden-scd.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 11714
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1662035151

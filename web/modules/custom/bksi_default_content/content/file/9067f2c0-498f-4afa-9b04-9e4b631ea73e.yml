@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 9067f2c0-498f-4afa-9b04-9e4b631ea73e
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: bksi-ingenieure-kunden-stuttgart.jpg
+  uri:
+    -
+      value: 'public://2022-09/bksi-ingenieure-kunden-stuttgart.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 5367
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1662035060

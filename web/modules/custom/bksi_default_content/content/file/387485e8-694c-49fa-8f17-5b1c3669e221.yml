@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 387485e8-694c-49fa-8f17-5b1c3669e221
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 'bksi-ingenieure-kunden-diringer&scheidel.jpg'
+  uri:
+    -
+      value: 'public://2022-09/bksi-ingenieure-kunden-diringer&scheidel.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 12834
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1662034846

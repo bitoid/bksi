@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: d477c87d-c869-472f-bf2f-406a1dc20fc5
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: bksi-ingenieure-kunden-baden-wuerttemberg.jpg
+  uri:
+    -
+      value: 'public://2022-09/bksi-ingenieure-kunden-baden-wuerttemberg.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 11596
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1662034447

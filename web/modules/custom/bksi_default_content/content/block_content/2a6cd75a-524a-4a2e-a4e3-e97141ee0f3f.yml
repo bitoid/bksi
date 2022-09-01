@@ -16,6 +16,9 @@ default:
   reusable:
     -
       value: false
+  revision_translation_affected:
+    -
+      value: true
   field_image:
     -
       entity: b69a2b61-8321-44b5-a0c9-c5d022888aa4

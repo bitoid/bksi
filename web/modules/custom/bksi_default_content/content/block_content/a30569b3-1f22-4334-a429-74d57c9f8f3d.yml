@@ -1,0 +1,41 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: a30569b3-1f22-4334-a429-74d57c9f8f3d
+  bundle: directors
+  default_langcode: en
+  depends:
+    17575d26-cc6e-4187-98f5-7e30cbcf71fe: file
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: directors
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  field_directors_description:
+    -
+      value: 'Von links nach rechts (je nach Motiv)'
+  field_directors_director:
+    -
+      value: 'Dipl.-Ing (FH) Frank Schäfer'
+    -
+      value: 'Dipl.-Ing Frank Steller'
+    -
+      value: 'Dipl.-Ing Volker Kunberger'
+  field_directors_image:
+    -
+      entity: 17575d26-cc6e-4187-98f5-7e30cbcf71fe
+      alt: team_image
+      title: ''
+      width: 2000
+      height: 1333
+  field_directors_title:
+    -
+      value: Geschäftsführung

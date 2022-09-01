@@ -17,9 +17,12 @@ default:
   revision_translation_affected:
     -
       value: true
-  field_author:
-    -
-      value: '                 Frank Schäfer | Geschäftsführer BKSI             '
   field_motto:
     -
       value: 'wenn es nicht mein Problem ist, mache ich es zu meinem Problem. Denn wir kümmern uns. Unsere Kernleistung ist die Beratung und das Lösen von Problemen.'
+  field_motto_link:
+    -
+      uri: 'https://www.google.com/'
+      title: 'Frank Schäfer | Geschäftsführer BKSI'
+      options:
+        attributes: {  }

@@ -43,6 +43,9 @@ default:
           behavior_settings:
             -
               value: {  }
+          revision_translation_affected:
+            -
+              value: true
           field_service_description:
             -
               value: "<p>Kurzer zusätzlicher Text, der mit wichtigen Schlagworten für die Suchmaschinen versehen ist. eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren eos et accusam et justo</p>\r\n"

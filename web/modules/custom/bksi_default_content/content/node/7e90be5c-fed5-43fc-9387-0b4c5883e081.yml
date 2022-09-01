@@ -35,7 +35,7 @@ default:
       value: false
   path:
     -
-      alias: ''
+      alias: /services
       langcode: en
   layout_builder__layout:
     -
@@ -56,7 +56,7 @@ default:
               info: ''
               view_mode: full
               context_mapping: {  }
-            weight: '3'
+            weight: '4'
             additional: {  }
           8d754e81-93d3-41dc-a537-b52497db8db3:
             uuid: 8d754e81-93d3-41dc-a537-b52497db8db3
@@ -67,10 +67,10 @@ default:
               label_display: visible
               provider: layout_builder
               view_mode: full
-              block_revision_id: '1'
+              block_revision_id: '27'
               block_serialized: null
               context_mapping: {  }
-            weight: '4'
+            weight: '5'
             additional:
               target_uuid: 36d48753-aee5-4c34-804e-b3a03e2aa5c1
           24cb64cb-14fb-4947-9bdd-ad782aabb5c9:
@@ -82,7 +82,7 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '22'
+              block_revision_id: '3'
               block_serialized: null
               context_mapping: {  }
             weight: '1'
@@ -97,10 +97,10 @@ default:
               label_display: visible
               provider: layout_builder
               view_mode: full
-              block_revision_id: '23'
+              block_revision_id: '26'
               block_serialized: null
               context_mapping: {  }
-            weight: '5'
+            weight: '3'
             additional:
               target_uuid: 3c349a1d-acb4-46f2-83dc-07367ac0af52
           922df27e-82fe-4472-b927-510cdee96cea:
@@ -127,7 +127,7 @@ default:
               label_display: visible
               provider: layout_builder
               view_mode: full
-              block_revision_id: '27'
+              block_revision_id: '24'
               block_serialized: null
               context_mapping: {  }
             weight: '2'
@@ -142,7 +142,7 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '17'
+              block_revision_id: '15'
               block_serialized: null
               context_mapping: {  }
             weight: '0'

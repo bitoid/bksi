@@ -38,6 +38,9 @@ default:
           behavior_settings:
             -
               value: {  }
+          revision_translation_affected:
+            -
+              value: true
           field_description:
             -
               value: 'Nachweis hoher Expertise und Leistungsfähigkeit unserer Mitarbeitenden '

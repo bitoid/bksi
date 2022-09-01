@@ -7,8 +7,8 @@ _meta:
   depends:
     e72edf2a-e650-49c2-9b67-5bc9dd5fa779: block_content
     0e57b7ff-ee62-4cac-853c-a0ca4185b15b: block_content
+    a30569b3-1f22-4334-a429-74d57c9f8f3d: block_content
     2a6cd75a-524a-4a2e-a4e3-e97141ee0f3f: block_content
-    f96a7a30-eabf-4e30-a88a-a13eb32d9853: block_content
 default:
   revision_uid:
     -
@@ -43,29 +43,6 @@ default:
       section:
         layout_id: layout_onecol
         layout_settings:
-          label: Directors
-          context_mapping: {  }
-        components:
-          a9c6f2a5-dc1a-4a12-b435-00014c33dc8d:
-            uuid: a9c6f2a5-dc1a-4a12-b435-00014c33dc8d
-            region: content
-            configuration:
-              id: 'inline_block:directors'
-              label: Directors
-              label_display: 0
-              provider: layout_builder
-              view_mode: full
-              block_revision_id: '18'
-              block_serialized: null
-              context_mapping: {  }
-            weight: 0
-            additional:
-              target_uuid: f96a7a30-eabf-4e30-a88a-a13eb32d9853
-        third_party_settings: {  }
-    -
-      section:
-        layout_id: layout_onecol
-        layout_settings:
           label: 'Team Gallery Section'
           context_mapping: {  }
         components:
@@ -92,7 +69,7 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '17'
+              block_revision_id: '11'
               block_serialized: null
               context_mapping: {  }
             weight: '4'
@@ -107,12 +84,27 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '29'
+              block_revision_id: '19'
               block_serialized: null
               context_mapping: {  }
             weight: '1'
             additional:
               target_uuid: 0e57b7ff-ee62-4cac-853c-a0ca4185b15b
+          5719532f-9ae0-4b98-8efd-d3eeb4b5aa9e:
+            uuid: 5719532f-9ae0-4b98-8efd-d3eeb4b5aa9e
+            region: content
+            configuration:
+              id: 'inline_block:directors'
+              label: directors
+              label_display: 0
+              provider: layout_builder
+              view_mode: full
+              block_revision_id: '22'
+              block_serialized: null
+              context_mapping: {  }
+            weight: '2'
+            additional:
+              target_uuid: a30569b3-1f22-4334-a429-74d57c9f8f3d
           4c057edb-cf83-4b64-ad18-d148b3d684d9:
             uuid: 4c057edb-cf83-4b64-ad18-d148b3d684d9
             region: content
@@ -122,7 +114,7 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '20'
+              block_revision_id: '15'
               block_serialized: null
               context_mapping: {  }
             weight: '0'

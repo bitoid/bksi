@@ -29,9 +29,6 @@ default:
   sticky:
     -
       value: false
-  revision_translation_affected:
-    -
-      value: true
   path:
     -
       alias: /job_detail
@@ -74,4 +71,15 @@ default:
             weight: 1
             additional:
               target_uuid: 6241fb1c-2d3d-4cb1-a0e4-851e9965a2c5
+          6288c446-97c1-48a5-b152-f4b3787c6fc2:
+            uuid: 6288c446-97c1-48a5-b152-f4b3787c6fc2
+            region: content
+            configuration:
+              id: bksi_contact_form
+              label: 'Contact Form'
+              label_display: 0
+              provider: bksi_contact_form
+              context_mapping: {  }
+            weight: 2
+            additional: {  }
         third_party_settings: {  }

@@ -9,6 +9,7 @@ dependencies:
     - contact
     - filter
     - fontawesome
+    - paragraphs_type_permissions
     - search
     - shortcut
     - system
@@ -28,3 +29,4 @@ permissions:
   - 'search content'
   - 'skip comment approval'
   - 'use text format basic_html'
+  - 'view paragraph content slide'

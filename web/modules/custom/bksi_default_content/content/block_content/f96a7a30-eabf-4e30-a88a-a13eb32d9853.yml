@@ -1,11 +1,11 @@
 _meta:
   version: '1.0'
   entity_type: block_content
-  uuid: 3886b1c2-d8c9-49db-ab88-7e034a1a764b
+  uuid: f96a7a30-eabf-4e30-a88a-a13eb32d9853
   bundle: directors
   default_langcode: en
   depends:
-    4849e86e-5237-4805-baad-d3b15f63ecab: file
+    e273d848-06f0-45ea-8e43-9fd9331a7cd0: file
 default:
   status:
     -
@@ -15,7 +15,7 @@ default:
       value: Directors
   reusable:
     -
-      value: true
+      value: false
   revision_translation_affected:
     -
       value: true
@@ -31,8 +31,8 @@ default:
       value: 'Dipl.-Ing Volker Kunberger'
   field_directors_image:
     -
-      entity: 4849e86e-5237-4805-baad-d3b15f63ecab
-      alt: team
+      entity: e273d848-06f0-45ea-8e43-9fd9331a7cd0
+      alt: 'Picture of people''s hand grouped together, showing teamwork.'
       title: ''
       width: 2000
       height: 1333

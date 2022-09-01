@@ -1,0 +1,55 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: ed6a403e-eb6c-4541-9366-07036a081c42
+  bundle: page
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: Projects
+  created:
+    -
+      value: 1662064696
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /projects
+      langcode: en
+  layout_builder__layout:
+    -
+      section:
+        layout_id: layout_onecol
+        layout_settings:
+          label: content
+          context_mapping: {  }
+        components:
+          f07f72d1-7159-4204-a545-6e578fa90c60:
+            uuid: f07f72d1-7159-4204-a545-6e578fa90c60
+            region: content
+            configuration:
+              id: projects_block
+              label: 'Projects Block'
+              label_display: 0
+              provider: projects
+              context_mapping: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }

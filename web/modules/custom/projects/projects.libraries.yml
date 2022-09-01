@@ -1,0 +1,3 @@
+projects_block_lib:
+  js:
+    js/script.js: {}

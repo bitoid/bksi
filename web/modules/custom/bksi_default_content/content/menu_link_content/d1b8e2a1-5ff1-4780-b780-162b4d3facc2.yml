@@ -1,37 +1,38 @@
 _meta:
   version: '1.0'
   entity_type: menu_link_content
-  uuid: 30094398-3b6b-4af2-8731-a4ceab3e23a5
+  uuid: d1b8e2a1-5ff1-4780-b780-162b4d3facc2
   bundle: menu_link_content
   default_langcode: en
+  depends:
+    7e90be5c-fed5-43fc-9387-0b4c5883e081: node
 default:
   enabled:
     -
       value: true
   title:
     -
-      value: Leistungen
+      value: Services
   menu_name:
     -
       value: main-menu
   link:
     -
-      uri: 'internal:#'
+      target_uuid: 7e90be5c-fed5-43fc-9387-0b4c5883e081
       title: ''
-      options:
-        attributes: {  }
+      options: {  }
   external:
     -
       value: false
   rediscover:
     -
-      value: true
+      value: false
   weight:
     -
-      value: 0
+      value: -50
   expanded:
     -
-      value: true
+      value: false
   revision_translation_affected:
     -
       value: true

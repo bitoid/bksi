@@ -1,42 +1,38 @@
 _meta:
   version: '1.0'
   entity_type: menu_link_content
-  uuid: 459da929-8653-4c68-bf9b-a4fccf58803e
+  uuid: c0365953-aa11-4c98-855f-b992a0120987
   bundle: menu_link_content
   default_langcode: en
   depends:
-    46a7348d-1884-4f15-92ef-c881595c31fb: menu_link_content
+    61fcc4aa-383b-41dc-bc79-456f2ea8043c: node
 default:
   enabled:
     -
       value: true
   title:
     -
-      value: Team
+      value: Career
   menu_name:
     -
       value: main-menu
   link:
     -
-      uri: 'internal:#'
+      target_uuid: 61fcc4aa-383b-41dc-bc79-456f2ea8043c
       title: ''
-      options:
-        attributes: {  }
+      options: {  }
   external:
     -
       value: false
   rediscover:
     -
-      value: true
+      value: false
   weight:
     -
-      value: -50
+      value: -49
   expanded:
     -
       value: false
-  parent:
-    -
-      value: 'menu_link_content:46a7348d-1884-4f15-92ef-c881595c31fb'
   revision_translation_affected:
     -
       value: true

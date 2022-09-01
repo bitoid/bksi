@@ -18,7 +18,7 @@ default:
       target_id: 1
   title:
     -
-      value: 'Career Page'
+      value: Career
   created:
     -
       value: 1661845143
@@ -28,6 +28,9 @@ default:
   sticky:
     -
       value: false
+  revision_translation_affected:
+    -
+      value: true
   path:
     -
       alias: ''
@@ -38,41 +41,6 @@ default:
         layout_id: layout_onecol
         layout_settings:
           label: ''
-        components:
-          9882d3ae-f738-4128-b707-2e592f546ca5:
-            uuid: 9882d3ae-f738-4128-b707-2e592f546ca5
-            region: content
-            configuration:
-              id: 'field_block:node:page:body'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: text_default
-                label: hidden
-                settings: {  }
-                third_party_settings: {  }
-            weight: 0
-            additional: {  }
-          60147769-88b6-4794-8413-2815b9e41bf1:
-            uuid: 60147769-88b6-4794-8413-2815b9e41bf1
-            region: content
-            configuration:
-              id: 'extra_field_block:node:page:links'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-            weight: 1
-            additional: {  }
-          809a05cc-844f-4a88-8b2f-d950ea42b58a:
-            uuid: 809a05cc-844f-4a88-8b2f-d950ea42b58a
-            region: content
-            configuration:
-              id: 'block_content:7918f3cf-8b42-4c6e-98e7-c7d6a405e0fe'
-              label: 'Impressions (Career Page)'
-              label_display: 0
-          label: content
-          context_mapping: {  }
         components:
           c0d49f8e-a814-4317-9292-556c4a0372d0:
             uuid: c0d49f8e-a814-4317-9292-556c4a0372d0
@@ -97,7 +65,7 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '11'
+              block_revision_id: '9'
               block_serialized: null
               context_mapping: {  }
             weight: 3

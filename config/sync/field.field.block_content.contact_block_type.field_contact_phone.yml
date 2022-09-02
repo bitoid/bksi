@@ -1,18 +1,18 @@
-uuid: bf4299eb-04f8-40f0-9f0c-59225ca4ad5c
+uuid: 7c0f5ab7-eadb-44d0-aad4-4d3303f38641
 langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.imprint_custom_block
-    - field.storage.block_content.field_ltd_bksi
-    - paragraphs.paragraphs_type.imprint_longtext
+    - block_content.type.contact_block_type
+    - field.storage.block_content.field_contact_phone
+    - paragraphs.paragraphs_type.imprint_shorttext
   module:
     - entity_reference_revisions
-id: block_content.imprint_custom_block.field_ltd_bksi
-field_name: field_ltd_bksi
+id: block_content.contact_block_type.field_contact_phone
+field_name: field_contact_phone
 entity_type: block_content
-bundle: imprint_custom_block
-label: 'LTD BKSI'
+bundle: contact_block_type
+label: 'contact phone'
 description: ''
 required: false
 translatable: false
@@ -22,32 +22,32 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
-      imprint_longtext: imprint_longtext
+      imprint_shorttext: imprint_shorttext
     negate: 0
     target_bundles_drag_drop:
       company_detail:
-        weight: 8
+        weight: 15
         enabled: false
       customers:
         weight: 16
         enabled: false
       footer_bottom_nav_link:
-        weight: 9
+        weight: 17
         enabled: false
       footer_social_menu_item:
-        weight: 10
+        weight: 18
         enabled: false
       impressions:
         weight: 19
         enabled: false
       imprint_longtext:
-        weight: 11
-        enabled: true
-      imprint_shorttext:
-        weight: 12
+        weight: 20
         enabled: false
+      imprint_shorttext:
+        weight: 21
+        enabled: true
       imprint_web_links:
-        weight: 13
+        weight: 22
         enabled: false
       job_paragraph:
         weight: 23
@@ -62,7 +62,7 @@ settings:
         weight: 26
         enabled: false
       service:
-        weight: 14
+        weight: 27
         enabled: false
       team_gallery:
         weight: 28

@@ -1,10 +1,12 @@
-uuid: e9287f9f-af41-422c-9854-e23144f95808
+uuid: 7a4174d2-7ff6-47e2-9060-ee1859d0c814
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_shorttext_title
     - paragraphs.paragraphs_type.imprint_shorttext
+  module:
+    - text
 id: paragraph.imprint_shorttext.field_shorttext_title
 field_name: field_shorttext_title
 entity_type: paragraph
@@ -16,4 +18,4 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: string
+field_type: text

@@ -1,10 +1,12 @@
-uuid: 6cf68b11-14da-49cf-8692-10a9ead1337a
+uuid: 3c2be655-f2d5-421d-b3ca-4b531d515540
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_longtext_body
     - paragraphs.paragraphs_type.imprint_longtext
+  module:
+    - text
 id: paragraph.imprint_longtext.field_longtext_body
 field_name: field_longtext_body
 entity_type: paragraph
@@ -16,4 +18,4 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: string_long
+field_type: text_long

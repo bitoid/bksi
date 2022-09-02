@@ -6,24 +6,25 @@ dependencies:
     - field.field.paragraph.imprint_shorttext.field_shorttext_body
     - field.field.paragraph.imprint_shorttext.field_shorttext_title
     - paragraphs.paragraphs_type.imprint_shorttext
+  module:
+    - text
 id: paragraph.imprint_shorttext.default
 targetEntityType: paragraph
 bundle: imprint_shorttext
 mode: default
 content:
   field_shorttext_body:
-    type: basic_string
-    label: hidden
+    type: text_default
+    label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 3
     region: content
   field_shorttext_title:
-    type: string
-    label: hidden
-    settings:
-      link_to_entity: false
+    type: text_default
+    label: above
+    settings: {  }
     third_party_settings: {  }
-    weight: 0
+    weight: 2
     region: content
 hidden: {  }

@@ -1,0 +1,21 @@
+uuid: 650ec68a-0ba6-4298-a089-4d857f8dda7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_block_type
+    - field.storage.block_content.field_title
+  module:
+    - text
+id: block_content.contact_block_type.field_title
+field_name: field_title
+entity_type: block_content
+bundle: contact_block_type
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

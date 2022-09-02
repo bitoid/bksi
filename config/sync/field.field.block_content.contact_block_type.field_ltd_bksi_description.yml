@@ -1,17 +1,17 @@
-uuid: bf4299eb-04f8-40f0-9f0c-59225ca4ad5c
+uuid: b5ba3b9d-53ad-4940-8123-cc27fcd307fa
 langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.imprint_custom_block
-    - field.storage.block_content.field_ltd_bksi
+    - block_content.type.contact_block_type
+    - field.storage.block_content.field_ltd_bksi_description
     - paragraphs.paragraphs_type.imprint_longtext
   module:
     - entity_reference_revisions
-id: block_content.imprint_custom_block.field_ltd_bksi
-field_name: field_ltd_bksi
+id: block_content.contact_block_type.field_ltd_bksi_description
+field_name: field_ltd_bksi_description
 entity_type: block_content
-bundle: imprint_custom_block
+bundle: contact_block_type
 label: 'LTD BKSI'
 description: ''
 required: false
@@ -26,28 +26,28 @@ settings:
     negate: 0
     target_bundles_drag_drop:
       company_detail:
-        weight: 8
+        weight: 15
         enabled: false
       customers:
         weight: 16
         enabled: false
       footer_bottom_nav_link:
-        weight: 9
+        weight: 17
         enabled: false
       footer_social_menu_item:
-        weight: 10
+        weight: 18
         enabled: false
       impressions:
         weight: 19
         enabled: false
       imprint_longtext:
-        weight: 11
+        weight: 20
         enabled: true
       imprint_shorttext:
-        weight: 12
+        weight: 21
         enabled: false
       imprint_web_links:
-        weight: 13
+        weight: 22
         enabled: false
       job_paragraph:
         weight: 23
@@ -62,7 +62,7 @@ settings:
         weight: 26
         enabled: false
       service:
-        weight: 14
+        weight: 27
         enabled: false
       team_gallery:
         weight: 28

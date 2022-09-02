@@ -4,6 +4,8 @@ _meta:
   uuid: 3354eeed-457d-42a3-aa57-2da4ec427534
   bundle: page
   default_langcode: en
+  depends:
+    57c434a8-8ddc-41d2-859e-d6bb984cd94c: block_content
 default:
   revision_uid:
     -
@@ -26,7 +28,33 @@ default:
   sticky:
     -
       value: false
+  revision_translation_affected:
+    -
+      value: true
   path:
     -
       alias: ''
       langcode: en
+  layout_builder__layout:
+    -
+      section:
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          638f53a0-e71f-4231-aa2e-30da69ffbcca:
+            uuid: 638f53a0-e71f-4231-aa2e-30da69ffbcca
+            region: content
+            configuration:
+              id: 'inline_block:contact_block_type'
+              label: 'contact page block'
+              label_display: visible
+              provider: layout_builder
+              view_mode: full
+              block_revision_id: '39'
+              block_serialized: null
+              context_mapping: {  }
+            weight: 0
+            additional:
+              target_uuid: 57c434a8-8ddc-41d2-859e-d6bb984cd94c
+        third_party_settings: {  }

@@ -1,0 +1,28 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 2c40fe7b-3f3b-476f-9937-e1d077ab2a09
+  bundle: motto
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: Motto
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  field_motto:
+    -
+      value: 'wenn es nicht mein Problem ist, mache ich es zu meinem Problem. Denn wir kümmern uns. Unsere Kernleistung ist die Beratung und das Lösen von Problemen.'
+  field_motto_link:
+    -
+      uri: 'https://www.google.com/'
+      title: 'Frank Schäfer | Geschäftsführer BKSI'
+      options:
+        attributes: {  }

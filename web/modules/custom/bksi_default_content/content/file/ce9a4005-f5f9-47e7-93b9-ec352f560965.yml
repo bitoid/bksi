@@ -1,7 +1,7 @@
 _meta:
   version: '1.0'
   entity_type: file
-  uuid: 7973298d-68a8-49df-b629-3af7caf17553
+  uuid: ce9a4005-f5f9-47e7-93b9-ec352f560965
   default_langcode: en
 default:
   uid:
@@ -9,19 +9,19 @@ default:
       target_id: 1
   filename:
     -
-      value: team-3_0.jpg
+      value: house-2-career-page.jpg
   uri:
     -
-      value: 'public://2022-08/team-3_0_0_1.jpg'
+      value: 'public://2022-09/house-2-career-page.jpg'
   filemime:
     -
       value: image/jpeg
   filesize:
     -
-      value: 1556358
+      value: 112561
   status:
     -
       value: true
   created:
     -
-      value: 1661884895
+      value: 1662104274

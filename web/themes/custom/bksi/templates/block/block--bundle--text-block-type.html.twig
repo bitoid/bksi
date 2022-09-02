@@ -36,7 +36,7 @@
     <article class="text-[15px] leading-[22px] tracking-wide mt-14 flex flex-col gap-5">
       {% for description in content.field_text_block_description %}
        {% if description['#text'] %}
-          <p>{{ description }}</p>
+          {{ description }}
         {% endif %}
       {% endfor %}
     </article>

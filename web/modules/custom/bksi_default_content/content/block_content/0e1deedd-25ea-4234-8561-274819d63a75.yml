@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 0e1deedd-25ea-4234-8561-274819d63a75
+  bundle: hero_block_type
+  default_langcode: en
+  depends:
+    285c47c7-b0ea-49b2-9022-79c60feee622: file
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Career Hero block'
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  field_image:
+    -
+      entity: 285c47c7-b0ea-49b2-9022-79c60feee622
+      alt: team-3-career-page
+      title: ''
+      width: 2000
+      height: 1333
+  field_slogan:
+    -
+      value: Karriere
+      format: basic_html
+  field_title:
+    -
+      value: "<p>Wir sind BKSI. Wir rechnen mit dir.</p>\r\n"
+      format: basic_html

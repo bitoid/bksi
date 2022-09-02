@@ -124,12 +124,25 @@ async function displayData() {
                     
                     <div class="flex items-start gap-4 text-[15px] tracking-[0.75px] leading-[22px] md:gap-10">
                         <div class="flex flex-col gap-5">
-                            <span>${projectsData['building type']}</span>
-                            <span> ${projectsData['client']}</span>
+                            <div flex flex-col gap-3> 
+                                <p>Gebäudeart</p>
+                                <p>${projectsData['building type']}</p>
+                            </div>
+                            <div flex flex-col gap-3> 
+                                <p>Auftraggeber</p>
+                                <p> ${projectsData['client']}</p>
+                            </div>
                         </div>
                         <div class="flex flex-col gap-5">
-                            <span>${projectsData['building type']}</span>
-                            <span> ${projectsData['client']}</span>
+                            <div flex flex-col gap-3> 
+                                <p>Leistung</p>
+                                <p>${projectsData['building type']}</p>
+                            </div>
+                            <div flex flex-col gap-3> 
+                                <p>Zeitraum</p>
+                                <p> ${projectsData['period']}</p>
+                            </div>
+
                         </div>
                     </div>
                     <a href="/node/${projectsData['nid']}" class="absolute right-5 bottom-5 w-10 h-10 rounded-full bg-white hidden md:flex items-center justify-center"><img src="modules/custom/projects/images/arrow-textlinks.svg" alt=""/></a>

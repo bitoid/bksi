@@ -10,7 +10,7 @@ let projectsArr = [];
 let filteredProjects = [];
 let templateHtml = '';
 
-//adding event listener to all  clickable dropdown menus which shows up dropdown menus 
+//adding event listener to all  clickable dropdown menus which shows up dropdown menus
 //also adding events on all of dropdown menu items
 serviceEl.addEventListener('click', () => {
     serviceDropdown.classList.toggle('hidden');
@@ -60,7 +60,7 @@ async function fetchData() {
     let json = temp.data;
     return json;
 }
-// displaing projects data on document if dropdown menu items are'nt clicked , on the ather way 
+// displaing projects data on document if dropdown menu items are'nt clicked , on the ather way
 // projects are being filtered according to above logic
 async function displayData() {
     filteredProjects = [];
@@ -121,24 +121,24 @@ async function displayData() {
                </a>
                <div class="opacity-100 flex flex-col gap-4 md:absolute md:translate-y-full md:w-full md:h-full md:bg-darkBlue md:opacity-0 md:top-0 md:text-white md:p-10 md:pt-[125px] md:pl-8 md:gap-8 md:group-hover:translate-y-0 md:group-hover:opacity-100">
                     <h4 class="text-2xl md:hidden">${projectsData['title']}</h4>
-                    
+
                     <div class="flex items-start gap-4 text-[15px] tracking-[0.75px] leading-[22px] md:gap-10">
                         <div class="flex flex-col gap-5">
-                            <div flex flex-col gap-3> 
+                            <div flex flex-col gap-3>
                                 <p>Gebäudeart</p>
                                 <p>${projectsData['building type']}</p>
                             </div>
-                            <div flex flex-col gap-3> 
+                            <div flex flex-col gap-3>
                                 <p>Auftraggeber</p>
                                 <p> ${projectsData['client']}</p>
                             </div>
                         </div>
                         <div class="flex flex-col gap-5">
-                            <div flex flex-col gap-3> 
+                            <div flex flex-col gap-3>
                                 <p>Leistung</p>
-                                <p>${projectsData['building type']}</p>
+                                <p>${projectsData['service']}</p>
                             </div>
-                            <div flex flex-col gap-3> 
+                            <div flex flex-col gap-3>
                                 <p>Zeitraum</p>
                                 <p> ${projectsData['period']}</p>
                             </div>
@@ -146,7 +146,7 @@ async function displayData() {
                         </div>
                     </div>
                     <a href="/node/${projectsData['nid']}" class="absolute right-5 bottom-5 w-10 h-10 rounded-full bg-white hidden md:flex items-center justify-center"><img src="modules/custom/projects/images/arrow-textlinks.svg" alt=""/></a>
-               </div>     
+               </div>
             </div>
              `;
         projectsArr.push(templateHtml);
@@ -162,6 +162,10 @@ async function displayData() {
             output.innerHTML += projectsArr[i];
         }
     }
+
+    document.querySelectorAll('.fade-in-image-container').forEach(fadeInIMageContainer => observer.observe(fadeInIMageContainer), { threshold: [0.2] });
+    document.querySelectorAll('.text-fade').forEach(textFade => observer.observe(textFade), { threshold: [0.2] });
+
 }
 
 displayData();

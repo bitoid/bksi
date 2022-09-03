@@ -1,0 +1,21 @@
+uuid: d1cad35f-ecb6-4a21-9f41-859eeb6eb84c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.slide
+    - field.storage.block_content.field_title_for_slide
+  module:
+    - text
+id: block_content.slide.field_title_for_slide
+field_name: field_title_for_slide
+entity_type: block_content
+bundle: slide
+label: title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

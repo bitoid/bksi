@@ -1,0 +1,20 @@
+uuid: 8c817521-bfd0-4766-8a8e-c47e9f311188
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - text
+id: block_content.field_slogan_for_slide
+field_name: field_slogan_for_slide
+entity_type: block_content
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

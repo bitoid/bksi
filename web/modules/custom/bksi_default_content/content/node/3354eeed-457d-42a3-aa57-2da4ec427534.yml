@@ -48,7 +48,7 @@ default:
             configuration:
               id: 'inline_block:contact_block_type'
               label: 'contact page block'
-              label_display: visible
+              label_display: 0
               provider: layout_builder
               view_mode: full
               block_revision_id: '39'

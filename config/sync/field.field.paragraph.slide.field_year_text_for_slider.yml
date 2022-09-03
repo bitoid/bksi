@@ -1,0 +1,21 @@
+uuid: 0b137f8d-3bcc-4865-9919-c6e4573d1b58
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_year_text_for_slider
+    - paragraphs.paragraphs_type.slide
+  module:
+    - text
+id: paragraph.slide.field_year_text_for_slider
+field_name: field_year_text_for_slider
+entity_type: paragraph
+bundle: slide
+label: 'year text for slider'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

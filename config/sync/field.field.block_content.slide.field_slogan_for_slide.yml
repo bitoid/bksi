@@ -1,0 +1,21 @@
+uuid: e8ad3777-ceb2-4d8b-b0d8-45a3446c130f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.slide
+    - field.storage.block_content.field_slogan_for_slide
+  module:
+    - text
+id: block_content.slide.field_slogan_for_slide
+field_name: field_slogan_for_slide
+entity_type: block_content
+bundle: slide
+label: Slogan
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

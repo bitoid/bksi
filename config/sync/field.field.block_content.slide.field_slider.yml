@@ -1,0 +1,73 @@
+uuid: 172b3cdf-e577-4613-8a48-f543695fc2ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.slide
+    - field.storage.block_content.field_slider
+    - paragraphs.paragraphs_type.slide
+  module:
+    - entity_reference_revisions
+id: block_content.slide.field_slider
+field_name: field_slider
+entity_type: block_content
+bundle: slide
+label: slider
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      slide: slide
+    negate: 0
+    target_bundles_drag_drop:
+      company_detail:
+        weight: 16
+        enabled: false
+      customers:
+        weight: 17
+        enabled: false
+      footer_bottom_nav_link:
+        weight: 18
+        enabled: false
+      footer_social_menu_item:
+        weight: 19
+        enabled: false
+      impressions:
+        weight: 20
+        enabled: false
+      imprint_longtext:
+        weight: 21
+        enabled: false
+      imprint_shorttext:
+        weight: 22
+        enabled: false
+      imprint_web_links:
+        weight: 23
+        enabled: false
+      job_paragraph:
+        weight: 24
+        enabled: false
+      offer:
+        weight: 25
+        enabled: false
+      paragraph:
+        weight: 26
+        enabled: false
+      paragraph_faq:
+        weight: 28
+        enabled: false
+      service:
+        weight: 29
+        enabled: false
+      slide:
+        weight: 27
+        enabled: true
+      team_gallery:
+        weight: 30
+        enabled: false
+field_type: entity_reference_revisions

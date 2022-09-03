@@ -1,0 +1,8 @@
+uuid: 71c4606b-c329-428c-b758-3a71010ecdc5
+langcode: en
+status: true
+dependencies: {  }
+id: slide
+label: Slide
+revision: 0
+description: ''

@@ -1,0 +1,34 @@
+uuid: ef615913-3999-4d3e-b69e-003df8a59c63
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slide.field_year
+    - field.field.paragraph.slide.field_year_text_for_slider
+    - paragraphs.paragraphs_type.slide
+  module:
+    - text
+id: paragraph.slide.default
+targetEntityType: paragraph
+bundle: slide
+mode: default
+content:
+  field_year:
+    type: text_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_year_text_for_slider:
+    type: text_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

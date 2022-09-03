@@ -1,0 +1,20 @@
+uuid: 86efd1a5-8fda-4759-8a7b-5906f370eabc
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_year_text_for_slider
+field_name: field_year_text_for_slider
+entity_type: paragraph
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

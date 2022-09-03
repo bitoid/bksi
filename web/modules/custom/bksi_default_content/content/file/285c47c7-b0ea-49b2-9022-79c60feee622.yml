@@ -12,7 +12,7 @@ default:
       value: team-3-career-page.jpg
   uri:
     -
-      value: 'public://2022-09/team-3-career-page.jpg'
+      value: 'public://2022-09/team-3-career-page_0.jpg'
   filemime:
     -
       value: image/jpeg

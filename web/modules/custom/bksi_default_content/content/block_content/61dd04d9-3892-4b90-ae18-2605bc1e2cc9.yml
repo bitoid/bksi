@@ -1,0 +1,289 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 61dd04d9-3892-4b90-ae18-2605bc1e2cc9
+  bundle: slide
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'slider block for carriere page'
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  field_slider:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 815f8187-524f-4d3a-a231-d5ec8ae0ff95
+          bundle: slide
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1662225996
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_year:
+            -
+              value: '70435'
+              format: basic_html
+          field_year_text_for_slider:
+            -
+              value: '… lautet unsere Postleitzahl für Stuttgart-Zuffenhausen.'
+              format: basic_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 8fe76198-d2ce-45e5-a3e1-91c1670be7a2
+          bundle: slide
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1662226014
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_year:
+            -
+              value: '70436'
+              format: basic_html
+          field_year_text_for_slider:
+            -
+              value: '… lautet unsere Postleitzahl für Stuttgart-Zuffenhausen.'
+              format: basic_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 926fb48f-6293-4ae1-bb7b-138a9f82a2d7
+          bundle: slide
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1662226024
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_year:
+            -
+              value: '70437'
+              format: basic_html
+          field_year_text_for_slider:
+            -
+              value: '… lautet unsere Postleitzahl für Stuttgart-Zuffenhausen.'
+              format: basic_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: cfb9fd54-c67d-4c36-acff-f2c43d9a8278
+          bundle: slide
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1662226030
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_year:
+            -
+              value: '70438'
+              format: basic_html
+          field_year_text_for_slider:
+            -
+              value: '… lautet unsere Postleitzahl für Stuttgart-Zuffenhausen.'
+              format: basic_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 6d9cd9eb-770c-412c-b02c-5447e7eaee77
+          bundle: slide
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1662226036
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_year:
+            -
+              value: '70439'
+              format: basic_html
+          field_year_text_for_slider:
+            -
+              value: '… lautet unsere Postleitzahl für Stuttgart-Zuffenhausen.'
+              format: basic_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 5845f504-0b9a-4196-b4de-50984f18b07f
+          bundle: slide
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1662226045
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_year:
+            -
+              value: '70440'
+              format: basic_html
+          field_year_text_for_slider:
+            -
+              value: '… lautet unsere Postleitzahl für Stuttgart-Zuffenhausen.'
+              format: basic_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 62d0a909-8d2d-453f-97d4-480fa0503009
+          bundle: slide
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1662226055
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_year:
+            -
+              value: '70441'
+              format: basic_html
+          field_year_text_for_slider:
+            -
+              value: '… lautet unsere Postleitzahl für Stuttgart-Zuffenhausen.'
+              format: basic_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: c0f6080c-7f5b-47b2-8614-e1c93f3182c0
+          bundle: slide
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1662226060
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_year:
+            -
+              value: '70442'
+              format: basic_html
+          field_year_text_for_slider:
+            -
+              value: '… lautet unsere Postleitzahl für Stuttgart-Zuffenhausen.'
+              format: basic_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 45746001-2b8a-4665-a888-2a31ecd54d3a
+          bundle: slide
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1662226088
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_year:
+            -
+              value: '70443'
+              format: basic_html
+          field_year_text_for_slider:
+            -
+              value: '… lautet unsere Postleitzahl für Stuttgart-Zuffenhausen.'
+              format: basic_html
+  field_slogan_for_slide:
+    -
+      value: 'BKSI in Zahlen'
+      format: basic_html
+  field_title_for_slide:
+    -
+      value: 'Unser Tagwerk: Tragwerk'
+      format: basic_html

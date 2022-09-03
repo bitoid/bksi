@@ -6,10 +6,11 @@ _meta:
   default_langcode: en
   depends:
     feb4c137-d27a-48da-a9a3-5e7590c1387a: block_content
-    0e1deedd-25ea-4234-8561-274819d63a75: block_content
     f9ae77dd-65a0-4e25-9162-55bead2df1c3: block_content
     5d4bf7e4-ecf5-4c22-b7ee-217362d3a8d5: block_content
     4eb7f267-1fb1-42ac-b16b-a834e158854f: block_content
+    61dd04d9-3892-4b90-ae18-2605bc1e2cc9: block_content
+    0e1deedd-25ea-4234-8561-274819d63a75: block_content
 default:
   revision_uid:
     -
@@ -69,27 +70,12 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '18'
+              block_revision_id: '14'
               block_serialized: null
               context_mapping: {  }
             weight: '5'
             additional:
               target_uuid: feb4c137-d27a-48da-a9a3-5e7590c1387a
-          dd03d37a-73d0-4bcc-911b-362c0b9bd247:
-            uuid: dd03d37a-73d0-4bcc-911b-362c0b9bd247
-            region: content
-            configuration:
-              id: 'inline_block:hero_block_type'
-              label: 'Career Hero block'
-              label_display: 0
-              provider: layout_builder
-              view_mode: full
-              block_revision_id: '32'
-              block_serialized: null
-              context_mapping: {  }
-            weight: '0'
-            additional:
-              target_uuid: 0e1deedd-25ea-4234-8561-274819d63a75
           e0f49235-3a61-4d23-86cb-6253e1dfbe26:
             uuid: e0f49235-3a61-4d23-86cb-6253e1dfbe26
             region: content
@@ -99,7 +85,7 @@ default:
               label_display: visible
               provider: layout_builder
               view_mode: full
-              block_revision_id: '4'
+              block_revision_id: '32'
               block_serialized: null
               context_mapping: {  }
             weight: '3'
@@ -114,10 +100,10 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '33'
+              block_revision_id: '30'
               block_serialized: null
               context_mapping: {  }
-            weight: '2'
+            weight: '1'
             additional:
               target_uuid: 5d4bf7e4-ecf5-4c22-b7ee-217362d3a8d5
           4e7b139a-1e5e-418b-b609-f5abda3b5157:
@@ -129,7 +115,7 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '34'
+              block_revision_id: '28'
               block_serialized: null
               context_mapping: {  }
             weight: '6'
@@ -149,4 +135,34 @@ default:
               context_mapping: {  }
             weight: '8'
             additional: {  }
+          ccca1206-e737-4617-8a7d-3cb746640795:
+            uuid: ccca1206-e737-4617-8a7d-3cb746640795
+            region: content
+            configuration:
+              id: 'inline_block:slide'
+              label: 'slider block for carriere page'
+              label_display: 0
+              provider: layout_builder
+              view_mode: full
+              block_revision_id: '35'
+              block_serialized: null
+              context_mapping: {  }
+            weight: '2'
+            additional:
+              target_uuid: 61dd04d9-3892-4b90-ae18-2605bc1e2cc9
+          dd03d37a-73d0-4bcc-911b-362c0b9bd247:
+            uuid: dd03d37a-73d0-4bcc-911b-362c0b9bd247
+            region: content
+            configuration:
+              id: 'inline_block:hero_block_type'
+              label: 'Career Hero block'
+              label_display: 0
+              provider: layout_builder
+              view_mode: full
+              block_revision_id: '29'
+              block_serialized: null
+              context_mapping: {  }
+            weight: '0'
+            additional:
+              target_uuid: 0e1deedd-25ea-4234-8561-274819d63a75
         third_party_settings: {  }

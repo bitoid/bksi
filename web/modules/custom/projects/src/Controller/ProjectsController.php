@@ -68,7 +68,6 @@ class ProjectsController extends ControllerBase {
         "service" => $result->field_project_service->value,
         "client" => $result->field_project_client->value,
         "period" => "$period[0]-$period[1]",
-        "sector" => $result->field_project_sector->value,
       ];
     }
 

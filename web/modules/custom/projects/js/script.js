@@ -6,41 +6,51 @@ let buildingEl = document.getElementById('building');
 let buildingDropdown = document.getElementById('building-dropdown');
 let sectorEl = document.getElementById('sector');
 let sectorDropdown = document.getElementById('sector-dropdown');
-let sectorDrop = document.querySelector(".sector-drop");
-let buildingDrop = document.querySelector(".building-drop");
-let serviceDrop = document.querySelector(".service-drop");
 let projectsArr = [];
 let filteredProjects = [];
 let templateHtml = '';
 
-//adding events on all of dropdown menu items
+//adding event listener to all  clickable dropdown menus which shows up dropdown menus
+//also adding events on all of dropdown menu items
+serviceEl.addEventListener('click', () => {
+    serviceDropdown.classList.toggle('hidden');
+});
 Array.from(serviceDropdown.childNodes).map(item => item.addEventListener('click', (e) => {
     output.innerHTML = ''
-    serviceEl.childNodes[0].textContent = e.target.textContent;
+    serviceEl.childNodes[1].textContent = e.target.textContent;
+    serviceDropdown.classList.add('hidden');
     displayData();
 }));
 
+buildingEl.addEventListener('click', () => {
+    buildingDropdown.classList.toggle('hidden');
+});
 Array.from(buildingDropdown.childNodes).map(item => item.addEventListener('click', (e) => {
     output.innerHTML = ''
-    buildingEl.childNodes[0].textContent = e.target.textContent;
-    displayData();
-}));
-Array.from(sectorDropdown.childNodes).map(item => item.addEventListener('click', (e) => {
-    output.innerHTML = ''
-    sectorEl.childNodes[0].textContent = e.target.textContent;
+    buildingEl.childNodes[1].textContent = e.target.textContent;
+    buildingDropdown.classList.add('hidden');
     displayData();
 }));
 
+sectorEl.addEventListener('click', () => {
+    sectorDropdown.classList.toggle('hidden');
+});
+Array.from(sectorDropdown.childNodes).map(item => item.addEventListener('click', (e) => {
+    output.innerHTML = ''
+    sectorEl.childNodes[1].textContent = e.target.textContent;
+    sectorDropdown.classList.add('hidden');
+    displayData();
+}));
 //adding event on document,which makes dropdown menus hidden if mouse is clicked outside of specific menus
 document.addEventListener('click', (e) => {
-    if (!sectorDrop.contains(e.target)) {
-        sectorDrop.classList.remove('active')
+    if (!sectorEl.contains(e.target) && !sectorDropdown.contains(e.targer)) {
+        sectorDropdown.classList.add('hidden');
     }
-    if (!serviceDrop.contains(e.target)) {
-        serviceDrop.classList.remove('active')
+    if (!buildingEl.contains(e.target) && !buildingDropdown.contains(e.targer)) {
+        buildingDropdown.classList.add('hidden');
     }
-    if (!buildingDrop.contains(e.target)) {
-        buildingDrop.classList.remove('active')
+    if (!serviceEl.contains(e.target) && !serviceDropdown.contains(e.targer)) {
+        serviceDropdown.classList.add('hidden');
     }
 });
 //fetching data from endpoint
@@ -88,12 +98,6 @@ async function displayData() {
     } else if (serviceEl.innerText.toLowerCase() === 'service' && buildingEl.innerText.toLowerCase() !== 'building type' && sectorEl.innerText.toLowerCase() !== 'sector') {
         for (projects of data) {
             if (projects['building type'].toLowerCase() === buildingEl.innerText.toLowerCase() && projects['sector'].toLowerCase() === sectorEl.innerText.toLowerCase()) {
-                filteredProjects.push(projects);
-            }
-        }
-    } else if (serviceEl.innerText.toLowerCase() !== 'service' && buildingEl.innerText.toLowerCase() === 'building type' && sectorEl.innerText.toLowerCase() !== 'sector') {
-        for (projects of data) {
-            if (projects['service'].toLowerCase() === serviceEl.innerText.toLowerCase() && projects['sector'].toLowerCase() === sectorEl.innerText.toLowerCase()) {
                 filteredProjects.push(projects);
             }
         }

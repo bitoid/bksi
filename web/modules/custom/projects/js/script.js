@@ -85,16 +85,11 @@ function displayData(arr) {
              `;
         projectsArr.push(templateHtml);
     }
-    //displays all of projects from endpoint , if there is less then 8 of them
-    //if there are moRe then 8 , we display last 8 of that projects
-    if (projectsArr.length < 8) {
-        for (let i = 0; i < projectsArr.length; i++) {
-            output.innerHTML += projectsArr[i];
-        }
-    } else {
-        for (let i = projectsArr.length - 8; i < projectsArr.length; i++) {
-            output.innerHTML += projectsArr[i];
-        }
+
+    let counter = 8;
+    let i = projectsArr.length < counter ? projectsArr.length: counter;
+    for (let k = projectsArr.length; k > projectsArr.length - i; k--){
+      output.innerHTML += projectsArr[k-1];
     }
 
     document.querySelectorAll('.fade-in-image-container').forEach(fadeInIMageContainer => observer.observe(fadeInIMageContainer), { threshold: [0.2] });

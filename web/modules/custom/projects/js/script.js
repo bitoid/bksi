@@ -9,103 +9,48 @@ let sectorDropdown = document.getElementById('sector-dropdown');
 let sectorDrop = document.querySelector(".sector-drop");
 let buildingDrop = document.querySelector(".building-drop");
 let serviceDrop = document.querySelector(".service-drop");
+const container = document.getElementById("container");
+let templateHtml = '';
+let data = [];
 let projectsArr = [];
 let filteredProjects = [];
-let templateHtml = '';
 
-//adding events on all of dropdown menu items
-Array.from(serviceDropdown.childNodes).map(item => item.addEventListener('click', (e) => {
-    output.innerHTML = ''
-    serviceEl.childNodes[0].textContent = e.target.textContent;
-    displayData();
-}));
 
-Array.from(buildingDropdown.childNodes).map(item => item.addEventListener('click', (e) => {
-    output.innerHTML = ''
-    buildingEl.childNodes[0].textContent = e.target.textContent;
-    displayData();
-}));
-Array.from(sectorDropdown.childNodes).map(item => item.addEventListener('click', (e) => {
-    output.innerHTML = ''
-    sectorEl.childNodes[0].textContent = e.target.textContent;
-    displayData();
-}));
 
-//adding event on document,which makes dropdown menus hidden if mouse is clicked outside of specific menus
-document.addEventListener('click', (e) => {
-    if (!sectorDrop.contains(e.target)) {
-        sectorDrop.classList.remove('active')
-    }
-    if (!serviceDrop.contains(e.target)) {
-        serviceDrop.classList.remove('active')
-    }
-    if (!buildingDrop.contains(e.target)) {
-        buildingDrop.classList.remove('active')
-    }
-});
-//fetching data from endpoint
+
+
 async function fetchData() {
     const response = await fetch('/bksi/projects/data');
     let temp = await response.json();
-    let json = temp.data;
-    return json;
+    return temp.data;
 }
+
+
+function filterWithDropdown (arr) {
+  let filterdArr = [...arr];
+
+  if(serviceEl.innerText.toLowerCase() !== 'service'){
+    filterdArr = filterdArr.filter(e => e["service"].toLowerCase() === serviceEl.innerText.toLowerCase());
+  }
+  if(buildingEl.innerText.toLowerCase() !== 'building type'){
+    filterdArr = filterdArr.filter(e => e["building type"].toLowerCase() === buildingEl.innerText.toLowerCase());
+  }
+  if(sectorEl.innerText.toLowerCase() !== 'sector'){
+    filterdArr = filterdArr.filter(e => e["sector"].toLowerCase() === sectorEl.innerText.toLowerCase());
+  }
+
+  return filterdArr;
+}
+
 // displaing projects data on document if dropdown menu items are'nt clicked , on the ather way
 // projects are being filtered according to above logic
-async function displayData() {
-    filteredProjects = [];
-    projectsArr = [];
+function displayData(arr) {
+    output.innerHTML = "";
     templateHtml = '';
-    let data = await fetchData();
-    if (serviceEl.innerText.toLowerCase() === 'service' && buildingEl.innerText.toLowerCase() === 'building type' && sectorEl.innerText.toLowerCase() === 'sector') {
-        for (projects of data) {
-            filteredProjects.push(projects);
-        }
-    } else if (serviceEl.innerText.toLowerCase() !== 'service' && buildingEl.innerText.toLowerCase() === 'building type' && sectorEl.innerText.toLowerCase() === 'sector') {
-        for (projects of data) {
-            if (projects['service'].toLowerCase() === serviceEl.innerText.toLowerCase()) {
-                filteredProjects.push(projects);
-            }
-        }
-    } else if (serviceEl.innerText.toLowerCase() !== 'service' && buildingEl.innerText.toLowerCase() !== 'building type' && sectorEl.innerText.toLowerCase() === 'sector') {
-        for (projects of data) {
-            if (projects['service'].toLowerCase() === serviceEl.innerText.toLowerCase() && projects['building type'].toLowerCase() === buildingEl.innerText.toLowerCase()) {
-                filteredProjects.push(projects);
-            }
-        }
-    } else if (serviceEl.innerText.toLowerCase() === 'service' && buildingEl.innerText.toLowerCase() !== 'building type' && sectorEl.innerText.toLowerCase() === 'sector') {
-        for (projects of data) {
-            if (projects['building type'].toLowerCase() === buildingEl.innerText.toLowerCase()) {
-                filteredProjects.push(projects);
-            }
-        }
-    } else if (serviceEl.innerText.toLowerCase() === 'service' && buildingEl.innerText.toLowerCase() === 'building type' && sectorEl.innerText.toLowerCase() !== 'sector') {
-        for (projects of data) {
-            if (projects['sector'].toLowerCase() === sectorEl.innerText.toLowerCase()) {
-                filteredProjects.push(projects);
-            }
-        }
-    } else if (serviceEl.innerText.toLowerCase() === 'service' && buildingEl.innerText.toLowerCase() !== 'building type' && sectorEl.innerText.toLowerCase() !== 'sector') {
-        for (projects of data) {
-            if (projects['building type'].toLowerCase() === buildingEl.innerText.toLowerCase() && projects['sector'].toLowerCase() === sectorEl.innerText.toLowerCase()) {
-                filteredProjects.push(projects);
-            }
-        }
-    } else if (serviceEl.innerText.toLowerCase() !== 'service' && buildingEl.innerText.toLowerCase() === 'building type' && sectorEl.innerText.toLowerCase() !== 'sector') {
-        for (projects of data) {
-            if (projects['service'].toLowerCase() === serviceEl.innerText.toLowerCase() && projects['sector'].toLowerCase() === sectorEl.innerText.toLowerCase()) {
-                filteredProjects.push(projects);
-            }
-        }
-    } else if (serviceEl.innerText.toLowerCase() !== 'service' && !buildingEl.innerText.toLowerCase() !== 'building type' && sectorEl.innerText.toLowerCase() !== 'sector') {
-        for (projects of data) {
-            if (projects['service'].toLowerCase() === serviceEl.innerText.toLowerCase() && projects['building type'].toLowerCase() === buildingEl.innerText.toLowerCase() && projects['sector'].toLowerCase() === sectorEl.innerText.toLowerCase()) {
-                filteredProjects.push(projects);
-            }
-        }
-    }
+    projectsArr = [];
+
     //declaring html template for projects
-    for (projectsData of filteredProjects) {
+    for (projectsData of arr) {
         templateHtml = `
         <div class="group md:relative md:overflow-hidden">
                <a href="/node/${projectsData['nid']}" class="relative block w-full h-56 md:h-[400px] mb-5 md:mb-0">
@@ -164,4 +109,46 @@ async function displayData() {
 
 }
 
-displayData();
+function filterWithCompany (arr) {
+  let company = window.localStorage.getItem("client");
+  window.localStorage.removeItem("client");
+
+  if(company){
+    return arr.filter(e => e.client == company);
+  }
+  return arr;
+};
+
+async function setup () {
+  data = await fetchData();
+  filteredProjects = filterWithCompany(data);
+
+  document.addEventListener('click', (e) => {
+    if (!sectorDrop.contains(e.target)) {
+      sectorDrop.classList.remove('active')
+    }
+    if (!serviceDrop.contains(e.target)) {
+      serviceDrop.classList.remove('active')
+    }
+    if (!buildingDrop.contains(e.target)) {
+      buildingDrop.classList.remove('active')
+    }
+  });
+
+  container.addEventListener('click', e => {
+    if(!e.target.closest(".project-dropdown")) return;
+    let type = e.target.closest(".project-dropdown").id.split("-")[0];
+    if(!e.target.closest(`#${type}-dropdown`)) return;
+
+    let value = e.target.innerText.trim();
+
+    document.getElementById(`${type}`).innerText = value;
+
+    filteredProjects = filterWithDropdown(data);
+    displayData(filteredProjects);
+  });
+
+  displayData(filteredProjects);
+}
+
+setup();

@@ -1,6 +1,6 @@
-<div class="flex flex-col items-center gap-4 px-4 mb-10 md:flex-row md:justify-center">
-	<div class="project-dropdown cursor-pointer transition-none relative w-full h-[50px] rounded-3xl bg-lightGray flex justify-between items-center md:max-w-[250px] building-drop">
-		<div class="ml-5" id="building">Building type</div>
+<div id="container" class="flex flex-col items-center gap-4 px-4 mb-10 md:flex-row md:justify-center">
+	<div id="building-container" class="project-dropdown cursor-pointer transition-none relative w-full h-[50px] rounded-3xl bg-lightGray flex justify-between items-center md:max-w-[250px] building-drop">
+		<div class="w-9/12 whitespace-nowrap overflow-hidden text-ellipsis ml-5" id="building">Building type</div>
 		<button><img class="mr-5" src="modules/custom/projects/images/arrow-open-close-content.svg" alt=""></button>
 		<ul class="absolute hidden overflow-hidden top-full rounded-b-3xl w-full z-50" id="building-dropdown">
 			<li class="py-3 px-5 bg-lightGray border-t border-white">
@@ -33,8 +33,8 @@
 
 		</ul>
 	</div>
-	<div class="project-dropdown cursor-pointer transition-none relative w-full h-[50px] rounded-3xl bg-lightGray flex justify-between items-center md:max-w-[250px] service-drop">
-		<div class="ml-5" id="service">Service</div>
+	<div id="service-container" class="project-dropdown cursor-pointer transition-none relative w-full h-[50px] rounded-3xl bg-lightGray flex justify-between items-center md:max-w-[250px] service-drop">
+		<div class="w-9/12 whitespace-nowrap overflow-hidden text-ellipsis ml-5" id="service">Service</div>
 		<button><img class="mr-5" src="modules/custom/projects/images/arrow-open-close-content.svg" alt=""></button>
 		<ul class="absolute hidden overflow-hidden top-full rounded-b-3xl w-full z-50" id="service-dropdown">
 			<li class="py-3 px-5 bg-lightGray border-t border-white">
@@ -57,48 +57,44 @@
 			</li>
 		</ul>
 	</div>
-	<div class="project-dropdown cursor-pointer transition-none relative w-full h-[50px] rounded-3xl bg-lightGray flex justify-between items-center md:max-w-[250px] sector-drop">
-		<div class="w-full flex justify-between">
-			<span class="ml-5" id="sector">Sector
-			</span>
+	<div id="sector-container" class="project-dropdown cursor-pointer transition-none relative w-full h-[50px] rounded-3xl bg-lightGray flex justify-between items-center md:max-w-[250px] sector-drop">
+			<div class="w-9/12 whitespace-nowrap overflow-hidden text-ellipsis ml-5" id="sector">Sector</div>
 			<button><img class="mr-5" src="modules/custom/projects/images/arrow-open-close-content.svg" alt=""></button>
-
-		</div>
-		<ul class="absolute hidden overflow-hidden top-full rounded-b-3xl w-full z-50" id="sector-dropdown">
-			<li class="py-3 px-5 bg-lightGray border-t border-white">
-				<a class="group-hover:text-mainRed font-['buch']" href="#">Sector</a>
-			</li>
-			<li class="group py-3 px-5 bg-lightGray border-t border-white">
-				<a class="group-hover:text-mainRed font-['buch']" href="#">Energy supply</a>
-			</li>
-			<li class="group py-3 px-5 bg-lightGray border-t border-white">
-				<a class="group-hover:text-mainRed font-['buch']" href="#">Transport & Logistics</a>
-			</li>
-			<li class="group py-3 px-5 bg-lightGray border-t border-white">
-				<a class="group-hover:text-mainRed font-['buch']" href="#">automotive industry</a>
-			</li>
-			<li class="group py-3 px-5 bg-lightGray border-t border-white">
-				<a class="group-hover:text-mainRed font-['buch']" href="#">Semiconductor & Information Technology</a>
-			</li>
-			<li class="group py-3 px-5 bg-lightGray border-t border-white">
-				<a class="group-hover:text-mainRed font-['buch']" href="#">Industry & Trade</a>
-			</li>
-			<li class="group py-3 px-5 bg-lightGray border-t border-white">
-				<a class="group-hover:text-mainRed font-['buch']" href="#">Housing</a>
-			</li>
-			<li class="group py-3 px-5 bg-lightGray border-t border-white">
-				<a class="group-hover:text-mainRed font-['buch']" href="#">Healthcare</a>
-			</li>
-			<li class="group py-3 px-5 bg-lightGray border-t border-white">
-				<a class="group-hover:text-mainRed font-['buch']" href="#">Contractors & Property Developers</a>
-			</li>
-			<li class="group py-3 px-5 bg-lightGray border-t border-white">
-				<a class="group-hover:text-mainRed font-['buch']" href="#">General planners & architects</a>
-			</li>
-			<li class="group py-3 px-5 bg-lightGray border-t border-white">
-				<a class="group-hover:text-mainRed font-['buch']" href="#">Public clients</a>
-			</li>
-		</ul>
+      <ul class="absolute hidden overflow-hidden top-full rounded-b-3xl w-full z-50" id="sector-dropdown">
+        <li class="py-3 px-5 bg-lightGray border-t border-white">
+          <a class="group-hover:text-mainRed font-['buch']" href="#">Sector</a>
+        </li>
+        <li class="group py-3 px-5 bg-lightGray border-t border-white">
+          <a class="group-hover:text-mainRed font-['buch']" href="#">Energy supply</a>
+        </li>
+        <li class="group py-3 px-5 bg-lightGray border-t border-white">
+          <a class="group-hover:text-mainRed font-['buch']" href="#">Transport & Logistics</a>
+        </li>
+        <li class="group py-3 px-5 bg-lightGray border-t border-white">
+          <a class="group-hover:text-mainRed font-['buch']" href="#">automotive industry</a>
+        </li>
+        <li class="group py-3 px-5 bg-lightGray border-t border-white">
+          <a class="group-hover:text-mainRed font-['buch']" href="#">Semiconductor & Information Technology</a>
+        </li>
+        <li class="group py-3 px-5 bg-lightGray border-t border-white">
+          <a class="group-hover:text-mainRed font-['buch']" href="#">Industry & Trade</a>
+        </li>
+        <li class="group py-3 px-5 bg-lightGray border-t border-white">
+          <a class="group-hover:text-mainRed font-['buch']" href="#">Housing</a>
+        </li>
+        <li class="group py-3 px-5 bg-lightGray border-t border-white">
+          <a class="group-hover:text-mainRed font-['buch']" href="#">Healthcare</a>
+        </li>
+        <li class="group py-3 px-5 bg-lightGray border-t border-white">
+          <a class="group-hover:text-mainRed font-['buch']" href="#">Contractors & Property Developers</a>
+        </li>
+        <li class="group py-3 px-5 bg-lightGray border-t border-white">
+          <a class="group-hover:text-mainRed font-['buch']" href="#">General planners & architects</a>
+        </li>
+        <li class="group py-3 px-5 bg-lightGray border-t border-white">
+          <a class="group-hover:text-mainRed font-['buch']" href="#">Public clients</a>
+        </li>
+      </ul>
 	</div>
 </div>
 <div class="output grid grid-cols-1 gap-[75px] px-4 mb-[100px] md:grid-cols-2 md:gap-10"></div>

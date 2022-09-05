@@ -67,7 +67,9 @@ class ProjectsController extends ControllerBase {
         "building type" => $result->field_project_type->value,
         "service" => $result->field_project_service->value,
         "client" => $result->field_project_client->value,
+        "sector" => $result->field_project_sector->value,
         "period" => "$period[0]-$period[1]",
+        
       ];
     }
 

@@ -15,16 +15,11 @@ let data = [];
 let projectsArr = [];
 let filteredProjects = [];
 
-
-
-
-
 async function fetchData() {
     const response = await fetch('/bksi/projects/data');
     let temp = await response.json();
     return temp.data;
 }
-
 
 function filterWithDropdown (arr) {
   let filterdArr = [...arr];
@@ -42,8 +37,6 @@ function filterWithDropdown (arr) {
   return filterdArr;
 }
 
-// displaing projects data on document if dropdown menu items are'nt clicked , on the ather way
-// projects are being filtered according to above logic
 function displayData(arr) {
     output.innerHTML = "";
     templateHtml = '';
@@ -141,7 +134,6 @@ async function setup () {
     if(!e.target.closest(`#${type}-dropdown`)) return;
 
     let value = e.target.innerText.trim();
-
     document.getElementById(`${type}`).innerText = value;
 
     filteredProjects = filterWithDropdown(data);
@@ -150,5 +142,4 @@ async function setup () {
 
   displayData(filteredProjects);
 }
-
 setup();

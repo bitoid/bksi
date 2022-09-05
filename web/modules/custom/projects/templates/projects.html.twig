@@ -1,115 +1,102 @@
 <div class="flex flex-col items-center gap-4 px-4 mb-10 md:flex-row md:justify-center">
-	<div class="cursor-pointer transition-none relative w-full h-[50px] rounded-3xl bg-lightGray flex items-center md:max-w-[250px]">
-		<div class = "project-dropdown flex justify-between items-center w-full" id ="building">
-			<span class="ml-5" >Building type</span>
-			<div>
-				<img src="modules/custom/projects/images/arrow-open-close-content.svg" class="mr-5">
-			</div>
-		</div>
-		<ul class="list-items absolute hidden overflow-hidden top-full rounded-b-3xl w-full z-50" id="building-dropdown">
-		<li class="py-3 px-5 bg-lightGray border-t border-white">
-				Building type
-			</li>
+	<div class="project-dropdown cursor-pointer transition-none relative w-full h-[50px] rounded-3xl bg-lightGray flex justify-between items-center md:max-w-[250px] building-drop">
+		<div class="ml-5" id="building">Building type</div>
+		<button><img class="mr-5" src="modules/custom/projects/images/arrow-open-close-content.svg" alt=""></button>
+		<ul class="absolute hidden overflow-hidden top-full rounded-b-3xl w-full z-50" id="building-dropdown">
 			<li class="py-3 px-5 bg-lightGray border-t border-white">
-				Industrial building
+				<a class="group-hover:text-mainRed font-['buch']" href="#">Building type</a>
 			</li>
-			<li class="py-3 px-5 bg-lightGray border-t border-white">
-				Office & administration building
+			<li class="group py-3 px-5 bg-lightGray border-t border-white">
+				<a class="group-hover:text-mainRed font-['buch']" href="#">Industrial building</a>
 			</li>
-			<li class="py-3 px-5 bg-lightGray border-t border-white">
-				Trade & Commerce
+			<li class="group py-3 px-5 bg-lightGray border-t border-white">
+				<a class="group-hover:text-mainRed font-['buch']" href="#">Residential construction</a>
 			</li>
-			<li class="py-3 px-5 bg-lightGray border-t border-white">
-				Residential construction
+			<li class="group py-3 px-5 bg-lightGray border-t border-white">
+				<a class="group-hover:text-mainRed font-['buch']" href="#">Hospitals & nursing homes</a>
 			</li>
-			<li class="py-3 px-5 bg-lightGray border-t border-white">
-				Hospitals & nursing homes
+			<li class="group py-3 px-5 bg-lightGray border-t border-white">
+				<a class="group-hover:text-mainRed font-['buch']" href="#">Research & Teaching</a>
 			</li>
-			<li class="py-3 px-5 bg-lightGray border-t border-white">
-				Research & Teaching
+			<li class="group py-3 px-5 bg-lightGray border-t border-white">
+				<a class="group-hover:text-mainRed font-['buch']" href="#">Schools & day care centers</a>
 			</li>
-			<li class="py-3 px-5 bg-lightGray border-t border-white">
-				Schools & day care centers
+			<li class="group py-3 px-5 bg-lightGray border-t border-white">
+				<a class="group-hover:text-mainRed font-['buch']" href="#">Special constructions</a>
 			</li>
-			<li class="py-3 px-5 bg-lightGray border-t border-white">
-				Special constructions
+			<li class="group py-3 px-5 bg-lightGray border-t border-white">
+				<a class="group-hover:text-mainRed font-['buch']" href="#">Civil Engineering & Structural Engineering</a>
 			</li>
-			<li class="py-3 px-5 bg-lightGray border-t border-white">
-				Civil Engineering & Structural Engineering
+			<li class="group py-3 px-5 bg-lightGray border-t border-white">
+				<a class="group-hover:text-mainRed font-['buch']" href="#">Building in stock & renovations</a>
 			</li>
+
+		</ul>
+	</div>
+	<div class="project-dropdown cursor-pointer transition-none relative w-full h-[50px] rounded-3xl bg-lightGray flex justify-between items-center md:max-w-[250px] service-drop">
+		<div class="ml-5" id="service">Service</div>
+		<button><img class="mr-5" src="modules/custom/projects/images/arrow-open-close-content.svg" alt=""></button>
+		<ul class="absolute hidden overflow-hidden top-full rounded-b-3xl w-full z-50" id="service-dropdown">
 			<li class="py-3 px-5 bg-lightGray border-t border-white">
-				Building in stock & renovations
+				<a class="group-hover:text-mainRed font-['buch']" href="#">Service</a>
+			</li>
+			<li class="group py-3 px-5 bg-lightGray border-t border-white">
+				<a class="group-hover:text-mainRed font-['buch']" href="#">Structural engineering</a>
+			</li>
+			<li class="group py-3 px-5 bg-lightGray border-t border-white">
+				<a class="group-hover:text-mainRed font-['buch']" href="#">General</a>
+			</li>
+			<li class="group py-3 px-5 bg-lightGray border-t border-white">
+				<a class="group-hover:text-mainRed font-['buch']" href="#">Digital planning / BIM</a>
+			</li>
+			<li class="group py-3 px-5 bg-lightGray border-t border-white">
+				<a class="group-hover:text-mainRed font-['buch']" href="#">Building</a>
+			</li>
+			<li class="group py-3 px-5 bg-lightGray border-t border-white">
+				<a class="group-hover:text-mainRed font-['buch']" href="#">Opinion</a>
 			</li>
 		</ul>
 	</div>
-	<div class="cursor-pointer transition-none relative w-full h-[50px] rounded-3xl bg-lightGray flex items-center md:max-w-[250px]">
-		<div class="project-dropdown flex justify-between items-center w-full" id="service">
-			<span class="ml-5" >Service</span>
-			<div>
-				<img src="modules/custom/projects/images/arrow-open-close-content.svg" class="mr-5">
-			</div>
+	<div class="project-dropdown cursor-pointer transition-none relative w-full h-[50px] rounded-3xl bg-lightGray flex justify-between items-center md:max-w-[250px] sector-drop">
+		<div class="w-full flex justify-between">
+			<span class="ml-5" id="sector">Sector
+			</span>
+			<button><img class="mr-5" src="modules/custom/projects/images/arrow-open-close-content.svg" alt=""></button>
+
 		</div>
-		<ul class="list-items absolute hidden overflow-hidden top-full rounded-b-3xl w-full z-50" id="service-dropdown">
-		<li class="py-3 px-5 bg-lightGray border-t border-white">
-				Service
-			</li>
+		<ul class="absolute hidden overflow-hidden top-full rounded-b-3xl w-full z-50" id="sector-dropdown">
 			<li class="py-3 px-5 bg-lightGray border-t border-white">
-				Structural engineering
+				<a class="group-hover:text-mainRed font-['buch']" href="#">Sector</a>
 			</li>
-			<li class="py-3 px-5 bg-lightGray border-t border-white">
-				General
+			<li class="group py-3 px-5 bg-lightGray border-t border-white">
+				<a class="group-hover:text-mainRed font-['buch']" href="#">Energy supply</a>
 			</li>
-			<li class="py-3 px-5 bg-lightGray border-t border-white">
-				Digital planning / BIM
+			<li class="group py-3 px-5 bg-lightGray border-t border-white">
+				<a class="group-hover:text-mainRed font-['buch']" href="#">Transport & Logistics</a>
 			</li>
-			<li class="py-3 px-5 bg-lightGray border-t border-white">
-				Building
+			<li class="group py-3 px-5 bg-lightGray border-t border-white">
+				<a class="group-hover:text-mainRed font-['buch']" href="#">automotive industry</a>
 			</li>
-			<li class="py-3 px-5 bg-lightGray border-t border-white">
-				Opinion
+			<li class="group py-3 px-5 bg-lightGray border-t border-white">
+				<a class="group-hover:text-mainRed font-['buch']" href="#">Semiconductor & Information Technology</a>
 			</li>
-		</ul>
-	</div>
-	<div class="cursor-pointer transition-none relative w-full h-[50px] rounded-3xl bg-lightGray flex items-center md:max-w-[250px]">
-		<div class="project-dropdown flex justify-between items-center w-full" id="sector">
-			<span class="ml-5">Sector</span>
-			<div>
-				<img src="modules/custom/projects/images/arrow-open-close-content.svg" class="mr-5">
-			</div>
-		</div>
-		<ul class="list-items absolute hidden overflow-hidden top-full rounded-b-3xl w-full z-50" id="sector-dropdown">
-		<li class="py-3 px-5 bg-lightGray border-t border-white">
-				Sector
+			<li class="group py-3 px-5 bg-lightGray border-t border-white">
+				<a class="group-hover:text-mainRed font-['buch']" href="#">Industry & Trade</a>
 			</li>
-			<li class="py-3 px-5 bg-lightGray border-t border-white">
-				Energy supply
+			<li class="group py-3 px-5 bg-lightGray border-t border-white">
+				<a class="group-hover:text-mainRed font-['buch']" href="#">Housing</a>
 			</li>
-			<li class="py-3 px-5 bg-lightGray border-t border-white">
-				Transport & Logistics
+			<li class="group py-3 px-5 bg-lightGray border-t border-white">
+				<a class="group-hover:text-mainRed font-['buch']" href="#">Healthcare</a>
 			</li>
-			<li class="py-3 px-5 bg-lightGray border-t border-white">
-				automotive industry
+			<li class="group py-3 px-5 bg-lightGray border-t border-white">
+				<a class="group-hover:text-mainRed font-['buch']" href="#">Contractors & Property Developers</a>
 			</li>
-			<li class="py-3 px-5 bg-lightGray border-t border-white">
-				Semiconductor & Information Technology
+			<li class="group py-3 px-5 bg-lightGray border-t border-white">
+				<a class="group-hover:text-mainRed font-['buch']" href="#">General planners & architects</a>
 			</li>
-			<li class="py-3 px-5 bg-lightGray border-t border-white">
-				Industry & Trade
-			</li>
-			<li class="py-3 px-5 bg-lightGray border-t border-white">
-				Housing
-			</li>
-			<li class="py-3 px-5 bg-lightGray border-t border-white">
-				Healthcare
-			</li>
-			<li class="py-3 px-5 bg-lightGray border-t border-white">
-				Contractors & Property Developers
-			</li>
-			<li class="py-3 px-5 bg-lightGray border-t border-white">
-				General planners & architects
-			</li>
-			<li class="py-3 px-5 bg-lightGray border-t border-white">
-				Public clients
+			<li class="group py-3 px-5 bg-lightGray border-t border-white">
+				<a class="group-hover:text-mainRed font-['buch']" href="#">Public clients</a>
 			</li>
 		</ul>
 	</div>

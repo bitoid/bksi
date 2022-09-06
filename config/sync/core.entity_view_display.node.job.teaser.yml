@@ -8,6 +8,13 @@ dependencies:
     - field.field.node.job.field_job_description
     - field.field.node.job.field_job_experience
     - field.field.node.job.field_job_title
+    - field.field.node.job.field_what_awaits_you
+    - field.field.node.job.field_what_awaits_you_descriptio
+    - field.field.node.job.field_what_bksi_offer
+    - field.field.node.job.field_what_bksi_offer_descriptio
+    - field.field.node.job.field_what_we_expect
+    - field.field.node.job.field_what_we_expect_description
+    - field.field.node.job.layout_builder__layout
     - node.type.job
   module:
     - user
@@ -26,3 +33,10 @@ hidden:
   field_job_description: true
   field_job_experience: true
   field_job_title: true
+  field_what_awaits_you: true
+  field_what_awaits_you_descriptio: true
+  field_what_bksi_offer: true
+  field_what_bksi_offer_descriptio: true
+  field_what_we_expect: true
+  field_what_we_expect_description: true
+  layout_builder__layout: true

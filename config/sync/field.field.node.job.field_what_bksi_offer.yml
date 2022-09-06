@@ -1,0 +1,19 @@
+uuid: 7c8ca802-90bc-4ce7-bb91-465714b5f9f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_what_bksi_offer
+    - node.type.job
+id: node.job.field_what_bksi_offer
+field_name: field_what_bksi_offer
+entity_type: node
+bundle: job
+label: 'What Bksi Offer'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

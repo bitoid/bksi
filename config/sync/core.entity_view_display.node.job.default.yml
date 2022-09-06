@@ -1,0 +1,55 @@
+uuid: 49be5d2e-9b44-49c0-a950-b92914551f62
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.job.field_apply_anchor
+    - field.field.node.job.field_job_description
+    - field.field.node.job.field_job_experience
+    - field.field.node.job.field_job_title
+    - node.type.job
+  module:
+    - user
+id: node.job.default
+targetEntityType: node
+bundle: job
+mode: default
+content:
+  field_apply_anchor:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_job_description:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_job_experience:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_job_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

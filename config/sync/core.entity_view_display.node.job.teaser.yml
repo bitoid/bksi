@@ -1,0 +1,28 @@
+uuid: 08c5fe96-c106-45b9-bd11-d94917572e78
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.job.field_apply_anchor
+    - field.field.node.job.field_job_description
+    - field.field.node.job.field_job_experience
+    - field.field.node.job.field_job_title
+    - node.type.job
+  module:
+    - user
+id: node.job.teaser
+targetEntityType: node
+bundle: job
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_apply_anchor: true
+  field_job_description: true
+  field_job_experience: true
+  field_job_title: true

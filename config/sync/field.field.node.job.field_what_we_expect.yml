@@ -13,7 +13,9 @@ label: 'What We Expect'
 description: ''
 required: false
 translatable: false
-default_value: {  }
+default_value:
+  -
+    value: 'Das hat dir BKSi zu bieten'
 default_value_callback: ''
 settings: {  }
 field_type: string

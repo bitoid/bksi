@@ -13,7 +13,9 @@ label: 'Job Description'
 description: ''
 required: false
 translatable: false
-default_value: {  }
+default_value:
+  -
+    value: Kunden
 default_value_callback: ''
 settings: {  }
 field_type: string

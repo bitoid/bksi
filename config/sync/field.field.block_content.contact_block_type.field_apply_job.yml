@@ -1,0 +1,21 @@
+uuid: fd3e7a12-d173-48bf-b528-c073c3cca421
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_block_type
+    - field.storage.block_content.field_apply_job
+  module:
+    - text
+id: block_content.contact_block_type.field_apply_job
+field_name: field_apply_job
+entity_type: block_content
+bundle: contact_block_type
+label: 'apply  job'
+description: 'for career page'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

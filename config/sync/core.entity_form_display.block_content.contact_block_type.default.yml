@@ -4,10 +4,13 @@ status: true
 dependencies:
   config:
     - block_content.type.contact_block_type
+    - field.field.block_content.contact_block_type.field_apply_job
     - field.field.block_content.contact_block_type.field_contact_phone
     - field.field.block_content.contact_block_type.field_email
+    - field.field.block_content.contact_block_type.field_get_touch
     - field.field.block_content.contact_block_type.field_image
     - field.field.block_content.contact_block_type.field_ltd_bksi_description
+    - field.field.block_content.contact_block_type.field_slogan
     - field.field.block_content.contact_block_type.field_source
     - field.field.block_content.contact_block_type.field_title
     - image.style.thumbnail
@@ -21,6 +24,14 @@ targetEntityType: block_content
 bundle: contact_block_type
 mode: default
 content:
+  field_apply_job:
+    type: text_textarea
+    weight: 27
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
   field_contact_phone:
     type: paragraphs
     weight: 5
@@ -47,6 +58,14 @@ content:
       placeholder: ''
       size: 60
     third_party_settings: {  }
+  field_get_touch:
+    type: text_textfield
+    weight: 28
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_image:
     type: image_image
     weight: 3
@@ -72,6 +91,14 @@ content:
       features:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
+    third_party_settings: {  }
+  field_slogan:
+    type: text_textfield
+    weight: 26
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_source:
     type: link_default

@@ -1,0 +1,20 @@
+uuid: 7b969e80-0bb3-47d8-ac0b-70fbfdf6b5c9
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - text
+id: block_content.field_get_touch
+field_name: field_get_touch
+entity_type: block_content
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -28,10 +28,40 @@
 
 <section>
   <div class="flex flex-col gap-20 md:flex-row">
+  {% if content.field_slogan[0] %}
+  <div class="px-4 py-[75px] order-2 md:order-1 md:flex md:flex-col md:justify-center md:w-1/2 md:px-7 md:py-[150px]">
+    <div class="text-fade mb-[60px]">
+      <h3 class="text-content-fade text-[26px] tracking-[1.3px] leading-none flex flex-col gap-5 md:gap-7 md:text-[35px] md:leading-10 md:tracking-[1.75px]">
+        <span class="text-[13px] leading-[15px] tracking-[.65px]">{{ content.field_slogan | raw  }}</span>
+        {{ content.field_title | raw }}
+      </h3>
+    </div>
+    <div class="text-fade self-start">
+      <div class="text-content-fade">
+        <div class="flex flex-col gap-2 text-[15px] leading-[22px] tracking-[0.75px] mb-8">
+          <span>{{ content.field_apply_job | raw  }}</span>
+        </div>
+        <div class="flex flex-col gap-2 text-[15px] leading-[22px] tracking-[0.75px] mb-14">
+          <span>{{ content.field_get_touch | raw }}</span>
+          <a class="group font-normal" href="tel:{{ content.field_contact_phone[0]['#paragraph'].field_shorttext_body.value  }}"> <span class="group-hover:text-mainRed">{{ content.field_contact_phone[0]['#paragraph'].field_shorttext_body.value | raw }}</span></a>
+          <a class="group font-normal" href="mailto:{{ content.field_email }}"> <span class="group-hover:text-mainRed">{{ content.field_email }}</span></a>
+        </div>
+        <article class="flex flex-col gap-1 text-[15px] leading-[22px] tracking-[0.75px]">
+          <h5>{{ content.field_ltd_bksi_description[0]['#paragraph'].field_longtext_title.value }}</h5>
+          {% for paragraph in content.field_ltd_bksi_description[0]['#paragraph'].field_longtext_body %}
+            {% if content.field_ltd_bksi_description[0]['#paragraph'] %}
+              <div class="text-content-fade"> {{ paragraph.value | raw }} </div>
+            {% endif %}
+          {% endfor %}
+        </article>
+      </div>
+    </div>
+  </div>
+  {% else %}
     <div class="px-4 py-[75px] order-2 md:order-1 md:flex md:flex-col md:justify-center md:items-center md:w-1/2 md:px-10 md:py-[60px]">
       <div class="text-fade mb-[60px]">
         <h3 class="text-content-fade text-[26px] tracking-[1.3px] leading-none flex flex-col gap-5 md:gap-7 md:text-[35px] md:leading-10 md:tracking-[1.75px]">
-          {{ content.field_title.0['#text']|striptags }}
+          {{ content.field_title | raw }}
         </h3>
       </div>
       <div class="text-fade self-start">
@@ -40,7 +70,7 @@
             <h5>{{ content.field_ltd_bksi_description[0]['#paragraph'].field_longtext_title.value }}</h5>
             {% for paragraph in content.field_ltd_bksi_description[0]['#paragraph'].field_longtext_body %}
               {% if content.field_ltd_bksi_description[0]['#paragraph'] %}
-                <p class="text-content-fade"> {{ paragraph.value | raw }} </p>
+                <div class="text-content-fade flex flex-col gap-3"> {{ paragraph.value | raw }} </div>
               {% endif %}
             {% endfor %}
           </article>
@@ -51,10 +81,11 @@
               {% endif %}
             {% endfor %}
           </div>
-          <a class="group font-normal" href="mailto:info@bksi.de">E-Mail: <span class="group-hover:text-mainRed">info@bksi.de</span></a>
+          <a class="group font-normal" href="mailto:{{ content.field_email }}">E-Mail: <span class="group-hover:text-mainRed">{{ content.field_email }}</span></a>
         </div>
       </div>
     </div>
+    {% endif %}
     <div class="relative fade-in-image-container order-1 w-full h-[30vh] md:order-2 md:w-1/2 md:h-screen">
       <img class="w-full fade-in-image h-full object-cover" src="{{ file_url(content.field_image.0['#item'].entity.uri.value) }}" alt="">
       <a href="{{ content.field_source.0["#url"] }}" class="group flex items-center gap-5 absolute left-5 bottom-5" target="_blank">
@@ -64,4 +95,8 @@
     </div>
   </div>
 </section>
+
+
+
+
 

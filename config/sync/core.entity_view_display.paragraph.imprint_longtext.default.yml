@@ -7,7 +7,13 @@ dependencies:
     - field.field.paragraph.imprint_longtext.field_longtext_title
     - paragraphs.paragraphs_type.imprint_longtext
   module:
+    - layout_builder
+    - layout_discovery
     - text
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
 id: paragraph.imprint_longtext.default
 targetEntityType: paragraph
 bundle: imprint_longtext
@@ -27,4 +33,5 @@ content:
     third_party_settings: {  }
     weight: 2
     region: content
-hidden: {  }
+hidden:
+  layout_builder__layout: true

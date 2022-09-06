@@ -1,0 +1,19 @@
+uuid: c77151c6-b4f7-44a5-9377-419469ce508d
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - text
+id: block_content.field_apply_job
+field_name: field_apply_job
+entity_type: block_content
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

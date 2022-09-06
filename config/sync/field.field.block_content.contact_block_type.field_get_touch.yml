@@ -1,0 +1,21 @@
+uuid: 40b46c84-8e6d-477c-971b-b375aeacdb2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_block_type
+    - field.storage.block_content.field_get_touch
+  module:
+    - text
+id: block_content.contact_block_type.field_get_touch
+field_name: field_get_touch
+entity_type: block_content
+bundle: contact_block_type
+label: 'Get in touch'
+description: 'for career page'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

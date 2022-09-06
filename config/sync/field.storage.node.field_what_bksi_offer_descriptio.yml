@@ -1,0 +1,19 @@
+uuid: b000a826-bd15-47e7-b143-9555ed6db002
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_what_bksi_offer_descriptio
+field_name: field_what_bksi_offer_descriptio
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,21 @@
+uuid: adef7d29-b672-4cb4-9757-37cbbb7ed61c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.layout_builder__layout
+    - node.type.job
+  module:
+    - layout_builder
+id: node.job.layout_builder__layout
+field_name: layout_builder__layout
+entity_type: node
+bundle: job
+label: Layout
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: layout_section

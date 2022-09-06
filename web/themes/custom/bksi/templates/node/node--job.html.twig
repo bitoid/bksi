@@ -1,0 +1,77 @@
+
+{{ content.field_job_description.0 }}
+
+ {{ content.field_job_title.0 }}
+
+{{ content.field_job_experience.0 }}
+
+{{ content.field_apply_anchor.0 }}
+
+
+	<section>
+      <div class="flex flex-col gap-36 px-4 py-[75px] md:px-10 md:py-[150px] md:gap-56 ">
+         <div class="flex items-start justify-between flex-col gap-5 md:flex-row">
+               <div class="text-fade">
+                  <h3 class="text-[26px] text-content-fade tracking-[1.3px] leading-none flex flex-col gap-5 md:gap-7 md:text-[35px] md:leading-10 md:tracking-[1.75px]">
+							{{ content.field_what_awaits_you.0 }}
+                  </h3>
+               </div>
+            	<div class="text-[15px] leading-[22px] tracking-[0.75px] md:w-1/2">
+         			<div class="text-fade">
+                     <ul class="text-content-fade flex flex-col gap-4 arrow">                          
+                        {% for item in content.field_what_awaits_you_descriptio %}
+  									{% if item['#context'] %} 
+   									<li>{{ item}}</li>               
+  									{% endif %}
+								{% endfor %}
+							</ul>
+                  </div>
+               </div>
+            </div>
+            <div class="flex items-start justify-between flex-col gap-5 md:flex-row">
+                <div class="text-fade">
+                    <h3 class="text-[26px] text-content-fade tracking-[1.3px] leading-none flex flex-col gap-5 md:gap-7 md:text-[35px] md:leading-10 md:tracking-[1.75px]">
+                        {{ content.field_what_bksi_offer.0 }}
+                    </h3>
+                </div>
+                <div class="text-[15px] leading-[22px] tracking-[0.75px] md:w-1/2">
+                    <div class="text-fade">
+                        <ul class="text-content-fade flex flex-col gap-4 arrow">
+                        {% for item in content.field_what_bksi_offer_descriptio %}
+  									{% if item['#context'] %} 
+   									<li>{{ item}}</li>               
+  									{% endif %}
+								{% endfor %}								                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-start justify-between flex-col gap-5 md:flex-row">
+                <div class="text-fade">
+                    <h3 class="text-[26px] text-content-fade tracking-[1.3px] leading-none flex flex-col gap-5 md:gap-7 md:text-[35px] md:leading-10 md:tracking-[1.75px]">
+                       {{ content.field_what_we_expect.0 }}
+                    </h3>
+                </div>
+                <div class="text-[15px] leading-[22px] tracking-[0.75px] md:w-1/2">
+                    <div class="text-fade">
+                        <ul class="text-content-fade flex flex-col gap-4 arrow">
+                        {% for item in content.field_what_we_expect_description %}
+  									{% if item['#context'] %} 
+   									<li>{{ item}}</li>               
+  									{% endif %}
+								{% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section>
+   <div class="bg-lightGray px-4 py-[75px] md:px-10 md:py-[150px]">                  
+      <h3 class="text-[26px] tracking-[1.3px] leading-none mb-[70px] md:text-[35px] md:leading-10 md:tracking-[1.75px]">
+         Jetzt direkt bewerben!
+      </h3>
+   {{ contact_form }} 
+   </div>
+</section>

@@ -13,7 +13,9 @@ label: 'What Awaits You'
 description: ''
 required: false
 translatable: false
-default_value: {  }
+default_value:
+  -
+    value: 'Das erwartet dich bei BKSi'
 default_value_callback: ''
 settings: {  }
 field_type: string

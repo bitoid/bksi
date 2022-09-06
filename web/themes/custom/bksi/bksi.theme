@@ -16,3 +16,11 @@ function bksi_theme_suggestions_image_alter(array &$suggestions, array $variable
   $suggestions[] = 'image'.'__company_detail';
   $suggestions[] = 'image'.'__team-gallery';
 }
+
+
+function bksi_preprocess_node( &$variables ) {
+  $form = \Drupal::formBuilder()->getForm('Drupal\bksi_contact_form\Form\ContactForm');  
+  $variables['contact_form'] = $form;
+}
+
+

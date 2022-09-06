@@ -1,0 +1,21 @@
+uuid: 9de9553c-1752-49dc-9d0c-bcb9bdcf6870
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_apply_anchor
+    - node.type.job
+id: node.job.field_apply_anchor
+field_name: field_apply_anchor
+entity_type: node
+bundle: job
+label: 'Apply Anchor'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'Jetzt bewerben'
+default_value_callback: ''
+settings: {  }
+field_type: string

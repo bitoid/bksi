@@ -1,0 +1,19 @@
+uuid: 04c4d276-af61-4f3b-ba08-da68c7999642
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_job_experience
+    - node.type.job
+id: node.job.field_job_experience
+field_name: field_job_experience
+entity_type: node
+bundle: job
+label: 'Job Experience'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

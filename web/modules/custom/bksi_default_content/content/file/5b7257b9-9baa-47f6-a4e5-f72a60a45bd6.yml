@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 5b7257b9-9baa-47f6-a4e5-f72a60a45bd6
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: bksi-ingenieure-anfahrtsplan_2.jpg
+  uri:
+    -
+      value: 'public://2022-09/bksi-ingenieure-anfahrtsplan_2.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 176149
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1662484067

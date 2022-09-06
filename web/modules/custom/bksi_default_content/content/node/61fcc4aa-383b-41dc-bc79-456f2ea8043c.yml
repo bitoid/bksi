@@ -11,6 +11,7 @@ _meta:
     4eb7f267-1fb1-42ac-b16b-a834e158854f: block_content
     61dd04d9-3892-4b90-ae18-2605bc1e2cc9: block_content
     0e1deedd-25ea-4234-8561-274819d63a75: block_content
+    b08c25b0-aad7-4089-a68f-c81a2a01d6df: block_content
 default:
   revision_uid:
     -
@@ -33,9 +34,6 @@ default:
   sticky:
     -
       value: false
-  revision_translation_affected:
-    -
-      value: true
   path:
     -
       alias: /career
@@ -101,7 +99,7 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '27'
+              block_revision_id: '29'
               block_serialized: null
               context_mapping: {  }
             weight: '7'
@@ -148,7 +146,7 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '30'
+              block_revision_id: '31'
               block_serialized: null
               context_mapping: {  }
             weight: '1'
@@ -167,6 +165,21 @@ default:
               title: Aktuelles
               news_type: '24'
               context_mapping: {  }
-            weight: 7
+            weight: '8'
             additional: {  }
+          ebae124f-6e15-4521-a00a-b0b20e499b55:
+            uuid: ebae124f-6e15-4521-a00a-b0b20e499b55
+            region: content
+            configuration:
+              id: 'inline_block:contact_block_type'
+              label: 'career page contact block'
+              label_display: visible
+              provider: layout_builder
+              view_mode: full
+              block_revision_id: '38'
+              block_serialized: null
+              context_mapping: {  }
+            weight: '7'
+            additional:
+              target_uuid: b08c25b0-aad7-4089-a68f-c81a2a01d6df
         third_party_settings: {  }

@@ -1,0 +1,109 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: b08c25b0-aad7-4089-a68f-c81a2a01d6df
+  bundle: contact_block_type
+  default_langcode: en
+  depends:
+    5b7257b9-9baa-47f6-a4e5-f72a60a45bd6: file
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'career page contact block'
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  field_apply_job:
+    -
+      value: "<p>Bewirb dich direkt:</p>\r\n\r\n<p>zu allen Jobangeboten</p>\r\n"
+      format: basic_html
+  field_contact_phone:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: ab66221a-dc6f-4015-ba76-0438d18538fa
+          bundle: imprint_shorttext
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1662484067
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_shorttext_body:
+            -
+              value: '+49 711 36 53 38-30'
+              format: basic_html
+  field_email:
+    -
+      value: info@bksi.de
+  field_get_touch:
+    -
+      value: 'Setz dich mit uns in Verbindung:'
+      format: basic_html
+  field_image:
+    -
+      entity: 5b7257b9-9baa-47f6-a4e5-f72a60a45bd6
+      alt: 'map img'
+      title: ''
+      width: 1080
+      height: 1080
+  field_ltd_bksi_description:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 58531eec-3532-4266-b54e-fa43b7e8a9c9
+          bundle: imprint_longtext
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1662484067
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_longtext_body:
+            -
+              value: "<p>Ingenieurgesellschaft für</p>\r\n\r\n<p>Beratung und Planung im Bauwesen</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Schwieberdinger Str. 5</p>\r\n\r\n<p>70435 Stuttgart</p>\r\n"
+              format: basic_html
+          field_longtext_title:
+            -
+              value: 'LTD BKSI'
+              format: basic_html
+  field_slogan:
+    -
+      value: 'Ein erstklassiger Plan'
+      format: basic_html
+  field_source:
+    -
+      uri: 'https://www.google.com/maps/dir//BKSi+GmbH,+Schwieberdinger+Str.+5,+70435+Stuttgart,+%E1%83%92%E1%83%94%E1%83%A0%E1%83%9B%E1%83%90%E1%83%9C%E1%83%98%E1%83%90/@48.8259269,9.1685363,20z/data=!4m8!4m7!1m0!1m5!1m1!1s0x4799da97194dc23d:0x84b9ca8b8342cbbb!2m2!1d9.168417!2d48.8260311'
+      title: 'Anfahrt planen'
+      options:
+        attributes: {  }
+  field_title:
+    -
+      value: "<p>Ergreife jetzt deine</p>\r\n\r\n<p>Chance</p>\r\n"
+      format: basic_html

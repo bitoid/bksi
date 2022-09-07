@@ -1,0 +1,7 @@
+name: BKSI Customers
+description: Custom block for customers
+package: custom
+type: module
+core_version_requirement: ^9.4.0 || ^9 || ^10
+dependencies:
+  - block

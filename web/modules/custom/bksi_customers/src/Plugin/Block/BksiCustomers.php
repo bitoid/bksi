@@ -38,7 +38,7 @@ class BksiCustomers extends BlockBase {
 
     foreach ($nids as $nid) {
       $node = Node::load($nid);
-      $title = $node->getTitle();
+      $customer_name = $node->getTitle();
       $logo_id = $node->field_logo->target_id;
       $logo_alt = $node->field_logo->alt; 
       $logo = File::load($logo_id)->getFileUri();
@@ -52,7 +52,7 @@ class BksiCustomers extends BlockBase {
 
       $customers[$nid] = [
         'node_url' => $url,
-        'title' => $title,
+        'customer_name' => $customer_name,
         'logo' => $logo_url,
         'logo_alt' => $logo_alt,
       ];

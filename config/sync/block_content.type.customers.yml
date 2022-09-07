@@ -1,8 +1,0 @@
-uuid: 7187b110-710a-4080-9a8b-861cd70f496b
-langcode: en
-status: true
-dependencies: {  }
-id: customers
-label: Customers
-revision: 0
-description: ''

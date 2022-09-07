@@ -4,7 +4,6 @@ _meta:
   uuid: 0c153b7a-a95b-4c4c-b5eb-75b2fcfd4e50
   bundle: page
   default_langcode: en
-  depends:
 default:
   revision_uid:
     -
@@ -66,19 +65,4 @@ default:
                 entity: layout_builder.entity
             weight: 1
             additional: {  }
-          698816dc-e594-4e53-b79c-a87cd12dd4de:
-            uuid: 698816dc-e594-4e53-b79c-a87cd12dd4de
-            region: content
-            configuration:
-              id: 'inline_block:customers'
-              label: 'Customers (Customers Page)'
-              label_display: 0
-              provider: layout_builder
-              view_mode: full
-              block_revision_id: '19'
-              block_serialized: null
-              context_mapping: {  }
-            weight: 2
-            additional:
-              target_uuid: 71ea7bbf-798f-4348-ae1d-716d1808a138
         third_party_settings: {  }

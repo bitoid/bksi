@@ -1,0 +1,15 @@
+<?php
+/**
+ * Implements hook_theme().
+ */
+
+function bksi_customers_theme() {
+  return [
+    'bksi_customers' => [
+      'variables' => [
+        'customers' => [],
+        'block_title' => '',
+      ],
+    ],
+  ];
+}

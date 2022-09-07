@@ -19,8 +19,23 @@ function bksi_theme_suggestions_image_alter(array &$suggestions, array $variable
 
 
 function bksi_preprocess_node( &$variables ) {
-  $form = \Drupal::formBuilder()->getForm('Drupal\bksi_contact_form\Form\ContactForm');  
-  $variables['contact_form'] = $form;
+  $node= $variables['node'];
+  $type = $node -> getType();
+  $nid=$node-> id();
+
+  switch($type){
+    case "job":
+      $form = \Drupal::formBuilder()->getForm('Drupal\bksi_contact_form\Form\ContactForm');  
+
+      $form['node_id'] = [
+        '#name' =>'node_id',
+        '#value' => $nid,
+        '#type' => 'hidden',
+      ]; 
+
+      $variables['contact_form'] = $form;
+      break;
+  }
 }
 
 

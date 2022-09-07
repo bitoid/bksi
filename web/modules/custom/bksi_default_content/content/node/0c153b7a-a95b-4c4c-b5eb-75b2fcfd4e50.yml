@@ -65,4 +65,16 @@ default:
                 entity: layout_builder.entity
             weight: 1
             additional: {  }
+          ec9f5b66-1426-49f1-b151-9e470fc6dcb3:
+            uuid: ec9f5b66-1426-49f1-b151-9e470fc6dcb3
+            region: content
+            configuration:
+              id: bksi_customers
+              label: 'Customers block'
+              label_display: visible
+              provider: bksi_customers
+              customers_title: 'Auszug aus unserer Kundenliste'
+              context_mapping: {  }
+            weight: 2
+            additional: {  }
         third_party_settings: {  }

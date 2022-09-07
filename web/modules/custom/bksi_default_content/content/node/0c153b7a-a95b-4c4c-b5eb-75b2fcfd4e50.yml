@@ -5,7 +5,6 @@ _meta:
   bundle: page
   default_langcode: en
   depends:
-    71ea7bbf-798f-4348-ae1d-716d1808a138: block_content
 default:
   revision_uid:
     -

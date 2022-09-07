@@ -45,13 +45,12 @@ class BksiCustomers extends BlockBase {
       $logo_url = ImageStyle::load('wide')->buildUrl($logo);
       
 
-      #url for node
-      $options = ['absolute' => TRUE];
-      $url = \Drupal\Core\Url::fromRoute('entity.node.canonical', ['node' => $nid], $options);
-      $url = $url->toString();
+      // node url
+      // $options = ['absolute' => TRUE];
+      // $url = \Drupal\Core\Url::fromRoute('entity.node.canonical', ['node' => $nid], $options);
+      // $url = $url->toString();
 
       $customers[$nid] = [
-        'node_url' => $url,
         'customer_name' => $customer_name,
         'logo' => $logo_url,
         'logo_alt' => $logo_alt,

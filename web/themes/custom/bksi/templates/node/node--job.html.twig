@@ -1,71 +1,81 @@
 
-{{ content.field_job_description.0 }}
+<div class="h-screen items-center overflow-x-hidden">
+    <div class="absolute w-screen h-screen left-0 top-0 -z-10">
+        <div class="absolute bg-darkBlue w-full h-full z-10 top-0 left-0"></div>
+    </div>
+    <div class="absolute right-4 top-1/2 left-4 -translate-y-1/2 flex flex-col gap-10 items-center justify-between text-white md:flex-row md:left-11 md:right-11">
+        <div class="w-2/3 ">
+            <h1 class="flex flex-col -z-10 gap-7 text-[35px] tracking-[1.5px] leading-normal md:gap-9 md:text-[70px] md:leading-tight md:tracking-[3px]">
+                <span class="text-xs md:text-base">{{ content.field_job_description.0 }}</span>
+                {{ content.field_job_title.0 }}
+            </h1>
+            <p class="text-xl mt-28 md:mt-12">{{ content.field_job_experience.0 }}</p>
+        </div>
+        <div class="group w-[134px] aspect-square rounded-full bg-mainRed flex items-center justify-center text-center text-darkBlue -rotate-12 hover:scale-125">
+            <span class="group-hover:scale-[85%]">{{ content.field_apply_anchor.0 }}</span>
+        </div>
+    </div>
+    <img class="absolute bottom-9 left-1/2 -translate-x-1/2" src="/{{ base_path ~ directory }}/assets/Bilder/Arrows&Navigation/arrow-header.svg" alt="arrow down">
+</div>
 
- {{ content.field_job_title.0 }}
-
-{{ content.field_job_experience.0 }}
-
-{{ content.field_apply_anchor.0 }}
-
-
-	<section>
-      <div class="flex flex-col gap-36 px-4 py-[75px] md:px-10 md:py-[150px] md:gap-56 ">
-         <div class="flex items-start justify-between flex-col gap-5 md:flex-row">
-               <div class="text-fade">
-                  <h3 class="text-[26px] text-content-fade tracking-[1.3px] leading-none flex flex-col gap-5 md:gap-7 md:text-[35px] md:leading-10 md:tracking-[1.75px]">
-							{{ content.field_what_awaits_you.0 }}
-                  </h3>
-               </div>
-            	<div class="text-[15px] leading-[22px] tracking-[0.75px] md:w-1/2">
-         			<div class="text-fade">
-                     <ul class="text-content-fade flex flex-col gap-4 arrow">                          
+<section>
+    <div class="flex flex-col gap-36 px-4 py-[75px] md:px-10 md:py-[150px] md:gap-56 ">
+        <div class="flex items-start justify-between flex-col gap-5 md:flex-row">
+            <div class="text-fade">
+                <h3 class="text-[26px] text-content-fade tracking-[1.3px] leading-none flex flex-col gap-5 md:gap-7 md:text-[35px] md:leading-10 md:tracking-[1.75px]">
+					{{ content.field_what_awaits_you.0 }}
+                </h3>
+            </div>
+            <div class="text-[15px] leading-[22px] tracking-[0.75px] md:w-1/2">
+         		<div class="text-fade">
+                    <ul class="text-content-fade flex flex-col gap-4 arrow">                          
                         {% for item in content.field_what_awaits_you_descriptio %}
-  									{% if item['#context'] %} 
-   									<li>{{ item}}</li>               
-  									{% endif %}
-								{% endfor %}
-							</ul>
-                  </div>
-               </div>
-            </div>
-            <div class="flex items-start justify-between flex-col gap-5 md:flex-row">
-                <div class="text-fade">
-                    <h3 class="text-[26px] text-content-fade tracking-[1.3px] leading-none flex flex-col gap-5 md:gap-7 md:text-[35px] md:leading-10 md:tracking-[1.75px]">
-                        {{ content.field_what_bksi_offer.0 }}
-                    </h3>
-                </div>
-                <div class="text-[15px] leading-[22px] tracking-[0.75px] md:w-1/2">
-                    <div class="text-fade">
-                        <ul class="text-content-fade flex flex-col gap-4 arrow">
-                        {% for item in content.field_what_bksi_offer_descriptio %}
-  									{% if item['#context'] %} 
-   									<li>{{ item}}</li>               
-  									{% endif %}
-								{% endfor %}								                           
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="flex items-start justify-between flex-col gap-5 md:flex-row">
-                <div class="text-fade">
-                    <h3 class="text-[26px] text-content-fade tracking-[1.3px] leading-none flex flex-col gap-5 md:gap-7 md:text-[35px] md:leading-10 md:tracking-[1.75px]">
-                       {{ content.field_what_we_expect.0 }}
-                    </h3>
-                </div>
-                <div class="text-[15px] leading-[22px] tracking-[0.75px] md:w-1/2">
-                    <div class="text-fade">
-                        <ul class="text-content-fade flex flex-col gap-4 arrow">
-                        {% for item in content.field_what_we_expect_description %}
-  									{% if item['#context'] %} 
-   									<li>{{ item}}</li>               
-  									{% endif %}
-								{% endfor %}
-                        </ul>
-                    </div>
+  							{% if item['#context'] %} 
+   								<li>{{ item}}</li>               
+  							{% endif %}
+						{% endfor %}
+					</ul>
                 </div>
             </div>
         </div>
-    </section>
+        <div class="flex items-start justify-between flex-col gap-5 md:flex-row">
+            <div class="text-fade">
+                <h3 class="text-[26px] text-content-fade tracking-[1.3px] leading-none flex flex-col gap-5 md:gap-7 md:text-[35px] md:leading-10 md:tracking-[1.75px]">
+                    {{ content.field_what_bksi_offer.0 }}
+                </h3>
+            </div>
+            <div class="text-[15px] leading-[22px] tracking-[0.75px] md:w-1/2">
+                <div class="text-fade">
+                    <ul class="text-content-fade flex flex-col gap-4 arrow">
+                        {% for item in content.field_what_bksi_offer_descriptio %}
+  							{% if item['#context'] %} 
+   								<li>{{ item}}</li>               
+  							{% endif %}
+						{% endfor %}								                           
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="flex items-start justify-between flex-col gap-5 md:flex-row">
+            <div class="text-fade">
+                <h3 class="text-[26px] text-content-fade tracking-[1.3px] leading-none flex flex-col gap-5 md:gap-7 md:text-[35px] md:leading-10 md:tracking-[1.75px]">
+                    {{ content.field_what_we_expect.0 }}
+                </h3>
+            </div>
+            <div class="text-[15px] leading-[22px] tracking-[0.75px] md:w-1/2">
+                <div class="text-fade">
+                    <ul class="text-content-fade flex flex-col gap-4 arrow">
+                        {% for item in content.field_what_we_expect_description %}
+  							{% if item['#context'] %} 
+   								<li>{{ item}}</li>               
+  							{% endif %}
+						{% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <section>
    <div class="bg-lightGray px-4 py-[75px] md:px-10 md:py-[150px]">                  

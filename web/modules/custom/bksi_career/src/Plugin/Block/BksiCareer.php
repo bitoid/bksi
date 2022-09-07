@@ -34,17 +34,17 @@ class BksiCareer extends BlockBase
       // Get data from custom block fields
 		  $title = $config['career_title'];
       $description = $config['career_description'];
-
       $footer_title = $config['career_footer_title'];
       $footer_description = $config['career_footer_description'];
       $image = $config['career_image'];
+      $file = File::load($image[0]);
+      $url = $file->getFileUri();
 //       Get data from Article content type
        $query = \Drupal::entityQuery('node');
        $nids = $query->condition('type', 'Job')
          ->sort('created', 'DESC')
          ->execute();
        $career_array = [];
-    // dump($);   
 
     foreach ($nids as $nid) {
          $node = Node::load($nid);
@@ -52,9 +52,7 @@ class BksiCareer extends BlockBase
            'nid' => $nid,
            'job_title' => $node->field_job_title->value,
            'job_experience' => $node->field_job_experience->value,
-
          ];
- 
        }
 
       // Return variables for block template
@@ -66,9 +64,7 @@ class BksiCareer extends BlockBase
         '#description' => $description,
         '#footer_title' => $footer_title,
         '#footer_description' => $footer_description,
-        '#image' => $image,
-
-
+        '#image_url' => $url,
         '#cache' => [
           'max-age' => 0,
         ],
@@ -89,6 +85,7 @@ class BksiCareer extends BlockBase
   {
     $config = $this->getConfiguration();
     $form= parent::blockForm($form, $form_state);
+
 // Create custom fields in block
     
     $form['career_title'] = [
@@ -142,9 +139,7 @@ class BksiCareer extends BlockBase
    * {@inheritdoc}
    */
   
-  public function blockSubmit($form, FormStateInterface $form_state) {
-	//this needs or not 
-   // parent::blockSubmit($form, $form_state);  
+  public function blockSubmit($form, FormStateInterface $form_state) {  
     $this->configuration['career_title'] = $form_state->getValue('career_title');
 	  $this->configuration['career_description'] = $form_state->getValue('career_description');
     $this->configuration['career_footer_title'] = $form_state->getValue('career_footer_title');
@@ -152,8 +147,6 @@ class BksiCareer extends BlockBase
     $this->configuration['career_image'] = $form_state->getValue('career_image'); 
  
   }
-
-
 }
 
 

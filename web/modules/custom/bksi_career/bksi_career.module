@@ -12,7 +12,7 @@ function bksi_career_theme() {
 		    'description' => '',
         'footer_title' => '',
         'footer_description' => '',
-        'image' => '',
+        'image_url' => '',
       ],
     ],
   ];

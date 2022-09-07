@@ -1,0 +1,95 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: f02f1e51-1fe4-49cb-9f90-7a0fcdd13927
+  bundle: job
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: Job
+  created:
+    -
+      value: 1662564565
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  field_apply_anchor:
+    -
+      value: 'Jetzt bewerben'
+  field_job_description:
+    -
+      value: Kunden
+  field_job_experience:
+    -
+      value: 'mit mindestens fünf Jahren Berufserfahrung'
+  field_job_title:
+    -
+      value: 'Überschrift zum Thema Kundenbeziehung'
+  field_what_awaits_you:
+    -
+      value: 'Das erwartet dich bei BKSi'
+  field_what_awaits_you_descriptio:
+    -
+      value: 'Du leitest und bearbeitest anspruchsvolle Projekte in allen Bauphasen der HOAI als Ansprechpartner:in für unsere Partner:innen'
+    -
+      value: ' Du steuerst die die Projektkoordination zusammen mit Fachplaner:innen, Architekt:innen, Bauherren und Baufrauen sowie ausführenden Firmen'
+    -
+      value: ' Du bist verantwortlich für Akquisition und Kalkulation von Planungsleistungen'
+    -
+      value: 'Als Projektleiter:in übernimmst du die statisch-konstruktive Beratung von Bauherren und Baufrauen sowie Objektplaner:innen Du hast Lust auf die fachliche Teamleitung sowie auf das Führen von Mitarbeiter:innen'
+    -
+      value: ' Ein Arbeitsplatz mit Zukunft bei einem Arbeitgeber, der an einer langfristigen Zusammenarbeit mit dir interessiert ist'
+    -
+      value: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi corrupti dolorum voluptas eveniet soluta laboriosam aliquid animi, ab deleniti rerum? Quaerat a ratione repellendus eaque totam fugit quibusdam qui, ut consequuntur expedita illo aut itaque cumque.'
+  field_what_bksi_offer:
+    -
+      value: 'Das erwarten wir von dir'
+  field_what_bksi_offer_descriptio:
+    -
+      value: 'Du leitest und bearbeitest anspruchsvolle Projekte in allen Bauphasen der HOAI als Ansprechpartner:in für unsere Partner:innen'
+    -
+      value: ' Du steuerst die die Projektkoordination zusammen mit Fachplaner:innen, Architekt:innen, Bauherren und Baufrauen sowie ausführenden Firmen'
+    -
+      value: ' Du bist verantwortlich für Akquisition und Kalkulation von Planungsleistungen'
+    -
+      value: 'Als Projektleiter:in übernimmst du die statisch-konstruktive Beratung von Bauherren und Baufrauen sowie Objektplaner:innen Du hast Lust auf die fachliche Teamleitung sowie auf das Führen von Mitarbeiter:innen'
+    -
+      value: ' Ein Arbeitsplatz mit Zukunft bei einem Arbeitgeber, der an einer langfristigen Zusammenarbeit mit dir interessiert ist'
+    -
+      value: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi corrupti dolorum voluptas eveniet soluta laboriosam aliquid animi, ab deleniti rerum? Quaerat a ratione repellendus eaque totam fugit quibusdam qui, ut consequuntur expedita illo aut itaque cumque.'
+  field_what_we_expect:
+    -
+      value: 'Das hat dir BKSi zu bieten'
+  field_what_we_expect_description:
+    -
+      value: 'Du leitest und bearbeitest anspruchsvolle Projekte in allen Bauphasen der HOAI als Ansprechpartner:in für unsere Partner:innen'
+    -
+      value: ' Du steuerst die die Projektkoordination zusammen mit Fachplaner:innen, Architekt:innen, Bauherren und Baufrauen sowie ausführenden Firmen'
+    -
+      value: ' Du bist verantwortlich für Akquisition und Kalkulation von Planungsleistungen'
+    -
+      value: 'Als Projektleiter:in übernimmst du die statisch-konstruktive Beratung von Bauherren und Baufrauen sowie Objektplaner:innen Du hast Lust auf die fachliche Teamleitung sowie auf das Führen von Mitarbeiter:innen'
+    -
+      value: ' Ein Arbeitsplatz mit Zukunft bei einem Arbeitgeber, der an einer langfristigen Zusammenarbeit mit dir interessiert ist'
+    -
+      value: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi corrupti dolorum voluptas eveniet soluta laboriosam aliquid animi, ab deleniti rerum? Quaerat a ratione repellendus eaque totam fugit quibusdam qui, ut consequuntur expedita illo aut itaque cumque.'

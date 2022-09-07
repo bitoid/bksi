@@ -1,0 +1,18 @@
+uuid: 003e9b2f-398a-41e7-9190-d45cbbee02c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.customer
+id: node.customer.title
+field_name: title
+entity_type: node
+bundle: customer
+label: 'Customer name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

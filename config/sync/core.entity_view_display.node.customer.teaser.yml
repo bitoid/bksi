@@ -1,0 +1,22 @@
+uuid: aadccd8f-170e-429b-b7ec-67015724086c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.customer.field_logo
+    - node.type.customer
+  module:
+    - user
+id: node.customer.teaser
+targetEntityType: node
+bundle: customer
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_logo: true

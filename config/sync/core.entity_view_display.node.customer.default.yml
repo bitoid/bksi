@@ -1,0 +1,32 @@
+uuid: bc14e6e5-0117-467a-98bc-a1f053c00a6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.customer.field_logo
+    - node.type.customer
+  module:
+    - image
+    - user
+id: node.customer.default
+targetEntityType: node
+bundle: customer
+mode: default
+content:
+  field_logo:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

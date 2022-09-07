@@ -1,12 +1,12 @@
-uuid: 35c8f375-288e-4a62-a8e9-c3ecb3cbb753
+uuid: ed008826-3a6d-43c2-8c20-1aeeb4aa615f
 langcode: en
 status: true
 dependencies:
   module:
     - node
     - taxonomy
-id: node.field_project_service
-field_name: field_project_service
+id: node.field_building_type
+field_name: field_building_type
 entity_type: node
 type: entity_reference
 settings:

@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.project.field_bgf
     - field.field.node.project.field_builder_name
+    - field.field.node.project.field_building_type
     - field.field.node.project.field_leistung_x
     - field.field.node.project.field_leistung_y_
     - field.field.node.project.field_project_challenge_image
@@ -16,14 +17,13 @@ dependencies:
     - field.field.node.project.field_project_period
     - field.field.node.project.field_project_sector
     - field.field.node.project.field_project_service
+    - field.field.node.project.field_project_tick
     - field.field.node.project.field_project_title
-    - field.field.node.project.field_project_type
     - field.field.node.project.field_sustainability_issues
     - node.type.project
   module:
     - datetime
     - image
-    - options
     - user
 id: node.project.default
 targetEntityType: node
@@ -45,6 +45,14 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 12
+    region: content
+  field_building_type:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 18
     region: content
   field_leistung_x:
     type: string
@@ -127,18 +135,30 @@ content:
     weight: 15
     region: content
   field_project_sector:
-    type: list_default
+    type: entity_reference_label
     label: hidden
-    settings: {  }
+    settings:
+      link: true
     third_party_settings: {  }
-    weight: 8
+    weight: 19
     region: content
   field_project_service:
-    type: list_default
+    type: entity_reference_label
     label: hidden
-    settings: {  }
+    settings:
+      link: true
     third_party_settings: {  }
-    weight: 7
+    weight: 20
+    region: content
+  field_project_tick:
+    type: boolean
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 17
     region: content
   field_project_title:
     type: string
@@ -147,13 +167,6 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 1
-    region: content
-  field_project_type:
-    type: list_default
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 6
     region: content
   field_sustainability_issues:
     type: basic_string

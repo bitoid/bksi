@@ -1,0 +1,8 @@
+uuid: 8e92493e-4f56-41e9-944f-b649d2bab86e
+langcode: en
+status: true
+dependencies: {  }
+name: Sector
+vid: sector
+description: ''
+weight: 0

@@ -1,16 +1,16 @@
-uuid: 49e5da4a-d71c-4a1d-9ba1-3679f457bc88
+uuid: a0185e03-7400-4bda-8a67-2628604b24eb
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_project_service
+    - field.storage.node.field_building_type
     - node.type.project
-    - taxonomy.vocabulary.sector
-id: node.project.field_project_service
-field_name: field_project_service
+    - taxonomy.vocabulary.building_type
+id: node.project.field_building_type
+field_name: field_building_type
 entity_type: node
 bundle: project
-label: 'project service'
+label: 'Building type'
 description: ''
 required: false
 translatable: false
@@ -20,7 +20,7 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      sector: sector
+      building_type: building_type
     sort:
       field: name
       direction: asc

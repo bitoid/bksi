@@ -1,0 +1,23 @@
+uuid: cde1b233-6fa3-43bc-9a6a-acab060816cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_project_tick
+    - node.type.project
+id: node.project.field_project_tick
+field_name: field_project_tick
+entity_type: node
+bundle: project
+label: 'project tick'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

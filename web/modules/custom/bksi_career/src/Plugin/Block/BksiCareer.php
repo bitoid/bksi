@@ -125,7 +125,7 @@ class BksiCareer extends BlockBase
       '#title' => $this->t('Image'),
       '#upload_location' => 'public://web/sites/defaul/files',
       '#upload_validators' => [
-        'file_validate_extensions' => ['jpg', 'jpeg', 'png', 'gif']
+        'file_validate_extensions'=> ['gif png jpg jpeg']
       ],
       '#required' => true,
       '#description' => $this->t('Image for career block'),

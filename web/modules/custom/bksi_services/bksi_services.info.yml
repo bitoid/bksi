@@ -1,0 +1,8 @@
+name: BKSI Services
+description: Custom block for services
+package: BKSI
+type: module
+core_version_requirement: ^9 || ^10
+dependencies:
+  - block
+

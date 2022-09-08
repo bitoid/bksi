@@ -7,7 +7,7 @@ _meta:
   depends:
     feb4c137-d27a-48da-a9a3-5e7590c1387a: block_content
     f9ae77dd-65a0-4e25-9162-55bead2df1c3: block_content
-    5d4bf7e4-ecf5-4c22-b7ee-217362d3a8d5: block_content
+    61dd04d9-3892-4b90-ae18-2605bc1e2cc9: block_content
     4eb7f267-1fb1-42ac-b16b-a834e158854f: block_content
     61dd04d9-3892-4b90-ae18-2605bc1e2cc9: block_content
     0e1deedd-25ea-4234-8561-274819d63a75: block_content
@@ -47,20 +47,6 @@ default:
         layout_settings:
           label: ''
         components:
-          c0d49f8e-a814-4317-9292-556c4a0372d0:
-            uuid: c0d49f8e-a814-4317-9292-556c4a0372d0
-            region: content
-            configuration:
-              id: 'block_content:673e62f5-0eb4-42b0-8b55-9e255cb62954'
-              label: Job
-              label_display: visible
-              provider: block_content
-              status: true
-              info: ''
-              view_mode: full
-              context_mapping: {  }
-            weight: '4'
-            additional: {  }
           e3d17088-a7aa-4d8d-9259-f43bb09ab59e:
             uuid: e3d17088-a7aa-4d8d-9259-f43bb09ab59e
             region: content

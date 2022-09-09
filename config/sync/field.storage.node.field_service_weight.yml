@@ -1,17 +1,16 @@
-uuid: 4061542b-b744-47d9-ad04-3b173805b33e
+uuid: 6dcd9b50-aaf0-4c67-9657-15cc3097eb66
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_service_slogan
-field_name: field_service_slogan
+id: node.field_service_weight
+field_name: field_service_weight
 entity_type: node
-type: string
+type: integer
 settings:
-  max_length: 255
-  case_sensitive: false
-  is_ascii: false
+  unsigned: false
+  size: normal
 module: core
 locked: false
 cardinality: 1

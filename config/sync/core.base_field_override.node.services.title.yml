@@ -1,18 +1,17 @@
-uuid: fcfb834f-bb21-4507-94e0-f5126c31cc4d
+uuid: f81dda14-1a9e-46fd-80c6-666cfbd9f82e
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_service_slogan
     - node.type.services
-id: node.services.field_service_slogan
-field_name: field_service_slogan
+id: node.services.title
+field_name: title
 entity_type: node
 bundle: services
-label: slogan
+label: sector
 description: ''
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

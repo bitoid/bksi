@@ -1,17 +1,17 @@
-uuid: 4bf333fc-2138-4b3d-bf70-af0d9b69b359
+uuid: 6bc7a5db-9fd1-4a68-b5e4-268716c24179
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_service_sector
+    - field.storage.node.field_service_title
     - node.type.services
   module:
     - text
-id: node.services.field_service_sector
-field_name: field_service_sector
+id: node.services.field_service_title
+field_name: field_service_title
 entity_type: node
 bundle: services
-label: sector
+label: title
 description: ''
 required: true
 translatable: false

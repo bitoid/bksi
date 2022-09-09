@@ -7,8 +7,10 @@ dependencies:
     - field.field.node.services.field_email
     - field.field.node.services.field_service_description
     - field.field.node.services.field_service_icon
-    - field.field.node.services.field_service_sector
     - field.field.node.services.field_service_slogan
+    - field.field.node.services.field_service_summary
+    - field.field.node.services.field_service_title
+    - field.field.node.services.field_service_weight
     - field.field.node.services.field_telefon
     - node.type.services
   module:
@@ -39,7 +41,7 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 106
+    weight: 112
     region: content
   field_service_icon:
     type: file_url_plain
@@ -48,19 +50,36 @@ content:
     third_party_settings: {  }
     weight: 105
     region: content
-  field_service_sector:
-    type: text_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 101
-    region: content
   field_service_slogan:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 116
+    region: content
+  field_service_summary:
     type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 107
+    weight: 115
+    region: content
+  field_service_title:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 114
+    region: content
+  field_service_weight:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 111
     region: content
   field_telefon:
     type: string

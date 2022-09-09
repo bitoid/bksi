@@ -6,6 +6,7 @@ _meta:
   default_langcode: en
   depends:
     39d53aa7-0fc3-418a-bcc9-41031100db20: file
+    b78e6c0e-8ae4-4484-8f85-87ec079c03f7: taxonomy_term
 default:
   revision_uid:
     -
@@ -40,14 +41,6 @@ default:
       value: "<p>Neubau Bürogebäude Wörwag Böblingen</p>\r\n"
       format: basic_html
       summary: ''
-  comment:
-    -
-      status: 2
-      cid: 0
-      last_comment_timestamp: 1661941848
-      last_comment_name: ''
-      last_comment_uid: 1
-      comment_count: 0
   field_image:
     -
       entity: 39d53aa7-0fc3-418a-bcc9-41031100db20
@@ -55,3 +48,6 @@ default:
       title: ''
       width: 600
       height: 375
+  field_news_type:
+    -
+      entity: b78e6c0e-8ae4-4484-8f85-87ec079c03f7

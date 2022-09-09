@@ -1,12 +1,12 @@
 _meta:
   version: '1.0'
   entity_type: node
-  uuid: b00a2d5f-2840-4fcd-8745-5d772acd0a16
+  uuid: e05becc5-9b46-4010-9fa5-847d1ba8b059
   bundle: article
   default_langcode: en
   depends:
-    4f8984a7-4706-4ef4-8e0a-e4cfe5ef1fd9: file
-    b78e6c0e-8ae4-4484-8f85-87ec079c03f7: taxonomy_term
+    32d993c3-0627-49f0-86bf-09472f806634: file
+    1dbde12c-3082-4ac6-b781-3061297e64c3: taxonomy_term
 default:
   revision_uid:
     -
@@ -19,10 +19,10 @@ default:
       target_id: 1
   title:
     -
-      value: 'Neues Projekt'
+      value: Betriebsausflug
   created:
     -
-      value: 1661941988
+      value: 1662731451
   promote:
     -
       value: true
@@ -38,16 +38,16 @@ default:
       langcode: en
   body:
     -
-      value: "<p>mKR Teilneubau und Sanierung BA1 medius KlINIK OSTFILDERN-RUIT</p>\r\n"
+      value: "<p>Betriebsausflug Rottweil Thyssenkrupp Tower</p>\r\n"
       format: basic_html
       summary: ''
   field_image:
     -
-      entity: 4f8984a7-4706-4ef4-8e0a-e4cfe5ef1fd9
-      alt: architechture-aktuelle
+      entity: 32d993c3-0627-49f0-86bf-09472f806634
+      alt: karriere-actuelles-3
       title: ''
-      width: 960
-      height: 540
+      width: 797
+      height: 501
   field_news_type:
     -
-      entity: b78e6c0e-8ae4-4484-8f85-87ec079c03f7
+      entity: 1dbde12c-3082-4ac6-b781-3061297e64c3

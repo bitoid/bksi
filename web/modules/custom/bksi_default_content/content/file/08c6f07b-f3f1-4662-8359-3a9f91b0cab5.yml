@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 08c6f07b-f3f1-4662-8359-3a9f91b0cab5
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: karriere-actuelles-4.png
+  uri:
+    -
+      value: 'public://2022-09/karriere-actuelles-4.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 265927
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1662731611

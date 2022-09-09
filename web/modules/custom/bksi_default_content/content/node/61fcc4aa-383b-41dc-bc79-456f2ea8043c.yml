@@ -33,12 +33,9 @@ default:
   sticky:
     -
       value: false
-  revision_translation_affected:
-    -
-      value: true
   path:
     -
-      alias: ''
+      alias: /career
       langcode: en
   layout_builder__layout:
     -
@@ -56,10 +53,10 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '14'
+              block_revision_id: '32'
               block_serialized: null
               context_mapping: {  }
-            weight: '5'
+            weight: '6'
             additional:
               target_uuid: feb4c137-d27a-48da-a9a3-5e7590c1387a
           e0f49235-3a61-4d23-86cb-6253e1dfbe26:
@@ -71,10 +68,10 @@ default:
               label_display: visible
               provider: layout_builder
               view_mode: full
-              block_revision_id: '32'
+              block_revision_id: '29'
               block_serialized: null
               context_mapping: {  }
-            weight: '3'
+            weight: '4'
             additional:
               target_uuid: f9ae77dd-65a0-4e25-9162-55bead2df1c3
           a3ab38a7-1b14-4a75-9aa8-57f7c75cc441:
@@ -86,10 +83,10 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '30'
+              block_revision_id: '33'
               block_serialized: null
               context_mapping: {  }
-            weight: '1'
+            weight: '2'
             additional:
               target_uuid: 5d4bf7e4-ecf5-4c22-b7ee-217362d3a8d5
           4e7b139a-1e5e-418b-b609-f5abda3b5157:
@@ -101,10 +98,10 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '28'
+              block_revision_id: '27'
               block_serialized: null
               context_mapping: {  }
-            weight: '6'
+            weight: '7'
             additional:
               target_uuid: 4eb7f267-1fb1-42ac-b16b-a834e158854f
           beb676ff-8958-4904-b89a-1a38762eaf76:
@@ -130,12 +127,29 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '35'
+              block_revision_id: '5'
               block_serialized: null
               context_mapping: {  }
-            weight: '2'
+            weight: '3'
             additional:
               target_uuid: 61dd04d9-3892-4b90-ae18-2605bc1e2cc9
+          7e6834df-a59e-45a8-bf04-b8df57d807bf:
+            uuid: 7e6834df-a59e-45a8-bf04-b8df57d807bf
+            region: content
+            configuration:
+              id: bksi_career
+              label: 'BKSI Career'
+              label_display: 0
+              provider: bksi_career
+              career_title: 'Unsere Jobangeb'
+              career_description: 'Hier kommst du weiter'
+              career_footer_title: 'Zeig uns Initiative'
+              career_footer_description: 'Du willst zu uns, doch die offenen Stellen passen nicht zu deinem Profil? Überzeuge uns trotzdem von dir – und bewirb dich initi'
+              career_image:
+                - '90'
+              context_mapping: {  }
+            weight: '5'
+            additional: {  }
           dd03d37a-73d0-4bcc-911b-362c0b9bd247:
             uuid: dd03d37a-73d0-4bcc-911b-362c0b9bd247
             region: content
@@ -145,10 +159,10 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '29'
+              block_revision_id: '28'
               block_serialized: null
               context_mapping: {  }
-            weight: '0'
+            weight: '1'
             additional:
               target_uuid: 0e1deedd-25ea-4234-8561-274819d63a75
         third_party_settings: {  }

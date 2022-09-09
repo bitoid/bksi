@@ -1,0 +1,19 @@
+<?php
+/**
+ * Implements hook_theme().
+ */
+
+function bksi_career_theme() {
+  return [
+    'bksi_career' => [
+      'variables' => [
+        'career_array'=> [],
+        'title' => '',
+		    'description' => '',
+        'footer_title' => '',
+        'footer_description' => '',
+        'image_url' => '',
+      ],
+    ],
+  ];
+}

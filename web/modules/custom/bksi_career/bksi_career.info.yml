@@ -1,0 +1,7 @@
+name: BKSI Career
+description: Custom block for career
+package: BKSI
+type: module
+core_version_requirement: ^9.4.0 || ^9 || ^10
+dependencies:
+  - block

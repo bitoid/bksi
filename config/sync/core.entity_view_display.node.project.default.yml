@@ -5,11 +5,11 @@ dependencies:
   config:
     - field.field.node.project.field_bgf
     - field.field.node.project.field_builder_name
+    - field.field.node.project.field_customer
     - field.field.node.project.field_leistung_x
     - field.field.node.project.field_leistung_y_
     - field.field.node.project.field_project_challenge_image
     - field.field.node.project.field_project_challenges
-    - field.field.node.project.field_project_client
     - field.field.node.project.field_project_description
     - field.field.node.project.field_project_header_image
     - field.field.node.project.field_project_image
@@ -46,6 +46,14 @@ content:
     third_party_settings: {  }
     weight: 12
     region: content
+  field_customer:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 17
+    region: content
   field_leistung_x:
     type: string
     label: hidden
@@ -79,14 +87,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 4
-    region: content
-  field_project_client:
-    type: string
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 9
     region: content
   field_project_description:
     type: basic_string

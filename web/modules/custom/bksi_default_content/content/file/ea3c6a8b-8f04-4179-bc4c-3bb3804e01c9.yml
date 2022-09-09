@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: ea3c6a8b-8f04-4179-bc4c-3bb3804e01c9
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: bksi-ingenieure-kunden-porsche.jpg
+  uri:
+    -
+      value: 'public://2022-09/bksi-ingenieure-kunden-porsche.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 11416
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1662710601

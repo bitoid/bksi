@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 96019299-cba1-47a3-8d3d-c79ab2eba3cd
+  bundle: customer
+  default_langcode: en
+  depends:
+    6db50155-2f66-432f-8bca-d2f34bb5fa70: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Diringer and Scheidel'
+  created:
+    -
+      value: 1662709926
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  field_logo:
+    -
+      entity: 6db50155-2f66-432f-8bca-d2f34bb5fa70
+      alt: 'diringer-&-scheidel-logo'
+      title: ''
+      width: 270
+      height: 212

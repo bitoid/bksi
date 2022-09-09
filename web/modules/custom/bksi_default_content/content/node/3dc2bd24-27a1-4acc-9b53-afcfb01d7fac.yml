@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 3dc2bd24-27a1-4acc-9b53-afcfb01d7fac
+  bundle: customer
+  default_langcode: en
+  depends:
+    42ddafc7-3c3d-4126-b564-99a980d810c4: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: BW
+  created:
+    -
+      value: 1662709576
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  field_logo:
+    -
+      entity: 42ddafc7-3c3d-4126-b564-99a980d810c4
+      alt: bw-logo
+      title: ''
+      width: 270
+      height: 212

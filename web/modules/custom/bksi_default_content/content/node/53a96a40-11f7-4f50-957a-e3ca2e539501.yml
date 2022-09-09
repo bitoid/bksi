@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 53a96a40-11f7-4f50-957a-e3ca2e539501
+  bundle: customer
+  default_langcode: en
+  depends:
+    893318ee-c4b9-4c55-80f3-4ac70fe54508: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: siltronic
+  created:
+    -
+      value: 1662710641
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  field_logo:
+    -
+      entity: 893318ee-c4b9-4c55-80f3-4ac70fe54508
+      alt: siltronic-logo
+      title: ''
+      width: 270
+      height: 212

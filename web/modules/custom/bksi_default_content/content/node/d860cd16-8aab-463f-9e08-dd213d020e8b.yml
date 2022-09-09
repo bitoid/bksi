@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: d860cd16-8aab-463f-9e08-dd213d020e8b
+  bundle: customer
+  default_langcode: en
+  depends:
+    b659cb86-92b6-4f01-b317-277ca764c485: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: Bilfinger
+  created:
+    -
+      value: 1662709606
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  field_logo:
+    -
+      entity: b659cb86-92b6-4f01-b317-277ca764c485
+      alt: bilfinger-logo
+      title: ''
+      width: 270
+      height: 212

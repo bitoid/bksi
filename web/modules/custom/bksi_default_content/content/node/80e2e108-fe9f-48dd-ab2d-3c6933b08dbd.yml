@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 80e2e108-fe9f-48dd-ab2d-3c6933b08dbd
+  bundle: customer
+  default_langcode: en
+  depends:
+    ea3c6a8b-8f04-4179-bc4c-3bb3804e01c9: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: Porsche
+  created:
+    -
+      value: 1662710564
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  field_logo:
+    -
+      entity: ea3c6a8b-8f04-4179-bc4c-3bb3804e01c9
+      alt: porsche-logo
+      title: ''
+      width: 270
+      height: 212

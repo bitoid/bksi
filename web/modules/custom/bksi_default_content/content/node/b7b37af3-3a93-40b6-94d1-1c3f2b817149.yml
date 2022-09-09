@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: b7b37af3-3a93-40b6-94d1-1c3f2b817149
+  bundle: customer
+  default_langcode: en
+  depends:
+    524e239a-4d06-49c4-8ff3-74808e561b76: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: ZEISS
+  created:
+    -
+      value: 1662710715
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  field_logo:
+    -
+      entity: 524e239a-4d06-49c4-8ff3-74808e561b76
+      alt: zeiss-logo
+      title: ''
+      width: 270
+      height: 212

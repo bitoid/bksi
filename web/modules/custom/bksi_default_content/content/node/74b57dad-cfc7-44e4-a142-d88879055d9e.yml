@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 74b57dad-cfc7-44e4-a142-d88879055d9e
+  bundle: customer
+  default_langcode: en
+  depends:
+    5e56e3ec-61b2-449e-b4ee-850b9912c23c: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Planen Bauen'
+  created:
+    -
+      value: 1662710806
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  field_logo:
+    -
+      entity: 5e56e3ec-61b2-449e-b4ee-850b9912c23c
+      alt: planen-bauen-logo
+      title: ''
+      width: 270
+      height: 212

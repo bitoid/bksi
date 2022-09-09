@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 5e56e3ec-61b2-449e-b4ee-850b9912c23c
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: bksi-ingenieure-kunden-planen-bauen.jpg
+  uri:
+    -
+      value: 'public://2022-09/bksi-ingenieure-kunden-planen-bauen.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 8409
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1662710824

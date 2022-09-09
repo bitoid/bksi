@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 3382e9f4-8518-4d0b-a546-c6fe6d5a044c
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: bksi-ingenieure-kunden-ssb.jpg
+  uri:
+    -
+      value: 'public://2022-09/bksi-ingenieure-kunden-ssb.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 12190
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1662710673

@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: a1f28193-01c4-4f69-89a6-bf120d6233be
+  bundle: customer
+  default_langcode: en
+  depends:
+    0efbbfc1-a8a2-45b1-b5c9-69254f4b292e: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Klinikum Ludwigsburg'
+  created:
+    -
+      value: 1662710487
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  field_logo:
+    -
+      entity: 0efbbfc1-a8a2-45b1-b5c9-69254f4b292e
+      alt: klinikum-ludwigsburg-logo
+      title: ''
+      width: 270
+      height: 212

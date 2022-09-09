@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 24a8c4a5-238a-4e09-9705-4f7c95e98261
+  bundle: customer
+  default_langcode: en
+  depends:
+    5da4ca34-af2d-4a6d-9ddf-942505b09c58: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: Baden-Württemberg
+  created:
+    -
+      value: 1662709668
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  field_logo:
+    -
+      entity: 5da4ca34-af2d-4a6d-9ddf-942505b09c58
+      alt: baden-wurttemberg-logo
+      title: ''
+      width: 270
+      height: 212

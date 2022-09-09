@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 893318ee-c4b9-4c55-80f3-4ac70fe54508
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: bksi-ingenieure-kunden-siltronic.jpg
+  uri:
+    -
+      value: 'public://2022-09/bksi-ingenieure-kunden-siltronic.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 11292
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1662710656

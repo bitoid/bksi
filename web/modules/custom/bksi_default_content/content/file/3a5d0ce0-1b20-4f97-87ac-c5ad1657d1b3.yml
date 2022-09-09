@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 3a5d0ce0-1b20-4f97-87ac-c5ad1657d1b3
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: bksi-ingenieure-kunden-evobus.jpg
+  uri:
+    -
+      value: 'public://2022-09/bksi-ingenieure-kunden-evobus.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 11544
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1662710375

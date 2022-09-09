@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 38a4bdb2-1d53-48bb-b852-0dcdd3f7efa9
+  bundle: customer
+  default_langcode: en
+  depends:
+    766d5320-6640-4993-a5e2-0766e2725ab2: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: DLR
+  created:
+    -
+      value: 1662710607
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  field_logo:
+    -
+      entity: 766d5320-6640-4993-a5e2-0766e2725ab2
+      alt: dlr-logo
+      title: ''
+      width: 270
+      height: 212

@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 524e239a-4d06-49c4-8ff3-74808e561b76
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: bksi-ingenieure-kunden-zeiss.jpg
+  uri:
+    -
+      value: 'public://2022-09/bksi-ingenieure-kunden-zeiss.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 10210
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1662710729

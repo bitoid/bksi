@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: e5299e6e-9665-44c6-a32b-fed83381a3bb
+  bundle: customer
+  default_langcode: en
+  depends:
+    7caaefb1-95cd-4450-ad6a-390b8e89c4c1: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: Fahrion
+  created:
+    -
+      value: 1662710389
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  field_logo:
+    -
+      entity: 7caaefb1-95cd-4450-ad6a-390b8e89c4c1
+      alt: fahrion-logo
+      title: ''
+      width: 270
+      height: 212

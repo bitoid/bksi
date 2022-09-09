@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: cf8fb610-1aa4-4c9b-8dcb-3f9aabbab32b
+  bundle: customer
+  default_langcode: en
+  depends:
+    d9371099-b4ff-4391-8996-af0b737f4ba8: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: exyte
+  created:
+    -
+      value: 1662710538
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  field_logo:
+    -
+      entity: d9371099-b4ff-4391-8996-af0b737f4ba8
+      alt: exyte-logo
+      title: ''
+      width: 270
+      height: 212

@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: c22be784-905b-4ab8-9425-b093d31a4f5a
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: bksi-ingenieure-kunden-fraunhofer.jpg
+  uri:
+    -
+      value: 'public://2022-09/bksi-ingenieure-kunden-fraunhofer.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 9887
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1662710441

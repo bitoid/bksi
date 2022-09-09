@@ -8,6 +8,7 @@ module:
   bksi_customers: 0
   bksi_default_content: 0
   bksi_news: 0
+  bksi_services: 0
   block: 0
   block_content: 0
   breakpoint: 0

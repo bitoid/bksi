@@ -1,0 +1,16 @@
+<?php
+/**
+ * Implements hook_theme().
+ */
+
+function bksi_services_theme() {
+  return [
+    'bksi_services' => [
+      'variables' => [
+        'services'=> [],
+        'slogan' => '',
+        'title' => '',
+      ],
+    ],
+  ];
+}

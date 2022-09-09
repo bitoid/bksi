@@ -6,6 +6,7 @@ _meta:
   default_langcode: en
   depends:
     c80c19d9-5066-4773-abd7-baa5e8be3f03: file
+    b78e6c0e-8ae4-4484-8f85-87ec079c03f7: taxonomy_term
 default:
   revision_uid:
     -
@@ -40,14 +41,6 @@ default:
       value: "<p>mKR Teilneubau und Sanierung BA1 medius KlINIK OSTFILDERN-RUIT</p>\r\n"
       format: basic_html
       summary: ''
-  comment:
-    -
-      status: 2
-      cid: 0
-      last_comment_timestamp: 1661941914
-      last_comment_name: ''
-      last_comment_uid: 1
-      comment_count: 0
   field_image:
     -
       entity: c80c19d9-5066-4773-abd7-baa5e8be3f03
@@ -55,3 +48,6 @@ default:
       title: ''
       width: 597
       height: 375
+  field_news_type:
+    -
+      entity: b78e6c0e-8ae4-4484-8f85-87ec079c03f7

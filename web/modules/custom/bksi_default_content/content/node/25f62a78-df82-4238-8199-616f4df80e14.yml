@@ -1,0 +1,53 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 25f62a78-df82-4238-8199-616f4df80e14
+  bundle: article
+  default_langcode: en
+  depends:
+    08c6f07b-f3f1-4662-8359-3a9f91b0cab5: file
+    1dbde12c-3082-4ac6-b781-3061297e64c3: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Unsere Auszubildende'
+  created:
+    -
+      value: 1662731564
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  body:
+    -
+      value: "<p>Ana Marija ist unsere Azubine im 2. Lehrjahr. Sie hat im September 2020 ihre duale Ausbildung als Bauzeichnerin mit dem Schwerpunkt Ingenieurbau an der Fachhochschule Steinbeisschule Stuttgart begonnen. „Bei der BKSi erstelle ich Positions-, Lasten-, Schal- und Bewehrungspläne. Ein Teil meiner Ausbildung sind auch Baustellenpraktika und Baubegehungen, durch welche ich besser erfahren kann, wie ein Bauprozess in Realität aussieht.“</p>\r\n"
+      format: basic_html
+      summary: 'Ana Marija ist unsere Azubine im 2. Lehrjahr. Sie hat im September 2020 ihre duale Ausbildung als Bauzeichnerin mit dem Schwerpunkt Ingenieurbau an der Fachhochschule Steinbeisschule Stuttgart begonnen.'
+  field_image:
+    -
+      entity: 08c6f07b-f3f1-4662-8359-3a9f91b0cab5
+      alt: karriere-actuelles-4
+      title: ''
+      width: 797
+      height: 501
+  field_news_type:
+    -
+      entity: 1dbde12c-3082-4ac6-b781-3061297e64c3

@@ -53,7 +53,7 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '6'
+              block_revision_id: '16'
               block_serialized: null
               context_mapping: {  }
             weight: '2'
@@ -68,7 +68,7 @@ default:
               label_display: visible
               provider: layout_builder
               view_mode: full
-              block_revision_id: '9'
+              block_revision_id: '27'
               block_serialized: null
               context_mapping: {  }
             weight: '4'
@@ -102,8 +102,8 @@ default:
               context_mapping: {  }
             weight: '3'
             additional: {  }
-          d6acf95a-8427-44a7-bd3e-81749b70d752:
-            uuid: d6acf95a-8427-44a7-bd3e-81749b70d752
+          9bb34bc6-9c02-4e48-b1b9-8b6cb6796c15:
+            uuid: 9bb34bc6-9c02-4e48-b1b9-8b6cb6796c15
             region: content
             configuration:
               id: bksi_news
@@ -113,7 +113,8 @@ default:
               news_quantity: '2'
               slogan: 'Aus dem Unternehmen'
               title: Aktuelles
+              news_type: '2'
               context_mapping: {  }
-            weight: 4
+            weight: 6
             additional: {  }
         third_party_settings: {  }

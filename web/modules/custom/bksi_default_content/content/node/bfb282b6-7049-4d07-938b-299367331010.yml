@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: bfb282b6-7049-4d07-938b-299367331010
+  bundle: customer
+  default_langcode: en
+  depends:
+    45038575-be1a-404e-83fb-a01dc28bfd4c: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: SCD
+  created:
+    -
+      value: 1662710843
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  field_logo:
+    -
+      entity: 45038575-be1a-404e-83fb-a01dc28bfd4c
+      alt: scd-logo
+      title: ''
+      width: 270
+      height: 212

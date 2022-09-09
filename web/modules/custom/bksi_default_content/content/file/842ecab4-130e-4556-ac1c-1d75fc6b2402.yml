@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 842ecab4-130e-4556-ac1c-1d75fc6b2402
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: bksi-ingenieure-kunden-zueblin_0.jpg
+  uri:
+    -
+      value: 'public://2022-09/bksi-ingenieure-kunden-zueblin_0.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 11367
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1662711136

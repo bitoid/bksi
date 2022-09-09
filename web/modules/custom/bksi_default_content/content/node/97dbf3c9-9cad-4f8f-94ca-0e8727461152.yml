@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 97dbf3c9-9cad-4f8f-94ca-0e8727461152
+  bundle: customer
+  default_langcode: en
+  depends:
+    726d6763-0421-45db-94ce-0038187e8def: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: Stuttgart
+  created:
+    -
+      value: 1662710679
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  field_logo:
+    -
+      entity: 726d6763-0421-45db-94ce-0038187e8def
+      alt: stuttgart-logo
+      title: ''
+      width: 270
+      height: 212

@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: aa49e40c-6b71-4516-bbf0-70ed59321fdf
+  bundle: customer
+  default_langcode: en
+  depends:
+    19aec21b-edd6-435b-8570-52fe0e19090d: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: SWSG
+  created:
+    -
+      value: 1662709904
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  field_logo:
+    -
+      entity: 19aec21b-edd6-435b-8570-52fe0e19090d
+      alt: swsg-logo
+      title: ''
+      width: 270
+      height: 212

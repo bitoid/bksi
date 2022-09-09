@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 44e9bfea-b6fb-4add-bd8a-7269fd7df51d
+  bundle: customer
+  default_langcode: en
+  depends:
+    db325410-c2ad-40ed-a067-61901ceab7bc: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: bam
+  created:
+    -
+      value: 1662709463
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  field_logo:
+    -
+      entity: db325410-c2ad-40ed-a067-61901ceab7bc
+      alt: bam-logo
+      title: ''
+      width: 270
+      height: 212

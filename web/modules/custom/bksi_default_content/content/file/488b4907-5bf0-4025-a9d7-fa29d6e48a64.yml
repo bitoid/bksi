@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 488b4907-5bf0-4025-a9d7-fa29d6e48a64
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: bksi-ingenieure-kunden-bosch_0.jpg
+  uri:
+    -
+      value: 'public://2022-09/bksi-ingenieure-kunden-bosch_0.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 10925
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1662709660

@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 15212338-7e83-4317-b94c-4cf4a057d838
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: bksi-ingenieure-kunden-db.jpg
+  uri:
+    -
+      value: 'public://2022-09/bksi-ingenieure-kunden-db.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 9723
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1662709814

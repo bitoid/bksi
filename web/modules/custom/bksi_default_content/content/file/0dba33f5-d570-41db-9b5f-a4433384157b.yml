@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 0dba33f5-d570-41db-9b5f-a4433384157b
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: bksi-ingenieure-kunden-deutsche-rentenversicherung.jpg
+  uri:
+    -
+      value: 'public://2022-09/bksi-ingenieure-kunden-deutsche-rentenversicherung.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 6760
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1662709890

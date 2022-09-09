@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: e4b9f594-9134-4c45-9ee1-ce74950fae7c
+  bundle: customer
+  default_langcode: en
+  depends:
+    0dba33f5-d570-41db-9b5f-a4433384157b: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Deutsche Rentenversicherung'
+  created:
+    -
+      value: 1662709841
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  field_logo:
+    -
+      entity: 0dba33f5-d570-41db-9b5f-a4433384157b
+      alt: deutsche-rentenversicherung-logo
+      title: ''
+      width: 270
+      height: 212

@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 03b26d8e-6f1e-46a8-a95f-024510ba195e
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: bksi-ingenieure-kunden-mb-group.jpg
+  uri:
+    -
+      value: 'public://2022-09/bksi-ingenieure-kunden-mb-group.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 24325
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1662709773

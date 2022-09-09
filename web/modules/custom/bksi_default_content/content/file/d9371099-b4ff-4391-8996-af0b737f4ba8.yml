@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: d9371099-b4ff-4391-8996-af0b737f4ba8
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: bksi-ingenieure-kunden-exyte.jpg
+  uri:
+    -
+      value: 'public://2022-09/bksi-ingenieure-kunden-exyte.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 23794
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1662710555

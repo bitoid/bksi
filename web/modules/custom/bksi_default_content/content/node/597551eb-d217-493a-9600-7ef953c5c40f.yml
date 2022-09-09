@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 597551eb-d217-493a-9600-7ef953c5c40f
+  bundle: customer
+  default_langcode: en
+  depends:
+    c22be784-905b-4ab8-9425-b093d31a4f5a: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Fraunhofer Gesellschaft'
+  created:
+    -
+      value: 1662710420
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  field_logo:
+    -
+      entity: c22be784-905b-4ab8-9425-b093d31a4f5a
+      alt: fraunhofer-logo
+      title: ''
+      width: 270
+      height: 212

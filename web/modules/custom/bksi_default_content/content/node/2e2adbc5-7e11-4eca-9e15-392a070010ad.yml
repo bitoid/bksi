@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 2e2adbc5-7e11-4eca-9e15-392a070010ad
+  bundle: customer
+  default_langcode: en
+  depends:
+    15212338-7e83-4317-b94c-4cf4a057d838: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Deutsche Bahn'
+  created:
+    -
+      value: 1662709794
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  field_logo:
+    -
+      entity: 15212338-7e83-4317-b94c-4cf4a057d838
+      alt: db-logo
+      title: ''
+      width: 270
+      height: 212

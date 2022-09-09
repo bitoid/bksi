@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: b659cb86-92b6-4f01-b317-277ca764c485
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: bksi-ingenieure-kunden-bilfinger.jpg
+  uri:
+    -
+      value: 'public://2022-09/bksi-ingenieure-kunden-bilfinger.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 11843
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1662709628

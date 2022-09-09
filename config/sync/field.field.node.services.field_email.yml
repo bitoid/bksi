@@ -1,0 +1,21 @@
+uuid: 9ae56a52-8c26-4ea6-a89b-a04856cb5225
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email
+    - node.type.services
+id: node.services.field_email
+field_name: field_email
+entity_type: node
+bundle: services
+label: email
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: info@bksi.de
+default_value_callback: ''
+settings: {  }
+field_type: email

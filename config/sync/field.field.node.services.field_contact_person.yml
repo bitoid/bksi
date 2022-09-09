@@ -1,0 +1,27 @@
+uuid: 611e330e-2469-4dae-b3d8-c2e458281e9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contact_person
+    - node.type.services
+  module:
+    - text
+id: node.services.field_contact_person
+field_name: field_contact_person
+entity_type: node
+bundle: services
+label: contact-person
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'Frank Steller'
+    format: basic_html
+  -
+    value: 'Volker Kunberger'
+    format: basic_html
+default_value_callback: ''
+settings: {  }
+field_type: text

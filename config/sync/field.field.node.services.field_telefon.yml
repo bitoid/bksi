@@ -1,0 +1,21 @@
+uuid: 417b069e-5ff9-4252-860b-7449ce78a3d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_telefon
+    - node.type.services
+id: node.services.field_telefon
+field_name: field_telefon
+entity_type: node
+bundle: services
+label: telefon
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '0711 /36 53 38 - 30'
+default_value_callback: ''
+settings: {  }
+field_type: string

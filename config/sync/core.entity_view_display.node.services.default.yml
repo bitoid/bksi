@@ -1,0 +1,78 @@
+uuid: e56046fb-51dc-467f-abd0-0accddb3ce05
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.services.field_contact_person
+    - field.field.node.services.field_email
+    - field.field.node.services.field_service_description
+    - field.field.node.services.field_service_icon
+    - field.field.node.services.field_service_sector
+    - field.field.node.services.field_service_slogan
+    - field.field.node.services.field_telefon
+    - node.type.services
+  module:
+    - file
+    - text
+    - user
+id: node.services.default
+targetEntityType: node
+bundle: services
+mode: default
+content:
+  field_contact_person:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 110
+    region: content
+  field_email:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_service_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_service_icon:
+    type: file_url_plain
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_service_sector:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_service_slogan:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_telefon:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

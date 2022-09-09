@@ -7,8 +7,10 @@ dependencies:
     - field.field.node.services.field_email
     - field.field.node.services.field_service_description
     - field.field.node.services.field_service_icon
-    - field.field.node.services.field_service_sector
     - field.field.node.services.field_service_slogan
+    - field.field.node.services.field_service_summary
+    - field.field.node.services.field_service_title
+    - field.field.node.services.field_service_weight
     - field.field.node.services.field_telefon
     - node.type.services
   module:
@@ -28,7 +30,7 @@ content:
     third_party_settings: {  }
   field_contact_person:
     type: text_textfield
-    weight: 11
+    weight: 12
     region: content
     settings:
       size: 60
@@ -36,21 +38,19 @@ content:
     third_party_settings: {  }
   field_email:
     type: email_default
-    weight: 12
+    weight: 14
     region: content
     settings:
       placeholder: ''
       size: 60
     third_party_settings: {  }
   field_service_description:
-    type: text_textarea_with_summary
+    type: text_textarea
     weight: 10
     region: content
     settings:
-      rows: 9
-      summary_rows: 3
+      rows: 5
       placeholder: ''
-      show_summary: false
     third_party_settings: {  }
   field_service_icon:
     type: file_generic
@@ -59,7 +59,23 @@ content:
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
-  field_service_sector:
+  field_service_slogan:
+    type: string_textfield
+    weight: 9
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_service_summary:
+    type: text_textarea
+    weight: 11
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_service_title:
     type: text_textfield
     weight: 7
     region: content
@@ -67,12 +83,11 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_service_slogan:
-    type: text_textarea
-    weight: 9
+  field_service_weight:
+    type: number
+    weight: 15
     region: content
     settings:
-      rows: 5
       placeholder: ''
     third_party_settings: {  }
   field_telefon:

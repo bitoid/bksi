@@ -8,8 +8,10 @@ dependencies:
     - field.field.node.services.field_email
     - field.field.node.services.field_service_description
     - field.field.node.services.field_service_icon
-    - field.field.node.services.field_service_sector
     - field.field.node.services.field_service_slogan
+    - field.field.node.services.field_service_summary
+    - field.field.node.services.field_service_title
+    - field.field.node.services.field_service_weight
     - field.field.node.services.field_telefon
     - node.type.services
   module:
@@ -29,6 +31,8 @@ hidden:
   field_email: true
   field_service_description: true
   field_service_icon: true
-  field_service_sector: true
   field_service_slogan: true
+  field_service_summary: true
+  field_service_title: true
+  field_service_weight: true
   field_telefon: true

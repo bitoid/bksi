@@ -1,16 +1,15 @@
-uuid: 66092109-97c4-4965-94f1-e5857d64ecc4
+uuid: 466b2750-c3c0-42ff-b145-2afca08cd0fb
 langcode: en
 status: true
 dependencies:
   module:
     - node
     - text
-id: node.field_service_sector
-field_name: field_service_sector
+id: node.field_service_summary
+field_name: field_service_summary
 entity_type: node
-type: text
-settings:
-  max_length: 255
+type: text_long
+settings: {  }
 module: text
 locked: false
 cardinality: 1

@@ -1,0 +1,21 @@
+uuid: 4bf333fc-2138-4b3d-bf70-af0d9b69b359
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_service_sector
+    - node.type.services
+  module:
+    - text
+id: node.services.field_service_sector
+field_name: field_service_sector
+entity_type: node
+bundle: services
+label: sector
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

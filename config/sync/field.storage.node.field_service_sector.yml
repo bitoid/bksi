@@ -1,0 +1,20 @@
+uuid: 66092109-97c4-4965-94f1-e5857d64ecc4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_service_sector
+field_name: field_service_sector
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

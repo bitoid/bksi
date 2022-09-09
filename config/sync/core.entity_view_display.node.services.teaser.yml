@@ -1,0 +1,34 @@
+uuid: 58dde772-027b-4a3a-86f7-4b29136284f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.services.field_contact_person
+    - field.field.node.services.field_email
+    - field.field.node.services.field_service_description
+    - field.field.node.services.field_service_icon
+    - field.field.node.services.field_service_sector
+    - field.field.node.services.field_service_slogan
+    - field.field.node.services.field_telefon
+    - node.type.services
+  module:
+    - user
+id: node.services.teaser
+targetEntityType: node
+bundle: services
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_contact_person: true
+  field_email: true
+  field_service_description: true
+  field_service_icon: true
+  field_service_sector: true
+  field_service_slogan: true
+  field_telefon: true

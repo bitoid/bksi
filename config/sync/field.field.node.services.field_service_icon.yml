@@ -1,0 +1,27 @@
+uuid: 75969a3c-ee45-4f99-b7b2-878e383d6c88
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_service_icon
+    - node.type.services
+  module:
+    - file
+id: node.services.field_service_icon
+field_name: field_service_icon
+entity_type: node
+bundle: services
+label: service-icon
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png jpg jpeg svg'
+  max_filesize: ''
+  description_field: false
+field_type: file

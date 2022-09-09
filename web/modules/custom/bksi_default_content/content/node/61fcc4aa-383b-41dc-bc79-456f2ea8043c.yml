@@ -47,20 +47,6 @@ default:
         layout_settings:
           label: ''
         components:
-          c0d49f8e-a814-4317-9292-556c4a0372d0:
-            uuid: c0d49f8e-a814-4317-9292-556c4a0372d0
-            region: content
-            configuration:
-              id: 'block_content:673e62f5-0eb4-42b0-8b55-9e255cb62954'
-              label: Job
-              label_display: visible
-              provider: block_content
-              status: true
-              info: ''
-              view_mode: full
-              context_mapping: {  }
-            weight: '4'
-            additional: {  }
           e3d17088-a7aa-4d8d-9259-f43bb09ab59e:
             uuid: e3d17088-a7aa-4d8d-9259-f43bb09ab59e
             region: content

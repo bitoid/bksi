@@ -1,0 +1,115 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 9485ab90-fe96-47f0-b532-7731170fe5cc
+  bundle: company_details
+  default_langcode: en
+  depends:
+    0bd5b078-e440-4d38-88f9-4d20722e0c4d: file
+    f43fffc7-9d20-4c03-bd20-c9c3ffe77ea8: file
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Company details block'
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  field_company_detail:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 5a2e0885-1497-4c76-bc90-16f6dcd41c8e
+          bundle: company_detail
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1662709160
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_description:
+            -
+              value: 'Kurzer zusätzlicher Text, der mit wichtigen Schlagworten für die Suchmaschinen versehen ist und dem Nutzer verdeutlicht welche Inhalte der weiterführende Link beinhaltet.'
+          field_image:
+            -
+              entity: 0bd5b078-e440-4d38-88f9-4d20722e0c4d
+              alt: 'team work'
+              title: ''
+              width: 1024
+              height: 533
+          field_image_align:
+            -
+              value: right
+          field_link_cta:
+            -
+              uri: 'internal:/customers'
+              title: 'Zur Kundenansicht'
+              options:
+                attributes: {  }
+          field_slogan:
+            -
+              value: Kunden
+          field_title:
+            -
+              value: 'Überschrift Kunden aus allen Branchen und mit unterschiedlichsten Anforderungen'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 0ccbf88d-14ec-4328-9684-69df0daedb6a
+          bundle: company_detail
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1662709195
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_description:
+            -
+              value: 'Kurzer zusätzlicher Text, der mit wichtigen Schlagworten für die Suchmaschinen versehen ist und dem Nutzer verdeutlicht welche Inhalte der weiterführende Link beinhaltet. eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren eos et accusam et justo'
+          field_image:
+            -
+              entity: f43fffc7-9d20-4c03-bd20-c9c3ffe77ea8
+              alt: 'team work'
+              title: ''
+              width: 2560
+              height: 1707
+          field_image_align:
+            -
+              value: left
+          field_link_cta:
+            -
+              uri: 'internal:/team'
+              title: ' Zur Kundenansicht'
+              options:
+                attributes: {  }
+          field_slogan:
+            -
+              value: Team
+          field_title:
+            -
+              value: 'Exzellente Ergebnisse erreicht man immer im Team'

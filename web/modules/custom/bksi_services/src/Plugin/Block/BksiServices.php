@@ -30,37 +30,40 @@ class BksiServices extends BlockBase
 
       $config = $this->getConfiguration();
       // Get data from custom block fields
-//      $quantity = $config['news_quantity'];
       $slogan = $config['slogan'];
       $title = $config['title'];
       // Get data from Article content type
-//      $query = \Drupal::entityQuery('node');
-//      $nids = $query->condition('type', 'article')
-//        ->sort('created', 'DESC')
-//        ->execute();
 
-      $news_array = [];
+      $query = \Drupal::entityQuery('node');
+      $nids = $query->condition('type', 'Services')
+        ->sort('field_service_weight', 'ASC')
+        ->execute();
 
-//      foreach ($nids as $nid) {
-//        $node = Node::load($nid);
-//        $file_id = $node->field_image->target_id;
-//        $news_image = File::load($file_id)->getFileUri();
-//        $url = ImageStyle::load('wide')->buildUrl($news_image);
-//        $date = date("F Y", $node->created->value);
-//        $body = str_replace("&nbsp;", ' ', $node->body->value);
-//        $news_array[$nid]=[
-//          'nid' => $nid,
-//          'date' => $date,
-//          'title' => $node->title->value,
-//          'body'=> $body,
-//          'news_image' => $url,
-//        ];
-//      }
+      $services = [];
+
+
+      foreach ($nids as $nid) {
+        $node = Node::load($nid);
+
+        $file_id = $node->field_service_icon->target_id;
+        $service_image = File::load($file_id)->getFileUri();
+
+        $title = $node->title->value;
+        $summary = $node->field_service_summary->getValue();
+
+        $services[]=[
+          'nid' => $nid,
+          'title' => $title,
+          'service_image' => $service_image,
+          'summary' => $summary,
+          'link_text' => "Mehr zu $title"
+        ];
+      }
+
       // Return variables for block template
       return [
         '#theme' => 'bksi_services',
-        '#news_array' => $news_array,
-//        '#quantity' => $quantity,
+        '#services' => $services,
         '#slogan' => $slogan,
         '#title' => $title,
         '#cache' => [

@@ -7,8 +7,7 @@ function bksi_services_theme() {
   return [
     'bksi_services' => [
       'variables' => [
-        'news_array'=> [],
-//        'quantity' => 0 ,
+        'services'=> [],
         'slogan' => '',
         'title' => '',
       ],

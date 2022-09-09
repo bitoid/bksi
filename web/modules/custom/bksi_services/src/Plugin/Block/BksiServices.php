@@ -8,7 +8,6 @@ use Drupal\Core\Session\AccountInterface;
 
 use Drupal\node\Entity\Node;
 use Drupal\file\Entity\File;
-use Drupal\image\Entity\ImageStyle;
 
 /**
  * Provides a 'BKSI Services' Block.
@@ -30,6 +29,7 @@ class BksiServices extends BlockBase
 
       $config = $this->getConfiguration();
       // Get data from custom block fields
+
       $slogan = $config['slogan'];
       $title = $config['title'];
       // Get data from Article content type
@@ -86,13 +86,6 @@ class BksiServices extends BlockBase
   {
     $config = $this->getConfiguration();
     $form= parent::blockForm($form, $form_state);
-// Create custom fields in block
-//    $form['news_quantity'] = [
-//      '#type' => 'number',
-//      '#title' => $this->t('News Quantity'),
-//      '#default_value' => $config['news_quantity'] ?? 0,
-//      '#description' => $this->t('quantity of news on the page'),
-//    ];
 
     $form['slogan'] = [
       '#type' => 'textfield',
@@ -117,7 +110,6 @@ class BksiServices extends BlockBase
    */
   public function blockSubmit($form, FormStateInterface $form_state) {
 //    Get custom fields data
-//    $this->configuration['news_quantity'] = $form_state->getValue('news_quantity');
     $this->configuration['slogan'] = $form_state->getValue('slogan');
     $this->configuration['title'] = $form_state->getValue('title');
   }

@@ -1,26 +1,27 @@
 _meta:
   version: '1.0'
   entity_type: menu_link_content
-  uuid: c0365953-aa11-4c98-855f-b992a0120987
+  uuid: ea455b6d-9761-4d49-bbd5-95273107c9fb
   bundle: menu_link_content
   default_langcode: en
   depends:
-    61fcc4aa-383b-41dc-bc79-456f2ea8043c: node
+    dd6ffe0d-f8b7-4f2e-babd-ef8e8229d638: node
 default:
   enabled:
     -
       value: true
   title:
     -
-      value: Career
+      value: Company
   menu_name:
     -
       value: main-menu
   link:
     -
-      target_uuid: 61fcc4aa-383b-41dc-bc79-456f2ea8043c
+      target_uuid: dd6ffe0d-f8b7-4f2e-babd-ef8e8229d638
       title: ''
-      options: {  }
+      options:
+        attributes: {  }
   external:
     -
       value: false
@@ -29,10 +30,10 @@ default:
       value: false
   weight:
     -
-      value: -48
+      value: -49
   expanded:
     -
-      value: false
+      value: true
   revision_translation_affected:
     -
       value: true

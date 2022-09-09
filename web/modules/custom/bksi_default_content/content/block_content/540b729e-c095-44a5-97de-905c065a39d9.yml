@@ -1,0 +1,28 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 540b729e-c095-44a5-97de-905c065a39d9
+  bundle: motto
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Motto block for companies page'
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  field_motto:
+    -
+      value: 'Wir behalten lange die Ruhe, sind leidensfähig und haben Ausdauer'
+  field_motto_link:
+    -
+      uri: 'route:<nolink>'
+      title: 'Frau Rembold | Projektleiterin'
+      options:
+        attributes: {  }

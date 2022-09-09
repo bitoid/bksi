@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: b0a04954-dfd0-4aa2-9db9-57c568b6514f
+  bundle: hero_block_type
+  default_langcode: en
+  depends:
+    903d60bc-5b0f-479f-95cc-f2a9f3ca3a02: file
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Herro block'
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  field_image:
+    -
+      entity: 903d60bc-5b0f-479f-95cc-f2a9f3ca3a02
+      alt: team
+      title: ''
+      width: 2000
+      height: 1333
+  field_slogan:
+    -
+      value: Unternehmen
+      format: basic_html
+  field_title:
+    -
+      value: "<p>&nbsp;</p>\r\n\r\n<p>Überschrift Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>\r\n"
+      format: basic_html

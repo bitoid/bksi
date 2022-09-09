@@ -6,6 +6,10 @@ _meta:
   default_langcode: en
   depends:
     06affd80-4b32-46f3-b683-c27cceba4471: block_content
+    540b729e-c095-44a5-97de-905c065a39d9: block_content
+    1d5da411-1a1f-4f0a-ae07-11833b6f7101: block_content
+    9485ab90-fe96-47f0-b532-7731170fe5cc: block_content
+    b0a04954-dfd0-4aa2-9db9-57c568b6514f: block_content
 default:
   revision_uid:
     -
@@ -28,12 +32,9 @@ default:
   sticky:
     -
       value: false
-  revision_translation_affected:
-    -
-      value: true
   path:
     -
-      alias: ''
+      alias: /company
       langcode: en
   layout_builder__layout:
     -
@@ -52,10 +53,70 @@ default:
               label_display: visible
               provider: layout_builder
               view_mode: full
-              block_revision_id: '32'
+              block_revision_id: '4'
               block_serialized: null
               context_mapping: {  }
-            weight: 0
+            weight: '3'
             additional:
               target_uuid: 06affd80-4b32-46f3-b683-c27cceba4471
+          ff14f431-2d31-4d57-bac6-d6cab5fbddb8:
+            uuid: ff14f431-2d31-4d57-bac6-d6cab5fbddb8
+            region: content
+            configuration:
+              id: 'inline_block:motto'
+              label: 'Motto block for companies page'
+              label_display: 0
+              provider: layout_builder
+              view_mode: full
+              block_revision_id: '36'
+              block_serialized: null
+              context_mapping: {  }
+            weight: '4'
+            additional:
+              target_uuid: 540b729e-c095-44a5-97de-905c065a39d9
+          cfe7290e-d716-4ac3-ab62-1b4ed657a778:
+            uuid: cfe7290e-d716-4ac3-ab62-1b4ed657a778
+            region: content
+            configuration:
+              id: 'inline_block:text_block_type'
+              label: 'Companies Text block'
+              label_display: 0
+              provider: layout_builder
+              view_mode: full
+              block_revision_id: '38'
+              block_serialized: null
+              context_mapping: {  }
+            weight: '2'
+            additional:
+              target_uuid: 1d5da411-1a1f-4f0a-ae07-11833b6f7101
+          cb1628ad-1c4c-433a-9c1a-6643933f455f:
+            uuid: cb1628ad-1c4c-433a-9c1a-6643933f455f
+            region: content
+            configuration:
+              id: 'inline_block:company_details'
+              label: 'Company details block'
+              label_display: 0
+              provider: layout_builder
+              view_mode: full
+              block_revision_id: '39'
+              block_serialized: null
+              context_mapping: {  }
+            weight: '5'
+            additional:
+              target_uuid: 9485ab90-fe96-47f0-b532-7731170fe5cc
+          5007eff9-5853-4ebc-9959-a7b5e4343710:
+            uuid: 5007eff9-5853-4ebc-9959-a7b5e4343710
+            region: content
+            configuration:
+              id: 'inline_block:hero_block_type'
+              label: 'Herro block'
+              label_display: 0
+              provider: layout_builder
+              view_mode: full
+              block_revision_id: '37'
+              block_serialized: null
+              context_mapping: {  }
+            weight: '1'
+            additional:
+              target_uuid: b0a04954-dfd0-4aa2-9db9-57c568b6514f
         third_party_settings: {  }

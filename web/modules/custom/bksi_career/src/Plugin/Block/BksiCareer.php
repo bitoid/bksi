@@ -1,7 +1,7 @@
 <?php
 namespace Drupal\bksi_career\Plugin\Block;
 
- use Drupal;
+use Drupal;
 use Drupal\file\Entity\File;
 use Drupal\node\Entity\Node;
 use Drupal\Core\Block\BlockBase;
@@ -37,9 +37,10 @@ class BksiCareer extends BlockBase
       $footer_title = $config['career_footer_title'];
       $footer_description = $config['career_footer_description'];
       $image = $config['career_image'];
-      
-      $file = File::load($image[0]);
-      $url = $file->getFileUri();
+      if (!$image == null){
+        $file = File::load($image[0]);
+        $url = $file->getFileUri();
+      }
 //       Get data from Article content type
        $query = \Drupal::entityQuery('node');
        $nids = $query->condition('type', 'Job')
@@ -65,7 +66,7 @@ class BksiCareer extends BlockBase
         '#description' => $description,
         '#footer_title' => $footer_title,
         '#footer_description' => $footer_description,
-        '#image_url' => $url,
+        '#image_url' => $image == null ? null : $url,
         '#cache' => [
           'max-age' => 0,
         ],
@@ -124,11 +125,10 @@ class BksiCareer extends BlockBase
     $form['career_image'] = [
       '#type' => 'managed_file',
       '#title' => $this->t('Image'),
-      '#upload_location' => 'public://career_image',
+      '#upload_location' => 'public://career_images',
       '#upload_validators' => [
         'file_validate_extensions'=> ['gif png jpg jpeg']
       ],
-      '#required' => true,
       '#description' => $this->t('Image for career block'),
     ];
 

@@ -1,14 +1,14 @@
 <?php
+
 namespace Drupal\bksi_news\Plugin\Block;
 
+use Drupal\bksi_news\Service\BksiNewsService;
 use Drupal\Core\Access\AccessResult;
 use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Session\AccountInterface;
 
-use Drupal\node\Entity\Node;
-use Drupal\file\Entity\File;
-use Drupal\image\Entity\ImageStyle;
+
 
 /**
  * Provides a 'BKSI News' Block.
@@ -22,44 +22,24 @@ use Drupal\image\Entity\ImageStyle;
 
 class BksiNews extends BlockBase
 {
-
-    /**
+  /**
      * @inheritDoc
      */
-    public function build(): array {
-
+    public function build(): array
+    {
+// Get data from custom block fields
       $config = $this->getConfiguration();
-      // Get data from custom block fields
       $quantity = $config['news_quantity'];
       $slogan = $config['slogan'];
       $title = $config['title'];
-      // Get data from Article content type
-      $query = \Drupal::entityQuery('node');
-      $nids = $query->condition('type', 'article')
-        ->sort('created', 'DESC')
-        ->execute();
-
-      $news_array = [];
-
-      foreach ($nids as $nid) {
-        $node = Node::load($nid);
-        $file_id = $node->field_image->target_id;
-        $news_image = File::load($file_id)->getFileUri();
-        $url = ImageStyle::load('wide')->buildUrl($news_image);
-        $date = date("F Y", $node->created->value);
-        $body = str_replace("&nbsp;", ' ', $node->body->value);
-        $news_array[$nid]=[
-          'nid' => $nid,
-          'date' => $date,
-          'title' => $node->title->value,
-          'body'=> $body,
-          'news_image' => $url,
-        ];
-      }
-      // Return variables for block template
+      $news_type = $config['news_type'];
+//  Use bksi_news.fetcher service
+      /** @var BksiNewsService $newsData */
+      $newsData = \Drupal::service('bksi_news.fetcher');
+// Return variables for block template bksi-news.html.twig
       return [
         '#theme' => 'bksi_news',
-        '#news_array' => $news_array,
+        '#news_array' => $newsData->bksiNewsData($news_type, $quantity),
         '#quantity' => $quantity,
         '#slogan' => $slogan,
         '#title' => $title,
@@ -72,7 +52,8 @@ class BksiNews extends BlockBase
   /**
    * {@inheritdoc}
    */
-  protected function blockAccess(AccountInterface $account) {
+  protected function blockAccess(AccountInterface $account)
+  {
     return AccessResult::allowedIfHasPermission($account, 'access content');
   }
 
@@ -83,20 +64,37 @@ class BksiNews extends BlockBase
   {
     $config = $this->getConfiguration();
     $form= parent::blockForm($form, $form_state);
-// Create custom fields in block
-    $form['news_quantity'] = [
-      '#type' => 'number',
-      '#title' => $this->t('News Quantity'),
-      '#default_value' => $config['news_quantity'] ?? 0,
-      '#description' => $this->t('quantity of news on the page'),
-    ];
 
+    /** @var BksiNewsService $newsData */
+    $newsData = \Drupal::service('bksi_news.fetcher');
+
+    $news_terms = $newsData->fetchTermId();
+    $tid_projects = $news_terms[1];
+    $tid_news = $news_terms[0];
+// Create custom fields in block
+    $form['options'] = [
+      '#type' => 'value',
+      '#value' => [
+        $tid_projects => $this->t('Project news'),
+        $tid_news => $this->t('Company news'),
+      ],
+    ];
+    $form['news_type'] = [
+      '#type' => 'select',
+      '#title' => $this->t('News type'),
+      '#options' => $form['options']['#value'],
+      '#default_value' => $config['news_type'] ?? $form['options']['#value'][0],
+      '#description' => $this->t('News type option'),
+      '#required' => TRUE,
+
+    ];
     $form['slogan'] = [
       '#type' => 'textfield',
       '#size' => 'medium',
       '#title' => $this->t('Slogan'),
       '#default_value' => $config['slogan'] ?? '',
       '#description' => $this->t('Slogan for news block'),
+      '#required' => TRUE,
     ];
 
     $form['title'] = [
@@ -105,6 +103,14 @@ class BksiNews extends BlockBase
       '#title' => $this->t('Title'),
       '#default_value' => $config['title'] ?? '',
       '#description' => $this->t('Title for news block'),
+      '#required' => TRUE,
+    ];
+
+    $form['news_quantity'] = [
+      '#type' => 'number',
+      '#title' => $this->t('News Quantity'),
+      '#default_value' => $config['news_quantity'] ?? 0,
+      '#description' => $this->t('quantity of news on the page'),
     ];
     return $form;
   }
@@ -117,6 +123,7 @@ class BksiNews extends BlockBase
     $this->configuration['news_quantity'] = $form_state->getValue('news_quantity');
     $this->configuration['slogan'] = $form_state->getValue('slogan');
     $this->configuration['title'] = $form_state->getValue('title');
+    $this->configuration['news_type'] = $form_state->getValue('news_type');
   }
 
 }

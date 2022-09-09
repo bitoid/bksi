@@ -1,0 +1,4 @@
+services:
+  bksi_news.fetcher:
+    class: \Drupal\bksi_news\Service\BksiNewsService
+    arguments: ['@entity_type.manager']

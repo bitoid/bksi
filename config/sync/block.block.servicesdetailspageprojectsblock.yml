@@ -1,0 +1,33 @@
+uuid: 1660da48-531a-472d-8f36-b060aeeab40b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:company_details:e374048b-f816-45b3-857b-fe55a354c602'
+  module:
+    - block_content
+    - node
+  theme:
+    - bksi
+id: servicesdetailspageprojectsblock
+theme: bksi
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:e374048b-f816-45b3-857b-fe55a354c602'
+settings:
+  id: 'block_content:e374048b-f816-45b3-857b-fe55a354c602'
+  label: 'services details page projects block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      services: services

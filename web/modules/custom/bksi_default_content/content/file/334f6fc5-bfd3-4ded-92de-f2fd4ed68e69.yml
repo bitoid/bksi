@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 334f6fc5-bfd3-4ded-92de-f2fd4ed68e69
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: bksi-ingenieure-teaser-projekte_0.jpg
+  uri:
+    -
+      value: 'public://2022-09/bksi-ingenieure-teaser-projekte_0.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 101318
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1662886691

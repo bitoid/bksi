@@ -4,6 +4,10 @@ _meta:
   uuid: 0c153b7a-a95b-4c4c-b5eb-75b2fcfd4e50
   bundle: page
   default_langcode: en
+  depends:
+    ec2c63c1-85b8-4242-8b69-285546ac0041: block_content
+    a445a91b-3825-40d7-917e-c9f9fefe257a: block_content
+    9a4c0067-6133-4317-9352-57a11de5a7d3: block_content
 default:
   revision_uid:
     -
@@ -53,7 +57,7 @@ default:
                 label: hidden
                 settings: {  }
                 third_party_settings: {  }
-            weight: 0
+            weight: '0'
             additional: {  }
           60147769-88b6-4794-8413-2815b9e41bf1:
             uuid: 60147769-88b6-4794-8413-2815b9e41bf1
@@ -63,18 +67,63 @@ default:
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-            weight: 1
+            weight: '1'
             additional: {  }
+          3c2ba10e-6872-4cc8-9f29-165f0979b719:
+            uuid: 3c2ba10e-6872-4cc8-9f29-165f0979b719
+            region: content
+            configuration:
+              id: 'inline_block:hero_block_type'
+              label: 'Hero Block (Customers Page)'
+              label_display: 0
+              provider: layout_builder
+              view_mode: full
+              block_revision_id: '39'
+              block_serialized: null
+              context_mapping: {  }
+            weight: '2'
+            additional:
+              target_uuid: ec2c63c1-85b8-4242-8b69-285546ac0041
+          fb072506-d694-47bf-a59f-3e07091b7300:
+            uuid: fb072506-d694-47bf-a59f-3e07091b7300
+            region: content
+            configuration:
+              id: 'inline_block:text_block_type'
+              label: 'Text Block (Customers Page)'
+              label_display: 0
+              provider: layout_builder
+              view_mode: full
+              block_revision_id: '40'
+              block_serialized: null
+              context_mapping: {  }
+            weight: '3'
+            additional:
+              target_uuid: a445a91b-3825-40d7-917e-c9f9fefe257a
+          9f9e900b-961f-42ef-afc7-d33733304fd0:
+            uuid: 9f9e900b-961f-42ef-afc7-d33733304fd0
+            region: content
+            configuration:
+              id: 'inline_block:company_details'
+              label: 'Company Details (Customers Page)'
+              label_display: 0
+              provider: layout_builder
+              view_mode: full
+              block_revision_id: '41'
+              block_serialized: null
+              context_mapping: {  }
+            weight: '5'
+            additional:
+              target_uuid: 9a4c0067-6133-4317-9352-57a11de5a7d3
           ec9f5b66-1426-49f1-b151-9e470fc6dcb3:
             uuid: ec9f5b66-1426-49f1-b151-9e470fc6dcb3
             region: content
             configuration:
               id: bksi_customers
               label: 'Customers block'
-              label_display: visible
+              label_display: 0
               provider: bksi_customers
               customers_title: 'Auszug aus unserer Kundenliste'
               context_mapping: {  }
-            weight: 2
+            weight: '4'
             additional: {  }
         third_party_settings: {  }

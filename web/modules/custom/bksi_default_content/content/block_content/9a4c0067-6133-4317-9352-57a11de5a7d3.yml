@@ -1,0 +1,65 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 9a4c0067-6133-4317-9352-57a11de5a7d3
+  bundle: company_details
+  default_langcode: en
+  depends:
+    334f6fc5-bfd3-4ded-92de-f2fd4ed68e69: file
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Company Details (Customers Page)'
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  field_company_detail:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: bab4ff65-90ac-4e20-8000-980607a6fa00
+          bundle: company_detail
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1662886691
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_description:
+            -
+              value: "Bauprojekte sind immer umfangreich, längerfristig und oft anspruchsvoll. Wir sind stolz auf unser breites, vielfältiges Portfolio und freuen uns auch künftig großartige neue Bauwerke zu schaffen.\r\n\r\n"
+          field_image:
+            -
+              entity: 334f6fc5-bfd3-4ded-92de-f2fd4ed68e69
+              alt: building
+              title: ''
+              width: 1080
+              height: 1080
+          field_link_cta:
+            -
+              uri: 'internal:#'
+              title: 'Zur Projektübersicht'
+              options:
+                attributes: {  }
+          field_slogan:
+            -
+              value: Projekte
+          field_title:
+            -
+              value: 'Nachweis hoher Expertise und Leistungsfähigkeit unserer Mitarbeitenden'

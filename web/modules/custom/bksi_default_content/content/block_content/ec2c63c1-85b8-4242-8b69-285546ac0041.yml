@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: ec2c63c1-85b8-4242-8b69-285546ac0041
+  bundle: hero_block_type
+  default_langcode: en
+  depends:
+    10ff0cc8-205a-4abf-9bb7-6f54bede6b78: file
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Hero Block (Customers Page)'
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  field_image:
+    -
+      entity: 10ff0cc8-205a-4abf-9bb7-6f54bede6b78
+      alt: team
+      title: ''
+      width: 1024
+      height: 533
+  field_slogan:
+    -
+      value: Kunden
+      format: basic_html
+  field_title:
+    -
+      value: "<p>Überschrift zum Thema Kundenbeziehung</p>\r\n"
+      format: basic_html

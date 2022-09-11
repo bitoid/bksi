@@ -68,6 +68,7 @@ class ProjectsController extends ControllerBase {
         "service" => $result->field_project_service->value,
         "client" => $result->field_project_client->value,
         "sector" => $result->field_project_sector->value,
+        'tick' => $result->field_tick->value,
         "period" => "$period[0]-$period[1]",
         
       ];
@@ -76,7 +77,7 @@ class ProjectsController extends ControllerBase {
     return $data;
 
   }
-
+  
   protected function timePeriod (array $data) {
     $startTimestamp = strtotime($data[0]);
     $endTimestamp = strtotime($data[1]);

@@ -1,52 +1,35 @@
 //initial variables
-let output = document.querySelector(".output");
-let serviceEl = document.getElementById('service');
-let serviceDropdown = document.getElementById('service-dropdown');
-let buildingEl = document.getElementById('building');
-let buildingDropdown = document.getElementById('building-dropdown');
-let sectorEl = document.getElementById('sector');
-let sectorDropdown = document.getElementById('sector-dropdown');
-let sectorDrop = document.querySelector(".sector-drop");
-let buildingDrop = document.querySelector(".building-drop");
-let serviceDrop = document.querySelector(".service-drop");
+const output = document.querySelector(".output");
+const sectorDrop = document.querySelector(".sector-drop");
+const buildingDrop = document.querySelector(".building-drop");
+const serviceDrop = document.querySelector(".service-drop");
 const container = document.getElementById("container");
+const allProjectsEl = document.getElementById('all-projects');
+const currentprojectEl = document.getElementById('curent-projects');
+const clearProjectsEl = document.getElementById('clear-projects');
+let groupItems = Array.from(document.querySelectorAll('.group-item'));
 let templateHtml = '';
 let data = [];
 let projectsArr = [];
 let filteredProjects = [];
+let chosenItems = [];
 
 async function fetchData() {
-    const response = await fetch('/bksi/projects/data');
-    let temp = await response.json();
-    return temp.data;
-}
-
-function filterWithDropdown (arr) {
-  let filterdArr = [...arr];
-
-  if(serviceEl.innerText.toLowerCase() !== 'service'){
-    filterdArr = filterdArr.filter(e => e["service"].toLowerCase() === serviceEl.innerText.toLowerCase());
-  }
-  if(buildingEl.innerText.toLowerCase() !== 'building type'){
-    filterdArr = filterdArr.filter(e => e["building type"].toLowerCase() === buildingEl.innerText.toLowerCase());
-  }
-  if(sectorEl.innerText.toLowerCase() !== 'sector'){
-    filterdArr = filterdArr.filter(e => e["sector"].toLowerCase() === sectorEl.innerText.toLowerCase());
-  }
-
-  return filterdArr;
+  const response = await fetch('/bksi/projects/data');
+  let temp = await response.json();
+  return temp.data;
 }
 
 function displayData(arr) {
-    output.innerHTML = "";
-    templateHtml = '';
-    projectsArr = [];
+  output.innerHTML = "";
+  templateHtml = '';
+  projectsArr = [];
 
-    //declaring html template for projects
-    for (projectsData of arr) {
-        templateHtml = `
+  //declaring html template for projects
+  for (projectsData of arr) {
+    templateHtml = `
         <div class="group md:relative md:overflow-hidden">
-               <a href="/node/${projectsData['nid']}" class="relative block w-full h-56 md:h-[400px] mb-5 md:mb-0">
+               <a href="/node/${projectsData['nid']}" class="${parseInt(projectsData['tick']) === 1 ? 'pointer-events-none relative block w-full h-56 md:h-[400px] mb-5 md:mb-0' : 'relative block w-full h-56 md:h-[400px] mb-5 md:mb-0'}">
                     <div class="relative fade-in-image-container h-full">
                         <img class="w-full fade-in-image h-full object-cover" src="${projectsData['image']}" alt=""/>
                     </div>
@@ -79,35 +62,26 @@ function displayData(arr) {
 
                         </div>
                     </div>
-                    <a href="/node/${projectsData['nid']}" class="absolute right-5 bottom-5 w-10 h-10 rounded-full bg-white hidden md:flex items-center justify-center"><img src="modules/custom/projects/images/arrow-textlinks.svg" alt=""/></a>
-               </div>
+                    <a href="/node/${projectsData['nid']}"
+                        class="${parseInt(projectsData['tick']) === 1 ? 'hidden pointer-events-none' : 'absolute right-5 bottom-5 w-10 h-10 rounded-full bg-white hidden md:flex items-center justify-center'} "><img
+                            src="modules/custom/projects/images/arrow-textlinks.svg" alt=""></a>
+                  </div>
             </div>
              `;
-        projectsArr.push(templateHtml);
-    }
+    projectsArr.push(templateHtml);
+  }
+  let counter = 8;
+  let i = projectsArr.length < counter ? projectsArr.length : counter;
+  for (let k = projectsArr.length; k > projectsArr.length - i; k--) {
+    output.innerHTML += projectsArr[k - 1];
+  }
 
-    let counter = 8;
-    let i = projectsArr.length < counter ? projectsArr.length: counter;
-    for (let k = projectsArr.length; k > projectsArr.length - i; k--){
-      output.innerHTML += projectsArr[k-1];
-    }
-
-    document.querySelectorAll('.fade-in-image-container').forEach(fadeInIMageContainer => observer.observe(fadeInIMageContainer), { threshold: [0.2] });
-    document.querySelectorAll('.text-fade').forEach(textFade => observer.observe(textFade), { threshold: [0.2] });
+  document.querySelectorAll('.fade-in-image-container').forEach(fadeInIMageContainer => observer.observe(fadeInIMageContainer), { threshold: [0.2] });
+  document.querySelectorAll('.text-fade').forEach(textFade => observer.observe(textFade), { threshold: [0.2] });
 
 }
 
-function filterWithCompany (arr) {
-  let company = window.localStorage.getItem("client");
-  window.localStorage.removeItem("client");
-
-  if(company){
-    return arr.filter(e => e.client == company);
-  }
-  return arr;
-};
-
-async function setup () {
+async function setup() {
   data = await fetchData();
   filteredProjects = filterWithCompany(data);
 
@@ -124,17 +98,110 @@ async function setup () {
   });
 
   container.addEventListener('click', e => {
-    if(!e.target.closest(".project-dropdown")) return;
+    if (!e.target.closest(".project-dropdown")) return;
     let type = e.target.closest(".project-dropdown").id.split("-")[0];
-    if(!e.target.closest(`#${type}-dropdown`)) return;
+    if (!e.target.closest(`#${type}-dropdown`)) return;
+    let value = e.target;
+    let trimedValue = value.innerText.trim();
+    e.target.closest('.group').classList.toggle('active');
+    clearProjectsEl.classList.remove('hidden');
+    if (!currentprojectEl.innerHTML.includes(`${trimedValue.slice(0, 6)}`)) {
+      let btnEl = document.createElement('button');
+      btnEl.classList.add('curently-chosen', 'px-5', 'py-4', 'flex', 'items-center', 'gap-9', 'rounded-[50px]', 'border-2', 'bg-mainBlack', 'text-white', 'border-mainBlack');
+      let spanEl = document.createElement('span');
+      spanEl.classList.add('text-[15px]', 'leading-[22px]', 'tracking-[0.75px]', 'truncate', 'max-w-[150px]');
+      spanEl.textContent = trimedValue;
+      let imEl = document.createElement('i');
+      imEl.classList.add('fa', 'fa-times', 'text-2xl');
+      imEl.ariaHidden = 'TRUE';
+      btnEl.appendChild(spanEl);
+      btnEl.appendChild(imEl);
+      currentprojectEl.appendChild(btnEl);
+    }
 
-    let value = e.target.innerText.trim();
-    document.getElementById(`${type}`).innerText = value;
+    allProjectsEl.addEventListener('click', () => {
+      currentprojectEl.innerHTML = '';
+      clearProjectsEl.classList.add('hidden');
+      displayData(data);
+    })
 
-    filteredProjects = filterWithDropdown(data);
-    displayData(filteredProjects);
+    currentprojectEl.addEventListener('click', (e) => {
+      if (!e.target.closest('.curently-chosen')) return;
+      e.target.closest('.curently-chosen').remove();
+      if (currentprojectEl.childNodes.length < 1) {
+        clearProjectsEl.classList.add('hidden')
+      }
+      if (chosenItems.length >= 1) {
+        filteredProjects = filterWithChosenItems(data, currentprojectEl.childNodes)
+        displayData(filteredProjects)
+      } else {
+        displayData(data)
+      }
+    })
+    filteredProjects = filterWithChosenItems(data, currentprojectEl.childNodes)
+    displayData(filteredProjects)
   });
 
+  checkProjectsToDisable(data, groupItems);
   displayData(filteredProjects);
+
 }
 setup();
+
+
+function filterWithChosenItems(arr1, arr2) {
+  chosenItems = [];
+  for (let i = 0; i < arr1.length; i++) {
+    for (let prop in arr1[i]) {
+      for (let j = 0; j < arr2.length; j++) {
+        if (arr2[j].innerText.toLowerCase() === arr1[i][prop].toLowerCase() && !chosenItems.includes(arr1[i])) {
+          chosenItems.push(arr1[i])
+        }
+      }
+    }
+  }
+
+  return chosenItems;
+}
+
+function filterWithCompany(arr) {
+  let company = window.localStorage.getItem("client");
+  window.localStorage.removeItem("client");
+
+  if (company) {
+    return arr.filter(e => e.client == company);
+  }
+
+  return arr;
+};
+
+
+function checkProjectsToDisable(arr1, arr2) {
+  let arr = []
+  let elemsToDisable = []
+  for (let i = 0; i < arr2.length; i++) {
+    elemsToDisable.push(arr2[i].innerText.toLowerCase().trim())
+  }
+
+  let obj = Object.keys(arr1)
+  for (let i = 0; i < obj.length; i++) {
+    arr.push(Object.values(arr1[i]))
+  }
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr[i].length; j++) {
+      arr[i][j] = arr[i][j].toLowerCase().trim()
+    }
+  }
+
+  for (let i = 0; i < arr.length; i++) {
+    elemsToDisable = elemsToDisable.filter(e => !arr[i].includes(e))
+  }
+
+  for (let j = 0; j < elemsToDisable.length; j++) {
+    for (let i = 0; i < arr2.length; i++) {
+      if (elemsToDisable[j] === arr2[i].innerText.toLowerCase().trim()) {
+        arr2[i].parentElement.classList.add('pointer-events-none', 'opacity-60')
+      }
+    }
+  }
+}

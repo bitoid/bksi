@@ -56,7 +56,7 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '35'
+              block_revision_id: '36'
               block_serialized: null
               context_mapping: {  }
             weight: '6'
@@ -71,7 +71,7 @@ default:
               label_display: visible
               provider: layout_builder
               view_mode: full
-              block_revision_id: '17'
+              block_revision_id: '31'
               block_serialized: null
               context_mapping: {  }
             weight: '4'
@@ -86,7 +86,7 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '33'
+              block_revision_id: '37'
               block_serialized: null
               context_mapping: {  }
             weight: '2'
@@ -101,7 +101,7 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '31'
+              block_revision_id: '27'
               block_serialized: null
               context_mapping: {  }
             weight: '7'
@@ -116,7 +116,7 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '37'
+              block_revision_id: '4'
               block_serialized: null
               context_mapping: {  }
             weight: '3'
@@ -148,7 +148,7 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '13'
+              block_revision_id: '30'
               block_serialized: null
               context_mapping: {  }
             weight: '1'
@@ -165,7 +165,7 @@ default:
               news_quantity: '4'
               slogan: 'Aus dem Unternehmen'
               title: Aktuelles
-              news_type: '25'
+              news_type: '24'
               context_mapping: {  }
             weight: 7
             additional: {  }

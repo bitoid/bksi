@@ -5,12 +5,15 @@ _meta:
   bundle: project
   default_langcode: en
   depends:
+    a1f28193-01c4-4f69-89a6-bf120d6233be: node
     cd574c14-b8bb-414a-9145-742e7bed0cf4: file
     db3dc303-e055-4648-b1c0-e6382c6572ae: file
     eec9a9d3-fa6c-4726-832b-477e64585c54: file
     b47a8d3b-81b5-4d2f-b891-c42b533e1699: file
     620567f9-8b12-40aa-838f-f3cc5619a3df: file
-    0bb19a9e-cd3a-49a0-b678-7887a30eb2f6: file
+    de290511-60ee-42ca-8a83-52e6de2cd36d: taxonomy_term
+    054d1e87-fecc-452b-ba3c-8969cb0a5a16: taxonomy_term
+    1ca83c77-c301-4b96-bb7a-9a4b373b0325: taxonomy_term
 default:
   revision_uid:
     -
@@ -46,15 +49,15 @@ default:
   field_builder_name:
     -
       value: 'builder name'
+  field_customer:
+    -
+      entity: a1f28193-01c4-4f69-89a6-bf120d6233be
   field_leistung_x:
     -
       value: 'Leistung X'
   field_leistung_y_:
     -
       value: 'Leistung Y'
-  field_project_challenges:
-    -
-      value: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata'
   field_project_challenge_image:
     -
       entity: cd574c14-b8bb-414a-9145-742e7bed0cf4
@@ -62,9 +65,9 @@ default:
       title: ''
       width: 940
       height: 625
-  field_project_client:
+  field_project_challenges:
     -
-      value: 'SF Bau GmbH & Co.KG'
+      value: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata'
   field_project_description:
     -
       value: 'Ausgangssituation, tiefere Leistungsbeschreibung (Welche Leistungen hat BKSi erbracht), Kooperationspartner (Architekten o.Ä.) Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata'
@@ -94,12 +97,6 @@ default:
       title: ''
       width: 1200
       height: 577
-    -
-      entity: 0bb19a9e-cd3a-49a0-b678-7887a30eb2f6
-      alt: img3
-      title: ''
-      width: 1080
-      height: 720
   field_project_period:
     -
       value: '2020-09-16'
@@ -107,16 +104,19 @@ default:
       value: '2022-08-17'
   field_project_sector:
     -
-      value: 'Semiconductor & Information Technology'
+      entity: de290511-60ee-42ca-8a83-52e6de2cd36d
   field_project_service:
     -
-      value: 'Digital planning / BIM'
+      entity: 054d1e87-fecc-452b-ba3c-8969cb0a5a16
   field_project_title:
     -
       value: 'Erweiterung Produktion Werk 4 Bau 50-53 Stuttgart-Zuffenhausen'
   field_project_type:
     -
-      value: 'Residential construction'
+      entity: 1ca83c77-c301-4b96-bb7a-9a4b373b0325
   field_sustainability_issues:
     -
       value: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata'
+  field_tick:
+    -
+      value: true

@@ -52,7 +52,7 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '10'
+              block_revision_id: '14'
               block_serialized: null
               context_mapping: {  }
             weight: 0
@@ -69,7 +69,7 @@ default:
               news_quantity: '4'
               slogan: 'Aus dem Unternehmen'
               title: Aktuelles
-              news_type: '1'
+              news_type: '25'
               context_mapping: {  }
             weight: 1
             additional: {  }

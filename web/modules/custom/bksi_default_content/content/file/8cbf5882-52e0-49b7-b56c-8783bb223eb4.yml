@@ -12,7 +12,7 @@ default:
       value: bksi-ingenieure-leistungen-tragwerksplanung_2.svg
   uri:
     -
-      value: 'public://2022-08/bksi-ingenieure-leistungen-tragwerksplanung_2_0_0.svg'
+      value: 'public://2022-08/bksi-ingenieure-leistungen-tragwerksplanung_2_0_0_2.svg'
   filemime:
     -
       value: image/svg+xml

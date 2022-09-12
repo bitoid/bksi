@@ -12,7 +12,7 @@ default:
       value: bksi-ingenieure-leistungen-bautechnische-pruefung.svg
   uri:
     -
-      value: 'public://2022-08/bksi-ingenieure-leistungen-bautechnische-pruefung_0_0.svg'
+      value: 'public://2022-08/bksi-ingenieure-leistungen-bautechnische-pruefung_0_0_2.svg'
   filemime:
     -
       value: image/svg+xml

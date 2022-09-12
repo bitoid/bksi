@@ -12,7 +12,7 @@ default:
       value: bksi-ingenieure-leistungen-gutachten.svg
   uri:
     -
-      value: 'public://2022-08/bksi-ingenieure-leistungen-gutachten_0.svg'
+      value: 'public://2022-08/bksi-ingenieure-leistungen-gutachten_0_0.svg'
   filemime:
     -
       value: image/svg+xml

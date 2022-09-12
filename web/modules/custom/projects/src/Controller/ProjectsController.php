@@ -1,6 +1,8 @@
 <?php
 
 namespace Drupal\projects\Controller;
+
+use Drupal\taxonomy\Entity\Term;
 use Drupal\Core\Controller\ControllerBase;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\file\Entity\File;
@@ -51,29 +53,38 @@ class ProjectsController extends ControllerBase {
       ->execute();
 
     $results = $node_storage->loadMultiple($nids);
-
+    
     $data = [];
-
     foreach ($results as $result) {
+      
+      $target_id= $result->field_customer->getValue()[0]['target_id'];
+      $cids = $node_storage->getQuery()
+        ->condition('type', 'customer')
+        ->condition('nid', $target_id)
+        ->execute();
 
+      $customers = $node_storage->loadMultiple($cids)[$target_id];
+      $title = $customers->getTitle();
+      $building_type = Term::Load($result->field_building_type->target_id)->get('name')->value;
+      $service = Term::Load($result->field_service->target_id)->get('name')->value;
+      $sector = Term::Load($result->field_sector->target_id)->get('name')->value;
       $imgUrl = $this->getImgUrl($result->field_project_header_image->getValue()[0]['target_id']);
 
       $period = $this->timePeriod([$result->field_project_period[0]->value, $result->field_project_period[1]->value]);
-
       $data[] = [
         "nid" => $result->nid->value,
         "title" => $result->field_project_title->value,
         "image" => $imgUrl,
-        "building type" => $result->field_project_type->value,
-        "service" => $result->field_project_service->value,
-        "client" => $result->field_project_client->value,
-        "sector" => $result->field_project_sector->value,
+        "building type" => $building_type,
+        "service" => $service,
+        "customer" => $title,
+        "sector" => $sector,
         'tick' => $result->field_tick->value,
         "period" => "$period[0]-$period[1]",
         
       ];
-    }
 
+    }
     return $data;
 
   }

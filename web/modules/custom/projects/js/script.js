@@ -47,7 +47,7 @@ function displayData(arr) {
                             </div>
                             <div flex flex-col gap-3>
                                 <p>Auftraggeber</p>
-                                <p> ${projectsData['client']}</p>
+                                <p> ${projectsData['customer']}</p>
                             </div>
                         </div>
                         <div class="flex flex-col gap-5">
@@ -102,8 +102,9 @@ async function setup() {
     let type = e.target.closest(".project-dropdown").id.split("-")[0];
     if (!e.target.closest(`#${type}-dropdown`)) return;
     let value = e.target;
+    console.log(e.target.closest(`#${type}-dropdown`))
     let trimedValue = value.innerText.trim();
-    e.target.closest('.group').classList.toggle('active');
+    // e.target.closest('.group').classList.toggle('active');
     clearProjectsEl.classList.remove('hidden');
     if (!currentprojectEl.innerHTML.includes(`${trimedValue.slice(0, 6)}`)) {
       let btnEl = document.createElement('button');
@@ -131,38 +132,17 @@ async function setup() {
       if (currentprojectEl.childNodes.length < 1) {
         clearProjectsEl.classList.add('hidden')
       }
-      if (chosenItems.length >= 1) {
-        filteredProjects = filterWithChosenItems(data, currentprojectEl.childNodes)
-        displayData(filteredProjects)
-      } else {
-        displayData(data)
-      }
+      // filteredProjects = filterWithDropdown(data);
+      displayData(filteredProjects);
     })
-    filteredProjects = filterWithChosenItems(data, currentprojectEl.childNodes)
+    // filteredProjects = filterWithDropdown(data);
     displayData(filteredProjects)
   });
-
-  checkProjectsToDisable(data, groupItems);
   displayData(filteredProjects);
-
+  checkProjectsToDisable(data, currentprojectEl.childNodes)
 }
 setup();
 
-
-function filterWithChosenItems(arr1, arr2) {
-  chosenItems = [];
-  for (let i = 0; i < arr1.length; i++) {
-    for (let prop in arr1[i]) {
-      for (let j = 0; j < arr2.length; j++) {
-        if (arr2[j].innerText.toLowerCase() === arr1[i][prop].toLowerCase() && !chosenItems.includes(arr1[i])) {
-          chosenItems.push(arr1[i])
-        }
-      }
-    }
-  }
-
-  return chosenItems;
-}
 
 function filterWithCompany(arr) {
   let company = window.localStorage.getItem("client");
@@ -177,31 +157,21 @@ function filterWithCompany(arr) {
 
 
 function checkProjectsToDisable(arr1, arr2) {
-  let arr = []
-  let elemsToDisable = []
-  for (let i = 0; i < arr2.length; i++) {
-    elemsToDisable.push(arr2[i].innerText.toLowerCase().trim())
+  let filteredProjects = [...arr1];
+  let itemsToDisable = [];
+  for (let i = 0; i < groupItems.length; i++) {
+    itemsToDisable[i] = groupItems[i].innerText.toLowerCase().trim();
   }
 
-  let obj = Object.keys(arr1)
-  for (let i = 0; i < obj.length; i++) {
-    arr.push(Object.values(arr1[i]))
-  }
-  for (let i = 0; i < arr.length; i++) {
-    for (let j = 0; j < arr[i].length; j++) {
-      arr[i][j] = arr[i][j].toLowerCase().trim()
-    }
-  }
-
-  for (let i = 0; i < arr.length; i++) {
-    elemsToDisable = elemsToDisable.filter(e => !arr[i].includes(e))
-  }
-
-  for (let j = 0; j < elemsToDisable.length; j++) {
-    for (let i = 0; i < arr2.length; i++) {
-      if (elemsToDisable[j] === arr2[i].innerText.toLowerCase().trim()) {
-        arr2[i].parentElement.classList.add('pointer-events-none', 'opacity-60')
+  for (let j = 0; j < filteredProjects.length; j++) {
+    for (let i = 0; i < itemsToDisable.length; i++) {
+      if (filteredProjects[j]['service'].toLowerCase().trim() !== itemsToDisable[i] || filteredProjects[j]['building type'].toLowerCase().trim() !== itemsToDisable[i] || filteredProjects[j]['sector'].toLowerCase().trim() !== itemsToDisable[i]) {
+        itemsToDisable.splice(itemsToDisable[i], 1)
       }
     }
   }
+  console.log(itemsToDisable)
+
 }
+
+

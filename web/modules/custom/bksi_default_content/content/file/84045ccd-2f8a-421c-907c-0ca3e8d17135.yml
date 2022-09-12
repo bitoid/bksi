@@ -12,7 +12,7 @@ default:
       value: bksi-ingenieure-leistungen-bauwerkspruefung_0.svg
   uri:
     -
-      value: 'public://2022-08/bksi-ingenieure-leistungen-bauwerkspruefung_0_0.svg'
+      value: 'public://2022-08/bksi-ingenieure-leistungen-bauwerkspruefung_0_0_0.svg'
   filemime:
     -
       value: image/svg+xml

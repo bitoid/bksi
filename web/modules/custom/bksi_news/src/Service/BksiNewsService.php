@@ -8,8 +8,6 @@ use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\image\Entity\ImageStyle;
 use Drupal\node\Entity\Node;
 use Drupal\file\Entity\File;
-//use Drupal\taxonomy\Entity\Term;
-
 
 class BksiNewsService
 {
@@ -23,7 +21,6 @@ class BksiNewsService
   public function bksiNewsData(string $type, int $quantity): array {
     // Return data with Article/project news content
     return array_map(function (Node $item) {
-//      $term_name = Term::load($item->field_news_type->target_id)->get('name')->value;
       $file_id = $item->field_image->target_id;
       $news_image = File::load($file_id)->getFileUri();
       $url = ImageStyle::load('original')->buildUrl($news_image);

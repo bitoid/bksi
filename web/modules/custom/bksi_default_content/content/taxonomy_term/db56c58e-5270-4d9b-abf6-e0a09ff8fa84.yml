@@ -1,0 +1,26 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: db56c58e-5270-4d9b-abf6-e0a09ff8fa84
+  bundle: service
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: General
+  weight:
+    -
+      value: 1
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en

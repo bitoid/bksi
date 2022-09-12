@@ -1,0 +1,26 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 466d4996-a540-4089-908d-88fd59a907bc
+  bundle: service
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: Building
+  weight:
+    -
+      value: 3
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en

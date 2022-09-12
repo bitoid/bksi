@@ -8,7 +8,6 @@ _meta:
     e795c38b-d04f-40fa-9353-98758e0653f3: block_content
     3c349a1d-acb4-46f2-83dc-07367ac0af52: block_content
     084e09ca-3589-45e0-b139-d9697572d523: block_content
-    7e79fff6-b48d-4481-b514-5c0672b99f0f: block_content
     2c40fe7b-3f3b-476f-9937-e1d077ab2a09: block_content
     c4db11fc-e04d-4bd5-a059-a58963f8b49b: block_content
 default:
@@ -70,7 +69,7 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '29'
+              block_revision_id: '4'
               block_serialized: null
               context_mapping: {  }
             weight: '1'
@@ -85,7 +84,7 @@ default:
               label_display: visible
               provider: layout_builder
               view_mode: full
-              block_revision_id: '6'
+              block_revision_id: '39'
               block_serialized: null
               context_mapping: {  }
             weight: '3'
@@ -100,27 +99,12 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '22'
+              block_revision_id: '34'
               block_serialized: null
               context_mapping: {  }
             weight: '6'
             additional:
               target_uuid: 084e09ca-3589-45e0-b139-d9697572d523
-          baae5b7c-b4f4-4989-99e1-4d61e4d9506d:
-            uuid: baae5b7c-b4f4-4989-99e1-4d61e4d9506d
-            region: content
-            configuration:
-              id: 'inline_block:services'
-              label: 'services page block'
-              label_display: visible
-              provider: layout_builder
-              view_mode: full
-              block_revision_id: '27'
-              block_serialized: null
-              context_mapping: {  }
-            weight: '2'
-            additional:
-              target_uuid: 7e79fff6-b48d-4481-b514-5c0672b99f0f
           9a53443e-cc2f-4465-8877-a2286b5104bc:
             uuid: 9a53443e-cc2f-4465-8877-a2286b5104bc
             region: content
@@ -130,7 +114,7 @@ default:
               label_display: visible
               provider: layout_builder
               view_mode: full
-              block_revision_id: '32'
+              block_revision_id: '37'
               block_serialized: null
               context_mapping: {  }
             weight: '5'
@@ -145,7 +129,7 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '17'
+              block_revision_id: '19'
               block_serialized: null
               context_mapping: {  }
             weight: '0'

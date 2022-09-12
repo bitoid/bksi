@@ -6,7 +6,6 @@ _meta:
   default_langcode: en
   depends:
     5b88b192-e24f-4b64-b62c-39156d3fec29: block_content
-    709fc9d0-89b1-4d43-bb42-f5729fad078f: block_content
 default:
   revision_uid:
     -
@@ -53,27 +52,12 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '27'
+              block_revision_id: '15'
               block_serialized: null
               context_mapping: {  }
             weight: '2'
             additional:
               target_uuid: 5b88b192-e24f-4b64-b62c-39156d3fec29
-          d6af7f29-e02d-453a-a75b-0e8247f2918e:
-            uuid: d6af7f29-e02d-453a-a75b-0e8247f2918e
-            region: content
-            configuration:
-              id: 'inline_block:services'
-              label: Services
-              label_display: visible
-              provider: layout_builder
-              view_mode: full
-              block_revision_id: '25'
-              block_serialized: null
-              context_mapping: {  }
-            weight: '4'
-            additional:
-              target_uuid: 709fc9d0-89b1-4d43-bb42-f5729fad078f
           2d3356ad-4728-44ea-bfd7-23ebf4a434ee:
             uuid: 2d3356ad-4728-44ea-bfd7-23ebf4a434ee
             region: content

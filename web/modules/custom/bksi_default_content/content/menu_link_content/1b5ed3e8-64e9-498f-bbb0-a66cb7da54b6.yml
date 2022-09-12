@@ -1,0 +1,42 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 1b5ed3e8-64e9-498f-bbb0-a66cb7da54b6
+  bundle: menu_link_content
+  default_langcode: en
+  depends:
+    d1b8e2a1-5ff1-4780-b780-162b4d3facc2: menu_link_content
+    34650152-5e38-4751-9267-aa6d85fa8cc4: node
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: 'Digitale Planung / BIM'
+  menu_name:
+    -
+      value: main-menu
+  link:
+    -
+      target_uuid: 34650152-5e38-4751-9267-aa6d85fa8cc4
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: 3
+  expanded:
+    -
+      value: false
+  parent:
+    -
+      value: 'menu_link_content:d1b8e2a1-5ff1-4780-b780-162b4d3facc2'
+  revision_translation_affected:
+    -
+      value: true

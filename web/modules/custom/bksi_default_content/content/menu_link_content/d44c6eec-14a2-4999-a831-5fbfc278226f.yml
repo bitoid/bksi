@@ -1,0 +1,42 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: d44c6eec-14a2-4999-a831-5fbfc278226f
+  bundle: menu_link_content
+  default_langcode: en
+  depends:
+    d1b8e2a1-5ff1-4780-b780-162b4d3facc2: menu_link_content
+    24c627cf-9109-44e3-923b-4ec45bbb3592: node
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: 'Bautechnische Prüfung'
+  menu_name:
+    -
+      value: main-menu
+  link:
+    -
+      target_uuid: 24c627cf-9109-44e3-923b-4ec45bbb3592
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: 6
+  expanded:
+    -
+      value: false
+  parent:
+    -
+      value: 'menu_link_content:d1b8e2a1-5ff1-4780-b780-162b4d3facc2'
+  revision_translation_affected:
+    -
+      value: true

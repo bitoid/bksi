@@ -1,47 +1,19 @@
-uuid: ea5d9db7-06fe-4726-93ac-4af440b6a937
+uuid: 844979b7-4373-4396-a9f4-479813b9b297
 langcode: en
 status: true
 dependencies:
   module:
     - node
-    - options
+    - taxonomy
 id: node.field_project_sector
 field_name: field_project_sector
 entity_type: node
-type: list_string
+type: entity_reference
 settings:
-  allowed_values:
-    -
-      value: 'Energy supply'
-      label: 'Energy supply'
-    -
-      value: 'Transport & Logistics'
-      label: 'Transport & Logistics'
-    -
-      value: 'automotive industry'
-      label: 'automotive industry'
-    -
-      value: 'Semiconductor & Information Technology'
-      label: 'Semiconductor & Information Technology'
-    -
-      value: 'Industry & Trade'
-      label: 'Industry & Trade'
-    -
-      value: Housing
-      label: Housing
-    -
-      value: Healthcare
-      label: Healthcare
-    -
-      value: 'Contractors & Property Developers'
-      label: 'Contractors & Property Developers'
-    -
-      value: 'General planners & architects'
-      label: 'General planners & architects'
-  allowed_values_function: ''
-module: options
+  target_type: taxonomy_term
+module: core
 locked: false
-cardinality: 1
+cardinality: -1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

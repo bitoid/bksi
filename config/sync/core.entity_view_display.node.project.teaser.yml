@@ -20,6 +20,7 @@ dependencies:
     - field.field.node.project.field_project_title
     - field.field.node.project.field_project_type
     - field.field.node.project.field_sustainability_issues
+    - field.field.node.project.field_tick
     - node.type.project
   module:
     - user
@@ -50,3 +51,4 @@ hidden:
   field_project_title: true
   field_project_type: true
   field_sustainability_issues: true
+  field_tick: true

@@ -1,12 +1,11 @@
-uuid: dc1d77c7-9571-4cce-b324-0e32abb4b0f3
+uuid: cebeb70e-fccb-45b8-824a-8c41d52b8135
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_project_type
     - node.type.project
-  module:
-    - options
+    - taxonomy.vocabulary.building
 id: node.project.field_project_type
 field_name: field_project_type
 entity_type: node
@@ -17,5 +16,14 @@ required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
-field_type: list_string
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      building: building
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

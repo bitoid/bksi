@@ -1,0 +1,8 @@
+uuid: 12cf105e-0d23-436a-be4d-b1db9ac5727a
+langcode: en
+status: true
+dependencies: {  }
+name: sector
+vid: sector
+description: ''
+weight: 0

@@ -8,7 +8,8 @@ third_party_settings:
   menu_ui:
     available_menus:
       - main
-    parent: 'main:'
+      - main-menu
+    parent: 'main-menu:menu_link_content:d1b8e2a1-5ff1-4780-b780-162b4d3facc2'
 name: services
 type: services
 description: 'content type for services'

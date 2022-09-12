@@ -1,0 +1,8 @@
+uuid: dd10693d-bab1-4151-9535-4dbed439d50f
+langcode: en
+status: true
+dependencies: {  }
+name: service
+vid: service
+description: ''
+weight: 0

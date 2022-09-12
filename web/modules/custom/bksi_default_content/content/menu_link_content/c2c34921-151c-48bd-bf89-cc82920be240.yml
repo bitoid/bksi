@@ -1,0 +1,42 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: c2c34921-151c-48bd-bf89-cc82920be240
+  bundle: menu_link_content
+  default_langcode: en
+  depends:
+    d1b8e2a1-5ff1-4780-b780-162b4d3facc2: menu_link_content
+    cdcbf200-cb67-4df1-9856-9aedbb1a1eaf: node
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: Generalplanung
+  menu_name:
+    -
+      value: main-menu
+  link:
+    -
+      target_uuid: cdcbf200-cb67-4df1-9856-9aedbb1a1eaf
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: 2
+  expanded:
+    -
+      value: false
+  parent:
+    -
+      value: 'menu_link_content:d1b8e2a1-5ff1-4780-b780-162b4d3facc2'
+  revision_translation_affected:
+    -
+      value: true

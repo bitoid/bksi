@@ -1,0 +1,42 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 4fe97106-f532-4524-a9c2-ab755b1e7ee5
+  bundle: menu_link_content
+  default_langcode: en
+  depends:
+    d1b8e2a1-5ff1-4780-b780-162b4d3facc2: menu_link_content
+    c60d9e93-267c-48bd-babe-7a74b2a15905: node
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: gutachten
+  menu_name:
+    -
+      value: main-menu
+  link:
+    -
+      target_uuid: c60d9e93-267c-48bd-babe-7a74b2a15905
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: 5
+  expanded:
+    -
+      value: false
+  parent:
+    -
+      value: 'menu_link_content:d1b8e2a1-5ff1-4780-b780-162b4d3facc2'
+  revision_translation_affected:
+    -
+      value: true

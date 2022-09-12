@@ -1,0 +1,70 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 24c627cf-9109-44e3-923b-4ec45bbb3592
+  bundle: services
+  default_langcode: en
+  depends:
+    78d78f57-686f-4715-a386-0a3e6195a9d5: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Bautechnische Prüfung'
+  created:
+    -
+      value: 1663012352
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  path:
+    -
+      alias: /services/Bautechnische-Prüfung
+      langcode: en
+  field_contact_person:
+    -
+      value: 'Frank Steller'
+      format: basic_html
+    -
+      value: 'Volker Kunberger'
+      format: basic_html
+  field_email:
+    -
+      value: info@bksi.de
+  field_service_description:
+    -
+      value: "<p>Tragwerksplanung alle Leistungsphasen, Statische Berechnungen, Finite Element Analysen, Erstellung Schal- und Bewehrungspläne, Erdbebennachweise, Brandschutznachweise eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem</p>\r\n"
+      format: basic_html
+  field_service_icon:
+    -
+      entity: 78d78f57-686f-4715-a386-0a3e6195a9d5
+      display: true
+      description: ''
+  field_service_slogan:
+    -
+      value: 'Mehr als nur Statik. Bei uns heißt es Bautechnische Prüfung.'
+  field_service_summary:
+    -
+      value: "<p>Kurzer zusätzlicher Text, der mit wichtigen Schlagworten für die Suchmaschinen versehen ist. eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren eos et accusam et justo</p>\r\n"
+      format: basic_html
+  field_service_title:
+    -
+      value: 'Unser Tagwerk: Bautechnische Prüfung'
+      format: basic_html
+  field_service_weight:
+    -
+      value: 6
+  field_telefon:
+    -
+      value: '0711 /36 53 38 - 30'

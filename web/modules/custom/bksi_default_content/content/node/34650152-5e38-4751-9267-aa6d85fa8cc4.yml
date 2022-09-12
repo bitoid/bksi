@@ -1,0 +1,70 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 34650152-5e38-4751-9267-aa6d85fa8cc4
+  bundle: services
+  default_langcode: en
+  depends:
+    9baef1f5-2d6c-492b-bac2-bf98167530aa: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Digitale Planung / BIM'
+  created:
+    -
+      value: 1663011839
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  path:
+    -
+      alias: /services/bim
+      langcode: en
+  field_contact_person:
+    -
+      value: 'Frank Steller'
+      format: basic_html
+    -
+      value: 'Volker Kunberger'
+      format: basic_html
+  field_email:
+    -
+      value: info@bksi.de
+  field_service_description:
+    -
+      value: "<p>Tragwerksplanung alle Leistungsphasen, Statische Berechnungen, Finite Element Analysen, Erstellung Schal- und Bewehrungspläne, Erdbebennachweise, Brandschutznachweise eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem</p>\r\n"
+      format: basic_html
+  field_service_icon:
+    -
+      entity: 9baef1f5-2d6c-492b-bac2-bf98167530aa
+      display: true
+      description: ''
+  field_service_slogan:
+    -
+      value: 'Mehr als nur Statik. Bei uns heißt es Digital Bim.'
+  field_service_summary:
+    -
+      value: "<p>Kurzer zusätzlicher Text, der mit wichtigen Schlagworten für die Suchmaschinen versehen ist. eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren eos et accusam et justo</p>\r\n"
+      format: basic_html
+  field_service_title:
+    -
+      value: 'Unser Tagwerk: Digitale Planung / BIM'
+      format: basic_html
+  field_service_weight:
+    -
+      value: 3
+  field_telefon:
+    -
+      value: '0711 /36 53 38 - 30'

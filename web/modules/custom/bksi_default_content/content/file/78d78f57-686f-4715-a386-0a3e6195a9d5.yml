@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 78d78f57-686f-4715-a386-0a3e6195a9d5
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: bksi-ingenieure-leistungen-bautechnische-pruefung_32.svg
+  uri:
+    -
+      value: 'public://2022-09/bksi-ingenieure-leistungen-bautechnische-pruefung_32.svg'
+  filemime:
+    -
+      value: image/svg+xml
+  filesize:
+    -
+      value: 1648
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1663012375

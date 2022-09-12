@@ -12,7 +12,7 @@ default:
       value: house-3.jpeg
   uri:
     -
-      value: 'public://2022-08/house-3.jpeg'
+      value: 'public://2022-08/house-3_20.jpeg'
   filemime:
     -
       value: image/jpeg

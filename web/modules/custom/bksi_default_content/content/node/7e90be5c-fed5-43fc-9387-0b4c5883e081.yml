@@ -7,9 +7,9 @@ _meta:
   depends:
     e795c38b-d04f-40fa-9353-98758e0653f3: block_content
     3c349a1d-acb4-46f2-83dc-07367ac0af52: block_content
-    084e09ca-3589-45e0-b139-d9697572d523: block_content
     2c40fe7b-3f3b-476f-9937-e1d077ab2a09: block_content
     c4db11fc-e04d-4bd5-a059-a58963f8b49b: block_content
+    084e09ca-3589-45e0-b139-d9697572d523: block_content
 default:
   revision_uid:
     -
@@ -58,7 +58,7 @@ default:
               info: ''
               view_mode: full
               context_mapping: {  }
-            weight: '4'
+            weight: '5'
             additional: {  }
           24cb64cb-14fb-4947-9bdd-ad782aabb5c9:
             uuid: 24cb64cb-14fb-4947-9bdd-ad782aabb5c9
@@ -84,27 +84,12 @@ default:
               label_display: visible
               provider: layout_builder
               view_mode: full
-              block_revision_id: '39'
+              block_revision_id: '31'
               block_serialized: null
               context_mapping: {  }
-            weight: '3'
+            weight: '4'
             additional:
               target_uuid: 3c349a1d-acb4-46f2-83dc-07367ac0af52
-          922df27e-82fe-4472-b927-510cdee96cea:
-            uuid: 922df27e-82fe-4472-b927-510cdee96cea
-            region: content
-            configuration:
-              id: 'inline_block:company_details'
-              label: 'service page project block'
-              label_display: 0
-              provider: layout_builder
-              view_mode: full
-              block_revision_id: '34'
-              block_serialized: null
-              context_mapping: {  }
-            weight: '6'
-            additional:
-              target_uuid: 084e09ca-3589-45e0-b139-d9697572d523
           9a53443e-cc2f-4465-8877-a2286b5104bc:
             uuid: 9a53443e-cc2f-4465-8877-a2286b5104bc
             region: content
@@ -114,10 +99,10 @@ default:
               label_display: visible
               provider: layout_builder
               view_mode: full
-              block_revision_id: '37'
+              block_revision_id: '30'
               block_serialized: null
               context_mapping: {  }
-            weight: '5'
+            weight: '6'
             additional:
               target_uuid: 2c40fe7b-3f3b-476f-9937-e1d077ab2a09
           08d577d1-956f-4b5d-8140-096485112dfc:
@@ -135,4 +120,32 @@ default:
             weight: '0'
             additional:
               target_uuid: c4db11fc-e04d-4bd5-a059-a58963f8b49b
+          be30300a-076d-4d33-b40c-47f0a86f2447:
+            uuid: be30300a-076d-4d33-b40c-47f0a86f2447
+            region: content
+            configuration:
+              id: bksi_services
+              label: 'BKSI Services'
+              label_display: 0
+              provider: bksi_services
+              slogan: 'Unsere Geschäftsfelder im Überblick'
+              title: Leistungen
+              context_mapping: {  }
+            weight: '3'
+            additional: {  }
+          922df27e-82fe-4472-b927-510cdee96cea:
+            uuid: 922df27e-82fe-4472-b927-510cdee96cea
+            region: content
+            configuration:
+              id: 'inline_block:company_details'
+              label: 'service page project block'
+              label_display: 0
+              provider: layout_builder
+              view_mode: full
+              block_revision_id: '26'
+              block_serialized: null
+              context_mapping: {  }
+            weight: '7'
+            additional:
+              target_uuid: 084e09ca-3589-45e0-b139-d9697572d523
         third_party_settings: {  }

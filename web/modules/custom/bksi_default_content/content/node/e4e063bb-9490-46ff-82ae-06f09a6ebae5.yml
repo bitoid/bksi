@@ -99,6 +99,19 @@ default:
               title: Aktuelles
               news_type: '25'
               context_mapping: {  }
-            weight: 6
+            weight: '6'
+            additional: {  }
+          6350302c-38cd-455f-9f4b-2617eda9acb0:
+            uuid: 6350302c-38cd-455f-9f4b-2617eda9acb0
+            region: content
+            configuration:
+              id: bksi_services
+              label: 'BKSI Services'
+              label_display: 0
+              provider: bksi_services
+              slogan: 'Unsere Geschäftsfelder im Überblick'
+              title: Leistungen
+              context_mapping: {  }
+            weight: '4'
             additional: {  }
         third_party_settings: {  }

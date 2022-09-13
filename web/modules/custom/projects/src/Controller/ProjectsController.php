@@ -65,15 +65,15 @@ class ProjectsController extends ControllerBase {
 
       $customers = $node_storage->loadMultiple($cids)[$target_id];
       $title = $customers->getTitle();
-      $building_type = Term::Load($result->field_building_type->target_id)->get('name')->value;
-      $service = Term::Load($result->field_service->target_id)->get('name')->value;
-      $sector = Term::Load($result->field_sector->target_id)->get('name')->value;
+      $building_type = Term::Load($result->field_project_type->target_id)->get('name')->value;
+      $service = Term::Load($result->field_project_service->target_id)->get('name')->value;
+      $sector = Term::Load($result->field_project_sector->target_id)->get('name')->value;
       $imgUrl = $this->getImgUrl($result->field_project_header_image->getValue()[0]['target_id']);
 
       $period = $this->timePeriod([$result->field_project_period[0]->value, $result->field_project_period[1]->value]);
       $data[] = [
         "nid" => $result->nid->value,
-        "title" => $result->field_project_title->value,
+        "title" => $result->getTitle(),
         "image" => $imgUrl,
         "building type" => $building_type,
         "service" => $service,

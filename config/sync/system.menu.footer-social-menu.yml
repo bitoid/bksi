@@ -1,0 +1,8 @@
+uuid: dbaa2e37-00a0-4df1-93a4-e02e6d10a6b6
+langcode: en
+status: true
+dependencies: {  }
+id: footer-social-menu
+label: 'Footer Social Menu'
+description: 'Add footer social links in this menu'
+locked: false

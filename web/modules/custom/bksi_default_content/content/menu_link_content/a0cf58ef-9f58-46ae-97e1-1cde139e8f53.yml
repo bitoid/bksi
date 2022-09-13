@@ -1,0 +1,41 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: a0cf58ef-9f58-46ae-97e1-1cde139e8f53
+  bundle: menu_link_content
+  default_langcode: en
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: Instagram
+  menu_name:
+    -
+      value: footer-social-menu
+  link:
+    -
+      uri: 'https://www.instagram.com/bksi_gmbh/'
+      title: ''
+      options:
+        attributes: {  }
+        fa_icon: 'fa-brands fa-instagram'
+        fa_icon_prefix: fa
+        fa_icon_tag: i
+        fa_icon_appearance: only
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: 2
+  expanded:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true

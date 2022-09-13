@@ -10,7 +10,7 @@ _core:
   default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
 id: bksi_help
 theme: bksi
-region: sidebar_first
+region: left_sidebar
 weight: 0
 provider: null
 plugin: help_block

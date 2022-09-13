@@ -1,0 +1,21 @@
+uuid: 5b81778c-d53e-4746-bcc6-eaeb926a1fc4
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.copy_right
+    - field.storage.block_content.field_copy_right
+id: block_content.copy_right.field_copy_right
+field_name: field_copy_right
+entity_type: block_content
+bundle: copy_right
+label: 'Copy Right'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '© 2022 BKSI GmbH'
+default_value_callback: ''
+settings: {  }
+field_type: string

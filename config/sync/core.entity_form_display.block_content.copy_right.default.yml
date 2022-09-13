@@ -1,0 +1,29 @@
+uuid: d16a2705-eccc-4e3c-b6a0-9543617b152c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.copy_right
+    - field.field.block_content.copy_right.field_copy_right
+id: block_content.copy_right.default
+targetEntityType: block_content
+bundle: copy_right
+mode: default
+content:
+  field_copy_right:
+    type: string_textfield
+    weight: 26
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

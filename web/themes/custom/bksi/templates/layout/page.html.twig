@@ -60,8 +60,9 @@
 	{{ page.content }}
 </main>
 
-{% if page.footer %}
+{% if page.footer or page.footer_bottom %}
 	<footer role="contentinfo">
 		{{ page.footer }}
+		{{ page.footer_bottom }}
 	</footer>
 {% endif %}

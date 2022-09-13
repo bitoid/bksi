@@ -1,0 +1,21 @@
+uuid: 0e8e127d-b13e-4874-b994-23e1e4e4b4be
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.copy_right
+    - field.field.block_content.copy_right.field_copy_right
+id: block_content.copy_right.default
+targetEntityType: block_content
+bundle: copy_right
+mode: default
+content:
+  field_copy_right:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,0 +1,19 @@
+uuid: fb1ee7df-0b73-4afe-b0b8-44a544ce4f0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.imprint_custom_block
+    - field.storage.block_content.field_imprint_representative
+id: block_content.imprint_custom_block.field_imprint_representative
+field_name: field_imprint_representative
+entity_type: block_content
+bundle: imprint_custom_block
+label: 'imprint representative'
+description: 'names '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

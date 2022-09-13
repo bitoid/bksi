@@ -6,13 +6,15 @@ dependencies:
     - field.field.paragraph.imprint_longtext.field_longtext_body
     - field.field.paragraph.imprint_longtext.field_longtext_title
     - paragraphs.paragraphs_type.imprint_longtext
+  module:
+    - text
 id: paragraph.imprint_longtext.default
 targetEntityType: paragraph
 bundle: imprint_longtext
 mode: default
 content:
   field_longtext_body:
-    type: string_textarea
+    type: text_textarea
     weight: 1
     region: content
     settings:

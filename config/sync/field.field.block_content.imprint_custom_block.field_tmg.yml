@@ -1,21 +1,24 @@
-uuid: 84b21b3f-97e9-4f5c-ab3f-d43634db7e20
+uuid: 26ac64f6-1de1-4e96-b40d-ad95508fb587
 langcode: en
 status: true
 dependencies:
   config:
     - block_content.type.imprint_custom_block
-    - field.storage.block_content.field_imprint_title
+    - field.storage.block_content.field_tmg
   module:
     - text
-id: block_content.imprint_custom_block.field_imprint_title
-field_name: field_imprint_title
+id: block_content.imprint_custom_block.field_tmg
+field_name: field_tmg
 entity_type: block_content
 bundle: imprint_custom_block
-label: 'imprint title'
+label: TMG
 description: ''
 required: false
 translatable: false
-default_value: {  }
+default_value:
+  -
+    value: 'Angaben gemäß § 5 TMG'
+    format: basic_html
 default_value_callback: ''
 settings: {  }
 field_type: text

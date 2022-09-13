@@ -1,19 +1,19 @@
-uuid: bf4299eb-04f8-40f0-9f0c-59225ca4ad5c
+uuid: f27b26fd-afce-4c47-9f23-2a029c93ad69
 langcode: en
 status: true
 dependencies:
   config:
     - block_content.type.imprint_custom_block
-    - field.storage.block_content.field_ltd_bksi
+    - field.storage.block_content.field_imprint_info
     - paragraphs.paragraphs_type.imprint_longtext
   module:
     - entity_reference_revisions
-id: block_content.imprint_custom_block.field_ltd_bksi
-field_name: field_ltd_bksi
+id: block_content.imprint_custom_block.field_imprint_info
+field_name: field_imprint_info
 entity_type: block_content
 bundle: imprint_custom_block
-label: 'LTD BKSI'
-description: ''
+label: 'Imprint Info'
+description: "-title will display as label etc. Umsatzsteuer-ID, write relative text bellow title  in longtext field. \r\n-to add another article press add another <strong> imprint longtext </strong>"
 required: false
 translatable: false
 default_value: {  }
@@ -26,25 +26,25 @@ settings:
     negate: 0
     target_bundles_drag_drop:
       company_detail:
-        weight: 8
+        weight: 15
         enabled: false
       footer_bottom_nav_link:
-        weight: 9
+        weight: 16
         enabled: false
       footer_social_menu_item:
-        weight: 10
+        weight: 17
         enabled: false
       impressions:
         weight: 18
         enabled: false
       imprint_longtext:
-        weight: 11
+        weight: 19
         enabled: true
       imprint_shorttext:
-        weight: 12
+        weight: 20
         enabled: false
       imprint_web_links:
-        weight: 13
+        weight: 21
         enabled: false
       job_paragraph:
         weight: 22
@@ -59,7 +59,7 @@ settings:
         weight: 25
         enabled: false
       service:
-        weight: 14
+        weight: 26
         enabled: false
       slide:
         weight: 27

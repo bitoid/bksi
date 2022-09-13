@@ -45,23 +45,31 @@
       </h3>
     </div>
     <div class="flex flex-col gap-8 text-[15px] leading-[22px] tracking-[.75px]">
-      {% for paragraph in content.field_imprint_description[0]['#paragraph'].field_longtext_body %}
-        {% if content.field_imprint_description[0]['#paragraph'] %}
           <div class="text-fade">
-            <p class="text-content-fade">{{ paragraph.value }}</p>
+            <div class="text-content-fade">{{ content.field_tmg }}</div>
           </div>
-        {% endif %}
-      {% endfor %}
       <div class="text-fade">
         <div class="flex flex-col gap-1 text-content-fade">
-          <h4 class="font-semibold">{{ content.field_ltd_bksi[0]['#paragraph'].field_shorttext_title.value }}</h4>
-          {% for paragraph in content.field_ltd_bksi[0]['#paragraph'].field_shorttext_body %}
+          <h4 class="font-semibold">{{ content.field_ltd_bksi[0]['#paragraph'].field_longtext_title.value }}</h4>
             {% if content.field_ltd_bksi[0]['#paragraph'] %}
-              <p> {{ paragraph.value }}</p>
+               {{ content.field_ltd_bksi[0]['#paragraph'].field_longtext_body.value | raw }}
             {% endif %}
-          {% endfor %}
         </div>
       </div>
+
+      <div class="text-fade">
+        <div class="flex flex-col gap-1 text-content-fade">
+          {% if content.field_imprint_representative[0]['#context'] %}
+            <h4 class="font-semibold">Vertreten durch:</h4>
+            {% for item in content.field_imprint_representative %}
+              {% if item['#context'] %}
+              <p>Dipl.-Ing. {{ item['#context'].value }}</p>
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+        </div>
+      </div>
+
       <div class="text-fade">
         <div class="flex flex-col gap-1 text-content-fade">
           <h4 class="font-semibold">{{ content.field_imprint_contact_phone[0]['#paragraph'].field_shorttext_title.value }}</h4>
@@ -77,42 +85,27 @@
           {% endfor %}
         </div>
       </div>
+
+      {% for paragraph in content.field_imprint_info %}
+      {% if paragraph['#paragraph']%}
       <div class="text-fade">
         <div class="flex flex-col gap-1 text-content-fade">
-          <h4 class="font-semibold">{{ content.field_tax_id[0]['#paragraph'].field_longtext_title.value }}</h4>
-          <article class="flex flex-col gap-5">
-            {% for paragraph in content.field_tax_id[0]['#paragraph'].field_longtext_body %}
-              {% if content.field_tax_id[0]['#paragraph'] %}
-                <p>{{ paragraph.value }}</p>
-              {% endif %}
-            {% endfor %}
-          </article>
+              <h4 class="font-semibold">{{ paragraph['#paragraph'].field_longtext_title.value | raw }}</h4>
+              <article class="flex flex-col gap-5">
+                    {{ paragraph['#paragraph'].field_longtext_body.value | raw }}
+              </article>
         </div>
       </div>
-      <div class="text-fade">
-        <div class="flex flex-col gap-1 text-content-fade">
-          <h4 class="font-semibold"> {{ content.field_content_liability[0]['#paragraph'].field_longtext_title.value }}</h4>
-          <article class="flex flex-col gap-5">
-            {% for paragraph in content.field_content_liability[0]['#paragraph'].field_longtext_body %}
-              {% if content.field_content_liability[0]['#paragraph'] %}
-                <p>{{ paragraph.value }} </p>
-              {% endif %}
-            {% endfor %}
-          </article>
-        </div>
-      </div>
+      {% endif %}
+      {% endfor %}
+
       <div class="text-fade">
         <div class="flex flex-col gap-1 text-content-fade">
           <h4 class="font-semibold">{{ content.field_imprint_copyright[0]['#paragraph'].field_longtext_title.value }}</h4>
           <article class="flex flex-col gap-5">
-            {% for paragraph in content.field_imprint_copyright[0]['#paragraph'].field_longtext_body %}
-              {% if content.field_imprint_copyright[0]['#paragraph'] %}
-                <p>{{ paragraph.value }}</p>
-              {% endif %}
-            {% endfor %}
             {% for  source in content.field_source %}
               {% if source["#url"]  %}
-                <p> Quelle: <a class="hover:text-mainRed" href="{{ source["#url"] }}">{{ source["#url"] }} </a></p>
+                <div> Quelle: <a class="hover:text-mainRed" href="{{ source["#url"] }}">{{ source["#url"]  }} </a></div>
               {% endif %}
             {% endfor %}
           </article>
@@ -143,4 +136,6 @@
     </div>
   </div>
 </section>
+
+
 

@@ -4,23 +4,14 @@ status: true
 dependencies:
   config:
     - block_content.type.company_details
-    - field.field.block_content.company_details.body
     - field.field.block_content.company_details.field_company_detail
   module:
     - entity_reference_revisions
-    - text
 id: block_content.company_details.default
 targetEntityType: block_content
 bundle: company_details
 mode: default
 content:
-  body:
-    type: text_default
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 0
-    region: content
   field_company_detail:
     type: entity_reference_revisions_entity_view
     label: above

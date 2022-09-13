@@ -9,6 +9,7 @@ _meta:
     0e57b7ff-ee62-4cac-853c-a0ca4185b15b: block_content
     a30569b3-1f22-4334-a429-74d57c9f8f3d: block_content
     2a6cd75a-524a-4a2e-a4e3-e97141ee0f3f: block_content
+    17d5742c-13f0-44c4-bea8-2bc10953d08e: block_content
 default:
   revision_uid:
     -
@@ -46,20 +47,6 @@ default:
           label: 'Team Gallery Section'
           context_mapping: {  }
         components:
-          7e789544-fcd5-43ac-b1b1-bbd9ec2b2a3c:
-            uuid: 7e789544-fcd5-43ac-b1b1-bbd9ec2b2a3c
-            region: content
-            configuration:
-              id: 'block_content:b0bc684e-d4b7-4633-af6e-eb115c46ecb7'
-              label: 'Team Gallery Block'
-              label_display: 0
-              provider: block_content
-              status: true
-              info: ''
-              view_mode: full
-              context_mapping: {  }
-            weight: '3'
-            additional: {  }
           30746f68-d6f3-4872-b917-761e132b0026:
             uuid: 30746f68-d6f3-4872-b917-761e132b0026
             region: content
@@ -69,7 +56,7 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '11'
+              block_revision_id: '30'
               block_serialized: null
               context_mapping: {  }
             weight: '4'
@@ -84,7 +71,7 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '19'
+              block_revision_id: '34'
               block_serialized: null
               context_mapping: {  }
             weight: '1'
@@ -99,7 +86,7 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '22'
+              block_revision_id: '42'
               block_serialized: null
               context_mapping: {  }
             weight: '2'
@@ -114,10 +101,25 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '15'
+              block_revision_id: '22'
               block_serialized: null
               context_mapping: {  }
             weight: '0'
             additional:
               target_uuid: 2a6cd75a-524a-4a2e-a4e3-e97141ee0f3f
+          0b5832de-afb2-46b2-b183-b293d163af28:
+            uuid: 0b5832de-afb2-46b2-b183-b293d163af28
+            region: content
+            configuration:
+              id: 'inline_block:team_gallery'
+              label: 'Team Gallery Type Block'
+              label_display: 0
+              provider: layout_builder
+              view_mode: full
+              block_revision_id: '45'
+              block_serialized: null
+              context_mapping: {  }
+            weight: '3'
+            additional:
+              target_uuid: 17d5742c-13f0-44c4-bea8-2bc10953d08e
         third_party_settings: {  }

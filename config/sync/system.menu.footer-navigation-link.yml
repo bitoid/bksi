@@ -1,0 +1,8 @@
+uuid: 977582a4-f17e-4c9e-9478-6b2fa544e9b3
+langcode: en
+status: true
+dependencies: {  }
+id: footer-navigation-link
+label: 'Footer Navigation Link'
+description: 'Add footer navigation links in this menu'
+locked: false

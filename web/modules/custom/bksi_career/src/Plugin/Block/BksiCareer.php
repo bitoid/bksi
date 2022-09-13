@@ -37,7 +37,7 @@ class BksiCareer extends BlockBase
       $footer_title = $config['career_footer_title'];
       $footer_description = $config['career_footer_description'];
       $image = $config['career_image'];
-      if (!$image == null){
+      if ($image){
         $file = File::load($image[0]);
         $url = $file->getFileUri();
       }

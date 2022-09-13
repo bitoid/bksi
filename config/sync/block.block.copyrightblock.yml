@@ -1,0 +1,25 @@
+uuid: 404700db-5ce8-42af-a9ec-921b52f787e2
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:copy_right:fd24f575-3f76-48d1-a3b0-e6a462f9bc60'
+  module:
+    - block_content
+  theme:
+    - bksi
+id: copyrightblock
+theme: bksi
+region: footer_bottom
+weight: -9
+provider: null
+plugin: 'block_content:fd24f575-3f76-48d1-a3b0-e6a462f9bc60'
+settings:
+  id: 'block_content:fd24f575-3f76-48d1-a3b0-e6a462f9bc60'
+  label: 'Copy Right Block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

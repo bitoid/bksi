@@ -1,0 +1,25 @@
+uuid: 6e0905f6-03f5-46f9-919c-31a9c5f9c2ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer-navigation-link
+  module:
+    - system
+  theme:
+    - bksi
+id: footernavigationlink
+theme: bksi
+region: footer_bottom
+weight: -10
+provider: null
+plugin: 'system_menu_block:footer-navigation-link'
+settings:
+  id: 'system_menu_block:footer-navigation-link'
+  label: 'Footer Navigation Link'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

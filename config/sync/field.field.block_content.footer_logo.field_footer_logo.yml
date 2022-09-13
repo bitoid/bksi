@@ -1,0 +1,38 @@
+uuid: d6e657b9-56f1-442e-8d15-b3f9ecaa5af0
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_logo
+    - field.storage.block_content.field_footer_logo
+  module:
+    - image
+id: block_content.footer_logo.field_footer_logo
+field_name: field_footer_logo
+entity_type: block_content
+bundle: footer_logo
+label: 'Footer Logo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: f39c1bfd-2902-4e8a-8fd0-187f2c3aab85
+    alt: 'footer logo'
+    title: ''
+    width: 181
+    height: 56
+field_type: image

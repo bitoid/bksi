@@ -1,0 +1,30 @@
+uuid: f19ef852-5059-426e-ace2-a61b782daa4f
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - file
+    - image
+id: block_content.field_footer_logo
+field_name: field_footer_logo
+entity_type: block_content
+type: image
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  default_image:
+    uuid: 99afb4ba-f6f5-4e86-9dc9-397fce8a5b62
+    alt: 'footer logo'
+    title: ''
+    width: 181
+    height: 56
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

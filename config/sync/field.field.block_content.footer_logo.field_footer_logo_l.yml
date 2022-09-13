@@ -1,0 +1,28 @@
+uuid: d9657be1-08ca-40ae-a692-87a1e0d0f331
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_logo
+    - field.storage.block_content.field_footer_logo_l
+  module:
+    - link
+id: block_content.footer_logo.field_footer_logo_l
+field_name: field_footer_logo_l
+entity_type: block_content
+bundle: footer_logo
+label: 'Footer Logo Link'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    uri: 'https://www.dgnb.de/de/index.php'
+    title: ''
+    options:
+      attributes: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 16
+field_type: link

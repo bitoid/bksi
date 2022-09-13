@@ -1,0 +1,19 @@
+uuid: 6f8cef81-9d9a-44e9-aff9-fd8172d313ea
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - link
+id: block_content.field_footer_logo_l
+field_name: field_footer_logo_l
+entity_type: block_content
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

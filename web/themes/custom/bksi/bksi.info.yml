@@ -7,3 +7,15 @@ base theme: stable
 libraries:
   - bksi/global-styling
   - bksi/splide
+regions:
+  left_sidebar: 'Left sidebar'
+  right_sidebar: 'Right sidebar' 
+  content: 'Content'
+  header: 'Header'
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  footer: 'Footer'
+  footer_bottom: 'Footer bottom'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  breadcrumb: 'Breadcrumb'

@@ -1,0 +1,40 @@
+uuid: 52c6887c-8455-4e65-99d9-d135eee567ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_logo
+    - field.field.block_content.footer_logo.field_footer_logo
+    - field.field.block_content.footer_logo.field_footer_logo_l
+  module:
+    - image
+    - link
+id: block_content.footer_logo.default
+targetEntityType: block_content
+bundle: footer_logo
+mode: default
+content:
+  field_footer_logo:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_footer_logo_l:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

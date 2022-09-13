@@ -1,0 +1,25 @@
+uuid: c5d912cd-a37f-4135-ae79-af392afb07c5
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:footer_logo:71289423-a273-4adb-95b7-2d19507621ec'
+  module:
+    - block_content
+  theme:
+    - bksi
+id: footerlogoblock
+theme: bksi
+region: footer_bottom
+weight: -8
+provider: null
+plugin: 'block_content:71289423-a273-4adb-95b7-2d19507621ec'
+settings:
+  id: 'block_content:71289423-a273-4adb-95b7-2d19507621ec'
+  label: 'Footer Logo Block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

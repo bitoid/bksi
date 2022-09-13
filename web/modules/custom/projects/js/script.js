@@ -12,8 +12,7 @@ let templateHtml = '';
 let data = [];
 let projectsArr = [];
 let filteredProjects = [];
-let chosenItems = [];
-
+let itemsToDisable = [];
 async function fetchData() {
   const response = await fetch('/bksi/projects/data');
   let temp = await response.json();
@@ -102,11 +101,9 @@ async function setup() {
     let type = e.target.closest(".project-dropdown").id.split("-")[0];
     if (!e.target.closest(`#${type}-dropdown`)) return;
     let value = e.target;
-    console.log(e.target.closest(`#${type}-dropdown`))
     let trimedValue = value.innerText.trim();
-    // e.target.closest('.group').classList.toggle('active');
-    clearProjectsEl.classList.remove('hidden');
-    if (!currentprojectEl.innerHTML.includes(`${trimedValue.slice(0, 6)}`)) {
+    e.target.closest('.group').classList.toggle('active');
+    if (!currentprojectEl.innerHTML.includes(`${trimedValue.slice(0, 6)}`) && !itemsToDisable.includes(trimedValue.toLowerCase())) {
       let btnEl = document.createElement('button');
       btnEl.classList.add('curently-chosen', 'px-5', 'py-4', 'flex', 'items-center', 'gap-9', 'rounded-[50px]', 'border-2', 'bg-mainBlack', 'text-white', 'border-mainBlack');
       let spanEl = document.createElement('span');
@@ -118,6 +115,7 @@ async function setup() {
       btnEl.appendChild(spanEl);
       btnEl.appendChild(imEl);
       currentprojectEl.appendChild(btnEl);
+      clearProjectsEl.classList.remove('hidden');
     }
 
     allProjectsEl.addEventListener('click', () => {
@@ -132,14 +130,14 @@ async function setup() {
       if (currentprojectEl.childNodes.length < 1) {
         clearProjectsEl.classList.add('hidden')
       }
-      // filteredProjects = filterWithDropdown(data);
+      filteredProjects = filterWithDropdown(data, currentprojectEl);
       displayData(filteredProjects);
     })
-    // filteredProjects = filterWithDropdown(data);
+    filteredProjects = filterWithDropdown(data, currentprojectEl);
     displayData(filteredProjects)
   });
   displayData(filteredProjects);
-  checkProjectsToDisable(data, currentprojectEl.childNodes)
+  checkProjectsToDisable(data, groupItems)
 }
 setup();
 
@@ -158,9 +156,9 @@ function filterWithCompany(arr) {
 
 function checkProjectsToDisable(arr1, arr2) {
   let filteredProjects = [...arr1];
-  let itemsToDisable = [];
-  for (let i = 0; i < groupItems.length; i++) {
-    itemsToDisable[i] = groupItems[i].innerText.toLowerCase().trim();
+  itemsToDisable = [];
+  for (let i = 0; i < arr2.length; i++) {
+    itemsToDisable[i] = arr2[i].innerText.toLowerCase().trim();
   }
 
   for (let j = 0; j < filteredProjects.length; j++) {
@@ -170,8 +168,19 @@ function checkProjectsToDisable(arr1, arr2) {
       }
     }
   }
-  console.log(itemsToDisable)
-
+  for (let i = 0; i < arr2.length; i++) {
+    if (itemsToDisable.some(e => e === arr2[i].innerText.toLowerCase().trim())) {
+      arr2[i].classList.add('item-for-disabled');
+    }
+  }
 }
 
 
+function filterWithDropdown(arr, arr2) {
+  let filterdArr = [...arr];
+  let filters = Array.from(arr2.childNodes);
+  for(let i = 0; i < filters.length; i++){
+    filterdArr = filterdArr.filter(e => e["service"].toLowerCase().trim() === filters[i].innerText.toLowerCase().trim() || e["building type"].toLowerCase().trim() === filters[i].innerText.toLowerCase().trim() || e["sector"].toLowerCase().trim() === filters[i].innerText.toLowerCase().trim())
+  }
+  return filterdArr;
+}

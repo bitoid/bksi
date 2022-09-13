@@ -1,16 +1,16 @@
-uuid: deb27437-f1cd-4d35-b6a3-e528f01eaf86
+uuid: 75fc1a6a-2529-458a-95c4-1f1f6dcf39cf
 langcode: en
 status: true
 dependencies:
   module:
     - node
+    - text
 id: node.field_project_challenges
 field_name: field_project_challenges
 entity_type: node
-type: string_long
-settings:
-  case_sensitive: false
-module: core
+type: text_long
+settings: {  }
+module: text
 locked: false
 cardinality: 1
 translatable: true

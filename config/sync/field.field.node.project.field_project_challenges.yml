@@ -1,10 +1,12 @@
-uuid: 0c324485-5627-4ebb-80b1-b9e26955e427
+uuid: 767ece0e-e45e-472a-8344-22f0560223e1
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_project_challenges
     - node.type.project
+  module:
+    - text
 id: node.project.field_project_challenges
 field_name: field_project_challenges
 entity_type: node
@@ -16,4 +18,4 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: string_long
+field_type: text_long

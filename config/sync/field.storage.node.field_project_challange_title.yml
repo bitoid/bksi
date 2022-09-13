@@ -1,18 +1,17 @@
-uuid: 1b73f76d-5cea-46d5-8485-f1782849dba6
+uuid: 2b6e98d2-8270-4d64-8560-0e906d410015
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_builder_name
-field_name: field_builder_name
+    - text
+id: node.field_project_challange_title
+field_name: field_project_challange_title
 entity_type: node
-type: string
+type: text
 settings:
   max_length: 255
-  case_sensitive: false
-  is_ascii: false
-module: core
+module: text
 locked: false
 cardinality: 1
 translatable: true

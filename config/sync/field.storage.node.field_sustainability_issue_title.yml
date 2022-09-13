@@ -1,18 +1,17 @@
-uuid: 77d14115-218c-4606-946b-1b372e8d0aff
+uuid: 810d57b3-8215-4763-a93d-d5a8263bff4b
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_leistung_x
-field_name: field_leistung_x
+    - text
+id: node.field_sustainability_issue_title
+field_name: field_sustainability_issue_title
 entity_type: node
-type: string
+type: text
 settings:
   max_length: 255
-  case_sensitive: false
-  is_ascii: false
-module: core
+module: text
 locked: false
 cardinality: 1
 translatable: true

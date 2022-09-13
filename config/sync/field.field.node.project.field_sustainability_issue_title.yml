@@ -1,0 +1,24 @@
+uuid: 14c1ce88-c9f3-4fa6-acbe-03a434f2cb73
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sustainability_issue_title
+    - node.type.project
+  module:
+    - text
+id: node.project.field_sustainability_issue_title
+field_name: field_sustainability_issue_title
+entity_type: node
+bundle: project
+label: 'sustainability issues title'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'Ggf. Nachhaltigkeitsthemen oder Untersuchung von Alternativen Lösungen'
+    format: basic_html
+default_value_callback: ''
+settings: {  }
+field_type: text

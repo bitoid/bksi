@@ -26,7 +26,7 @@ default:
       target_id: 1
   title:
     -
-      value: 'Erweiterung Produktion'
+      value: 'Erweiterung Produktion Werk 4 Bau 50-53 Stuttgart-Zuffenhausen'
   created:
     -
       value: 1661861314
@@ -46,18 +46,17 @@ default:
   field_bgf:
     -
       value: BGF
-  field_builder_name:
-    -
-      value: 'builder name'
   field_customer:
     -
       entity: a1f28193-01c4-4f69-89a6-bf120d6233be
-  field_leistung_x:
+  field_project_challange_title:
     -
-      value: 'Leistung X'
-  field_leistung_y_:
+      value: 'Herausforderungen des Projekts'
+      format: basic_html
+  field_project_challenges:
     -
-      value: 'Leistung Y'
+      value: "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata</p>\r\n"
+      format: basic_html
   field_project_challenge_image:
     -
       entity: cd574c14-b8bb-414a-9145-742e7bed0cf4
@@ -65,12 +64,14 @@ default:
       title: ''
       width: 940
       height: 625
-  field_project_challenges:
-    -
-      value: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata'
   field_project_description:
     -
-      value: 'Ausgangssituation, tiefere Leistungsbeschreibung (Welche Leistungen hat BKSi erbracht), Kooperationspartner (Architekten o.Ä.) Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata'
+      value: "<p>Ausgangssituation, tiefere Leistungsbeschreibung (Welche Leistungen hat BKSi erbracht), Kooperationspartner (Architekten o.Ä.) Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata</p>\r\n"
+      format: basic_html
+  field_project_description_title:
+    -
+      value: Projektbeschreibung
+      format: basic_html
   field_project_header_image:
     -
       entity: db3dc303-e055-4648-b1c0-e6382c6572ae
@@ -108,15 +109,17 @@ default:
   field_project_service:
     -
       entity: 054d1e87-fecc-452b-ba3c-8969cb0a5a16
-  field_project_title:
-    -
-      value: 'Erweiterung Produktion Werk 4 Bau 50-53 Stuttgart-Zuffenhausen'
   field_project_type:
     -
       entity: 1ca83c77-c301-4b96-bb7a-9a4b373b0325
   field_sustainability_issues:
     -
-      value: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata'
+      value: "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata</p>\r\n"
+      format: basic_html
+  field_sustainability_issue_title:
+    -
+      value: 'Ggf. Nachhaltigkeitsthemen oder Untersuchung von Alternativen Lösungen'
+      format: basic_html
   field_tick:
     -
       value: true

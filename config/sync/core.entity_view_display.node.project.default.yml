@@ -4,26 +4,26 @@ status: true
 dependencies:
   config:
     - field.field.node.project.field_bgf
-    - field.field.node.project.field_builder_name
     - field.field.node.project.field_customer
-    - field.field.node.project.field_leistung_x
-    - field.field.node.project.field_leistung_y_
+    - field.field.node.project.field_project_challange_title
     - field.field.node.project.field_project_challenge_image
     - field.field.node.project.field_project_challenges
     - field.field.node.project.field_project_description
+    - field.field.node.project.field_project_description_title
     - field.field.node.project.field_project_header_image
     - field.field.node.project.field_project_image
     - field.field.node.project.field_project_period
     - field.field.node.project.field_project_sector
     - field.field.node.project.field_project_service
-    - field.field.node.project.field_project_title
     - field.field.node.project.field_project_type
+    - field.field.node.project.field_sustainability_issue_title
     - field.field.node.project.field_sustainability_issues
     - field.field.node.project.field_tick
     - node.type.project
   module:
     - datetime
     - image
+    - text
     - user
 id: node.project.default
 targetEntityType: node
@@ -38,37 +38,20 @@ content:
     third_party_settings: {  }
     weight: 11
     region: content
-  field_builder_name:
-    type: string
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 12
-    region: content
   field_customer:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
     weight: 17
     region: content
-  field_leistung_x:
-    type: string
+  field_project_challange_title:
+    type: text_default
     label: hidden
-    settings:
-      link_to_entity: false
+    settings: {  }
     third_party_settings: {  }
-    weight: 13
-    region: content
-  field_leistung_y_:
-    type: string
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 14
+    weight: 22
     region: content
   field_project_challenge_image:
     type: image
@@ -82,18 +65,25 @@ content:
     weight: 16
     region: content
   field_project_challenges:
-    type: basic_string
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 4
+    weight: 23
     region: content
   field_project_description:
-    type: basic_string
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 3
+    weight: 24
+    region: content
+  field_project_description_title:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 25
     region: content
   field_project_header_image:
     type: image
@@ -142,14 +132,6 @@ content:
     third_party_settings: {  }
     weight: 20
     region: content
-  field_project_title:
-    type: string
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 1
-    region: content
   field_project_type:
     type: entity_reference_label
     label: hidden
@@ -158,16 +140,23 @@ content:
     third_party_settings: {  }
     weight: 18
     region: content
-  field_sustainability_issues:
-    type: basic_string
+  field_sustainability_issue_title:
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 5
+    weight: 27
+    region: content
+  field_sustainability_issues:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 26
     region: content
   field_tick:
     type: boolean
-    label: above
+    label: hidden
     settings:
       format: default
       format_custom_false: ''

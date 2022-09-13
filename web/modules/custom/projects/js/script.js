@@ -102,7 +102,9 @@ async function setup() {
     if (!e.target.closest(`#${type}-dropdown`)) return;
     let value = e.target;
     let trimedValue = value.innerText.trim();
-    e.target.closest('.group').classList.toggle('active');
+    e.target.closest('.group').classList.add('active');
+    let current = Array.from(e.target.closest(`#${type}-dropdown`).childNodes)
+
     if (!currentprojectEl.innerHTML.includes(`${trimedValue.slice(0, 6)}`) && !itemsToDisable.includes(trimedValue.toLowerCase())) {
       let btnEl = document.createElement('button');
       btnEl.classList.add('curently-chosen', 'px-5', 'py-4', 'flex', 'items-center', 'gap-9', 'rounded-[50px]', 'border-2', 'bg-mainBlack', 'text-white', 'border-mainBlack');
@@ -116,12 +118,32 @@ async function setup() {
       btnEl.appendChild(imEl);
       currentprojectEl.appendChild(btnEl);
       clearProjectsEl.classList.remove('hidden');
+
+
+      for (let i = 0; i < current.length; i++) {
+        if (current[i].textContent.toLowerCase().trim() !== btnEl.innerText.toLowerCase().trim() && current[i].nodeName !== '#text') {
+          current[i].style.color = 'red'
+          //aq dadiseibldeba yvela filter itemi garda curent[i]sa romelic pirvelad avirchiet
+          //aq maklia logika, pirvelad archeuli filtris  mixedvit sheamowmebs shemdegi filtrebidan ra shegvidzlia avirchiot kombinaciashi
+          // da danarcheni iqneba dadiseiblebuli.
+          //aseve tu ramdenime filtris archeva shemidzlia , erterts rom avirchevt sxva danarchenic avtomaturad unda dadiseibldes 
+          //da darches mxolod erti dropdaunidan archevis sashualeba , sadac igive logika gameordeba
+          //tu kombinaciashi ertis garda sxva archevanic gvaqvs , erterts rom avirchevt,sxva danarcheni unda dadiseibldes 
+        }
+      }
+
     }
 
+    filteredProjects = filterWithDropdown(data, currentprojectEl);
+    displayData(filteredProjects);
+
+    
     allProjectsEl.addEventListener('click', () => {
       currentprojectEl.innerHTML = '';
       clearProjectsEl.classList.add('hidden');
       displayData(data);
+      checkProjectsToDisable(data, groupItems)
+
     })
 
     currentprojectEl.addEventListener('click', (e) => {
@@ -132,12 +154,14 @@ async function setup() {
       }
       filteredProjects = filterWithDropdown(data, currentprojectEl);
       displayData(filteredProjects);
+      //aq maklia logika, romlis mixedvitac curently chosen elementebidan batonis amoshlis shemtxvevashi dropdaunidanac moexsneba filtri ...
     })
-    filteredProjects = filterWithDropdown(data, currentprojectEl);
-    displayData(filteredProjects)
+
+
   });
   displayData(filteredProjects);
   checkProjectsToDisable(data, groupItems)
+
 }
 setup();
 
@@ -170,7 +194,9 @@ function checkProjectsToDisable(arr1, arr2) {
   }
   for (let i = 0; i < arr2.length; i++) {
     if (itemsToDisable.some(e => e === arr2[i].innerText.toLowerCase().trim())) {
-      arr2[i].classList.add('item-for-disabled');
+      arr2[i].style.color = 'blue';
+      // arr2[i].classList.add('item-for-disabled');
+      //aq diseibldeba yvela filter aitemi , romelic arcert proeqts ar gaachnia tavidanve chatvirtvisas
     }
   }
 }
@@ -179,8 +205,9 @@ function checkProjectsToDisable(arr1, arr2) {
 function filterWithDropdown(arr, arr2) {
   let filterdArr = [...arr];
   let filters = Array.from(arr2.childNodes);
-  for(let i = 0; i < filters.length; i++){
+  for (let i = 0; i < filters.length; i++) {
     filterdArr = filterdArr.filter(e => e["service"].toLowerCase().trim() === filters[i].innerText.toLowerCase().trim() || e["building type"].toLowerCase().trim() === filters[i].innerText.toLowerCase().trim() || e["sector"].toLowerCase().trim() === filters[i].innerText.toLowerCase().trim())
   }
   return filterdArr;
 }
+

@@ -5,19 +5,19 @@ dependencies:
   config:
     - block_content.type.imprint_custom_block
     - field.field.block_content.imprint_custom_block.field_contact_e_mail
-    - field.field.block_content.imprint_custom_block.field_content_liability
     - field.field.block_content.imprint_custom_block.field_imprint_contact_phone
-    - field.field.block_content.imprint_custom_block.field_imprint_copyright
-    - field.field.block_content.imprint_custom_block.field_imprint_description
+    - field.field.block_content.imprint_custom_block.field_imprint_info
+    - field.field.block_content.imprint_custom_block.field_imprint_representative
     - field.field.block_content.imprint_custom_block.field_imprint_title
     - field.field.block_content.imprint_custom_block.field_ltd_bksi
     - field.field.block_content.imprint_custom_block.field_source
-    - field.field.block_content.imprint_custom_block.field_tax_id
+    - field.field.block_content.imprint_custom_block.field_tmg
     - field.field.block_content.imprint_custom_block.field_website_design
     - field.field.block_content.imprint_custom_block.field_website_programming
   module:
     - entity_reference_revisions
     - link
+    - text
 id: block_content.imprint_custom_block.default
 targetEntityType: block_content
 bundle: imprint_custom_block
@@ -30,15 +30,6 @@ content:
     third_party_settings: {  }
     weight: 4
     region: content
-  field_content_liability:
-    type: entity_reference_revisions_entity_view
-    label: hidden
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    weight: 6
-    region: content
   field_imprint_contact_phone:
     type: entity_reference_revisions_entity_view
     label: hidden
@@ -48,31 +39,29 @@ content:
     third_party_settings: {  }
     weight: 3
     region: content
-  field_imprint_copyright:
+  field_imprint_info:
     type: entity_reference_revisions_entity_view
     label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 7
+    weight: 12
     region: content
-  field_imprint_description:
-    type: entity_reference_revisions_entity_view
-    label: hidden
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    weight: 1
-    region: content
-  field_imprint_title:
+  field_imprint_representative:
     type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 0
+    weight: 13
+    region: content
+  field_imprint_title:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 14
     region: content
   field_ltd_bksi:
     type: entity_reference_revisions_entity_view
@@ -95,14 +84,12 @@ content:
     third_party_settings: {  }
     weight: 8
     region: content
-  field_tax_id:
-    type: entity_reference_revisions_entity_view
+  field_tmg:
+    type: text_default
     label: hidden
-    settings:
-      view_mode: default
-      link: ''
+    settings: {  }
     third_party_settings: {  }
-    weight: 5
+    weight: 11
     region: content
   field_website_design:
     type: entity_reference_revisions_entity_view
@@ -115,7 +102,7 @@ content:
     region: content
   field_website_programming:
     type: entity_reference_revisions_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: ''

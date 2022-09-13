@@ -102,7 +102,7 @@
       <div class="absolute bg-black w-full h-full z-10 top-0 left-0 bg-opacity-70"></div>
     </div>
     <h1 class="w-2/3 absolute top-1/2 left-4 -translate-y-1/2 flex flex-col gap-7 text-white text-[35px] tracking-[1.5px] leading-normal hyphens-manual md:gap-9 md:text-[70px] md:left-11 md:leading-tight md:tracking-[3px]">
-      {{ content.field_project_title}}
+      {{ node.label }}
     </h1>
     <img class="absolute bottom-9 left-1/2 -translate-x-1/2" src="/{{ base_path ~ directory }}/images/arrow-header.svg" alt="arrow down">
   </div>
@@ -118,12 +118,16 @@
         <div class="text-content-fade flex flex-col gap-3">
           <span>{{ content.field_project_type[0]["#title"] }}</span>
           <div class="flex flex-col">
-            <h5>Leistungsbild:</h5>
-            <span class="flex ">{{  content.field_leistung_x }} , {{ content.field_leistung_y_ }}</span>
+            {% if content.field_project_sector[0]["#title"]  %}
+              <h5>Leistungsbild:</h5>
+              <span class="flex ">{{  content.field_project_sector[0]["#title"] }} , {{ content.field_project_service[0]["#title"] }}</span>
+            {% endif %}
           </div>
           <div class="flex flex-col">
-            <h5> Bauherr:</h5>
-            <span>{{ content.field_builder_name }}</span>
+            {% if content.field_customer[0]["#title"] %}
+              <h5> Bauherr:</h5>
+              <span>{{ content.field_customer[0]["#title"] }}</span>
+            {% endif %}
           </div>
           <span> {{ content.field_project_period[0]['#markup'] }} - {{ content.field_project_period[1]['#markup'] }}</span>
           <span>{{ content.field_bgf }}</span>
@@ -134,11 +138,11 @@
       <div class="text-fade">
         <article class="text-content-fade flex flex-col gap-32 px-4 md:pl-[100px] md:pr-28">
           <div class="flex flex-col gap-5">
-            <h4 class="text-xl">Projektbeschreibung</h4>
+            <h4 class="text-xl">{{ content.field_project_description_title }}</h4>
             <p>{{ content.field_project_description }}</p>
           </div>
           <div class="flex flex-col gap-5">
-            <h4 class="text-xl">Herausforderungen des Projekts</h4>
+            <h4 class="text-xl">{{ content.field_project_challange_title }}</h4>
             <p>{{ content.field_project_challenges }}</p>
           </div>
         </article>
@@ -149,7 +153,7 @@
       <div class="text-fade">
         <article class="text-content-fade flex flex-col gap-32 px-4 md:pl-[100px] md:pr-28">
           <div class="flex flex-col gap-5">
-            <h4 class="text-xl">Ggf. Nachhaltigkeitsthemen oder Untersuchung von Alternativen Lösungen</h4>
+            <h4 class="text-xl">{{ content.field_sustainability_issue_title }}</h4>
             <p>{{ content.field_sustainability_issues }}</p>
           </div>
         </article>

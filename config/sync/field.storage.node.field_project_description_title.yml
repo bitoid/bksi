@@ -1,18 +1,17 @@
-uuid: 3149e39d-7938-4ed0-bdfe-339b5d4343b6
+uuid: 2a16abf0-d973-414f-9958-2fe7dee48da4
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_project_title
-field_name: field_project_title
+    - text
+id: node.field_project_description_title
+field_name: field_project_description_title
 entity_type: node
-type: string
+type: text
 settings:
-  max_length: 300
-  case_sensitive: false
-  is_ascii: false
-module: core
+  max_length: 255
+module: text
 locked: false
 cardinality: 1
 translatable: true

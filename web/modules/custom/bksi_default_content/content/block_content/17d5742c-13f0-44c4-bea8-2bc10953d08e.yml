@@ -1,0 +1,116 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 17d5742c-13f0-44c4-bea8-2bc10953d08e
+  bundle: team_gallery
+  default_langcode: en
+  depends:
+    7b375c2d-6432-477f-bb2a-1403e8b1a0d6: file
+    e08be927-9e17-4f4a-a7ef-2898724998b3: file
+    9600a505-0dba-4c20-8b27-f60156388c69: file
+    edca89ea-80a6-4bd3-b559-7989fa645ce9: file
+    8330c15d-9be2-456a-a3b9-ba558965a09a: file
+    f15f95fb-60b6-43b4-90fa-e3560f38f5ba: file
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Team Gallery Type Block'
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  field_paragraph_team_gallery:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 1c5f9fd8-7b9d-483b-bbd6-0307bf55ddf5
+          bundle: team_gallery
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1663091814
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_team_gallery_image:
+            -
+              entity: 7b375c2d-6432-477f-bb2a-1403e8b1a0d6
+              alt: 'Team picture'
+              title: ''
+              width: 2000
+              height: 1333
+            -
+              entity: e08be927-9e17-4f4a-a7ef-2898724998b3
+              alt: 'Team picture 1'
+              title: ''
+              width: 1024
+              height: 533
+            -
+              entity: 9600a505-0dba-4c20-8b27-f60156388c69
+              alt: 'Team picture 2'
+              title: ''
+              width: 1440
+              height: 600
+          field_team_gallery_image_align:
+            -
+              value: left
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: b9dfd59b-847c-4de4-a1b9-5c04be69fe7b
+          bundle: team_gallery
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1663092043
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_team_gallery_image:
+            -
+              entity: edca89ea-80a6-4bd3-b559-7989fa645ce9
+              alt: 'Team picture'
+              title: ''
+              width: 2000
+              height: 1333
+            -
+              entity: 8330c15d-9be2-456a-a3b9-ba558965a09a
+              alt: 'Team picture 1'
+              title: ''
+              width: 1024
+              height: 533
+            -
+              entity: f15f95fb-60b6-43b4-90fa-e3560f38f5ba
+              alt: 'Team picture 2'
+              title: ''
+              width: 1440
+              height: 600
+          field_team_gallery_image_align:
+            -
+              value: right
+  field_team_gallery_title:
+    -
+      value: 'Team Galerie'

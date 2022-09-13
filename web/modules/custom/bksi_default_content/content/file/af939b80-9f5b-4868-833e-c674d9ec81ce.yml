@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: af939b80-9f5b-4868-833e-c674d9ec81ce
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: building_4.jpg
+  uri:
+    -
+      value: 'public://2022-09/building_4.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 173249
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1663090450

@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: e08be927-9e17-4f4a-a7ef-2898724998b3
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: team-1_1.jpg
+  uri:
+    -
+      value: 'public://2022-09/team-1_1.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 80131
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1663091907

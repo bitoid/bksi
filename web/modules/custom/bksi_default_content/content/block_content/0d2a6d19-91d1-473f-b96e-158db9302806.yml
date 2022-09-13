@@ -1,0 +1,115 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 0d2a6d19-91d1-473f-b96e-158db9302806
+  bundle: company_details
+  default_langcode: en
+  depends:
+    af939b80-9f5b-4868-833e-c674d9ec81ce: file
+    b42138f9-22f3-4d6a-b85f-7efe8fabeea6: file
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Company Details Type Block'
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  field_company_detail:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 5d3cf5f4-b5e2-435e-bf73-3a7f0f3d93a0
+          bundle: company_detail
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1663090450
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_description:
+            -
+              value: 'Bauprojekte sind immer umfangreich, längerfristig und oft anspruchsvoll. Wir sind stolz auf unser breites, vielfältiges Portfolio und freuen uns auch künftig großartige neue Bauwerke zu schaffen.'
+          field_image:
+            -
+              entity: af939b80-9f5b-4868-833e-c674d9ec81ce
+              alt: 'Company Building image'
+              title: ''
+              width: 1920
+              height: 1080
+          field_image_align:
+            -
+              value: left
+          field_link_cta:
+            -
+              uri: 'internal:/projects'
+              title: 'Zur Projektübersicht'
+              options:
+                attributes: {  }
+          field_slogan:
+            -
+              value: Projekte
+          field_title:
+            -
+              value: 'Nachweis hoher Expertise und Leistungsfähigkeit unserer Mitarbeitenden'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 0767b430-1439-46e3-a29c-00cd199e144a
+          bundle: company_detail
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1663090529
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_description:
+            -
+              value: 'Herausforderungen gemeinsam annehmen, um so Vertrauen und Sicherheit zu schaffen: durch intelligente, innovative, ästhetische und funktionale Bauwerke – das bedeutet Arbeiten bei BKSI. Dazu suchen wir Menschen, die diverse Teams schätzen und Wert auf partnerschaftliches Miteinander legen. Offene Kommunikation gehört einfach dazu, wenn aus anspruchsvollen Projekten nachhaltige Baukultur werden soll.'
+          field_image:
+            -
+              entity: b42138f9-22f3-4d6a-b85f-7efe8fabeea6
+              alt: 'Company Building image with a different view'
+              title: ''
+              width: 1920
+              height: 1080
+          field_image_align:
+            -
+              value: right
+          field_link_cta:
+            -
+              uri: 'internal:/career'
+              title: 'Zur Karriereseite'
+              options:
+                attributes: {  }
+          field_slogan:
+            -
+              value: Karriere
+          field_title:
+            -
+              value: 'Wir rechnen mit dir.'

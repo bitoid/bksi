@@ -1,0 +1,106 @@
+{#
+/**
+ * @file
+ * Theme override to display a block.
+ *
+ * Available variables:
+ * - plugin_id: The ID of the block implementation.
+ * - label: The configured label of the block if visible.
+ * - configuration: A list of the block's configuration values.
+ *   - label: The configured label for the block.
+ *   - label_display: The display settings for the label.
+ *   - provider: The module or other provider that provided this block plugin.
+ *   - Block plugin specific settings will also be stored here.
+ * - content: The content of this block.
+ * - attributes: array of HTML attributes populated by modules, intended to
+ *   be added to the main container tag of this template.
+ *   - id: A valid HTML ID and guaranteed unique.
+ * - title_attributes: Same as attributes, except applied to the main title
+ *   tag that appears in the template.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ *
+ * @see template_preprocess_block()
+ */
+#}
+
+<section>
+  <div class="flex flex-col gap-20 md:flex-row">
+  {% if path('<current>') == '/career' %}
+  <div class="px-4 py-[75px] order-2 md:order-1 md:flex md:flex-col md:justify-center md:w-1/2 md:px-7 md:py-[150px]">
+    <div class="text-fade mb-[60px]">
+      <h3 class="text-content-fade text-[26px] tracking-[1.3px] leading-none flex flex-col gap-5 md:gap-7 md:text-[35px] md:leading-10 md:tracking-[1.75px]">
+        <span class="text-[13px] leading-[15px] tracking-[.65px]">{{ content.field_slogan | raw  }}</span>
+        {{ content.field_title | raw }}
+      </h3>
+    </div>
+    <div class="text-fade self-start">
+      <div class="text-content-fade">
+        <div class="flex flex-col gap-2 text-[15px] leading-[22px] tracking-[0.75px] mb-8">
+          <span>{{ content.field_apply_job | raw  }}</span>
+        </div>
+        <div class="flex flex-col gap-2 text-[15px] leading-[22px] tracking-[0.75px] mb-14">
+          <span>Setz dich mit uns in Verbindung:</span>
+          {% for phone in content.field_contact_phone %}
+            {% if phone['#context'] %}
+              <a class="group font-normal" href="tel:{{ phone['#context'].value }}"> <span class="group-hover:text-mainRed">{{ phone['#context'].value }}</span></a>
+            {% endif %}
+          {% endfor %}
+          {% for email in content.field_contact_email %}
+            {% if email['#context'] %}
+              <a class="group font-normal" href="mailto:{{ email['#context'].value }}"><span class="group-hover:text-mainRed">{{ email['#context'].value }}</span></a>
+            {% endif %}
+          {% endfor %}
+        </div>
+        <article class="flex flex-col gap-1 text-[15px] leading-[22px] tracking-[0.75px]">
+          {{ content.field_ltd_bksi_description | raw }}
+        </article>
+      </div>
+    </div>
+  </div>
+  {% else %}
+    <div class="px-4 py-[75px] order-2 md:order-1 md:flex md:flex-col md:justify-center md:items-center md:w-1/2 md:px-10 md:py-[60px]">
+      <div class="text-fade mb-[60px]">
+        <h3 class="text-content-fade text-[26px] tracking-[1.3px] leading-none flex flex-col gap-5 md:gap-7 md:text-[35px] md:leading-10 md:tracking-[1.75px]">
+          {{ content.field_title | raw }}
+        </h3>
+      </div>
+      <div class="text-fade self-start">
+        <div class="text-content-fade w-1/2">
+          <article class="flex flex-col gap-5 mb-8">
+                <div class="text-content-fade flex flex-col gap-3"> {{ content.field_ltd_bksi_description | raw }} </div>
+          </article>
+          <div class="flex flex-col gap-2 text-[15px] leading-[22px] tracking-[0.75px] mb-8">
+            {% for phone in content.field_contact_phone %}
+              {% if phone['#context'] %}
+                  <a class="group font-normal" href="tel:{{ phone['#context'].value }}">Telefon: <span class="group-hover:text-mainRed">{{ phone['#context'].value }}</span></a>
+              {% endif %}
+            {% endfor %}
+          </div>
+          {% for email in content.field_contact_email %}
+            {% if email['#context'] %}
+              <a class="group font-normal" href="mailto:{{ email['#context'].value }}">E-Mail: <span class="group-hover:text-mainRed">{{ email['#context'].value }}</span></a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    {% endif %}
+    <div class="relative fade-in-image-container order-1 w-full h-[30vh] md:order-2 md:w-1/2 md:h-screen">
+      <img class="w-full fade-in-image h-full object-cover" src="{{ file_url(content.field_image.0['#item'].entity.uri.value) }}" alt="">
+      <a href="{{ content.field_location_link.0["#url"] }}" class="group flex items-center gap-5 absolute left-5 bottom-5" target="_blank">
+        <div class="w-[50px] aspect-square rounded-full bg-white flex items-center justify-center group-hover:scale-125"><img src="/{{ base_path ~ directory }}/images/arrow-textlinks.svg" alt=""></div>
+        <span class="text-[15px] leading-[12px] tracking-[0.75px]">{{ content.field_location_link[0]["#title"] }}</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+

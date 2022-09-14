@@ -1,0 +1,54 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: d8d48f40-c1e1-4450-a2ff-0edfa21cce42
+  bundle: contact_block_type
+  default_langcode: en
+  depends:
+    e9dc65cd-c5d7-4343-8921-293a5a562c48: file
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'contact block on contact page'
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  field_apply_job:
+    -
+      value: "<p><span>Bewirb dich direkt:</span></p>\r\n\r\n<p><span>zu allen Jobangeboten</span></p>\r\n"
+      format: basic_html
+  field_contact_email:
+    -
+      value: info@bksi.de
+  field_contact_phone:
+    -
+      value: '+49 711 36 53 38-30'
+    -
+      value: '0711 / 365338-31'
+  field_image:
+    -
+      entity: e9dc65cd-c5d7-4343-8921-293a5a562c48
+      alt: map.img
+      title: ''
+      width: 1080
+      height: 1080
+  field_location_link:
+    -
+      uri: 'https://www.google.com/maps/dir//BKSi+GmbH,+Schwieberdinger+Str.+5,+70435+Stuttgart,+%E1%83%92%E1%83%94%E1%83%A0%E1%83%9B%E1%83%90%E1%83%9C%E1%83%98%E1%83%90/@48.8259269,9.1685363,20z/data=!4m8!4m7!1m0!1m5!1m1!1s0x4799da97194dc23d:0x84b9ca8b8342cbbb!2m2!1d9.168417!2d48.8260311'
+      title: 'Anfahrt planen'
+      options:
+        attributes: {  }
+  field_ltd_bksi_description:
+    -
+      value: "<h5>LTD BKSI</h5>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Ingenieurgesellschaft für Beratung &amp; Planung im Bauwesen</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Schwieberdinger Straße 5 70435 Stuttgart</p>\r\n"
+      format: basic_html
+  field_title:
+    -
+      value: "<h3>Rufen Sie an oder mailen Sie uns. BKSI berät Sie persönlich und mit umfassender Fachkompetenz.</h3>\r\n"
+      format: basic_html

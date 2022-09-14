@@ -1,0 +1,21 @@
+uuid: ef3f84c6-c429-440e-8ed8-5d5ef1faa62c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_block_type
+    - field.storage.block_content.field_ltd_bksi_description
+  module:
+    - text
+id: block_content.contact_block_type.field_ltd_bksi_description
+field_name: field_ltd_bksi_description
+entity_type: block_content
+bundle: contact_block_type
+label: 'LTD BKSI'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

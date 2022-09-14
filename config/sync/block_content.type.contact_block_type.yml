@@ -1,0 +1,8 @@
+uuid: 121f9f62-789c-4134-bb2e-b60cfc02f153
+langcode: en
+status: true
+dependencies: {  }
+id: contact_block_type
+label: 'contact block type'
+revision: 0
+description: ''

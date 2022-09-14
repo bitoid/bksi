@@ -11,7 +11,7 @@
 		<button><img class="mr-5" src="modules/custom/projects/images/arrow-open-close-content.svg" alt=""></button>
 		<ul class=" absolute hidden overflow-hidden top-full rounded-b-3xl w-full z-50" id="building-dropdown">
 			{% for buildings in building %}
-				<li class="group py-3 px-5 bg-lightGray border-t border-white">
+				<li class="group py-3 px-5 bg-lightGray border-t border-white" data-value="{{ buildings.name|lower }}">
 					<a class="group-hover:text-mainRed font-['buch'] group-item" href="#">{{ buildings.name }}</a>
 				</li>
 			{% endfor %}
@@ -22,7 +22,7 @@
 		<button><img class="mr-5" src="modules/custom/projects/images/arrow-open-close-content.svg" alt=""></button>
 		<ul class=" absolute hidden overflow-hidden top-full rounded-b-3xl w-full z-50" id="service-dropdown">
 			{% for services in service %}
-				<li class="group py-3 px-5 bg-lightGray border-t border-white">
+				<li class="group py-3 px-5 bg-lightGray border-t border-white" data-value="{{ services.name|lower }}">
 					<a class="group-hover:text-mainRed font-['buch'] group-item" href="#">{{ services.name }}</a>
 				</li>
 			{% endfor %}
@@ -33,7 +33,7 @@
 		<button><img class="mr-5" src="modules/custom/projects/images/arrow-open-close-content.svg" alt=""></button>
 		<ul class=" absolute hidden overflow-hidden top-full rounded-b-3xl w-full z-50" id="sector-dropdown">
 			{% for sectors in sector %}
-				<li class="group py-3 px-5 bg-lightGray border-t border-white">
+				<li class="group py-3 px-5 bg-lightGray border-t border-white" data-value="{{ sectors.name|lower }}">
 					<a class="group-hover:text-mainRed font-['buch'] group-item" href="#">{{ sectors.name }}</a>
 				</li>
 			{% endfor %}

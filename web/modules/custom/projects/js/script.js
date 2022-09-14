@@ -9,10 +9,12 @@ const currentprojectEl = document.getElementById('curent-projects');
 const clearProjectsEl = document.getElementById('clear-projects');
 let groupItems = Array.from(document.querySelectorAll('.group-item'));
 let templateHtml = '';
-let data = [];
 let projectsArr = [];
+let data = [];
 let filteredProjects = [];
 let itemsToDisable = [];
+let filters = {}
+
 async function fetchData() {
   const response = await fetch('/bksi/projects/data');
   let temp = await response.json();
@@ -42,7 +44,7 @@ function displayData(arr) {
                         <div class="flex flex-col gap-5">
                             <div flex flex-col gap-3>
                                 <p>Gebäudeart</p>
-                                <p>${projectsData['building type']}</p>
+                                <p>${projectsData['building']}</p>
                             </div>
                             <div flex flex-col gap-3>
                                 <p>Auftraggeber</p>
@@ -96,84 +98,63 @@ async function setup() {
     }
   });
 
+  allProjectsEl.addEventListener('click', () => {
+    currentprojectEl.innerHTML = '';
+    clearProjectsEl.classList.add('hidden');
+
+    filters = {};
+    filteredProjects = [...data];
+    displayData(filteredProjects);
+
+    checkProjectsToDisable(data, groupItems)
+
+  });
+
+  currentprojectEl.addEventListener('click', (e) => {
+    if (!e.target.closest('#curent-projects')) return;
+
+    const type = e.target.dataset.type ? e.target.dataset.type : e.target.closest(".curently-chosen").dataset.type;
+    e.target.closest('.curently-chosen').remove(); // remove button
+
+    console.log(filters);
+    delete filters[type];
+    console.log(filters);
+    if (!Object.keys(filters).length) {
+      clearProjectsEl.classList.add('hidden')
+    }
+    filteredProjects = filterWithDropdown(data, filters);
+    displayData(filteredProjects);
+  })
+
   container.addEventListener('click', e => {
     if (!e.target.closest(".project-dropdown")) return;
     let type = e.target.closest(".project-dropdown").id.split("-")[0];
     if (!e.target.closest(`#${type}-dropdown`)) return;
-    let value = e.target;
-    let trimedValue = value.innerText.trim();
-    e.target.closest('.group').classList.add('active');
-    let current = Array.from(e.target.closest(`#${type}-dropdown`).childNodes)
 
-    if (!currentprojectEl.innerHTML.includes(`${trimedValue.slice(0, 6)}`) && !itemsToDisable.includes(trimedValue.toLowerCase())) {
-      let btnEl = document.createElement('button');
-      btnEl.classList.add('curently-chosen', 'px-5', 'py-4', 'flex', 'items-center', 'gap-9', 'rounded-[50px]', 'border-2', 'bg-mainBlack', 'text-white', 'border-mainBlack');
-      let spanEl = document.createElement('span');
-      spanEl.classList.add('text-[15px]', 'leading-[22px]', 'tracking-[0.75px]', 'truncate', 'max-w-[150px]');
-      spanEl.textContent = trimedValue;
-      let imEl = document.createElement('i');
-      imEl.classList.add('fa', 'fa-times', 'text-2xl');
-      imEl.ariaHidden = 'TRUE';
-      btnEl.appendChild(spanEl);
-      btnEl.appendChild(imEl);
-      currentprojectEl.appendChild(btnEl);
-      clearProjectsEl.classList.remove('hidden');
+    const value = e.target.dataset.value ? e.target.dataset.value : e.target.parentElement.dataset.value;
 
+    if(!filters[type]) {
+      filters[type] = value;
 
-      for (let i = 0; i < current.length; i++) {
-        if (current[i].textContent.toLowerCase().trim() !== btnEl.innerText.toLowerCase().trim() && current[i].nodeName !== '#text') {
-          current[i].style.color = 'red'
-          //aq dadiseibldeba yvela filter itemi garda curent[i]sa romelic pirvelad avirchiet
-          //aq maklia logika, pirvelad archeuli filtris  mixedvit sheamowmebs shemdegi filtrebidan ra shegvidzlia avirchiot kombinaciashi
-          // da danarcheni iqneba dadiseiblebuli.
-          //aseve tu ramdenime filtris archeva shemidzlia , erterts rom avirchevt sxva danarchenic avtomaturad unda dadiseibldes 
-          //da darches mxolod erti dropdaunidan archevis sashualeba , sadac igive logika gameordeba
-          //tu kombinaciashi ertis garda sxva archevanic gvaqvs , erterts rom avirchevt,sxva danarcheni unda dadiseibldes 
-        }
-      }
-
+      createButton(type, value);
     }
 
-    filteredProjects = filterWithDropdown(data, currentprojectEl);
+    filteredProjects = filterWithDropdown(data, filters);
     displayData(filteredProjects);
-
-    
-    allProjectsEl.addEventListener('click', () => {
-      currentprojectEl.innerHTML = '';
-      clearProjectsEl.classList.add('hidden');
-      displayData(data);
-      checkProjectsToDisable(data, groupItems)
-
-    })
-
-    currentprojectEl.addEventListener('click', (e) => {
-      if (!e.target.closest('.curently-chosen')) return;
-      e.target.closest('.curently-chosen').remove();
-      if (currentprojectEl.childNodes.length < 1) {
-        clearProjectsEl.classList.add('hidden')
-      }
-      filteredProjects = filterWithDropdown(data, currentprojectEl);
-      displayData(filteredProjects);
-      //aq maklia logika, romlis mixedvitac curently chosen elementebidan batonis amoshlis shemtxvevashi dropdaunidanac moexsneba filtri ...
-    })
-
-
   });
+
   displayData(filteredProjects);
-  checkProjectsToDisable(data, groupItems)
+  // checkProjectsToDisable(data, groupItems)
 
 }
 setup();
 
-
 function filterWithCompany(arr) {
-  let company = window.localStorage.getItem("client");
-  window.localStorage.removeItem("client");
-
+  const query = new URLSearchParams(window.location.search);
+  const company = query.get("customer");
   if (company) {
-    return arr.filter(e => e.client == company);
+    return arr.filter(e => e.customer == company);
   }
-
   return arr;
 };
 
@@ -202,12 +183,26 @@ function checkProjectsToDisable(arr1, arr2) {
 }
 
 
-function filterWithDropdown(arr, arr2) {
-  let filterdArr = [...arr];
-  let filters = Array.from(arr2.childNodes);
-  for (let i = 0; i < filters.length; i++) {
-    filterdArr = filterdArr.filter(e => e["service"].toLowerCase().trim() === filters[i].innerText.toLowerCase().trim() || e["building type"].toLowerCase().trim() === filters[i].innerText.toLowerCase().trim() || e["sector"].toLowerCase().trim() === filters[i].innerText.toLowerCase().trim())
+function filterWithDropdown(data, filters) {
+  let filterdArr = [...data];
+  for (let key in filters) {
+    filterdArr = filterdArr.filter(elem => elem[key].toLowerCase() === filters[key]);
   }
   return filterdArr;
 }
 
+function createButton (type, value) {
+  let btnEl = document.createElement('button');
+  btnEl.dataset.type = type;
+  btnEl.classList.add('curently-chosen', 'px-5', 'py-4', 'flex', 'items-center', 'gap-9', 'rounded-[50px]', 'border-2', 'bg-mainBlack', 'text-white', 'border-mainBlack');
+  let spanEl = document.createElement('span');
+  spanEl.classList.add('text-[15px]', 'leading-[22px]', 'tracking-[0.75px]', 'truncate', 'max-w-[150px]');
+  spanEl.textContent = value;
+  let imEl = document.createElement('i');
+  imEl.classList.add('fa', 'fa-times', 'text-2xl');
+  imEl.ariaHidden = 'TRUE';
+  btnEl.appendChild(spanEl);
+  btnEl.appendChild(imEl);
+  currentprojectEl.appendChild(btnEl);
+  clearProjectsEl.classList.remove('hidden');
+}

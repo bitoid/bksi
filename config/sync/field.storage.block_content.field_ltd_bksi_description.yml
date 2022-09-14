@@ -1,0 +1,19 @@
+uuid: 6c7a3b05-24f8-4608-a9e6-3b3e7e22dfc3
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - text
+id: block_content.field_ltd_bksi_description
+field_name: field_ltd_bksi_description
+entity_type: block_content
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

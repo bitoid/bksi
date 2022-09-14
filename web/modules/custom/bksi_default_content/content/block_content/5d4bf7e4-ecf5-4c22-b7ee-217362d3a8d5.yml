@@ -25,9 +25,6 @@ default:
     -
       value: "<p>Wir machen Tragwerksplanungen, Bauplanungen und bautechnische Prüfungen. Für mittlere und große Projekte. Für Wohnraum, Büroimmobilien und für die Industrie. Für Architekten, Bauträger, Immobilienentwickler und Großkonzerne wie Daimler und die Deutsche Bahn. Unser Büro hat seinen Sitz in Stuttgart-Zuffenhausen. Hier pflegen wir eine Unternehmenskultur, die darauf abzielt, dass wir alle Top-Leistung bringen können. Das gelingt am besten in einem gut gelaunten Team, in dem jede:r gerne morgens aufsteht und zur Arbeit fährt. Oder sich per mobilem Arbeiten einbringt.</p>\r\n"
       format: basic_html
-    -
-      value: "<p>Denn wir unterstützen einander, damit wir gemeinsam besser sind als jede:r von uns allein. Wenn du mit uns hoch hinaus willst, freuen wir uns über ein Zeichen.</p>\r\n"
-      format: basic_html
   field_title:
     -
       value: "<h2>Wir sind BKSI eine führende Ingenieurgesellschaft für Beratung und Planung im Bauwesen.</h2>\r\n"

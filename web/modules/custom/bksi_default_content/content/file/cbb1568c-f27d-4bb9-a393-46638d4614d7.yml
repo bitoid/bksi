@@ -1,7 +1,7 @@
 _meta:
   version: '1.0'
   entity_type: file
-  uuid: 285c47c7-b0ea-49b2-9022-79c60feee622
+  uuid: cbb1568c-f27d-4bb9-a393-46638d4614d7
   default_langcode: en
 default:
   uid:
@@ -9,19 +9,19 @@ default:
       target_id: 1
   filename:
     -
-      value: team-3-career-page.jpg
+      value: bksi-ingenieure-anfahrtsplan_5.jpg
   uri:
     -
-      value: 'public://2022-09/team-3-career-page_0_0_0_2_7.jpg'
+      value: 'public://2022-09/bksi-ingenieure-anfahrtsplan_5.jpg'
   filemime:
     -
       value: image/jpeg
   filesize:
     -
-      value: 1556358
+      value: 176149
   status:
     -
       value: true
   created:
     -
-      value: 1662102400
+      value: 1663181996

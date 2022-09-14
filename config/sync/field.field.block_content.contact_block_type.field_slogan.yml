@@ -1,0 +1,21 @@
+uuid: 347c41ec-c965-427d-9feb-8fbe583229d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_block_type
+    - field.storage.block_content.field_slogan
+  module:
+    - text
+id: block_content.contact_block_type.field_slogan
+field_name: field_slogan
+entity_type: block_content
+bundle: contact_block_type
+label: Slogan
+description: 'for career page'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

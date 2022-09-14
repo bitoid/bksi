@@ -1,0 +1,23 @@
+<?php
+
+function bksi_contact_form_mail($key, &$message, $params) {
+	$options = array(
+    	'langcode' => $message['langcode'],
+ 	);
+	switch ($key) {
+		case 'contact_form':
+		 	$message['from'] = \Drupal::config('system.site')->get('mail');
+			$message['subject'] = t('@subject', ['@subject' => "Form from node " . $params['node_id']], $options);
+			$message['body'][] = 
+				"Name: {$params['name']}\n".
+				"Surname: {$params['surname']}\n".
+				"Email: {$params['email']}\n".
+				"Message:\n\t{$params['message']}\n".
+				"File Url: {$params['file']}"; 
+			$message['params']['attachments'][] = [
+		    	'filename' => 'test.pdf',
+		    	'filepath' => $params['file'],
+      		];
+			break;
+	}
+}

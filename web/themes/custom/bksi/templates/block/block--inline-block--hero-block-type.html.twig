@@ -25,56 +25,17 @@
  * @see template_preprocess_block()
  */
 #}
-<div{{ attributes }}>
-  {{ title_prefix }}
-  {% if label %}
-    <h2{{ title_attributes }}>{{ label }}</h2>
-  {% endif %}
-  {{ title_suffix }}
-  {% block content %}
-    <div class="h-screen items-center overflow-x-hidden">
+
+
+<div class="h-screen items-center overflow-x-hidden relative">
     <div class="absolute w-screen h-screen left-0 top-0 -z-10">
-        {% if content.field_image.0['#item'] %}
-            <img src="{{ file_url(content.field_image.0['#item'].entity.uri.value) }}" alt="" class="object-cover w-full h-full">
-            <div class="absolute bg-black w-full h-full z-10 top-0 left-0 bg-opacity-70"></div>
-        {% else %}
-        <div class="absolute bg-darkBlue w-full h-full z-10 top-0 left-0"></div>
-        {% endif %}
+        <img src="{{ file_url(content.field_image.0['#item'].entity.uri.value) }}" alt="" class="object-cover w-full h-full">
+        <div class="absolute bg-black w-full h-full z-10 top-0 left-0 bg-opacity-70"></div>
     </div>
-    {% if content.field_image.0['#item'] %}
-    <h1 class="w-2/3 absolute top-1/2 left-4 -translate-y-1/2 flex flex-col gap-7 text-white text-[35px] tracking-[1.5px] leading-normal hyphens-manual md:gap-9 md:text-[70px] md:left-11 md:leading-tight md:tracking-[3px]">
-        {% if content.field_slogan %}
+    <h1 class="w-2/3 absolute -z-10 top-1/2 left-4 -translate-y-1/2 flex flex-col gap-7 text-white text-[35px] tracking-[1.5px] leading-normal hyphens-manual md:gap-9 md:text-[70px] md:left-11 md:leading-tight md:tracking-[3px]">
         <span class="text-xs md:text-base">{{ content.field_slogan.0["#text"]|striptags }}</span>
-        {% endif %}
         {{ content.field_title.0["#text"]|striptags }}
     </h1>
-    {% else %}
-    <div class="absolute right-4 top-1/2 left-4 -translate-y-1/2 flex flex-col gap-10 items-center justify-between text-white md:flex-row md:left-11 md:right-11">
-       {% if content.field_badge.0["#text"] %}
-        <div class="w-2/3 ">
-            <h1 class="flex flex-col -z-10 gap-7 text-[35px] tracking-[1.5px] leading-normal md:gap-9 md:text-[70px] md:leading-tight md:tracking-[3px]">
-                <span class="text-xs md:text-base">{{ content.field_slogan.0["#text"]|striptags }}</span>
-                  {{ content.field_title.0["#text"]|striptags }}
-            </h1>
-            {% if content.field_description.0["#text"] %}
-            <p class="text-xl mt-28 md:mt-12">{{ content.field_description.0["#text"]|striptags }}</p>
-            {% endif %}
-        </div>
-        <div class="group w-[134px] aspect-square rounded-full bg-mainRed flex items-center justify-center text-center text-darkBlue -rotate-12 hover:scale-125">
-            <span class="group-hover:scale-[85%]">{{ content.field_badge.0["#text"]|striptags }}</span>
-        </div>
-        {% else %}
-        <div class="order-2 md:order-1 md:w-1/2">
-                <h1 class="flex flex-col -z-10 gap-7 text-[35px] tracking-[1.5px] leading-normal md:gap-9 md:text-[70px] md:leading-tight md:tracking-[3px]">
-                    <span class="text-xs md:text-base">{{ content.field_slogan.0["#text"]|striptags }}</span>
-                    {{ content.field_title.0["#text"]|striptags }}
-                </h1>
-            </div>
-            <img class="w-[430px] order-1 md:order-2 " src="{{ file_url(content.field_small_image['#items'].entity.uri.value) }}" alt="">
-        {% endif %}
-    </div>
-    {% endif %} 
     <img class="absolute bottom-9 left-1/2 -translate-x-1/2" src="/{{ base_path ~ directory }}/images/arrow-header.svg" alt="arrow down">
 </div>
-  {% endblock %}
-</div>
+

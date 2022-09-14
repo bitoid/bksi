@@ -31,6 +31,8 @@ class ContactForm extends FormBase {
     */
     public function buildForm(array $form, FormStateInterface $form_state) {
       
+      $form['#attributes'] = array('enctype' => 'multipart/form-data');
+
       $form['name'] = [
         '#type' => 'textfield',
         '#attributes' => ['placeholder' => t('Name')],
@@ -62,8 +64,14 @@ class ContactForm extends FormBase {
       ];
 
       $form['file'] = [
-        '#type' => 'file',
+        '#type' => 'managed_file',
         '#required' => FALSE,
+        '#multiple' => FALSE,
+        '#upload_validators' => [
+          'file_validate_extensions' => array('pdf'),
+          'file_validate_size' => array(5000000)
+        ],  
+        '#upload_location' => 'public://form_files/'
       ];
 
       $form['policy_checkbox'] = [
@@ -104,8 +112,25 @@ class ContactForm extends FormBase {
      *   Object describing the current state of the form.
      */
     public function submitForm(array &$form, FormStateInterface $form_state) {
-      $name = $form_state->getValue('name');
-      $this->messenger()->addStatus($this->t("Thank you, " . $name . ""));
+      $inputs = ($form_state->getUserInput());
+      $file = \Drupal\file\Entity\File::load($inputs['file']['fids']);
+      $file_url = $file->getFileUri();
+      $params = array(
+        'name' => $inputs['name'],
+        'surname' => $inputs['surname'],
+        'email' => $inputs['email'],
+        'message' => $inputs['message'],
+        'node_id' => $inputs['node_id'],
+        'file' => $file_url,
+      );
+
+      $mailManager = \Drupal::service('plugin.manager.mail');
+      $module = $this->getFormId();
+      $key = 'contact_form';
+      $to = 'test@mailhog.local';
+      $langcode = \Drupal::currentUser()->getPreferredLangcode();
+      $send = TRUE;
+      $mailManager->mail($module, $key, $to, $langcode, $params, NULL, $send);
     }
 
 

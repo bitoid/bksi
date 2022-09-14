@@ -65,10 +65,13 @@ class ProjectsController extends ControllerBase {
 
       $customers = $node_storage->loadMultiple($cids)[$target_id];
       $title = $customers->getTitle();
-      $building_type = Term::Load($result->field_project_type->target_id)->get('name')->value;
-      $service = Term::Load($result->field_project_service->target_id)->get('name')->value;
-      $sector = Term::Load($result->field_project_sector->target_id)->get('name')->value;
-      $imgUrl = $this->getImgUrl($result->field_project_header_image->getValue()[0]['target_id']);
+
+      $building_type = $result->field_project_type->target_id ? Term::Load($result->field_project_type->target_id)->get('name')->value : null;
+      $service = $result->field_project_service->target_id ? Term::Load($result->field_project_service->target_id)->get('name')->value : null;
+      $sector = $result->field_project_sector->target_id ? Term::Load($result->field_project_sector->target_id)->get('name')->value : null;
+
+      $fileId = $result->field_project_header_image->getValue()[0]['target_id'] ? $result->field_project_header_image->getValue()[0]['target_id'] : null;
+      $imgUrl = $this->getImgUrl($fileId);
 
       $period = $this->timePeriod([$result->field_project_period[0]->value, $result->field_project_period[1]->value]);
       $data[] = [
@@ -100,6 +103,7 @@ class ProjectsController extends ControllerBase {
   }
 
   protected function getImgUrl ($fid) {
+    if(!$fid) return;
 
     $file = File::load($fid);
     $image_uri = $file->getFileUri();

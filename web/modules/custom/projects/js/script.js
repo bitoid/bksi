@@ -32,7 +32,7 @@ function displayData(arr) {
         <div class="group md:relative md:overflow-hidden">
                <a href="/node/${projectsData['nid']}" class="${parseInt(projectsData['tick']) === 1 ? 'pointer-events-none relative block w-full h-56 md:h-[400px] mb-5 md:mb-0' : 'relative block w-full h-56 md:h-[400px] mb-5 md:mb-0'}">
                     <div class="relative fade-in-image-container h-full">
-                        <img class="w-full fade-in-image h-full object-cover" src="${projectsData['image']}" alt=""/>
+                        <img class="w-full fade-in-image h-full object-cover" src="${projectsData['image'] ? projectsData['image'] : ''}" alt=""/>
                     </div>
                     <span class="absolute right-5 bottom-5 w-10 h-10 rounded-full bg-white flex items-center justify-center md:hidden"><img src="modules/custom/projects/images/arrow-textlinks.svg" alt=""/></span>
                     <h4 class="hidden text-2xl absolute bottom-10 left-10 text-white font-semibold group-hover:bottom-[calc(100%-60px)] group-hover:translate-y-1/2 z-10 md:block">${projectsData['title']}</h4>
@@ -86,6 +86,7 @@ async function setup() {
   data = await fetchData();
   filteredProjects = filterWithCompany(data);
 
+  // hide dropdown lists on window click
   document.addEventListener('click', (e) => {
     if (!sectorDrop.contains(e.target)) {
       sectorDrop.classList.remove('active')
@@ -98,6 +99,7 @@ async function setup() {
     }
   });
 
+  // clear all filter button hendler
   allProjectsEl.addEventListener('click', () => {
     currentprojectEl.innerHTML = '';
     clearProjectsEl.classList.add('hidden');
@@ -106,19 +108,16 @@ async function setup() {
     filteredProjects = [...data];
     checkProjectsToDisable(filteredProjects, groupItems)
     displayData(filteredProjects);
-
-
   });
 
+  // remove single filter button
   currentprojectEl.addEventListener('click', (e) => {
     if (!e.target.closest('#curent-projects')) return;
 
     const type = e.target.dataset.type ? e.target.dataset.type : e.target.closest(".curently-chosen").dataset.type;
     e.target.closest('.curently-chosen').remove(); // remove button
 
-    console.log(filters);
     delete filters[type];
-    console.log(filters);
     if (!Object.keys(filters).length) {
       clearProjectsEl.classList.add('hidden')
     }
@@ -127,17 +126,21 @@ async function setup() {
     displayData(filteredProjects);
   })
 
+  // filter data on dropdown click
   container.addEventListener('click', e => {
     if (!e.target.closest(".project-dropdown")) return;
     let type = e.target.closest(".project-dropdown").id.split("-")[0];
     if (!e.target.closest(`#${type}-dropdown`)) return;
 
     const value = e.target.dataset.value ? e.target.dataset.value : e.target.parentElement.dataset.value;
+    const listItem = e.target.dataset.value ? e.target.firstElementChild : e.target;
+
+    if(!!listItem.dataset.disabled) return;
 
     if (!filters[type]) {
       filters[type] = value;
 
-      createButton(type, value);
+      createButton(type, value); // create button if its type doesn't exist in filter obj
     }
 
     filteredProjects = filterWithDropdown(data, filters);
@@ -162,35 +165,22 @@ function filterWithCompany(arr) {
 
 
 function checkProjectsToDisable(arr1, arr2) {
-  
-  itemsToDisable = [];
-
   for (let i = 0; i < arr2.length; i++) {
-    itemsToDisable[i] = arr2[i].innerText.toLowerCase().trim();
-  }
-  for (let j = 0; j < arr1.length; j++) {
-    for (let i = 0; i < itemsToDisable.length; i++) {
-      if (itemsToDisable[i] === arr1[j]['building'].toLowerCase().trim() || itemsToDisable[i] === arr1[j]['service'].toLowerCase().trim() || itemsToDisable[i] === arr1[j]['sector'].toLowerCase().trim()) {
-        itemsToDisable.splice(i, 1)
+    const listItem = arr2[i].parentElement;
+    const listItemValue = listItem.dataset.value;
+    const parentUlId = listItem.parentElement.id.split("-")[0];
+
+    arr2[i].dataset.disabled = "true";
+    arr1.forEach(elem => {
+      if (elem[parentUlId] && elem[parentUlId].toLowerCase() === listItemValue) {
+        arr2[i].dataset.disabled = ""; // turns into false
       }
-    }
-  }
-  
-  for (let i = 0; i < arr2.length; i++) {
-    if (itemsToDisable.some(e => e === arr2[i].innerText.toLowerCase().trim())) {
-      arr2[i].dataset.disabled = 'true';
-    } else {
-      arr2[i].dataset.disabled ='';
-    }
+    });
   }
 
   for (let i = 0; i < arr2.length; i++) {
-    if (arr2[i].dataset.disabled) {
-      arr2[i].style.color = 'red'
-    } else {
-      arr2[i].style.color = 'green'
-
-    }
+    if (arr2[i].dataset.disabled) arr2[i].style.color = 'red'
+    else arr2[i].style.color = 'green';
   }
 }
 
@@ -198,7 +188,11 @@ function checkProjectsToDisable(arr1, arr2) {
 function filterWithDropdown(data, filters) {
   let filterdArr = [...data];
   for (let key in filters) {
-    filterdArr = filterdArr.filter(elem => elem[key].toLowerCase() === filters[key]);
+    filterdArr = filterdArr.filter(elem => {
+      if (elem[key]){
+        return elem[key].toLowerCase() === filters[key];
+      }
+    });
   }
   return filterdArr;
 }

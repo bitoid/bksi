@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: a279b0a2-00a1-43cc-94ea-7404b5083ecf
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: logo-dgnb.png
+  uri:
+    -
+      value: 'public://2022-09/logo-dgnb.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 8762
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1663143985

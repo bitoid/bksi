@@ -53,10 +53,10 @@ class ProjectsController extends ControllerBase {
       ->execute();
 
     $results = $node_storage->loadMultiple($nids);
-    
+
     $data = [];
     foreach ($results as $result) {
-      
+
       $target_id= $result->field_customer->getValue()[0]['target_id'];
       $cids = $node_storage->getQuery()
         ->condition('type', 'customer')
@@ -75,20 +75,20 @@ class ProjectsController extends ControllerBase {
         "nid" => $result->nid->value,
         "title" => $result->getTitle(),
         "image" => $imgUrl,
-        "building type" => $building_type,
+        "building" => $building_type,
         "service" => $service,
         "customer" => $title,
         "sector" => $sector,
         'tick' => $result->field_tick->value,
         "period" => "$period[0]-$period[1]",
-        
+
       ];
 
     }
     return $data;
 
   }
-  
+
   protected function timePeriod (array $data) {
     $startTimestamp = strtotime($data[0]);
     $endTimestamp = strtotime($data[1]);

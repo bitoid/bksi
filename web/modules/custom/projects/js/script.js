@@ -116,7 +116,6 @@ async function setup() {
 
     const type = e.target.dataset.type ? e.target.dataset.type : e.target.closest(".curently-chosen").dataset.type;
     e.target.closest('.curently-chosen').remove(); // remove button
-
     delete filters[type];
     if (!Object.keys(filters).length) {
       clearProjectsEl.classList.add('hidden')
@@ -135,12 +134,13 @@ async function setup() {
     const value = e.target.dataset.value ? e.target.dataset.value : e.target.parentElement.dataset.value;
     const listItem = e.target.dataset.value ? e.target.firstElementChild : e.target;
 
-    if(!!listItem.dataset.disabled) return;
+    if (!!listItem.dataset.disabled) return;
 
     if (!filters[type]) {
       filters[type] = value;
 
       createButton(type, value); // create button if its type doesn't exist in filter obj
+      listItem.parentElement.classList.add('active-item');
     }
 
     filteredProjects = filterWithDropdown(data, filters);
@@ -177,11 +177,17 @@ function checkProjectsToDisable(arr1, arr2) {
       }
     });
   }
-
   for (let i = 0; i < arr2.length; i++) {
-    if (arr2[i].dataset.disabled) arr2[i].style.color = 'red'
-    else arr2[i].style.color = 'green';
+    if (arr2[i].dataset.disabled) {
+      arr2[i].parentElement.classList.remove('group');
+      arr2[i].classList.add('opacity-60');
+    }
+    else {
+      arr2[i].parentElement.classList.add('group');
+      arr2[i].classList.remove('opacity-60');
+    }
   }
+
 }
 
 
@@ -189,7 +195,7 @@ function filterWithDropdown(data, filters) {
   let filterdArr = [...data];
   for (let key in filters) {
     filterdArr = filterdArr.filter(elem => {
-      if (elem[key]){
+      if (elem[key]) {
         return elem[key].toLowerCase() === filters[key];
       }
     });
@@ -212,6 +218,5 @@ function createButton(type, value) {
   currentprojectEl.appendChild(btnEl);
   clearProjectsEl.classList.remove('hidden');
 }
-
 
 

@@ -16,8 +16,8 @@ settings:
   display_default: false
   uri_scheme: public
   default_image:
-    uuid: 99afb4ba-f6f5-4e86-9dc9-397fce8a5b62
-    alt: 'footer logo'
+    uuid: ''
+    alt: ''
     title: ''
     width: 181
     height: 56

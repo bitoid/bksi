@@ -30,8 +30,8 @@ settings:
   title_field: false
   title_field_required: false
   default_image:
-    uuid: f39c1bfd-2902-4e8a-8fd0-187f2c3aab85
-    alt: 'footer logo'
+    uuid: ''
+    alt: ''
     title: ''
     width: 181
     height: 56

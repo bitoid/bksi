@@ -16,7 +16,7 @@ mode: default
 content:
   field_footer_logo:
     type: image
-    label: above
+    label: hidden
     settings:
       image_link: ''
       image_style: ''
@@ -27,7 +27,7 @@ content:
     region: content
   field_footer_logo_l:
     type: link
-    label: above
+    label: hidden
     settings:
       trim_length: 80
       url_only: false

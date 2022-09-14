@@ -25,13 +25,7 @@
  * @see template_preprocess_block()
  */
 #}
-<div{{ attributes }}>
-  {{ title_prefix }}
-  {% if label %}
-    <h2{{ title_attributes }}>{{ label }}</h2>
-  {% endif %}
-  {{ title_suffix }}
-  {% block content %}
-  <span class="block text-[15px] leading-[19px] tracking-[0.75px] opacity-50 mb-[60px] md:m-0">{{ content.field_copy_right[0]['#context'].value }}</span>
-  {% endblock %}
-</div>
+
+
+<span class="block text-[15px] leading-[19px] tracking-[0.75px] opacity-50 mb-[60px] md:m-0">{{ content.field_copy_right[0]['#context'].value }}</span>
+ 

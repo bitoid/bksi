@@ -104,9 +104,9 @@ async function setup() {
 
     filters = {};
     filteredProjects = [...data];
+    checkProjectsToDisable(filteredProjects, groupItems)
     displayData(filteredProjects);
 
-    checkProjectsToDisable(data, groupItems)
 
   });
 
@@ -123,6 +123,7 @@ async function setup() {
       clearProjectsEl.classList.add('hidden')
     }
     filteredProjects = filterWithDropdown(data, filters);
+    checkProjectsToDisable(filteredProjects, groupItems);
     displayData(filteredProjects);
   })
 
@@ -133,18 +134,19 @@ async function setup() {
 
     const value = e.target.dataset.value ? e.target.dataset.value : e.target.parentElement.dataset.value;
 
-    if(!filters[type]) {
+    if (!filters[type]) {
       filters[type] = value;
 
       createButton(type, value);
     }
 
     filteredProjects = filterWithDropdown(data, filters);
+    checkProjectsToDisable(filteredProjects, groupItems);
     displayData(filteredProjects);
   });
 
+  checkProjectsToDisable(filteredProjects, groupItems);
   displayData(filteredProjects);
-  // checkProjectsToDisable(data, groupItems)
 
 }
 setup();
@@ -160,24 +162,34 @@ function filterWithCompany(arr) {
 
 
 function checkProjectsToDisable(arr1, arr2) {
-  let filteredProjects = [...arr1];
+  
   itemsToDisable = [];
+
   for (let i = 0; i < arr2.length; i++) {
     itemsToDisable[i] = arr2[i].innerText.toLowerCase().trim();
   }
-
-  for (let j = 0; j < filteredProjects.length; j++) {
+  for (let j = 0; j < arr1.length; j++) {
     for (let i = 0; i < itemsToDisable.length; i++) {
-      if (filteredProjects[j]['service'].toLowerCase().trim() !== itemsToDisable[i] || filteredProjects[j]['building type'].toLowerCase().trim() !== itemsToDisable[i] || filteredProjects[j]['sector'].toLowerCase().trim() !== itemsToDisable[i]) {
-        itemsToDisable.splice(itemsToDisable[i], 1)
+      if (itemsToDisable[i] === arr1[j]['building'].toLowerCase().trim() || itemsToDisable[i] === arr1[j]['service'].toLowerCase().trim() || itemsToDisable[i] === arr1[j]['sector'].toLowerCase().trim()) {
+        itemsToDisable.splice(i, 1)
       }
     }
   }
+  
   for (let i = 0; i < arr2.length; i++) {
     if (itemsToDisable.some(e => e === arr2[i].innerText.toLowerCase().trim())) {
-      arr2[i].style.color = 'blue';
-      // arr2[i].classList.add('item-for-disabled');
-      //aq diseibldeba yvela filter aitemi , romelic arcert proeqts ar gaachnia tavidanve chatvirtvisas
+      arr2[i].dataset.disabled = 'true';
+    } else {
+      arr2[i].dataset.disabled ='';
+    }
+  }
+
+  for (let i = 0; i < arr2.length; i++) {
+    if (arr2[i].dataset.disabled) {
+      arr2[i].style.color = 'red'
+    } else {
+      arr2[i].style.color = 'green'
+
     }
   }
 }
@@ -191,7 +203,7 @@ function filterWithDropdown(data, filters) {
   return filterdArr;
 }
 
-function createButton (type, value) {
+function createButton(type, value) {
   let btnEl = document.createElement('button');
   btnEl.dataset.type = type;
   btnEl.classList.add('curently-chosen', 'px-5', 'py-4', 'flex', 'items-center', 'gap-9', 'rounded-[50px]', 'border-2', 'bg-mainBlack', 'text-white', 'border-mainBlack');
@@ -206,3 +218,6 @@ function createButton (type, value) {
   currentprojectEl.appendChild(btnEl);
   clearProjectsEl.classList.remove('hidden');
 }
+
+
+

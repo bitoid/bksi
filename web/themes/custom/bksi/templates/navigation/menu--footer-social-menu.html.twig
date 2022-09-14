@@ -29,7 +29,7 @@
 {% macro menu_links(items, attributes, menu_level) %}
     {% import _self as menus %}
     {% if items %}
-        <ul class="flex flex-col items-start p-4 gap-10 text-[22px] h-full md:items-center md:justify-between md:text-base md:gap-5 md:p-0 md:flex-row lg:gap-12">
+        <ul class="flex gap-8 mb-8 md:m-0">
             {% for item in items %}
                
               <li class="flex group justify-center items-center w-[50px] aspect-square rounded-full bg-white hover:scale-110">

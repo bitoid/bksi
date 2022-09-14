@@ -1,0 +1,34 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 71289423-a273-4adb-95b7-2d19507621ec
+  bundle: footer_logo
+  default_langcode: en
+  depends:
+    a279b0a2-00a1-43cc-94ea-7404b5083ecf: file
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Footer Logo Block'
+  reusable:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  field_footer_logo:
+    -
+      entity: a279b0a2-00a1-43cc-94ea-7404b5083ecf
+      alt: 'footer logo'
+      title: ''
+      width: 181
+      height: 56
+  field_footer_logo_l:
+    -
+      uri: 'https://www.dgnb.de/de/index.php'
+      title: ''
+      options:
+        attributes: {  }

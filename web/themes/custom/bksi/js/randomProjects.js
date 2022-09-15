@@ -81,6 +81,7 @@ function similarProjects(data, projectType) {
 function getRandomProjects(arr, numprojects, output) {
     for (let j = 0; j < numprojects; j++) {
         let randNum = Math.floor(Math.random() * arr.length);
-        output.innerHTML += arr[randNum];
+        arr[randNum] ? output.innerHTML += arr[randNum] : "";
+        arr.splice(randNum, 1)
     }
 }

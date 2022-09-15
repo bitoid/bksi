@@ -15,3 +15,7 @@ splide:
   js:
     js/splide.js: {}
     js/splide-init.js: {}
+
+random-projects-js:
+  js:
+    js/randomProjects.js: {}

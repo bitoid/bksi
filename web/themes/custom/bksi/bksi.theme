@@ -22,7 +22,6 @@ function bksi_preprocess_node( &$variables ) {
   $node= $variables['node'];
   $type = $node -> getType();
   $nid=$node-> id();
-
   switch($type){
     case "job":
       $form = \Drupal::formBuilder()->getForm('Drupal\bksi_contact_form\Form\ContactForm');  
@@ -35,7 +34,13 @@ function bksi_preprocess_node( &$variables ) {
 
       $variables['contact_form'] = $form;
       break;
+
+      case "project":
+      $variables['#attached']['library'][] = 'bksi/random-projects-js';
+      break;
   }
 }
+
+
 
 

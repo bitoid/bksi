@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "58fe471c2fd3f58e725a8e094b939c8e",
+    "content-hash": "48784665551054165d43b761b131e563",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2242,6 +2242,58 @@
             "homepage": "https://www.drupal.org/project/paragraphs",
             "support": {
                 "source": "https://git.drupalcode.org/project/paragraphs"
+            }
+        },
+        {
+            "name": "drupal/search_exclude",
+            "version": "2.0.0-beta2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/search_exclude.git",
+                "reference": "2.0.0-beta2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/search_exclude-2.0.0-beta2.zip",
+                "reference": "2.0.0-beta2",
+                "shasum": "71fe6cdb630430697c0ac8e4e712412770c58b77"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0-beta2",
+                    "datestamp": "1615458507",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "DanielVeza",
+                    "homepage": "https://www.drupal.org/user/3362504"
+                },
+                {
+                    "name": "arshadcn",
+                    "homepage": "https://www.drupal.org/user/571032"
+                },
+                {
+                    "name": "baikho",
+                    "homepage": "https://www.drupal.org/user/2727459"
+                }
+            ],
+            "description": "Exclude content types from node search.",
+            "homepage": "https://www.drupal.org/project/search_exclude",
+            "support": {
+                "source": "https://git.drupalcode.org/project/search_exclude"
             }
         },
         {
@@ -11239,7 +11291,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/default_content": 15
+        "drupal/default_content": 15,
+        "drupal/search_exclude": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,

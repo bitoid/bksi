@@ -53,25 +53,25 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '9'
+              block_revision_id: '17'
               block_serialized: null
               context_mapping: {  }
             weight: '2'
             additional:
               target_uuid: 5b88b192-e24f-4b64-b62c-39156d3fec29
-          aa506009-b174-420d-bc19-5b073f96f7d5:
-            uuid: aa506009-b174-420d-bc19-5b073f96f7d5
+          2d3356ad-4728-44ea-bfd7-23ebf4a434ee:
+            uuid: 2d3356ad-4728-44ea-bfd7-23ebf4a434ee
             region: content
             configuration:
-              id: 'block_content:0e463375-7ccf-4408-82d8-d686e4889261'
-              label: 'Text Section with CTA (home page)'
+              id: 'block_content:96ab4878-7984-4f81-b49b-cf9bcf961685'
+              label: 'Company Details Block'
               label_display: 0
               provider: block_content
               status: true
               info: ''
               view_mode: full
               context_mapping: {  }
-            weight: '3'
+            weight: '5'
             additional: {  }
           9bb34bc6-9c02-4e48-b1b9-8b6cb6796c15:
             uuid: 9bb34bc6-9c02-4e48-b1b9-8b6cb6796c15

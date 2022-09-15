@@ -12,7 +12,7 @@ default:
       value: bksi-ingenieure-teaser-projekte.jpg
   uri:
     -
-      value: 'public://2022-08/bksi-ingenieure-teaser-projekte_29_6_2.jpg'
+      value: 'public://2022-08/bksi-ingenieure-teaser-projekte_29_6_2_0.jpg'
   filemime:
     -
       value: image/jpeg

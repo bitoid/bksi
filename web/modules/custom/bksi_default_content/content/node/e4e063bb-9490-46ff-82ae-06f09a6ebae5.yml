@@ -5,6 +5,7 @@ _meta:
   bundle: page
   default_langcode: en
   depends:
+    b4eef42c-33f8-425b-8faf-d21045ca4187: block_content
     5b88b192-e24f-4b64-b62c-39156d3fec29: block_content
     0d2a6d19-91d1-473f-b96e-158db9302806: block_content
 default:
@@ -44,21 +45,6 @@ default:
           label: content
           context_mapping: {  }
         components:
-          748ef227-8528-4d58-8ed4-aeee4fd192a3:
-            uuid: 748ef227-8528-4d58-8ed4-aeee4fd192a3
-            region: content
-            configuration:
-              id: 'inline_block:hero_block_type'
-              label: 'Home Page Hero Block'
-              label_display: 0
-              provider: layout_builder
-              view_mode: full
-              block_revision_id: '17'
-              block_serialized: null
-              context_mapping: {  }
-            weight: '2'
-            additional:
-              target_uuid: 5b88b192-e24f-4b64-b62c-39156d3fec29
           2d3356ad-4728-44ea-bfd7-23ebf4a434ee:
             uuid: 2d3356ad-4728-44ea-bfd7-23ebf4a434ee
             region: content
@@ -101,19 +87,34 @@ default:
               context_mapping: {  }
             weight: '4'
             additional: {  }
-          8fd8c609-211a-454a-8a85-f209e9a7c062:
-            uuid: 8fd8c609-211a-454a-8a85-f209e9a7c062
+          ade5266d-0237-4bd0-9065-ac62e0a9ee21:
+            uuid: ade5266d-0237-4bd0-9065-ac62e0a9ee21
             region: content
             configuration:
-              id: 'inline_block:company_details'
-              label: 'Company Details Type Block'
+              id: 'inline_block:text_section_with_cta'
+              label: 'Text Section with CTA (home page)'der
               label_display: 0
               provider: layout_builder
               view_mode: full
               block_revision_id: '43'
               block_serialized: null
-              context_mapping: {  }
-            weight: '5'
+              context_mapping: {  }=
+            weight: '3'
             additional:
-              target_uuid: 0d2a6d19-91d1-473f-b96e-158db9302806
+              target_uuid: b4eef42c-33f8-425b-8faf-d21045ca4187
+          748ef227-8528-4d58-8ed4-aeee4fd192a3:
+            uuid: 748ef227-8528-4d58-8ed4-aeee4fd192a3
+            region: content
+            configuration:
+              id: 'inline_block:hero_block_type'
+              label: 'Home Page Hero Block'
+              label_display: 0
+              provider: layout_builder
+              view_mode: full
+              block_revision_id: '45'
+              block_serialized: null
+              context_mapping: {  }
+            weight: '2'
+            additional:
+              target_uuid: 5b88b192-e24f-4b64-b62c-39156d3fec29
         third_party_settings: {  }

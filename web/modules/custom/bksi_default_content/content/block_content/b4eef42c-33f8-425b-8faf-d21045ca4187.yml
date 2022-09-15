@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: b4eef42c-33f8-425b-8faf-d21045ca4187
+  bundle: text_section_with_cta
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Text Section with CTA (home page)'
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  field_link_cta:
+    -
+      uri: 'internal:#'
+      title: 'Zum Unternehmen'
+      options:
+        attributes: {  }
+  field_paragraph:
+    -
+      value: 'Introtext, der die wichtigsten Infos zu BKSI erklärt und mit wichtigen Schlagworten für die Suchmaschinen versehen ist. Gewährleistung von Standsicherheit, Gebrauchstauglichkeit, Kostenoptimierung von Gebäuden jeglicher Art. Wir beraten, entwerfen, planen berechnen und wickeln große und kleine Projekte seit vielen Jahren. So sind wir ein wertvoller Partner für Bauherren, Architekten, Fachingenieure und ausführende Firmen. Wir geben Anstöße, regen Optimierungsvorschläge an und bringen unsere Erfahrungen und Kompetenzen gerne ein. Zukunftsorientiertes Handeln und Planen im Sinne der Nachhaltigkeit gehört zu unserem Selbstverständnis.'
+  field_slogan:
+    -
+      value: 'Miteinander unschlagbar.'
+      format: basic_html
+  field_title:
+    -
+      value: "<p>Hier steht eine Überschrift zum Thema Unternehmen.</p>\r\n"
+      format: basic_html

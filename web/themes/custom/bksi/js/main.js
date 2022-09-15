@@ -6,6 +6,14 @@ const headerTop = document.querySelector('.header-top')
 const dropDownButton = document.querySelectorAll('.dropdown-button');
 const hamburgerButton = document.querySelector('.hamburger');
 
+const getPageUrl = () => {
+  const url = window.location.href;
+  const page = url.split("?")[0].split("/").pop(); // get last element before "?" 
+  const pages = ["contact", "imprint"];
+  return pages.includes(page);
+}
+const temp = getPageUrl();
+
 const searchWidth = () => {
     searchContainer.classList.add("active");
 }
@@ -38,13 +46,15 @@ dropDownButton.forEach(n => n.addEventListener('click', () => {
 
   let prevScrollpos = window.pageYOffset;
 
+
+temp ? headerTop.classList.add("bg-darkBlue") : headerTop.style.background = "none";
 window.onscroll = function() {
   if(!hamburger.classList.contains('active')){
 
     // Appearing Header on scrolling up and dissapearing when scrolling down.
     let currentScrollPos = window.pageYOffset;
     if(prevScrollpos < headerTop.clientHeight){
-      headerTop.style.background = 'none';      
+      temp ? headerTop.classList.add("bg-darkBlue") : headerTop.style.background = "none";
       headerTop.style.top = `0px`;
     }else if (prevScrollpos > currentScrollPos) {
       headerTop.style.background = '#191428';
@@ -52,7 +62,7 @@ window.onscroll = function() {
       headerTop.style.position = 'fixed'
       headerTop.style.zIndex = '9999'
     } else {
-      headerTop.style.background = 'none';      
+      headerTop.style.background = 'none';
       headerTop.style.top = `-${headerTop.clientHeight}px`;
     }
     prevScrollpos = currentScrollPos;

@@ -70,7 +70,7 @@ default:
               news_quantity: '2'
               slogan: 'Aus dem Unternehmen'
               title: Aktuelles
-              news_type: '25'
+              news_type: '15'
               context_mapping: {  }
             weight: '6'
             additional: {  }
@@ -96,7 +96,7 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '43'
+              block_revision_id: '29'
               block_serialized: null
               context_mapping: {  }
             weight: '3'

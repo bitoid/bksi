@@ -40,7 +40,7 @@ default:
     -
       value: "<p>Fertigstellung der neuen Gemeinschaftsküche</p>\r\n"
       format: basic_html
-      summary: ''
+      summary: 'Fertigstellung der neuen Gemeinschaftsküche'
   field_image:
     -
       entity: b5eb0d9d-8155-4884-bb28-91672f4b6235

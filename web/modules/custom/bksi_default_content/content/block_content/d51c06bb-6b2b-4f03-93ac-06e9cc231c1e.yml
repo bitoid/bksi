@@ -16,6 +16,9 @@ default:
   reusable:
     -
       value: false
+  revision_translation_affected:
+    -
+      value: true
   field_apply_job:
     -
       value: "<p><span>Bewirb dich direkt:</span></p>\r\n\r\n<p><span>zu allen Jobangeboten</span></p>\r\n"

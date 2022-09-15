@@ -8,6 +8,8 @@ const allProjectsEl = document.getElementById('all-projects');
 const currentprojectEl = document.getElementById('curent-projects');
 const clearProjectsEl = document.getElementById('clear-projects');
 let groupItems = Array.from(document.querySelectorAll('.group-item'));
+const listItems = document.querySelectorAll("img-div");
+
 let templateHtml = '';
 let projectsArr = [];
 let data = [];
@@ -181,11 +183,18 @@ function checkProjectsToDisable(arr1, arr2) {
     if (arr2[i].dataset.disabled) {
       arr2[i].parentElement.classList.remove('group');
       arr2[i].classList.add('opacity-60');
-    }
-    else {
+    } else {
       arr2[i].parentElement.classList.add('group');
       arr2[i].classList.remove('opacity-60');
     }
+
+    arr2[i].parentElement.lastElementChild.classList.add("hidden");
+    for (let key in filters) { 
+      if(arr2[i].parentElement.dataset.value == filters[key]){
+        arr2[i].parentElement.lastElementChild.classList.remove("hidden");
+      }
+    }
+
   }
 
 }

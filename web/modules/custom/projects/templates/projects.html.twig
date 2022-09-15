@@ -12,9 +12,9 @@
 		<ul class=" absolute hidden overflow-hidden top-full rounded-b-3xl w-full z-50" id="building-dropdown">
 			{% for buildings in building %}
 				<li class="flex justify-between items-center group py-3 px-5 bg-lightGray border-t border-white" data-value="{{ buildings.name|lower }}">
-					<a class="group-hover:text-mainRed font-['buch'] group-item" href="#">{{ buildings.name }}</a>
+					<span class="group-hover:text-mainRed font-['buch'] group-item" href="#">{{ buildings.name }}</span>
 					<div class="hidden img-div">
-					<img src="modules/custom/projects/images/checkmark-16.png" />
+						<img class="absolute" src="modules/custom/projects/images/checkmark-16.png" />
 					</div>
 				</li>
 			{% endfor %}
@@ -26,9 +26,9 @@
 		<ul class=" absolute hidden overflow-hidden top-full rounded-b-3xl w-full z-50" id="service-dropdown">
 			{% for services in service %}
 				<li class="flex justify-between items-center group py-3 px-5 bg-lightGray border-t border-white" data-value="{{ services.name|lower }}">
-					<a class="group-hover:text-mainRed font-['buch'] group-item" href="#">{{ services.name }}</a>
+					<span class="group-hover:text-mainRed font-['buch'] group-item" href="#">{{ services.name }}</span>
 					<div class="hidden img-div">
-					<img src="modules/custom/projects/images/checkmark-16.png" />
+						<img class="absolute" src="modules/custom/projects/images/checkmark-16.png" />
 					</div>
 				</li>
 			{% endfor %}
@@ -40,9 +40,9 @@
 		<ul class=" absolute hidden overflow-hidden top-full rounded-b-3xl w-full z-50" id="sector-dropdown">
 			{% for sectors in sector %}
 				<li class="flex justify-between items-center group py-3 px-5 bg-lightGray border-t border-white" data-value="{{ sectors.name|lower }}">
-					<a class="group-hover:text-mainRed font-['buch'] group-item" href="#">{{ sectors.name }}</a>
+					<span class="group-hover:text-mainRed font-['buch'] group-item" href="#">{{ sectors.name }}</span>
 					<div class="hidden img-div">
-					<img src="modules/custom/projects/images/checkmark-16.png" />
+					<img class="absolute" src="modules/custom/projects/images/checkmark-16.png" />
 					</div>
 				</li>
 			{% endfor %}

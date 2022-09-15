@@ -6,13 +6,13 @@
         {{ title }}
       </h2>
     </div>
-    <div class="flex flex-col gap-8 md:gap-5 md:w-2/3">
+    <div class="flex flex-col gap-8 md:gap-5 md:w-[75%] lg:w-2/3">
       {% for news in news_array %}
-          <a href="/node/{{ news.nid }}" class="grid grid-cols-1 md:grid-cols-2">
-            <div class="relative fade-in-image-container w-full h-[50vh] lg:h-full overflow-hidden">
-              <img class="fade-in-image object-cover w-full h-full" src="{{ news.news_image }}" alt="">
+          <a href="/node/{{ news.nid }}" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5">
+            <div class="relative fade-in-image-container w-full h-[25vh] md:h-[50vh] md:col-span-1 lg:col-span-2 lg:h-full overflow-hidden">
+              <img class="fade-in-image object-cover  w-full h-full" src="{{ news.news_image }}" alt="">
             </div>
-            <div class="text-fade  p-10 bg-white">
+            <div class="text-fade  p-10 bg-white md:h-[250px] md:col-span-2 lg:col-span-3">
               <div class="text-content-fade flex flex-col gap-5">
                 <h3 class="flex flex-col gap-3 text-xl">
                   <span class="text-[13px] tracking-[0.65px]">{{ news.date }} </span>

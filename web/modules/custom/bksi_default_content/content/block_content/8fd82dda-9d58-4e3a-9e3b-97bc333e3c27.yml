@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 8fd82dda-9d58-4e3a-9e3b-97bc333e3c27
+  bundle: contacts
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Contacts (services page)'
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  field_email:
+    -
+      value: info@bksi.de
+  field_phone_number:
+    -
+      value: '0711 / 36 53 38 - 30'
+  field_slogan:
+    -
+      value: Kontakt
+      format: basic_html
+  field_title:
+    -
+      value: "<p>Wir informieren Sie gerne zu unseren Leistungen. Nehmen Sie einfach Kontakt zu uns auf.</p>\r\n"
+      format: basic_html

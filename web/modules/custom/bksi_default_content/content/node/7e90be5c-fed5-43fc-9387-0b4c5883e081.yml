@@ -8,8 +8,9 @@ _meta:
     e795c38b-d04f-40fa-9353-98758e0653f3: block_content
     3c349a1d-acb4-46f2-83dc-07367ac0af52: block_content
     2c40fe7b-3f3b-476f-9937-e1d077ab2a09: block_content
-    c4db11fc-e04d-4bd5-a059-a58963f8b49b: block_content
     084e09ca-3589-45e0-b139-d9697572d523: block_content
+    8fd82dda-9d58-4e3a-9e3b-97bc333e3c27: block_content
+    c4db11fc-e04d-4bd5-a059-a58963f8b49b: block_content
 default:
   revision_uid:
     -
@@ -73,7 +74,7 @@ default:
               block_revision_id: '30'
               block_serialized: null
               context_mapping: {  }
-            weight: '4'
+            weight: '3'
             additional:
               target_uuid: 3c349a1d-acb4-46f2-83dc-07367ac0af52
           9a53443e-cc2f-4465-8877-a2286b5104bc:
@@ -91,21 +92,6 @@ default:
             weight: '6'
             additional:
               target_uuid: 2c40fe7b-3f3b-476f-9937-e1d077ab2a09
-          08d577d1-956f-4b5d-8140-096485112dfc:
-            uuid: 08d577d1-956f-4b5d-8140-096485112dfc
-            region: content
-            configuration:
-              id: 'inline_block:hero_block_type'
-              label: 'Services hero block '
-              label_display: 0
-              provider: layout_builder
-              view_mode: full
-              block_revision_id: '23'
-              block_serialized: null
-              context_mapping: {  }
-            weight: '0'
-            additional:
-              target_uuid: c4db11fc-e04d-4bd5-a059-a58963f8b49b
           be30300a-076d-4d33-b40c-47f0a86f2447:
             uuid: be30300a-076d-4d33-b40c-47f0a86f2447
             region: content
@@ -117,7 +103,7 @@ default:
               slogan: 'Unsere Geschäftsfelder im Überblick'
               title: Leistungen
               context_mapping: {  }
-            weight: '3'
+            weight: '2'
             additional: {  }
           922df27e-82fe-4472-b927-510cdee96cea:
             uuid: 922df27e-82fe-4472-b927-510cdee96cea
@@ -134,4 +120,34 @@ default:
             weight: '7'
             additional:
               target_uuid: 084e09ca-3589-45e0-b139-d9697572d523
+          0f884589-2872-4172-a9ec-d208aeda9126:
+            uuid: 0f884589-2872-4172-a9ec-d208aeda9126
+            region: content
+            configuration:
+              id: 'inline_block:contacts'
+              label: 'Contacts (services page)'
+              label_display: 0
+              provider: layout_builder
+              view_mode: full
+              block_revision_id: '46'
+              block_serialized: null
+              context_mapping: {  }
+            weight: '4'
+            additional:
+              target_uuid: 8fd82dda-9d58-4e3a-9e3b-97bc333e3c27
+          08d577d1-956f-4b5d-8140-096485112dfc:
+            uuid: 08d577d1-956f-4b5d-8140-096485112dfc
+            region: content
+            configuration:
+              id: 'inline_block:hero_block_type'
+              label: 'Services hero block '
+              label_display: 0
+              provider: layout_builder
+              view_mode: full
+              block_revision_id: '23'
+              block_serialized: null
+              context_mapping: {  }
+            weight: '0'
+            additional:
+              target_uuid: c4db11fc-e04d-4bd5-a059-a58963f8b49b
         third_party_settings: {  }

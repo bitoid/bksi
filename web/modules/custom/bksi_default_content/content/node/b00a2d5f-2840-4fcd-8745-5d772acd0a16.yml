@@ -40,7 +40,7 @@ default:
     -
       value: "<p>mKR Teilneubau und Sanierung BA1 medius KlINIK OSTFILDERN-RUIT</p>\r\n"
       format: basic_html
-      summary: ''
+      summary: 'mKR Teilneubau und Sanierung BA1 medius KlINIK OSTFILDERN-RUIT'
   field_image:
     -
       entity: 4f8984a7-4706-4ef4-8e0a-e4cfe5ef1fd9

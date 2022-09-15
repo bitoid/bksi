@@ -57,7 +57,7 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '41'
+              block_revision_id: '33'
               block_serialized: null
               context_mapping: {  }
             weight: '6'
@@ -72,7 +72,7 @@ default:
               label_display: visible
               provider: layout_builder
               view_mode: full
-              block_revision_id: '23'
+              block_revision_id: '20'
               block_serialized: null
               context_mapping: {  }
             weight: '4'
@@ -87,7 +87,7 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '39'
+              block_revision_id: '45'
               block_serialized: null
               context_mapping: {  }
             weight: '2'
@@ -102,7 +102,7 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '43'
+              block_revision_id: '9'
               block_serialized: null
               context_mapping: {  }
             weight: '3'
@@ -136,7 +136,7 @@ default:
               news_quantity: '4'
               slogan: 'Aus dem Unternehmen'
               title: Aktuelles
-              news_type: '24'
+              news_type: '16'
               context_mapping: {  }
             weight: '9'
             additional: {  }
@@ -149,7 +149,7 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '50'
+              block_revision_id: '46'
               block_serialized: null
               context_mapping: {  }
             weight: '8'
@@ -164,7 +164,7 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '37'
+              block_revision_id: '44'
               block_serialized: null
               context_mapping: {  }
             weight: '7'
@@ -179,7 +179,7 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '17'
+              block_revision_id: '28'
               block_serialized: null
               context_mapping: {  }
             weight: '1'

@@ -40,7 +40,7 @@ default:
     -
       value: "<p>Neubau Bürogebäude Wörwag Böblingen</p>\r\n"
       format: basic_html
-      summary: ''
+      summary: 'Fertigstellung der neuen Gemeinschaftsküche'
   field_image:
     -
       entity: df20e036-c379-4789-b6c9-1ce3c60ccb13

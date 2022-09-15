@@ -40,7 +40,7 @@ default:
     -
       value: "<p>Neubau Bürogebäude Wörwag Böblingen</p>\r\n"
       format: basic_html
-      summary: ''
+      summary: 'Neubau Bürogebäude Wörwag Böblingen'
   field_image:
     -
       entity: 39d53aa7-0fc3-418a-bcc9-41031100db20

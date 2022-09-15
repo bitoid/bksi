@@ -40,7 +40,7 @@ default:
     -
       value: "<p>Betriebsausflug Rottweil Thyssenkrupp Tower</p>\r\n"
       format: basic_html
-      summary: ''
+      summary: 'Betriebsausflug Rottweil Thyssenkrupp Tower'
   field_image:
     -
       entity: 32d993c3-0627-49f0-86bf-09472f806634

@@ -40,7 +40,7 @@ default:
     -
       value: "<p>Ofterschwang</p>\r\n"
       format: basic_html
-      summary: ''
+      summary: Ofterschwang
   field_image:
     -
       entity: f17f7841-a6b4-4f99-ac0f-971b009d3615

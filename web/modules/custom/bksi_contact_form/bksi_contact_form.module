@@ -14,10 +14,6 @@ function bksi_contact_form_mail($key, &$message, $params) {
 				"Email: {$params['email']}\n".
 				"Message:\n\t{$params['message']}\n".
 				"File Url: {$params['file']}"; 
-			$message['params']['attachments'][] = [
-		    	'filename' => 'test.pdf',
-		    	'filepath' => $params['file'],
-      		];
 			break;
 	}
 }

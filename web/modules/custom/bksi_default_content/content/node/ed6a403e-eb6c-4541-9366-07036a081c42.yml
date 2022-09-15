@@ -4,6 +4,9 @@ _meta:
   uuid: ed6a403e-eb6c-4541-9366-07036a081c42
   bundle: page
   default_langcode: en
+  depends:
+    b39371b0-c239-4287-a357-dc55b5753358: block_content
+    998e9a37-6a23-4a73-bde0-b069c728fe4e: block_content
 default:
   revision_uid:
     -
@@ -34,6 +37,52 @@ default:
       alias: /projects
       langcode: en
   layout_builder__layout:
+    -
+      section:
+        layout_id: layout_onecol
+        layout_settings:
+          label: Hero
+          context_mapping: {  }
+        components:
+          f9c2294a-b746-4324-8caa-99ab14911c5b:
+            uuid: f9c2294a-b746-4324-8caa-99ab14911c5b
+            region: content
+            configuration:
+              id: 'inline_block:hero_block_type'
+              label: 'Project hero block'
+              label_display: 0
+              provider: layout_builder
+              view_mode: full
+              block_revision_id: '43'
+              block_serialized: null
+              context_mapping: {  }
+            weight: 0
+            additional:
+              target_uuid: b39371b0-c239-4287-a357-dc55b5753358
+        third_party_settings: {  }
+    -
+      section:
+        layout_id: layout_onecol
+        layout_settings:
+          label: description
+          context_mapping: {  }
+        components:
+          c9d873bb-6974-432d-863f-4128813c0761:
+            uuid: c9d873bb-6974-432d-863f-4128813c0761
+            region: content
+            configuration:
+              id: 'inline_block:text_block_type'
+              label: 'Project text block'
+              label_display: 0
+              provider: layout_builder
+              view_mode: full
+              block_revision_id: '44'
+              block_serialized: null
+              context_mapping: {  }
+            weight: 0
+            additional:
+              target_uuid: 998e9a37-6a23-4a73-bde0-b069c728fe4e
+        third_party_settings: {  }
     -
       section:
         layout_id: layout_onecol

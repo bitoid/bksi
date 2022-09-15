@@ -1,0 +1,111 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: eff839ff-4121-43ee-819d-d04cafe4e093
+  bundle: project
+  default_langcode: en
+  depends:
+    74b57dad-cfc7-44e4-a142-d88879055d9e: node
+    0d964f1f-0727-4a3d-a12f-28065d51f92f: file
+    39b9c3bf-329a-462b-9cae-cfcef59b1a9d: file
+    43f55b7e-4b01-4df8-a7c4-731f49ea8990: file
+    0390a113-d2ec-49e6-9441-22ddd0a40d6e: taxonomy_term
+    054d1e87-fecc-452b-ba3c-8969cb0a5a16: taxonomy_term
+    c1ea50be-0551-4466-b734-cf27bd857a9f: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Wohnanlage Denkendorf'
+  created:
+    -
+      value: 1663230258
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  field_bgf:
+    -
+      value: BGF
+  field_customer:
+    -
+      entity: 74b57dad-cfc7-44e4-a142-d88879055d9e
+  field_project_challange_title:
+    -
+      value: 'Herausforderungen des Projekts'
+      format: basic_html
+  field_project_challenges:
+    -
+      value: "<p>Wohnanlage DenkendorfWohnanlage DenkendorfWohnanlage DenkendorfWohnanlage DenkendorfWohnanlage DenkendorfWohnanlage DenkendorfWohnanlage DenkendorfWohnanlage DenkendorfWohnanlage DenkendorfWohnanlage DenkendorfWohnanlage DenkendorfWohnanlage DenkendorfWohnanlage DenkendorfWohnanlage DenkendorfWohnanlage DenkendorfWohnanlage DenkendorfWohnanlage DenkendorfWohnanlage DenkendorfWohnanlage DenkendorfvWohnanlage Denkendorf</p>\r\n"
+      format: basic_html
+  field_project_challenge_image:
+    -
+      entity: 0d964f1f-0727-4a3d-a12f-28065d51f92f
+      alt: 'project 3'
+      title: ''
+      width: 1000
+      height: 667
+  field_project_description:
+    -
+      value: "<p>Wohnanlage DenkendorfWohnanlage DenkendorfWohnanlage DenkendorfWohnanlage DenkendorfWohnanlage DenkendorfWohnanlage DenkendorfWohnanlage DenkendorfWohnanlage DenkendorfWohnanlage DenkendorfWohnanlage DenkendorfWohnanlage Denkendorf</p>\r\n"
+      format: basic_html
+  field_project_description_title:
+    -
+      value: Projektbeschreibung
+      format: basic_html
+  field_project_header_image:
+    -
+      entity: 39b9c3bf-329a-462b-9cae-cfcef59b1a9d
+      alt: 'project 3'
+      title: ''
+      width: 1000
+      height: 667
+  field_project_image:
+    -
+      entity: 43f55b7e-4b01-4df8-a7c4-731f49ea8990
+      alt: 'project 3 '
+      title: ''
+      width: 1000
+      height: 667
+  field_project_period:
+    -
+      value: '2022-09-06'
+    -
+      value: '2022-09-30'
+  field_project_sector:
+    -
+      entity: 0390a113-d2ec-49e6-9441-22ddd0a40d6e
+  field_project_service:
+    -
+      entity: 054d1e87-fecc-452b-ba3c-8969cb0a5a16
+  field_project_type:
+    -
+      entity: c1ea50be-0551-4466-b734-cf27bd857a9f
+  field_sustainability_issues:
+    -
+      value: "<p>Wohnanlage DenkendorfWohnanlage DenkendorfWohnanlage DenkendorfWohnanlage DenkendorfWohnanlage DenkendorfWohnanlage DenkendorfWohnanlage DenkendorfWohnanlage DenkendorfWohnanlage DenkendorfWohnanlage DenkendorfWohnanlage DenkendorfWohnanlage DenkendorfWohnanlage Denkendorf</p>\r\n"
+      format: basic_html
+  field_sustainability_issue_title:
+    -
+      value: 'Ggf. Nachhaltigkeitsthemen oder Untersuchung von Alternativen Lösungen'
+      format: basic_html
+  field_tick:
+    -
+      value: true

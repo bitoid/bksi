@@ -57,7 +57,7 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '42'
+              block_revision_id: '41'
               block_serialized: null
               context_mapping: {  }
             weight: '6'
@@ -72,7 +72,7 @@ default:
               label_display: visible
               provider: layout_builder
               view_mode: full
-              block_revision_id: '15'
+              block_revision_id: '23'
               block_serialized: null
               context_mapping: {  }
             weight: '4'
@@ -87,7 +87,7 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '40'
+              block_revision_id: '39'
               block_serialized: null
               context_mapping: {  }
             weight: '2'
@@ -102,7 +102,7 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '5'
+              block_revision_id: '43'
               block_serialized: null
               context_mapping: {  }
             weight: '3'
@@ -146,10 +146,10 @@ default:
             configuration:
               id: 'inline_block:contact_block_type'
               label: 'contact block on carier page'
-              label_display: visible
+              label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '52'
+              block_revision_id: '50'
               block_serialized: null
               context_mapping: {  }
             weight: '8'
@@ -164,7 +164,7 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '36'
+              block_revision_id: '37'
               block_serialized: null
               context_mapping: {  }
             weight: '7'
@@ -179,7 +179,7 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '38'
+              block_revision_id: '17'
               block_serialized: null
               context_mapping: {  }
             weight: '1'

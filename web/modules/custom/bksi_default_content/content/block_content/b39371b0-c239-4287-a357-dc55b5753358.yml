@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: b39371b0-c239-4287-a357-dc55b5753358
+  bundle: hero_block_type
+  default_langcode: en
+  depends:
+    e6fe16d4-014f-4714-88bf-16831a05f502: file
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Project hero block'
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  field_image:
+    -
+      entity: e6fe16d4-014f-4714-88bf-16831a05f502
+      alt: 'hero project img'
+      title: ''
+      width: 1920
+      height: 1080
+  field_slogan:
+    -
+      value: Projekte
+      format: basic_html
+  field_title:
+    -
+      value: "<p>Nachweis hoher Expertise und Leistungs­fähigkeit unserer Mitarbeitenden</p>\r\n"
+      format: basic_html

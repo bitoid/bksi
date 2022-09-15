@@ -1,7 +1,7 @@
 _meta:
   version: '1.0'
   entity_type: file
-  uuid: 5e56e3ec-61b2-449e-b4ee-850b9912c23c
+  uuid: 02f91f91-5cf3-4f84-84e5-e1fd4d5ad8b8
   default_langcode: en
 default:
   uid:
@@ -9,19 +9,19 @@ default:
       target_id: 1
   filename:
     -
-      value: bksi-ingenieure-kunden-planen-bauen.jpg
+      value: house-2_2.jpg
   uri:
     -
-      value: 'public://2022-09/bksi-ingenieure-kunden-planen-bauen_9.jpg'
+      value: 'public://2022-09/house-2_2.jpg'
   filemime:
     -
       value: image/jpeg
   filesize:
     -
-      value: 8409
+      value: 112561
   status:
     -
       value: true
   created:
     -
-      value: 1662710824
+      value: 1663230166

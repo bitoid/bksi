@@ -30,7 +30,7 @@ function displayData(arr) {
   for (projectsData of arr) {
     templateHtml = `
         <div class="group md:relative md:overflow-hidden">
-               <a href="/node/${projectsData['nid']}" class="${parseInt(projectsData['tick']) === 1 ? 'pointer-events-none relative block w-full h-56 md:h-[400px] mb-5 md:mb-0' : 'relative block w-full h-56 md:h-[400px] mb-5 md:mb-0'}">
+               <a href="/node/${projectsData['nid']}" class="${parseInt(projectsData['tick']) !== 1 ? 'pointer-events-none relative block w-full h-56 md:h-[400px] mb-5 md:mb-0' : 'relative block w-full h-56 md:h-[400px] mb-5 md:mb-0'}">
                     <div class="relative fade-in-image-container h-full">
                         <img class="w-full fade-in-image h-full object-cover" src="${projectsData['image'] ? projectsData['image'] : ''}" alt=""/>
                     </div>
@@ -64,7 +64,7 @@ function displayData(arr) {
                         </div>
                     </div>
                     <a href="/node/${projectsData['nid']}"
-                        class="${parseInt(projectsData['tick']) === 1 ? 'hidden pointer-events-none' : 'absolute right-5 bottom-5 w-10 h-10 rounded-full bg-white hidden md:flex items-center justify-center'} "><img
+                        class="${parseInt(projectsData['tick']) !== 1 ? 'hidden pointer-events-none' : 'absolute right-5 bottom-5 w-10 h-10 rounded-full bg-white hidden md:flex items-center justify-center'} "><img
                             src="modules/custom/projects/images/arrow-textlinks.svg" alt=""></a>
                   </div>
             </div>

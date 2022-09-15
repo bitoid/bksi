@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 998e9a37-6a23-4a73-bde0-b069c728fe4e
+  bundle: text_block_type
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Project text block'
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  field_text_block_description:
+    -
+      value: "<p>&nbsp;</p>\r\n\r\n<p>Wir beherrschen die Prozessabläufe und das Schnittstellenmanagement im Projekt und sehen dies als die Grundlage einer optimierten und professionellen Projektabwicklung. Des weiteren verfügen wir über Kooperation- und Planungspartner aus allen Bereichen der Bauplanung und Bauabwicklung.</p>\r\n"
+      format: basic_html
+  field_title:
+    -
+      value: "<p>&nbsp;</p>\r\n\r\n<p>Auch unsere Kunden und Partner sehen wir als erweitertes Team – denn nur so erreicht man exzellente Ergebnisse wie im folgenden zu sehen.</p>\r\n"
+      format: basic_html

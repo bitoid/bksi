@@ -1,0 +1,132 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 908645ce-1079-4503-a217-92bc1b4cc14f
+  bundle: project
+  default_langcode: en
+  depends:
+    80e2e108-fe9f-48dd-ab2d-3c6933b08dbd: node
+    cd5c5ad9-ef56-4eab-8c18-38496bd0a636: file
+    1ae45838-0309-4330-a4f4-983d55865e8f: file
+    5172a5eb-1334-4469-9858-9c4d93cd2f37: file
+    04049180-6fe5-49c9-b3b8-2bb4898b2c6d: file
+    242cfce7-f4d4-4bed-85e9-8664a01aa97f: file
+    705bfeff-8515-4079-8c7d-0ca193e96bfc: file
+    2b80b8ba-8e32-47e2-a288-135b04664e1f: taxonomy_term
+    466d4996-a540-4089-908d-88fd59a907bc: taxonomy_term
+    f27090b6-c3e8-43cd-aabe-74e0de2f0fff: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Erweiterung Produktion Werk 4 Bau 50-53 Stuttgart-Zuffenhausen'
+  created:
+    -
+      value: 1663230355
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  field_bgf:
+    -
+      value: 'Projekt Eckdaten'
+  field_customer:
+    -
+      entity: 80e2e108-fe9f-48dd-ab2d-3c6933b08dbd
+  field_project_challange_title:
+    -
+      value: 'Herausforderungen des Projekts'
+      format: basic_html
+  field_project_challenges:
+    -
+      value: "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata</p>\r\n"
+      format: basic_html
+  field_project_challenge_image:
+    -
+      entity: cd5c5ad9-ef56-4eab-8c18-38496bd0a636
+      alt: 'project 4'
+      title: ''
+      width: 1000
+      height: 667
+  field_project_description:
+    -
+      value: "<p>Ausgangssituation, tiefere Leistungsbeschreibung (Welche Leistungen hat BKSi erbracht), Kooperationspartner (Architekten o.Ä.) Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata</p>\r\n"
+      format: basic_html
+  field_project_description_title:
+    -
+      value: Projektbeschreibung
+      format: basic_html
+  field_project_header_image:
+    -
+      entity: 1ae45838-0309-4330-a4f4-983d55865e8f
+      alt: 'project 4'
+      title: ''
+      width: 1000
+      height: 667
+  field_project_image:
+    -
+      entity: 5172a5eb-1334-4469-9858-9c4d93cd2f37
+      alt: 'project 4'
+      title: ''
+      width: 1000
+      height: 667
+    -
+      entity: 04049180-6fe5-49c9-b3b8-2bb4898b2c6d
+      alt: 'project 6'
+      title: ''
+      width: 1080
+      height: 720
+    -
+      entity: 242cfce7-f4d4-4bed-85e9-8664a01aa97f
+      alt: 'project 3'
+      title: ''
+      width: 1000
+      height: 667
+    -
+      entity: 705bfeff-8515-4079-8c7d-0ca193e96bfc
+      alt: 'project 2'
+      title: ''
+      width: 940
+      height: 625
+  field_project_period:
+    -
+      value: '2022-09-08'
+    -
+      value: '2022-09-30'
+  field_project_sector:
+    -
+      entity: 2b80b8ba-8e32-47e2-a288-135b04664e1f
+  field_project_service:
+    -
+      entity: 466d4996-a540-4089-908d-88fd59a907bc
+  field_project_type:
+    -
+      entity: f27090b6-c3e8-43cd-aabe-74e0de2f0fff
+  field_sustainability_issues:
+    -
+      value: "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata</p>\r\n"
+      format: basic_html
+  field_sustainability_issue_title:
+    -
+      value: 'Ggf. Nachhaltigkeitsthemen oder Untersuchung von Alternativen Lösungen'
+      format: basic_html
+  field_tick:
+    -
+      value: true

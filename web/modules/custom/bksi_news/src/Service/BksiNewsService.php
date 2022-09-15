@@ -25,7 +25,7 @@ class BksiNewsService
       $news_image = File::load($file_id)->getFileUri();
       $url = ImageStyle::load('original')->buildUrl($news_image);
       $date = date("F Y", $item->created->value);
-      $body = str_replace("&nbsp;", ' ', $item->body->value);
+      $body = str_replace("&nbsp;", ' ', $item->body->summary);
       return [
         'nid' => $item->nid->value,
         'date' => $date,

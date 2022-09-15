@@ -50,6 +50,7 @@ class ProjectsController extends ControllerBase {
     $node_storage = $this->entityTypeManager->getStorage('node');
     $nids = $node_storage->getQuery()
       ->condition('type', 'project')
+      ->sort('created', 'DESC')
       ->execute();
 
     $results = $node_storage->loadMultiple($nids);

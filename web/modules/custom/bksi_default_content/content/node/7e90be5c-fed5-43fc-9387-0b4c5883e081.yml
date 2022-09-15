@@ -46,20 +46,6 @@ default:
         layout_settings:
           label: ''
         components:
-          17628ece-de3c-40ac-907f-054eede1a1b8:
-            uuid: 17628ece-de3c-40ac-907f-054eede1a1b8
-            region: content
-            configuration:
-              id: 'block_content:a70afd5f-2f36-43b5-ab08-d1922db818aa'
-              label: 'Contacts (Services Page)'
-              label_display: 0
-              provider: block_content
-              status: true
-              info: ''
-              view_mode: full
-              context_mapping: {  }
-            weight: '5'
-            additional: {  }
           24cb64cb-14fb-4947-9bdd-ad782aabb5c9:
             uuid: 24cb64cb-14fb-4947-9bdd-ad782aabb5c9
             region: content
@@ -69,7 +55,7 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '4'
+              block_revision_id: '7'
               block_serialized: null
               context_mapping: {  }
             weight: '1'
@@ -84,7 +70,7 @@ default:
               label_display: visible
               provider: layout_builder
               view_mode: full
-              block_revision_id: '31'
+              block_revision_id: '30'
               block_serialized: null
               context_mapping: {  }
             weight: '4'
@@ -99,7 +85,7 @@ default:
               label_display: visible
               provider: layout_builder
               view_mode: full
-              block_revision_id: '30'
+              block_revision_id: '15'
               block_serialized: null
               context_mapping: {  }
             weight: '6'
@@ -114,7 +100,7 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '19'
+              block_revision_id: '23'
               block_serialized: null
               context_mapping: {  }
             weight: '0'
@@ -142,7 +128,7 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '26'
+              block_revision_id: '28'
               block_serialized: null
               context_mapping: {  }
             weight: '7'

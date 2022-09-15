@@ -92,13 +92,13 @@ default:
             region: content
             configuration:
               id: 'inline_block:text_section_with_cta'
-              label: 'Text Section with CTA (home page)'der
+              label: 'Text Section with CTA (home page)'
               label_display: 0
               provider: layout_builder
               view_mode: full
               block_revision_id: '43'
               block_serialized: null
-              context_mapping: {  }=
+              context_mapping: {  }
             weight: '3'
             additional:
               target_uuid: b4eef42c-33f8-425b-8faf-d21045ca4187

@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 66d6d99e-c733-4c99-bb72-7c651956868f
+  bundle: menu_link_content
+  default_langcode: en
+  depends:
+    ed6a403e-eb6c-4541-9366-07036a081c42: node
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: Projects
+  menu_name:
+    -
+      value: main-menu
+  link:
+    -
+      target_uuid: ed6a403e-eb6c-4541-9366-07036a081c42
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: -49
+  expanded:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true

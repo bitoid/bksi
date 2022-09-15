@@ -50,6 +50,7 @@ module:
   projects: 0
   rdf: 0
   search: 0
+  search_exclude: 0
   serialization: 0
   shortcut: 0
   system: 0

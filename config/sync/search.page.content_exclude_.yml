@@ -1,0 +1,15 @@
+uuid: c25efb85-2eb6-43ee-aa27-2ffd1a9814ba
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_exclude
+id: content_exclude_
+label: 'Content (Exclude)'
+path: bksi
+weight: 0
+plugin: search_exclude_node_search
+configuration:
+  rankings: {  }
+  excluded_bundles:
+    page: page

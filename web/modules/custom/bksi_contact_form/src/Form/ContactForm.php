@@ -112,15 +112,15 @@ class ContactForm extends FormBase {
      *   Object describing the current state of the form.
      */
     public function submitForm(array &$form, FormStateInterface $form_state) {
-      $inputs = ($form_state->getUserInput());
-      $file = \Drupal\file\Entity\File::load($inputs['file']['fids']);
+      $values = ($form_state->getUserInput());
+      $file = \Drupal\file\Entity\File::load($values['file']['fids']);
       $file_url = $file->getFileUri();
       $params = array(
-        'name' => $inputs['name'],
-        'surname' => $inputs['surname'],
-        'email' => $inputs['email'],
-        'message' => $inputs['message'],
-        'node_id' => $inputs['node_id'],
+        'name' => $values['name'],
+        'surname' => $values['surname'],
+        'email' => $values['email'],
+        'message' => $values['message'],
+        'node_id' => $values['node_id'],
         'file' => $file_url,
       );
 

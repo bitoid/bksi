@@ -33,10 +33,11 @@ function displayData(arr) {
     output.classList.remove('grid', 'grid-cols-1');
     output.classList.add('flex', 'justify-center');
     output.innerHTML += "No Projects For Such Customers";
-    clearProjectsEl.classList.remove('hidden');
+    clearProjectsEl.classList.remove('hidden','md:gap-10', 'gap-4');
   } else {
     output.classList.remove('flex', 'justify-center');
     output.classList.add('grid', 'grid-cols-1');
+    clearProjectsEl.classList.add('md:gap-10', 'gap-4');
     for (projectsData of arr) {
       templateHtml = `
         <div class="group md:relative md:overflow-hidden">
@@ -224,7 +225,7 @@ function filterWithDropdown(data, filters) {
 function createButton(type, value) {
   let btnEl = document.createElement('button');
   btnEl.dataset.type = type;
-  btnEl.classList.add('curently-chosen', 'px-5', 'py-4', 'flex', 'items-center', 'gap-9', 'rounded-[50px]', 'border-2', 'bg-mainBlack', 'text-white', 'border-mainBlack');
+  btnEl.classList.add('curently-chosen', 'px-5', 'py-4', 'flex', 'items-center', 'justify-between', 'gap-9', 'rounded-[50px]', 'border-2', 'bg-mainBlack', 'text-white', 'capitalized', 'border-mainBlack');
   let spanEl = document.createElement('span');
   spanEl.classList.add('text-[15px]', 'leading-[22px]', 'tracking-[0.75px]', 'truncate', 'max-w-[150px]');
   spanEl.textContent = value;

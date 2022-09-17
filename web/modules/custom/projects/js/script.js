@@ -29,8 +29,16 @@ function displayData(arr) {
   projectsArr = [];
 
   //declaring html template for projects
-  for (projectsData of arr) {
-    templateHtml = `
+  if (arr.length < 1) {
+    output.classList.remove('grid', 'grid-cols-1');
+    output.classList.add('flex', 'justify-center');
+    output.innerHTML += "No Projects For Such Customers";
+    clearProjectsEl.classList.remove('hidden');
+  } else {
+    output.classList.remove('flex', 'justify-center');
+    output.classList.add('grid', 'grid-cols-1');
+    for (projectsData of arr) {
+      templateHtml = `
         <div class="group md:relative md:overflow-hidden">
                <a href="/node/${projectsData['nid']}" class="${parseInt(projectsData['tick']) !== 1 ? 'pointer-events-none relative block w-full h-56 md:h-[400px] mb-5 md:mb-0' : 'relative block w-full h-56 md:h-[400px] mb-5 md:mb-0'}">
                     <div class="relative fade-in-image-container h-full">
@@ -71,16 +79,17 @@ function displayData(arr) {
                   </div>
             </div>
              `;
-    projectsArr.push(templateHtml);
-  }
-  let counter = 8;
-  let i = projectsArr.length < counter ? projectsArr.length : counter;
-  for (let k = projectsArr.length; k > projectsArr.length - i; k--) {
-    output.innerHTML += projectsArr[k - 1];
-  }
+      projectsArr.push(templateHtml);
+    }
+    let counter = 8;
+    let i = projectsArr.length < counter ? projectsArr.length : counter;
+    for (let k = projectsArr.length; k > projectsArr.length - i; k--) {
+      output.innerHTML += projectsArr[k - 1];
+    }
 
-  document.querySelectorAll('.fade-in-image-container').forEach(fadeInIMageContainer => observer.observe(fadeInIMageContainer), { threshold: [0.2] });
-  document.querySelectorAll('.text-fade').forEach(textFade => observer.observe(textFade), { threshold: [0.2] });
+    document.querySelectorAll('.fade-in-image-container').forEach(fadeInIMageContainer => observer.observe(fadeInIMageContainer), { threshold: [0.2] });
+    document.querySelectorAll('.text-fade').forEach(textFade => observer.observe(textFade), { threshold: [0.2] });
+  }
 
 }
 
@@ -189,8 +198,8 @@ function checkProjectsToDisable(arr1, arr2) {
     }
 
     arr2[i].parentElement.lastElementChild.classList.add("hidden");
-    for (let key in filters) { 
-      if(arr2[i].parentElement.dataset.value == filters[key]){
+    for (let key in filters) {
+      if (arr2[i].parentElement.dataset.value == filters[key]) {
         arr2[i].parentElement.lastElementChild.classList.remove("hidden");
       }
     }

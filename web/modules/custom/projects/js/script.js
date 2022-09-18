@@ -33,11 +33,9 @@ function displayData(arr) {
     output.classList.remove('grid', 'grid-cols-1');
     output.classList.add('flex', 'justify-center');
     output.innerHTML += "No Projects For Such Customers";
-    clearProjectsEl.classList.remove('hidden','md:gap-10', 'gap-4');
   } else {
     output.classList.remove('flex', 'justify-center');
     output.classList.add('grid', 'grid-cols-1');
-    clearProjectsEl.classList.add('md:gap-10', 'gap-4');
     for (projectsData of arr) {
       templateHtml = `
         <div class="group md:relative md:overflow-hidden">
@@ -151,7 +149,6 @@ async function setup() {
       filters[type] = value;
 
       createButton(type, value); // create button if its type doesn't exist in filter obj
-      listItem.parentElement.classList.add('active-item');
     }
 
     filteredProjects = filterWithDropdown(data, filters);
@@ -240,7 +237,7 @@ function createButton(type, value) {
 
 function toggleClearAllBtn() {
   clearProjectsEl.classList.add('hidden');
-  if(Object.keys(filters).length){
+  if (Object.keys(filters).length) {
     clearProjectsEl.classList.remove('hidden');
   }
 }

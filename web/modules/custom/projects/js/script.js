@@ -29,7 +29,7 @@ function displayData(arr) {
   projectsArr = [];
 
   //declaring html template for projects
-  if (arr.length < 1) {
+  if (!arr.length) {
     output.classList.remove('grid', 'grid-cols-1');
     output.classList.add('flex', 'justify-center');
     output.innerHTML += "No Projects For Such Customers";
@@ -97,6 +97,7 @@ function displayData(arr) {
 async function setup() {
   data = await fetchData();
   filteredProjects = filterWithCompany(data);
+  toggleClearAllBtn();
 
   // hide dropdown lists on window click
   document.addEventListener('click', (e) => {
@@ -114,10 +115,10 @@ async function setup() {
   // clear all filter button hendler
   allProjectsEl.addEventListener('click', () => {
     currentprojectEl.innerHTML = '';
-    clearProjectsEl.classList.add('hidden');
-
     filters = {};
     filteredProjects = [...data];
+
+    toggleClearAllBtn();
     checkProjectsToDisable(filteredProjects, groupItems)
     displayData(filteredProjects);
   });
@@ -129,9 +130,7 @@ async function setup() {
     const type = e.target.dataset.type ? e.target.dataset.type : e.target.closest(".curently-chosen").dataset.type;
     e.target.closest('.curently-chosen').remove(); // remove button
     delete filters[type];
-    if (!Object.keys(filters).length) {
-      clearProjectsEl.classList.add('hidden')
-    }
+    toggleClearAllBtn();
     filteredProjects = filterWithDropdown(data, filters);
     checkProjectsToDisable(filteredProjects, groupItems);
     displayData(filteredProjects);
@@ -170,6 +169,7 @@ function filterWithCompany(arr) {
   const query = new URLSearchParams(window.location.search);
   const company = query.get("customer");
   if (company) {
+    filters.customer = company.toLowerCase();
     return arr.filter(e => e.customer == company);
   }
   return arr;
@@ -235,7 +235,13 @@ function createButton(type, value) {
   btnEl.appendChild(spanEl);
   btnEl.appendChild(imEl);
   currentprojectEl.appendChild(btnEl);
-  clearProjectsEl.classList.remove('hidden');
+  toggleClearAllBtn();
 }
 
+function toggleClearAllBtn() {
+  clearProjectsEl.classList.add('hidden');
+  if(Object.keys(filters).length){
+    clearProjectsEl.classList.remove('hidden');
+  }
+}
 

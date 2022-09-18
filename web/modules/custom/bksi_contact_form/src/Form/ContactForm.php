@@ -32,7 +32,8 @@ class ContactForm extends FormBase {
     public function buildForm(array $form, FormStateInterface $form_state) {
       
       $form['#attributes'] = array('enctype' => 'multipart/form-data');
-
+      $form['#cache']['max-age'] = 300;
+      
       $form['name'] = [
         '#type' => 'textfield',
         '#attributes' => ['placeholder' => t('Name')],
@@ -99,7 +100,35 @@ class ContactForm extends FormBase {
      *   Object describing the current state of the form.
      */
     public function validateForm(array &$form, FormStateInterface $form_state) {
-      // @TODO Validation
+      $values = ($form_state->getUserInput());
+
+      if (strlen($values['name']) < 2) {
+        $form_state->setErrorByName(
+          'name',
+          $this->t('Name field must contain 2 or more characters')
+        );
+      }
+
+      if (strlen($values['surname']) < 2) {
+        $form_state->setErrorByName(
+          'name',
+          $this->t('Sruname field must contain 2 or more characters')
+        );
+      }
+
+      if (!\Drupal::service('email.validator')->isValid($values['email'])) {
+        $form_state->setErrorByName(
+          'email',
+          $this->t('The email address @mail is not valid.', array('@mail' => $values['email']))
+        );
+      }
+
+      if (!$values['policy_checkbox']) {
+        $form_state->setErrorByName(
+          'policy_checkbox',
+          $this->t('To continue, you must agree to the privacy policy')
+        );
+      }
     }
 
 
@@ -114,7 +143,7 @@ class ContactForm extends FormBase {
     public function submitForm(array &$form, FormStateInterface $form_state) {
       $values = ($form_state->getUserInput());
       $file = \Drupal\file\Entity\File::load($values['file']['fids']);
-      $file_url = $file->getFileUri();
+      $file_url = $file ? $file->getFileUri() : "Not uploaded";    
       $params = array(
         'name' => $values['name'],
         'surname' => $values['surname'],
@@ -131,7 +160,9 @@ class ContactForm extends FormBase {
       $langcode = \Drupal::currentUser()->getPreferredLangcode();
       $send = TRUE;
       $mailManager->mail($module, $key, $to, $langcode, $params, NULL, $send);
-    }
 
+      $this->messenger()->addStatus($this->t('The form has been submitted '));
+    }
+    
 
 }

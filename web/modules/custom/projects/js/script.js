@@ -117,6 +117,7 @@ async function setup() {
     filteredProjects = [...data];
 
     toggleClearAllBtn();
+    toggleClearCurrentBtn();
     checkProjectsToDisable(filteredProjects, groupItems)
     displayData(filteredProjects);
   });
@@ -128,6 +129,8 @@ async function setup() {
     const type = e.target.dataset.type ? e.target.dataset.type : e.target.closest(".curently-chosen").dataset.type;
     e.target.closest('.curently-chosen').remove(); // remove button
     delete filters[type];
+
+    toggleClearCurrentBtn();
     toggleClearAllBtn();
     filteredProjects = filterWithDropdown(data, filters);
     checkProjectsToDisable(filteredProjects, groupItems);
@@ -232,6 +235,7 @@ function createButton(type, value) {
   btnEl.appendChild(spanEl);
   btnEl.appendChild(imEl);
   currentprojectEl.appendChild(btnEl);
+  toggleClearCurrentBtn();
   toggleClearAllBtn();
 }
 
@@ -239,6 +243,14 @@ function toggleClearAllBtn() {
   clearProjectsEl.classList.add('hidden');
   if (Object.keys(filters).length) {
     clearProjectsEl.classList.remove('hidden');
+  }
+}
+
+function toggleClearCurrentBtn() {
+  if (Array.from(currentprojectEl.childNodes).length >= 1) {
+    currentprojectEl.classList.add('mr-0', 'md:mr-10');
+  } else {
+    currentprojectEl.classList.remove('mr-0', 'md:mr-10');
   }
 }
 

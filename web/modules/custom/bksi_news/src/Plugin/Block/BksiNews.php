@@ -6,8 +6,9 @@ use Drupal\bksi_news\Service\BksiNewsService;
 use Drupal\Core\Access\AccessResult;
 use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Drupal\Core\Session\AccountInterface;
-
+use Symfony\Component\DependencyInjection\ContainerInterface;
 
 
 /**
@@ -20,8 +21,23 @@ use Drupal\Core\Session\AccountInterface;
  * )
  */
 
-class BksiNews extends BlockBase
+class BksiNews extends BlockBase implements ContainerFactoryPluginInterface
 {
+
+  /**
+   * @var BksiNewsService
+   */
+  protected  BksiNewsService $newsData;
+
+  /**
+   * {@inheritdoc }
+   */
+  public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition): BksiNews {
+    $instance = new static($configuration, $plugin_id, $plugin_definition);
+    $instance->newsData = $container->get('bksi_news.fetcher');
+    return $instance;
+  }
+
   /**
      * @inheritDoc
      */
@@ -33,13 +49,10 @@ class BksiNews extends BlockBase
       $slogan = $config['slogan'];
       $title = $config['title'];
       $news_type = $config['news_type'];
-//  Use bksi_news.fetcher service
-      /** @var BksiNewsService $newsData */
-      $newsData = \Drupal::service('bksi_news.fetcher');
 // Return variables for block template bksi-news.html.twig
       return [
         '#theme' => 'bksi_news',
-        '#news_array' => $newsData->bksiNewsData($news_type, $quantity),
+        '#news_array' => $this->newsData->bksiNewsData($news_type, $quantity),
         '#quantity' => $quantity,
         '#slogan' => $slogan,
         '#title' => $title,
@@ -64,11 +77,7 @@ class BksiNews extends BlockBase
   {
     $config = $this->getConfiguration();
     $form= parent::blockForm($form, $form_state);
-
-    /** @var BksiNewsService $newsData */
-    $newsData = \Drupal::service('bksi_news.fetcher');
-
-    $news_terms = $newsData->fetchTermId();
+    $news_terms = $this->newsData->fetchTermId();
     $tid_projects = $news_terms[1];
     $tid_news = $news_terms[0];
 // Create custom fields in block

@@ -12,3 +12,5 @@ page:
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en
+email_to_other_form: example@mail.com
+contact_email_form: info@bksi.de

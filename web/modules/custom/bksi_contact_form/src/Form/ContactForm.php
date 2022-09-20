@@ -87,6 +87,8 @@ class ContactForm extends FormBase {
         '#value' => $this->t('Submit'),
       ];
 
+      $form['#theme'] = 'contact_form';
+
       return $form;
     }
 

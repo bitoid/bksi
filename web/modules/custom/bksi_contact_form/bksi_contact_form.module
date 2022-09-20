@@ -17,3 +17,11 @@ function bksi_contact_form_mail($key, &$message, $params) {
 			break;
 	}
 }
+
+function bksi_contact_form_theme($existing, $type, $theme, $path) {
+	return [
+		'contact_form' => [
+			'render element' => 'form',
+		]
+	];
+}

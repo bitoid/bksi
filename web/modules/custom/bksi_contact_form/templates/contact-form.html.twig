@@ -1,0 +1,20 @@
+
+{{ form.form_build_id }}
+{{ form.form_token }}
+{{ form.form_id }}
+<div class="flex flex-col gap-4">
+	<div class="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-x-10">
+		{{ form.name }}
+		{{ form.surname }}
+	</div>
+	<div class="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-x-10">
+		{{ form.email }}
+		{{ form.phone }}
+	</div>
+	{{ form.message }}
+</div>
+<div class="mt-[60px] flex flex-col gap-3 text-sm">
+	{{ form.file }}
+</div>
+{{ form.policy_checkbox }}
+{{ form.actions.submit }}

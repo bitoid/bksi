@@ -1,0 +1,31 @@
+<?php
+
+/**
+ * Implements hook_form_alter().
+ */
+function bksi_contact_email_field_form_alter (&$form, $form_state, $form_id) {
+  if ($form_id == 'system_site_information_settings') {
+    $site_config = \Drupal::service('config.factory')
+      ->getEditable('system.site');
+
+    $form['site_information']['contact_email_form'] = [
+      '#type' => 'email',
+      '#title' => t('Contact Email'),
+      '#default_value' => $site_config->get('contact_email_form'),
+      '#description' => t('Email Field to get data from job offer form' ),
+    ];
+
+    $form['#submit'][] = 'bksi_contact_email_field_handler_submit';
+  }
+
+}
+
+/**
+ * Custom submit callback.
+ */
+function bksi_contact_email_field_handler_submit(&$form, $form_state) {
+  \Drupal::service('config.factory')
+    ->getEditable('system.site')
+    ->set('contact_email_form', $form_state->getValue('contact_email_form'))
+    ->save();
+}

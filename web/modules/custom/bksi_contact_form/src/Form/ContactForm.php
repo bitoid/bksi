@@ -147,14 +147,16 @@ class ContactForm extends FormBase {
 
       $fids = explode(" ", $values['file']['fids']);
       $files = \Drupal\file\Entity\File::loadMultiple($fids);
-      $files_url = $files ? array_map(fn($file) => $file->getFileUri(), $files) : array("Not uploaded");
+      $files_url = $files 
+        ? implode("\n", array_map(fn($file) => $file->getFileUri(), $files)) 
+        : "Not uploaded";
       $params = array(
         'name' => $values['name'],
         'surname' => $values['surname'],
         'email' => $values['email'],
         'message' => $values['message'],
         'node_id' => $values['node_id'],
-        'files' => implode("\n", $files_url),
+        'files' => $files_url,
       );
 
       $mailManager = \Drupal::service('plugin.manager.mail');

@@ -67,7 +67,7 @@ class ContactForm extends FormBase {
       $form['file'] = [
         '#type' => 'managed_file',
         '#required' => FALSE,
-        '#multiple' => FALSE,
+        '#multiple' => TRUE,
         '#upload_validators' => [
           'file_validate_extensions' => array('pdf'),
           'file_validate_size' => array(5000000)
@@ -143,16 +143,18 @@ class ContactForm extends FormBase {
      *   Object describing the current state of the form.
      */
     public function submitForm(array &$form, FormStateInterface $form_state) {
-      $values = ($form_state->getUserInput());
-      $file = \Drupal\file\Entity\File::load($values['file']['fids']);
-      $file_url = $file ? $file->getFileUri() : "Not uploaded";    
+      $values = $form_state->getUserInput();
+
+      $fids = explode(" ", $values['file']['fids']);
+      $files = \Drupal\file\Entity\File::loadMultiple($fids);
+      $files_url = $files ? array_map(fn($file) => $file->getFileUri(), $files) : array("Not uploaded");
       $params = array(
         'name' => $values['name'],
         'surname' => $values['surname'],
         'email' => $values['email'],
         'message' => $values['message'],
         'node_id' => $values['node_id'],
-        'file' => $file_url,
+        'files' => implode("\n", $files_url),
       );
 
       $mailManager = \Drupal::service('plugin.manager.mail');

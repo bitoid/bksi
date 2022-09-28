@@ -6,14 +6,14 @@ function bksi_contact_form_mail($key, &$message, $params) {
  	);
 	switch ($key) {
 		case 'contact_form':
-		 	$message['from'] = \Drupal::config('system.site')->get('mail');
+		 	// $message['from'] = \Drupal::config('system.site')->get('contact_email_form');
 			$message['subject'] = t('@subject', ['@subject' => "Form from node " . $params['node_id']], $options);
+			$message['attachment'] = $params['attachments'];
 			$message['body'][] = 
 				"Name: {$params['name']}\n".
 				"Surname: {$params['surname']}\n".
 				"Email: {$params['email']}\n".
-				"Message:\n\t{$params['message']}\n".
-				"File Url: {$params['files']}"; 
+				"Message:\n\t{$params['message']}";
 			break;
 	}
 }

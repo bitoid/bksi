@@ -23,6 +23,7 @@ module:
   default_content: 0
   dynamic_page_cache: 0
   editor: 0
+  email_attachment: 0
   entity_reference_revisions: 0
   field: 0
   field_ui: 0

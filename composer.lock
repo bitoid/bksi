@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fa84b4fb1f1a7fd7bd312436496e0ee8",
+    "content-hash": "bc8c690202db8501be557a68f733123c",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1725,6 +1725,54 @@
             "homepage": "https://www.drupal.org/project/default_content",
             "support": {
                 "source": "https://git.drupalcode.org/project/default_content"
+            }
+        },
+        {
+            "name": "drupal/email_attachment",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/email_attachment.git",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/email_attachment-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "8ed10aa0be2240e6f12a65c88619341457d2453d"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1656419840",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Bläul",
+                    "homepage": "https://github.com/fonata",
+                    "email": "blaeul@quodata.de",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Module to attach files programmatically to emails.",
+            "homepage": "http://drupal.org/project/email_attachment",
+            "support": {
+                "source": "http://cgit.drupalcode.org/email_attachment",
+                "issues": "http://drupal.org/project/email_attachment",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
             }
         },
         {

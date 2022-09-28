@@ -22,6 +22,7 @@
         "drupal/core-composer-scaffold": "^9.4",
         "drupal/core-recommended": "^9.4",
         "drupal/default_content": "^2.0@alpha",
+        "drupal/email_attachment": "^1.2",
         "drupal/fontawesome": "^2.23",
         "drupal/fontawesome_menu_icons": "^1.9",
         "drupal/formdazzle": "^2.1",

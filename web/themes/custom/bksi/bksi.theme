@@ -33,6 +33,7 @@ function bksi_preprocess_node( &$variables ) {
       ]; 
 
       $variables['contact_form'] = $form;
+      $variables['#attached']['library'][] = 'bksi/jobs-form-js';
       break;
 
       case "project":

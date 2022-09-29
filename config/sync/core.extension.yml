@@ -37,6 +37,7 @@ module:
   help: 0
   history: 0
   image: 0
+  inline_form_errors: 0
   layout_builder: 0
   layout_builder_admin_theme: 0
   layout_discovery: 0

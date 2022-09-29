@@ -113,8 +113,8 @@ class ContactForm extends FormBase {
 
       if (strlen($values['surname']) < 2) {
         $form_state->setErrorByName(
-          'name',
-          $this->t('Sruname field must contain 2 or more characters')
+          'surname',
+          $this->t('Surname field must contain 2 or more characters')
         );
       }
 

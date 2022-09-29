@@ -25,3 +25,6 @@ random-projects-js:
   dependencies:
     - core/drupal
     - core/jquery  
+jobs-form-js:
+  js:
+    js/jobs-form.js: {}

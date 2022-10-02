@@ -77,6 +77,7 @@ class ProjectsController extends ControllerBase {
       $period = $this->timePeriod([$result->field_project_period[0]->value, $result->field_project_period[1]->value]);
       $data[] = [
         "nid" => $result->nid->value,
+        "url" => $result->toUrl()->toString(),
         "title" => $result->getTitle(),
         "image" => $imgUrl,
         "building" => $building_type,

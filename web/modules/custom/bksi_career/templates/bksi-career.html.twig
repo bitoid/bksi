@@ -15,7 +15,7 @@
                 <div class="flex flex-col gap-5 w-full mb-[75px] md-[100px]">
                    {% for job in career_array %} 
                     <div class="text-fade">
-                        <a href="/node/{{ job.nid }} " class="text-content-fade flex items-center justify-between bg-white min-w-full gap-5 px-5 py-8 md:px-8">
+                        <a href="{{path('entity.node.canonical', {'node': job.nid})}}" class="text-content-fade flex items-center justify-between bg-white min-w-full gap-5 px-5 py-8 md:px-8">
                             <div class="flex flex-col gap-5">
                                 <h5 class="text-xl">{{ job.job_title }}</h5>
                                 <p class="text-[15px] leading-[22px] tracking-[.75px]">{{ job.job_experience }}</p>

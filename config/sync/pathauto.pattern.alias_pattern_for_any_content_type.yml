@@ -1,0 +1,14 @@
+uuid: c64ff61e-bf94-4118-ab87-ccb1503f65e4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: alias_pattern_for_any_content_type
+label: 'Alias pattern for any content type'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }

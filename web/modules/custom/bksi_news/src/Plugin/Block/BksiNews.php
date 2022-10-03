@@ -9,6 +9,7 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Drupal\Core\Session\AccountInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
+use Drupal\taxonomy\Entity\Term;
 
 
 /**
@@ -78,8 +79,16 @@ class BksiNews extends BlockBase implements ContainerFactoryPluginInterface
     $config = $this->getConfiguration();
     $form= parent::blockForm($form, $form_state);
     $news_terms = $this->newsData->fetchTermId();
-    $tid_projects = $news_terms[1];
-    $tid_news = $news_terms[0];
+    $tid_projects = '';
+    $tid_news = '';
+    foreach ($news_terms as $term) {
+      if (Term::load($term)->get('name')->value === 'Project news') {
+        $tid_projects = $term;
+      }
+      if (Term::load($term)->get('name')->value === 'Company news') {
+        $tid_news = $term;
+      }
+    }
 // Create custom fields in block
     $form['options'] = [
       '#type' => 'value',

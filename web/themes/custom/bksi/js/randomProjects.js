@@ -32,12 +32,12 @@ function displayData(arr) {
                         
                         <div class="flex items-start gap-4 text-[15px] tracking-[0.75px] leading-[22px] md:gap-10">
                             <div class="flex flex-col gap-5">
-                                <span>Gebäudeart ${projectsData['building']}</span>
-                                <span>Auftraggeber ${projectsData['customer']}</span>
+                                <span> ${Drupal.t("Gebäudeart")} ${projectsData['building']}</span>
+                                <span> ${Drupal.t("Auftraggeber")} ${projectsData['customer']}</span>
                             </div>
                             <div class="flex flex-col gap-5">
-                                <span>Leistung ${projectsData['service']}</span>
-                                <span>Zeitraum ${projectsData['period']}</span>
+                                <span>${Drupal.t("Leistung")} ${projectsData['service']}</span>
+                                <span>${Drupal.t("Zeitraum")} ${projectsData['period']}</span>
                             </div>
                         </div>
                         <a href="${projectsData['url']}" class="${parseInt(projectsData['tick']) !== 1 ? 'hidden pointer-events-none' : 'absolute right-5 bottom-5 w-10 h-10 rounded-full bg-white hidden md:flex items-center justify-center'} "><img src="/themes/custom/bksi/images/Arrows&Navigation/arrow-textlinks.svg" alt=""></a>

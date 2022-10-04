@@ -52,21 +52,21 @@ function displayData(arr) {
                     <div class="flex items-start gap-4 text-[15px] tracking-[0.75px] leading-[22px] md:gap-10">
                         <div class="flex flex-col gap-5">
                             <div flex flex-col gap-3>
-                                <p>Gebäudeart</p>
+                                <p>${Drupal.t("Gebäudeart")}</p>
                                 <p>${projectsData['building']}</p>
                             </div>
                             <div flex flex-col gap-3>
-                                <p>Auftraggeber</p>
+                                <p>${Drupal.t("Auftraggeber")}</p>
                                 <p> ${projectsData['customer']}</p>
                             </div>
                         </div>
                         <div class="flex flex-col gap-5">
                             <div flex flex-col gap-3>
-                                <p>Leistung</p>
+                                <p>${Drupal.t("Leistung")}</p>
                                 <p>${projectsData['service']}</p>
                             </div>
                             <div flex flex-col gap-3>
-                                <p>Zeitraum</p>
+                                <p>${Drupal.t("Zeitraum")}</p>
                                 <p> ${projectsData['period']}</p>
                             </div>
 

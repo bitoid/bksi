@@ -9,7 +9,7 @@
         {{ content.field_service_title.0 }}
       </h1>
     </div>
-    <img class="w-[430px] order-1 md:order-2 " src="{{ content.field_service_icon.0 }}" alt="">
+    <img class="w-[430px] order-1 md:order-2" src="{{ content.field_service_icon.0 }}" alt="">
   </div>
 </section>
 
@@ -27,13 +27,13 @@
 <section class="bg-mainRed text-fade">
   <div class="text-content-fade flex flex-col items-center justify-center px-4 py-[75px] text-center md:max-w-[816px] md:mx-auto md:py-[150px]">
     <h2 class="text-[26px] tracking-[1.3px] leading-none flex flex-col gap-5 mb-9 md:text-[35px] md:leading-10 md:tracking-[1.75px] md:mb-0">
-      <span class="text-[13px]">Kontakt</span>
-      Wir informieren Sie gerne zu unseren Leistungen. Nehmen Sie einfach Kontakt zu uns auf.
+      <span class="text-[13px]">{{ 'Kontakt' | t }}</span>
+      {{ content.field_contact_slogan.0 }}
     </h2>
-    <img class="w-56 mb-8" src="/{{ base_path ~ directory }}/images/Bilder/Arrows&Navigation/arrow-kontaktmodul.svg" alt="">
+    <img class="w-56 mb-8" src="/{{ base_path ~ directory }}/images/Bilder/Arrows-Navigation/arrow-kontaktmodul.svg" alt="">
     <div class="flex flex-col text-xl leading-6 gap-2 mb-[105px]">
       <span>
-        Ansprechpartner <br>
+        {{ 'Ansprechpartner' | t }} <br>
         {% for key, person in content.field_contact_person %}
           {% if person['#type'] %}
             {% if key != 0 %}
@@ -43,8 +43,8 @@
           {% endif %}
         {% endfor %}
       </span>
-      <a href="tel:+: {{ content.field_telefon.0 }}">Telefon: {{ content.field_telefon.0 }}</a>
-      <a href="mailto:info@bksi.de">E-Mail: {{ content.field_email.0 }}</a>
+      <a href="tel:+: {{ content.field_telefon.0 }}">{{ 'Telefon:' | t }} {{ content.field_telefon.0 }}</a>
+      <a href="mailto:info@bksi.de">{{ 'E-Mail:' | t }} {{ content.field_email.0 }}</a>
     </div>
   </div>
 </section>

@@ -7,6 +7,7 @@ dependencies:
     - field.field.block_content.contact_block_type.field_apply_job
     - field.field.block_content.contact_block_type.field_contact_email
     - field.field.block_content.contact_block_type.field_contact_phone
+    - field.field.block_content.contact_block_type.field_get_in_touch
     - field.field.block_content.contact_block_type.field_image
     - field.field.block_content.contact_block_type.field_location_link
     - field.field.block_content.contact_block_type.field_ltd_bksi_description
@@ -42,6 +43,13 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 3
+    region: content
+  field_get_in_touch:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
     region: content
   field_image:
     type: image

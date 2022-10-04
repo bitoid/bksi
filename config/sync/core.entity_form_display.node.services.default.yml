@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.services.field_contact_person
+    - field.field.node.services.field_contact_slogan
     - field.field.node.services.field_email
     - field.field.node.services.field_service_description
     - field.field.node.services.field_service_icon
@@ -30,6 +31,14 @@ content:
     third_party_settings: {  }
   field_contact_person:
     type: text_textfield
+    weight: 13
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_contact_slogan:
+    type: text_textfield
     weight: 12
     region: content
     settings:
@@ -38,7 +47,7 @@ content:
     third_party_settings: {  }
   field_email:
     type: email_default
-    weight: 14
+    weight: 15
     region: content
     settings:
       placeholder: ''
@@ -85,14 +94,14 @@ content:
     third_party_settings: {  }
   field_service_weight:
     type: number
-    weight: 15
+    weight: 16
     region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
   field_telefon:
     type: string_textfield
-    weight: 13
+    weight: 14
     region: content
     settings:
       size: 60

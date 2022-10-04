@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.services.field_contact_person
+    - field.field.node.services.field_contact_slogan
     - field.field.node.services.field_email
     - field.field.node.services.field_service_description
     - field.field.node.services.field_service_icon
@@ -28,6 +29,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 110
+    region: content
+  field_contact_slogan:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 117
     region: content
   field_email:
     type: basic_string

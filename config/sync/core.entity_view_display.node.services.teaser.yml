@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.services.field_contact_person
+    - field.field.node.services.field_contact_slogan
     - field.field.node.services.field_email
     - field.field.node.services.field_service_description
     - field.field.node.services.field_service_icon
@@ -28,6 +29,7 @@ content:
     region: content
 hidden:
   field_contact_person: true
+  field_contact_slogan: true
   field_email: true
   field_service_description: true
   field_service_icon: true

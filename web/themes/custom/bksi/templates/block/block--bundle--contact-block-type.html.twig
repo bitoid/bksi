@@ -42,7 +42,7 @@
           <span>{{ content.field_apply_job | raw  }}</span>
         </div>
         <div class="flex flex-col gap-2 text-[15px] leading-[22px] tracking-[0.75px] mb-14">
-          <span>Setz dich mit uns in Verbindung:</span>
+          <span>{{ content.field_get_in_touch }}</span>
           {% for phone in content.field_contact_phone %}
             {% if phone['#context'] %}
               <a class="group font-normal" href="tel:{{ phone['#context'].value }}"> <span class="group-hover:text-mainRed">{{ phone['#context'].value }}</span></a>
@@ -97,10 +97,3 @@
     </div>
   </div>
 </section>
-
-
-
-
-
-
-

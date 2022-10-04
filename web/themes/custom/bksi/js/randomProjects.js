@@ -20,7 +20,7 @@ function displayData(arr) {
     for (projectsData of arr) {
         templateHtml = `
                 <div class="group md:relative md:overflow-hidden">
-                    <a href="/node/${projectsData['nid']}" class="${parseInt(projectsData['tick']) !== 1 ? 'pointer-events-none relative block w-full h-56 md:h-[400px] mb-5 md:mb-0' : 'relative block w-full h-56 md:h-[400px] mb-5 md:mb-0'}" class="relative block w-full h-56 md:h-[400px] mb-5 md:mb-0">
+                    <a href="${projectsData['url']}" class="${parseInt(projectsData['tick']) !== 1 ? 'pointer-events-none relative block w-full h-56 md:h-[400px] mb-5 md:mb-0' : 'relative block w-full h-56 md:h-[400px] mb-5 md:mb-0'}" class="relative block w-full h-56 md:h-[400px] mb-5 md:mb-0">
                         <div class="relative fade-in-image-container h-full active">
                             <img class="w-full fade-in-image h-full object-cover" src="${projectsData['image'] ? projectsData['image'] : ''}" alt="">
                         </div>
@@ -32,15 +32,15 @@ function displayData(arr) {
                         
                         <div class="flex items-start gap-4 text-[15px] tracking-[0.75px] leading-[22px] md:gap-10">
                             <div class="flex flex-col gap-5">
-                                <span>Gebäudeart ${projectsData['building']}</span>
-                                <span> Auftraggeber ${projectsData['customer']}</span>
+                                <span> ${Drupal.t("Gebäudeart")} ${projectsData['building']}</span>
+                                <span> ${Drupal.t("Auftraggeber")} ${projectsData['customer']}</span>
                             </div>
                             <div class="flex flex-col gap-5">
-                                <span>Leistung ${projectsData['service']}</span>
-                                <span> Zeitraum ${projectsData['period']}</span>
+                                <span>${Drupal.t("Leistung")} ${projectsData['service']}</span>
+                                <span>${Drupal.t("Zeitraum")} ${projectsData['period']}</span>
                             </div>
                         </div>
-                        <a href="/node/${projectsData['nid']}" class="${parseInt(projectsData['tick']) !== 1 ? 'hidden pointer-events-none' : 'absolute right-5 bottom-5 w-10 h-10 rounded-full bg-white hidden md:flex items-center justify-center'} "><img src="/themes/custom/bksi/images/Arrows&Navigation/arrow-textlinks.svg" alt=""></a>
+                        <a href="${projectsData['url']}" class="${parseInt(projectsData['tick']) !== 1 ? 'hidden pointer-events-none' : 'absolute right-5 bottom-5 w-10 h-10 rounded-full bg-white hidden md:flex items-center justify-center'} "><img src="/themes/custom/bksi/images/Arrows&Navigation/arrow-textlinks.svg" alt=""></a>
                 </div>     
             </div>
                `;

@@ -29,6 +29,10 @@ default:
   field_contact_phone:
     -
       value: '+49 711 36 53 38-30 '
+  field_get_in_touch:
+    -
+      value: 'Setz dich mit uns in Verbindung:'
+      format: basic_html
   field_image:
     -
       entity: cbb1568c-f27d-4bb9-a393-46638d4614d7

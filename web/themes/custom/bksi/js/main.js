@@ -55,10 +55,10 @@ window.onscroll = function() {
     let currentScrollPos = window.pageYOffset;
     if(prevScrollpos < headerTop.clientHeight){
       temp ? headerTop.classList.add("bg-darkBlue") : headerTop.style.background = "none";
-      headerTop.style.top = `0px`;
+      headerTop.style.top = `${typeof drupalSettings === 'undefined' ? '0px' : '60px'}`;
     }else if (prevScrollpos > currentScrollPos) {
       headerTop.style.background = '#191428';
-      headerTop.style.top = `0px`;
+      headerTop.style.top = `${typeof drupalSettings === 'undefined' ? '0px' : '60px'}`;
       headerTop.style.position = 'fixed'
       headerTop.style.zIndex = '9999'
     } else {

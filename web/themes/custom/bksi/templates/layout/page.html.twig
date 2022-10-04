@@ -46,7 +46,7 @@
  */
 #}
 
-<header role="banner" class="header-top absolute left-0 top-0 flex items-center justify-between w-full h-[90px] gap-5 p-5 md:fixed lg:px-11 lg:py-6">
+<header role="banner" class="header-top absolute flex items-center justify-between h-[90px] gap-5 p-5 md:fixed lg:px-11 lg:py-6 {{ logged_in ? 'top-[60px] w-[calc(100%-65px)] left-[65px]' : 'top-0 w-full left-0'}}">
 	{{ page.header }}
 </header>
 

@@ -40,7 +40,18 @@ function bksi_preprocess_node( &$variables ) {
       break;
   }
 }
+/**
+  * Implements hook_theme_suggestions_HOOK_alter().
+  */
 
+
+function bksi_theme_suggestions_node_alter(array &$suggestions, array $variables) {
+
+    $suggestions[]='node__'.$variables['elements']['title']['0']['#context']['value'];
+    
+
+
+}
 
 
 

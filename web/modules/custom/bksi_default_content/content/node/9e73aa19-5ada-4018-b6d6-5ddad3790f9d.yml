@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 9e73aa19-5ada-4018-b6d6-5ddad3790f9d
+  bundle: page
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: imprint
+  created:
+    -
+      value: 1664882746
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  path:
+    -
+      alias: /imprint
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: "<div>\r\n<div class=\"text-fade\">\r\n<h3 class=\"text-2xl\">Impressum</h3>\r\n\r\n<p>&nbsp;</p>\r\n</div>\r\n\r\n<div class=\"flex flex-col gap-8\">\r\n<div class=\"text-fade\">\r\n<div class=\"text-content-fade\">\r\n<div>Angaben gemäß § 5 TMG</div>\r\n</div>\r\n</div>\r\n\r\n<div class=\"text-fade\">\r\n<div class=\"gap-1 text-content-fade\">\r\n<h4>BKSI GmbH</h4>\r\n\r\n<p>Schwieberdinger Straße 5</p>\r\n\r\n<p>70435 Stuttgart</p>\r\n\r\n<p>Handelsregister: HRB 24847</p>\r\n\r\n<p>Registergericht: Handelsregister Stuttgart</p>\r\n</div>\r\n</div>\r\n\r\n<div class=\"text-fade\">\r\n<div class=\"gap-1 text-content-fade\">\r\n<h4>Vertreten durch:</h4>\r\n\r\n<p>Dipl.-Ing. Volker Kunberger</p>\r\n\r\n<p>Dipl.-Ing. (FH) Frank Schäfer</p>\r\n\r\n<p>Dipl.-Ing. Frank Steller</p>\r\n</div>\r\n</div>\r\n\r\n<div class=\"text-fade\">\r\n<div class=\"gap-1 text-content-fade\">\r\n<h4>Kontakt</h4>\r\n\r\n<p><a href=\"tel:+:0711 / 36 53 38 - 30\">Telefon: <span class=\"imprint\">0711 / 36 53 38 - 30</span></a></p>\r\n\r\n<p><a href=\"tel:+:0711 / 36 53 38 - 31\">Telefon: <span class=\"imprint\">0711 / 36 53 38 - 31</span></a></p>\r\n\r\n<p><a href=\"mailto:info@bksi.de\">E-Mail: <span class=\"imprint\">info@bksi.de</span></a></p>\r\n</div>\r\n</div>\r\n\r\n<div class=\"text-fade\">\r\n<div class=\"gap-1 text-content-fade\">\r\n<h4>Umsatzsteuer-ID</h4>\r\n\r\n<p>Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz: DE814086423</p>\r\n\r\n<p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>\r\n</div>\r\n</div>\r\n\r\n<div class=\"text-fade\">\r\n<div class=\"gap-1 text-content-fade\">\r\n<h4>Haftung für Inhalte</h4>\r\n\r\n<p>Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>\r\n</div>\r\n</div>\r\n\r\n<div class=\"text-fade\">\r\n<div class=\"gap-1 text-content-fade\">\r\n<h4>Urheberrecht</h4>\r\n\r\n<p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p>\r\n</div>\r\n</div>\r\n\r\n<div class=\"text-fade\">\r\n<div class=\"gap-1 text-content-fade\">\r\n<h4>&nbsp;</h4>\r\n\r\n<div>Quelle: <a href=\"https://www.e-recht24.de/impressum-generator.html\"><span class=\"imprint\">https://www.e-recht24.de/impressum-generator.html </span> </a></div>\r\n</div>\r\n</div>\r\n\r\n<div class=\"text-fade\">\r\n<div class=\"gap-1 text-content-fade\">\r\n<h4>Website Design</h4>\r\n\r\n<p>LOUP GmbH, Stuttgart</p>\r\n<a href=\"https://www.loup.de/\"><span class=\"imprint\">www.loup.de </span> </a></div>\r\n</div>\r\n\r\n<div class=\"text-fade\">\r\n<div class=\"gap-1 text-content-fade\">\r\n<h4>Website Programmierung</h4>\r\n\r\n<p>adventure7 GmbH</p>\r\n<a href=\"https://www.adventure7.de/\"><span class=\"imprint\">www.adventure7.de </span></a></div>\r\n</div>\r\n</div>\r\n</div>\r\n"
+      format: basic_html
+      summary: ''

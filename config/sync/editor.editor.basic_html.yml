@@ -42,12 +42,18 @@ settings:
           name: Tools
           items:
             - Source
-  plugins: {  }
+        -
+          name: 'css styles'
+          items:
+            - Styles
+  plugins:
+    stylescombo:
+      styles: "div.text-fade.text-content-fade.gap-1.gap-8.flex.flex-col|div styles\r\nh3.text-2xl|title text size\r\nspan.imprint|red text"
 image_upload:
   status: true
   scheme: public
   directory: inline-images
   max_size: ''
   max_dimensions:
-    width: 0
-    height: 0
+    width: null
+    height: null

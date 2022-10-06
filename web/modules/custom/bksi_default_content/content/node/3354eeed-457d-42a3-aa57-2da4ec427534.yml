@@ -18,7 +18,7 @@ default:
       target_id: 1
   title:
     -
-      value: 'Contact Page'
+      value: Contact
   created:
     -
       value: 1660844172
@@ -32,6 +32,7 @@ default:
     -
       alias: /contact
       langcode: en
+      pathauto: 0
   layout_builder__layout:
     -
       section:
@@ -48,7 +49,7 @@ default:
               label_display: visible
               provider: layout_builder
               view_mode: full
-              block_revision_id: '50'
+              block_revision_id: '19'
               block_serialized: null
               context_mapping: {  }
             weight: 0

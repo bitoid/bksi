@@ -7,7 +7,6 @@ _meta:
   depends:
     b4eef42c-33f8-425b-8faf-d21045ca4187: block_content
     5b88b192-e24f-4b64-b62c-39156d3fec29: block_content
-    0d2a6d19-91d1-473f-b96e-158db9302806: block_content
 default:
   revision_uid:
     -
@@ -20,7 +19,7 @@ default:
       target_id: 1
   title:
     -
-      value: 'Home Page'
+      value: Home
   created:
     -
       value: 1660812508
@@ -37,6 +36,7 @@ default:
     -
       alias: /home
       langcode: en
+      pathauto: 1
   layout_builder__layout:
     -
       section:
@@ -96,7 +96,7 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '29'
+              block_revision_id: '32'
               block_serialized: null
               context_mapping: {  }
             weight: '3'
@@ -111,7 +111,7 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '45'
+              block_revision_id: '15'
               block_serialized: null
               context_mapping: {  }
             weight: '2'

@@ -20,7 +20,7 @@ default:
       target_id: 1
   title:
     -
-      value: 'Customers Page'
+      value: Customers
   created:
     -
       value: 1661845888
@@ -35,8 +35,9 @@ default:
       value: true
   path:
     -
-      alias: ''
+      alias: /customers
       langcode: en
+      pathauto: 1
   layout_builder__layout:
     -
       section:
@@ -78,7 +79,7 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '39'
+              block_revision_id: '20'
               block_serialized: null
               context_mapping: {  }
             weight: '2'
@@ -93,7 +94,7 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '40'
+              block_revision_id: '48'
               block_serialized: null
               context_mapping: {  }
             weight: '3'
@@ -108,7 +109,7 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '41'
+              block_revision_id: '37'
               block_serialized: null
               context_mapping: {  }
             weight: '5'

@@ -1,3 +1,6 @@
 projects_block_lib:
   js:
     js/script.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery  

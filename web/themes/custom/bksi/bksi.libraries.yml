@@ -19,3 +19,6 @@ splide:
 random-projects-js:
   js:
     js/randomProjects.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery  

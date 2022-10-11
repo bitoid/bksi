@@ -10,6 +10,9 @@ global-styling:
     js/lazy-loading.js: {}
     js/main.js: {}
     js/slider.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery    
     
 splide:
   js:

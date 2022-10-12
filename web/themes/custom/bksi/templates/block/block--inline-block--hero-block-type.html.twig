@@ -27,15 +27,15 @@
 #}
 
 
-<div class="h-screen items-center overflow-x-hidden relative">
-    <div class="absolute w-screen h-screen left-0 top-0 -z-10">
+<div class="relative items-center h-screen overflow-x-hidden">
+    <div class="absolute top-0 left-0 w-screen h-screen -z-10">
         <img src="{{ file_url(content.field_image.0['#item'].entity.uri.value) }}" alt="" class="object-cover w-full h-full">
-        <div class="absolute bg-black w-full h-full z-10 top-0 left-0 bg-opacity-70"></div>
+        <div class="absolute top-0 left-0 z-10 w-full h-full bg-black bg-opacity-70"></div>
     </div>
-    <h1 class="w-2/3 absolute -z-10 top-1/2 left-4 -translate-y-1/2 flex flex-col gap-7 text-white text-[35px] tracking-[1.5px] leading-normal hyphens-manual md:gap-9 md:text-[70px] md:left-11 md:leading-tight md:tracking-[3px]">
+    <h1 class="w-[799px] absolute -z-10 top-1/2 left-4 -translate-y-1/2 flex flex-col gap-7 text-white text-[35px] tracking-[1.5px] leading-normal hyphens-manual md:gap-9 md:text-[70px] md:left-11 md:leading-tight md:tracking-[3px]">
         <span class="text-xs md:text-base">{{ content.field_slogan.0["#text"]|striptags }}</span>
         {{ content.field_title.0["#text"]|striptags }}
     </h1>
-    <img class="absolute bottom-9 left-1/2 -translate-x-1/2" src="/{{ base_path ~ directory }}/images/arrow-header.svg" alt="arrow down">
+    <img class="absolute -translate-x-1/2 bottom-9 left-1/2" src="/{{ base_path ~ directory }}/images/arrow-header.svg" alt="arrow down">
 </div>
 

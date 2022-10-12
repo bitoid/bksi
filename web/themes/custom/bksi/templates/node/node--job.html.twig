@@ -1,8 +1,8 @@
-<div class="h-screen items-center overflow-x-hidden relative">
-    <div class="absolute w-screen h-screen left-0 top-0 -z-10">
-        <div class="absolute bg-darkBlue w-full h-full z-10 top-0 left-0"></div>
+<div class="relative items-center h-screen overflow-x-hidden">
+    <div class="absolute top-0 left-0 w-screen h-screen -z-10">
+        <div class="absolute top-0 left-0 z-10 w-full h-full bg-darkBlue"></div>
     </div>
-    <div class="absolute right-4 top-1/2 left-4 -translate-y-1/2 flex flex-col gap-10 items-center justify-between text-white md:flex-row md:left-11 md:right-11">
+    <div class="absolute flex flex-col items-center justify-between gap-10 text-white -translate-y-1/2 right-4 top-1/2 left-4 md:flex-row md:left-11 md:right-[178px]">
         <div class="w-2/3 ">
             <h1 class="flex flex-col -z-10 gap-7 text-[35px] tracking-[1.5px] leading-normal md:gap-9 md:text-[70px] md:leading-tight md:tracking-[3px]">
                 <span class="text-xs md:text-base">{{ content.field_job_description.0 }}</span>
@@ -19,7 +19,7 @@
 
 <section>
     <div class="flex flex-col gap-36 px-4 py-[75px] md:px-10 md:py-[150px] md:gap-56 ">
-        <div class="flex items-start justify-between flex-col gap-5 md:flex-row">
+        <div class="flex flex-col items-start justify-between gap-5 md:flex-row">
             <div class="text-fade">
                 <h3 class="text-[26px] text-content-fade tracking-[1.3px] leading-none flex flex-col gap-5 md:gap-7 md:text-[35px] md:leading-10 md:tracking-[1.75px]">
 					{{ content.field_what_awaits_you.0 }}
@@ -27,7 +27,7 @@
             </div>
             <div class="text-[15px] leading-[22px] tracking-[0.75px] md:w-1/2">
          		<div class="text-fade">
-                    <ul class="text-content-fade flex flex-col gap-4 arrow">                          
+                    <ul class="flex flex-col gap-4 text-content-fade arrow">                          
                         {% for item in content.field_what_awaits_you_descriptio %}
   							{% if item['#context'] %} 
    								<li>{{ item}}</li>               
@@ -37,7 +37,7 @@
                 </div>
             </div>
         </div>
-        <div class="flex items-start justify-between flex-col gap-5 md:flex-row">
+        <div class="flex flex-col items-start justify-between gap-5 md:flex-row">
             <div class="text-fade">
                 <h3 class="text-[26px] text-content-fade tracking-[1.3px] leading-none flex flex-col gap-5 md:gap-7 md:text-[35px] md:leading-10 md:tracking-[1.75px]">
                     {{ content.field_what_bksi_offer.0 }}
@@ -45,7 +45,7 @@
             </div>
             <div class="text-[15px] leading-[22px] tracking-[0.75px] md:w-1/2">
                 <div class="text-fade">
-                    <ul class="text-content-fade flex flex-col gap-4 arrow">
+                    <ul class="flex flex-col gap-4 text-content-fade arrow">
                         {% for item in content.field_what_bksi_offer_descriptio %}
   							{% if item['#context'] %} 
    								<li>{{ item}}</li>               
@@ -55,7 +55,7 @@
                 </div>
             </div>
         </div>
-        <div class="flex items-start justify-between flex-col gap-5 md:flex-row">
+        <div class="flex flex-col items-start justify-between gap-5 md:flex-row">
             <div class="text-fade">
                 <h3 class="text-[26px] text-content-fade tracking-[1.3px] leading-none flex flex-col gap-5 md:gap-7 md:text-[35px] md:leading-10 md:tracking-[1.75px]">
                     {{ content.field_what_we_expect.0 }}
@@ -63,7 +63,7 @@
             </div>
             <div class="text-[15px] leading-[22px] tracking-[0.75px] md:w-1/2">
                 <div class="text-fade">
-                    <ul class="text-content-fade flex flex-col gap-4 arrow">
+                    <ul class="flex flex-col gap-4 text-content-fade arrow">
                         {% for item in content.field_what_we_expect_description %}
   							{% if item['#context'] %} 
    								<li>{{ item}}</li>               

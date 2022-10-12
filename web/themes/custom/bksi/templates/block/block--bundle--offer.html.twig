@@ -6,16 +6,16 @@
                     {{ content.field_title[0]['#text'] | striptags }}
            </h3>
         </div>
-        <div class="text-[15px] leading-[22px] tracking-[0.75px] mt-[60px] md:mt-9 md:w-1/2">
+        <div class="text-[15px] leading-[15px] tracking-[0.75px] mt-[60px] md:mt-9 md:w-1/2">
             <div class="text-fade">
                 <p class="mb-[100px] text-content-fade">{{ content.field_description.0 }} </p>
             </div>
             <div class="flex flex-col gap-20 ">
             	{%for paragraph in content.field_offer_paragraph %}
             		{% if paragraph['#paragraph'] %}
-                	<div class="flex text-fade flex-col gap-7">
+                	<div class="flex flex-col text-fade gap-7">
                     	<div class="text-content-fade">
-                        	<h4 class="text-xl mb-4">{{ paragraph['#paragraph'].field_title.0.value }}</h4>
+                        	<h4 class="mb-4 text-xl">{{ paragraph['#paragraph'].field_title.0.value }}</h4>
                         	<ul class="flex flex-col gap-4 arrow">
                         		{% for item in paragraph['#paragraph'].field_item %}
                         		<li>{{ item.value }}</li>

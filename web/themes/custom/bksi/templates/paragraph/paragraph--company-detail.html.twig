@@ -57,18 +57,18 @@
       {% endif %}
           {{ content.field_image }}
         </div>
-        <div class="order-2 text-fade px-4 py-20 bg-white md:w-1/2 md:mx-auto lg:w-full lg:mx-0 lg:px-28 lg:py-36">
+        <div class="order-2 px-4 py-20 bg-white text-fade md:w-1/2 md:mx-auto lg:w-full lg:mx-0 lg:px-28 lg:py-36">
           <div class="text-content-fade ">
-            <h2 class="flex flex-col gap-5 text-[26px] tracking-[0.3px] mb-28 lg:mb-36">
+            <h2 class="flex flex-col gap-5 text-[26px] tracking-[0.3px] mb-[115px] lg:mb-[141px]">
               <span class="text-[13px] tracking-[0.65px]">{{ content.field_slogan }}</span>
                 {{ content.field_title }}
             </h2>
-            <p class="text-[15px] leading-[22px] tracking-[0.75px] mb-14">
+            <p class="text-[15px] leading-[22px] tracking-[0.75px] mb-[55px]">
               {{ content.field_description }}
             </p>
             <a class="max-w-fit group relative h-10 flex gap-4 z-10 pr-6 items-center rounded-[40px] overflow-hidden" href="{{ content.field_link_cta[0]['#url']}}">
                 <span class="absolute left-0 top-0 -z-10 h-full w-0 rounded-[40px] bg-mainRed group-hover:w-full"></span>
-                <span class="h-full aspect-square rounded-full bg-mainRed flex items-center justify-center"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                <span class="flex items-center justify-center h-full rounded-full aspect-square bg-mainRed"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
                 {{ content.field_link_cta[0]['#title'] }} 
             </a>
           </div>

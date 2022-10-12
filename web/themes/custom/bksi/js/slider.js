@@ -6,7 +6,6 @@ const totalSlides = document.querySelector('.total-slides');
 const sliderContainer = document.querySelector('.slider-container')
 if (sliderContainer) {
     const arrayOfSliderContents = sliderContainer.querySelectorAll('.slider-content')
-    const sliderContentWidth = document.querySelector('.slider-content').getBoundingClientRect().width
     let currentSlide = 0;
 
     window.onload = () => {
@@ -15,6 +14,7 @@ if (sliderContainer) {
     }
 
     sliderButtomLeft.addEventListener('click', () => {
+        const sliderContentWidth = document.querySelector('.slider-content').getBoundingClientRect().width
         if (currentSlide > 0) {
             currentSlide--;
             sliderContainer.scrollLeft -= sliderContentWidth
@@ -27,6 +27,7 @@ if (sliderContainer) {
     })
 
     sliderButtomRight.addEventListener('click', () => {
+        const sliderContentWidth = document.querySelector('.slider-content').getBoundingClientRect().width
         if (currentSlide < arrayOfSliderContents.length - 1) {
             currentSlide++;
             currentSlideHTML.innerHTML = currentSlide + 1;

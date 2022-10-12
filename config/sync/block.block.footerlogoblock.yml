@@ -10,8 +10,8 @@ dependencies:
     - bksi
 id: footerlogoblock
 theme: bksi
-region: footer_bottom
-weight: -8
+region: footer_bottom_right
+weight: -10
 provider: null
 plugin: 'block_content:71289423-a273-4adb-95b7-2d19507621ec'
 settings:

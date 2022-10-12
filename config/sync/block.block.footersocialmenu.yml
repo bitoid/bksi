@@ -10,7 +10,7 @@ dependencies:
     - bksi
 id: footersocialmenu
 theme: bksi
-region: footer_bottom
+region: footer_bottom_left
 weight: -11
 provider: null
 plugin: 'system_menu_block:footer-social-menu'

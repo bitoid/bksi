@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 09c8b28a-353f-4900-b2cd-67138c69b6ee
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: bksi-ingenieure-header-projekte_0.jpg
+  uri:
+    -
+      value: 'public://2022-10/bksi-ingenieure-header-projekte_0.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 173249
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1665583681

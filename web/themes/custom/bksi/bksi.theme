@@ -1,9 +1,10 @@
-<?php 
+<?php
 
 /**
-  * Implements hook_theme_suggestions_HOOK_alter().
-  */
-function bksi_theme_suggestions_block_alter(array &$suggestions, array $variables) {
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function bksi_theme_suggestions_block_alter(array &$suggestions, array $variables)
+{
   if (isset($variables['elements']['content']['#block_content'])) {
     array_splice($suggestions, 1, 0, 'block__bundle__' . $variables['elements']['content']['#block_content']->bundle());
   }
@@ -12,47 +13,68 @@ function bksi_theme_suggestions_block_alter(array &$suggestions, array $variable
 /**
  * Implements hook_theme_suggestions_HOOK_alter().
  */
-function bksi_theme_suggestions_image_alter(array &$suggestions, array $variables) {
-  $suggestions[] = 'image'.'__company_detail';
-  $suggestions[] = 'image'.'__team-gallery';
+function bksi_theme_suggestions_image_alter(array &$suggestions, array $variables)
+{
+  $suggestions[] = 'image' . '__company_detail';
+  $suggestions[] = 'image' . '__team-gallery';
 }
 
 
-function bksi_preprocess_node( &$variables ) {
-  $node= $variables['node'];
-  $type = $node -> getType();
-  $nid=$node-> id();
-  switch($type){
+function bksi_preprocess_node(&$variables)
+{
+  $node = $variables['node'];
+  $type = $node->getType();
+  $nid = $node->id();
+  switch ($type) {
     case "job":
-      $form = \Drupal::formBuilder()->getForm('Drupal\bksi_contact_form\Form\ContactForm');  
+      $form = \Drupal::formBuilder()->getForm('Drupal\bksi_contact_form\Form\ContactForm');
 
       $form['node_id'] = [
-        '#name' =>'node_id',
+        '#name' => 'node_id',
         '#value' => $nid,
         '#type' => 'hidden',
-      ]; 
+      ];
 
       $variables['contact_form'] = $form;
       $variables['#attached']['library'][] = 'bksi/jobs-form-js';
       break;
 
-      case "project":
+    case "project":
       $variables['#attached']['library'][] = 'bksi/random-projects-js';
       break;
   }
 }
 /**
-  * Implements hook_theme_suggestions_HOOK_alter().
-  */
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
 
 
-function bksi_theme_suggestions_node_alter(array &$suggestions, array $variables) {
+function bksi_theme_suggestions_node_alter(array &$suggestions, array $variables)
+{
 
-    $suggestions[]='node__'.$variables['elements']['title']['0']['#context']['value'];
-    
-
-
+  $suggestions[] = 'node__' . $variables['elements']['title']['0']['#context']['value'];
 }
 
 
+
+/**
+ * @param $suggestions
+ * @param array $variables
+ */
+function bksi_theme_suggestions_input_alter(&$suggestions, array $variables){
+  $element = $variables['element'];
+  
+  //remove button
+  if ($element['#name'] == 'file_remove_button') {
+    $replaced = str_replace("_", "__", $element['#name']);
+    $suggestions[] = 'input__' . $replaced;
+  } 
+  
+  //file select checkbox
+  else if(str_starts_with($element['#id'], 'edit-file-file-')) {
+    $replaced = str_replace("_", "__", $element['#type']);
+    $suggestions[] = 'input__' . $replaced . '__' . 'edit__file__file';
+  }
+
+} 
 

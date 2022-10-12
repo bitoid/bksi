@@ -10,7 +10,13 @@
       {% for news in news_array %}
           <a href="{{path('entity.node.canonical', {'node': news.nid})}}" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5">
             <div class="relative fade-in-image-container w-full h-[25vh] md:h-[50vh] md:col-span-1 lg:col-span-2 lg:h-full overflow-hidden">
-              <img class="fade-in-image object-cover  w-full h-full" src="{{ news.news_image }}" alt="">
+              <picture>
+                <source srcset="{{ news.news_image['large_webp'] }}" media="only screen and (max-width: 450px)" type="image/webp" >
+                <source srcset="{{ news.news_image['large_jpg'] }}" media="only screen and (max-width: 450px)" type="image/jpeg" >
+                <source srcset="{{ news.news_image['original_webp'] }}" media="only screen and (min-width: 500px)" type="image/webp">
+                <source srcset="{{ news.news_image['original_jpg'] }}" media="only screen and (min-width: 500px)" type="image/jpeg">
+                <img class="fade-in-image object-cover  w-full h-full" src="{{ news.news_image['original_jpg'] }}" alt="">
+              </picture>
             </div>
             <div class="text-fade  p-10 bg-white md:h-[250px] md:col-span-2 lg:col-span-3">
               <div class="text-content-fade flex flex-col gap-5">

@@ -1,0 +1,13 @@
+uuid: 97c73c90-f007-4845-aa50-9c60eed52f67
+langcode: en
+status: true
+dependencies: {  }
+name: original_webp
+label: 'Original webp'
+effects:
+  f68a4a91-d9aa-4a80-874b-cdb233cc1956:
+    uuid: f68a4a91-d9aa-4a80-874b-cdb233cc1956
+    id: image_convert
+    weight: 1
+    data:
+      extension: webp

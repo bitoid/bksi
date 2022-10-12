@@ -1,17 +1,17 @@
 <div class='hidden flex flex-col mt-[100px] mb-4 items-center justify-center md:mb-10 md:flex-row-reverse' id="clear-projects">
 	<button class='px-5 py-4 flex items-center gap-9 rounded-[50px] border-2 border-mainBlack mb-4 md:mb-0' id="all-projects">
 		<span class='text-[15px] leading-[22px] tracking-[0.75px]'>{{ 'Alle Filter löschen' | t }}</span>
-		<i class="fa fa-times text-2xl" aria-hidden="true"></i>
+		<i class="text-2xl fa fa-times" aria-hidden="true"></i>
 	</button>
-	<div class="flex flex-col md:flex-row flex-wrap gap-2 max-w-3xl" id="curent-projects"></div>
+	<div class="flex flex-col flex-wrap max-w-3xl gap-2 md:flex-row" id="curent-projects"></div>
 </div>
 <div id="container" class="flex flex-col items-center gap-4 px-4 mb-10 md:flex-row md:justify-center">
 	<div id="building-container" class="project-dropdown cursor-pointer transition-none relative w-full h-[50px] rounded-3xl bg-lightGray flex justify-between items-center md:max-w-[250px] building-drop">
-		<div class="w-9/12 whitespace-nowrap overflow-hidden text-ellipsis ml-5 capitalize" id="building">{{ 'Building type' | t}}</div>
+		<div class="w-9/12 ml-5 overflow-hidden capitalize whitespace-nowrap text-ellipsis" id="building">{{ 'Building type' | t}}</div>
 		<button><img class="mr-5" src="modules/custom/projects/images/arrow-open-close-content.svg" alt=""></button>
-		<ul class=" absolute hidden overflow-hidden top-full rounded-b-3xl w-full z-50" id="building-dropdown">
+		<ul class="absolute z-50 hidden w-full overflow-hidden  top-full rounded-b-3xl" id="building-dropdown">
 			{% for buildings in building %}
-				<li class="flex justify-between items-center group py-3 px-5 bg-lightGray border-t border-white" data-value="{{ buildings.name|lower }}">
+				<li class="flex items-center justify-between px-5 py-3 border-t border-white group bg-lightGray" data-value="{{ buildings.name|lower }}">
 					<span class="group-hover:text-mainRed font-['buch'] group-item" href="#">{{ buildings.name }}</span>
 					<div class="hidden img-div">
 						<img class="absolute" src="modules/custom/projects/images/checkmark-16.png"/>
@@ -21,11 +21,11 @@
 		</ul>
 	</div>
 	<div id="service-container" class="project-dropdown cursor-pointer transition-none relative w-full h-[50px] rounded-3xl bg-lightGray flex justify-between items-center md:max-w-[250px] service-drop">
-		<div class="w-9/12 whitespace-nowrap overflow-hidden text-ellipsis ml-5 capitalize" id="service">{{'Service'}}</div>
+		<div class="w-9/12 ml-5 overflow-hidden capitalize whitespace-nowrap text-ellipsis" id="service">{{'Service'}}</div>
 		<button><img class="mr-5" src="modules/custom/projects/images/arrow-open-close-content.svg" alt=""></button>
-		<ul class=" absolute hidden overflow-hidden top-full rounded-b-3xl w-full z-50" id="service-dropdown">
+		<ul class="absolute z-50 hidden w-full overflow-hidden  top-full rounded-b-3xl" id="service-dropdown">
 			{% for services in service %}
-				<li class="flex justify-between items-center group py-3 px-5 bg-lightGray border-t border-white" data-value="{{ services.name|lower }}">
+				<li class="flex items-center justify-between px-5 py-3 border-t border-white group bg-lightGray" data-value="{{ services.name|lower }}">
 					<span class="group-hover:text-mainRed font-['buch'] group-item" href="#">{{ services.name }}</span>
 					<div class="hidden img-div">
 						<img class="absolute" src="modules/custom/projects/images/checkmark-16.png"/>
@@ -35,11 +35,11 @@
 		</ul>
 	</div>
 	<div id="sector-container" class="project-dropdown cursor-pointer transition-none relative w-full h-[50px] rounded-3xl bg-lightGray flex justify-between items-center md:max-w-[250px] sector-drop">
-		<div class="w-9/12 whitespace-nowrap overflow-hidden text-ellipsis ml-5 capitalize" id="sector">{{ 'Sector' | t }}</div>
+		<div class="w-9/12 ml-5 overflow-hidden capitalize whitespace-nowrap text-ellipsis" id="sector">{{ 'Sector' | t }}</div>
 		<button><img class="mr-5" src="modules/custom/projects/images/arrow-open-close-content.svg" alt=""></button>
-		<ul class=" absolute hidden overflow-hidden top-full rounded-b-3xl w-full z-50" id="sector-dropdown">
+		<ul class="absolute z-50 hidden w-full overflow-hidden  top-full rounded-b-3xl" id="sector-dropdown">
 			{% for sectors in sector %}
-				<li class="flex justify-between items-center group py-3 px-5 bg-lightGray border-t border-white" data-value="{{ sectors.name|lower }}">
+				<li class="flex items-center justify-between px-5 py-3 border-t border-white group bg-lightGray" data-value="{{ sectors.name|lower }}">
 					<span class="group-hover:text-mainRed font-['buch'] group-item" href="#">{{ sectors.name }}</span>
 					<div class="hidden img-div">
 						<img class="absolute" src="modules/custom/projects/images/checkmark-16.png"/>

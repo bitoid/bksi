@@ -72,26 +72,26 @@
  */
 #}
 <section>
-  <div class="h-screen items-center overflow-x-hidden relative">
-    <div class="absolute w-screen h-screen left-0 top-0 -z-10">
+  <div class="relative items-center h-screen overflow-x-hidden">
+    <div class="absolute top-0 left-0 w-screen h-screen -z-10">
       <img src="{{ file_url(content.field_project_header_image.0['#item'].entity.uri.value) }}" alt="" class="object-cover w-full h-full">
-      <div class="absolute bg-black w-full h-full z-10 top-0 left-0 bg-opacity-70"></div>
+      <div class="absolute top-0 left-0 z-10 w-full h-full bg-black bg-opacity-70"></div>
     </div>
     <h1 class="w-2/3 absolute top-1/2 left-4 -translate-y-1/2 flex flex-col gap-7 text-white text-[35px] tracking-[1.5px] leading-normal hyphens-manual md:gap-9 md:text-[70px] md:left-11 md:leading-tight md:tracking-[3px]">
       {{ node.label }}
     </h1>
-    <img class="absolute bottom-9 left-1/2 -translate-x-1/2" src="/{{ base_path ~ directory }}/images/arrow-header.svg" alt="arrow down">
+    <img class="absolute -translate-x-1/2 bottom-9 left-1/2" src="/{{ base_path ~ directory }}/images/arrow-header.svg" alt="arrow down">
   </div>
 
   <div class="grid grid-cols-1 items-start text-[15px] leading-[22px] tracking-[0.75px] md:grid-cols-2">
-    <div class="pl-4 pr-10 py-20 bg-lightGray flex flex-col md:px-40 md:pt-[200px] md:pb-60">
+    <div class="pl-4 pr-10 py-20 bg-lightGray flex flex-col md:px-40 md:pt-[200px] md:pb-60 sticky top-0">
       <div class="text-fade">
         <h3 class="text-content-fade text-[26px] tracking-[0.3px] mb-[50px] md:text-[35px] md:tracking-[1.75px] md:leading-[39px]">
           {{ 'Projekt Eckdaten' | t }}
         </h3>
       </div>
       <div class="text-fade">
-        <div class="text-content-fade flex flex-col gap-3">
+        <div class="flex flex-col gap-3 text-content-fade">
           <span class="project-type">{{ content.field_project_type[0]["#title"] }}</span>
           <div class="flex flex-col">
             {% if content.field_project_sector[0]["#title"] or content.field_project_service[0]["#title"] %}
@@ -124,7 +124,7 @@
         </article>
       </div>
       <div class="fade-in-image-container mt-28 mb-24 h-[50vh] md:h-full w-auto">
-        <img class="w-full h-full object-cover " src="{{  file_url(content.field_project_challenge_image.0['#item'].entity.uri.value) }}" alt="">
+        <img class="object-cover w-full h-full " src="{{  file_url(content.field_project_challenge_image.0['#item'].entity.uri.value) }}" alt="">
       </div>
       <div class="text-fade">
         <article class="text-content-fade flex flex-col gap-32 px-4 md:pl-[100px] md:pr-28">
@@ -167,7 +167,7 @@
           {% for image in content.field_project_image %}
             {% if image['#item'] %}
               <li class="splide__slide">
-                <img class="h-full w-full object-cover" src="{{  file_url(image['#item'].entity.uri.value) }}" alt="">
+                <img class="object-cover w-full h-full" src="{{  file_url(image['#item'].entity.uri.value) }}" alt="">
               </li>
             {% endif %}
           {% endfor %}
@@ -183,7 +183,7 @@
      <div class="random-projects grid grid-cols-1 gap-[75px] md:grid-cols-2 md:gap-10"></div>
      <a class="max-w-fit group relative h-10 flex gap-4 z-10 pr-6 items-center rounded-[40px] overflow-hidden mx-auto mt-28" href="/projects">
          <span class="absolute left-0 top-0 -z-10 h-full w-0 rounded-[40px] bg-mainRed group-hover:w-full"></span>
-         <span class="h-full aspect-square rounded-full bg-mainRed flex items-center justify-center"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+         <span class="flex items-center justify-center h-full rounded-full aspect-square bg-mainRed"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
          {{ 'Zur Projektübersicht' | t }}
      </a>
 

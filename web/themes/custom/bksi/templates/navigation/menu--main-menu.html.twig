@@ -32,26 +32,26 @@
         <ul class="flex flex-col items-start p-4 gap-10 text-[22px] h-full md:items-center md:justify-between md:text-base md:gap-5 md:p-0 md:flex-row lg:gap-12">
             {% for item in items %}
                 {% if item.below %}
-                    <li class="relative group nav-dropdown md:h-full flex flex-col items-start justify-center md:flex-row md:items-center" data-dropdown>
+                    <li class="relative flex flex-col items-start justify-center group nav-dropdown md:h-full md:flex-row md:items-center" data-dropdown>
                         <div class="flex items-center gap-11">
                             {% if item.url %}
-                                <a class="text-white duration-300 ease-out hover:text-mainRed" href="{{ item.url }}">
+                                <a class="text-white duration-300 ease-out hover:text-mainRed font-['buch']" href="{{ item.url }}">
                                         {{ item.title }}
                                 </a>                             
                             {% endif %}
-                            <img class="dropdown-button cursor-pointer md:cursor-default md:absolute md:-right-8 md:opacity-0 md:group-hover:opacity-100" src="/themes/custom/bksi/images/arrow-open-close-content.svg" alt="dropdown arrow">
+                            <img class="cursor-pointer dropdown-button md:cursor-default md:absolute md:-right-8 md:opacity-0 md:group-hover:opacity-100" src="/themes/custom/bksi/images/arrow-open-close-content.svg" alt="dropdown arrow">
                         </div>
                         <ul class="mt-10 ml-8 hidden md:m-0 md:absolute md:top-full md:-left-8 md:w-[280px] md:bg-darkBlue text-white md:px-7 md:py-9 flex-col text-base gap-7 z-50 md:border-t border-mainRed md:hidden md:opacity-0 animate" data-dropdown-content>
                             {% for below in item.below %}
                                 <li>
-                                    <a class="text-white duration-300 ease-out hover:text-mainRed" href="{{ below.url }}">{{ below.title }}</a>
+                                    <a class="text-white duration-300 ease-out hover:text-mainRed font-['buch']" href="{{ below.url }}">{{ below.title }}</a>
                                 </li>
                             {% endfor %}
                         </ul>
                     </li>
                 {% else %}
-                    <li class="md:h-full flex justify-center items-center">
-                        <a href="{{ item.url }}" class="text-white duration-300 ease-out hover:text-mainRed">{{ item.title }}</a>
+                    <li class="flex items-center justify-center md:h-full">
+                        <a href="{{ item.url }}" class="text-white duration-300 ease-out hover:text-mainRed font-['buch']">{{ item.title }}</a>
                     </li>
                 {% endif %}
             {% endfor %}

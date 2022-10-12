@@ -14,14 +14,14 @@
 <section>
   <div class="flex flex-col md:flex-row md:gap-[90px]">
     <div class="fade-in-image-container relative w-full h-[50vh] md:h-auto md:w-1/2">
-      <img src="{{ file_url(content.field_directors_image.0['#item'].entity.uri.value) }}" alt="{{ content.field_directors_image.0['#item'].alt }}" class="fade-in-image w-full h-full object-cover">
+      <img src="{{ file_url(content.field_directors_image.0['#item'].entity.uri.value) }}" alt="{{ content.field_directors_image.0['#item'].alt }}" class="object-cover w-full h-full fade-in-image">
     </div>
     <div class="text-fade px-4 py-[75px] md:px-10 md:py-[150px] md:w-1/2">
       <div class="text-content-fade">
         <h3 class="mb-[50px] text-[26px] tracking-[1.3px] leading-none md:text-[35px] md:leading-10 md:tracking-[1.75px]">{{ content.field_directors_title.0 }}</h3>
         <div class="text-[15px] tracking-[0.75px] leading-[22px]">
           <p class="mb-8">{{ content.field_directors_description.0 }}</p>
-          <div class="px-4 flex flex-col gap-7">
+          <div class="flex flex-col gap-7">
           {% for item in content.field_directors_director['#items'] %}
             <p>{{ item.value }}</p>
           {% endfor %}

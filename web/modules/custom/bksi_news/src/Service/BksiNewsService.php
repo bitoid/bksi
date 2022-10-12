@@ -23,7 +23,10 @@ class BksiNewsService
     return array_map(function (Node $item) {
       $file_id = $item->field_image->target_id;
       $news_image = File::load($file_id)->getFileUri();
-      $url = ImageStyle::load('original')->buildUrl($news_image);
+      $url['original_jpg'] = ImageStyle::load('original')->buildUrl($news_image);
+      $url['original_webp'] = ImageStyle::load('original_webp')->buildUrl($news_image);
+      $url['large_jpg'] = ImageStyle::load('large')->buildUrl($news_image);
+      $url['large_webp'] = ImageStyle::load('large_webp')->buildUrl($news_image);
       $date = date("F Y", $item->created->value);
       $body = str_replace("&nbsp;", ' ', $item->body->summary);
       return [

@@ -38,9 +38,6 @@ default:
           behavior_settings:
             -
               value: {  }
-          revision_translation_affected:
-            -
-              value: true
           field_description:
             -
               value: 'Bauprojekte sind immer umfangreich, längerfristig und oft anspruchsvoll. Wir sind stolz auf unser breites, vielfältiges Portfolio und freuen uns auch künftig großartige neue Bauwerke zu schaffen.'

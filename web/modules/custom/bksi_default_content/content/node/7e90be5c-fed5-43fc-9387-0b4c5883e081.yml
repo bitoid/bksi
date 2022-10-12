@@ -130,7 +130,7 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '29'
+              block_revision_id: '58'
               block_serialized: null
               context_mapping: {  }
             weight: '0'
@@ -142,10 +142,10 @@ default:
             configuration:
               id: 'inline_block:company_details'
               label: 'company details block'
-              label_display: visible
+              label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '56'
+              block_revision_id: '59'
               block_serialized: null
               context_mapping: {  }
             weight: '7'

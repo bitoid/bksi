@@ -69,6 +69,3 @@ window.onscroll = function() {
 
   }
 }
-
-
-console.log(drupalSettings.toolbar)

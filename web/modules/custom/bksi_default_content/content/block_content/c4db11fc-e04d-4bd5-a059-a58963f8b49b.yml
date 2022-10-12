@@ -32,5 +32,5 @@ default:
       format: basic_html
   field_title:
     -
-      value: "<p>Überschrift Lorem ipsum dolor sit amet,</p>\r\n\r\n<p>consetetur sadipscing elitr</p>\r\n"
+      value: "<p>Überschrift Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>\r\n"
       format: basic_html

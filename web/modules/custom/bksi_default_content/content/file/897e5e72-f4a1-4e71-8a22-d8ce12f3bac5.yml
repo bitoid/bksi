@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 897e5e72-f4a1-4e71-8a22-d8ce12f3bac5
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: bksi-ingenieure-header-aktuelles.jpg
+  uri:
+    -
+      value: 'public://2022-10/bksi-ingenieure-header-aktuelles.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 142178
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1665581115

@@ -10,7 +10,7 @@ dependencies:
     - bksi
 id: footernavigationlink
 theme: bksi
-region: footer_bottom
+region: footer_bottom_left
 weight: -10
 provider: null
 plugin: 'system_menu_block:footer-navigation-link'

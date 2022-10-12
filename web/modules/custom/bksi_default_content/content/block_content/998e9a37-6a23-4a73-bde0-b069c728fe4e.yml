@@ -19,9 +19,9 @@ default:
       value: true
   field_text_block_description:
     -
-      value: "<p>&nbsp;</p>\r\n\r\n<p>Wir beherrschen die Prozessabläufe und das Schnittstellenmanagement im Projekt und sehen dies als die Grundlage einer optimierten und professionellen Projektabwicklung. Des weiteren verfügen wir über Kooperation- und Planungspartner aus allen Bereichen der Bauplanung und Bauabwicklung.</p>\r\n"
+      value: "<p>Wir beherrschen die Prozessabläufe und das Schnittstellenmanagement im Projekt und sehen dies als die Grundlage einer optimierten und professionellen Projektabwicklung. Des weiteren verfügen wir über Kooperation- und Planungspartner aus allen Bereichen der Bauplanung und Bauabwicklung.</p>\r\n"
       format: basic_html
   field_title:
     -
-      value: "<p>&nbsp;</p>\r\n\r\n<p>Auch unsere Kunden und Partner sehen wir als erweitertes Team – denn nur so erreicht man exzellente Ergebnisse wie im folgenden zu sehen.</p>\r\n"
+      value: "<p>Auch unsere Kunden und Partner sehen wir als erweitertes Team – denn nur so erreicht man exzellente Ergebnisse wie im folgenden zu sehen.</p>\r\n"
       format: basic_html

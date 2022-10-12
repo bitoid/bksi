@@ -63,6 +63,9 @@
 {% if page.footer or page.footer_bottom %}
 	<footer class="pl-4 pr-11 py-20 bg-darkBlue text-white md:px-11  md:pb-12" role="contentinfo">
 		{{ page.footer }}
-		{{ page.footer_bottom }}
+		<div class="flex flex-col md:flex-row md:items-center md:justify-between md:gap-8">
+			{{ page.footer_bottom_left }}
+			{{ page.footer_bottom_right }}
+		</div>
 	</footer>
 {% endif %}

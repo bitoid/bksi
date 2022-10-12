@@ -7,6 +7,7 @@ _meta:
   depends:
     b4eef42c-33f8-425b-8faf-d21045ca4187: block_content
     5b88b192-e24f-4b64-b62c-39156d3fec29: block_content
+    794e522e-2ec2-4d20-b38e-fec23beec79f: block_content
 default:
   revision_uid:
     -
@@ -45,20 +46,6 @@ default:
           label: content
           context_mapping: {  }
         components:
-          2d3356ad-4728-44ea-bfd7-23ebf4a434ee:
-            uuid: 2d3356ad-4728-44ea-bfd7-23ebf4a434ee
-            region: content
-            configuration:
-              id: 'block_content:96ab4878-7984-4f81-b49b-cf9bcf961685'
-              label: 'Company Details Block'
-              label_display: 0
-              provider: block_content
-              status: true
-              info: ''
-              view_mode: full
-              context_mapping: {  }
-            weight: '5'
-            additional: {  }
           9bb34bc6-9c02-4e48-b1b9-8b6cb6796c15:
             uuid: 9bb34bc6-9c02-4e48-b1b9-8b6cb6796c15
             region: content
@@ -96,7 +83,7 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '32'
+              block_revision_id: '25'
               block_serialized: null
               context_mapping: {  }
             weight: '3'
@@ -111,10 +98,25 @@ default:
               label_display: 0
               provider: layout_builder
               view_mode: full
-              block_revision_id: '15'
+              block_revision_id: '16'
               block_serialized: null
               context_mapping: {  }
             weight: '2'
             additional:
               target_uuid: 5b88b192-e24f-4b64-b62c-39156d3fec29
+          7a3011ce-90b1-4fa3-a5d1-e2f9880d7268:
+            uuid: 7a3011ce-90b1-4fa3-a5d1-e2f9880d7268
+            region: content
+            configuration:
+              id: 'inline_block:company_details'
+              label: 'company details block'
+              label_display: 0
+              provider: layout_builder
+              view_mode: full
+              block_revision_id: '55'
+              block_serialized: null
+              context_mapping: {  }
+            weight: '5'
+            additional:
+              target_uuid: 794e522e-2ec2-4d20-b38e-fec23beec79f
         third_party_settings: {  }

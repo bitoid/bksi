@@ -10,8 +10,8 @@ dependencies:
     - bksi
 id: copyrightblock
 theme: bksi
-region: footer_bottom
-weight: -9
+region: footer_bottom_right
+weight: -11
 provider: null
 plugin: 'block_content:fd24f575-3f76-48d1-a3b0-e6a462f9bc60'
 settings:

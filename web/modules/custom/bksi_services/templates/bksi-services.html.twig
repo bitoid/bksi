@@ -14,7 +14,7 @@
             <div class="fade-in-image-container min-w-[250px] w-4/5 h-[33vh] md:min-w-[150px] md:h-full relative"><img class="w-full h-full fade-in-image" src="{{ file_url(service.service_image) }}" alt=""></div>
             <div class="text-fade" style="overflow:visible;">
               <div class="text-content-fade text-[15px] leading-[22px] tracking-[0.75px] md:max-w-[25vw]">
-                <div class="absolute  text-[233px] tracking-[11.65px] leading-[300px] opacity-10 bottom-0 left-1/2 -translate-x-1/2 md:-translate-y-1/2 md:top-0 md:left-0 md:-translate-x-2/3 font-['buch']">{{ counter }}</div>
+                <div class="absolute  text-[233px] tracking-[11.65px] leading-[300px] opacity-10 bottom-0 left-1/2 -translate-x-1/2 md:-translate-y-1/2 md:top-0 md:left-0 md:-translate-x-2/3 font-['halbfett']">{{ counter }}</div>
                 <h4 class="text-xl">{{ service.title }}</h4>
                 <p class="mt-4 mb-[87px]">{{ service.summary.0.value|striptags }}</p>
                 <a class="flex items-center gap-3 group" href="{{path('entity.node.canonical', {'node': service.nid})}}">

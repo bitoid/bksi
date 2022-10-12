@@ -13,24 +13,29 @@
             {{ content.field_title[0]['#text'] | striptags }}
         </h3>
         <div id="image-carousel" class="splide " aria-label="Beautiful Images">
-            <div class="splide__arrows">
-                <button class="splide__arrow splide__arrow--prev absolute opacity-100 top-0 left-full -translate-x-[300%] translate-y-1/2  w-[50px] h-[50px] bg-white rounded-full flex justify-center items-center hover:opacity-100 hover:scale-125 md:translate-x-[150%] md:left-1/2"
-                type="button"
-                aria-label="Previous slide"
-                aria-controls="splide01-track">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="9.371" height="10.824" viewBox="0 0 9.371 10.824">
-                        <path id="Pfad_29233" data-name="Pfad 29233" d="M0,0V1.633L3.993,3.938V8.561l1.414.816V3.122Z" transform="translate(4.688) rotate(30)" fill="#e63229"/>
-                    </svg>
-                </button>
-                <button class="splide__arrow splide__arrow--next absolute opacity-100 top-0 left-full -translate-x-[150%] translate-y-1/2 w-[50px] h-[50px] bg-white rounded-full flex justify-center items-center hover:opacity-100 hover:scale-125 md:translate-x-[300%] md:left-1/2"
-                type="button"
-                aria-label="Next slide"
-                aria-controls="splide01-track">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="9.371" height="10.824" viewBox="0 0 9.371 10.824">
-                        <path id="Pfad_29233" data-name="Pfad 29233" d="M0,0V1.633L3.993,3.938V8.561l1.414.816V3.122Z" transform="translate(4.688) rotate(30)" fill="#e63229"/>
-                    </svg>
-                </button>
-            </div>
+             <div
+                    class="splide__arrows relative md:w-fit left-1/2 flex -translate-x-1/2 md:left-3/4 gap-8 md:top-16 z-10">
+                    <button
+                        class="splide__arrow splide__arrow--prev absolute left-full -translate-x-[275%] top-10 md:-translate-x-0 md:top-0 md:-left-[150px] -translate-y-1/2 opacity-100 w-[50px] h-[50px] bg-white rounded-full flex justify-center items-center hover:opacity-100 hover:scale-125"
+                        type="button" aria-label="Previous slide" aria-controls="splide01-track">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="9.371" height="10.824"
+                            viewBox="0 0 9.371 10.824">
+                            <path id="Pfad_29233" data-name="Pfad 29233"
+                                d="M0,0V1.633L3.993,3.938V8.561l1.414.816V3.122Z"
+                                transform="translate(4.688) rotate(30)" fill="#e63229" />
+                        </svg>
+                    </button>
+                    <button
+                        class="splide__arrow splide__arrow--next absolute right-0 -translate-x-1/2 top-10 md:top-0 -translate-y-1/2 opacity-100 w-[50px] h-[50px] bg-white rounded-full flex justify-center items-center hover:opacity-100 hover:scale-125"
+                        type="button" aria-label="Next slide" aria-controls="splide01-track">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="9.371" height="10.824"
+                            viewBox="0 0 9.371 10.824">
+                            <path id="Pfad_29233" data-name="Pfad 29233"
+                                d="M0,0V1.633L3.993,3.938V8.561l1.414.816V3.122Z"
+                                transform="translate(4.688) rotate(30)" fill="#e63229" />
+                        </svg>
+                    </button>
+                </div>
             <div class="splide__track">
                 <ul class="splide__list">
                     {%for paragraph in content.field_impressions_paragraph %}

@@ -34,7 +34,7 @@
     </div>
     <h1 class="w-[799px] absolute -z-10 top-1/2 left-4 -translate-y-1/2 flex flex-col gap-7 text-white text-[35px] tracking-[1.5px] leading-normal hyphens-manual md:gap-9 md:text-[70px] md:left-11 md:leading-tight md:tracking-[3px]">
         <span class="text-xs md:text-base">{{ content.field_slogan.0["#text"]|striptags }}</span>
-        {{ content.field_title.0["#text"]|striptags }}
+        {{ content.field_title.0["#text"]|raw }}
     </h1>
     <img class="absolute -translate-x-1/2 bottom-9 left-1/2" src="/{{ base_path ~ directory }}/images/arrow-header.svg" alt="arrow down">
 </div>

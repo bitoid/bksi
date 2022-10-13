@@ -13,7 +13,7 @@ default:
       value: true
   title:
     -
-      value: 'Customers Page'
+      value: Customers
   menu_name:
     -
       value: main-menu
@@ -21,7 +21,12 @@ default:
     -
       target_uuid: 0c153b7a-a95b-4c4c-b5eb-75b2fcfd4e50
       title: ''
-      options: {  }
+      options:
+        attributes: {  }
+        fa_icon: ''
+        fa_icon_prefix: fa
+        fa_icon_tag: i
+        fa_icon_appearance: before
   external:
     -
       value: false

@@ -3,15 +3,17 @@
         <div class="absolute top-0 left-0 z-10 w-full h-full bg-darkBlue"></div>
     </div>
     <div class="absolute flex flex-col items-center justify-between gap-10 text-white -translate-y-1/2 right-4 top-1/2 left-4 md:flex-row md:left-11 md:right-[178px]">
-        <div class="w-2/3 ">
-            <h1 class="flex flex-col -z-10 gap-7 text-[35px] tracking-[1.5px] leading-normal md:gap-9 md:text-[70px] md:leading-tight md:tracking-[3px]">
+        <div class="w-1/2">
+            <h1 class="flex flex-col -z-10 gap-7 w-[80.7%] text-[5vw] tracking-[1.5px] leading-normal md:gap-9 md:leading-tight md:tracking-[3px]">
                 <span class="text-xs md:text-base">{{ content.field_job_description.0 }}</span>
                 {{ content.field_job_title.0 }}
             </h1>
             <p class="text-xl mt-28 md:mt-12">{{ content.field_job_experience.0 }}</p>
         </div>
-        <div class="group w-[134px] aspect-square rounded-full bg-mainRed flex items-center justify-center text-center text-darkBlue -rotate-12 hover:scale-125">
-            <span class="group-hover:scale-[85%] max-w-[133px]">{{ content.field_apply_anchor.0 }}</span>
+        <div>
+            <div class="group w-[134px] aspect-square rounded-full bg-mainRed flex items-center justify-center text-center text-darkBlue -rotate-12 hover:scale-125">
+                <span class="group-hover:scale-[85%] max-w-[133px]">{{ content.field_apply_anchor.0 }}</span>
+            </div>
         </div>
     </div>
     <img class="absolute bottom-9 left-1/2 -translate-x-1/2" src="/{{ base_path ~ directory }}/assets/bilder/arrows-navigation/arrow-header.svg" alt="arrow down">
@@ -30,7 +32,10 @@
                     <ul class="flex flex-col gap-4 text-content-fade arrow">                          
                         {% for item in content.field_what_awaits_you_descriptio %}
   							{% if item['#context'] %} 
-   								<li>{{ item}}</li>               
+   								<li class="flex gap-[24px]">
+                                    <img src="/{{ base_path ~ directory }}/images/arrows-navigation/arrow-textlinks.svg" alt="arrow icon">
+                                    {{ item}}
+                                </li>              
   							{% endif %}
 						{% endfor %}
 					</ul>
@@ -48,7 +53,10 @@
                     <ul class="flex flex-col gap-4 text-content-fade arrow">
                         {% for item in content.field_what_bksi_offer_descriptio %}
   							{% if item['#context'] %} 
-   								<li>{{ item}}</li>               
+   								<li class="flex gap-[24px]">
+                                    <img src="/{{ base_path ~ directory }}/images/arrows-navigation/arrow-textlinks.svg" alt="arrow icon">
+                                    {{ item}}
+                                </li>               
   							{% endif %}
 						{% endfor %}								                           
                     </ul>
@@ -66,7 +74,10 @@
                     <ul class="flex flex-col gap-4 text-content-fade arrow">
                         {% for item in content.field_what_we_expect_description %}
   							{% if item['#context'] %} 
-   								<li>{{ item}}</li>               
+   								<li class="flex gap-[24px]">
+                                    <img src="/{{ base_path ~ directory }}/images/arrows-navigation/arrow-textlinks.svg" alt="arrow icon">
+                                    {{ item}}
+                                </li>              
   							{% endif %}
 						{% endfor %}
                     </ul>

@@ -37,6 +37,7 @@
         "drupal/shield": "^1.7",
         "drupal/simple_menu_icons": "^2.3",
         "drupal/svg_image_field": "^2.1",
+        "drupal/twig_tweak": "^3.2",
         "drush/drush": "^11.0",
         "vlucas/phpdotenv": "^5.1",
         "webflo/drupal-finder": "^1.2"

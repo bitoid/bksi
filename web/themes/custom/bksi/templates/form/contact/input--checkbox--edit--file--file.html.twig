@@ -22,7 +22,7 @@
     ]
 %}
 
-<label class="flex items-start mt-[60px] pl-14 relative cursor-pointer select-none w-fit">
+<label class="flex flex-row-reverse cursor-pointer select-none w-fit">
 	<input{{attributes.addClass(classes)}}/>{{ children }}
-	<div class="w-6 h-6 absolute text-[16px] bg-white top-0 left-0  flex items-center justify-center text-red-600 rounded-full">x</div>
+	<div class="w-6 h-6 text-[16px] bg-white   flex items-center justify-center text-red-600 rounded-full"><i class="fa-solid fa-xmark"></i></div>
 </label>

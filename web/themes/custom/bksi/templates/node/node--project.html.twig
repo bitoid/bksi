@@ -71,10 +71,12 @@
  *   in different view modes.
  */
 #}
+
+{% set counter = 0 %} 
 <section>
   <div class="relative items-center h-screen overflow-x-hidden">
     <div class="absolute top-0 left-0 w-screen h-screen -z-10">
-      <img src="{{ file_url(content.field_project_header_image.0['#item'].entity.uri.value) }}" alt="" class="object-cover w-full h-full">
+      <img src="{{ file_url(content.field_project_header_image.0['#item'].entity.uri.value) }}" alt="{{ content.field_project_header_image.0['#item'].alt }}" class="object-cover w-full h-full">
       <div class="absolute top-0 left-0 z-10 w-full h-full bg-black bg-opacity-70"></div>
     </div>
     <h1 class="w-[73.14%] absolute top-1/2 left-4 -translate-y-1/2 flex flex-col gap-7 text-white text-[35px] tracking-[1.5px] leading-normal hyphens-manual md:gap-9 md:text-[70px] md:left-11 md:leading-tight md:tracking-[3px]">
@@ -84,7 +86,7 @@
   </div>
 
   <div class="grid grid-cols-1 items-start text-[15px] leading-[22px] tracking-[0.75px] md:grid-cols-2">
-    <div class="pl-4 pr-10 py-20 bg-lightGray flex flex-col md:px-40 md:pt-[200px] md:pb-60 sticky top-0">
+    <div class="pl-4 pr-10 py-20 bg-lightGray flex flex-col md:px-40 md:pt-[200px] md:pb-60 md:sticky top-0">
       <div class="text-fade">
         <h3 class="text-content-fade text-[26px] tracking-[0.3px] mb-[50px] md:text-[35px] md:tracking-[1.75px] md:leading-[39px]">
           {{ 'Projekt Eckdaten' | t }}
@@ -124,7 +126,7 @@
         </article>
       </div>
       <div class="fade-in-image-container mt-28 mb-24 h-[50vh] md:h-full w-auto">
-        <img class="object-cover w-full h-full " src="{{  file_url(content.field_project_challenge_image.0['#item'].entity.uri.value) }}" alt="">
+        <img class="object-cover w-full h-full " src="{{  file_url(content.field_project_challenge_image.0['#item'].entity.uri.value) }}" alt="{{content.field_project_challenge_image.0['#item'].alt}}">
       </div>
       <div class="text-fade">
         <article class="text-content-fade flex flex-col gap-32 px-4 md:pl-[100px] md:pr-28">
@@ -145,7 +147,7 @@
     </h3>
     <div id="image-carousel" class="splide " aria-label="Beautiful Images">
       <div class="splide__arrows">
-        <button class="splide__arrow splide__arrow--prev absolute opacity-100 top-0 left-full -translate-x-[300%] translate-y-1/2  w-[50px] h-[50px] bg-white rounded-full flex justify-center items-center hover:opacity-100 hover:scale-125 md:translate-x-[150%] md:left-1/2"
+        <button id="prev-button" class="splide__arrow  splide__arrow--prev absolute opacity-100 top-0 left-full -translate-x-[300%] translate-y-1/2  w-[50px] h-[50px] bg-white rounded-full flex justify-center items-center hover:opacity-100 hover:scale-125 md:translate-x-[150%] md:left-1/2"
                 type="button"
                 aria-label="Previous slide"
                 aria-controls="splide01-track">
@@ -153,7 +155,7 @@
             <path id="Pfad_29233" data-name="Pfad 29233" d="M0,0V1.633L3.993,3.938V8.561l1.414.816V3.122Z" transform="translate(4.688) rotate(30)" fill="#e63229"/>
           </svg>
         </button>
-        <button class="splide__arrow splide__arrow--next absolute opacity-100 top-0 left-full -translate-x-[150%] translate-y-1/2 w-[50px] h-[50px] bg-white rounded-full flex justify-center items-center hover:opacity-100 hover:scale-125 md:translate-x-[300%] md:left-1/2"
+        <button id="next-button" class="splide__arrow  splide__arrow--next absolute opacity-100 top-0 left-full -translate-x-[150%] translate-y-1/2 w-[50px] h-[50px] bg-white rounded-full flex justify-center items-center hover:opacity-100 hover:scale-125 md:translate-x-[300%] md:left-1/2"
                 type="button"
                 aria-label="Next slide"
                 aria-controls="splide02-track">
@@ -163,23 +165,31 @@
         </button>
       </div>
       <div class="splide__track">
-        <ul class="splide__list">
+        <ul class="splide__list ">
           {% for image in content.field_project_image %}
             {% if image['#item'] %}
-              <li class="splide__slide">
-                <img class="object-cover w-full h-full" src="{{  file_url(image['#item'].entity.uri.value) }}" alt="">
+                         
+              <li class="splide__slide flex flex-col ">
+                <img class="object-cover w-full h-full" src="{{  file_url(image['#item'].entity.uri.value) }}" alt="{{ image['#item'].alt }}">
+                          
+                  <p class="title-html hidden" > {{ image['#item'].title }}</p>
+              
               </li>
             {% endif %}
-          {% endfor %}
+          {% endfor %}        
         </ul>
+        <div class="pl-[25%] flex gap-4 items-center">
+            <span id="title-num"></span>
+            <p id="title"> </p>
+        <div>
       </div>
     </div>
   </div>
-  
+
 </section>
 
 <section class="bg-lightGray px-4 py-[75px] md:px-10 md:py-[150px] ">
-    
+
      <div class="random-projects grid grid-cols-1 gap-[75px] md:grid-cols-2 md:gap-10"></div>
      <a class="max-w-fit group relative h-10 flex gap-4 z-10 pr-6 items-center rounded-[40px] overflow-hidden mx-auto mt-28" href="/projects">
          <span class="absolute left-0 top-0 -z-10 h-full w-0 rounded-[40px] bg-mainRed group-hover:w-full"></span>
@@ -188,3 +198,4 @@
      </a>
 
 </section>
+

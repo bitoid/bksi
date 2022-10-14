@@ -7,7 +7,7 @@ use Drupal\node\Entity\Node;
 use Drupal\Core\Block\BlockBase;
 
 use Drupal\Core\Access\AccessResult;
-use Drupal\image\Entity\ImageStyle; 
+use Drupal\image\Entity\ImageStyle;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Session\AccountInterface;
 
@@ -39,7 +39,11 @@ class BksiCareer extends BlockBase
       $image = $config['career_image'];
       if ($image){
         $file = File::load($image[0]);
-        $url = $file->getFileUri();
+        $uri = $file->getFileUri();
+        $url['original_jpg'] = ImageStyle::load('original')->buildUrl($uri);
+        $url['original_webp'] = ImageStyle::load('original_webp')->buildUrl($uri);
+        $url['large_jpg'] = ImageStyle::load('large')->buildUrl($uri);
+        $url['large_webp'] = ImageStyle::load('large_webp')->buildUrl($uri);
       }
 //       Get data from Article content type
        $query = \Drupal::entityQuery('node');
@@ -140,12 +144,12 @@ class BksiCareer extends BlockBase
    * {@inheritdoc}
    */
 
-  public function blockSubmit($form, FormStateInterface $form_state) {  
+  public function blockSubmit($form, FormStateInterface $form_state) {
     $this->configuration['career_title'] = $form_state->getValue('career_title');
 	  $this->configuration['career_description'] = $form_state->getValue('career_description');
     $this->configuration['career_footer_title'] = $form_state->getValue('career_footer_title');
-	  $this->configuration['career_footer_description'] = $form_state->getValue('career_footer_description');	
-    $this->configuration['career_image'] = $form_state->getValue('career_image'); 
+	  $this->configuration['career_footer_description'] = $form_state->getValue('career_footer_description');
+    $this->configuration['career_image'] = $form_state->getValue('career_image');
 
   }
 }

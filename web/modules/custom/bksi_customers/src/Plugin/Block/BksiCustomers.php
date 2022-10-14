@@ -40,10 +40,12 @@ class BksiCustomers extends BlockBase {
       $node = Node::load($nid);
       $customer_name = $node->getTitle();
       $logo_id = $node->field_logo->target_id;
-      $logo_alt = $node->field_logo->alt; 
+      $logo_alt = $node->field_logo->alt;
       $logo = File::load($logo_id)->getFileUri();
-      $logo_url = ImageStyle::load('wide')->buildUrl($logo);
-      
+      $logo_url['original_jpg'] = ImageStyle::load('original')->buildUrl($logo);
+      $logo_url['original_webp'] = ImageStyle::load('original_webp')->buildUrl($logo);
+      $logo_url['large_jpg'] = ImageStyle::load('large')->buildUrl($logo);
+      $logo_url['large_webp'] = ImageStyle::load('large_webp')->buildUrl($logo);
 
       // node url
       // $options = ['absolute' => TRUE];

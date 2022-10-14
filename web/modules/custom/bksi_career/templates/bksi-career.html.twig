@@ -1,7 +1,13 @@
   <section class="bg-lightGray">
     {% if image_url %}
          <div class="relative fade-in-image-container h-[30vh] md:h-screen">
-            <img class="w-full fade-in-image h-full object-cover" src="{{ file_url(image_url) }}" alt="">
+             <picture>
+               <source srcset="{{ image_url['large_webp'] }}" media="only screen and (max-width: 450px)" type="image/webp" >
+               <source srcset="{{ image_url['large_jpg'] }}" media="only screen and (max-width: 450px)" type="image/jpeg" >
+               <source srcset="{{ image_url['original_webp'] }}" media="only screen and (min-width: 500px)" type="image/webp">
+               <source srcset="{{ image_url['original_jpg'] }}" media="only screen and (min-width: 500px)" type="image/jpeg">
+               <img class="w-full fade-in-image h-full object-cover" src="{{ image_url['original_jpg'] }}" alt="">
+             </picture>
         </div>
     {% endif %}
         <div class="flex flex-col items-start px-4 py-20 gap-16 md:px-10 md:py-40 md:flex-row md:gap-56">
@@ -10,10 +16,10 @@
                     {{ title }}
                     <span class="text-[15px] tracking-[0.75px] leading-[22px]">{{ description }} </span>
                 </h3>
-            </div>  
-            <div class="flex flex-col w-full ">          
+            </div>
+            <div class="flex flex-col w-full ">
                 <div class="flex flex-col gap-5 w-full mb-[75px] md-[100px]">
-                   {% for job in career_array %} 
+                   {% for job in career_array %}
                     <div class="text-fade">
                         <a href="{{path('entity.node.canonical', {'node': job.nid})}}" class="text-content-fade flex items-center justify-between bg-white min-w-full gap-5 px-5 py-8 md:px-8">
                             <div class="flex flex-col gap-5">
@@ -23,8 +29,8 @@
                             <img class="w-5 h-5" src="../../../themes/custom/bksi/assets/bilder/arrows-navigation/arrow-textlinks.svg" alt="">
                         </a>
                     </div>
-                         {% endfor %}  
-                </div>         
+                         {% endfor %}
+                </div>
                 <div class="flex flex-col gap-9">
                     <div class="text-fade">
                         <h3 class="text-content-fade text-[26px] tracking-[1.3px] leading-none flex flex-col gap-5 md:gap-7 md:text-[35px] md:leading-10 md:tracking-[1.75px]">

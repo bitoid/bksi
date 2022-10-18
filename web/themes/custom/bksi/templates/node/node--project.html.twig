@@ -164,23 +164,20 @@
           </svg>
         </button>
       </div>
-      <div class="splide__track">
+      <div class="splide__track image_slider">
         <ul class="splide__list ">
           {% for image in content.field_project_image %}
-            {% if image['#item'] %}
-                         
+            {% if image['#item'] %}                        
               <li class="splide__slide flex flex-col ">
-                <img class="object-cover w-full h-full" src="{{  file_url(image['#item'].entity.uri.value) }}" alt="{{ image['#item'].alt }}">
-                          
-                  <p class="title-html hidden" > {{ image['#item'].title }}</p>
-              
+                <img class="object-cover w-full h-full" src="{{  file_url(image['#item'].entity.uri.value) }}" alt="{{ image['#item'].alt }}">                         
+                  <p class="title-html hidden" > {{ image['#item'].title }}</p>             
               </li>
             {% endif %}
           {% endfor %}        
         </ul>
-        <div class="pl-[25%] flex gap-4 items-center">
+        <div class="md:pl-[25%] pl-[18px] mt-[20px] md:mt-[20px] tracking-[0.75px]  flex items-center">
             <span id="title-num"></span>
-            <p id="title"> </p>
+            <p class="  md:ml-[77px] ml-[23px] text-left" id="title"> </p>
         <div>
       </div>
     </div>

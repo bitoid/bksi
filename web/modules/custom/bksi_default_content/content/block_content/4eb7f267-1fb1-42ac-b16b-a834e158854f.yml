@@ -5,14 +5,11 @@ _meta:
   bundle: impressions
   default_langcode: en
   depends:
-    ce9a4005-f5f9-47e7-93b9-ec352f560965: file
-    1c35285a-ff27-4aeb-b65a-8be4e7dde31a: file
-    a8303da4-343b-4193-b066-eb5a56025c7f: file
-    23563da7-22ba-4230-ab91-61f2ba8a1aac: file
-    ab6fdc31-284f-4eaf-9765-5dfaee5da1e2: file
-    78757ee6-c30c-4076-b7ee-d3d65c6655f5: file
-    3a347fb0-c7f1-40df-a0c4-3734e6179c37: file
-    3b0d7c45-a05b-4d95-9279-e4423e19f57d: file
+    62ec5680-662f-4bcc-8515-488321892d65: file
+    3ccb59ff-8f88-41d9-bea5-f1f36f7b923e: file
+    411ef4cc-bed6-4b10-9c18-2c469a362447: file
+    38ebc8bd-6c6e-4ff6-a6c0-e9db68b3396b: file
+    e1ee240b-c870-4854-bfae-2f1d63516470: file
 default:
   status:
     -
@@ -26,77 +23,37 @@ default:
   revision_translation_affected:
     -
       value: true
-  field_impressions_paragraph:
+  field_impressions_images:
     -
-      entity:
-        _meta:
-          version: '1.0'
-          entity_type: paragraph
-          uuid: b18e2628-b5df-45c6-8211-47d2d8bd646c
-          bundle: impressions
-          default_langcode: en
-        default:
-          status:
-            -
-              value: true
-          created:
-            -
-              value: 1662104274
-          behavior_settings:
-            -
-              value: {  }
-          revision_translation_affected:
-            -
-              value: true
-          field_image:
-            -
-              entity: ce9a4005-f5f9-47e7-93b9-ec352f560965
-              alt: house-2-career-page
-              title: ''
-              width: 940
-              height: 625
-            -
-              entity: 1c35285a-ff27-4aeb-b65a-8be4e7dde31a
-              alt: house-4-career-page
-              title: ''
-              width: 1000
-              height: 667
-            -
-              entity: a8303da4-343b-4193-b066-eb5a56025c7f
-              alt: house-5-career-page
-              title: ''
-              width: 1200
-              height: 577
-            -
-              entity: 23563da7-22ba-4230-ab91-61f2ba8a1aac
-              alt: house-6-career-page
-              title: ''
-              width: 1080
-              height: 720
-            -
-              entity: ab6fdc31-284f-4eaf-9765-5dfaee5da1e2
-              alt: house-2-career-page
-              title: ''
-              width: 940
-              height: 625
-            -
-              entity: 78757ee6-c30c-4076-b7ee-d3d65c6655f5
-              alt: house-4-career-page_
-              title: ''
-              width: 1000
-              height: 667
-            -
-              entity: 3a347fb0-c7f1-40df-a0c4-3734e6179c37
-              alt: house-5-career-page_0
-              title: ''
-              width: 1200
-              height: 577
-            -
-              entity: 3b0d7c45-a05b-4d95-9279-e4423e19f57d
-              alt: house-6-career-page
-              title: ''
-              width: 1080
-              height: 720
+      entity: 62ec5680-662f-4bcc-8515-488321892d65
+      alt: alt1
+      title: 'house 1'
+      width: 1000
+      height: 667
+    -
+      entity: 3ccb59ff-8f88-41d9-bea5-f1f36f7b923e
+      alt: alt2
+      title: 'house 2'
+      width: 1000
+      height: 667
+    -
+      entity: 411ef4cc-bed6-4b10-9c18-2c469a362447
+      alt: alt3
+      title: 'house 3'
+      width: 1200
+      height: 577
+    -
+      entity: 38ebc8bd-6c6e-4ff6-a6c0-e9db68b3396b
+      alt: alt4
+      title: 'house 4'
+      width: 1000
+      height: 667
+    -
+      entity: e1ee240b-c870-4854-bfae-2f1d63516470
+      alt: alt5
+      title: 'house 5'
+      width: 1080
+      height: 720
   field_title:
     -
       value: "<h3>Büro Impressionen</h3>\r\n"

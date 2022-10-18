@@ -6,6 +6,8 @@ const nextButton=document.getElementById("next-button");
 const titleDiv=document.getElementById("title");
 const imgNum=document.getElementById("title-num");
 
+const imageSlider = document.querySelector('.image_slider')
+
 
 const titles = Array.from(
     document.getElementsByClassName('title-html')
@@ -15,14 +17,11 @@ const titles = Array.from(
 
 let titlesArr=[];
 
-
 let filter={
-    num: 1
+    num: 0
 }
 
-
-
-function setup(){ 
+function impression(){ 
 
     previusButton.addEventListener('click', filterImgNumber);
     nextButton.addEventListener('click', filterImgNumber);
@@ -36,8 +35,10 @@ function setup(){
  displaytitle(titlesArr)
 }
 
-setup();  
-
+if(imageSlider){
+    impression();  
+}
+   
 function getTitleHtml(arr){
 
     for(let item in arr){  
@@ -64,8 +65,6 @@ function filterImgNumber(e){
         filter.num=0
     }
 
-    console.log(filter.num);
-
     displaytitle(titlesArr)
 
 }
@@ -73,14 +72,13 @@ function filterImgNumber(e){
 
 function displaytitle(arr){
     
-
     imgNum.innerHTML=''
 
-    console.log(arr);
-    console.log(filter.num);
-
     if(arr.length>1){
-        imgNum.innerHTML=` <span> ${ filter.num+1 } </span> / <span class="last-image">${ arr.length }</span>`
+        imgNum.innerHTML=` <span> ${ filter.num+1 } </span> / <span class="last-image">${ arr.length }</span>`   
+    }else{
+        titleDiv.classList.remove('md:ml-[77px]')
+        titleDiv.classList.add('md:ml-[0]')
     }
     if(arr[filter.num]!=''){
         titleDiv.innerText=arr[filter.num]

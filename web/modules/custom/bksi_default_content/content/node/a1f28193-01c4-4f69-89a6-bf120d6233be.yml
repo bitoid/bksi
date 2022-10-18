@@ -33,8 +33,9 @@ default:
       value: true
   path:
     -
-      alias: ''
+      alias: /klinikum-ludwigsburg
       langcode: en
+      pathauto: 1
   field_logo:
     -
       entity: 0efbbfc1-a8a2-45b1-b5c9-69254f4b292e

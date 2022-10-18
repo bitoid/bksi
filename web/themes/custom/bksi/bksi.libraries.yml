@@ -5,11 +5,11 @@ global-styling:
       css/splide.min.css: {weight: 1}
   js:
     js/dropdown.js: {}
-    js/impressium.js: {}
     js/karriere-dropdown.js: {}
     js/lazy-loading.js: {}
     js/main.js: {}
     js/slider.js: {}
+    js/impression.js: {}
   dependencies:
     - core/drupal
     - core/jquery    

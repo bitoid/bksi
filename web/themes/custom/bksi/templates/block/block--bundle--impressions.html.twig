@@ -15,7 +15,7 @@
         <div id="image-carousel" class="splide " aria-label="Beautiful Images">
              <div
                     class="splide__arrows relative md:w-fit left-1/2 flex -translate-x-1/2 md:left-3/4 gap-8 md:top-16 z-10">
-                    <button
+                    <button id="prev-button"
                         class="splide__arrow splide__arrow--prev absolute left-full -translate-x-[275%] top-10 md:-translate-x-0 md:top-0 md:-left-[150px] -translate-y-1/2 opacity-100 w-[50px] h-[50px] bg-white rounded-full flex justify-center items-center hover:opacity-100 hover:scale-125"
                         type="button" aria-label="Previous slide" aria-controls="splide01-track">
                         <svg xmlns="http://www.w3.org/2000/svg" width="9.371" height="10.824"
@@ -25,7 +25,7 @@
                                 transform="translate(4.688) rotate(30)" fill="#e63229" />
                         </svg>
                     </button>
-                    <button
+                    <button id="next-button" 
                         class="splide__arrow splide__arrow--next absolute right-0 -translate-x-1/2 top-10 md:top-0 -translate-y-1/2 opacity-100 w-[50px] h-[50px] bg-white rounded-full flex justify-center items-center hover:opacity-100 hover:scale-125"
                         type="button" aria-label="Next slide" aria-controls="splide01-track">
                         <svg xmlns="http://www.w3.org/2000/svg" width="9.371" height="10.824"
@@ -36,19 +36,26 @@
                         </svg>
                     </button>
                 </div>
-            <div class="splide__track">
-                <ul class="splide__list">
-                    {%for paragraph in content.field_impressions_paragraph %}
-                        {% if paragraph['#paragraph'] %}
-                            {% for image in paragraph['#paragraph'].field_image %}
-                            <li class="splide__slide">
-                                <img class="h-full w-full object-cover" src="{{ file_url(image.entity.fileuri) }}" alt="{{ image.value.alt }} ">
-                            </li>
-                            {% endfor %}
-                        {% endif %}
-                    {% endfor %}
+             <div class="splide__track image_slider">
+                <ul class="splide__list ">
+                {% for image in content.field_impressions_images %}
+                    {% if image['#item'] %}                                              
+                    <li class="splide__slide flex flex-col ">
+                        <img class="object-cover w-full h-full" src="{{  file_url(image['#item'].entity.uri.value) }}" alt="{{ image['#item'].alt }}">
+                                
+                        <p class="title-html hidden" > {{ image['#item'].title }}</p>                   
+                    </li>
+                    {% endif %}
+                {% endfor %}        
                 </ul>
+                <div class="md:pl-[25%] pl-[10px] mt-[20px] md:mt-[20px] flex  tracking-[0.75px] items-center">
+                    <span id="title-num"></span>
+                    <p class="md:ml-[77px] ml-[23px] text-left" id="title"> </p>
+                <div>
             </div>
         </div>
+      
     </div>
 </section>
+
+

@@ -8,9 +8,9 @@ _meta:
     a1f28193-01c4-4f69-89a6-bf120d6233be: node
     cd574c14-b8bb-414a-9145-742e7bed0cf4: file
     db3dc303-e055-4648-b1c0-e6382c6572ae: file
-    eec9a9d3-fa6c-4726-832b-477e64585c54: file
     b47a8d3b-81b5-4d2f-b891-c42b533e1699: file
     620567f9-8b12-40aa-838f-f3cc5619a3df: file
+    5b3504a9-3beb-4f5b-b9de-d82705a9e719: file
     de290511-60ee-42ca-8a83-52e6de2cd36d: taxonomy_term
     054d1e87-fecc-452b-ba3c-8969cb0a5a16: taxonomy_term
     1ca83c77-c301-4b96-bb7a-9a4b373b0325: taxonomy_term
@@ -41,8 +41,9 @@ default:
       value: true
   path:
     -
-      alias: ''
+      alias: /erweiterung-produktion-werk-4-bau-50-53-stuttgart-zuffenhausen
       langcode: en
+      pathauto: 1
   field_bgf:
     -
       value: BGF
@@ -81,23 +82,23 @@ default:
       height: 1440
   field_project_image:
     -
-      entity: eec9a9d3-fa6c-4726-832b-477e64585c54
-      alt: img4
-      title: ''
-      width: 1000
-      height: 667
-    -
       entity: b47a8d3b-81b5-4d2f-b891-c42b533e1699
       alt: img1
-      title: ''
+      title: 'this is house 1'
       width: 1000
       height: 667
     -
       entity: 620567f9-8b12-40aa-838f-f3cc5619a3df
       alt: img2
-      title: ''
+      title: 'this is house 2'
       width: 1200
       height: 577
+    -
+      entity: 5b3504a9-3beb-4f5b-b9de-d82705a9e719
+      alt: h3
+      title: 'this is house 3'
+      width: 1080
+      height: 720
   field_project_period:
     -
       value: '2020-09-16'

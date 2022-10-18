@@ -1,7 +1,7 @@
 _meta:
   version: '1.0'
   entity_type: file
-  uuid: 7973298d-68a8-49df-b629-3af7caf17553
+  uuid: 5b3504a9-3beb-4f5b-b9de-d82705a9e719
   default_langcode: en
 default:
   uid:
@@ -9,19 +9,19 @@ default:
       target_id: 1
   filename:
     -
-      value: team-3_0.jpg
+      value: house-6_1.jpeg
   uri:
     -
-      value: 'public://2022-08/team-3_0_0_1_0_0_0_2_7_0_3_0.jpg'
+      value: 'public://2022-10/house-6_1.jpeg'
   filemime:
     -
       value: image/jpeg
   filesize:
     -
-      value: 1556358
+      value: 251178
   status:
     -
       value: true
   created:
     -
-      value: 1661884895
+      value: 1666099675

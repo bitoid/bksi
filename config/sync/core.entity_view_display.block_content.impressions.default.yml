@@ -4,22 +4,24 @@ status: true
 dependencies:
   config:
     - block_content.type.impressions
-    - field.field.block_content.impressions.field_impressions_paragraph
+    - field.field.block_content.impressions.field_impressions_images
     - field.field.block_content.impressions.field_title
   module:
-    - entity_reference_revisions
+    - image
     - text
 id: block_content.impressions.default
 targetEntityType: block_content
 bundle: impressions
 mode: default
 content:
-  field_impressions_paragraph:
-    type: entity_reference_revisions_entity_view
+  field_impressions_images:
+    type: image
     label: above
     settings:
-      view_mode: default
-      link: ''
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 1
     region: content

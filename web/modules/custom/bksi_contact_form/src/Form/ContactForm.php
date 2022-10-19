@@ -168,7 +168,7 @@ class ContactForm extends FormBase {
       $send = TRUE;
       $mailManager->mail($module, $key, $to, $langcode, $params, NULL, $send);
 
-      $this->messenger()->addStatus($this->t('The form has been submitted '));
+      $this->messenger()->addStatus($this->t('Vielen Dank für Deine Bewerbung! Wir werden Deine Bewerbung schnellstmöglich bearbeiten und uns melden. Dies kann jedoch auch einmal einige Tage dauern.'));
     }
     
 

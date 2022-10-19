@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   module:
+    - node
     - system
   theme:
     - bksi
@@ -10,8 +11,8 @@ _core:
   default_config_hash: BZ5tpW7H8X4PVGRm3MImTIHd2tN0eF7zOtp4SpRYUA0
 id: bksi_messages
 theme: bksi
-region: highlighted
-weight: -5
+region: content
+weight: -9
 provider: null
 plugin: system_messages_block
 settings:
@@ -19,4 +20,11 @@ settings:
   label: 'Status messages'
   label_display: '0'
   provider: system
-visibility: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      job: job

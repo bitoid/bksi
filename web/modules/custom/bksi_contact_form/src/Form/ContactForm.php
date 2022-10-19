@@ -69,7 +69,7 @@ class ContactForm extends FormBase
 
     $form['file'] = [
       '#type' => 'managed_file',
-      '#required' => false,
+      '#required' => TRUE,
       '#multiple' => TRUE,
       '#upload_validators' => [
         'file_validate_extensions' => array('pdf'),

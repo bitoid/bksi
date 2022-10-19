@@ -1,4 +1,3 @@
-
 {{ form.form_build_id }}
 {{ form.form_token }}
 {{ form.form_id }}
@@ -19,3 +18,18 @@
 </div>
 {{ form.policy_checkbox }}
 {{ form.actions.submit }}
+
+{% if form.submission_text %}
+	<div class="bg-lightGray mt-[70px] px-4">
+		<div class="w-[339px] md:w-[656px] font-bold text-[14px]">
+			<div class="w-full ">
+				{{ 'Vielen Dank für Deine Bewerbung!'|t }}
+			</div>
+			<div class="w-full ">
+				{{ 'Wir werden Deine Bewerbung schnellstmöglich bearbeiten und uns melden.'|t }}
+			</div>
+			<div class="w-full ">
+				{{ 'Dies kann jedoch auch einmal einige Tage dauern'|t }}
+			</div>
+		</div>
+{% endif %}

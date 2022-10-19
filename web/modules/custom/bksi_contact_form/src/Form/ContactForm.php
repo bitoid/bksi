@@ -4,7 +4,7 @@ namespace Drupal\bksi_contact_form\Form;
 
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
-
+use phpDocumentor\Reflection\PseudoTypes\True_;
 
 class ContactForm extends FormBase
 {
@@ -69,7 +69,7 @@ class ContactForm extends FormBase
 
     $form['file'] = [
       '#type' => 'managed_file',
-      '#required' => TRUE,
+      '#required' => false,
       '#multiple' => TRUE,
       '#upload_validators' => [
         'file_validate_extensions' => array('pdf'),
@@ -89,6 +89,12 @@ class ContactForm extends FormBase
       $form['actions']['submit'] = [
         '#type' => 'submit',
         '#value' => $this->t('Submit'),
+      ];
+    } else {
+
+      $form['submission_text'] = [
+        '#type' => 'boolean',
+        '#value' => TRUE
       ];
     }
 

@@ -32,9 +32,9 @@
                     <ul class="flex flex-col gap-4 text-content-fade arrow">                          
                         {% for item in content.field_what_awaits_you_descriptio %}
   							{% if item['#context'] %} 
-   								<li class="flex gap-[24px]">
-                                    <img src="/{{ base_path ~ directory }}/images/arrows-navigation/arrow-textlinks.svg" alt="arrow icon">
-                                    {{ item}}
+   								<li class="flex gap-[24px]">                                  
+                                   <p class="text-start mt-[-1px] text-[15px] text-red-600">›</p>
+                                  <div class="text-left" >  {{ item}}</div>
                                 </li>              
   							{% endif %}
 						{% endfor %}
@@ -53,9 +53,9 @@
                     <ul class="flex flex-col gap-4 text-content-fade arrow">
                         {% for item in content.field_what_bksi_offer_descriptio %}
   							{% if item['#context'] %} 
-   								<li class="flex gap-[24px]">
-                                    <img src="/{{ base_path ~ directory }}/images/arrows-navigation/arrow-textlinks.svg" alt="arrow icon">
-                                    {{ item}}
+   								<li class="flex  gap-[24px]">
+                                    <p class="text-start mt-[-1px]  text-[15px] text-red-600">›</p>
+                                   <div class="text-left" > {{ item}}</div>
                                 </li>               
   							{% endif %}
 						{% endfor %}								                           
@@ -75,8 +75,8 @@
                         {% for item in content.field_what_we_expect_description %}
   							{% if item['#context'] %} 
    								<li class="flex gap-[24px]">
-                                    <img src="/{{ base_path ~ directory }}/images/arrows-navigation/arrow-textlinks.svg" alt="arrow icon">
-                                    {{ item}}
+                                    <p class="text-start mt-[-1px]  text-[15px] text-red-600">›</p>
+                                    <div class="text-left" >{{ item}}<div>
                                 </li>              
   							{% endif %}
 						{% endfor %}

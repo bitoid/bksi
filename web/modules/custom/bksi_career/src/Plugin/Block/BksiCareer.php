@@ -103,8 +103,7 @@ class BksiCareer extends BlockBase
     ];
 
     $form['career_description'] = [
-      '#type' => 'textfield',
-      '#size' => 'medium',
+      '#type' => 'textarea',
       '#title' => $this->t('Description'),
       '#default_value' => $config['career_description'] ?? '',
       '#description' => $this->t('Description for career block'),
@@ -119,8 +118,7 @@ class BksiCareer extends BlockBase
     ];
 
 	 $form['career_footer_description'] = [
-      '#type' => 'textfield',
-      '#size' => 'medium',
+      '#type' => 'textarea',
       '#title' => $this->t('Footer Description'),
       '#default_value' => $config['career_footer_description'] ?? '',
       '#description' => $this->t('Footer Description for career block'),

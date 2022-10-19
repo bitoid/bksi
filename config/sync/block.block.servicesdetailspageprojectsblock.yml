@@ -12,7 +12,7 @@ dependencies:
 id: servicesdetailspageprojectsblock
 theme: bksi
 region: content
-weight: 0
+weight: -10
 provider: null
 plugin: 'block_content:e374048b-f816-45b3-857b-fe55a354c602'
 settings:

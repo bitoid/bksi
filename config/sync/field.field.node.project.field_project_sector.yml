@@ -10,7 +10,7 @@ id: node.project.field_project_sector
 field_name: field_project_sector
 entity_type: node
 bundle: project
-label: sector
+label: Sektor
 description: ''
 required: true
 translatable: false

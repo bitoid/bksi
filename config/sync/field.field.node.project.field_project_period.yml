@@ -11,7 +11,7 @@ id: node.project.field_project_period
 field_name: field_project_period
 entity_type: node
 bundle: project
-label: Period
+label: Zeitraum
 description: "first date is development starting date\r\nsecond is enddate"
 required: false
 translatable: false

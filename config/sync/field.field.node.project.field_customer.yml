@@ -10,7 +10,7 @@ id: node.project.field_customer
 field_name: field_customer
 entity_type: node
 bundle: project
-label: Customer
+label: Auftraggeber
 description: ''
 required: true
 translatable: false

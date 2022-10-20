@@ -1,6 +1,6 @@
 <div class="bg-[#E63229] relative py-[75px] px-4 md:px-10 md:py-[150px]">
             <div class="relative">
-            <button class="slider-button-left absolute w-[50px] aspect-square bg-darkBlue rounded-full top-full left-1/2 -translate-y-1/2 -translate-x-[100px] flex justify-center items-center md:hover:w-[70px] md:left-8 md:top-[61.5%] md:-translate-x-1/2"><img class="rotate-180" src="/{{ base_path ~ directory }}/images/arrow-textlinks.svg" alt=""></button>          
+            <button class="slider-button-left absolute w-[50px] aspect-square bg-darkBlue rounded-full top-full left-1/2 -translate-y-1/2 -translate-x-[100px] flex justify-center items-center md:hover:w-[70px] md:left-8 md:top-[308px] md:-translate-x-1/2"><img class="rotate-180" src="/{{ base_path ~ directory }}/images/arrow-textlinks.svg" alt=""></button>          
                 <div class="text-center mx-auto text-fade">
                     <div class="text-content-fade max-w-[860px] mx-auto">
                         <h2 class="text-[26px] tracking-[1.3px] leading-none flex flex-col gap-5 md:text-[35px] md:leading-10 md:tracking-[1.75px]">
@@ -11,7 +11,7 @@
                             {% for paragraph in content.field_slider %}
                              {% if paragraph['#paragraph'] %}
                             <div class="mt-[90px] slider-content w-full md:mt-28 flex-shrink-0">
-                                <div class="text-[76px] leading-[100px] tracking-[3.8px] pb-[75px] font-['halbfett'] text-center md:text-[155px] md:leading-[200px] md:tracking-[7.75px] md:pb-[50px]">{{ paragraph['#paragraph'].field_year.0.value }}</div>
+                                <div class=" text-[76px] leading-[100px] tracking-[3.8px] pb-[75px] font-['halbfett'] text-center md:text-[155px] md:leading-[200px] md:tracking-[7.75px] md:pb-[50px]">{{ paragraph['#paragraph'].field_year.0.value }}</div>
                                 <p class="mb-10 text-2xl md:mb-0">{{ paragraph['#paragraph'].field_year_text_for_slider.0.value }}</p>
                             </div>
                             {% endif %}
@@ -21,7 +21,7 @@
                 </div>
                 <span class="slider-pages right-1/2 translate-x-1/2 -translate-y-1/2 absolute text-[15px] tracking-[.75px] md:right-[39px] md:top-[13px] "><span class="current-slide">1</span> / <span class="total-slides">6</span></span>
                 
-                <button class="slider-button-right absolute top-full right-1/2 -translate-y-1/2 translate-x-[100px]  w-[50px] aspect-square bg-darkBlue rounded-full flex justify-center items-center md:hover:w-[70px] md:right-8 md:top-[61.5%] md:-translate-y-1/2 md:translate-x-1/2"><img src="/{{ base_path ~ directory }}/images/arrow-textlinks.svg" alt=""></button>
+                <button class="slider-button-right absolute top-full right-1/2 -translate-y-1/2 translate-x-[100px]  w-[50px] aspect-square bg-darkBlue rounded-full flex justify-center items-center md:hover:w-[70px] md:right-8 md:top-[308px] md:-translate-y-1/2 md:translate-x-1/2"><img src="/{{ base_path ~ directory }}/images/arrow-textlinks.svg" alt=""></button>
           </div>
 
 </div>

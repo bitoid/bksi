@@ -11,7 +11,7 @@ id: node.services.field_service_icon
 field_name: field_service_icon
 entity_type: node
 bundle: services
-label: service-icon
+label: Icon
 description: ''
 required: true
 translatable: false

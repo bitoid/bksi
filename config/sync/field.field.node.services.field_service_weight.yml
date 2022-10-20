@@ -9,7 +9,7 @@ id: node.services.field_service_weight
 field_name: field_service_weight
 entity_type: node
 bundle: services
-label: weight
+label: Gewichtung
 description: ''
 required: true
 translatable: false

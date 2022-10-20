@@ -9,7 +9,7 @@ id: node.services.field_service_slogan
 field_name: field_service_slogan
 entity_type: node
 bundle: services
-label: slogan
+label: Headline
 description: ''
 required: true
 translatable: false

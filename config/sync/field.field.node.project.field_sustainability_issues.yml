@@ -11,7 +11,7 @@ id: node.project.field_sustainability_issues
 field_name: field_sustainability_issues
 entity_type: node
 bundle: project
-label: 'sustainability issues'
+label: 'Inhalt: Nachhaltigkeit'
 description: ''
 required: false
 translatable: false

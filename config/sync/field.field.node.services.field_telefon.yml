@@ -9,7 +9,7 @@ id: node.services.field_telefon
 field_name: field_telefon
 entity_type: node
 bundle: services
-label: telefon
+label: Telefon
 description: ''
 required: false
 translatable: false

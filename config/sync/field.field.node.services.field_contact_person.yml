@@ -11,7 +11,7 @@ id: node.services.field_contact_person
 field_name: field_contact_person
 entity_type: node
 bundle: services
-label: contact-person
+label: Kontakt
 description: ''
 required: false
 translatable: false

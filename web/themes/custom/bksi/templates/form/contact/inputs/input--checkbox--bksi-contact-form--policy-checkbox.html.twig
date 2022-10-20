@@ -27,12 +27,12 @@
 	<a href="#" class="absolute -top-14 left-0  font-sans">
 		{{ 'Datenschutz'|t }}
 	</a>
-	<div>
+	<div class= "flex">
 		<div>
-			Ich habe die Datenschutzerklärung gelesen und erkläre mich damit einverstanden.
+			{{ 'Ich habe die Datenschutzerklärung gelesen und erkläre mich damit einverstanden.' | t}}
 		</div>
 		<input{{attributes.addClass(classes)}}/>{{ children }}
-		<span class="absolute w-10 h-10 rounded-full bg-white -top-[50%] left-0 after:absolute after:duration-300 after:transition-opacity after:opacity-0 peer-checked:after:opacity-100 after:left-4 after:top-3 after:w-[10px] after:h-[13px] after:border-mainRed after:border-b-[3px] after:border-r-[3px] after:rotate-45"></span>
+		<span class="absolute w-10 h-10 rounded-full bg-white md:-top-[30%]  left-0 after:absolute after:duration-300 after:transition-opacity after:opacity-0 peer-checked:after:opacity-100 after:left-4 after:top-3 after:w-[10px] after:h-[13px] after:border-mainRed after:border-b-[3px] after:border-r-[3px] after:rotate-45"></span>
 	</div>
 </label>
 

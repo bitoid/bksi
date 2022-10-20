@@ -11,7 +11,7 @@ id: node.services.field_service_description
 field_name: field_service_description
 entity_type: node
 bundle: services
-label: description
+label: Text
 description: ''
 required: false
 translatable: false

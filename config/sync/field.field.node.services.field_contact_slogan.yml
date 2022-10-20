@@ -11,7 +11,7 @@ id: node.services.field_contact_slogan
 field_name: field_contact_slogan
 entity_type: node
 bundle: services
-label: 'Contact slogan'
+label: 'Störer: Headline'
 description: ''
 required: false
 translatable: false

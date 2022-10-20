@@ -9,7 +9,7 @@ id: node.job.field_what_awaits_you
 field_name: field_what_awaits_you
 entity_type: node
 bundle: job
-label: 'What Awaits You'
+label: 'Headline: Das erwartet dich'
 description: ''
 required: false
 translatable: false

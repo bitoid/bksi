@@ -9,7 +9,7 @@ id: node.job.field_what_we_expect_description
 field_name: field_what_we_expect_description
 entity_type: node
 bundle: job
-label: 'What We Expect Description'
+label: 'Inhalt: Was wir bieten'
 description: ''
 required: false
 translatable: false

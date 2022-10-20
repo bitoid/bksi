@@ -8,7 +8,7 @@ third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
-name: Job
+name: Stellenanzeige
 type: job
 description: ''
 help: ''

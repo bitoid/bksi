@@ -9,7 +9,7 @@ id: node.job.field_job_experience
 field_name: field_job_experience
 entity_type: node
 bundle: job
-label: 'Job Experience'
+label: Subline
 description: ''
 required: true
 translatable: false

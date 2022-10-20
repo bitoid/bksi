@@ -9,7 +9,7 @@ id: node.job.field_job_description
 field_name: field_job_description
 entity_type: node
 bundle: job
-label: 'Job Description'
+label: Preline
 description: ''
 required: false
 translatable: false

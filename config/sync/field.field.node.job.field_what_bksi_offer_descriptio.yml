@@ -9,7 +9,7 @@ id: node.job.field_what_bksi_offer_descriptio
 field_name: field_what_bksi_offer_descriptio
 entity_type: node
 bundle: job
-label: 'What Bksi Offer Description'
+label: 'Inhalt: Was wir erwarten'
 description: ''
 required: false
 translatable: false

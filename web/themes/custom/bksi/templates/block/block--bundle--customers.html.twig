@@ -15,7 +15,11 @@
         </h3>
         <div class="grid grid-cols-2 gap-2 md:grid-cols-6 md:gap-10">
             {% for image in content.field_customers_paragraph.0['#paragraph'].field_image %}
-            <img class="w-full h-full"src="{{ file_url(image.entity.fileuri) }}" alt="{{ image.value.alt }}">
+              <picture>
+                <source srcset="{{ file_url(image.entity.fileuri | image_style('large_webp')) }}" media="only screen and (max-width: 450px)" type="image/webp" >
+                <source srcset="{{ file_url(image.entity.fileuri | image_style('original_webp')) }}" media="only screen and (min-width: 450px)" type="image/webp">
+                <img class="w-full h-full"src="{{ file_url(image.entity.fileuri) }}" alt="{{ image.value.alt }}">
+              </picture>
             {% endfor %}
         </div>
     </div>

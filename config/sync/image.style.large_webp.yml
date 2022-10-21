@@ -3,14 +3,14 @@ langcode: en
 status: true
 dependencies: {  }
 name: large_webp
-label: 'Large webp (450w)'
+label: 'Large webp (650w)'
 effects:
   b59a44e7-f21b-4d0c-bf4d-d1a39fab8fde:
     uuid: b59a44e7-f21b-4d0c-bf4d-d1a39fab8fde
     id: image_scale
     weight: 1
     data:
-      width: 450
+      width: 650
       height: null
       upscale: false
   ffe936a6-41e0-407a-8407-60cd084c5d7c:

@@ -1,0 +1,22 @@
+uuid: 5f11c52f-3d7c-4b7a-9b78-ebe24eb52116
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: this_is_pattern_for_jobs
+label: 'this is pattern for jobs'
+type: 'canonical_entities:node'
+pattern: 'stellenanzeige/[node:title]'
+selection_criteria:
+  e615b651-186f-462e-b146-e04fa73baeb1:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: e615b651-186f-462e-b146-e04fa73baeb1
+    context_mapping:
+      node: node
+    bundles:
+      job: job
+selection_logic: and
+weight: -5
+relationships: {  }

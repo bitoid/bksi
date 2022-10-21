@@ -1,0 +1,22 @@
+uuid: 735d98fd-544c-473c-bdef-7be93149a5f7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: this_is_pattern_for_customers
+label: 'this is pattern for customers'
+type: 'canonical_entities:node'
+pattern: 'customers/[node:title]'
+selection_criteria:
+  a0b1eb13-9512-400f-8f9a-6a99098e2281:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: a0b1eb13-9512-400f-8f9a-6a99098e2281
+    context_mapping:
+      node: node
+    bundles:
+      customer: customer
+selection_logic: and
+weight: -5
+relationships: {  }

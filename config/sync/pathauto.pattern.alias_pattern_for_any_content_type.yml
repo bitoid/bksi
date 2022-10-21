@@ -5,10 +5,18 @@ dependencies:
   module:
     - node
 id: alias_pattern_for_any_content_type
-label: 'Alias pattern for any content type'
+label: 'Alias pattern for basic page'
 type: 'canonical_entities:node'
 pattern: '[node:title]'
-selection_criteria: {  }
+selection_criteria:
+  ca76bd6f-280b-44d9-9ba1-8cda67088cbf:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: ca76bd6f-280b-44d9-9ba1-8cda67088cbf
+    context_mapping:
+      node: node
+    bundles:
+      page: page
 selection_logic: and
 weight: 0
 relationships: {  }

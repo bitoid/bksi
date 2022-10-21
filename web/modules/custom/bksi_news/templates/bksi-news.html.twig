@@ -13,8 +13,8 @@
               <picture>
                 <source srcset="{{ news.news_image['large_webp'] }}" media="only screen and (max-width: 450px)" type="image/webp" >
                 <source srcset="{{ news.news_image['large_jpg'] }}" media="only screen and (max-width: 450px)" type="image/jpeg" >
-                <source srcset="{{ news.news_image['original_webp'] }}" media="only screen and (min-width: 500px)" type="image/webp">
-                <source srcset="{{ news.news_image['original_jpg'] }}" media="only screen and (min-width: 500px)" type="image/jpeg">
+                <source srcset="{{ news.news_image['original_webp'] }}" media="only screen and (min-width: 450px)" type="image/webp">
+                <source srcset="{{ news.news_image['original_jpg'] }}" media="only screen and (min-width: 450px)" type="image/jpeg">
                 <img class="fade-in-image object-cover  w-full h-full" src="{{ news.news_image['original_jpg'] }}" alt="">
               </picture>
             </div>

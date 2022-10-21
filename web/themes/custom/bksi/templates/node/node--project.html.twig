@@ -151,7 +151,7 @@
 <section>
   <div class="flex flex-col gap-10 mt-[150px] mb-[100px] md:my-[150px]">
     <h3 class="text-[26px] tracking-[1.3px] leading-none px-4 md:px-7 md:text-[35px] md:leading-10 md:tracking-[1.75px]">
-      {{ 'Büro Impressionen' | t }}
+      {{ content.field_headline_impression }}
     </h3>
     <div id="image-carousel" class="splide " aria-label="Beautiful Images">
       <div class="splide__arrows">
@@ -197,8 +197,10 @@
 
 </section>
 
-<section class="bg-lightGray px-4 py-[75px] md:px-10 md:py-[150px] ">
-
+<section class="bg-lightGray px-4 py-[75px] md:px-10 md:pb-[150px] ">
+    <h3 class="text-[26px] tracking-[1.3px] leading-none  md:pb-[45px] pb-[20px] md:text-[35px] md:leading-10 md:tracking-[1.75px]">
+      {{ 'Ähnliche Projekte' | t }}
+    </h3>
      <div class="random-projects grid grid-cols-1 gap-[75px] md:grid-cols-2 md:gap-10"></div>
      <a class="max-w-fit group relative h-10 flex gap-4 z-10 pr-6 items-center rounded-[40px] overflow-hidden mx-auto mt-28" href="/projects">
          <span class="absolute left-0 top-0 -z-10 h-full w-0 rounded-[40px] bg-mainRed group-hover:w-full"></span>
@@ -207,4 +209,5 @@
      </a>
 
 </section>
+
 

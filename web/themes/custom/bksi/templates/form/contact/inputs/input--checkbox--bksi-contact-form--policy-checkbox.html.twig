@@ -24,7 +24,7 @@
 
 
 <label class="flex  items-center mt-[100px] pl-14 relative cursor-pointer select-none w-fit">
-	<a href="#" class="absolute -top-14 left-0  font-sans">
+	<a href="#" class="absolute -top-14 left-0 font-thin ">
 		{{ 'Datenschutz'|t }}
 	</a>
 	<div class= "flex">
@@ -32,12 +32,8 @@
 			{{ 'Ich habe die Datenschutzerklärung gelesen und erkläre mich damit einverstanden.' | t}}
 		</div>
 		<input{{attributes.addClass(classes)}}/>{{ children }}
-		<span class="absolute w-10 h-10 rounded-full bg-white md:-top-[30%]  left-0 after:absolute after:duration-300 after:transition-opacity after:opacity-0 peer-checked:after:opacity-100 after:left-4 after:top-3 after:w-[10px] after:h-[13px] after:border-mainRed after:border-b-[3px] after:border-r-[3px] after:rotate-45"></span>
+		<span class="absolute w-10 h-10 rounded-full bg-white md:-top-[30%]  left-0 after:absolute after:duration-300 after:transition-opacity after:opacity-0 peer-checked:after:opacity-100 after:left-[16px] after:top-[12px] after:w-[7px] after:h-[13px] after:border-mainRed after:border-b-[2px] after:border-r-[2px] after:rotate-45"></span>
 	</div>
 </label>
 
 
-{# 
-original markup:
-<input class="absolute peer w-0 h-0 cursor-pointer opacity-0" type="checkbox" name="checkbox" id="checkbox"> 
-#}

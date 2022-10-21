@@ -46,8 +46,8 @@ function displayData(arr) {
                                 <span>${Drupal.t("Zeitraum")} ${projectsData['period']}</span>
                             </div>
                         </div>
-                        <a href="${projectsData['url']}" class="${parseInt(projectsData['tick']) !== 1 ? 'hidden pointer-events-none' : 'absolute right-5 bottom-5 w-10 h-10 rounded-full bg-white hidden md:flex items-center justify-center'} "><img src="/themes/custom/bksi/images/Arrows&Navigation/arrow-textlinks.svg" alt=""></a>
-                </div>
+                        <a href="${projectsData['url']}" class="${parseInt(projectsData['tick']) !== 1 ? 'hidden pointer-events-none' : 'absolute right-5 bottom-5 w-10 h-10 rounded-full bg-white hidden md:flex items-center justify-center'} "><img src="/themes/custom/bksi/images/arrow-textlinks.svg" alt=""></a>
+                </div>     
             </div>
                `;
 

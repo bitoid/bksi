@@ -1,0 +1,22 @@
+uuid: f059df15-ca2c-43a5-a654-8b9c7ddab85c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: this_is_pattern_for_services
+label: 'this is pattern for services'
+type: 'canonical_entities:node'
+pattern: 'leistunge/[node:title]'
+selection_criteria:
+  53facb45-a2e6-4556-adc4-18441e17aed5:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 53facb45-a2e6-4556-adc4-18441e17aed5
+    context_mapping:
+      node: node
+    bundles:
+      services: services
+selection_logic: and
+weight: -5
+relationships: {  }

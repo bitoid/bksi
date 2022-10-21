@@ -109,9 +109,12 @@ class ProjectsController extends ControllerBase {
 
     $file = File::load($fid);
     $image_uri = $file->getFileUri();
-    $style = ImageStyle::load("original");
+    $url['original_jpg'] = ImageStyle::load('original')->buildUrl($image_uri);
+    $url['original_webp'] = ImageStyle::load('original_webp')->buildUrl($image_uri);
+    $url['large_jpg'] = ImageStyle::load('large')->buildUrl($image_uri);
+    $url['large_webp'] = ImageStyle::load('large_webp')->buildUrl($image_uri);
 
-    return $style->buildUrl($image_uri);
+    return $url;
   }
 
 }

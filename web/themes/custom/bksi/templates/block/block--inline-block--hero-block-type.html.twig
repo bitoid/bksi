@@ -29,9 +29,9 @@
 
 <div class="relative items-center h-screen overflow-x-hidden">
     <div class="absolute top-0 left-0 w-screen h-screen -z-10">
-	<picture>
+	      <picture>
         	<source srcset="{{ file_url(content.field_image.0['#item'].entity.uri.value | image_style('large_webp')) }}" media="only screen and (max-width: 450px)" type="image/webp" >
-        	<source srcset="{{ file_url(content.field_image.0['#item'].entity.uri.value | image_style('original_webp')) }}" media="only screen and (min-width: 500px)" type="image/webp">
+        	<source srcset="{{ file_url(content.field_image.0['#item'].entity.uri.value | image_style('original_webp')) }}" media="only screen and (min-width: 450px)" type="image/webp">
         	<img src="{{ file_url(content.field_image.0['#item'].entity.uri.value) }}" alt="" class="object-cover w-full h-full">
       	</picture>
         <div class="absolute top-0 left-0 z-10 w-full h-full bg-black bg-opacity-70"></div>

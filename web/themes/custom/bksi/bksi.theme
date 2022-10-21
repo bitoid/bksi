@@ -90,3 +90,58 @@ function bksi_theme_suggestions_form_element_alter(array &$suggestions, array $v
     $suggestions[] = $hook . '__' . 'attached__file';
   }
 }
+
+// Create preprocess hook for image field template to get "uri" , "width", "height", "alt" etc.
+// For more information see template_preprocess_image function
+/**
+ * @param $variables
+ * @return void
+ */
+function bksi_theme_preprocess_image(&$variables) {
+  if (!empty($variables['uri'])) {
+    $variables['attributes']['src'] =  \Drupal::service('file_url_generator')->generateString($variables['uri']);
+  }
+
+  // Generate a srcset attribute conforming to the spec at
+  // http://www.w3.org/html/wg/drafts/html/master/embedded-content.html#attr-img-srcset
+  if (!empty($variables['srcset'])) {
+    $srcset = [];
+    foreach ($variables['srcset'] as $src) {
+
+      // URI is mandatory.
+      $source = \Drupal::service('file_url_generator')->generateString($src['uri']);
+      if (isset($src['width']) && !empty($src['width'])) {
+        $source .= ' ' . $src['width'];
+      }
+      elseif (isset($src['multiplier']) && !empty($src['multiplier'])) {
+        $source .= ' ' . $src['multiplier'];
+      }
+      $srcset[] = $source;
+    }
+    $variables['attributes']['srcset'] = implode(', ', $srcset);
+  }
+  foreach ([
+             'width',
+             'height',
+             'alt',
+             'title',
+             'sizes',
+           ] as $key) {
+    if (isset($variables[$key])) {
+
+      // If the property has already been defined in the attributes,
+      // do not override, including NULL.
+      if (AttributeHelper::attributeExists($key, $variables['attributes'])) {
+        continue;
+      }
+      $variables['attributes'][$key] = $variables[$key];
+    }
+  }
+
+  // Without dimensions specified, layout shifts can occur,
+  // which are more noticeable on pages that take some time to load.
+  // As a result, only mark images as lazy load that have dimensions.
+  if (isset($variables['width'], $variables['height']) && !isset($variables['attributes']['loading'])) {
+    $variables['attributes']['loading'] = 'lazy';
+  }
+}

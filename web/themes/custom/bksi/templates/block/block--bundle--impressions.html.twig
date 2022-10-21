@@ -25,7 +25,7 @@
                                 transform="translate(4.688) rotate(30)" fill="#e63229" />
                         </svg>
                     </button>
-                    <button id="next-button" 
+                    <button id="next-button"
                         class="splide__arrow splide__arrow--next absolute right-0 -translate-x-1/2 top-10 md:top-0 -translate-y-1/2 opacity-100 w-[50px] h-[50px] bg-white rounded-full flex justify-center items-center hover:opacity-100 hover:scale-125"
                         type="button" aria-label="Next slide" aria-controls="splide01-track">
                         <svg xmlns="http://www.w3.org/2000/svg" width="9.371" height="10.824"
@@ -39,14 +39,17 @@
              <div class="splide__track image_slider">
                 <ul class="splide__list ">
                 {% for image in content.field_impressions_images %}
-                    {% if image['#item'] %}                                              
+                    {% if image['#item'] %}
                     <li class="splide__slide flex flex-col ">
+                      <picture>
+                        <source srcset="{{ file_url(image['#item'].entity.uri.value | image_style('large_webp')) }}" media="only screen and (max-width: 450px)" type="image/webp" >
+                        <source srcset="{{ file_url(image['#item'].entity.uri.value | image_style('original_webp')) }}" media="only screen and (min-width: 450px)" type="image/webp">
                         <img class="object-cover w-full h-full" src="{{  file_url(image['#item'].entity.uri.value) }}" alt="{{ image['#item'].alt }}">
-                                
-                        <p class="title-html hidden" > {{ image['#item'].title }}</p>                   
+                      </picture>
+                        <p class="title-html hidden" > {{ image['#item'].title }}</p>
                     </li>
                     {% endif %}
-                {% endfor %}        
+                {% endfor %}
                 </ul>
                 <div class="md:pl-[25%] pl-[18px]   mt-[20px] md:mt-[20px] tracking-[0.75px] flex">
                     <div class="flex gap-2" id="title-num"></div>
@@ -54,7 +57,7 @@
                 <div>
             </div>
         </div>
-      
+
     </div>
 </section>
 

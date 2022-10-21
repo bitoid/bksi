@@ -89,7 +89,11 @@
     </div>
     {% endif %}
     <div class="relative fade-in-image-container order-1 w-full h-[30vh] md:order-2 md:w-1/2 md:h-screen">
-      <img class="w-full fade-in-image h-full object-cover" src="{{ file_url(content.field_image.0['#item'].entity.uri.value) }}" alt="">
+      <picture>
+        <source srcset="{{ file_url(content.field_image.0['#item'].entity.uri.value | image_style('large_webp')) }}" media="only screen and (max-width: 450px)" type="image/webp" >
+        <source srcset="{{ file_url(content.field_image.0['#item'].entity.uri.value | image_style('original_webp')) }}" media="only screen and (min-width: 450px)" type="image/webp">
+        <img class="w-full fade-in-image h-full object-cover" src="{{ file_url(content.field_image.0['#item'].entity.uri.value) }}" alt="">
+      </picture>
       <a href="{{ content.field_location_link.0["#url"] }}" class="group flex items-center gap-5 absolute left-5 bottom-5" target="_blank">
         <div class="w-[50px] aspect-square rounded-full bg-white flex items-center justify-center group-hover:scale-125"><img src="/{{ base_path ~ directory }}/images/arrow-textlinks.svg" alt=""></div>
         <span class="text-[15px] leading-[12px] tracking-[0.75px]">{{ content.field_location_link[0]["#title"] }}</span>

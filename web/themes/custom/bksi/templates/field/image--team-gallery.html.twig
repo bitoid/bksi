@@ -10,5 +10,8 @@
  * @see template_preprocess_image()
  */
 #}
-
-<img class="fade-in-image object-cover h-full w-full" {{ attributes }}/>
+<picture>
+  <source srcset="{{ file_url( uri| image_style('large_webp')) }}" media="only screen and (max-width: 450px)" type="image/webp" >
+  <source srcset="{{ file_url( uri| image_style('original_webp')) }}" media="only screen and (min-width: 450px)" type="image/webp">
+  <img class="fade-in-image object-cover h-full w-full" src="{{ attributes.src }}" alt="{{ attributes.alt }}" />
+</picture>

@@ -29,6 +29,10 @@
 
   {% block content %}
   <a class="block" href="{{ content.field_footer_logo_l[0]['#title']}}" target="_blank">
-    <img src="{{ file_url(content.field_footer_logo['#items'].entity.uri.value) }}" alt="{{ content.field_footer_logo['#items'].value.0.alt }}">
+    <picture>
+      <source srcset="{{ file_url(content.field_footer_logo['#items'].entity.uri.value | image_style('large_webp')) }}" media="only screen and (max-width: 450px)" type="image/webp" >
+      <source srcset="{{ file_url(content.field_footer_logo['#items'].entity.uri.value | image_style('original_webp')) }}" media="only screen and (min-width: 450px)" type="image/webp">
+      <img src="{{ file_url(content.field_footer_logo['#items'].entity.uri.value) }}" alt="{{ content.field_footer_logo['#items'].value.0.alt }}">
+    </picture>
   </a>
   {% endblock %}

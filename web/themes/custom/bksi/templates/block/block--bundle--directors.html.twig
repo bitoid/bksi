@@ -14,7 +14,11 @@
 <section>
   <div class="flex flex-col md:flex-row md:gap-[90px]">
     <div class="fade-in-image-container relative w-full h-[50vh] md:h-auto md:w-1/2">
-      <img src="{{ file_url(content.field_directors_image.0['#item'].entity.uri.value) }}" alt="{{ content.field_directors_image.0['#item'].alt }}" class="object-cover w-full h-full fade-in-image">
+      <picture>
+        <source srcset="{{ file_url(content.field_directors_image.0['#item'].entity.uri.value | image_style('large_webp')) }}" media="only screen and (max-width: 450px)" type="image/webp" >
+        <source srcset="{{ file_url(content.field_directors_image.0['#item'].entity.uri.value | image_style('original_webp')) }}" media="only screen and (min-width: 450px)" type="image/webp">
+        <img src="{{ file_url(content.field_directors_image.0['#item'].entity.uri.value) }}" alt="{{ content.field_directors_image.0['#item'].alt }}" class="object-cover w-full h-full fade-in-image">
+      </picture>
     </div>
     <div class="text-fade px-4 py-[75px] md:px-10 md:py-[150px] md:w-1/2">
       <div class="text-content-fade">

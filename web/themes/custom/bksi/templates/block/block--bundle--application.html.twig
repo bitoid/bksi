@@ -28,7 +28,11 @@
 <section>
             <div class="flex flex-col md:flex-row">
                 <div class="fade-in-image-container relative h-[50vh] w-full md:w-[50vw] md:h-screen">
+                  <picture>
+                    <source srcset="{{ file_url(content.field_image.0['#item'].entity.uri.value | image_style('large_webp')) }}" media="only screen and (max-width: 450px)" type="image/webp" >
+                    <source srcset="{{ file_url(content.field_image.0['#item'].entity.uri.value | image_style('original_webp')) }}" media="only screen and (min-width: 450px)" type="image/webp">
                     <img class="h-full w-full object-cover fade-in-image" src="{{ file_url(content.field_image.0['#item'].entity.uri.value) }}" alt="">
+                  </picture>
                 </div>
                 <div class="px-4 py-20 md:pl-[100px] md:pr-20 md:py-40 md:w-1/2 md:flex md:flex-col md:justify-center">
                     <div class="text-fade mb-20">

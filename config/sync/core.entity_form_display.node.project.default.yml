@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.project.field_bgf
     - field.field.node.project.field_customer
+    - field.field.node.project.field_headline_impression
     - field.field.node.project.field_project_challange_title
     - field.field.node.project.field_project_challenge_image
     - field.field.node.project.field_project_challenges
@@ -50,6 +51,14 @@ content:
     weight: 11
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_headline_impression:
+    type: text_textfield
+    weight: 26
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_project_challange_title:
     type: text_textfield

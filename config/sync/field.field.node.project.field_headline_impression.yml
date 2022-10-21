@@ -1,0 +1,24 @@
+uuid: f5fc7b65-219b-4863-8fe6-d9c6efc3de97
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_headline_impression
+    - node.type.project
+  module:
+    - text
+id: node.project.field_headline_impression
+field_name: field_headline_impression
+entity_type: node
+bundle: project
+label: 'Headline:impression'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'Pläne und Impressionen'
+    format: basic_html
+default_value_callback: ''
+settings: {  }
+field_type: text

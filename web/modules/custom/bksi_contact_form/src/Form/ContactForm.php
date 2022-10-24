@@ -30,10 +30,10 @@ class ContactForm extends FormBase {
      *   The render array defining the elements of the form.
     */
     public function buildForm(array $form, FormStateInterface $form_state) {
-      
+
       $form['#attributes'] = array('enctype' => 'multipart/form-data');
       $form['#cache']['max-age'] = 300;
-      
+
       $form['name'] = [
         '#type' => 'textfield',
         '#attributes' => ['placeholder' => t('Name')],
@@ -50,7 +50,7 @@ class ContactForm extends FormBase {
         '#type' => 'email',
         '#attributes' => ['placeholder' => t('E-mail')],
         '#required' => TRUE,
-      ];      
+      ];
 
       $form['phone'] = [
         '#type' => 'tel',
@@ -71,7 +71,7 @@ class ContactForm extends FormBase {
         '#upload_validators' => [
           'file_validate_extensions' => array('pdf'),
           'file_validate_size' => array(5000000)
-        ],  
+        ],
         '#upload_location' => 'public://form_files/'
       ];
 
@@ -144,7 +144,7 @@ class ContactForm extends FormBase {
      */
     public function submitForm(array &$form, FormStateInterface $form_state) {
       $values = $form_state->getUserInput();
-
+      $contact_email = \Drupal::config('system.site')->get('contact_email_form');
       $fids = explode(" ", $values['file']['fids']);
       $files = \Drupal\file\Entity\File::loadMultiple($fids);
       $files_url = array_map(fn($file) => $file->getFileUri(), $files);
@@ -163,13 +163,13 @@ class ContactForm extends FormBase {
       $mailManager = \Drupal::service('plugin.manager.mail');
       $module = $this->getFormId();
       $key = 'contact_form';
-      $to = 'test@mailhog.local';
+      $to = $contact_email;
       $langcode = \Drupal::currentUser()->getPreferredLangcode();
       $send = TRUE;
       $mailManager->mail($module, $key, $to, $langcode, $params, NULL, $send);
 
       $this->messenger()->addStatus($this->t('Vielen Dank für Deine Bewerbung! Wir werden Deine Bewerbung schnellstmöglich bearbeiten und uns melden. Dies kann jedoch auch einmal einige Tage dauern.'));
     }
-    
+
 
 }

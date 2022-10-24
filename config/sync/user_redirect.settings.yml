@@ -1,0 +1,20 @@
+login:
+  authenticated:
+    redirect_url: /home
+    weight: '-10'
+  content_editor:
+    redirect_url: /home
+    weight: '-10'
+  administrator:
+    redirect_url: /home
+    weight: '-10'
+logout:
+  authenticated:
+    redirect_url: /home
+    weight: '-10'
+  content_editor:
+    redirect_url: /home
+    weight: '-10'
+  administrator:
+    redirect_url: /home
+    weight: '-10'

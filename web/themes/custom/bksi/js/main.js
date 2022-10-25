@@ -9,7 +9,7 @@ const hamburgerButton = document.querySelector('.hamburger');
 const getPageUrl = () => {
   const url = window.location.href;
   const page = url.split("?")[0].split("/").pop(); // get last element before "?" 
-  const pages = ["contact", "imprint"];
+  const pages = ["contact", "imprint","bksi"];
   return pages.includes(page);
 }
 const temp = getPageUrl();
@@ -69,3 +69,12 @@ window.onscroll = function() {
 
   }
 }
+
+const searchBlock = document.getElementById("block-bksi-content");
+const searchLable = searchBlock.querySelectorAll('h2');
+
+Array.from(searchLable).forEach(elem=> {
+  if (elem.innerText == 'Search results') {
+    elem.style.display = 'none';
+}
+});

@@ -36,31 +36,31 @@ class ContactForm extends FormBase {
 
       $form['name'] = [
         '#type' => 'textfield',
-        '#attributes' => ['placeholder' => t('Name')],
+        '#attributes' => ['placeholder' => $this->t('Name')],
         '#required' => TRUE,
       ];
 
       $form['surname'] = [
         '#type' => 'textfield',
-        '#attributes' => ['placeholder' => t('Nachname')],
+        '#attributes' => ['placeholder' => $this->t('Nachname')],
         '#required' => TRUE,
       ];
 
       $form['email'] = [
         '#type' => 'email',
-        '#attributes' => ['placeholder' => t('E-mail')],
+        '#attributes' => ['placeholder' => $this->t('E-mail')],
         '#required' => TRUE,
       ];
 
       $form['phone'] = [
         '#type' => 'tel',
-        '#attributes' => ['placeholder' => t('Telefon')],
+        '#attributes' => ['placeholder' => $this->t('Telefon')],
         '#required' => TRUE,
       ];
 
       $form['message'] = [
         '#type' => 'textarea',
-        '#attributes' => ['placeholder' => t('Nachricht')],
+        '#attributes' => ['placeholder' => $this->t('Nachricht')],
         '#required' => TRUE,
       ];
 
@@ -82,10 +82,12 @@ class ContactForm extends FormBase {
 
 
       // Add a submit button that handles the submission of the form.
-      $form['actions']['submit'] = [
-        '#type' => 'submit',
-        '#value' => $this->t('Submit'),
-      ];
+      if (!$this->messenger()->all()['status'][0]) {
+        $form['actions']['submit'] = [
+          '#type' => 'submit',
+          '#value' => $this->t('Submit'),
+        ];
+      }
 
       $form['#theme'] = 'contact_form';
 

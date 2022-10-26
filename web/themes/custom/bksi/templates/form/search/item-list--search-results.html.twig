@@ -19,12 +19,20 @@
  * @see template_preprocess_item_list()
  */
 #}
+
+{%
+    set classes = [ 
+        'mb-[100px]',
+        'md:mb-[157px]',
+    ]
+%}
+
 {% if context.list_style %}
   {%- set attributes = attributes.addClass('item-list__' ~ context.list_style) %}
 {% endif %}
 {% if items or empty %}
   {%- if items -%}
-    <{{ list_type }}{{ attributes }}>
+    <{{ list_type }}{{ attributes.addClass(classes) }}>
       {%- for item in items -%}
         <li{{ item.attributes }}>{{ item.value }}</li>
       {%- endfor -%}

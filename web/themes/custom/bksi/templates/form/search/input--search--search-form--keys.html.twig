@@ -23,13 +23,12 @@
 %}
 
 <div class="">
-    <div class="text-[6vw] md:text-[35px] gap-[15px] flex md:flex-row flex-col justify-center px-4 pb-[50px] md:max-w-[842px] md:mx-auto ">
-        <h2 class="md:ml-[-52px]">{{ 'Suchergebnisse für:' | t}}</h2>
-        <div class="text-[6vw]
-        md:text-[35px]">
-            <span><</span>
+    <div class="text-[35px] gap-[15px] flex md:flex-row flex-col justify-start px-4 md:px-0 mb-[64px] md:mb-[44px] md:max-w-[842px] md:mx-auto ">
+        <h2>{{ 'Suchergebnisse für:' | t}}</h2>
+        <div class="text-[35px]">
+            <span>&lt;</span>
             <input{{ attributes.addClass(classes) }} />{{ children }}
-            <span>></span>
+            <span>&gt;</span>
         </div>
     </div>
 </div>

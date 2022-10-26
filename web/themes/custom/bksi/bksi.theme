@@ -145,18 +145,3 @@ function bksi_theme_preprocess_image(&$variables) {
     $variables['attributes']['loading'] = 'lazy';
   }
 }
-
-
-/**
- * @param $form
- * @param $form_state
- * @param $form_id
- */
-function bksi_form_alter(&$form, $form_state, $form_id) {
-  switch ($form_id){
-    case 'search_form':
-      unset($form['help_link']);
-      unset($form['advanced']);
-      break;
-  }
-}

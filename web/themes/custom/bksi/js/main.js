@@ -6,11 +6,18 @@ const headerTop = document.querySelector('.header-top')
 const dropDownButton = document.querySelectorAll('.dropdown-button');
 const hamburgerButton = document.querySelector('.hamburger');
 
+const ginToolbar = document.querySelectorAll('.glb-toolbar');
+ginToolbar[0].style.position = 'unset';
+
+
 const getPageUrl = () => {
-  const url = window.location.href;
-  const page = url.split("?")[0].split("/").pop(); // get last element before "?" 
-  const pages = ["contact", "imprint","bksi"];
-  return pages.includes(page);
+  const url = window.location.pathname;
+  const page = url.split("/");
+  const pages = ["contact", "imprint", "bksi"];
+  if (!page.includes("layout")) {
+    headerTop.classList.remove('hidden');
+  }
+  return pages.includes(page[1]);
 }
 const temp = getPageUrl();
 
@@ -78,8 +85,3 @@ Array.from(searchLable).forEach(elem=> {
     elem.style.display = 'none';
 }
 });
-
-
-// const glbToolbar=document.getElementsByClassName(" glb-toolbar ");
-
-// glbToolbar[0].style.position="sticky";

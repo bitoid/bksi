@@ -1,0 +1,39 @@
+<section {{ attributes }}> 
+{{ title_suffix }}
+
+    {% for paragraph in content.field_company_detail %}
+        {% if paragraph['#paragraph'] %}
+        <div class="grid grid-cols-1 lg:grid-cols-2 lg:items-center">
+            {% if paragraph['#paragraph'].field_image_align.value | raw == "left"  %}
+            <div class="order-1 relative fade-in-image-container w-full h-[50vh] lg:h-full overflow-hidden">
+            {% else %}
+            <div class="order-1 relative fade-in-image-container w-full h-[50vh] lg:h-full overflow-hidden lg:order-3">
+            {% endif %}      
+                <picture>
+                        <source srcset="{{ file_url(paragraph['#paragraph'].field_image.entity.uri.value | image_style('large_webp')) }}" media="only screen and (max-width: 450px)" type="image/webp" >
+                        <source srcset="{{ file_url(paragraph['#paragraph'].field_image.entity.uri.value | image_style('original_webp')) }}" media="only screen and (min-width: 450px)" type="image/webp">
+                        <img class="fade-in-image object-cover h-full w-full" src="{{ file_url(paragraph['#paragraph'].field_image.entity.uri.value) }}" alt="{{ paragraph['#paragraph'].field_image.0.alt }} ">
+                    </picture>
+            </div>
+            <div class="order-2 px-4 py-20 bg-white text-fade md:w-1/2 md:mx-auto lg:w-full lg:mx-0 lg:px-28 lg:py-[147px]">
+                <div class="text-content-fade ">
+                <h2 class="flex flex-col gap-5 text-[26px] tracking-[0.3px]  pb-[50px]">
+                    <span class="text-[13px] tracking-[0.65px]">{{ paragraph['#paragraph'].field_slogan.value }}</span>
+                    {{ paragraph['#paragraph'].field_title.value }}
+                </h2>
+                <p class="text-[15px] leading-[22px] tracking-[0.75px] mb-[50px]">
+                    {{ paragraph['#paragraph'].field_description.value }}
+                </p>
+                <a class="max-w-fit group relative h-10 flex gap-4 z-10 pr-6 items-center rounded-[40px] overflow-hidden" href="{{ paragraph['#paragraph'].field_link_cta.0.url }}" >
+                    <span class="absolute left-0 top-0 -z-10 h-full w-0 rounded-[40px] bg-mainRed group-hover:w-full"></span>
+                    <span class="flex items-center justify-center h-full rounded-full aspect-square bg-mainRed"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                    {{ paragraph['#paragraph'].field_link_cta.0.value.title }} 
+                </a>
+                </div>
+            </div>
+        </div> 
+        {% endif %}
+    {% endfor %}
+   
+</section>
+

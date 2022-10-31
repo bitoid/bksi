@@ -26,7 +26,8 @@
  */
 #}
 
-
+<section {{ attributes }}> 
+{{ title_suffix }}
   {% block content %}
   <a class="block" href="{{ content.field_footer_logo_l[0]['#title']}}" target="_blank">
     <picture>
@@ -36,3 +37,4 @@
     </picture>
   </a>
   {% endblock %}
+  <section>

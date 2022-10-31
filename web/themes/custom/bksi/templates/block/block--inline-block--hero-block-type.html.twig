@@ -27,19 +27,23 @@
 #}
 
 
-<div class="relative items-center h-screen overflow-x-hidden">
-    <div class="absolute top-0 left-0 w-screen h-screen -z-10">
-	      <picture>
-        	<source srcset="{{ file_url(content.field_image.0['#item'].entity.uri.value | image_style('large_webp')) }}" media="only screen and (max-width: 450px)" type="image/webp" >
-        	<source srcset="{{ file_url(content.field_image.0['#item'].entity.uri.value | image_style('original_webp')) }}" media="only screen and (min-width: 450px)" type="image/webp">
-        	<img src="{{ file_url(content.field_image.0['#item'].entity.uri.value) }}" alt="" class="object-cover w-full h-full">
-      	</picture>
-        <div class="absolute top-0 left-0 z-10 w-full h-full bg-black bg-opacity-70"></div>
-    </div>
-    <h1 class="w-[50%] absolute -z-10 top-1/2 left-4 -translate-y-1/2 flex flex-col gap-7 text-white text-[35px] tracking-[1.5px] leading-normal hyphens-manual md:gap-9 md:text-[70px] md:left-11 md:leading-tight md:tracking-[3px]">
-        <span class="text-xs md:text-base">{{ content.field_slogan.0["#text"]|striptags }}</span>
-        {{ content.field_title.0["#text"]|raw }}
-    </h1>
-    <img class="absolute -translate-x-1/2 bottom-9 left-1/2" src="/{{ base_path ~ directory }}/images/arrow-header.svg" alt="arrow down">
-</div>
 
+
+<section {{ attributes }}> 
+{{ title_suffix }}
+    <div  class="relative items-center h-screen overflow-x-hidden">
+        <div class="absolute top-0 left-0 w-screen h-screen -z-10">
+            <picture>
+                <source srcset="{{ file_url(content.field_image.0['#item'].entity.uri.value | image_style('large_webp')) }}" media="only screen and (max-width: 450px)" type="image/webp" >
+                <source srcset="{{ file_url(content.field_image.0['#item'].entity.uri.value | image_style('original_webp')) }}" media="only screen and (min-width: 450px)" type="image/webp">
+                <img src="{{ file_url(content.field_image.0['#item'].entity.uri.value) }}" alt="" class="object-cover w-full h-full">
+            </picture>
+            <div class="absolute top-0 left-0 z-10 w-full h-full bg-black bg-opacity-70"></div>
+        </div>
+        <h1 class="w-[50%] absolute -z-10 top-1/2 left-4 -translate-y-1/2 flex flex-col gap-7 text-white text-[35px] tracking-[1.5px] leading-normal hyphens-manual md:gap-9 md:text-[70px] md:left-11 md:leading-tight md:tracking-[3px]">
+            <span class="text-xs md:text-base">{{ content.field_slogan.0["#text"]|striptags }}</span>
+            {{ content.field_title.0["#text"]|raw }}
+        </h1>
+        <img class="absolute -translate-x-1/2 bottom-9 left-1/2" src="/{{ base_path ~ directory }}/images/arrow-header.svg" alt="arrow down">
+    </div>
+</section>

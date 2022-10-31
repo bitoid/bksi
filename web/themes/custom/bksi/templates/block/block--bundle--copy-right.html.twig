@@ -26,6 +26,7 @@
  */
 #}
 
-
-<span class="block text-[15px] leading-[19px] tracking-[0.75px] opacity-50 mb-[60px] md:m-0">{{ content.field_copy_right[0]['#context'].value }}</span>
- 
+<div {{ attributes }}> 
+    {{ title_suffix }} 
+    <span class="block text-[15px] leading-[19px] tracking-[0.75px] opacity-50 mb-[60px] md:m-0">{{ content.field_copy_right[0]['#context'].value }}</span>
+</div>

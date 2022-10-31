@@ -78,3 +78,8 @@ Array.from(searchLable).forEach(elem=> {
     elem.style.display = 'none';
 }
 });
+
+
+// const glbToolbar=document.getElementsByClassName(" glb-toolbar ");
+
+// glbToolbar[0].style.position="sticky";

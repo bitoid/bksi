@@ -31,6 +31,7 @@ module:
   filter: 0
   fontawesome: 0
   fontawesome_menu_icons: 0
+  gin_lb: 0
   gin_login: 0
   gin_toolbar: 0
   hal: 0

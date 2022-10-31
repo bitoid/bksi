@@ -1,4 +1,6 @@
-<section class="bg-mainRed text-fade">
+<section {{ attributes }}> 
+{{ title_suffix }}
+    <div class="bg-mainRed text-fade">
     <div class="text-content-fade flex flex-col items-center justify-center px-4 py-[75px] text-center md:max-w-[816px] md:mx-auto md:py-[150px]">
         <h2 class="text-[26px] tracking-[1.3px] leading-none flex flex-col gap-5 mb-9 md:text-[35px] md:leading-10 md:tracking-[1.75px] md:mb-0">
             <span class="text-[13px]">{{ content.field_slogan[0] }}</span>
@@ -9,5 +11,6 @@
             <a href="tel:+: {{ content.field_phone_number[0] }}">{{ 'Telefon:' | t }} {{ content.field_phone_number[0] }}</a>
             <a href="mailto:{{ content.field_email[0] }}">{{ 'E-Mail:' | t }} {{ content.field_email[0] }}</a>
         </div>
+    </div>
     </div>
 </section>

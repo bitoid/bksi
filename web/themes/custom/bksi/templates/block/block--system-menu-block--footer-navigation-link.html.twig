@@ -36,6 +36,9 @@
 
   {# Menu. #}
   {% block content %}
-    {{ content }}
+  <div  {{ attributes }}>
+    {{ title_suffix }}
+      {{ content }}
+    </div>
   {% endblock %}
 </nav>

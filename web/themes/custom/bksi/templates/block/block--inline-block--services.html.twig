@@ -53,7 +53,7 @@
                 <div class="absolute  text-[233px] tracking-[11.65px] leading-[300px] opacity-10 bottom-0 left-1/2 -translate-x-1/2 md:-translate-y-1/2 md:top-0 md:left-0 md:-translate-x-2/3">{{ counter }}</div>
                 <h4 class="text-xl">{{ paragraph['#paragraph'].field_service_title.value }}</h4>
                 <p class="mt-4 mb-20">{{ paragraph['#paragraph'].field_service_description.value|striptags }}</p>
-                <a class="group flex items-center gap-3" href="{{ paragraph['#paragraph'].field_service_link_cta.0.value.uri }}">
+                <a class="group flex items-center gap-3" href="{{ paragraph['#paragraph'].field_service_link_cta.uri }}">
                   <img src="/{{ base_path ~ directory }}/images/arrow-textlinks.svg" alt="">
                   <span class="group-hover:text-mainRed">{{ paragraph['#paragraph'].field_service_link_cta.0.value.title }}</span>
                 </a>

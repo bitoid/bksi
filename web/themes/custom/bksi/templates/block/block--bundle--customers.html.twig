@@ -8,7 +8,8 @@
  */
 #}
 
-<section>
+<section {{ attributes }}> 
+{{ title_suffix }}
     <div class="px-4 py-[75px] bg-lightGray md:px-10 md:py-[150px]">
         <h3 class="flex flex-col gap-5 text-[26px] tracking-[0.3px] mb-[60px] md:text-[35px] md:tracking-[1.75px] md:leading-[41px]">
             {{ content.field_title[0]['#text'] | striptags }}

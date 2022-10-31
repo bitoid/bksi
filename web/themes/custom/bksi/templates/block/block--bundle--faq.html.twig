@@ -1,4 +1,5 @@
-<section>
+<section {{ attributes }}> 
+{{ title_suffix }}
    <div class="flex flex-col gap-36 px-4 py-[75px] md:px-10 md:py-[150px] md:gap-56 ">
       {% for paragraph in content.field_faq_content %} 
          {% if paragraph['#paragraph'] %}

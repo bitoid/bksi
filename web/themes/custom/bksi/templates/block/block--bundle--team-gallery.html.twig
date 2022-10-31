@@ -25,17 +25,16 @@
  * @see template_preprocess_block()
  */
 #}
-
+ <section {{ attributes }}> 
+    {{ title_suffix }}
   {% block content %}
-  <section>
     <div class=" py-[75px] md:py-[150px]"> 
         {{ content.field_team_gallery_title }}
         <div class="flex flex-col gap-[50px] md:gap-[190px]">
           {{ content.field_paragraph_team_gallery }}
         </div>
     </div>
-  </section>
-    
   {% endblock %}
 
 
+ </section>

@@ -6,8 +6,6 @@ const headerTop = document.querySelector('.header-top')
 const dropDownButton = document.querySelectorAll('.dropdown-button');
 const hamburgerButton = document.querySelector('.hamburger');
 
-const ginToolbar = document.querySelectorAll('.glb-toolbar');
-ginToolbar[0].style.position = 'unset';
 
 
 const getPageUrl = () => {
@@ -85,3 +83,12 @@ Array.from(searchLable).forEach(elem=> {
     elem.style.display = 'none';
 }
 });
+
+
+const ginToolbar = document.getElementsByClassName('glb-toolbar');
+if(ginToolbar[0]){
+  ginToolbar[0].style.position = 'unset';
+}
+
+
+

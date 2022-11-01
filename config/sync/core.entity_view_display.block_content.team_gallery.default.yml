@@ -15,7 +15,7 @@ mode: default
 content:
   field_paragraph_team_gallery:
     type: entity_reference_revisions_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: ''
@@ -24,7 +24,7 @@ content:
     region: content
   field_team_gallery_title:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }

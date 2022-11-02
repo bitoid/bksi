@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.services.field_company_details
     - field.field.node.services.field_contact_person
     - field.field.node.services.field_contact_slogan
     - field.field.node.services.field_email
@@ -15,6 +16,7 @@ dependencies:
     - field.field.node.services.field_telefon
     - node.type.services
   module:
+    - entity_reference_revisions
     - file
     - text
     - user
@@ -23,6 +25,15 @@ targetEntityType: node
 bundle: services
 mode: default
 content:
+  field_company_details:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 118
+    region: content
   field_contact_person:
     type: text_default
     label: above

@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.services.field_company_details
     - field.field.node.services.field_contact_person
     - field.field.node.services.field_contact_slogan
     - field.field.node.services.field_email
@@ -28,6 +29,7 @@ content:
     weight: 100
     region: content
 hidden:
+  field_company_details: true
   field_contact_person: true
   field_contact_slogan: true
   field_email: true

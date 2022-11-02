@@ -1,0 +1,251 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 8c2c7910-5670-4a10-ba08-de838d39f932
+  bundle: imprint_custom_block
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'privacy custom block'
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  field_contact_e_mail:
+    -
+      value: info@bksi.de
+  field_imprint_contact_phone:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 6fa568f4-851d-4142-9a4f-c8f930947dc1
+          bundle: imprint_shorttext
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1667386167
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_shorttext_body:
+            -
+              value: " 0711 / 36 53 38 - 31\r\n 0711 / 36 53 38 - 31"
+          field_shorttext_title:
+            -
+              value: Kontakt
+  field_imprint_info:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: a589a4ed-047a-40dd-8474-726539c5cce4
+          bundle: imprint_longtext
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1667386167
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_longtext_body:
+            -
+              value: "<p>Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz: DE814086423</p>\r\n\r\n<p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>\r\n"
+              format: basic_html
+          field_longtext_title:
+            -
+              value: Umsatzsteuer-ID
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: f7d6b4eb-33a7-4bf0-8e3e-370628434ebb
+          bundle: imprint_longtext
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1667386473
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_longtext_body:
+            -
+              value: "<p>Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.</p>\r\n\r\n<p>Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>\r\n"
+              format: basic_html
+          field_longtext_title:
+            -
+              value: 'Haftung für Inhalte'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 316671dd-a1f9-472c-adf9-8d291cd982f9
+          bundle: imprint_longtext
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1667386582
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_longtext_body:
+            -
+              value: "<p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.</p>\r\n\r\n<p>Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p>\r\n"
+              format: basic_html
+          field_longtext_title:
+            -
+              value: Urheberrecht
+  field_imprint_representative:
+    -
+      value: 'Dipl.-Ing. Volker Kunberger'
+    -
+      value: 'Dipl.-Ing. (FH) Frank Schäfer'
+  field_imprint_title:
+    -
+      value: Privacy
+      format: basic_html
+  field_ltd_bksi:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: a9bb89fc-2b0d-4e24-88ed-dff4a44e52ff
+          bundle: imprint_longtext
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1667386167
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_longtext_body:
+            -
+              value: "<p>Schwieberdinger Straße 5</p>\r\n\r\n<p>70435 Stuttgart</p>\r\n\r\n<p>Handelsregister: HRB 24847</p>\r\n\r\n<p>Registergericht: Handelsregister Stuttgart</p>\r\n"
+              format: basic_html
+          field_longtext_title:
+            -
+              value: 'BKSI GmbH'
+  field_source:
+    -
+      uri: 'https://www.e-recht24.de/impressum-generator.html/'
+      title: ''
+      options:
+        attributes: {  }
+  field_tmg:
+    -
+      value: 'Angaben gemäß § 5 TMG'
+      format: basic_html
+  field_website_design:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 3876150e-4953-40e6-8f4e-05859958ce41
+          bundle: imprint_web_links
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1667386167
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_web_link_body:
+            -
+              value: 'LOUP GmbH, Stuttgart'
+          field_web_link_title:
+            -
+              value: 'Website Design'
+          field_web_link_url:
+            -
+              uri: 'https://www.loup.de/'
+              title: www.loup.de
+              options:
+                attributes: {  }
+  field_website_programming:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 55008c85-e0f7-4893-922a-0bdfe063119a
+          bundle: imprint_web_links
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1667386167
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_web_link_body:
+            -
+              value: 'adventure7 GmbH'
+          field_web_link_title:
+            -
+              value: 'Website Programmierung'
+          field_web_link_url:
+            -
+              uri: 'https://www.adventure7.de/'
+              title: www.adventure7.de
+              options:
+                attributes: {  }

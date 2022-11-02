@@ -34,7 +34,7 @@
 
 {% set heading_id = attributes.id ~ '-menu'|clean_id %}
 <div class="burger-menu absolute px-7 pb-16 pt-20 left-0 top-full w-full min-h-[calc(100vh-82px)] max-h-[calc(100vh-82px)] overflow-auto bg-darkBlue md:top-0 md:p-0 md:min-h-fit md:overflow-visible md:bg-transparent md:relative flex items-center md:w-[80%] h-full">
-<nav class="md:block md:mr-10 md:h-full md:w-fit" role="navigation" aria-labelledby="{{ heading_id }}"{{ attributes|without('role', 'aria-labelledby') }}>
+<nav class="md:block md:mr-10 md:w-fit" role="navigation" aria-labelledby="{{ heading_id }}"{{ attributes|without('role', 'aria-labelledby') }}>
  
   {# Menu. #}
   {% block content %}  

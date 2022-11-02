@@ -4,14 +4,10 @@ status: true
 dependencies:
   config:
     - block_content.type.hero_block_type
-    - field.field.block_content.hero_block_type.field_badge
-    - field.field.block_content.hero_block_type.field_description
     - field.field.block_content.hero_block_type.field_image
     - field.field.block_content.hero_block_type.field_slogan
-    - field.field.block_content.hero_block_type.field_small_image
     - field.field.block_content.hero_block_type.field_title
   module:
-    - file
     - image
     - text
 id: block_content.hero_block_type.default
@@ -19,20 +15,6 @@ targetEntityType: block_content
 bundle: hero_block_type
 mode: default
 content:
-  field_badge:
-    type: text_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 4
-    region: content
-  field_description:
-    type: text_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 3
-    region: content
   field_image:
     type: image
     label: hidden
@@ -50,14 +32,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 0
-    region: content
-  field_small_image:
-    type: file_default
-    label: above
-    settings:
-      use_description_as_link_text: true
-    third_party_settings: {  }
-    weight: 5
     region: content
   field_title:
     type: text_default

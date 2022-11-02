@@ -1,0 +1,5 @@
+name: bksi_dc
+type: module
+description: This module saves exported content via Default Content module
+package: Custom
+core_version_requirement: ^9 || ^10

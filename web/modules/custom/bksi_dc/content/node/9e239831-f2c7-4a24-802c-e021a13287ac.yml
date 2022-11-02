@@ -1,0 +1,68 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 9e239831-f2c7-4a24-802c-e021a13287ac
+  bundle: page
+  default_langcode: en
+  depends:
+    8c2c7910-5670-4a10-ba08-de838d39f932: block_content
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: Privacy
+  created:
+    -
+      value: 1667385897
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  path:
+    -
+      alias: /privacy
+      langcode: en
+      pathauto: 1
+  layout_builder__layout:
+    -
+      section:
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          60147769-88b6-4794-8413-2815b9e41bf1:
+            uuid: 60147769-88b6-4794-8413-2815b9e41bf1
+            region: content
+            configuration:
+              id: 'extra_field_block:node:page:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 1
+            additional: {  }
+          ed71a689-e47d-4eb4-ae8b-e643256524fa:
+            uuid: ed71a689-e47d-4eb4-ae8b-e643256524fa
+            region: content
+            configuration:
+              id: 'inline_block:imprint_custom_block'
+              label: 'privacy custom block'
+              label_display: visible
+              provider: layout_builder
+              view_mode: full
+              block_revision_id: '62'
+              block_serialized: null
+              context_mapping: {  }
+            weight: 2
+            additional:
+              target_uuid: 8c2c7910-5670-4a10-ba08-de838d39f932
+        third_party_settings: {  }

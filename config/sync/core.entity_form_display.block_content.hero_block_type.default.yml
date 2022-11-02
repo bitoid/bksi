@@ -4,15 +4,11 @@ status: true
 dependencies:
   config:
     - block_content.type.hero_block_type
-    - field.field.block_content.hero_block_type.field_badge
-    - field.field.block_content.hero_block_type.field_description
     - field.field.block_content.hero_block_type.field_image
     - field.field.block_content.hero_block_type.field_slogan
-    - field.field.block_content.hero_block_type.field_small_image
     - field.field.block_content.hero_block_type.field_title
     - image.style.thumbnail
   module:
-    - file
     - image
     - text
 id: block_content.hero_block_type.default
@@ -20,22 +16,6 @@ targetEntityType: block_content
 bundle: hero_block_type
 mode: default
 content:
-  field_badge:
-    type: text_textfield
-    weight: 30
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_description:
-    type: text_textfield
-    weight: 29
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
   field_image:
     type: image_image
     weight: 28
@@ -51,13 +31,6 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
-  field_small_image:
-    type: file_generic
-    weight: 31
-    region: content
-    settings:
-      progress_indicator: throbber
     third_party_settings: {  }
   field_title:
     type: text_textarea

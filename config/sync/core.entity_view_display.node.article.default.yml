@@ -102,6 +102,82 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 4
             additional: {  }
+          1bcaaaaf-a166-42b1-b2bf-6a16c168933b:
+            uuid: 1bcaaaaf-a166-42b1-b2bf-6a16c168933b
+            region: content
+            configuration:
+              id: 'field_block:node:article:field_image'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: wide
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          bcc442c6-3166-4988-b307-f7a5f930e276:
+            uuid: bcc442c6-3166-4988-b307-f7a5f930e276
+            region: content
+            configuration:
+              id: 'field_block:node:article:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+          8878381f-61e8-4203-bac4-9c88589d56f7:
+            uuid: 8878381f-61e8-4203-bac4-9c88589d56f7
+            region: content
+            configuration:
+              id: 'field_block:node:article:field_tags'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 7
+            additional: {  }
+          bf4cf73c-28b3-480e-9433-c5453718abba:
+            uuid: bf4cf73c-28b3-480e-9433-c5453718abba
+            region: content
+            configuration:
+              id: 'extra_field_block:node:article:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 8
+            additional: {  }
+          ad810594-6784-4075-8e0c-dbcee861ec5f:
+            uuid: ad810594-6784-4075-8e0c-dbcee861ec5f
+            region: content
+            configuration:
+              id: 'field_block:node:article:field_news_type'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 9
+            additional: {  }
         third_party_settings: {  }
 _core:
   default_config_hash: 7fb0j9HnIXfP9ndewzgPPzzeX_SV532wuYpkscrCMCk

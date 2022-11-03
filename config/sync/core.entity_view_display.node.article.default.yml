@@ -178,6 +178,82 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 9
             additional: {  }
+          28e4e87e-0b92-4b5e-88d3-314bcf797e9b:
+            uuid: 28e4e87e-0b92-4b5e-88d3-314bcf797e9b
+            region: content
+            configuration:
+              id: 'field_block:node:article:field_image'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: wide
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 10
+            additional: {  }
+          407c7be8-4547-4160-a02b-7925277c5f3e:
+            uuid: 407c7be8-4547-4160-a02b-7925277c5f3e
+            region: content
+            configuration:
+              id: 'field_block:node:article:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 11
+            additional: {  }
+          39472e15-608b-43eb-913c-a935b65e40a1:
+            uuid: 39472e15-608b-43eb-913c-a935b65e40a1
+            region: content
+            configuration:
+              id: 'field_block:node:article:field_tags'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 12
+            additional: {  }
+          551b6cb1-a6ad-4290-95c2-3a9f4d557540:
+            uuid: 551b6cb1-a6ad-4290-95c2-3a9f4d557540
+            region: content
+            configuration:
+              id: 'extra_field_block:node:article:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 13
+            additional: {  }
+          3c7603f9-9105-4af5-b3e6-359479deb082:
+            uuid: 3c7603f9-9105-4af5-b3e6-359479deb082
+            region: content
+            configuration:
+              id: 'field_block:node:article:field_news_type'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 14
+            additional: {  }
         third_party_settings: {  }
 _core:
   default_config_hash: 7fb0j9HnIXfP9ndewzgPPzzeX_SV532wuYpkscrCMCk

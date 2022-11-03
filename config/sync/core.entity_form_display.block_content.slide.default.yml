@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - block_content.type.slide
-    - field.field.block_content.slide.body
     - field.field.block_content.slide.field_slider
     - field.field.block_content.slide.field_slogan_for_slide
     - field.field.block_content.slide.field_title_for_slide
@@ -16,16 +15,6 @@ targetEntityType: block_content
 bundle: slide
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
-    weight: 26
-    region: content
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-      show_summary: false
-    third_party_settings: {  }
   field_slider:
     type: paragraphs
     weight: 29

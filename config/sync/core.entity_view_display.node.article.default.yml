@@ -302,4 +302,5 @@ content:
     weight: 100
     region: content
 hidden:
+  langcode: true
   layout_builder__layout: true

@@ -109,4 +109,5 @@ content:
     third_party_settings: {  }
     weight: 10
     region: content
-hidden: {  }
+hidden:
+  langcode: true

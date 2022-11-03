@@ -11,7 +11,7 @@ const hamburgerButton = document.querySelector('.hamburger');
 const getPageUrl = () => {
   const url = window.location.pathname;
   const page = url.split("/");
-  const pages = ["contact", "imprint", "bksi"];
+  const pages = ["kontakt", "impressum", "search", "datenschutz"];
   if (!page.includes("layout")) {
     headerTop.classList.remove('hidden');
   }

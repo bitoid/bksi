@@ -8,7 +8,7 @@ third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
-name: Customer
+name: Kunde
 type: customer
 description: ''
 help: ''

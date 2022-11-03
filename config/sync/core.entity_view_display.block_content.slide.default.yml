@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - block_content.type.slide
-    - field.field.block_content.slide.body
     - field.field.block_content.slide.field_slider
     - field.field.block_content.slide.field_slogan_for_slide
     - field.field.block_content.slide.field_title_for_slide
@@ -16,13 +15,6 @@ targetEntityType: block_content
 bundle: slide
 mode: default
 content:
-  body:
-    type: text_default
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 0
-    region: content
   field_slider:
     type: entity_reference_revisions_entity_view
     label: hidden

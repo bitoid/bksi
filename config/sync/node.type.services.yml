@@ -11,7 +11,7 @@ third_party_settings:
     parent: 'main-menu:menu_link_content:d1b8e2a1-5ff1-4780-b780-162b4d3facc2'
 name: Leistung
 type: services
-description: 'content type for services'
+description: ''
 help: ''
 new_revision: true
 preview_mode: 1

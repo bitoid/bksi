@@ -38,3 +38,4 @@ hidden:
   field_what_bksi_offer_descriptio: true
   field_what_we_expect: true
   field_what_we_expect_description: true
+  langcode: true

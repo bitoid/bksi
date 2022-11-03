@@ -40,10 +40,12 @@ module:
   history: 0
   image: 0
   inline_form_errors: 0
+  language: 0
   layout_builder: 0
   layout_builder_admin_theme: 0
   layout_discovery: 0
   link: 0
+  locale: 0
   menu_link_content: 0
   menu_ui: 0
   mysql: 0
@@ -71,6 +73,7 @@ module:
   user_redirect: 0
   views_ui: 0
   pathauto: 1
+  content_translation: 10
   formdazzle: 10
   views: 10
   paragraphs: 11

@@ -52,3 +52,4 @@ hidden:
   field_sustainability_issue_title: true
   field_sustainability_issues: true
   field_tick: true
+  langcode: true

@@ -7,6 +7,7 @@ dependencies:
     - image.style.thumbnail
   module:
     - image
+    - path
     - user
 _core:
   default_config_hash: FaQ9Ptcpxpg30AtiqRDtl_8zbJArHP1LPfug_s59TOA
@@ -41,4 +42,5 @@ content:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  langcode: true

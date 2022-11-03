@@ -29,4 +29,5 @@ content:
     weight: 101
     region: content
 hidden:
+  langcode: true
   layout_builder__layout: true

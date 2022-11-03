@@ -7,7 +7,7 @@
 </div>
 <div id="container" class="flex flex-col items-center gap-4 px-4 mb-10 md:flex-row md:justify-center">
 	<div id="building-container" class="project-dropdown cursor-pointer transition-none relative w-full h-[50px] rounded-3xl bg-lightGray flex justify-between items-center md:max-w-[250px] building-drop">
-		<div class="w-9/12 ml-5 overflow-hidden capitalize whitespace-nowrap text-ellipsis" id="building">{{ 'Building type' | t}}</div>
+		<div class="w-9/12 ml-5 overflow-hidden capitalize whitespace-nowrap text-ellipsis" id="building">{{ 'Gebäudeart' | t }}</div>
 		<button><img class="mr-5" src="modules/custom/projects/images/arrow-open-close-content.svg" alt=""></button>
 		<ul class="absolute z-50 hidden w-full overflow-hidden  top-full rounded-b-3xl" id="building-dropdown">
 			{% for buildings in building %}
@@ -21,7 +21,7 @@
 		</ul>
 	</div>
 	<div id="service-container" class="project-dropdown cursor-pointer transition-none relative w-full h-[50px] rounded-3xl bg-lightGray flex justify-between items-center md:max-w-[250px] service-drop">
-		<div class="w-9/12 ml-5 overflow-hidden capitalize whitespace-nowrap text-ellipsis" id="service">{{'Service'}}</div>
+		<div class="w-9/12 ml-5 overflow-hidden capitalize whitespace-nowrap text-ellipsis" id="service">{{ 'Leistung' | t }}</div>
 		<button><img class="mr-5" src="modules/custom/projects/images/arrow-open-close-content.svg" alt=""></button>
 		<ul class="absolute z-50 hidden w-full overflow-hidden  top-full rounded-b-3xl" id="service-dropdown">
 			{% for services in service %}
@@ -35,7 +35,7 @@
 		</ul>
 	</div>
 	<div id="sector-container" class="project-dropdown cursor-pointer transition-none relative w-full h-[50px] rounded-3xl bg-lightGray flex justify-between items-center md:max-w-[250px] sector-drop">
-		<div class="w-9/12 ml-5 overflow-hidden capitalize whitespace-nowrap text-ellipsis" id="sector">{{ 'Sector' | t }}</div>
+		<div class="w-9/12 ml-5 overflow-hidden capitalize whitespace-nowrap text-ellipsis" id="sector">{{ 'Branche' | t }}</div>
 		<button><img class="mr-5" src="modules/custom/projects/images/arrow-open-close-content.svg" alt=""></button>
 		<ul class="absolute z-50 hidden w-full overflow-hidden  top-full rounded-b-3xl" id="sector-dropdown">
 			{% for sectors in sector %}

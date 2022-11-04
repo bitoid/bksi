@@ -31,7 +31,7 @@ class BksiServices extends BlockBase
       // Get data from custom block fields
 
       $slogan = $config['slogan'];
-      $title = $config['title'];
+      $block_title = $config['block_title'];
       // Get data from Article content type
 
       $query = \Drupal::entityQuery('node');
@@ -65,7 +65,7 @@ class BksiServices extends BlockBase
         '#theme' => 'bksi_services',
         '#services' => $services,
         '#slogan' => $slogan,
-        '#title' => $title,
+        '#title' => $block_title,
         '#cache' => [
           'max-age' => 0,
         ],
@@ -92,15 +92,15 @@ class BksiServices extends BlockBase
       '#size' => 'medium',
       '#title' => $this->t('Slogan'),
       '#default_value' => $config['slogan'] ?? '',
-      '#description' => $this->t('Slogan for news block'),
+      '#description' => $this->t('Slogan for service block'),
     ];
 
-    $form['title'] = [
+    $form['block_title'] = [
       '#type' => 'textfield',
       '#size' => 'medium',
-      '#title' => $this->t('Title'),
-      '#default_value' => $config['title'] ?? '',
-      '#description' => $this->t('Title for news block'),
+      '#title' => $this->t('Block title'),
+      '#default_value' => $config['block_title'] ?? '',
+      '#description' => $this->t('Title for service block'),
     ];
     return $form;
   }
@@ -111,7 +111,7 @@ class BksiServices extends BlockBase
   public function blockSubmit($form, FormStateInterface $form_state) {
 //    Get custom fields data
     $this->configuration['slogan'] = $form_state->getValue('slogan');
-    $this->configuration['title'] = $form_state->getValue('title');
+    $this->configuration['block_title'] = $form_state->getValue('block_title');
   }
 
 }

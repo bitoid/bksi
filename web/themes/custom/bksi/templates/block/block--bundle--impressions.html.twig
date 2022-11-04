@@ -8,6 +8,7 @@
 #}
 <section {{ attributes }}> 
 {{ title_suffix }}
+ {% if content.field_impressions_images.0['#item'] %}
     <div class="flex flex-col gap-10 mt-[150px] mb-[100px] md:my-[150px]">
         <h3 class=" px-4 md:px-7 headline-large">
             {{ content.field_title[0]['#text'] | striptags }}
@@ -57,8 +58,8 @@
                 <div>
             </div>
         </div>
-
     </div>
+    {% endif %}
 </section>
 
 

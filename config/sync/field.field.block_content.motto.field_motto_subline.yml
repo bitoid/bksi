@@ -1,0 +1,21 @@
+uuid: 9f7a8521-65ba-4aa4-9b84-a8889a7d21d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.motto
+    - field.storage.block_content.field_motto_subline
+  module:
+    - text
+id: block_content.motto.field_motto_subline
+field_name: field_motto_subline
+entity_type: block_content
+bundle: motto
+label: motto_subline
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

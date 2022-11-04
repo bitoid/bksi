@@ -25,10 +25,8 @@
 <div class="">
     <div class="text-[35px] gap-[15px] flex md:flex-row flex-col justify-start px-4 md:px-0 mb-[64px] md:mb-[44px] md:max-w-[842px] md:mx-auto ">
         <h2>{{ 'Suchergebnisse für:' | t}}</h2>
-        <div class="text-[35px]">
-            <span>&lt;</span>
-            <input{{ attributes.addClass(classes) }} />{{ children }}
-            <span>&gt;</span>
+        <div class="text-[35px]">     
+            <input{{ attributes.addClass(classes) }} />{{ children }}          
         </div>
     </div>
 </div>

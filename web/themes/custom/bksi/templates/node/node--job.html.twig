@@ -12,7 +12,9 @@
         </div>
         <div>
             <div class="group w-[134px] aspect-square rounded-full bg-mainRed flex items-center justify-center text-center text-darkBlue -rotate-12 hover:scale-125">
-                <span class="group-hover:scale-[85%] max-w-[133px]">{{ content.field_apply_anchor.0 }}</span>
+                <a href="#anchor-form" class="group-hover:scale-[85%] max-w-[133px] md:text-[15px] md:leading-[19px] md:tracking-[0.75px]">
+                    {{ content.field_apply_anchor.0 }}
+                </a>
             </div>
         </div>
     </div>
@@ -86,4 +88,5 @@
         </div>
     </div>
 </section>
+<a id="anchor-form"></a>
 {{ contact_form }} 

@@ -32,26 +32,27 @@
   {% if path('<current>') == '/career' %}
   <div class="px-4 py-[75px] order-2 md:order-1 md:flex md:flex-col md:justify-center md:w-1/2 md:px-7 md:py-[150px]">
     <div class="text-fade mb-[60px]">
-      <h3 class="text-content-fade text-[26px] tracking-[1.3px] leading-none flex flex-col gap-5 md:gap-7 md:text-[35px] md:leading-10 md:tracking-[1.75px]">
-        <span class="text-[13px] leading-[15px] tracking-[.65px]">{{ content.field_slogan | raw  }}</span>
+      <h3 class="text-content-fade headline-large flex flex-col gap-5 md:gap-7 ">
+        <span class="span-subline">{{ content.field_slogan | raw  }}</span>
         {{ content.field_title | raw }}
       </h3>
     </div>
     <div class="text-fade self-start">
       <div class="text-content-fade">
-        <div class="flex flex-col gap-2 text-[15px] leading-[22px] tracking-[0.75px] mb-8">
+        <div class="flex flex-col gap-2 paragraph-text mb-8">
+          <p class="font-['halbfett']">{{ 'Bewirb dich direkt:' | t }}</p>
           <span>{{ content.field_apply_job | raw  }}</span>
         </div>
         <div class="flex flex-col gap-2 text-[15px] leading-[22px] tracking-[0.75px] mb-14">
-          <span>{{ content.field_get_in_touch }}</span>
+          <span class="font-['halbfett']">{{ content.field_get_in_touch }}</span>
           {% for phone in content.field_contact_phone %}
             {% if phone['#context'] %}
-              <a class="group font-normal" href="tel:{{ phone['#context'].value }}"> <span class="group-hover:text-mainRed">{{ phone['#context'].value }}</span></a>
+              <a class="group font-['buch']" href="tel:{{ phone['#context'].value }}"> <span class="group-hover:text-mainRed">{{ phone['#context'].value }}</span></a>
             {% endif %}
           {% endfor %}
           {% for email in content.field_contact_email %}
             {% if email['#context'] %}
-              <a class="group font-normal" href="mailto:{{ email['#context'].value }}"><span class="group-hover:text-mainRed">{{ email['#context'].value }}</span></a>
+              <a class="group font-['buch']" href="mailto:{{ email['#context'].value }}"><span class="group-hover:text-mainRed">{{ email['#context'].value }}</span></a>
             {% endif %}
           {% endfor %}
         </div>
@@ -64,25 +65,25 @@
   {% else %}
     <div class="px-4 py-[75px] order-2 md:order-1 md:flex md:flex-col md:justify-center md:items-center md:w-1/2 md:px-10 md:py-[60px]">
       <div class="text-fade mb-[60px]">
-        <h3 class="text-content-fade text-[26px] tracking-[1.3px] leading-none flex flex-col gap-5 md:gap-7 md:text-[35px] md:leading-10 md:tracking-[1.75px]">
+        <h3 class="text-content-fade headline-large flex flex-col gap-5 md:gap-7 ">
           {{ content.field_title | raw }}
         </h3>
       </div>
       <div class="text-fade self-start">
-        <div class="text-content-fade w-1/2">
+        <div class="text-content-fade w-1/2 paragraph-text">
           <article class="flex flex-col gap-5 mb-8">
                 <div class="text-content-fade flex flex-col gap-3"> {{ content.field_ltd_bksi_description | raw }} </div>
           </article>
           <div class="flex flex-col gap-2 text-[15px] leading-[22px] tracking-[0.75px] mb-8">
             {% for phone in content.field_contact_phone %}
               {% if phone['#context'] %}
-                  <a class="group font-normal" href="tel:{{ phone['#context'].value }}">Telefon: <span class="group-hover:text-mainRed">{{ phone['#context'].value }}</span></a>
+                  <a class="group font-['buch']" href="tel:{{ phone['#context'].value }}">Telefon: <span class="group-hover:text-mainRed">{{ phone['#context'].value }}</span></a>
               {% endif %}
             {% endfor %}
           </div>
           {% for email in content.field_contact_email %}
             {% if email['#context'] %}
-              <a class="group font-normal" href="mailto:{{ email['#context'].value }}">E-Mail: <span class="group-hover:text-mainRed">{{ email['#context'].value }}</span></a>
+              <a class="group font-['buch']" href="mailto:{{ email['#context'].value }}">E-Mail: <span class="group-hover:text-mainRed">{{ email['#context'].value }}</span></a>
             {% endif %}
           {% endfor %}
         </div>

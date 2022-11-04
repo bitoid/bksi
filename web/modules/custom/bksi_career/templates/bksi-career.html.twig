@@ -12,9 +12,9 @@
     {% endif %}
         <div class="flex flex-col items-start px-4 py-20 gap-16 md:px-10 md:py-40 md:flex-row md:gap-56">
             <div class="text-fade">
-                <h3 class="text-content-fade text-[26px] tracking-[1.3px] leading-none flex flex-col gap-[50px] md:text-[35px] md:leading-10 md:tracking-[1.75px]">
+                <h3 class="text-content-fade  flex flex-col gap-[50px] headline-large">
                     {{ title }}
-                    <span class="text-[15px] tracking-[0.75px] leading-[22px]">{{ description }} </span>
+                    <span class="paragraph-text font-['buch']">{{ description }} </span>
                 </h3>
             </div>
             <div class="flex flex-col w-full ">
@@ -23,8 +23,8 @@
                     <div class="text-fade">
                         <a href="{{path('entity.node.canonical', {'node': job.nid})}}" class="text-content-fade flex items-center justify-between bg-white min-w-full gap-5 px-5 py-8 md:px-8">
                             <div class="flex flex-col gap-5">
-                                <h5 class="text-xl">{{ job.job_title }}</h5>
-                                <p class="text-[15px] leading-[22px] tracking-[.75px]">{{ job.job_experience }}</p>
+                                <h5 class="headline-medium">{{ job.job_title }}</h5>
+                                <p class="paragraph-text font-['buch']">{{ job.job_experience }}</p>
                             </div>
                             <img class="w-5 h-5" src="../../../themes/custom/bksi/assets/bilder/arrows-navigation/arrow-textlinks.svg" alt="">
                         </a>
@@ -33,12 +33,12 @@
                 </div>
                 <div class="flex flex-col gap-9">
                     <div class="text-fade">
-                        <h3 class="text-content-fade text-[26px] tracking-[1.3px] leading-none flex flex-col gap-5 md:gap-7 md:text-[35px] md:leading-10 md:tracking-[1.75px]">
+                        <h3 class="text-content-fade headline-large flex flex-col gap-5 md:gap-7 ">
                             {{ footer_title }}
                         </h3>
                     </div>
                     <div class="text-fade">
-                        <p class="text-content-fade text-[15px] text-left tracking-[.75px] leading-[22px]">{{ footer_description }}</p>
+                        <p class="text-content-fade  text-left paragraph-text">{{ footer_description }}</p>
                     </div>
                 </div>
             </div>

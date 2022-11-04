@@ -5,7 +5,7 @@
   <div class="absolute right-4 top-1/2 left-4 -translate-y-1/2 flex flex-col items-center justify-between gap-10 text-white md:flex-row md:left-11 md:right-[123px]">
     <div class="order-2 md:order-1 md:w-[55%]">
       <h1 class="flex flex-col -z-10 gap-7 text-[35px] tracking-[1.5px] leading-normal md:gap-9 md:text-[4vw] md:leading-tight md:tracking-[3px]">
-        <span class="text-xs md:text-base">{{ node.label }}</span>
+        <span class="text-[12px] leading-[17px] tracking-[0.6px] md:text-[14px] md:leading-[18px] md:tracking-[0.7px]">{{ node.label }}</span>
         {{ content.field_service_title.0 }}
       </h1>
     </div>
@@ -16,23 +16,23 @@
 
 <section class="bg-white text-fade">
   <div class="text-content-fade flex flex-col justify-center px-4 py-[75px] md:max-w-[842px] md:mx-auto md:py-[150px]">
-    <h3 class="text-[26px] tracking-[1.3px] leading-none flex flex-col gap-5 md:text-[35px] md:leading-10 md:tracking-[1.75px]">
+    <h3 class="headline-large flex flex-col gap-5 ">
       {{ content.field_service_slogan.0 }}
     </h3>
-    <article class="text-[15px] leading-[22px] tracking-wide mt-14 flex flex-col gap-5">
-      <p>{{ content.field_service_description.0 }}</p>
+    <article class=" mt-14 flex flex-col gap-5">
+      <p class="paragraph-text">{{ content.field_service_description.0 }}</p>
     </article>
   </div>
 </section>
 
 <section class="bg-mainRed text-fade">
   <div class="text-content-fade flex flex-col items-center justify-center px-4 py-[75px] text-center md:max-w-[816px] md:mx-auto md:py-[150px]">
-    <h2 class="text-[26px] tracking-[1.3px] leading-none flex flex-col gap-5 mb-9 md:text-[35px] md:leading-10 md:tracking-[1.75px] md:mb-0">
-      <span class="text-[13px]">{{ 'Kontakt' | t }}</span>
+    <h2 class="text-[26px] tracking-[1.3px] leading-[29px] flex flex-col gap-5 mb-9 md:text-[35px] md:leading-[39px] md:tracking-[1.75px] md:mb-0">
+      <span class="span-subline">{{ 'Kontakt' | t }}</span>
       {{ content.field_contact_slogan.0 }}
     </h2>
     <img class="w-56 mb-8" src="/{{ base_path ~ directory }}/images/bilder/arrows-navigation/arrow-kontaktmodul.svg" alt="">
-    <div class="flex flex-col text-xl leading-6 gap-2 mb-[105px]">
+    <div class="font-['halbfett'] flex flex-col  text-[20px] tracking-[1px] leading-[24px] leading-6 gap-2 mb-[105px]">
       <span>
         {{ 'Ansprechpartner' | t }} <br>
         {% for key, person in content.field_contact_person %}
@@ -44,8 +44,8 @@
           {% endif %}
         {% endfor %}
       </span>
-      <a href="tel:+: {{ content.field_telefon.0 }}">{{ 'Telefon:' | t }} {{ content.field_telefon.0 }}</a>
-      <a href="mailto:info@bksi.de">{{ 'E-Mail:' | t }} {{ content.field_email.0 }}</a>
+      <a class="!font-['halbfett']" href="tel:+: {{ content.field_telefon.0 }}">{{ 'Telefon:' | t }} {{ content.field_telefon.0 }}</a>
+      <a class="!font-['halbfett']" href="mailto:info@bksi.de">{{ 'E-Mail:' | t }} {{ content.field_email.0 }}</a>
     </div>
   </div>
 </section>
@@ -67,11 +67,11 @@
             </div>
             <div class="order-2 px-4 py-20 bg-white text-fade md:w-1/2 md:mx-auto lg:w-full lg:mx-0 lg:px-28 lg:py-[147px]">
                 <div class="text-content-fade ">
-                <h2 class="flex flex-col gap-5 text-[26px] tracking-[0.3px]  pb-[50px]">
-                    <span class="text-[13px] tracking-[0.65px]">{{ paragraph['#paragraph'].field_slogan.value }}</span>
+                <h2 class="flex flex-col gap-5 headline-large  pb-[50px]">
+                    <span class="span-subline">{{ paragraph['#paragraph'].field_slogan.value }}</span>
                     {{ paragraph['#paragraph'].field_title.value }}
                 </h2>
-                <p class="text-[15px] leading-[22px] tracking-[0.75px] mb-[50px]">
+                <p class="paragraph-text mb-[50px]">
                     {{ paragraph['#paragraph'].field_description.value }}
                 </p>
                 <a class="max-w-fit group relative h-10 flex gap-4 z-10 pr-6 items-center rounded-[40px] overflow-hidden" href="{{ paragraph['#paragraph'].field_link_cta.0.url }}" >

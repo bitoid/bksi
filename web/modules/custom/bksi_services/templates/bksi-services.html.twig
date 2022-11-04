@@ -15,7 +15,7 @@
             <div class="text-fade" style="overflow:visible;">
               <div class="text-content-fade text-[15px] leading-[22px] tracking-[0.75px] md:max-w-[32vw]">
                 <div class="absolute  text-[233px] tracking-[11.65px] leading-[300px] opacity-10 bottom-[85px] left-1/2 -translate-x-1/2 md:-translate-y-1/2 md:top-0 md:left-0 md:-translate-x-2/3 font-['halbfett']">{{ counter }}</div>
-                <h4 class="text-[20px] leading-[24px] tracking-[1px] ">{{ service.title }}</h4>
+                <h4 class="headline-medium">{{ service.title }}</h4>
                 <p class="mt-[18px] pb-[56px] paragraph-text">{{ service.summary.0.value|striptags }}</p>
                 <a class="flex items-center gap-3 group" href="{{path('entity.node.canonical', {'node': service.nid})}}">
                   <img src="/{{ base_path ~ directory }}/images/arrow-textlinks.svg" alt="">

@@ -5,9 +5,9 @@ dependencies:
   config:
     - block_content.type.motto
     - field.field.block_content.motto.field_motto
-    - field.field.block_content.motto.field_motto_link
+    - field.field.block_content.motto.field_motto_subline
   module:
-    - link
+    - text
 id: block_content.motto.default
 targetEntityType: block_content
 bundle: motto
@@ -21,13 +21,13 @@ content:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-  field_motto_link:
-    type: link_default
+  field_motto_subline:
+    type: text_textfield
     weight: 27
     region: content
     settings:
-      placeholder_url: ''
-      placeholder_title: ''
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   info:
     type: string_textfield

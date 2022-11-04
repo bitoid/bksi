@@ -1,16 +1,17 @@
-uuid: 09c51ca4-ce57-4fd2-aa3b-64bcd8adc2eb
+uuid: 97d576a7-2be9-45ab-82ac-2df6eff0bac8
 langcode: en
 status: true
 dependencies:
   module:
     - block_content
-    - link
-id: block_content.field_motto_link
-field_name: field_motto_link
+    - text
+id: block_content.field_motto_subline
+field_name: field_motto_subline
 entity_type: block_content
-type: link
-settings: {  }
-module: link
+type: text
+settings:
+  max_length: 255
+module: text
 locked: false
 cardinality: 1
 translatable: true

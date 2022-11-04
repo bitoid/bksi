@@ -37,25 +37,25 @@
                 </div>
                 <div class="px-4 py-20 md:pl-[100px] md:pr-20 md:py-40 md:w-1/2 md:flex md:flex-col md:justify-center">
                     <div class="text-fade mb-20">
-                        <h3 class="text-content-fade text-[26px] tracking-[1.3px] leading-none flex flex-col gap-5 md:gap-7 md:text-[35px] md:leading-10 md:tracking-[1.75px]">
-                            <span class="text-[13px] leading-[15px] tracking-[.65px]">{{ content.field_slogan }}</span>
+                        <h3 class="text-content-fade  flex flex-col gap-5 md:gap-7 headline-large">
+                            <span class="text-[13px] leading-[15px] tracking-[.65px] md:text-[16px] md:leading-[18px] md:tracking-[0.8px]">{{ content.field_slogan }}</span>
                             {{ content.field_title }}
                         </h3>
                     </div>
-                    <ul class="flex flex-col gap-7 text-[15px] leading-[22px] tracking-[0.75px]">
+                    <ul class="flex flex-col gap-7 text-[15px] leading-[26px] tracking-[0.75px]">
                         {% for paragraph in content.field_accordion_title %}
-			    {% if paragraph['#paragraph'] %}
-			      <li class="flex flex-col gap-8 dropdown-karriere-container">
-				<div class="flex gap-9 items-center dropdown-karriere cursor-pointer">
-				  <img class="dropdown-image" src="/{{ base_path ~ directory }}/images/arrow-open-close-content.svg" alt="">
-				  <h5>{{ paragraph['#paragraph'].field_accordion_title.value }}</h5>
-				</div>
-				<div class="dropdown-content-karriere">
-				  {{ paragraph['#paragraph'].field_accordion_body.value | striptags }}
-				</div>
-			      </li>
-			    {% endif %}
-			 {% endfor %}
+                          {% if paragraph['#paragraph'] %}
+                            <li class="flex flex-col gap-8 dropdown-karriere-container">
+                        <div class="flex gap-9 items-center dropdown-karriere cursor-pointer">
+                          <img class="dropdown-image" src="/{{ base_path ~ directory }}/images/arrow-open-close-content.svg" alt="">
+                          <h5>{{ paragraph['#paragraph'].field_accordion_title.value }}</h5>
+                        </div>
+                        <div class="dropdown-content-karriere">
+                          {{ paragraph['#paragraph'].field_accordion_body.value | striptags }}
+                        </div>
+                            </li>
+                          {% endif %}
+                      {% endfor %}
                     </ul>
                 </div>
             </div>

@@ -5,10 +5,10 @@
     <div class="absolute flex flex-col items-center justify-between gap-10 text-white -translate-y-1/2 right-4 top-1/2 left-4 md:flex-row md:left-11 md:right-[178px]">
         <div class="w-1/2">
             <h1 class="flex flex-col -z-10 gap-7 w-[80.7%] text-[5vw] tracking-[1.5px] leading-normal md:gap-9 md:leading-tight md:tracking-[3px]">
-                <span class="text-xs md:text-base">{{ content.field_job_description.0 }}</span>
+                <span class="text-[12px] leading-[17px] tracking-[0.6px] md:text-[14px] md:leading-[17px] md:tracking-[0.7px]">{{ content.field_job_description.0 }}</span>
                 {{ content.field_job_title.0 }}
             </h1>
-            <p class="text-xl mt-28 md:mt-12">{{ content.field_job_experience.0 }}</p>
+            <p class="headline-medium  mt-28 md:mt-12">{{ content.field_job_experience.0 }}</p>
         </div>
         <div>
             <div class="group w-[134px] aspect-square rounded-full bg-mainRed flex items-center justify-center text-center text-darkBlue -rotate-12 hover:scale-125">
@@ -25,11 +25,11 @@
     <div class="flex flex-col gap-36 px-4 py-[75px] md:px-10 md:py-[150px] md:gap-56 ">
         <div class="flex flex-col items-start justify-between gap-5 md:flex-row">
             <div class="text-fade">
-                <h3 class="text-[26px] text-content-fade tracking-[1.3px] leading-none flex flex-col gap-5 md:gap-7 md:text-[35px] md:leading-10 md:tracking-[1.75px]">
+                <h3 class="headline-large text-content-fade  flex flex-col gap-5 md:gap-7 ">
 					{{ content.field_what_awaits_you.0 }}
                 </h3>
             </div>
-            <div class="text-[15px] leading-[22px] tracking-[0.75px] md:w-1/2">
+            <div class="paragraph-text md:w-1/2">
          		<div class="text-fade">
                     <ul class="flex flex-col gap-[22px] text-content-fade arrow">                          
                         {% for item in content.field_what_awaits_you_descriptio %}
@@ -46,11 +46,11 @@
         </div>
         <div class="flex flex-col items-start justify-between gap-5 md:flex-row">
             <div class="text-fade">
-                <h3 class="text-[26px] text-content-fade tracking-[1.3px] leading-none flex flex-col gap-5 md:gap-7 md:text-[35px] md:leading-10 md:tracking-[1.75px]">
+                <h3 class=" text-content-fade  flex flex-col gap-5 md:gap-7 headline-large">
                     {{ content.field_what_bksi_offer.0 }}
                 </h3>
             </div>
-            <div class="text-[15px] leading-[22px] tracking-[0.75px] md:w-1/2">
+            <div class="paragraph-text md:w-1/2">
                 <div class="text-fade">
                     <ul class="flex flex-col gap-[22px] text-content-fade arrow">
                         {% for item in content.field_what_bksi_offer_descriptio %}
@@ -67,11 +67,11 @@
         </div>
         <div class="flex flex-col items-start justify-between gap-5 md:flex-row">
             <div class="text-fade">
-                <h3 class="text-[26px] text-content-fade tracking-[1.3px] leading-none flex flex-col gap-5 md:gap-7 md:text-[35px] md:leading-10 md:tracking-[1.75px]">
+                <h3 class=" text-content-fade headline-large flex flex-col gap-5 md:gap-7">
                     {{ content.field_what_we_expect.0 }}
                 </h3>
             </div>
-            <div class="text-[15px] leading-[22px] tracking-[0.75px] md:w-1/2">
+            <div class="paragraph-text md:w-1/2">
                 <div class="text-fade">
                     <ul class="flex flex-col gap-[22px] text-content-fade arrow">
                         {% for item in content.field_what_we_expect_description %}

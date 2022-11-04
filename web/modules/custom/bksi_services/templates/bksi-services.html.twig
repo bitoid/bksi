@@ -3,8 +3,8 @@
 <section>
   <div class="bg-darkBlue px-4 py-[75px] md:px-10 md:py-[155px] text-white">
     <div class="text-fade mb-[75px] md:mb-[150px]">
-      <h2 class="text-content-fade text-[26px] tracking-[1.3px] leading-[29px] flex flex-col gap-5 md:text-[35px] md:leading-[39px] md:tracking-[1.75px]">
-        <span class="md:text-[16px] md:leading-[21px] text-[11px] leading-[15px]">{{ title }}</span>
+      <h2 class="text-content-fade  flex flex-col gap-5  headline-large">
+        <span class="md:text-[16px] md:leading-[21px] md:tracking-[0.8px] tracking-[0.55px] text-[11px] leading-[15px]">{{ title }}</span>
         {{ slogan }}
       </h2>
     </div>
@@ -14,12 +14,12 @@
             <div class="fade-in-image-container min-w-[250px] w-4/5 h-[33vh] md:min-w-[150px] md:mb-[50px] md:h-full relative"><img class=" w-full h-full fade-in-image" src="{{ file_url(service.service_image) }}" alt=""></div>
             <div class="text-fade" style="overflow:visible;">
               <div class="text-content-fade text-[15px] leading-[22px] tracking-[0.75px] md:max-w-[32vw]">
-                <div class="absolute  text-[233px] tracking-[11.65px] leading-[300px] opacity-10 bottom-0 left-1/2 -translate-x-1/2 md:-translate-y-1/2 md:top-0 md:left-0 md:-translate-x-2/3 font-['halbfett']">{{ counter }}</div>
-                <h4 class="text-[20px] leading-[24px]">{{ service.title }}</h4>
-                <p class="mt-[18px] pb-[56px]">{{ service.summary.0.value|striptags }}</p>
+                <div class="absolute  text-[233px] tracking-[11.65px] leading-[300px] opacity-10 bottom-[85px] left-1/2 -translate-x-1/2 md:-translate-y-1/2 md:top-0 md:left-0 md:-translate-x-2/3 font-['halbfett']">{{ counter }}</div>
+                <h4 class="text-[20px] leading-[24px] tracking-[1px] ">{{ service.title }}</h4>
+                <p class="mt-[18px] pb-[56px] paragraph-text">{{ service.summary.0.value|striptags }}</p>
                 <a class="flex items-center gap-3 group" href="{{path('entity.node.canonical', {'node': service.nid})}}">
                   <img src="/{{ base_path ~ directory }}/images/arrow-textlinks.svg" alt="">
-                  <span class="group-hover:text-mainRed">{{ service.link_text }}</span>
+                  <span class="group-hover:text-mainRed text-[15px] tracking-[0.75px] leading-[12px] ">{{ service.link_text }}</span>
                 </a>
               </div>
             </div>

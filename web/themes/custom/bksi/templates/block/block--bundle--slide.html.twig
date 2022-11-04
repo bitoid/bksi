@@ -6,8 +6,8 @@
 
             <div class="text-center  mx-auto text-fade">
                 <div class="text-content-fade  max-w-[860px] mx-auto">
-                <h2 class="text-[26px] items-center pb-[5px] tracking-[1.3px] leading-none flex flex-col gap-5 md:text-[35px] md:leading-10 md:tracking-[1.75px]">
-                                <span class="text-2xl">{{ content.field_slogan_for_slide	}}</span>
+                <h2 class="items-center pb-[5px]  flex flex-col gap-5 headline-large">
+                                <span class="headline-medium">{{ content.field_slogan_for_slide	}}</span>
                                 {{content.field_title_for_slide}}
                     </h2> 
                     </div>    
@@ -20,8 +20,8 @@
                             {% for paragraph in content.field_slider %}
                              {% if paragraph['#paragraph'] %}
                             <div class="mt-[75px] slider-content w-full md:mt-[53px] flex-shrink-0 pb-[75px] md:pb-[0px]">
-                                <div class=" text-[76px] leading-[100px] tracking-[3.8px] mb-[75px] font-['halbfett'] text-center md:text-[155px] md:leading-[200px] md:tracking-[7.75px] md:mb-[52px]">{{ paragraph['#paragraph'].field_year.0.value }}</div>
-                                <p class="mb-10 text-2xl md:mb-0">{{ paragraph['#paragraph'].field_year_text_for_slider.0.value }}</p>
+                                <div class=" text-[76px] leading-[100px] tracking-[3.8px] mb-[75px] font-['halbfett'] text-center md:text-[155px] md:leading-[203px] md:tracking-[7.75px] md:mb-[52px]">{{ paragraph['#paragraph'].field_year.0.value }}</div>
+                                <p class="text-[20px] tracking-[1px] font-['halbfett']">{{ paragraph['#paragraph'].field_year_text_for_slider.0.value }}</p>
                             </div>
                             {% endif %}
                             {% endfor %}                    

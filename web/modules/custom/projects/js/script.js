@@ -53,26 +53,25 @@ function displayData(arr) {
                     <h4 class="hidden text-2xl absolute bottom-10 left-10 text-white font-semibold group-hover:bottom-[calc(100%-60px)] group-hover:translate-y-1/2 z-10 md:block">${projectsData['title']}</h4>
                </a>
                <div class="opacity-100 flex flex-col gap-4 md:absolute md:translate-y-full md:w-full md:h-full md:bg-darkBlue md:opacity-0 md:top-0 md:text-white md:p-10 md:pt-[125px] md:pl-8 md:gap-8 md:group-hover:translate-y-0 md:group-hover:opacity-100">
-                    <h4 class="text-2xl md:hidden">${projectsData['title']}</h4>
+                    <h4 class="text-[20px]  leading-[24px] tracking-[1px] md:hidden">${projectsData['title']}</h4>
 
                     <div class="flex items-start gap-4 text-[15px] tracking-[0.75px] leading-[22px] md:gap-10">
-                        <div class="flex flex-col gap-5">
-                            <div flex flex-col gap-3>
-                                <p>${Drupal.t("Gebäudeart")}</p>
+                        <div class="flex flex-col w-1/2 gap-5">
+                            <div  class="flex flex-col gap-3">
+                                <p class="!font-['halbfett']">${Drupal.t("Gebäudeart")}</p>
                                 <p>${projectsData['building']}</p>
-                            </div>
-                            <div flex flex-col gap-3>
-                                <p>${Drupal.t("Auftraggeber")}</p>
+                           
+                                <p class="!font-['halbfett']">${Drupal.t("Auftraggeber")}</p>
                                 <p> ${projectsData['customer']}</p>
                             </div>
                         </div>
-                        <div class="flex flex-col gap-5">
-                            <div flex flex-col gap-3>
-                                <p>${Drupal.t("Leistung")}</p>
+                        <div class="flex flex-col  gap-5">
+                            <div class="flex flex-col gap-3">
+                                <p class="!font-['halbfett']">${Drupal.t("Leistung")}</p>
                                 <p>${projectsData['service']}</p>
                             </div>
-                            <div flex flex-col gap-3>
-                                <p>${Drupal.t("Zeitraum")}</p>
+                            <div class="flex flex-col gap-3">
+                                <p class="!font-['halbfett']">${Drupal.t("Zeitraum")}</p>
                                 <p> ${projectsData['period']}</p>
                             </div>
 

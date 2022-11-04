@@ -4,11 +4,13 @@ status: true
 dependencies:
   config:
     - block_content.type.hero_block_type
+    - field.field.block_content.hero_block_type.field_hero_video
     - field.field.block_content.hero_block_type.field_image
     - field.field.block_content.hero_block_type.field_slogan
     - field.field.block_content.hero_block_type.field_title
     - image.style.thumbnail
   module:
+    - file
     - image
     - text
 id: block_content.hero_block_type.default
@@ -16,6 +18,13 @@ targetEntityType: block_content
 bundle: hero_block_type
 mode: default
 content:
+  field_hero_video:
+    type: file_generic
+    weight: 29
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
   field_image:
     type: image_image
     weight: 28

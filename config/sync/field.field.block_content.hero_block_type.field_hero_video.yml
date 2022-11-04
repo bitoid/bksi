@@ -1,0 +1,27 @@
+uuid: cdfc9146-89ff-4369-bb45-849fc9677593
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_block_type
+    - field.storage.block_content.field_hero_video
+  module:
+    - file
+id: block_content.hero_block_type.field_hero_video
+field_name: field_hero_video
+entity_type: block_content
+bundle: hero_block_type
+label: 'Hero video'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: mp4
+  max_filesize: '500000000000'
+  description_field: false
+field_type: file

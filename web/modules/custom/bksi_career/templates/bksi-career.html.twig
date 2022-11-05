@@ -10,7 +10,7 @@
              </picture>
         </div>
     {% endif %}
-        <div class="flex flex-col items-start px-4 py-20 gap-16 md:px-10 md:py-40 md:flex-row md:gap-56">
+        <div class="flex flex-col items-start px-4 py-[75px] gap-[60px] md:px-10 md:py-[150px] md:flex-row md:gap-56">
             <div class="text-fade">
                 <h3 class="text-content-fade  flex flex-col gap-[50px] headline-large">
                     {{ title }}
@@ -18,11 +18,11 @@
                 </h3>
             </div>
             <div class="flex flex-col w-full ">
-                <div class="flex flex-col gap-5 w-full mb-[75px] md-[100px]">
+                <div class="flex flex-col gap-5 w-full mb-[70px] md:mb-[91px]">
                    {% for job in career_array %}
                     <div class="text-fade">
-                        <a href="{{path('entity.node.canonical', {'node': job.nid})}}" class="text-content-fade flex items-center justify-between bg-white min-w-full gap-5 px-5 py-8 md:px-8">
-                            <div class="flex flex-col gap-5">
+                        <a href="{{path('entity.node.canonical', {'node': job.nid})}}" class="text-content-fade flex items-center justify-between bg-white min-w-full gap-5 px-5 pt-[30px] pb-[29px] md:px-8">
+                            <div class="flex flex-col gap-[15px]">
                                 <h5 class="headline-medium">{{ job.job_title }}</h5>
                                 <p class="paragraph-text font-['buch']">{{ job.job_experience }}</p>
                             </div>
@@ -31,7 +31,7 @@
                     </div>
                          {% endfor %}
                 </div>
-                <div class="flex flex-col gap-9">
+                <div class="flex flex-col md:gap-[35px] gap-[37px]">
                     <div class="text-fade">
                         <h3 class="text-content-fade headline-large flex flex-col gap-5 md:gap-7 ">
                             {{ footer_title }}

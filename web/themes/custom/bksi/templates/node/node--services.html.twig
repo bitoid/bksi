@@ -4,7 +4,7 @@
   </div>
   <div class="absolute right-4 top-1/2 left-4 -translate-y-1/2 flex flex-col items-center justify-between gap-10 text-white md:flex-row md:left-11 md:right-[123px]">
     <div class="order-2 md:order-1 md:w-[55%]">
-      <h1 class="flex flex-col -z-10 gap-7 text-[35px] tracking-[1.5px] leading-normal md:gap-9 md:text-[4vw] md:leading-tight md:tracking-[3px]">
+      <h1 class="flex flex-col -z-10 gap-[2px] text-[35px] tracking-[1.5px] leading-normal md:gap-[24px] md:text-[4vw] md:leading-tight md:tracking-[3px]">
         <span class="text-[12px] leading-[17px] tracking-[0.6px] md:text-[14px] md:leading-[18px] md:tracking-[0.7px]">{{ node.label }}</span>
         {{ content.field_service_title.0 }}
       </h1>
@@ -15,24 +15,24 @@
 </section>
 
 <section class="bg-white text-fade">
-  <div class="text-content-fade flex flex-col justify-center px-4 py-[75px] md:max-w-[842px] md:mx-auto md:py-[150px]">
-    <h3 class="headline-large flex flex-col gap-5 ">
+  <div class="text-content-fade gap-[50px] flex flex-col justify-center px-4 py-[75px] md:max-w-[842px] md:mx-auto md:py-[150px]">
+    <h3 class="headline-large flex flex-col  ">
       {{ content.field_service_slogan.0 }}
     </h3>
-    <article class=" mt-14 flex flex-col gap-5">
-      <p class="paragraph-text">{{ content.field_service_description.0 }}</p>
-    </article>
+    <div class="flex flex-col">
+      <div class="paragraph-text flex flex-col gap-5">{{ content.field_service_description.0 }}</div>
+    </div>
   </div>
 </section>
 
 <section class="bg-mainRed text-fade">
   <div class="text-content-fade flex flex-col items-center justify-center px-4 py-[75px] text-center md:max-w-[816px] md:mx-auto md:py-[150px]">
-    <h2 class="text-[26px] tracking-[1.3px] leading-[29px] flex flex-col gap-5 mb-9 md:text-[35px] md:leading-[39px] md:tracking-[1.75px] md:mb-0">
+    <h2 class="text-[26px] tracking-[1.3px] leading-[29px] flex flex-col gap-[22px]  md:text-[35px] md:leading-[39px] md:tracking-[1.75px] md:mb-0">
       <span class="span-subline">{{ 'Kontakt' | t }}</span>
       {{ content.field_contact_slogan.0 }}
     </h2>
-    <img class="w-56 mb-8" src="/{{ base_path ~ directory }}/images/bilder/arrows-navigation/arrow-kontaktmodul.svg" alt="">
-    <div class="font-['halbfett'] flex flex-col  text-[20px] tracking-[1px] leading-[24px] leading-6 gap-2 mb-[105px]">
+    <img class="w-56 mb-[32px]" src="/{{ base_path ~ directory }}/images/bilder/arrows-navigation/arrow-kontaktmodul.svg" alt="">
+    <div class="font-['halbfett'] flex flex-col  text-[20px] tracking-[1px] leading-[24px] leading-6 gap-[30px] ">
       <span>
         {{ 'Ansprechpartner' | t }} <br>
         {% for key, person in content.field_contact_person %}
@@ -65,9 +65,9 @@
                         <img class="fade-in-image object-cover h-full w-full" src="{{ file_url(paragraph['#paragraph'].field_image.entity.uri.value) }}" alt="{{ paragraph['#paragraph'].field_image.0.alt }} ">
                     </picture>
             </div>
-            <div class="order-2 px-4 py-20 bg-white text-fade md:w-1/2 md:mx-auto lg:w-full lg:mx-0 lg:px-28 lg:py-[147px]">
+            <div class="order-2 px-4 py-[75px] bg-white text-fade md:w-1/2 md:mx-auto lg:w-full md:mx-0 md:px-28 md:py-[147px]">
                 <div class="text-content-fade ">
-                <h2 class="flex flex-col gap-5 headline-large  pb-[50px]">
+                <h2 class="flex flex-col gap-[20px] headline-large pb-[50px]">
                     <span class="span-subline">{{ paragraph['#paragraph'].field_slogan.value }}</span>
                     {{ paragraph['#paragraph'].field_title.value }}
                 </h2>
@@ -84,5 +84,4 @@
         </div> 
         {% endif %}
     {% endfor %}
-   
 </section>

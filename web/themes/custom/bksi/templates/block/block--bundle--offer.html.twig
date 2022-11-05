@@ -1,23 +1,23 @@
 <section {{ attributes }}> 
 {{ title_suffix }}
-    <div class="py-[75px] px-4 md:py-[155px] md:px-10 flex items-start justify-between flex-col gap-5 md:flex-row">
+    <div class="py-[75px] px-4 md:py-[150px] md:px-10 flex items-start justify-between flex-col gap-5 md:flex-row">
         <div class="text-fade">
-            <h3 class=" text-content-fade t flex flex-col gap-5 md:gap-7 headline-large">
+            <h3 class=" text-content-fade  flex flex-col gap-[20px] md:gap-7 headline-large">
                 <span class="span-subline">{{ content.field_slogan.0 }}</span>
                     {{ content.field_title[0]['#text'] | striptags }}
            </h3>
         </div>
-        <div class="paragraph-text mt-[60px] md:mt-[50px] md:w-1/2">
+        <div class="paragraph-text mt-[30px] md:mt-[50px] md:w-1/2">
             <div class="text-fade">
-                <p class="mb-[100px] text-content-fade">{{ content.field_description.0 }} </p>
+                <p class="mb-[70px] md:max-w-[92%] text-content-fade">{{ content.field_description.0 }} </p>
             </div>
-            <div class="flex flex-col gap-20 ">
+            <div class="flex flex-col gap-[70px] ">
             	{%for paragraph in content.field_offer_paragraph %}
             		{% if paragraph['#paragraph'] %}
-                	<div class="flex flex-col text-fade gap-7">
+                	<div class="flex flex-col md:max-w-[92%] text-fade gap-[70px]">
                     	<div class="text-content-fade">
-                        	<h4 class="mb-4 headline-medium">{{ paragraph['#paragraph'].field_title.0.value }}</h4>
-                        	<ul class="flex flex-col gap-4 arrow">
+                        	<h4 class="mb-[30px] headline-medium">{{ paragraph['#paragraph'].field_title.0.value }}</h4>
+                        	<ul class="flex flex-col gap-1 arrow">
                         		{% for item in paragraph['#paragraph'].field_item %}
                                 <div class="flex gap-1">
                                         <p class="text-start mt-[-1px]  text-[15px] text-red-600">›</p>

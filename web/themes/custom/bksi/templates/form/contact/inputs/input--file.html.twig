@@ -17,6 +17,6 @@
     ]
 %}
 
-<label class=" flex  md:mb-[18px] mb-[30px] gap-1" for="file"><span class="font-['halbfett'] "> Datenupload </span> (PDF-Dateien, max. 5MB) Unterlagen (z.B. Lebenslauf)</label>
-<label class="w-[220px] h-10 bg-white rounded-[38px] font-bold flex justify-center items-center" for="file">Datei auswählen</label>
+<label class=" flex  md:mb-[10px] mb-[10px] gap-1" for="file"><span class="font-['halbfett'] "> {{ 'Datenupload' | t}}</span> {{ '(PDF-Dateien, max. 5MB) Unterlagen (z.B. Lebenslauf)' | t }}</label>
+<label class="w-[220px] h-10 text-[15px] leading-[19px] tracking-[0.75px]  bg-white rounded-[38px] font-bold flex justify-center items-center" for="file">{{ 'Datei auswählen' | t }}</label>
 <input{{ attributes.addClass(classes).setAttribute('id', 'file') }} />{{ children }}

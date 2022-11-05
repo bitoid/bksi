@@ -83,7 +83,7 @@
       </picture>
       <div class="absolute top-0 left-0 z-10 w-full h-full bg-darkBlue bg-opacity-70"></div>
     </div>
-    <h1 class="w-[85.14%] absolute top-1/2 left-4 -translate-y-1/2 flex flex-col gap-7 text-white text-[35px] tracking-[1.5px] leading-[44px] hyphens-manual md:gap-9 md:text-[60px] md:left-11 md:leading-[78px] md:tracking-[3px]">
+    <h1 class="w-[85.14%] absolute top-1/2 left-4 -translate-y-1/2 flex flex-col gap-[20px] text-white text-[35px] tracking-[1.5px] leading-[44px] hyphens-manual md:gap-[21px] md:text-[60px] md:left-11 md:leading-[78px] md:tracking-[3px]">
       <span class="text-[12px] leading-[17px] tracking-[0.6px] md:text-[14px] md:leading-[18px] md:tracking-[0.7px]">{{ 'Projekte' | t }}</span>
       {{ node.label }}
     </h1>
@@ -91,14 +91,14 @@
   </div>
 
   <div class="grid grid-cols-1 items-start paragraph-text md:grid-cols-2">
-    <div class="pl-4 pr-10 py-20 bg-lightGray flex flex-col md:px-40 md:pt-[200px] md:pb-60 md:sticky top-0">
+    <div class="pl-4 pr-10 py-[75px]   bg-lightGray flex flex-col md:px-40 md:pt-[191px] md:pb-[243px] md:sticky top-0">
       <div class="text-fade">
         <h3 class="text-content-fade  mb-[50px] headline-large">
           {{ 'Projekt Eckdaten' | t }}
         </h3>
       </div>
       <div class="text-fade">
-        <div class="flex  flex-col gap-3 text-content-fade">
+        <div class="flex  flex-col gap-[25px] text-content-fade">
           <span class="project-type">{{ content.field_project_type[0]["#title"] }}</span>
           <div class="flex flex-col">
             {% if content.field_project_sector[0]["#title"] or content.field_project_service[0]["#title"] %}
@@ -117,20 +117,20 @@
         </div>
       </div>
     </div>
-    <div class="pt-20 pb-56 md:pt-[200px] md:pb-[300px]">
+    <div class="pt-[75px] pb-[79px]  md:pt-[191px] md:pb-[243px]">
       <div class="text-fade">
-        <article class="text-content-fade flex flex-col gap-32 px-4 md:pl-[100px] md:pr-28">
-          <div class="flex flex-col gap-5">
+        <article class="text-content-fade flex flex-col gap-[70px] px-4 md:pl-[100px] md:pr-28">
+          <div class="flex flex-col gap-[30px]">
             <h4 class="headline-medium">{{ content.field_project_description_title }}</h4>
-            <p class="paragraph-text">{{ content.field_project_description }}</p>
+            <div class="paragraph-text">{{ content.field_project_description }}</div>
           </div>
-          <div class="flex flex-col gap-5">
+          <div class="flex flex-col gap-[30px]">
             <h4 class="headline-medium">{{ content.field_project_challange_title }}</h4>
-            <p class="paragraph-text">{{ content.field_project_challenges }}</p>
+            <div class="paragraph-text">{{ content.field_project_challenges }}</div>
           </div>
         </article>
       </div>
-      <div class="fade-in-image-container mt-28 mb-24 h-[50vh] md:h-full w-auto">
+      <div class="fade-in-image-container mt-[70px] mb-[70px] h-[50vh] md:h-full w-auto">
       {% if content.field_project_challenge_image.0['#item']%}
         <picture>
           <source srcset="{{ file_url(content.field_project_challenge_image.0['#item'].entity.uri.value | image_style('large_webp')) }}" media="only screen and (max-width: 450px)" type="image/webp" >
@@ -140,10 +140,10 @@
         {% endif %}
       </div>
       <div class="text-fade">
-        <article class="text-content-fade flex flex-col gap-32 px-4 md:pl-[100px] md:pr-28">
-          <div class="flex flex-col gap-5">
+        <article class="text-content-fade flex flex-col gap-[70px] px-4 md:pl-[100px] md:pr-28">
+          <div class="flex flex-col gap-[30px]">
             <h4 class="headline-medium">{{ content.field_sustainability_issue_title }}</h4>
-            <p class="paragraph-text">{{ content.field_sustainability_issues }}</p>
+            <div class="paragraph-text">{{ content.field_sustainability_issues }}</div>
           </div>
         </article>
       </div>
@@ -153,7 +153,7 @@
 
 <section>
 {% if content.field_project_image.0['#item'] %}
-  <div class="flex flex-col gap-10 mt-[150px] mb-[100px] md:my-[150px]">
+  <div class="flex flex-col gap-[36px] md:gap-[45px] mt-[75px] mb-[75px] md:my-[176px]">
     <h3 class="headline-large px-4 md:px-7 ">
       {{ content.field_headline_impression }}
     </h3>
@@ -191,7 +191,7 @@
             {% endif %}
           {% endfor %}
         </ul>
-        <div class="md:pl-[25%] pl-[18px]   mt-[20px] md:mt-[20px] paragraph-text flex ">
+        <div class="md:pl-[25%] pl-[18px]   mt-[16px] md:mt-[20px] paragraph-text flex ">
             <div class="flex gap-2 " id="title-num"></div>
             <p class="  md:ml-[77px] ml-[23px] text-left md:max-w-[700px]" id="title"> </p>
         <div>
@@ -205,8 +205,8 @@
     <h3 class="headline-large  md:pb-[45px] pb-[20px] ">
       {{ 'Ähnliche Projekte' | t }}
     </h3>
-     <div class="random-projects grid grid-cols-1 gap-[75px] md:grid-cols-2 md:gap-10"></div>
-     <a class="max-w-fit archon-span group relative h-10 flex gap-4 z-10 pr-6 items-center rounded-[40px] overflow-hidden mx-auto mt-28" href="/projects">
+     <div class="random-projects grid grid-cols-1 gap-[70px] md:grid-cols-2 md:gap-[41px]"></div>
+     <a class="max-w-fit archon-span group relative h-10 flex gap-4 z-10 pr-6 items-center rounded-[40px] overflow-hidden mx-auto md:mt-[80px] mt-[90px]" href="/projects">
          <span class="absolute left-0 top-0 -z-10 h-full w-0 rounded-[40px] bg-mainRed group-hover:w-full"></span>
          <span class="flex items-center justify-center h-full rounded-full aspect-square bg-mainRed"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
          {{ 'Zur Projektübersicht' | t }}

@@ -28,21 +28,21 @@
 <section {{ attributes }}>
   {{ title_suffix }}
             <div class="flex flex-col md:flex-row">
-                <div class="fade-in-image-container relative h-[50vh] w-full md:w-[50vw] md:h-screen">
+                <div class="fade-in-image-container relative h-[50vh] w-full md:w-[50vw] md:h-auto">
                   <picture>
                     <source srcset="{{ file_url(content.field_image.0['#item'].entity.uri.value | image_style('large_webp')) }}" media="only screen and (max-width: 450px)" type="image/webp" >
                     <source srcset="{{ file_url(content.field_image.0['#item'].entity.uri.value | image_style('original_webp')) }}" media="only screen and (min-width: 450px)" type="image/webp">
                     <img class="h-full w-full object-cover fade-in-image" src="{{ file_url(content.field_image.0['#item'].entity.uri.value) }}" alt="">
                   </picture>
                 </div>
-                <div class="px-4 py-20 md:pl-[100px] md:pr-20 md:py-40 md:w-1/2 md:flex md:flex-col md:justify-center">
-                    <div class="text-fade mb-20">
+                <div class="px-4 py-[75px] md:pl-[100px] md:pr-20 md:py-[152px] md:w-1/2 md:flex md:flex-col md:justify-center">
+                    <div class="text-fade mb-[50px]">
                         <h3 class="text-content-fade  flex flex-col gap-5 md:gap-7 headline-large">
                             <span class="text-[13px] leading-[15px] tracking-[.65px] md:text-[16px] md:leading-[18px] md:tracking-[0.8px]">{{ content.field_slogan }}</span>
                             {{ content.field_title }}
                         </h3>
                     </div>
-                    <ul class="flex flex-col gap-7 text-[15px] leading-[26px] tracking-[0.75px]">
+                    <ul class="flex flex-col gap-[35px] text-[15px] leading-[26px] tracking-[0.75px]">
                         {% for paragraph in content.field_accordion_title %}
                           {% if paragraph['#paragraph'] %}
                             <li class="flex flex-col gap-8 dropdown-karriere-container">

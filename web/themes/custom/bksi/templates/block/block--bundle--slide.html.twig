@@ -19,8 +19,8 @@
                         <div class="flex items-center overflow-x-hidden slider-container flex-nowrap scroll-smooth">
                             {% for paragraph in content.field_slider %}
                              {% if paragraph['#paragraph'] %}
-                            <div class="mt-[75px] slider-content w-full md:mt-[53px] flex-shrink-0 pb-[75px] md:pb-[0px]">
-                                <div class=" text-[76px] leading-[100px] tracking-[3.8px] mb-[75px] font-['halbfett'] text-center md:text-[155px] md:leading-[203px] md:tracking-[7.75px] md:mb-[52px]">{{ paragraph['#paragraph'].field_year.0.value }}</div>
+                            <div class="mt-[57px] slider-content w-full md:mt-[53px] flex-shrink-0 pb-[107px] md:pb-[0px]">
+                                <div class=" text-[76px] leading-[100px] tracking-[3.8px] mb-[73px] font-['halbfett'] text-center md:text-[155px] md:leading-[203px] md:tracking-[7.75px] md:mb-[52px]">{{ paragraph['#paragraph'].field_year.0.value }}</div>
                                 <p class="text-[20px] tracking-[1px] font-['halbfett']">{{ paragraph['#paragraph'].field_year_text_for_slider.0.value }}</p>
                             </div>
                             {% endif %}

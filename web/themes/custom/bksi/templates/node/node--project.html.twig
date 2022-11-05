@@ -131,11 +131,13 @@
         </article>
       </div>
       <div class="fade-in-image-container mt-28 mb-24 h-[50vh] md:h-full w-auto">
+      {% if content.field_project_challenge_image.0['#item']%}
         <picture>
           <source srcset="{{ file_url(content.field_project_challenge_image.0['#item'].entity.uri.value | image_style('large_webp')) }}" media="only screen and (max-width: 450px)" type="image/webp" >
           <source srcset="{{ file_url(content.field_project_challenge_image.0['#item'].entity.uri.value | image_style('original_webp')) }}" media="only screen and (min-width: 450px)" type="image/webp">
           <img class="object-cover w-full h-full " src="{{  file_url(content.field_project_challenge_image.0['#item'].entity.uri.value) }}" alt="{{content.field_project_challenge_image.0['#item'].alt}}">
         </picture>
+        {% endif %}
       </div>
       <div class="text-fade">
         <article class="text-content-fade flex flex-col gap-32 px-4 md:pl-[100px] md:pr-28">

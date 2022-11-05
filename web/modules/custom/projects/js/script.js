@@ -32,14 +32,14 @@ function displayData(arr) {
   if (!arr.length) {
     output.classList.remove('grid', 'grid-cols-1');
     output.classList.add('flex', 'justify-center');
-    output.innerHTML += "No Projects For Such Customers";
+    output.innerHTML += "Keine Projekte gefunden.";
   } else {
     output.classList.remove('flex', 'justify-center');
     output.classList.add('grid', 'grid-cols-1');
     for (projectsData of arr) {
       templateHtml = `
         <div class="group md:relative md:overflow-hidden">
-               <a href="${projectsData['url']}" class="${parseInt(projectsData['tick']) !== 1 ? 'pointer-events-none relative block w-full h-56 md:h-[400px] mb-5 md:mb-0' : 'relative block w-full h-56 md:h-[400px] mb-5 md:mb-0'}">
+               <a href="${projectsData['url']}" class="${parseInt(projectsData['tick']) !== 1 ? 'pointer-events-none relative block w-full h-56 md:h-[400px] mb-5 md:mb-0' : 'relative block w-full h-56 md:h-[400px] mb-[15px] md:mb-0'}">
                     <div class="relative fade-in-image-container h-full">
                         <picture>
                           <source srcset="${projectsData['image']['large_webp'] ? projectsData['image']['large_webp'] : ''}" media="only screen and (max-width: 450px)" type="image/webp" >
@@ -52,7 +52,7 @@ function displayData(arr) {
                     <span class="absolute right-5 bottom-5 w-10 h-10 rounded-full bg-white flex items-center justify-center md:hidden"><img src="modules/custom/projects/images/arrow-textlinks.svg" alt=""/></span>
                     <h4 class="hidden text-2xl absolute bottom-10 left-10 text-white font-semibold group-hover:bottom-[calc(100%-60px)] group-hover:translate-y-1/2 z-10 md:block">${projectsData['title']}</h4>
                </a>
-               <div class="opacity-100 flex flex-col gap-4 md:absolute md:translate-y-full md:w-full md:h-full md:bg-darkBlue md:opacity-0 md:top-0 md:text-white md:p-10 md:pt-[125px] md:pl-8 md:gap-8 md:group-hover:translate-y-0 md:group-hover:opacity-100">
+               <div class="opacity-100 flex flex-col gap-[15px] md:absolute md:translate-y-full md:w-full md:h-full md:bg-darkBlue md:opacity-0 md:top-0 md:text-white md:p-10 md:pt-[125px] md:pl-8 md:gap-8 md:group-hover:translate-y-0 md:group-hover:opacity-100">
                     <h4 class="text-[20px]  leading-[24px] tracking-[1px] md:hidden">${projectsData['title']}</h4>
 
                     <div class="flex items-start gap-4 text-[15px] tracking-[0.75px] leading-[22px] md:gap-10">

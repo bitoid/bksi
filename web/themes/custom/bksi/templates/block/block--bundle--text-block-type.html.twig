@@ -30,14 +30,14 @@
 <section {{ attributes }}> 
 {{ title_suffix }}
   <div class="bg-white text-fade">
-    <div class="text-content-fade flex flex-col justify-center px-4 pt-[75px] pb-[75px] md:max-w-[842px] md:mx-auto md:pt-[100px] md:pb-[150px]">
+    <div class="text-content-fade flex flex-col justify-center px-4 py-[75px] md:max-w-[842px] md:mx-auto  md:py-[150px]">
       <h2 class=" flex flex-col gap-5 headline-large">
         {% if content.field_slogan.0 %}
           <span class="span-subline">{{ content.field_slogan }}</span>
         {% endif %}
         {{ content.field_title.0["#text"]|striptags|raw }}
       </h2>
-      <article class="paragraph-text mt-[86px] md:mt-[59px] flex flex-col gap-5">
+      <article class="paragraph-text mt-[50px] flex flex-col gap-5">
         {% for description in content.field_text_block_description %}
         {% if description['#text'] %}
             {{ description }}

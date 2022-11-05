@@ -5,7 +5,7 @@
         </h3>
         <div class="grid grid-cols-2 gap-2 md:grid-cols-6 md:gap-10">
         	{% for customer in customers %}
-        	<a href="/projekte?customer={{ customer.customer_name }}">
+        	<a href="/projects?customer={{ customer.customer_name }}.html#container">
             <picture>
               <source srcset="{{ customer.logo['large_webp'] }}" media="only screen and (max-width: 450px)" type="image/webp" >
               <source srcset="{{ customer.logo['large_jpg'] }}" media="only screen and (max-width: 450px)" type="image/jpeg" >

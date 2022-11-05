@@ -1,15 +1,15 @@
 <section {{ attributes }}> 
 {{ title_suffix }}
-<div class="md:max-w-[790px] tracking-[1px]">
-    <h2 class="flex flex-col gap-5 text-[26px] tracking-[1.3px] leading-[29px] mb-[61px] md:mb-[109px] md:text-[35px] md:tracking-[1.75px] md:leading-[39px] font-['halbfett']">
+<div class="md:max-w-[790px] pt-[76px] md:pt-[73px] tracking-[1px]">
+    <h2 class="flex flex-col gap-[20px] text-[26px] tracking-[1.3px] leading-[29px] mb-[54px] md:mb-[109px] md:text-[35px] md:tracking-[1.75px] md:leading-[39px] font-['halbfett']">
         <span class="text-[13px] leading-[15px] tracking-[.65px] md:text-[16px] md:leading-[21px] md:tracking-[.8px] font-['halbfett']">{{content.field_slogan[0]}}</span>
         {{content.field_title[0]}}
     </h2>
-    <article class="flex flex-col text-xl leading-6 mb-7 font-['halbfett'] text-xl">
+    <article class="flex flex-col headline-medium mb-[24px] font-['halbfett'] ">
         {{content.field_company_info[0]}}
     </article>
                 
-    <div class="flex  flex-col mb-[105px] gap-8 md:gap-28 md:mb-52 md:flex-row md:items-center font-['halbfett'] text-xl">
+    <div class="flex  flex-col mb-[100px] gap-[24px] md:gap-[28] md:mb-[203px] md:flex-row md:items-center font-['halbfett'] headline-medium">
         {{content.field_address[0]}}
         <div class="flex flex-col gap-2 leading-6">
             <a class="group !font-['halbfett']" href="mailto:info@bksi.de">{{ 'E-Mail:' | t }} <span class="group-hover:text-mainRed">{{content.field_e_mail[0]}}</span></a>

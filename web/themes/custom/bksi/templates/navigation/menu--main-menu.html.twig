@@ -41,13 +41,15 @@
                             {% endif %}
                             <img class="cursor-pointer dropdown-button md:cursor-default md:absolute md:-right-8 md:opacity-0 md:group-hover:opacity-100" src="/themes/custom/bksi/images/arrow-open-close-content.svg" alt="dropdown arrow">
                         </div>
-                        <ul class="text-[16px] leading-[12px] tracking-[0.8px] mt-10 ml-8 hidden md:m-0 md:mt-[21px] md:absolute md:top-full md:-left-8 md:w-[280px] md:bg-darkBlue text-white md:px-7 md:py-9 flex-col  gap-7 z-50 md:border-t border-mainRed md:hidden md:opacity-0 animate" data-dropdown-content>
-                            {% for below in item.below %}
-                                <li>
-                                    <a class="text-white duration-300 ease-out hover:text-mainRed font-['buch']" href="{{ below.url }}">{{ below.title }}</a>
-                                </li>
-                            {% endfor %}
-                        </ul>
+                        <div id="nav-dropdown_container" class="md:pt-[85px]">
+                            <ul class="text-[16px] leading-[12px] tracking-[0.8px] mt-10 ml-8 hidden md:m-0 md:absolute md:top-full md:-left-8 md:w-[280px] md:bg-darkBlue text-white md:px-7 md:py-9 flex-col  gap-7 z-50 md:border-t border-mainRed md:hidden md:opacity-0 animate" data-dropdown-content>
+                                {% for below in item.below %}
+                                    <li>
+                                        <a class="text-white duration-300 ease-out hover:text-mainRed font-['buch']" href="{{ below.url }}">{{ below.title }}</a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
                     </li>
                 {% else %}
                     <li class="flex items-center justify-center md:h-full">

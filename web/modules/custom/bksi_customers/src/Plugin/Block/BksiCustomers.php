@@ -32,13 +32,16 @@ class BksiCustomers extends BlockBase {
 
     $query = \Drupal::entityQuery('node');
     $nids = $query->condition('type', 'customer')
+      // ->condition('title', SORT_ASC)
       ->execute();
-
+    
+     
     $customers = [];
 
     foreach ($nids as $nid) {
-      $node = Node::load($nid);
+      $node = Node::load($nid);    
       $customer_name = $node->getTitle();
+      $link_boolean=$node->field_chose_link->value;
       $logo_id = $node->field_logo->target_id;
       $logo_alt = $node->field_logo->alt;
       $logo = File::load($logo_id)->getFileUri();
@@ -52,14 +55,15 @@ class BksiCustomers extends BlockBase {
       // $url = \Drupal\Core\Url::fromRoute('entity.node.canonical', ['node' => $nid], $options);
       // $url = $url->toString();
 
-      $customers[$nid] = [
-        'customer_name' => $customer_name,
+      $customers[$customer_name] = [
+        'link_boolean'=> $link_boolean,
+        'customer_name' =>strtolower($customer_name),
         'logo' => $logo_url,
         'logo_alt' => $logo_alt,
       ];
 
     }
-
+    $customers=array_sort($customers, 'customer_name', SORT_ASC);
     return [
       '#theme' => 'bksi_customers',
       '#block_title' => $block_title,
@@ -98,4 +102,40 @@ class BksiCustomers extends BlockBase {
   }
 
 
+}
+
+
+function array_sort($array, $on, $order=SORT_ASC)
+{
+    $new_array = array();
+    $sortable_array = array();
+
+    if (count($array) > 0) {
+        foreach ($array as $k => $v) {
+            if (is_array($v)) {
+                foreach ($v as $k2 => $v2) {
+                    if ($k2 == $on) {
+                        $sortable_array[$k] = $v2;
+                    }
+                }
+            } else {
+                $sortable_array[$k] = $v;
+            }
+        }
+
+        switch ($order) {
+            case SORT_ASC:
+                asort($sortable_array);
+            break;
+            case SORT_DESC:
+                arsort($sortable_array);
+            break;
+        }
+
+        foreach ($sortable_array as $k => $v) {
+            $new_array[$k] = $array[$k];
+        }
+    }
+
+    return $new_array;
 }

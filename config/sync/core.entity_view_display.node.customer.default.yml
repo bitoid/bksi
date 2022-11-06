@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.customer.field_chose_link
     - field.field.node.customer.field_logo
     - node.type.customer
   module:
@@ -13,6 +14,16 @@ targetEntityType: node
 bundle: customer
 mode: default
 content:
+  field_chose_link:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
   field_logo:
     type: image
     label: above

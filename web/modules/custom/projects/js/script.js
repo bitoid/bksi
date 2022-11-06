@@ -173,9 +173,14 @@ setup();
 function filterWithCompany(arr) {
   const query = new URLSearchParams(window.location.search);
   const company = query.get("customer");
+  const services= query.get("services");
+  console.log(arr);
   if (company) {
     filters.customer = company.toLowerCase();
     return arr.filter(e => e.customer == company);
+  }else if(services){
+    filters.services = services.toLowerCase();
+    return arr.filter(e => e.service == services);
   }
   return arr;
 };
@@ -247,7 +252,7 @@ function createButton(type, value) {
 function toggleClearAllBtn() {
   clearProjectsEl.classList.add('hidden');
   if (Object.keys(filters).length) {
-    clearProjectsEl.classList.remove('hidden');
+    clearProjectsEl.classList.remove('hidden');  
   }
 }
 

@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.customer.field_chose_link
     - field.field.node.customer.field_logo
     - image.style.thumbnail
     - node.type.customer
@@ -19,6 +20,13 @@ content:
     weight: 10
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_chose_link:
+    type: boolean_checkbox
+    weight: 122
+    region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   field_logo:
     type: image_image

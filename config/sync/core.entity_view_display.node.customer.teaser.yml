@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.customer.field_chose_link
     - field.field.node.customer.field_logo
     - node.type.customer
   module:
@@ -19,5 +20,6 @@ content:
     weight: 100
     region: content
 hidden:
+  field_chose_link: true
   field_logo: true
   langcode: true

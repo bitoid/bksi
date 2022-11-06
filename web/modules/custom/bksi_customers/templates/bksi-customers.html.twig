@@ -5,15 +5,25 @@
         </h3>
         <div class="grid grid-cols-2 gap-2 md:grid-cols-6 md:gap-10">
         	{% for customer in customers %}
-        	<a href="/projects?customer={{ customer.customer_name }}.html#container">
-            <picture>
-              <source srcset="{{ customer.logo['large_webp'] }}" media="only screen and (max-width: 450px)" type="image/webp" >
-              <source srcset="{{ customer.logo['large_jpg'] }}" media="only screen and (max-width: 450px)" type="image/jpeg" >
-              <source srcset="{{ customer.logo['original_webp'] }}" media="only screen and (min-width: 450px)" type="image/webp">
-              <source srcset="{{ customer.logo['original_jpg'] }}" media="only screen and (min-width: 450px)" type="image/jpeg">
-              <img class="w-full h-full" src="{{ customer.logo['original_jpg'] }}" alt="{{ customer.logo_alt }}">
-            </picture>
-        	</a>
+                {% if customer.link_boolean == 1 %}
+                    <a href="/projects?customer={{ customer.customer_name }}#container">
+                    <picture>
+                        <source srcset="{{ customer.logo['large_webp'] }}" media="only screen and (max-width: 450px)" type="image/webp" >
+                        <source srcset="{{ customer.logo['large_jpg'] }}" media="only screen and (max-width: 450px)" type="image/jpeg" >
+                        <source srcset="{{ customer.logo['original_webp'] }}" media="only screen and (min-width: 450px)" type="image/webp">
+                        <source srcset="{{ customer.logo['original_jpg'] }}" media="only screen and (min-width: 450px)" type="image/jpeg">
+                        <img class="w-full h-full" src="{{ customer.logo['original_jpg'] }}" alt="{{ customer.logo_alt }}">
+                    </picture>
+                    </a>
+                {% else %}
+                    <picture>
+                        <source srcset="{{ customer.logo['large_webp'] }}" media="only screen and (max-width: 450px)" type="image/webp" >
+                        <source srcset="{{ customer.logo['large_jpg'] }}" media="only screen and (max-width: 450px)" type="image/jpeg" >
+                        <source srcset="{{ customer.logo['original_webp'] }}" media="only screen and (min-width: 450px)" type="image/webp">
+                        <source srcset="{{ customer.logo['original_jpg'] }}" media="only screen and (min-width: 450px)" type="image/jpeg">
+                        <img class="w-full h-full" src="{{ customer.logo['original_jpg'] }}" alt="{{ customer.logo_alt }}">
+                        </picture>
+                {% endif %}
         	{% endfor %}
         </div>
     </div>

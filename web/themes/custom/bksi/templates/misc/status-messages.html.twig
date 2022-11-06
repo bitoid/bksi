@@ -22,9 +22,9 @@
 
 <div data-drupal-messages class="bg-lightGray md:pl-[152px] pb-[150px] px-4 mt-[-50px]">
 {% for type, messages in message_list %}
-  <div role="contentinfo" aria-label="{{ status_headings[type] }}"{{ attributes|without('role', 'aria-label') }} class="w-[339px] md:w-[656px]">
+  <div role="contentinfo" aria-label="{{ status_headings[type] }}"{{ attributes|without('role', 'aria-label') }} class="w-[339px]   md:w-[656px]">
     {% if status_headings[type]  == 'Status message' %}
-     {{ messages|first }}
+   {{  messages|first }}
     {% endif %}
   </div>
 {% endfor %}

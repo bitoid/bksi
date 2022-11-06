@@ -8,7 +8,7 @@
     </div>
     <div class="flex flex-col gap-[20px]  md:w-[75%] lg:w-2/3">
       {% for news in news_array %}
-          <a href="{{path('entity.node.canonical', {'node': news.nid})}}" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5">
+          <div  class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5">
             <div class="relative fade-in-image-container w-full h-[25vh] md:h-[250px] md:col-span-1 lg:col-span-2 lg:h-full overflow-hidden">
               <picture>
                 <source srcset="{{ news.news_image['large_webp'] }}" media="only screen and (max-width: 450px)" type="image/webp" >
@@ -29,7 +29,7 @@
                 </p>
               </div>
             </div>
-          </a>
+          </div>
       {% endfor %}
     </div>
   </div>

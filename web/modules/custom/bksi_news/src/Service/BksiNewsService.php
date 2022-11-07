@@ -12,13 +12,16 @@ use Drupal\file\Entity\File;
 class BksiNewsService
 {
 
-  public function __construct(protected EntityTypeManagerInterface $entityTypeManager){}
+  public function __construct(protected EntityTypeManagerInterface $entityTypeManager)
+  {
+  }
 
   /**
    * @throws InvalidPluginDefinitionException
    * @throws PluginNotFoundException
    */
-  public function bksiNewsData(string $type, int $quantity): array {
+  public function bksiNewsData(string $type, int $quantity): array
+  {
     // Return data with Article/project news content
     return array_map(function (Node $item) {
       $file_id = $item->field_image->target_id;
@@ -27,7 +30,7 @@ class BksiNewsService
       $url['original_webp'] = ImageStyle::load('original_webp')->buildUrl($news_image);
       $url['large_jpg'] = ImageStyle::load('large')->buildUrl($news_image);
       $url['large_webp'] = ImageStyle::load('large_webp')->buildUrl($news_image);
-      $date = date("F Y", $item->created->value);
+      $date = $item->created->value;
       $body = str_replace("&nbsp;", ' ', $item->body->summary);
       return [
         'nid' => $item->nid->value,
@@ -36,9 +39,9 @@ class BksiNewsService
         'body' => $body,
         'news_image' => $url,
       ];
-    }, $this->fetchBksiData($type ,$quantity));
+    }, $this->fetchBksiData($type, $quantity));
   }
-// Get nodes data from article/project news content type
+  // Get nodes data from article/project news content type
   /**
    * @throws InvalidPluginDefinitionException
    * @throws PluginNotFoundException
@@ -61,8 +64,8 @@ class BksiNewsService
   public function fetchTermId(): array
   {
     $terms = $this->entityTypeManager->getStorage('taxonomy_term')->loadTree('news');
-    return array_map(function($term){
+    return array_map(function ($term) {
       return $term->tid;
-    },$terms);
+    }, $terms);
   }
 }

@@ -1,10 +1,12 @@
 <section {{ attributes }}>
 	{{ title_suffix }}
 	<div class="text-white bg-darkBlue text-fade">
-		<div class="text-content-fade flex flex-col items-center justify-center px-4 py-[75px] text-center md:max-w-[816px] md:mx-auto md:py-[150px]">
-			<blockquote class="text-[35px] tracking-[1.75px] leading-[43px] mb-[50px] md:text-[60px] md:tracking-[3px] md:leading-[70px] font-['halbfett'] ">
-				<q>{{ content.field_motto.0 }}</q>
-			</blockquote>
+		<div class="text-content-fade flex flex-col items-center justify-center md:px-0  px-[18px] py-[75px] text-center md:max-w-[1060px] md:mx-auto md:py-[150px]">
+			<div class="text-[35px] tracking-[1.75px] leading-[43px] mb-[50px] md:text-[60px] md:tracking-[3px] md:leading-[70px] font-['halbfett'] ">
+				<span class="inline-block -tracking-[1px]">,,</span>
+				{{ content.field_motto.0 }}
+				<span class="inline-block rotate-180 -tracking-[1px]">,,</span>
+			</div>
 			<div class="flex items-center gap-5 text-[15px] leading-[22px] tracking-[0.75px]  font-['buch']">
 				<img class="w-5 mt-[1px]" src="/{{ base_path ~ directory }}/images/arrow-textlinks.svg" alt="">
 				{{ content.field_motto_subline }}

@@ -28,78 +28,78 @@
 
 <section {{ attributes }}> 
 {{ title_suffix }}
-  <div class="flex flex-col md:gap-20 md:flex-row">
-  {% if path('<current>') == '/career' %}
-  <div class="px-4 py-[75px] order-2 md:order-1 md:flex md:flex-col md:justify-center md:w-1/2 md:px-7 md:py-[150px]">
-    <div class="text-fade mb-[50px]">
-      <h3 class="text-content-fade headline-large flex flex-col gap-5 md:gap-7 ">
-        <span class="span-subline">{{ content.field_slogan | raw  }}</span>
-        {{ content.field_title | raw }}
-      </h3>
-    </div>
-    <div class="text-fade self-start">
-      <div class="text-content-fade">
-        <div class="flex flex-col gap-2 paragraph-text mb-[25px]">
-          <p class="font-['halbfett']">{{ 'Bewirb dich direkt:' | t }}</p>
-          <span>{{ content.field_apply_job | raw  }}</span>
-        </div>
-        <div class="flex flex-col gap-2 text-[15px] leading-[22px] tracking-[0.75px] mb-[50px]">
-          <span class="font-['halbfett']">{{ content.field_get_in_touch }}</span>
-          {% for phone in content.field_contact_phone %}
-            {% if phone['#context'] %}
-              <a class="group font-['buch']" href="tel:{{ phone['#context'].value }}"> <span class="group-hover:text-mainRed">{{ phone['#context'].value }}</span></a>
-            {% endif %}
-          {% endfor %}
-          {% for email in content.field_contact_email %}
-            {% if email['#context'] %}
-              <a class="group font-['buch']" href="mailto:{{ email['#context'].value }}"><span class="group-hover:text-mainRed">{{ email['#context'].value }}</span></a>
-            {% endif %}
-          {% endfor %}
-        </div>
-        <article class="flex flex-col gap-1 text-[15px] leading-[22px] tracking-[0.75px]">
-          {{ content.field_ltd_bksi_description | raw }}
-        </article>
-      </div>
-    </div>
-  </div>
-  {% else %}
-    <div class="px-4 py-[75px] order-2 md:order-1 md:flex md:flex-col md:justify-center md:items-center md:w-1/2 md:px-10 md:py-[150px] md:pt-[240px]">
-      <div class="text-fade mb-[50px]">
-        <h3 class="text-content-fade headline-large flex flex-col gap-5 md:gap-7 ">
+  <div class="flex text-fade flex-col md:gap-20 md:flex-row">
+    {% if path('<current>') == '/career' %}
+    <div class="px-4 text-content-fade py-[75px] order-2 md:order-1 md:flex md:flex-col md:justify-center md:w-1/2 md:px-7 md:py-[150px]">
+      <div class=" mb-[50px]">
+        <h3 class=" headline-large flex flex-col gap-5 md:gap-7 ">
+          <span class="span-subline">{{ content.field_slogan | raw  }}</span>
           {{ content.field_title | raw }}
         </h3>
       </div>
-      <div class="text-fade self-start">
-        <div class="text-content-fade w-1/2 paragraph-text">
-          <article class="flex flex-col gap-5 mb-[25px]">
-                <div class="text-content-fade flex flex-col gap-3"> {{ content.field_ltd_bksi_description | raw }} </div>
-          </article>
-          <div class="flex flex-col gap-2 text-[15px] leading-[22px] tracking-[0.75px] mb-[25px]">
+      <div class=" self-start">
+        <div class="">
+          <div class="flex flex-col gap-2 paragraph-text mb-[25px]">
+            <p class="font-['halbfett']">{{ 'Bewirb dich direkt:' | t }}</p>
+            <span>{{ content.field_apply_job | raw  }}</span>
+          </div>
+          <div class="flex flex-col gap-2 text-[15px] leading-[22px] tracking-[0.75px] mb-[50px]">
+            <span class="font-['halbfett']">{{ content.field_get_in_touch }}</span>
             {% for phone in content.field_contact_phone %}
               {% if phone['#context'] %}
-                  <a class="group font-['buch']" href="tel:{{ phone['#context'].value }}">Telefon: <span class="group-hover:text-mainRed">{{ phone['#context'].value }}</span></a>
+                <a class="group font-['buch']" href="tel:{{ phone['#context'].value }}"> <span class="group-hover:text-mainRed">{{ phone['#context'].value }}</span></a>
+              {% endif %}
+            {% endfor %}
+            {% for email in content.field_contact_email %}
+              {% if email['#context'] %}
+                <a class="group font-['buch']" href="mailto:{{ email['#context'].value }}"><span class="group-hover:text-mainRed">{{ email['#context'].value }}</span></a>
               {% endif %}
             {% endfor %}
           </div>
-          {% for email in content.field_contact_email %}
-            {% if email['#context'] %}
-              <a class="group font-['buch']" href="mailto:{{ email['#context'].value }}">E-Mail: <span class="group-hover:text-mainRed">{{ email['#context'].value }}</span></a>
-            {% endif %}
-          {% endfor %}
+          <article class="flex flex-col gap-1 text-[15px] leading-[22px] tracking-[0.75px]">
+            {{ content.field_ltd_bksi_description | raw }}
+          </article>
         </div>
       </div>
     </div>
-    {% endif %}
-    <div class="relative fade-in-image-container order-1 w-full h-[60vh] md:order-2 md:w-1/2 md:h-auto">
-      <picture>
-        <source srcset="{{ file_url(content.field_image.0['#item'].entity.uri.value | image_style('large_webp')) }}" media="only screen and (max-width: 450px)" type="image/webp" >
-        <source srcset="{{ file_url(content.field_image.0['#item'].entity.uri.value | image_style('original_webp')) }}" media="only screen and (min-width: 450px)" type="image/webp">
-        <img class="w-full fade-in-image h-full object-cover" src="{{ file_url(content.field_image.0['#item'].entity.uri.value) }}" alt="">
-      </picture>
-      <a href="{{ content.field_location_link.0["#url"] }}" class="group flex items-center gap-5 absolute left-5 bottom-5" target="_blank">
-        <div class="w-[50px] aspect-square rounded-full bg-white flex items-center justify-center group-hover:scale-125"><img src="/{{ base_path ~ directory }}/images/arrow-textlinks.svg" alt=""></div>
-        <span class="text-[15px] leading-[12px] tracking-[0.75px]">{{ content.field_location_link[0]["#title"] }}</span>
-      </a>
-    </div>
+    {% else %}
+      <div class="px-4 text-content-fade py-[75px] order-2 md:order-1 md:flex md:flex-col md:justify-center md:items-center md:w-1/2 md:px-10 md:py-[150px] md:pt-[240px]">
+        <div class=" mb-[50px]">
+          <h3 class=" headline-large flex flex-col gap-5 md:gap-7 ">
+            {{ content.field_title | raw }}
+          </h3>
+        </div>
+        <div class=" self-start">
+          <div class="w-1/2 paragraph-text">
+            <article class="flex flex-col gap-5 mb-[25px]">
+                  <div class=" flex flex-col gap-3"> {{ content.field_ltd_bksi_description | raw }} </div>
+            </article>
+            <div class="flex flex-col gap-2 text-[15px] leading-[22px] tracking-[0.75px] mb-[25px]">
+              {% for phone in content.field_contact_phone %}
+                {% if phone['#context'] %}
+                    <a class="group font-['buch']" href="tel:{{ phone['#context'].value }}">Telefon: <span class="group-hover:text-mainRed">{{ phone['#context'].value }}</span></a>
+                {% endif %}
+              {% endfor %}
+            </div>
+            {% for email in content.field_contact_email %}
+              {% if email['#context'] %}
+                <a class="group font-['buch']" href="mailto:{{ email['#context'].value }}">E-Mail: <span class="group-hover:text-mainRed">{{ email['#context'].value }}</span></a>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      <div class="relative fade-in-image-container order-1 w-full h-[60vh] md:order-2 md:w-1/2 md:h-auto">
+        <picture>
+          <source srcset="{{ file_url(content.field_image.0['#item'].entity.uri.value | image_style('large_webp')) }}" media="only screen and (max-width: 450px)" type="image/webp" >
+          <source srcset="{{ file_url(content.field_image.0['#item'].entity.uri.value | image_style('original_webp')) }}" media="only screen and (min-width: 450px)" type="image/webp">
+          <img class="w-full fade-in-image h-full object-cover" src="{{ file_url(content.field_image.0['#item'].entity.uri.value) }}" alt="">
+        </picture>
+        <a href="{{ content.field_location_link.0["#url"] }}" class="group flex items-center gap-5 absolute left-5 bottom-5" target="_blank">
+          <div class="w-[50px] aspect-square rounded-full bg-white flex items-center justify-center group-hover:scale-125"><img src="/{{ base_path ~ directory }}/images/arrow-textlinks.svg" alt=""></div>
+          <span class="text-[15px] leading-[12px] tracking-[0.75px]">{{ content.field_location_link[0]["#title"] }}</span>
+        </a>
+      </div>
   </div>
 </section>

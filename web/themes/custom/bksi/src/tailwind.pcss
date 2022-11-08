@@ -133,13 +133,13 @@ ul.dashed > li:before {
 
 .fade-in-image {
     position: absolute;
-    transform: translateX(-100%);
+    transform: translateY(100%);
     opacity: 0;
-    transition: all 1.2s cubic-bezier(.645,.045,.355,1);
+    transition: all 1.2s cubic-bezier(.215,.61,.355,1);
 }
 
 .fade-in-image-container.active .fade-in-image {
-    transform: translateX(0);
+    transform: translateY(0);
     opacity: 1;
 }
 

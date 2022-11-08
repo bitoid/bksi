@@ -1,14 +1,14 @@
 {% set counter = 1 %}
 
-<section>
-  <div class="bg-darkBlue px-4 pt-[96px] pb-[100px] md:pt-[150px] md:px-10 md:pb-[150px] text-white">
-    <div class="text-fade mb-[75px] md:mb-[150px]">
-      <h2 class="text-content-fade  flex flex-col gap-[22px] md:gap-[20px]  headline-large">
+<section class='text-fade'>
+  <div class="bg-darkBlue   px-4 pt-[96px] pb-[100px] md:pt-[150px] md:px-10 md:pb-[150px] text-white">
+    <div class="mb-[75px] md:mb-[150px]">
+      <h2 class=" flex flex-col gap-[22px] md:gap-[20px]  headline-large">
         <span class="md:text-[16px] md:leading-[21px] md:tracking-[0.8px] tracking-[0.55px] text-[11px] leading-[15px]">{{ title }}</span>
         {{ slogan }}
       </h2>
     </div>
-    <div class="grid grid-cols-1 gap-[100px] md:gap-x-10 md:gap-y-[190px] md:grid-cols-2">
+    <div class="grid text-content-fade grid-cols-1 gap-[100px] md:gap-x-10 md:gap-y-[190px] md:grid-cols-2">
       {% for service in services %}
           <div class="flex flex-col items-center  gap-10 md:flex-row">
             <div class="fade-in-image-container min-w-[250px] w-4/5 h-[33vh] md:min-w-[150px] md:mb-[50px] md:h-full relative"><img class=" w-full h-full fade-in-image" src="{{ file_url(service.service_image) }}" alt=""></div>

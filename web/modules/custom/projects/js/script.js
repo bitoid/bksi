@@ -60,7 +60,7 @@ function displayData(arr) {
                             <div  class="flex flex-col gap-3">
                                 <p class="!font-['halbfett']">${Drupal.t("Gebäudeart")}</p>
                                 <p>${projectsData['building']}</p>
-                           
+
                                 <p class="!font-['halbfett']">${Drupal.t("Auftraggeber")}</p>
                                 <p> ${projectsData['customer']}</p>
                             </div>
@@ -149,6 +149,7 @@ async function setup() {
     if (!e.target.closest(`#${type}-dropdown`)) return;
 
     const value = e.target.dataset.value ? e.target.dataset.value : e.target.parentElement.dataset.value;
+    const textValue = e.target.textContent ? e.target.textContent : e.target.parentElement.textContent;
     const listItem = e.target.dataset.value ? e.target.firstElementChild : e.target;
 
     if (!!listItem.dataset.disabled) return;
@@ -156,7 +157,7 @@ async function setup() {
     if (!filters[type]) {
       filters[type] = value;
 
-      createButton(type, value); // create button if its type doesn't exist in filter obj
+      createButton(type, textValue); // create button if its type doesn't exist in filter obj
     }
 
     filteredProjects = filterWithDropdown(data, filters);
@@ -174,13 +175,12 @@ function filterWithCompany(arr) {
   const query = new URLSearchParams(window.location.search);
   const company = query.get("customer");
   const services= query.get("services");
-  console.log(arr);
   if (company) {
     filters.customer = company.toLowerCase();
-    return arr.filter(e => e.customer == company);
+    return arr.filter(e => e.customer.toLowerCase() == filters.customer);
   }else if(services){
     filters.services = services.toLowerCase();
-    return arr.filter(e => e.service == services);
+    return arr.filter(e => e.service.toLowerCase() == filters.services);
   }
   return arr;
 };
@@ -252,7 +252,7 @@ function createButton(type, value) {
 function toggleClearAllBtn() {
   clearProjectsEl.classList.add('hidden');
   if (Object.keys(filters).length) {
-    clearProjectsEl.classList.remove('hidden');  
+    clearProjectsEl.classList.remove('hidden');
   }
 }
 

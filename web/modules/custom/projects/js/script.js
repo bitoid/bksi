@@ -174,12 +174,13 @@ setup();
 function filterWithCompany(arr) {
   const query = new URLSearchParams(window.location.search);
   const company = query.get("customer");
-  const services= query.get("services");
+  const services = query.get("services");
   if (company) {
     filters.customer = company.toLowerCase();
     return arr.filter(e => e.customer.toLowerCase() == filters.customer);
   }else if(services){
     filters.services = services.toLowerCase();
+    createButton("services", services);
     return arr.filter(e => e.service.toLowerCase() == filters.services);
   }
   return arr;

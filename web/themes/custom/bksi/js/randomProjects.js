@@ -23,14 +23,14 @@ function displayData(array) {
     for (projectsData of arr) {
         templateHtml = `
                 <div class="group md:relative md:overflow-hidden">
-                    <a href="${projectsData['url']}" class="${parseInt(projectsData['tick']) !== 1 ? 'pointer-events-none relative block w-full h-56 md:h-[400px] mb-5 md:mb-0' : 'relative block w-full h-56 md:h-[400px] mb-5 md:mb-0'}" class="relative block w-full h-56 md:h-[400px] mb-5 md:mb-0">
+                    <a href="${projectsData['url']}" class="${parseInt(projectsData['tick']) !== 1 ? 'pointer-events-none relative block w-full max-h-[400px] mb-5 md:mb-0' : 'relative block w-full max-h-[400px]  mb-5 md:mb-0'}" class="relative block w-full max-h-[400px] mb-5 md:mb-0">
                         <div class="relative fade-in-image-container h-full active">
                             <picture>
                               <source srcset="${projectsData['image']['large_webp'] ? projectsData['image']['large_webp'] : ''}" media="only screen and (max-width: 450px)" type="image/webp" >
                               <source srcset="${projectsData['image']['large_jpg'] ? projectsData['image']['large_jpg'] : ''}" media="only screen and (max-width: 450px)" type="image/jpeg" >
                               <source srcset="${projectsData['image']['original_webp'] ? projectsData['image']['original_webp'] : ''}" media="only screen and (min-width: 450px)" type="image/webp">
                               <source srcset="${projectsData['image']['original_jpg'] ? projectsData['image']['original_jpg'] : ''}" media="only screen and (min-width: 450px)" type="image/jpeg">
-                              <img class="w-full fade-in-image h-full object-cover" src="${projectsData['image']['original_jpg'] ? projectsData['image']['original_jpg'] : ''}" alt=""/>
+                              <img class="w-full fade-in-image " src="${projectsData['image']['original_jpg'] ? projectsData['image']['original_jpg'] : ''}" alt=""/>
                             </picture>
                         </div>
                         <span class="absolute right-5 bottom-5 w-10 h-10 rounded-full bg-white flex items-center justify-center md:hidden"><img src="../assets/bilder/arrows-navigation/arrow-textlinks.svg" alt=""></span>

@@ -130,12 +130,12 @@
           </div>
         </article>
       </div>
-      <div class="fade-in-image-container mt-[70px] mb-[70px] h-[50vh] md:h-full w-auto">
+      <div class="fade-in-image-container mt-[70px] mb-[70px] h-full w-auto">
       {% if content.field_project_challenge_image.0['#item']%}
         <picture>
           <source srcset="{{ file_url(content.field_project_challenge_image.0['#item'].entity.uri.value | image_style('large_webp')) }}" media="only screen and (max-width: 450px)" type="image/webp" >
           <source srcset="{{ file_url(content.field_project_challenge_image.0['#item'].entity.uri.value | image_style('original_webp')) }}" media="only screen and (min-width: 450px)" type="image/webp">
-          <img class="object-cover w-full h-full " src="{{  file_url(content.field_project_challenge_image.0['#item'].entity.uri.value) }}" alt="{{content.field_project_challenge_image.0['#item'].alt}}">
+          <img class=" w-full " src="{{  file_url(content.field_project_challenge_image.0['#item'].entity.uri.value) }}" alt="{{content.field_project_challenge_image.0['#item'].alt}}">
         </picture>
         {% endif %}
       </div>
@@ -184,7 +184,7 @@
                 <picture>
                   <source srcset="{{ file_url(image['#item'].entity.uri.value | image_style('large_webp')) }}" media="only screen and (max-width: 450px)" type="image/webp" >
                   <source srcset="{{ file_url(image['#item'].entity.uri.value | image_style('original_webp')) }}" media="only screen and (min-width: 450px)" type="image/webp">
-                  <img class="object-cover w-full h-full" src="{{  file_url(image['#item'].entity.uri.value) }}" alt="{{ image['#item'].alt }}">
+                  <img class=" w-full" src="{{  file_url(image['#item'].entity.uri.value) }}" alt="{{ image['#item'].alt }}">
                 </picture>
                   <p class="title-html hidden" > {{ image['#item'].title }}</p>
               </li>

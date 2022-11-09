@@ -55,17 +55,17 @@
         {% if paragraph['#paragraph'] %}
         <div class="grid grid-cols-1 lg:grid-cols-2 lg:items-center">
             {% if paragraph['#paragraph'].field_image_align.value | raw == "left"  %}
-            <div class="order-1 relative fade-in-image-container w-full h-[50vh] lg:h-full overflow-hidden">
+            <div class="order-1 relative fade-in-image-container w-full overflow-hidden">
             {% else %}
-            <div class="order-1 relative fade-in-image-container w-full h-[50vh] lg:h-full overflow-hidden lg:order-3">
+             <div class="order-1 relative fade-in-image-container w-full overflow-hidden lg:order-3">
             {% endif %}      
                 <picture>
                         <source srcset="{{ file_url(paragraph['#paragraph'].field_image.entity.uri.value | image_style('large_webp')) }}" media="only screen and (max-width: 450px)" type="image/webp" >
                         <source srcset="{{ file_url(paragraph['#paragraph'].field_image.entity.uri.value | image_style('original_webp')) }}" media="only screen and (min-width: 450px)" type="image/webp">
-                        <img class="fade-in-image object-cover h-full w-full" src="{{ file_url(paragraph['#paragraph'].field_image.entity.uri.value) }}" alt="{{ paragraph['#paragraph'].field_image.0.alt }} ">
+                        <img class=" fade-in-image  w-full" src="{{ file_url(paragraph['#paragraph'].field_image.entity.uri.value) }}" alt="{{ paragraph['#paragraph'].field_image.0.alt }} ">
                     </picture>
             </div>
-            <div class="order-2 px-4 py-[75px] bg-white text-fade md:w-1/2 md:mx-auto lg:w-full md:mx-0 md:px-28 md:py-[147px]">
+            <div class="order-2 px-4 py-[75px] bg-white text-fade md:w-1/2 md:mx-auto lg:w-full lg:p-0 md:max-w-[480px]">
                 <div class="text-content-fade ">
                 <h2 class="flex flex-col gap-[20px] headline-large pb-[50px]">
                     <span class="span-subline">{{ paragraph['#paragraph'].field_slogan.value }}</span>

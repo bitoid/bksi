@@ -1,24 +1,24 @@
 <section>
-	<div class="flex flex-col text-fade  px-4  py-[75px] bg-lightGray md:flex-row md:justify-between md:px-10 md:py-[150px] md:items-start">
+	<div class="flex flex-col text-fade  px-4  py-[75px] bg-lightGray 2xl:flex-row 2xl:justify-between 2xl:px-10 2xl:py-[150px] 2xl:items-start">
 		<div class="text-fade">
 			<h2 class="text-content-fade flex pb-[53px] flex-col gap-[9px] headline-large md:mb-0 md:self-start">
 				<span class="span-subline">{{ slogan }}</span>
 				{{ title }}
 			</h2>
 		</div>
-		<div class="flex text-content-fade   flex-col gap-[20px]  md:w-[75%] lg:w-2/3">
+		<div class="flex text-content-fade   flex-col gap-[20px]  md:w-full 2xl:w-2/3">
 			{% for news in news_array %}
-				<div class="grid  grid-cols-1 md:grid-cols-3 lg:grid-cols-5">
-					<div class="relative fade-in-image-container w-full h-[25vh] md:h-[250px] md:col-span-1 lg:col-span-2 lg:h-full overflow-hidden">
+				<div class="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-5">
+					<div class="relative fade-in-image-container w-full  lg:col-span-1 2xl:col-span-2  overflow-hidden">
 						<picture>
 							<source srcset="{{ news.news_image['large_webp'] }}" media="only screen and (max-width: 450px)" type="image/webp">
 							<source srcset="{{ news.news_image['large_jpg'] }}" media="only screen and (max-width: 450px)" type="image/jpeg">
 							<source srcset="{{ news.news_image['original_webp'] }}" media="only screen and (min-width: 450px)" type="image/webp">
 							<source srcset="{{ news.news_image['original_jpg'] }}" media="only screen and (min-width: 450px)" type="image/jpeg">
-							<img class="fade-in-image object-cover  w-full h-full" src="{{ news.news_image['original_jpg'] }}" alt="">
+							<img class="fade-in-image   w-full " src="{{ news.news_image['original_jpg'] }}" alt="">
 						</picture>
 					</div>
-					<div class="  py-[30px] md:px-[40px] md:py-[30px] px-[20px] bg-white md:h-[250px] md:col-span-2 lg:col-span-3">
+					<div class="  py-[30px] md:px-[40px] w-auto h-[250px] md:h-auto md:py-[30px] px-[20px] bg-white  lg:col-span-2 2xl:col-span-3">
 						<div class="flex flex-col gap-[20px] ">
 							<h3 class="flex flex-col gap-[5px] text-[20px] leading-[30px] tracking-[1px]">
 								{% set date = news.date|date("F")|t({}, {'context' : 'Long month name'}) ~ ' ' ~ news.date|date("Y") %}

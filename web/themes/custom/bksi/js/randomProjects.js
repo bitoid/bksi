@@ -4,6 +4,7 @@ const projectType = document.querySelector('.project-type').textContent.toLowerC
 let projectsArr = [];
 let data = [];
 let projectsToDisplay = 2;
+let filteredProjects = [];
 //fetch data from endpoint
 async function fetchData() {
     const response = await fetch('/bksi/projects/data');
@@ -11,11 +12,13 @@ async function fetchData() {
     return temp.data;
 }
 
-function displayData(arr) {
+function displayData(array) {
     projectsEl.innerHTML = "";
     templateHtml = '';
     projectsArr = [];
 
+    const currentProjectId = drupalSettings.path.currentPath.split("/")[1];
+    const arr = array.filter(project => project.nid != currentProjectId);
     //declaring html template for random projects array
     for (projectsData of arr) {
         templateHtml = `
@@ -41,7 +44,7 @@ function displayData(arr) {
                             <div  class="flex flex-col gap-3">
                                 <p class="!font-['halbfett']">${Drupal.t("Gebäudeart")}</p>
                                 <p>${projectsData['building']}</p>
-                           
+
                                 <p class="!font-['halbfett']">${Drupal.t("Auftraggeber")}</p>
                                 <p> ${projectsData['customer']}</p>
                             </div>
@@ -59,10 +62,9 @@ function displayData(arr) {
                         </div>
                     </div>
                         <a href="${projectsData['url']}" class="${parseInt(projectsData['tick']) !== 1 ? 'hidden pointer-events-none' : 'absolute right-5 bottom-5 w-10 h-10 rounded-full bg-white hidden md:flex items-center justify-center'} "><img src="/themes/custom/bksi/images/arrow-textlinks.svg" alt=""></a>
-                </div>     
+                </div>
             </div>
                `;
-
 
         projectsArr.push(templateHtml);
     }
@@ -97,9 +99,14 @@ function similarProjects(data, projectType) {
 }
 //function for get 2 random projects from data
 function getRandomProjects(arr, numprojects, output) {
-    for (let j = 0; j < numprojects; j++) {
+    if(arr[0]){
+      for (let j = 0; j < numprojects; j++) {
         let randNum = Math.floor(Math.random() * arr.length);
         arr[randNum] ? output.innerHTML += arr[randNum] : "";
         arr.splice(randNum, 1)
+      }
+    }else {
+      document.getElementById("random-projects_container").classList.add("hidden")
     }
+
 }

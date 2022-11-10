@@ -27,105 +27,18 @@
 #}
 {% set paragraph_conent =content.field %}
 
-<section {{ attributes }}> 
-{{ title_suffix }}
-<div class="text-fade">
-  <div class="pt-[140px] text-content-fade pb-[70px] px-4 md:w-1/2 md:pt-[240px] md:pb-[150px]  md:mx-auto">
-    <div class="">
-      <h3 class="text-[26px] tracking-[1.3px] leading-none md:text-[35px] md:leading-10 md:tracking-[1.75px] md:mb-[60px] mb-[40px]">
-        {{ content.field_imprint_title }}
-      </h3>
-    </div>
-    <div class="flex flex-col gap-8 paragraph-text">
-          <div class="">
-            <div class="">{{ content.field_tmg }}</div>
-          </div>
-      <div class="">
-        <div class="flex flex-col gap-1 text-content-fade">
-          <h4 class="font-semibold">{{ content.field_ltd_bksi[0]['#paragraph'].field_longtext_title.value }}</h4>
-            {% if content.field_ltd_bksi[0]['#paragraph'] %}
-               {{ content.field_ltd_bksi[0]['#paragraph'].field_longtext_body.value | raw }}
-            {% endif %}
-        </div>
-      </div>
-
-      <div class="">
-        <div class="flex flex-col gap-1 ">
-          {% if content.field_imprint_representative[0]['#context'] %}
-            <h4 class="font-semibold">{{ 'Vertreten durch:' | t }}</h4>
-            {% for item in content.field_imprint_representative %}
-              {% if item['#context'] %}
-              <p>{{ 'Dipl.-Ing.'| t }}{{ item['#context'].value }}</p>
-              {% endif %}
-            {% endfor %}
-          {% endif %}
-        </div>
-      </div>
-
-      <div class="">
-        <div class="flex flex-col gap-1">
-          <h4 class="font-semibold">{{ content.field_imprint_contact_phone[0]['#paragraph'].field_shorttext_title.value }}</h4>
-          {% for paragraph in content.field_imprint_contact_phone[0]['#paragraph'].field_shorttext_body %}
-            {% if content.field_imprint_contact_phone[0]['#paragraph'] %}
-              <a class="group font-normal" href="tel:+:{{ paragraph.value }}">{{ 'Telefon:' | t }} <span class="group-hover:text-mainRed">{{ paragraph.value}}</span></a>
-            {% endif %}
-          {% endfor %}
-          {% for   mail in content.field_contact_e_mail %}
-            {% if mail["#context"] %}
-              <a class="group font-normal" href="mailto:{{ mail["#context"].value }}">{{ 'E-Mail:'| t }} <span class="group-hover:text-mainRed">{{ mail["#context"].value }}</span></a>
-            {% endif %}
-          {% endfor %}
-        </div>
-      </div>
-
-      {% for paragraph in content.field_imprint_info %}
-      {% if paragraph['#paragraph']%}
-      <div class="">
-        <div class="flex flex-col gap-1 ">
-              <h4 class="font-semibold">{{ paragraph['#paragraph'].field_longtext_title.value | raw }}</h4>
-              <article class="flex flex-col gap-5">
-                    {{ paragraph['#paragraph'].field_longtext_body.value | raw }}
-              </article>
-        </div>
-      </div>
-      {% endif %}
-      {% endfor %}
-
-      <div class="">
-        <div class="flex flex-col gap-1 ">
-          <h4 class="font-semibold">{{ content.field_imprint_copyright[0]['#paragraph'].field_longtext_title.value }}</h4>
-          <article class="flex flex-col gap-5">
-            {% for  source in content.field_source %}
-              {% if source["#url"]  %}
-                <div>{{ 'Quelle:' | t }} <a class="hover:text-mainRed" href="{{ source["#url"] }}">{{ source["#url"]  }} </a></div>
-              {% endif %}
-            {% endfor %}
-          </article>
-        </div>
-      </div>
-      <div class="">
-        <div class="flex flex-col gap-1 ">
-          <h4 class="font-semibold">{{ content.field_website_design[0]['#paragraph'].field_web_link_title.value }}</h4>
-          {% for paragraph in content.field_website_design %}
-            {% if paragraph['#paragraph']%}
-              <p>{{ paragraph['#paragraph'].field_web_link_body.value }}</p>
-              <a class="hover:text-mainRed" target="_blank" href="{{ paragraph['#paragraph'].field_web_link_url.0.value.uri }}"> {{ paragraph['#paragraph'].field_web_link_url.0.value.title }}  </a>
-            {% endif %}
-          {% endfor %}
-        </div>
-      </div>
-      <div class="">
-        <div class="flex  flex-col gap-1">
-          <h4 class="font-semibold">{{ content.field_website_programming[0]['#paragraph'].field_web_link_title.value }}</h4>
-          {% for paragraph in content.field_website_programming %}
-            {% if paragraph['#paragraph']%}
-              <p>{{ paragraph['#paragraph'].field_web_link_body.value }}</p>
-              <a class="hover:text-mainRed" target="_blank" href="{{ paragraph['#paragraph'].field_web_link_url.0.value.uri }} ">{{ paragraph['#paragraph'].field_web_link_url.0.value.title }} </a>
-            {% endif %}
-          {% endfor %}
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<section {{ attributes }}>
+	{{ title_suffix }}
+	<div class="pt-[140px]  text-fade pb-[100px] flex flex-col md:pt-0 md:pb:0 px-4 md:w-1/2 md:mt-[230px] md:mb-[250px] md:mx-auto">
+		<h3 class="text-[26px] tracking-[1.3px] leading-none md:text-[35px] md:leading-10 md:tracking-[1.75px] md:mb-[60px]">
+			{{ content.field_impressium_title }}
+		</h3>
+		<div class="text-content-fade paragraph-text gap-3">
+			{{ content.field_impressium_body }}
+		</div>
+	</div>
 </section>
+{# 
+<pre>
+{{ content | json_encode(constant('JSON_PRETTY_PRINT')) }}
+</pre> #}

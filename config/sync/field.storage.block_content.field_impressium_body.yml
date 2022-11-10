@@ -1,16 +1,15 @@
-uuid: 0163938a-7c66-410e-8611-adc409185dc0
+uuid: 3d4a3bb8-119e-4af9-97f5-9379189f8bb0
 langcode: en
 status: true
 dependencies:
   module:
     - block_content
     - text
-id: block_content.field_tmg
-field_name: field_tmg
+id: block_content.field_impressium_body
+field_name: field_impressium_body
 entity_type: block_content
-type: text
-settings:
-  max_length: 255
+type: text_long
+settings: {  }
 module: text
 locked: false
 cardinality: 1

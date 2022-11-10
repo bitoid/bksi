@@ -1,17 +1,18 @@
-uuid: 3ba255cd-8362-4b58-aca1-c99158a35aa2
+uuid: b8d3bc56-3393-483f-9b31-cdb7fc22d715
 langcode: en
 status: true
 dependencies:
   module:
     - block_content
-    - text
-id: block_content.field_imprint_title
-field_name: field_imprint_title
+id: block_content.field_impressium_title
+field_name: field_impressium_title
 entity_type: block_content
-type: text
+type: string
 settings:
-  max_length: 255
-module: text
+  max_length: 300
+  case_sensitive: false
+  is_ascii: false
+module: core
 locked: false
 cardinality: 1
 translatable: true

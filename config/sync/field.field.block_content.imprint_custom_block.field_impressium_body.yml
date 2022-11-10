@@ -1,21 +1,21 @@
-uuid: 84b21b3f-97e9-4f5c-ab3f-d43634db7e20
+uuid: 6a849c77-ce25-4837-82d2-545cc610dc9b
 langcode: en
 status: true
 dependencies:
   config:
     - block_content.type.imprint_custom_block
-    - field.storage.block_content.field_imprint_title
+    - field.storage.block_content.field_impressium_body
   module:
     - text
-id: block_content.imprint_custom_block.field_imprint_title
-field_name: field_imprint_title
+id: block_content.imprint_custom_block.field_impressium_body
+field_name: field_impressium_body
 entity_type: block_content
 bundle: imprint_custom_block
-label: 'imprint title'
+label: impressium_body
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: text
+field_type: text_long

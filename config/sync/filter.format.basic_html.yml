@@ -16,7 +16,7 @@ filters:
     status: true
     weight: -10
     settings:
-      allowed_html: '<span class ="imprint" ><0 href hreflang> <1> <2> <3> <4 cite> <5> <6 type> <7 type start> <8> <9> <10> <11> <12 id> <13 id> <14 id> <15 id> <16 id> <17 class=""> <18> <19> <20 src alt data-entity-type data-entity-uuid data-align data-caption width height> <21 class=""> <strong> <em> <a href> <ul> <li> <ol> <blockquote> <img src alt data-entity-type data-entity-uuid data-align data-caption> <p> <h2> <h3 class> <h4> <h5> <h6> <div class="text-fade text-content-fade gap-1 gap-8 flex flex-col">'
+      allowed_html: '<span class ="imprint" ><0 href hreflang> <1> <2> <3> <4 cite> <5> <6 type> <7 type start> <8> <9> <10> <11> <12 id> <13 id> <14 id> <15 id> <16 id> <17 class=""> <18> <19> <20 src alt data-entity-type data-entity-uuid data-align data-caption width height> <21 class=""> <strong> <em> <a href> <ul> <li> <ol> <blockquote> <img src alt data-entity-type data-entity-uuid data-align data-caption> <p> <h2 class> <h3 class> <h4> <h5> <h6> <div class="text-fade text-content-fade gap-1 gap-8 flex flex-col">'
       filter_html_help: false
       filter_html_nofollow: false
   filter_align:

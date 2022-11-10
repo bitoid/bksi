@@ -12,4 +12,5 @@ plugin: search_exclude_node_search
 configuration:
   rankings: {  }
   excluded_bundles:
+    article: article
     page: page

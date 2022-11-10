@@ -28,40 +28,40 @@
 
 <section {{ attributes }}> 
 {{ title_suffix }}
-  <div class="flex text-fade flex-col md:gap-20 md:flex-row">
-    {% if path('<current>') == '/career' %}
-    <div class="px-4 text-content-fade py-[75px] order-2 md:order-1 md:flex md:flex-col md:justify-center md:w-1/2 md:ml-[122px] md:py-[150px]">
-      <div class=" mb-[50px]">
-        <h3 class=" headline-large flex flex-col gap-5 md:gap-7 ">
-          <span class="span-subline">{{ content.field_slogan | raw  }}</span>
-          {{ content.field_title | raw }}
-        </h3>
-      </div>
-      <div class=" self-start">
-        <div class="">
-          <div class="flex flex-col gap-2 paragraph-text mb-[25px]">
-            <p class="font-['halbfett']">{{ 'Bewirb dich direkt:' | t }}</p>
-            <span>{{ content.field_apply_job | raw  }}</span>
-          </div>
-          <div class="flex flex-col gap-2 text-[15px] leading-[22px] tracking-[0.75px] mb-[50px]">
-            <span class="font-['halbfett']">{{ content.field_get_in_touch }}</span>
-            {% for phone in content.field_contact_phone %}
-              {% if phone['#context'] %}
-                <a class="group font-['buch']" href="tel:{{ phone['#context'].value }}"> <span class="group-hover:text-mainRed">{{ phone['#context'].value }}</span></a>
-              {% endif %}
-            {% endfor %}
-            {% for email in content.field_contact_email %}
-              {% if email['#context'] %}
-                <a class="group font-['buch']" href="mailto:{{ email['#context'].value }}"><span class="group-hover:text-mainRed">{{ email['#context'].value }}</span></a>
-              {% endif %}
-            {% endfor %}
-          </div>
-          <article class="flex flex-col gap-1 text-[15px] leading-[22px] tracking-[0.75px]">
-            {{ content.field_ltd_bksi_description | raw }}
-          </article>
+  <div class="text-fade flex flex-col gap-20 md:flex-row">
+  {% if path('<current>') == '/karriere' %}
+  <div class="px-4 py-[75px] order-2 md:order-1 md:flex md:flex-col md:justify-center md:w-1/2 md:px-7 md:py-[150px]">
+    <div class="text-fade mb-[50px]">
+      <h3 class="text-content-fade headline-large flex flex-col gap-5 md:gap-7 ">
+        <span class="span-subline">{{ content.field_slogan | raw  }}</span>
+        {{ content.field_title | raw }}
+      </h3>
+    </div>
+    <div class="text-fade self-start">
+      <div class="text-content-fade">
+        <div class="flex flex-col gap-2 paragraph-text mb-[25px]">
+          <p class="font-['halbfett']">{{ 'Bewirb dich direkt:' | t }}</p>
+          <span>{{ content.field_apply_job | raw  }}</span>
         </div>
+        <div class="flex flex-col gap-2 text-[15px] leading-[22px] tracking-[0.75px] mb-[50px]">
+          <span class="font-['halbfett']">{{ content.field_get_in_touch }}</span>
+          {% for phone in content.field_contact_phone %}
+            {% if phone['#context'] %}
+              <a class="group font-['buch']" href="tel:{{ phone['#context'].value }}"> <span class="group-hover:text-mainRed">{{ phone['#context'].value }}</span></a>
+            {% endif %}
+          {% endfor %}
+          {% for email in content.field_contact_email %}
+            {% if email['#context'] %}
+              <a class="group font-['buch']" href="mailto:{{ email['#context'].value }}"><span class="group-hover:text-mainRed">{{ email['#context'].value }}</span></a>
+            {% endif %}
+          {% endfor %}
+        </div>
+        <article class="flex flex-col gap-1 text-[15px] leading-[22px] tracking-[0.75px]">
+          {{ content.field_ltd_bksi_description | raw }}
+        </article>
       </div>
     </div>
+  </div>
     {% else %}
       <div class="px-4 text-content-fade py-[75px] order-2 md:order-1 md:flex md:flex-col md:justify-center md:items-center md:w-1/2 md:px-10 md:py-[150px] md:pt-[240px]">
         <div class=" mb-[50px]">

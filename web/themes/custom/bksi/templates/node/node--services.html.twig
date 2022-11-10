@@ -74,7 +74,7 @@
                 <p class="paragraph-text mb-[50px]">
                     {{ paragraph['#paragraph'].field_description.value }}
                 </p>
-                <a class="max-w-fit group relative h-10 flex gap-4 z-10 pr-6 items-center rounded-[40px] overflow-hidden" href="/projects?services={{ node.label }}#container" >
+                <a class="max-w-fit group relative h-10 flex gap-4 z-10 pr-6 items-center rounded-[40px] overflow-hidden" href="/projekte?leistungen={{ node.label }}#container" >
                     <span class="absolute left-0 top-0 -z-10 h-full w-0 rounded-[40px] bg-mainRed group-hover:w-full"></span>
                     <span class="flex items-center justify-center h-full rounded-full aspect-square bg-mainRed"><img  src="/{{ base_path ~ directory }}/images/arrow-black.svg"></span>
                     {{ paragraph['#paragraph'].field_link_cta.0.value.title }} 

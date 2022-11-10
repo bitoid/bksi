@@ -32,6 +32,7 @@ function displayData(array) {
                               <source srcset="${projectsData['image']['original_jpg'] ? projectsData['image']['original_jpg'] : ''}" media="only screen and (min-width: 450px)" type="image/jpeg">
                               <img class="w-full fade-in-image " src="${projectsData['image']['original_jpg'] ? projectsData['image']['original_jpg'] : ''}" alt=""/>
                             </picture>
+                            <div  class='absolute w-full md:h-[147px] h-20 bottom-0 left-0 bg-transparent bg-no-repeat bg-clip-padding bg-gradient-to-t from-mainBlack to-[#19142800] group-hover:bg-none'></div>
                         </div>
                         <span class="absolute right-5 bottom-5 w-10 h-10 rounded-full bg-white flex items-center justify-center md:hidden"><img src="../assets/bilder/arrows-navigation/arrow-textlinks.svg" alt=""></span>
                         <h4 class="hidden text-2xl absolute bottom-10 left-10 text-white font-semibold group-hover:bottom-[calc(100%-60px)] group-hover:translate-y-1/2 z-10 md:block">${projectsData['title']}</h4>

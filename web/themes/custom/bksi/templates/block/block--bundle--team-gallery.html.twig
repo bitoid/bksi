@@ -36,84 +36,75 @@
 				{{ content.field_team_gallery_title }}
 			</h3>
 		</div>
-		<div class="flex flex-col gap-[50px]  md:gap-[190px]">
+		<div class="flex flex-col gap-[50px] md:gap-[190px]">
 			{% for paragraph in content.field_paragraph_team_gallery %}
 				{% if paragraph['#paragraph'] %}
-					{% set caunter = caunter + 1 %}
-					{% if caunter is odd %}
-						<div class="flex items-center gap-[50px] sm:gap-[75px] md:h-screen  pl-4 md:gap-[150px] md:pl-10">
-							<div class="w-[71%] h-[25vh] md:h-[60%]">
+					{% if  paragraph['#paragraph'].field_team_gallery_align.value == 0 %}
+						<div class="flex items-center gap-10 pl-4 md:gap-[150px] md:pl-10">
+							<div class="w-[51.6%]">
 								{% if paragraph['#paragraph'].field_team_gallery_image.0  %}
-									<div class="fade-in-image-container relative h-full w-full">
+									<div class="fade-in-image-container relative w-full">
 										<picture>
 											<source srcset="{{ file_url(paragraph['#paragraph'].field_team_gallery_image.0.entity.uri.value | image_style('large_webp')) }}" media="only screen and (max-width: 450px)" type="image/webp">
 											<source srcset="{{ file_url(paragraph['#paragraph'].field_team_gallery_image.0.entity.uri.value | image_style('original_webp')) }}" media="only screen and (min-width: 450px)" type="image/webp">
-											<img class="fade-in-image object-cover h-full w-full" src="{{ file_url(paragraph['#paragraph'].field_team_gallery_image.0.entity.uri.value) }}" alt="{{ paragraph['#paragraph'].field_team_gallery_image.0.0.alt }} ">
+											<img class="fade-in-image w-full" src="{{ file_url(paragraph['#paragraph'].field_team_gallery_image.0.entity.uri.value) }}" alt="{{ paragraph['#paragraph'].field_team_gallery_image.0.0.alt }} ">
 										</picture>
 									</div>
 								{% endif %}
 							</div>
-							<div class="flex flex-col x w-full gap-[50px] h-full sm:gap-[100px] md:gap-[200px]">
-								{% if paragraph['#paragraph'].field_team_gallery_image.1  %}
-									<div class="w-4/5 md:h-full h-[17vh]">
-										<div class="fade-in-image-container relative h-full w-full">
-											<picture>
-												<source srcset="{{ file_url(paragraph['#paragraph'].field_team_gallery_image.1.entity.uri.value | image_style('large_webp')) }}" media="only screen and (max-width: 450px)" type="image/webp">
-												<source srcset="{{ file_url(paragraph['#paragraph'].field_team_gallery_image.1.entity.uri.value | image_style('original_webp')) }}" media="only screen and (min-width: 450px)" type="image/webp">
-												<img class="fade-in-image object-cover h-full w-full" src="{{ file_url(paragraph['#paragraph'].field_team_gallery_image.1.entity.uri.value) }}" alt="{{ paragraph['#paragraph'].field_team_gallery_image.1.0.alt }} ">
-											</picture>
-										</div>
-									</div>
-								{% endif %}
-								{% if paragraph['#paragraph'].field_team_gallery_image.2  %}
-									<div class="md:h-full h-[20vh]">
-										<div class="fade-in-image-container relative w-full h-full">
-											<picture>
-												<source srcset="{{ file_url(paragraph['#paragraph'].field_team_gallery_image.2.entity.uri.value | image_style('large_webp')) }}" media="only screen and (max-width: 450px)" type="image/webp">
-												<source srcset="{{ file_url(paragraph['#paragraph'].field_team_gallery_image.2.entity.uri.value | image_style('original_webp')) }}" media="only screen and (min-width: 450px)" type="image/webp">
-												<img class="fade-in-image object-cover h-full w-full" src="{{ file_url(paragraph['#paragraph'].field_team_gallery_image.2.entity.uri.value) }}" alt="{{ paragraph['#paragraph'].field_team_gallery_image.2.0.alt }} ">
-											</picture>
-										</div>
-									</div>
-								{% endif %}
-							</div>
-						</div>
-					{% else %}
-						<div class="flex items-center gap-[50px] md:h-screen sm:gap-[75px] pr-4 md:gap-[150px] md:pr-10">
-							<div class="flex flex-col x w-full h-full gap-[50px] sm:gap-[100px] md:gap-[200px]">
-								{% if paragraph['#paragraph'].field_team_gallery_image.0  %}
-									<div class="w-4/5 md:h-full h-[17vh] self-end">
-										<div class="fade-in-image-container relative h-full w-full">
-											<picture>
-												<source srcset="{{ file_url(paragraph['#paragraph'].field_team_gallery_image.0.entity.uri.value | image_style('large_webp')) }}" media="only screen and (max-width: 450px)" type="image/webp">
-												<source srcset="{{ file_url(paragraph['#paragraph'].field_team_gallery_image.0.entity.uri.value | image_style('original_webp')) }}" media="only screen and (min-width: 450px)" type="image/webp">
-												<img class="fade-in-image object-cover h-full w-full" src="{{ file_url(paragraph['#paragraph'].field_team_gallery_image.0.entity.uri.value) }}" alt="{{ paragraph['#paragraph'].field_team_gallery_image.0.0.alt }} ">
-											</picture>
-										</div>
-									</div>
-								{% endif %}
-								{% if paragraph['#paragraph'].field_team_gallery_image.1  %}
-									<div class="md:h-full h-[20vh] ">
-										<div class="fade-in-image-container relative w-full h-full">
-											<picture>
-												<source srcset="{{ file_url(paragraph['#paragraph'].field_team_gallery_image.1.entity.uri.value | image_style('large_webp')) }}" media="only screen and (max-width: 450px)" type="image/webp">
-												<source srcset="{{ file_url(paragraph['#paragraph'].field_team_gallery_image.1.entity.uri.value | image_style('original_webp')) }}" media="only screen and (min-width: 450px)" type="image/webp">
-												<img class="fade-in-image object-cover h-full w-full" src="{{ file_url(paragraph['#paragraph'].field_team_gallery_image.1.entity.uri.value) }}" alt="{{ paragraph['#paragraph'].field_team_gallery_image.1.0.alt }} ">
-											</picture>
-										</div>
-									</div>
-								{% endif %}
-							</div>
-							<div class="w-[71%] h-[25vh] md:h-[60%]">
-								{% if paragraph['#paragraph'].field_team_gallery_image.2  %}
-									<div class="fade-in-image-container relative h-full w-full">
+							<div class="flex flex-col w-full gap-[55px] md:gap-[200px]">
+								<div class="fade-in-image-container relative">
+									{% if paragraph['#paragraph'].field_team_gallery_image.1  %}
+										<picture>
+											<source srcset="{{ file_url(paragraph['#paragraph'].field_team_gallery_image.1.entity.uri.value | image_style('large_webp')) }}" media="only screen and (max-width: 450px)" type="image/webp">
+											<source srcset="{{ file_url(paragraph['#paragraph'].field_team_gallery_image.1.entity.uri.value | image_style('original_webp')) }}" media="only screen and (min-width: 450px)" type="image/webp">
+											<img class="fade-in-image w-[calc(100%-40px)] md:w-[calc(100%-150px)]" src="{{ file_url(paragraph['#paragraph'].field_team_gallery_image.1.entity.uri.value) }}" alt="{{ paragraph['#paragraph'].field_team_gallery_image.1.0.alt }} ">
+										</picture>
+									{% endif %}
+								</div>
+								<div class="fade-in-image-container relative w-full">
+									{% if paragraph['#paragraph'].field_team_gallery_image.2  %}
 										<picture>
 											<source srcset="{{ file_url(paragraph['#paragraph'].field_team_gallery_image.2.entity.uri.value | image_style('large_webp')) }}" media="only screen and (max-width: 450px)" type="image/webp">
 											<source srcset="{{ file_url(paragraph['#paragraph'].field_team_gallery_image.2.entity.uri.value | image_style('original_webp')) }}" media="only screen and (min-width: 450px)" type="image/webp">
-											<img class="fade-in-image object-cover h-full w-full" src="{{ file_url(paragraph['#paragraph'].field_team_gallery_image.2.entity.uri.value) }}" alt="{{ paragraph['#paragraph'].field_team_gallery_image.2.0.alt }} ">
+											<img class="fade-in-image w-full" src="{{ file_url(paragraph['#paragraph'].field_team_gallery_image.2.entity.uri.value) }}" alt="{{ paragraph['#paragraph'].field_team_gallery_image.2.0.alt }} ">
+										</picture>
+									{% endif %}
+								</div>
+							</div>
+						</div>
+					{% else %}
+						<div class="flex flex-row-reverse items-center gap-10 pr-4 md:gap-[150px] md:pr-10">
+							<div class="w-[51.6%]">
+								{% if paragraph['#paragraph'].field_team_gallery_image.0  %}
+									<div class="fade-in-image-container relative w-full">
+										<picture>
+											<source srcset="{{ file_url(paragraph['#paragraph'].field_team_gallery_image.0.entity.uri.value | image_style('large_webp')) }}" media="only screen and (max-width: 450px)" type="image/webp">
+											<source srcset="{{ file_url(paragraph['#paragraph'].field_team_gallery_image.0.entity.uri.value | image_style('original_webp')) }}" media="only screen and (min-width: 450px)" type="image/webp">
+											<img class="fade-in-image w-full" src="{{ file_url(paragraph['#paragraph'].field_team_gallery_image.0.entity.uri.value) }}" alt="{{ paragraph['#paragraph'].field_team_gallery_image.0.0.alt }} ">
 										</picture>
 									</div>
 								{% endif %}
+							</div>
+							<div class="flex flex-col w-full gap-[55px] md:gap-[200px]">
+								<div class="fade-in-image-container relative">
+									{% if paragraph['#paragraph'].field_team_gallery_image.1  %}
+										<picture>
+											<source srcset="{{ file_url(paragraph['#paragraph'].field_team_gallery_image.1.entity.uri.value | image_style('large_webp')) }}" media="only screen and (max-width: 450px)" type="image/webp">
+											<source srcset="{{ file_url(paragraph['#paragraph'].field_team_gallery_image.1.entity.uri.value | image_style('original_webp')) }}" media="only screen and (min-width: 450px)" type="image/webp">
+											<img class="fade-in-image w-[calc(100%-40px)] md:w-[calc(100%-150px)] md:ml-[150px]" src="{{ file_url(paragraph['#paragraph'].field_team_gallery_image.1.entity.uri.value) }}" alt="{{ paragraph['#paragraph'].field_team_gallery_image.1.0.alt }} ">
+										</picture>
+									{% endif %}
+								</div>
+								<div class="fade-in-image-container relative w-full">
+									{% if paragraph['#paragraph'].field_team_gallery_image.2  %}
+										<picture>
+											<source srcset="{{ file_url(paragraph['#paragraph'].field_team_gallery_image.2.entity.uri.value | image_style('large_webp')) }}" media="only screen and (max-width: 450px)" type="image/webp">
+											<source srcset="{{ file_url(paragraph['#paragraph'].field_team_gallery_image.2.entity.uri.value | image_style('original_webp')) }}" media="only screen and (min-width: 450px)" type="image/webp">
+											<img class="fade-in-image w-full" src="{{ file_url(paragraph['#paragraph'].field_team_gallery_image.2.entity.uri.value) }}" alt="{{ paragraph['#paragraph'].field_team_gallery_image.2.0.alt }} ">
+										</picture>
+									{% endif %}
+								</div>
 							</div>
 						</div>
 					{% endif %}

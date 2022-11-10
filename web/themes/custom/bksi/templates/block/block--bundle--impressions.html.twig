@@ -45,7 +45,7 @@
                       <picture>
                         <source srcset="{{ file_url(image['#item'].entity.uri.value | image_style('large_webp')) }}" media="only screen and (max-width: 450px)" type="image/webp" >
                         <source srcset="{{ file_url(image['#item'].entity.uri.value | image_style('original_webp')) }}" media="only screen and (min-width: 450px)" type="image/webp">
-                        <img class="object-cover w-full h-full" src="{{  file_url(image['#item'].entity.uri.value) }}" alt="{{ image['#item'].alt }}">
+                        <img class=" w-full " src="{{  file_url(image['#item'].entity.uri.value) }}" alt="{{ image['#item'].alt }}">
                       </picture>
                         <p class="title-html hidden" > {{ image['#item'].title }}</p>
                     </li>

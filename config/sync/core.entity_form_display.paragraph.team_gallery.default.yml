@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.team_gallery.field_team_gallery_align
     - field.field.paragraph.team_gallery.field_team_gallery_image
     - image.style.thumbnail
     - paragraphs.paragraphs_type.team_gallery
@@ -13,6 +14,12 @@ targetEntityType: paragraph
 bundle: team_gallery
 mode: default
 content:
+  field_team_gallery_align:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_team_gallery_image:
     type: image_image
     weight: 0

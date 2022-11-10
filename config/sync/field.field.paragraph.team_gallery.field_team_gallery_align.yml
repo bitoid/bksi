@@ -1,0 +1,21 @@
+uuid: 79399355-42d9-4a75-8007-4ba41cbfb6ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_team_gallery_align
+    - paragraphs.paragraphs_type.team_gallery
+  module:
+    - options
+id: paragraph.team_gallery.field_team_gallery_align
+field_name: field_team_gallery_align
+entity_type: paragraph
+bundle: team_gallery
+label: 'team gallery align'
+description: 'filters which side will be single image'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,23 +1,23 @@
   <section class="bg-lightGray">
     {% if image_url %}
-         <div class="relative fade-in-image-container h-[30vh] md:h-screen">
+         <div class="relative fade-in-image-container w-full">
              <picture>
                <source srcset="{{ image_url['large_webp'] }}" media="only screen and (max-width: 450px)" type="image/webp" >
                <source srcset="{{ image_url['large_jpg'] }}" media="only screen and (max-width: 450px)" type="image/jpeg" >
                <source srcset="{{ image_url['original_webp'] }}" media="only screen and (min-width: 450px)" type="image/webp">
                <source srcset="{{ image_url['original_jpg'] }}" media="only screen and (min-width: 450px)" type="image/jpeg">
-               <img class="w-full fade-in-image h-full object-cover" src="{{ image_url['original_jpg'] }}" alt="">
+               <img class="w-full fade-in-image " src="{{ image_url['original_jpg'] }}" alt="">
              </picture>
         </div>
     {% endif %}
-        <div class="flex flex-col text-fade items-start px-4 py-[75px] gap-[60px] md:px-10 md:py-[150px] md:flex-row md:justify-between">
+        <div class="flex flex-col text-fade items-start px-4 py-[75px] gap-[60px] md:px-10 lg:py-[150px] lg:flex-row md:justify-between">
             <div class="text-fade">
-                <h3 class="text-content-fade md:w-[272px] flex flex-col gap-[50px]  headline-large">
+                <h3 class="text-content-fade md:max-w-[450px] flex flex-col gap-[50px]  headline-large">
                     {{ title }}
                     <span class="paragraph-text font-['buch']">{{ description }} </span>
                 </h3>
             </div>
-            <div class="flex flex-col  md:w-[75%] lg:w-2/3 mb-[70px] text-content-fade ">
+            <div class="flex flex-col  lg:w-[75%] 2xl:w-2/3  text-content-fade ">
                 <div class="flex  flex-col gap-5 mb-[70px] md:mb-[91px]">
                    {% for job in career_array %}
                     <div class="">

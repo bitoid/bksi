@@ -3,15 +3,24 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.team_gallery.field_team_gallery_align
     - field.field.paragraph.team_gallery.field_team_gallery_image
     - paragraphs.paragraphs_type.team_gallery
   module:
     - image
+    - options
 id: paragraph.team_gallery.default
 targetEntityType: paragraph
 bundle: team_gallery
 mode: default
 content:
+  field_team_gallery_align:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
   field_team_gallery_image:
     type: image
     label: above

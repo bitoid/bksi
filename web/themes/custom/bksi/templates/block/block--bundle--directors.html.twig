@@ -13,15 +13,15 @@
 #}
 <section {{ attributes }}> 
 {{ title_suffix }}
-  <div class="flex flex-col md:flex-row md:gap-[90px]">
-    <div class="fade-in-image-container relative w-full h-[50vh] md:h-auto md:w-1/2">
+  <div class="flex flex-col lg:flex-row lg:gap-[90px]">
+    <div class="fade-in-image-container relative w-full  lg:w-1/2">
       <picture>
         <source srcset="{{ file_url(content.field_directors_image.0['#item'].entity.uri.value | image_style('large_webp')) }}" media="only screen and (max-width: 450px)" type="image/webp" >
         <source srcset="{{ file_url(content.field_directors_image.0['#item'].entity.uri.value | image_style('original_webp')) }}" media="only screen and (min-width: 450px)" type="image/webp">
-        <img src="{{ file_url(content.field_directors_image.0['#item'].entity.uri.value) }}" alt="{{ content.field_directors_image.0['#item'].alt }}" class="object-cover w-full h-full fade-in-image">
+        <img src="{{ file_url(content.field_directors_image.0['#item'].entity.uri.value) }}" alt="{{ content.field_directors_image.0['#item'].alt }}" class="w-full  fade-in-image">
       </picture>
     </div>
-    <div class="text-fade px-4 py-[75px] md:px-10 md:py-[150px] md:w-1/2">
+    <div class="text-fade px-4 py-[75px] lg:py-0 lg:px-10 lg:my-auto lg:w-1/2">
       <div class="text-content-fade">
         <h3 class="mb-[50px] md:mb-[41px] headline-large ">{{ content.field_directors_title.0 }}</h3>
         <div class="paragraph-text">

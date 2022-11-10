@@ -48,7 +48,7 @@ class ContactForm extends FormBase {
 
       $form['email'] = [
         '#type' => 'email',
-        '#attributes' => ['placeholder' => $this->t('E-mail')],
+        '#attributes' => ['placeholder' => $this->t('E-Mail')],
         '#required' => TRUE,
       ];
 

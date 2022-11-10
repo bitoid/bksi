@@ -9,7 +9,7 @@ id: node.customer.field_chose_link
 field_name: field_chose_link
 entity_type: node
 bundle: customer
-label: 'chose link'
+label: 'Link aktivieren'
 description: ''
 required: false
 translatable: false

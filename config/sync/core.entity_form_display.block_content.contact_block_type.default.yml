@@ -6,11 +6,13 @@ dependencies:
     - block_content.type.contact_block_type
     - field.field.block_content.contact_block_type.field_contact_body
     - field.field.block_content.contact_block_type.field_image
+    - field.field.block_content.contact_block_type.field_location_link
     - field.field.block_content.contact_block_type.field_slogan
     - field.field.block_content.contact_block_type.field_title
     - image.style.thumbnail
   module:
     - image
+    - link
     - text
 id: block_content.contact_block_type.default
 targetEntityType: block_content
@@ -19,7 +21,7 @@ mode: default
 content:
   field_contact_body:
     type: text_textarea
-    weight: 26
+    weight: 4
     region: content
     settings:
       rows: 5
@@ -27,11 +29,19 @@ content:
     third_party_settings: {  }
   field_image:
     type: image_image
-    weight: 8
+    weight: 5
     region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_location_link:
+    type: link_default
+    weight: 6
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
     third_party_settings: {  }
   field_slogan:
     type: text_textfield
@@ -43,7 +53,7 @@ content:
     third_party_settings: {  }
   field_title:
     type: text_textarea
-    weight: 2
+    weight: 3
     region: content
     settings:
       rows: 5

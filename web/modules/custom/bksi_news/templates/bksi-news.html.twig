@@ -18,7 +18,7 @@
 							<img class="fade-in-image   w-full " src="{{ news.news_image['original_jpg'] }}" alt="">
 						</picture>
 					</div>
-					<div class="  py-[30px] md:px-[40px] w-auto h-[250px] md:h-auto md:py-[30px] px-[20px] bg-white  lg:col-span-2 2xl:col-span-3">
+					<div class="  py-[30px] md:px-[40px] w-auto  h-auto md:py-[30px] px-[20px] bg-white  lg:col-span-2 2xl:col-span-3">
 						<div class="flex flex-col gap-[20px] ">
 							<h3 class="flex flex-col gap-[5px] text-[20px] leading-[30px] tracking-[1px]">
 								{% set date = news.date|date("F")|t({}, {'context' : 'Long month name'}) ~ ' ' ~ news.date|date("Y") %}

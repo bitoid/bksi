@@ -35,27 +35,28 @@ function displayData(array) {
                             <div  class='absolute w-full md:h-[147px] h-20 bottom-0 left-0 bg-transparent bg-no-repeat bg-clip-padding bg-gradient-to-t from-mainBlack to-[#19142800] group-hover:bg-none'></div>
                         </div>
                         <span class="absolute right-5 bottom-5 w-10 h-10 rounded-full bg-white flex items-center justify-center md:hidden"><img src="../assets/bilder/arrows-navigation/arrow-textlinks.svg" alt=""></span>
-                        <h4 class="hidden text-2xl absolute bottom-10 left-10 text-white font-semibold group-hover:bottom-[calc(100%-60px)] group-hover:translate-y-1/2 z-10 md:block">${projectsData['title']}</h4>
+                        <h4 class="hidden text-2xl absolute bottom-8 left-10 text-white font-semibold group-hover:bottom-[calc(100%-60px)] group-hover:translate-y-1/2 z-10 md:block">${projectsData['title']}</h4>
                     </a>
                     <div class="opacity-100 flex flex-col gap-[15px] md:absolute md:translate-y-full md:w-full md:h-full md:bg-darkBlue md:opacity-0 md:top-0 md:text-white md:p-10 md:pt-[125px] md:pl-8 md:gap-8 md:group-hover:translate-y-0 md:group-hover:opacity-100">
                         <h4 class="text-[20px]  leading-[24px] tracking-[1px] md:hidden">${projectsData['title']}</h4>
 
                         <div class="flex items-start gap-4 text-[15px] tracking-[0.75px] leading-[22px] md:gap-10">
-                        <div class="flex flex-col w-1/2 gap-5">
-                            <div  class="flex flex-col gap-3">
+                        <div class="flex flex-col w-1/2 gap-[32px]">
+                            <div  class="flex flex-col gap-1">
                                 <p class="!font-['halbfett']">${Drupal.t("Gebäudeart")}</p>
                                 <p>${projectsData['building']}</p>
-
+                            </div>
+                            <div  class="flex flex-col gap-1">
                                 <p class="!font-['halbfett']">${Drupal.t("Auftraggeber")}</p>
                                 <p> ${projectsData['customer']}</p>
                             </div>
                         </div>
-                        <div class="flex flex-col  gap-5">
-                            <div class="flex flex-col gap-3">
+                        <div class="flex flex-col  gap-[32px]">
+                            <div class="flex flex-col gap-1">
                                 <p class="!font-['halbfett']">${Drupal.t("Leistung")}</p>
                                 <p>${projectsData['service']}</p>
                             </div>
-                            <div class="flex flex-col gap-3">
+                            <div class="flex flex-col gap-1">
                                 <p class="!font-['halbfett']">${Drupal.t("Zeitraum")}</p>
                                 <p> ${projectsData['period']}</p>
                             </div>

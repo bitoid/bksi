@@ -1,5 +1,5 @@
-name: Tailwind CSS Starter Kit
-description: A starter kit theme for Drupal 8/9 and Tailwind CSS.
+name: BKSI Theme
+description: BKSI theme for Drupal 8/9 and Tailwind CSS.
 core: 8.x
 core_version_requirement: ^8 || ^9
 type: theme

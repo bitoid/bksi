@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         {
             type : 'slide',
             rewind:true,
-            fixedWidth: '50%',
+            fixedWidth: '61.7%',
             perPage: 1,
             focus:"center",
             gap: 40,

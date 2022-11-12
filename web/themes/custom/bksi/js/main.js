@@ -11,11 +11,12 @@ const hamburgerButton = document.querySelector('.hamburger');
 const getPageUrl = () => {
   const url = window.location.pathname;
   const page = url.split("/");
-  const pages = ["kontakt", "impressum", "search", "datenschutz"];
   if (!page.includes("layout")) {
     headerTop.classList.remove('hidden');
   }
-  return pages.includes(page[1]);
+
+  const hero = document.querySelectorAll(".bg-header");
+  return hero.length == 0;
 }
 const temp = getPageUrl();
 
@@ -36,7 +37,7 @@ const burgerMenu = () => {
     headerTop.style.top = `0`
     hamburger.classList.toggle('active');
     burgerMenuShown.classList.toggle('active');
-    headerTop.style.zIndex = '9999'
+    headerTop.style.zIndex = '500'
     if(burgerMenuShown.classList.contains('active')){
       document.body.style.overflow = 'hidden'
     }else {
@@ -65,7 +66,7 @@ window.onscroll = function() {
       headerTop.style.background = '#191428';
       headerTop.style.top = `${typeof drupalSettings.toolbar === 'undefined' ? '0px' : '60px'}`;
       headerTop.style.position = 'fixed'
-      headerTop.style.zIndex = '9999'
+      headerTop.style.zIndex = '500'
     } else {
       headerTop.style.background = 'none';
       headerTop.style.top = `-${headerTop.clientHeight}px`;

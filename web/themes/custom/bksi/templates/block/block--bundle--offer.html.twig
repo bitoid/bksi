@@ -2,10 +2,10 @@
 {{ title_suffix }}
     <div class="py-[75px] text-fade  px-4 md:py-[150px] md:px-10 flex items-start justify-between flex-col gap-5 md:flex-row">
         <div class="text-content-fade">
-            <h3 class="flex flex-col gap-[20px] md:gap-7 headline-large">
+            <div class="flex flex-col gap-[20px] md:gap-7 headline-large">
                 <span class="span-subline">{{ content.field_slogan.0 }}</span>
-                    {{ content.field_title[0]['#text'] | striptags }}
-           </h3>
+                    {{ content.field_title.0 }}
+           </div>
         </div>
         <div class="text-content-fade paragraph-text mt-[30px] md:mt-[50px] md:w-1/2">
             <div class="">

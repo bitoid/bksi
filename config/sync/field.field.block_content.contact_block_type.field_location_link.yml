@@ -1,0 +1,28 @@
+uuid: d84a4727-cf67-42c8-9db2-e8ffbff8d673
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_block_type
+    - field.storage.block_content.field_location_link
+  module:
+    - link
+id: block_content.contact_block_type.field_location_link
+field_name: field_location_link
+entity_type: block_content
+bundle: contact_block_type
+label: 'Location link'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    uri: 'https://www.google.com/maps/dir//BKSi+GmbH,+Schwieberdinger+Str.+5,+70435+Stuttgart,+%E1%83%92%E1%83%94%E1%83%A0%E1%83%9B%E1%83%90%E1%83%9C%E1%83%98%E1%83%90/@48.8259269,9.1685363,20z/data=!4m8!4m7!1m0!1m5!1m1!1s0x4799da97194dc23d:0x84b9ca8b8342cbbb!2m2!1d9.168417!2d48.8260311'
+    title: 'Anfahrt planen'
+    options:
+      attributes: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

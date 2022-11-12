@@ -6,10 +6,12 @@ dependencies:
     - block_content.type.contact_block_type
     - field.field.block_content.contact_block_type.field_contact_body
     - field.field.block_content.contact_block_type.field_image
+    - field.field.block_content.contact_block_type.field_location_link
     - field.field.block_content.contact_block_type.field_slogan
     - field.field.block_content.contact_block_type.field_title
   module:
     - image
+    - link
     - text
 id: block_content.contact_block_type.default
 targetEntityType: block_content
@@ -33,6 +35,18 @@ content:
         attribute: lazy
     third_party_settings: {  }
     weight: 2
+    region: content
+  field_location_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 9
     region: content
   field_slogan:
     type: text_default

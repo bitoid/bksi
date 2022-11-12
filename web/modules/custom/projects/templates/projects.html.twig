@@ -2,7 +2,7 @@
 	<div class='hidden flex flex-col  mb-4 items-center  justify-center md:mb-10 md:flex-row-reverse' id="clear-projects">
 		<button class='flex rounded-3xl px-5 items-center h-[50px] md:max-w-[250px] gap-9  border-2 border-mainBlack mb-4 md:mb-0' id="all-projects">
 			<span class='text-[15px] leading-[22px] tracking-[0.75px]'>{{ 'Alle Filter löschen' | t }}</span>
-			<img src="modules/custom/projects/images/close-filter.svg" class="text-mainBlack" aria-hidden="true" />
+			<img src="modules/custom/projects/images/black-close-filter.svg" class="w-[15px]" aria-hidden="true" />
 		</button>
 		<div class="flex flex-col flex-wrap max-w-3xl gap-2  md:flex-row" id="curent-projects"></div>
 	</div>
@@ -12,9 +12,9 @@
 				<button><img class="mr-5 rotate" src="modules/custom/projects/images/arrow-open-close-content.svg" alt=""></button>
 				<ul class="absolute z-50 hidden w-full overflow-hidden  top-full rounded-b-3xl" id="building-dropdown">
 					{% for buildings in building %}
-						<li class="flex  items-center justify-between px-5 py-3 border-t border-white group bg-lightGray" data-value="{{ buildings.name|lower }}">
+						<li class="flex  items-center justify-between px-5 py-3 border-t border-white group bg-lightGray gap-[5px]" data-value="{{ buildings.name|lower }}">
 							<span class="group-hover:text-mainRed break-words overflow-auto font-['buch'] group-item" href="#">{{ buildings.name }}</span>
-							<div class="hidden w-[20px] img-div">
+							<div class="hidden w-[14px] img-div">
 								<img class="min-w-[14px] min-h-[11px]" src="modules/custom/projects/images/check.svg"/>
 							</div>
 						</li>
@@ -26,9 +26,9 @@
 				<button><img class="mr-5 rotate" src="modules/custom/projects/images/arrow-open-close-content.svg" alt=""></button>
 				<ul class="absolute z-50 hidden w-full overflow-hidden  top-full rounded-b-3xl" id="service-dropdown">
 					{% for services in service %}
-						<li class="flex  items-center justify-between px-5 py-3 border-t border-white group bg-lightGray" data-value="{{ services.name|lower }}">
+						<li class="flex  items-center justify-between px-5 py-3 border-t border-white group bg-lightGray gap-[5px]" data-value="{{ services.name|lower }}">
 							<span class="group-hover:text-mainRed break-words overflow-auto font-['buch'] group-item" href="#">{{ services.name }}</span>
-							<div class="hidden w-[20px] img-div">
+							<div class="hidden w-[14px] img-div">
 								<img class="min-w-[14px] min-h-[11px]" src="modules/custom/projects/images/check.svg"/>
 							</div>
 						</li>
@@ -40,9 +40,9 @@
 				<button><img class="mr-5 rotate" src="modules/custom/projects/images/arrow-open-close-content.svg" alt=""></button>
 				<ul class="absolute z-50 hidden w-full overflow-hidden  top-full rounded-b-3xl" id="sector-dropdown">
 					{% for sectors in sector %}
-						<li class="flex  items-center justify-between px-5 py-3 border-t border-white group bg-lightGray" data-value="{{ sectors.name|lower }}">
+						<li class="flex  items-center justify-between px-5 py-3 border-t border-white group bg-lightGray gap-[5px]" data-value="{{ sectors.name|lower }}">
 							<span class="group-hover:text-mainRed break-words overflow-auto font-['buch'] group-item" href="#">{{ sectors.name }}</span>
-							<div class="hidden w-[20px] img-div">
+							<div class="hidden w-[14px] img-div">
 								<img class="min-w-[14px] min-h-[11px]" src="modules/custom/projects/images/check.svg"/>
 							</div>
 						</li>

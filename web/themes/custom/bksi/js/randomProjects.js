@@ -42,21 +42,21 @@ function displayData(array) {
 
                         <div class="flex items-start gap-4 text-[15px] tracking-[0.75px] leading-[22px] md:gap-10">
                         <div class="flex flex-col w-1/2 gap-[32px]">
-                            <div  class="flex flex-col gap-1">
+                            <div  class="flex flex-col">
                                 <p class="!font-['halbfett']">${Drupal.t("Gebäudeart")}</p>
                                 <p>${projectsData['building']}</p>
                             </div>
-                            <div  class="flex flex-col gap-1">
+                            <div  class="flex flex-col">
                                 <p class="!font-['halbfett']">${Drupal.t("Auftraggeber")}</p>
                                 <p> ${projectsData['customer']}</p>
                             </div>
                         </div>
                         <div class="flex flex-col  gap-[32px]">
-                            <div class="flex flex-col gap-1">
+                            <div class="flex flex-col">
                                 <p class="!font-['halbfett']">${Drupal.t("Leistung")}</p>
                                 <p>${projectsData['service']}</p>
                             </div>
-                            <div class="flex flex-col gap-1">
+                            <div class="flex flex-col">
                                 <p class="!font-['halbfett']">${Drupal.t("Zeitraum")}</p>
                                 <p> ${projectsData['period']}</p>
                             </div>

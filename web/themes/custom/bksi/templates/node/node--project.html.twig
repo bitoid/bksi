@@ -112,8 +112,8 @@
               <span>{{ content.field_customer[0]["#title"] }}</span>
             {% endif %}
           </div>
-          <span> {{ content.field_project_period[0]['#markup'] }} - {{ content.field_project_period[1]['#markup'] }}</span>
-          <span>{{ content.field_bgf }}</span>
+          <span> {{ content.field_project_period[0]['#markup'] }}{% if content.field_project_period[1]['#markup'] %} - {% endif %} {{ content.field_project_period[1]['#markup'] }}</span>
+          <span>{{ content.field_bgf.0 }}</span>
         </div>
       </div>
     </div>
@@ -121,12 +121,12 @@
       <div class="text-fade">
         <article class="text-content-fade flex flex-col gap-[70px] px-4 md:pl-[100px] md:pr-28">
           <div class="flex flex-col gap-[30px]">
-            <h4 class="headline-medium">{{ content.field_project_description_title }}</h4>
-            <div class="paragraph-text">{{ content.field_project_description }}</div>
+            <div class="headline-medium">{{ content.field_project_description_title.0 }}</div>
+            <div class="paragraph-text">{{ content.field_project_description.0 }}</div>
           </div>
           <div class="flex flex-col gap-[30px]">
-            <h4 class="headline-medium">{{ content.field_project_challange_title }}</h4>
-            <div class="paragraph-text">{{ content.field_project_challenges }}</div>
+            <div class="headline-medium">{{ content.field_project_challange_title.0 }}</div>
+            <div class="paragraph-text">{{ content.field_project_challenges.0 }}</div>
           </div>
         </article>
       </div>
@@ -142,8 +142,8 @@
       <div class="text-fade">
         <article class="text-content-fade flex flex-col gap-[70px] px-4 md:pl-[100px] md:pr-28">
           <div class="flex flex-col gap-[30px]">
-            <h4 class="headline-medium">{{ content.field_sustainability_issue_title }}</h4>
-            <div class="paragraph-text">{{ content.field_sustainability_issues }}</div>
+            <div class="headline-medium">{{ content.field_sustainability_issue_title.0 }}</div>
+            <div class="paragraph-text">{{ content.field_sustainability_issues.0 }}</div>
           </div>
         </article>
       </div>
@@ -191,7 +191,7 @@
             {% endif %}
           {% endfor %}
         </ul>
-        <div class="md:pl-[25%] pl-[18px]   mt-[16px] md:mt-[20px] paragraph-text flex ">
+        <div class="md:pl-[19.15%] pl-[18px]   mt-[16px] md:mt-[20px] paragraph-text flex ">
             <div class="flex gap-2 " id="title-num"></div>
             <p class="  md:ml-[77px] ml-[23px] text-left md:max-w-[700px]" id="title"> </p>
         <div>

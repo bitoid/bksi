@@ -27,7 +27,7 @@ mode: default
 content:
   field_company_details:
     type: entity_reference_revisions_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: ''
@@ -36,42 +36,42 @@ content:
     region: content
   field_contact_person:
     type: text_default
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 110
     region: content
   field_contact_slogan:
     type: text_default
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 117
     region: content
   field_email:
     type: basic_string
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 108
     region: content
   field_service_description:
     type: text_default
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 112
     region: content
   field_service_icon:
     type: file_url_plain
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 105
     region: content
   field_service_slogan:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -79,21 +79,21 @@ content:
     region: content
   field_service_summary:
     type: text_default
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 115
     region: content
   field_service_title:
     type: text_default
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 114
     region: content
   field_service_weight:
     type: number_integer
-    label: above
+    label: hidden
     settings:
       thousand_separator: ''
       prefix_suffix: true
@@ -102,7 +102,7 @@ content:
     region: content
   field_telefon:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }

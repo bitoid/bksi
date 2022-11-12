@@ -48,7 +48,7 @@ settings:
             - Styles
   plugins:
     stylescombo:
-      styles: "div.text-fade.text-content-fade.gap-1.gap-8.flex.flex-col|div styles\r\nh3.text-2xl|title text size\r\nspan.imprint|red text"
+      styles: "span.imprint|hover red\r\nh2.headline-large|h2-26/35px font size\r\nh3.headline-medium|h3-24px font size\r\np.paragraph-text|p-15/19px font size\r\nspan.span-subline|span-15/18px font size"
 image_upload:
   status: true
   scheme: public

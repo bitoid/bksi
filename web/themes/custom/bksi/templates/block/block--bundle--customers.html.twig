@@ -12,7 +12,7 @@
 {{ title_suffix }}
     <div class="px-4 py-[75px] bg-lightGray md:px-10 md:py-[150px]">
         <h3 class="flex flex-col gap-5  mb-[60px] headline-large">
-            {{ content.field_title[0]['#text'] | striptags }}
+            {{ content.field_title }}
         </h3>
         <div class="grid grid-cols-2 gap-2 md:grid-cols-6 md:gap-10">
             {% for image in content.field_customers_paragraph.0['#paragraph'].field_image %}

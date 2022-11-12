@@ -10,9 +10,9 @@
 {{ title_suffix }}
  {% if content.field_impressions_images.0['#item'] %}
     <div class="flex flex-col gap-[56px] md:gap-[45px] my-[75px]  md:my-[150px]">
-        <h3 class=" px-4 md:px-7 headline-large">
-            {{ content.field_title[0]['#text'] | striptags }}
-        </h3>
+        <div class=" px-4 md:px-7 headline-large">
+            {{ content.field_title.0 }}
+        </div>
         <div id="image-carousel" class="splide " aria-label="Beautiful Images">
              <div
                     class="splide__arrows relative md:w-fit left-1/2 flex -translate-x-1/2 md:left-3/4 gap-8 md:top-16 z-10">
@@ -52,7 +52,7 @@
                     {% endif %}
                 {% endfor %}
                 </ul>
-                <div class="md:pl-[25%] pl-[18px]   mt-[20px] md:mt-[20px] paragraph-text flex">
+                <div class="md:pl-[19.15%] pl-[18px]   mt-[20px] md:mt-[20px] paragraph-text flex">
                     <div class="flex gap-2" id="title-num"></div>
                     <p class="md:ml-[77px] ml-[23px] text-left" id="title"> </p>
                 <div>

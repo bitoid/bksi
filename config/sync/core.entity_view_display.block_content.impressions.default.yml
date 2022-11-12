@@ -16,7 +16,7 @@ mode: default
 content:
   field_impressions_images:
     type: image
-    label: above
+    label: hidden
     settings:
       image_link: ''
       image_style: ''
@@ -27,7 +27,7 @@ content:
     region: content
   field_title:
     type: text_default
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 0

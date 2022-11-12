@@ -74,7 +74,7 @@ class ProjectsController extends ControllerBase {
       $fileId = $result->field_project_header_image->getValue()[0]['target_id'] ? $result->field_project_header_image->getValue()[0]['target_id'] : null;
       $imgUrl = $this->getImgUrl($fileId);
 
-      $period = $this->timePeriod([$result->field_project_period[0]->value, $result->field_project_period[1]->value]);
+      $period = $this->timePeriod([$result->field_project_period[0]->value, $result->field_project_period[1]->value ? $result->field_project_period[1]->value : null]);
       $data[] = [
         "nid" => $result->nid->value,
         "url" => $result->toUrl()->toString(),
@@ -96,11 +96,13 @@ class ProjectsController extends ControllerBase {
 
   protected function timePeriod (array $data) {
     $startTimestamp = strtotime($data[0]);
-    $endTimestamp = strtotime($data[1]);
-
+    if($data[1]){
+      $endTimestamp = strtotime($data[1]);
+    }
     $startYear = date("Y", $startTimestamp);
-    $endYear = date("Y", $endTimestamp);
-
+    if($endTimestamp){
+      $endYear = date("Y", $endTimestamp);
+    }
     return [$startYear, $endYear];
   }
 

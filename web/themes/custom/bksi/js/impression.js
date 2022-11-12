@@ -50,7 +50,8 @@ function getTitleHtml(arr){
 
 
 function filterImgNumber(e){
-    let idValue=e.target.id ? e.target.id : e.target.parentElement.id;
+    let idValue=e.target.closest(".splide__arrow").id; 
+
 
     if(idValue=='prev-button'){
         

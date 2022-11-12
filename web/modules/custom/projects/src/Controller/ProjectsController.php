@@ -85,7 +85,7 @@ class ProjectsController extends ControllerBase {
         "customer" => $title,
         "sector" => $sector,
         'tick' => $result->field_tick->value,
-        "period" => "$period[0]-$period[1]",
+        "period" => $period[1] ? "$period[0]-$period[1]" : $period[0],
 
       ];
 

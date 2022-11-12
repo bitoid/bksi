@@ -1,12 +1,12 @@
-uuid: 7559ea0c-d4d2-4968-a8b5-77e7add03bf4
+uuid: 32073794-fc42-4601-8ca4-0be281794066
 langcode: en
 status: true
 dependencies:
   module:
     - block_content
     - text
-id: block_content.field_apply_job
-field_name: field_apply_job
+id: block_content.field_contact_body
+field_name: field_contact_body
 entity_type: block_content
 type: text_long
 settings: {  }

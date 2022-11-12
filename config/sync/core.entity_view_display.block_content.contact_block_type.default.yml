@@ -4,47 +4,19 @@ status: true
 dependencies:
   config:
     - block_content.type.contact_block_type
-    - field.field.block_content.contact_block_type.field_apply_job
-    - field.field.block_content.contact_block_type.field_contact_email
-    - field.field.block_content.contact_block_type.field_contact_phone
-    - field.field.block_content.contact_block_type.field_get_in_touch
+    - field.field.block_content.contact_block_type.field_contact_body
     - field.field.block_content.contact_block_type.field_image
-    - field.field.block_content.contact_block_type.field_location_link
-    - field.field.block_content.contact_block_type.field_ltd_bksi_description
     - field.field.block_content.contact_block_type.field_slogan
     - field.field.block_content.contact_block_type.field_title
   module:
     - image
-    - link
     - text
 id: block_content.contact_block_type.default
 targetEntityType: block_content
 bundle: contact_block_type
 mode: default
 content:
-  field_apply_job:
-    type: text_default
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 6
-    region: content
-  field_contact_email:
-    type: basic_string
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 4
-    region: content
-  field_contact_phone:
-    type: string
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 3
-    region: content
-  field_get_in_touch:
+  field_contact_body:
     type: text_default
     label: hidden
     settings: {  }
@@ -61,25 +33,6 @@ content:
         attribute: lazy
     third_party_settings: {  }
     weight: 2
-    region: content
-  field_location_link:
-    type: link
-    label: hidden
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    weight: 5
-    region: content
-  field_ltd_bksi_description:
-    type: text_default
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 1
     region: content
   field_slogan:
     type: text_default

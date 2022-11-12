@@ -1,19 +1,21 @@
-uuid: 96047064-cfa3-4268-8b3a-63ce5d72f0d0
+uuid: 23576791-8330-4d96-9581-e8f65ac1d0b7
 langcode: en
 status: true
 dependencies:
   config:
     - block_content.type.contact_block_type
-    - field.storage.block_content.field_contact_email
-id: block_content.contact_block_type.field_contact_email
-field_name: field_contact_email
+    - field.storage.block_content.field_contact_body
+  module:
+    - text
+id: block_content.contact_block_type.field_contact_body
+field_name: field_contact_body
 entity_type: block_content
 bundle: contact_block_type
-label: Email
+label: 'Contact body'
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: email
+field_type: text_long

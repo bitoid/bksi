@@ -28,69 +28,22 @@
 
 <section {{ attributes }}> 
 {{ title_suffix }} 
-  {% if path('<current>') == '/karriere' %}
-    <div class="flex text-fade flex-col  lg:flex-row">
-    <div class="px-4 text-content-fade py-[75px] order-2 lg:order-1 lg:flex lg:flex-col lg:justify-center lg:w-1/2 xl:px-[122px] md:px-11 lg:my-auto lg:py-0">
-      <div class=" mb-[50px]">
-        <h3 class=" headline-large flex flex-col gap-5 lg:gap-7 ">
-          <span class="span-subline">{{ content.field_slogan | raw  }}</span>
-          {{ content.field_title | raw }}
-        </h3>
-      </div>
-      <div class=" self-start">
-        <div class="">
-          <div class="flex flex-col gap-2 paragraph-text mb-[25px]">
-            <p class="font-['halbfett']">{{ 'Bewirb dich direkt:' | t }}</p>
-            <span>{{ content.field_apply_job | raw  }}</span>
-          </div>
-          <div class="flex flex-col gap-2 text-[15px] leading-[22px] tracking-[0.75px] mb-[50px]">
-            <span class="font-['halbfett']">{{ content.field_get_in_touch }}</span>
-            {% for phone in content.field_contact_phone %}
-              {% if phone['#context'] %}
-                <a class="group font-['buch']" href="tel:{{ phone['#context'].value }}"> <span class="group-hover:text-mainRed">{{ phone['#context'].value }}</span></a>
-              {% endif %}
-            {% endfor %}
-            {% for email in content.field_contact_email %}
-              {% if email['#context'] %}
-                <a class="group font-['buch']" href="mailto:{{ email['#context'].value }}"><span class="group-hover:text-mainRed">{{ email['#context'].value }}</span></a>
-              {% endif %}
-            {% endfor %}
-          </div>
-          <article class="flex flex-col gap-1 text-[15px] leading-[22px] tracking-[0.75px]">
-            {{ content.field_ltd_bksi_description | raw }}
-          </article>
-        </div>
-      </div>
-    </div>
-    {% else %}
     <div class="flex text-fade flex-col mt-[90px] lg:flex-row">
       <div class="px-4 text-content-fade py-[75px] order-2 lg:order-1 lg:flex lg:flex-col lg:justify-center lg:items-center lg:w-1/2 md:px-11 xl:px-[122px] lg:py-0 lg:my-auto">
-        <div class=" mb-[50px]">
-          <h3 class=" headline-large flex flex-col gap-5 lg:gap-7 ">
+        <div class=" mb-[50px] self-start">
+          <h3 class=" headline-large flex flex-col gap-5 lg:gap-7">
+            <span class="span-subline">{{ content.field_slogan | raw  }}</span>
             {{ content.field_title | raw }}
           </h3>
         </div>
         <div class=" self-start">
-          <div class="xl:w-1/2 w-full paragraph-text">
-            <article class="flex flex-col gap-5 mb-[25px]">
-                  <div class=" flex flex-col gap-3"> {{ content.field_ltd_bksi_description | raw }} </div>
+          <div class=" w-full paragraph-text">
+            <article >
+                  <div class=" flex flex-col "> {{ content.field_contact_body.0 }} </div>
             </article>
-            <div class="flex flex-col gap-2 text-[15px] leading-[22px] tracking-[0.75px] mb-[25px]">
-              {% for phone in content.field_contact_phone %}
-                {% if phone['#context'] %}
-                    <a class="group font-['buch']" href="tel:{{ phone['#context'].value }}">Telefon: <span class="group-hover:text-mainRed">{{ phone['#context'].value }}</span></a>
-                {% endif %}
-              {% endfor %}
-            </div>
-            {% for email in content.field_contact_email %}
-              {% if email['#context'] %}
-                <a class="group font-['buch']" href="mailto:{{ email['#context'].value }}">E-Mail: <span class="group-hover:text-mainRed">{{ email['#context'].value }}</span></a>
-              {% endif %}
-            {% endfor %}
           </div>
         </div>
       </div>
-      {% endif %}
       <div class="relative fade-in-image-container order-1 w-full  lg:order-2 lg:w-1/2 ">
         <picture>
           <source srcset="{{ file_url(content.field_image.0['#item'].entity.uri.value | image_style('large_webp')) }}" media="only screen and (max-width: 450px)" type="image/webp" >

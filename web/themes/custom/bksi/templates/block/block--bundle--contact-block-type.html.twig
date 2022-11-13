@@ -26,30 +26,28 @@
  */
 #}
 
-<section {{ attributes }}> 
-{{ title_suffix }} 
-    <div class="flex text-fade flex-col mt-[90px] lg:flex-row">
-      <div class="px-4 text-content-fade py-[75px] order-2 lg:order-1 lg:flex lg:flex-col lg:justify-center lg:items-center lg:w-1/2 md:px-11 xl:px-[122px] lg:py-0 lg:my-auto">
-   
-          <div class="headline-large flex flex-col gap-5 xl:max-w-[72.5%] lg:max-w-[82.5%] mb-[50px] self-start">
-            <span class="span-subline">{{ content.field_slogan.0  }}</span>
-            {{ content.field_title.0 }}
-          </div>
-     
-    
-           <div class="w-full paragraph-text self-start flex flex-col xl:max-w-[50%] lg:max-w-[60%]"> {{ content.field_contact_body.0 }} </div>
-    
-      </div>
-      <div class="relative fade-in-image-container order-1 w-full  lg:order-2 lg:w-1/2 ">
-        <picture>
-          <source srcset="{{ file_url(content.field_image.0['#item'].entity.uri.value | image_style('large_webp')) }}" media="only screen and (max-width: 450px)" type="image/webp" >
-          <source srcset="{{ file_url(content.field_image.0['#item'].entity.uri.value | image_style('original_webp')) }}" media="only screen and (min-width: 450px)" type="image/webp">
-          <img class="w-full fade-in-image" src="{{ file_url(content.field_image.0['#item'].entity.uri.value) }}" alt="">
-        </picture>
-        <a href="{{ content.field_location_link.0["#url"] }}" class="group flex items-center gap-5 absolute left-5 bottom-5" target="_blank">
-          <div class="w-[50px] aspect-square rounded-full bg-white flex items-center justify-center group-hover:scale-125"><img src="/{{ base_path ~ directory }}/images/arrow-textlinks.svg" alt=""></div>
-          <span class="text-[15px] leading-[12px] tracking-[0.75px]">{{ content.field_location_link[0]["#title"] }}</span>
-        </a>
-      </div>
-  </div>
+<section {{ attributes }}>
+	{{ title_suffix }}
+	<div class="flex text-fade flex-col mt-[90px] lg:flex-row">
+		<div class="px-4 text-content-fade py-[75px] order-2 lg:order-1 lg:flex lg:flex-col lg:justify-center lg:items-center lg:w-1/2 md:px-11 xl:px-[122px] lg:py-0 lg:my-auto">
+			<div class="headline-large flex flex-col gap-5 xl:max-w-[495px] mb-[50px] self-start">
+				<span class="span-subline">{{ content.field_slogan.0  }}</span>
+				{{ content.field_title.0 }}
+			</div>
+			<div class="w-full paragraph-text self-start flex flex-col xl:max-w-[495px]">
+				{{ content.field_contact_body.0 }}
+			</div>
+		</div>
+		<div class="relative fade-in-image-container order-1 w-full  lg:order-2 lg:w-1/2 ">
+			<picture>
+				<source srcset="{{ file_url(content.field_image.0['#item'].entity.uri.value | image_style('large_webp')) }}" media="only screen and (max-width: 450px)" type="image/webp">
+				<source srcset="{{ file_url(content.field_image.0['#item'].entity.uri.value | image_style('original_webp')) }}" media="only screen and (min-width: 450px)" type="image/webp">
+				<img class="w-full fade-in-image" src="{{ file_url(content.field_image.0['#item'].entity.uri.value) }}" alt="">
+			</picture>
+			<a href="{{ content.field_location_link.0["#url"] }}" class="group flex items-center gap-5 absolute left-5 bottom-5" target="_blank">
+				<div class="w-[50px] aspect-square rounded-full bg-white flex items-center justify-center group-hover:scale-125"><img src="/{{ base_path ~ directory }}/images/arrow-textlinks.svg" alt=""></div>
+				<span class="text-[15px] leading-[12px] tracking-[0.75px]">{{ content.field_location_link[0]["#title"] }}</span>
+			</a>
+		</div>
+	</div>
 </section>
